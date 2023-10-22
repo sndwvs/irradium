@@ -7,15 +7,19 @@ version=1.6
 release=3
 
 source=(https://crux.nu/files/tools/ports/$name-$version.tar.gz
-	core.pub opt.pub xorg.pub compat-32.pub contrib.pub
+	core.pub opt.pub xorg.pub contrib.pub
+	core-calm.httpup opt-calm.httpup xorg-calm.httpup
 	core.rsync opt.rsync xorg.rsync
-	compat-32.rsync.inactive contrib.rsync.inactive)
+	contrib.rsync.inactive)
 
 build () {
 	cd $name-$version
 	make
 	make DESTDIR=$PKG MANDIR=/usr/share/man install
 
+	install -m 0644 $SRC/core-calm.httpup $PKG/etc/ports
+	install -m 0644 $SRC/opt-calm.httpup $PKG/etc/ports
+	install -m 0644 $SRC/xorg-calm.httpup $PKG/etc/ports
 	install -m 0644 $SRC/core.rsync $PKG/etc/ports
 	install -m 0644 $SRC/opt.rsync $PKG/etc/ports
 	install -m 0644 $SRC/xorg.rsync $PKG/etc/ports
@@ -24,6 +28,5 @@ build () {
 	install -m 0644 $SRC/core.pub $PKG/etc/ports
 	install -m 0644 $SRC/opt.pub $PKG/etc/ports
 	install -m 0644 $SRC/xorg.pub $PKG/etc/ports
-	install -m 0644 $SRC/compat-32.pub $PKG/etc/ports
 	install -m 0644 $SRC/contrib.pub $PKG/etc/ports
 }
