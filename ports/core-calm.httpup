@@ -1,5 +1,5 @@
 #
-# /etc/ports/core-calm.httpup: aarch64 port collection
+# /etc/ports/core-calm.httpup: calm linux port collection
 #
 
 ROOT_DIR=/usr/ports/core-calm
