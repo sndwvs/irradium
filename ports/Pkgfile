@@ -23,7 +23,6 @@ build () {
 	install -m 0644 $SRC/core.rsync $PKG/etc/ports
 	install -m 0644 $SRC/opt.rsync $PKG/etc/ports
 	install -m 0644 $SRC/xorg.rsync $PKG/etc/ports
-	install -m 0644 $SRC/compat-32.rsync.inactive $PKG/etc/ports
 	install -m 0644 $SRC/contrib.rsync.inactive $PKG/etc/ports
 	install -m 0644 $SRC/core.pub $PKG/etc/ports
 	install -m 0644 $SRC/opt.pub $PKG/etc/ports
