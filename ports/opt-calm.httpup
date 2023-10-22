@@ -3,6 +3,6 @@
 #
 
 ROOT_DIR=/usr/ports/opt-calm
-URL=https://gitlab.com/sndwvs/opt-calm/-/raw/3.7/
+URL=https://gitlab.com/sndwvs/opt-calm/raw/3.7/
 
 # End of file

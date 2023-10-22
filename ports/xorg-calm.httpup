@@ -3,6 +3,6 @@
 #
 
 ROOT_DIR=/usr/ports/xorg-calm
-URL=https://gitlab.com/sndwvs/xorg-calm/-/raw/3.7/
+URL=https://gitlab.com/sndwvs/xorg-calm/raw/3.7/
 
 # End of file

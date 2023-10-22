@@ -3,6 +3,6 @@
 #
 
 ROOT_DIR=/usr/ports/core-calm
-URL=https://gitlab.com/sndwvs/core-calm/-/raw/3.7/
+URL=https://gitlab.com/sndwvs/core-calm/raw/3.7/
 
 # End of file
