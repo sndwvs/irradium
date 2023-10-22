@@ -1,0 +1,8 @@
+#
+# /etc/ports/core-calm.httpup: aarch64 port collection
+#
+
+ROOT_DIR=/usr/ports/core-calm
+URL=https://gitlab.com/sndwvs/core-calm/-/raw/master/
+
+# End of file

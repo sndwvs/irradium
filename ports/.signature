@@ -1,0 +1,15 @@
+untrusted comment: verify with /etc/ports/core.pub
+RWRJc1FUaeVeqjMs+RvdUvXk/8oivAZdUs0iuOnqmXC9hwnRdxZTgkxWt8Z2lovnQ9xr5N7b6srs8LbsAK834Wi2raKvD1uNNA8=
+SHA256 (Pkgfile) = 68cdc9628c11b904dcac671a31e0b08cab4b934bca6b2287e1c88156b63504cf
+SHA256 (.footprint) = b7adb63a38cbd15d9640333b2aa9f586b0577bbb5263ffbabec859a2ea3aba2c
+SHA256 (ports-1.6.tar.gz) = 8b2ba48e7440f4a71fa1c9c480a1212ce87c623e1d33121eb660829ba294ca94
+SHA256 (core.pub) = 5a08b7f21fb1768b9e639da0b768edb536de0590b75e663dab6d185617613791
+SHA256 (opt.pub) = 4711f488546c38cdec792c1f16b3bf7c4db0c7dc0c3cdab0ecdd85e2c7247ae5
+SHA256 (xorg.pub) = 5db27d455f658ea8a6c7ae9aac601d66e74cedff5dd497910fd1ffead08e5237
+SHA256 (compat-32.pub) = 851ed73c303213daf1ab73ec0dabf0312296b11af4b70dcd1b7ae37282b446c8
+SHA256 (contrib.pub) = cae797c624547b5ffb643f4cdf60d83a7cc28081f5929b882d48085085d76190
+SHA256 (core.rsync) = a241801eaa34ea78f7bb362574fb4b14ea272518894f8a27e95f6a3c93464550
+SHA256 (opt.rsync) = 8538d1ced606856552e8a6989a3880b958ac5e0849d14aba199f3f89bd871845
+SHA256 (xorg.rsync) = 3dd6884b2b628e8d9ae575b95fb7e4bad0f9ddd4ee4088d2486f846a407a0278
+SHA256 (compat-32.rsync.inactive) = a85d86e3152b4872963019c224cc9bcb8646300069d80a23185f58f077898dd5
+SHA256 (contrib.rsync.inactive) = 55621db4b59fb45ecc9525c72d59576043bacbd9261d9ef031dcd1a3fda00957

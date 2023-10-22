@@ -1,0 +1,23 @@
+# Description: GNU database library for C
+# URL: https://www.gnu.org/software/gdbm/gdbm.html
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Depends on: readline
+
+name=gdbm
+version=1.23
+release=1
+source=(https://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr \
+                --build=$(uname -m)-unknown-linux-gnu \
+		--enable-libgdbm-compat \
+		--disable-nls
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
+}

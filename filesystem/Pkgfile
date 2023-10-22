@@ -70,7 +70,7 @@ build() {
 	ln -s /proc/self/mounts $PKG/etc/mtab
 
 	# /usr/bin/calm
-	cat > $PKG/usr/bin/crux << EOF
+	cat > $PKG/usr/bin/calm << EOF
 #!/bin/sh
 
 echo "calm version $version"
