@@ -1,0 +1,26 @@
+# Description: Automatic management of removable drives and media for Thunar
+# URL: https://docs.xfce.org/xfce/thunar/thunar-volman
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: thunar libxfce4ui hicolor-icon-theme
+
+name=thunar-volman
+version=4.18.0
+release=1
+source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --disable-debug \
+    --enable-gtk-doc=no
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+  rm -r $PKG/usr/share/locale
+
+}

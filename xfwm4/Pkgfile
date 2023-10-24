@@ -1,0 +1,33 @@
+    # Description: Xfce's window manager
+# URL: https://docs.xfce.org/xfce/xfwm4/start
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: libxfce4ui xfconf libwnck3 libepoxy libxpresent hicolor-icon-theme
+
+name=xfwm4
+version=4.18.0
+release=1
+source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2 \
+        xinitrc.xfce)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --enable-startup-notification \
+    --enable-randr \
+    --enable-compositor \
+    --enable-xsync \
+    --disable-debug
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+  rm -r $PKG/usr/share/locale
+  find $PKG -name README -exec rm '{}' \+
+
+  install -D -m755 $SRC/xinitrc.xfce $PKG/etc/X11/xinit/xinitrc.xfce
+
+}

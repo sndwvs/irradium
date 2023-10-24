@@ -1,0 +1,31 @@
+# Description: Modern, fast and easy-to-use file manager for Xfce
+# URL: https://docs.xfce.org/xfce/thunar/start
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: desktop-file-utils libexif hicolor-icon-theme libnotify pcre2 libgudev exo libxfce4util libxfce4ui libpng
+
+name=thunar
+version=4.18.4
+release=1
+source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --enable-gio-unix \
+    --enable-gudev \
+    --enable-notifications \
+    --enable-exif \
+    --disable-debug \
+    --enable-gtk-doc=no
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+  rm -r $PKG/usr/share/locale
+  rm -r $PKG/usr/share/gtk-doc
+  rm -r $PKG/usr/share/doc
+
+}

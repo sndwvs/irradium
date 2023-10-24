@@ -1,0 +1,28 @@
+# Description: Widgets library for the Xfce desktop environment
+# URL: https://www.xfce.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: libxfce4util gtk3 xfconf libsm startup-notification
+
+name=libxfce4ui
+version=4.18.3
+release=1
+source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --sbindir=/usr/bin \
+    --localstatedir=/var \
+    --disable-debug \
+    --enable-gtk-doc=no
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+  rm -r $PKG/usr/share/locale
+  rm -r $PKG/usr/share/gtk-doc
+
+}

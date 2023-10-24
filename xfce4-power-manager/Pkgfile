@@ -1,0 +1,28 @@
+# Description: Power Manager for Xfce
+# URL: https://docs.xfce.org/xfce/xfce4-power-manager/start
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: libxfce4ui upower libnotify xfce4-notifyd hicolor-icon-theme
+
+name=xfce4-power-manager
+version=4.18.1
+release=1
+source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --sbindir=/usr/bin \
+    --localstatedir=/var \
+    --disable-network-manager \
+    --enable-polkit \
+    --disable-debug
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+  rm -r $PKG/usr/share/locale
+
+}

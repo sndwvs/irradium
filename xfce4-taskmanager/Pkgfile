@@ -1,0 +1,25 @@
+# Description: Easy to use task manage
+# URL: https://docs.xfce.org/apps/xfce4-taskmanager
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: libxfce4ui xfconf ibxmu libwnck3
+
+name=xfce4-taskmanager
+version=1.5.5
+release=1
+source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --disable-debug
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+  rm -r $PKG/usr/share/locale
+
+}

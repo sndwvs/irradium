@@ -1,0 +1,29 @@
+# Description: Elementary icon theme with improved Xfce support
+# URL: https://github.com/shimmerproject/elementary-xfce
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: gtk3 optipng
+
+name=elementary-xfce
+version=0.17
+release=1
+source=(https://github.com/shimmerproject/$name/archive/v$version.tar.gz)
+
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+  # Remove unnecessary files.
+  find "$pkgdir/usr/share/icons" \
+  \( \
+    -name 'AUTHORS' \
+    -o -name 'CONTRIBUTORS' \
+    -o -name 'LICENSE' \
+  \) -delete
+
+}

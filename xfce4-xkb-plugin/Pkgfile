@@ -1,0 +1,26 @@
+# Description: Plugin to switch keyboard layouts for the Xfce4 panel
+# URL: https://docs.xfce.org/panel-plugins/xfce4-xkb-plugin
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: xfce4-panel libxklavier librsvg libwnck3 libnotify
+
+name=xfce4-xkb-plugin
+version=0.8.3
+release=1
+source=(https://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --libexecdir=/usr/lib \
+    --localstatedir=/var \
+    --disable-debug
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+  rm -r $PKG/usr/share/locale
+
+}
