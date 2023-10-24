@@ -1,0 +1,36 @@
+# Description: GTK+ greeter for LightDM
+# URL: https://github.com/Xubuntu/lightdm-gtk-greeter
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: gtk3 lightdm Greybird xfce4-dev-tools
+
+name=lightdm-gtk-greeter
+version=2.0.8
+release=1
+source=(https://github.com/Xubuntu/$name/releases/download/$name-$version/$name-$version.tar.gz)
+
+build(){
+  cd $name-$version
+
+  [[ ! -x configure ]] && NOCONFIGURE=1 ./autogen.sh
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --sbindir=/usr/bin \
+    --libexecdir=/usr/libexec/$name \
+    --with-libxklavier \
+    --enable-kill-on-sigterm \
+    --disable-libido \
+    --disable-libindicator \
+    --disable-debug \
+    --enable-gtk-doc=no
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+  rm -r $PKG/usr/share/locale
+
+  # set theme
+  sed 's:^#\(theme-name=\):\1Greybird-dark:' -i $PKG/etc/lightdm/$name.conf
+
+}

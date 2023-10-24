@@ -1,0 +1,68 @@
+# Description: A lightweight display manager
+# URL: https://github.com/canonical/lightdm
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: glib git gobject-introspection intltool itstool libgcrypt xorg-libx11 xorg-libxcb xorg-libxdmcp libxklavier linux-pam xorg-server xorg-xmodmap xorg-xrdb
+
+name=lightdm
+version=1.32.0
+release=2
+source=(https://github.com/canonical/$name/releases/download/$version/$name-$version.tar.xz \
+        50-slarm64-defaults.conf 50-directories.conf lightdm.rules lightdm)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --sbindir=/usr/bin \
+    --libexecdir=/usr/libexec/$name \
+    --enable-liblightdm-qt5=no \
+    --with-greeter-user=lightdm \
+    --with-greeter-session=lightdm-gtk-greeter \
+    --disable-debug \
+    --enable-gtk-doc=no \
+    --disable-tests
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+  rm -r $PKG/usr/share/locale
+
+  cp tests/src/lightdm-session $PKG/usr/bin
+  sed -i '1 s/sh/bash --login/' $PKG/usr/bin/lightdm-session
+
+  # install Xsession wrapper to use with lightdm
+  install -dm 755 -g root $PKG/etc/lightdm/lightdm.conf.d
+  install -m 644 $SRC/50-slarm64-defaults.conf $PKG/etc/lightdm/lightdm.conf.d/50-slarm64-defaults.conf
+  install -m 644 $SRC/50-directories.conf $PKG/etc/lightdm/lightdm.conf.d/50-directories.conf
+  install -dm 755 $PKG/var/cache/lightdm
+  install -dm 755 $PKG/var/lib/lightdm{,-data}
+  install -dm 770 $PKG/var/log/lightdm
+  chmod +t $PKG/var/{cache/lightdm,lib/lightdm{,-data}}
+  chown 620:620 -R $PKG/var/cache/lightdm
+  chown 620:620 -R $PKG/var/lib/lightdm{,-data}
+  chown 620:620 -R $PKG/var/log/lightdm
+
+  # adjust users.conf to accept userid<500
+  sed -i 's/500/100/g' $PKG/etc/lightdm/users.conf
+
+  # install PolKit rules
+  install -dm 755 -g root $PKG/usr/share/polkit-1/rules.d
+  install -m 644 $SRC/lightdm.rules $PKG/usr/share/polkit-1/rules.d/lightdm.rules
+
+  # remove junk
+  #rm -fr $PKG/usr/share/{locale,gtk-doc,help}
+  #rm -fr $PKG/etc/{init,apparmor.d,pam.d}
+  rm -fr $PKG/usr/share/{gtk-doc,help}
+  rm -fr $PKG/etc/{init,apparmor.d}
+
+  # install PAM configurations
+  #install -d $PKG/etc/pam.d
+  #install -m644 $SRC/lightdm.pam $PKG/etc/pam.d/lightdm
+  #install -m644 $SRC/lightdm-autologin.pam $PKG/etc/pam.d/lightdm-autologin
+
+  install -D -m 755 $SRC/$name $PKG/etc/rc.d/$name
+
+}

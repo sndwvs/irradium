@@ -1,0 +1,5 @@
+#!/bin/sh
+
+getent group lightdm || /usr/sbin/groupadd -g 620 lightdm
+getent passwd lightdm || /usr/sbin/useradd -g lightdm -u 620 -d /var/lib/lightdm -s /bin/false lightdm
+/usr/bin/passwd -l lightdm

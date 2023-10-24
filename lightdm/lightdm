@@ -1,0 +1,23 @@
+#!/bin/sh
+#
+# /etc/rc.d/lightdm: start/stop lightdm
+#
+
+case $1 in
+start)
+	XDG_CACHE_HOME=/var/cache/lightdm/ exec /usr/bin/lightdm  2>/dev/null &
+	;;
+stop)
+	killall -q /usr/bin/lightdm
+	;;
+restart)
+	$0 stop
+	sleep 2
+	$0 start
+	;;
+*)
+	echo "usage: $0 [start|stop|restart]"
+	;;
+esac
+
+# End of file
