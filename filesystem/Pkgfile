@@ -69,24 +69,24 @@ build() {
 	install -m 0644 mime.types $PKG/etc
 	ln -s /proc/self/mounts $PKG/etc/mtab
 
-	# /usr/bin/calm
-	cat > $PKG/usr/bin/calm << EOF
+	# /usr/bin/irradium
+	cat > $PKG/usr/bin/irradium << EOF
 #!/bin/sh
 
-echo "calm version $version"
+echo "irradium version $version"
 
 # End of file
 EOF
-	chmod 755 $PKG/usr/bin/calm
+	chmod 755 $PKG/usr/bin/irradium
 
 
 	# /etc/os-release
 	cat > $PKG/etc/os-release << EOF
-NAME=calm
+NAME=irradium
 VERSION="$version"
-ID=calm
-PRETTY_NAME="calm"
-HOME_URL="https://"
-BUG_REPORT_URL="https://"
+ID=irradium
+PRETTY_NAME="irradium"
+HOME_URL="https://irradium.org"
+BUG_REPORT_URL="https://irradium.org"
 EOF
 }
