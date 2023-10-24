@@ -1,0 +1,8 @@
+#
+# /etc/ports/irradium-core.httpup: irradium linux port collection
+#
+
+ROOT_DIR=/usr/ports/irradium-core
+URL=https://gitlab.com/sndwvs/irradium-core/raw/3.7/
+
+# End of file
