@@ -11,16 +11,15 @@ source=(https://sourceware.org/pub/gcc/releases/gcc-$version/$name-$version.tar.
 	$name-aarch64-dirs.patch fix-nested-generic-lambda.patch)
 
 build() {
-	# Automatically determine the architecture we're building on:
 	if [ -z "$ARCH" ]; then
 	    case "$(uname -m)" in
 	    i?86) ARCH=i586 ;;
 	    arm*) readelf /usr/bin/file -A | grep -E -q "Tag_CPU.*[4,5]" && ARCH=arm || ARCH=armv7hl ;;
-	    # Unless $ARCH is already set, use uname -m for all other archs:
 	    *) ARCH=$(uname -m) ;;
 	  esac
 	  export ARCH
 	fi
+
 	case "$ARCH" in
 	    arm*) TARGET=$ARCH-unknown-linux-gnueabi ;;
 	    *)    TARGET=$ARCH-unknown-linux ;;
@@ -53,7 +52,7 @@ build() {
 		--enable-plugin \
 		--enable-default-pie \
 		--enable-default-ssp \
-		--with-pkgversion="calm $(getconf LONG_BIT)b" \
+		--with-pkgversion="irradium $(getconf LONG_BIT)b" \
 		--with-system-zlib \
 		$GCC_ARCHOPTS \
 		--target=${TARGET} \
