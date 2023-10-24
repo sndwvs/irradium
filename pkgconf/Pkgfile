@@ -6,7 +6,8 @@ name=pkgconf
 version=2.0.3
 release=1
 source=(https://distfiles.ariadne.space/pkgconf/pkgconf-$version.tar.xz
-  riscv64-unknown-linux-gnu.personality)
+  riscv64-unknown-linux-gnu.personality
+  aarch64-unknown-linux-gnu.personality)
 
 build() {
 	meson setup build $name-$version \
@@ -20,8 +21,8 @@ build() {
 	DESTDIR=$PKG meson install -C build
 
 	install -Dt $PKG/usr/share/pkgconfig/personality.d -m644 \
-		riscv64-unknown-linux-gnu.personality
-	ln -s pkgconf $PKG/usr/bin/riscv64-unknown-linux-gnu-pkg-config
+		$(uname -m)-unknown-linux-gnu.personality
+	ln -s pkgconf $PKG/usr/bin/$(uname -m)-unknown-linux-gnu-pkg-config
 	ln -s pkgconf $PKG/usr/bin/pkg-config
 
 	ln -s pkgconf.1 $PKG/usr/share/man/man1/pkg-config.1
