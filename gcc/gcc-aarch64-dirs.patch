@@ -1,0 +1,13 @@
+diff -Nru gcc-7.3.0.orig/gcc/config/aarch64/t-aarch64-linux gcc-7.3.0/gcc/config/aarch64/t-aarch64-linux
+--- gcc-7.3.0.orig/gcc/config/aarch64/t-aarch64-linux   2018-06-20 13:36:39.756075935 +0200
++++ gcc-7.3.0/gcc/config/aarch64/t-aarch64-linux        2018-06-20 13:36:49.900014648 +0200
+@@ -22,7 +22,7 @@
+ LIB1ASMFUNCS = _aarch64_sync_cache_range
+ 
+ AARCH_BE = $(if $(findstring TARGET_BIG_ENDIAN_DEFAULT=1, $(tm_defines)),_be)
+-MULTILIB_OSDIRNAMES = mabi.lp64=../lib64$(call if_multiarch,:aarch64$(AARCH_BE)-linux-gnu)
++MULTILIB_OSDIRNAMES = mabi.lp64=../lib$(call if_multiarch,:aarch64$(AARCH_BE)-linux-gnu)
+ MULTIARCH_DIRNAME = $(call if_multiarch,aarch64$(AARCH_BE)-linux-gnu)
+ 
+ MULTILIB_OSDIRNAMES += mabi.ilp32=../libilp32
+
