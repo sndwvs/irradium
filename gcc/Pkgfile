@@ -11,22 +11,8 @@ source=(https://sourceware.org/pub/gcc/releases/gcc-$version/$name-$version.tar.
 	$name-aarch64-dirs.patch fix-nested-generic-lambda.patch)
 
 build() {
-	if [ -z "$ARCH" ]; then
-	    case "$(uname -m)" in
-	    i?86) ARCH=i586 ;;
-	    arm*) readelf /usr/bin/file -A | grep -E -q "Tag_CPU.*[4,5]" && ARCH=arm || ARCH=armv7hl ;;
-	    *) ARCH=$(uname -m) ;;
-	  esac
-	  export ARCH
-	fi
-
-	case "$ARCH" in
-	    arm*) TARGET=$ARCH-unknown-linux-gnueabi ;;
-	    *)    TARGET=$ARCH-unknown-linux ;;
-	esac
-
-	[[ "$ARCH" == "aarch64" ]] && GCC_ARCHOPTS="--enable-multilib"
-	[[ "$ARCH" == "riscv64" ]] && GCC_ARCHOPTS="--disable-multilib --with-slibdir=/lib"
+	[[ $(unmae -m) == "aarch64" ]] && GCC_ARCHOPTS="--enable-multilib"
+	[[ $(unmae -m) == "riscv64" ]] && GCC_ARCHOPTS="--disable-multilib --with-slibdir=/lib"
 
 	patch -d $name-$version -p1 -i $SRC/$name-nocheck-fixincludes.patch
 	patch -d $name-$version -p1 -i $SRC/$name-4.7.3-multilib-dirs.patch
@@ -55,9 +41,6 @@ build() {
 		--with-pkgversion="irradium $(getconf LONG_BIT)b" \
 		--with-system-zlib \
 		$GCC_ARCHOPTS \
-		--target=${TARGET} \
-		--build=${TARGET} \
-		--host=${TARGET} \
 		--disable-nls
 	make bootstrap
 	make -j4 DESTDIR=$PKG install
@@ -69,7 +52,7 @@ build() {
 
 	mv $PKG/usr/lib/gcc/*/$version/include-fixed/{limits.h,syslimits.h} $PKG/usr/lib/gcc/*/$version/include/
 	rm -r $PKG/usr/share/{info,$name-$version}
-	rm -r $PKG/usr/bin/*-linux-gnu-*
+	rm -r $PKG/usr/bin/*-linux-gnu*
 	rm -r $PKG/usr/lib/gcc/*/$version/{install-tools,include-fixed}
 
 	for D in lib{,32}; do
