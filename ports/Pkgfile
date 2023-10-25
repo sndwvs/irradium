@@ -8,7 +8,8 @@ release=3
 
 source=(https://crux.nu/files/tools/ports/$name-$version.tar.gz
 	core.pub opt.pub xorg.pub contrib.pub
-	core-calm.httpup opt-calm.httpup xorg-calm.httpup
+	irradium-core.httpup irradium-opt.httpup irradium-xorg.httpup
+	irradium-xfce.httpup.inactive
 	core.rsync opt.rsync xorg.rsync
 	contrib.rsync.inactive)
 
@@ -17,9 +18,10 @@ build () {
 	make
 	make DESTDIR=$PKG MANDIR=/usr/share/man install
 
-	install -m 0644 $SRC/core-calm.httpup $PKG/etc/ports
-	install -m 0644 $SRC/opt-calm.httpup $PKG/etc/ports
-	install -m 0644 $SRC/xorg-calm.httpup $PKG/etc/ports
+	install -m 0644 $SRC/irradium-core.httpup $PKG/etc/ports
+	install -m 0644 $SRC/irradium-opt.httpup $PKG/etc/ports
+	install -m 0644 $SRC/irradium-xorg.httpup $PKG/etc/ports
+	install -m 0644 $SRC/irradium-xfce.httpup.inactive $PKG/etc/ports
 	install -m 0644 $SRC/core.rsync $PKG/etc/ports
 	install -m 0644 $SRC/opt.rsync $PKG/etc/ports
 	install -m 0644 $SRC/xorg.rsync $PKG/etc/ports
