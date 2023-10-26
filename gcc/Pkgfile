@@ -11,8 +11,8 @@ source=(https://sourceware.org/pub/gcc/releases/gcc-$version/$name-$version.tar.
 	$name-aarch64-dirs.patch fix-nested-generic-lambda.patch)
 
 build() {
-	[[ $(unmae -m) == "aarch64" ]] && GCC_ARCHOPTS="--enable-multilib"
-	[[ $(unmae -m) == "riscv64" ]] && GCC_ARCHOPTS="--disable-multilib --with-slibdir=/lib"
+	[[ $(uname -m) == "aarch64" ]] && GCC_ARCHOPTS="--enable-multilib"
+	[[ $(uname -m) == "riscv64" ]] && GCC_ARCHOPTS="--disable-multilib --with-slibdir=/lib"
 
 	patch -d $name-$version -p1 -i $SRC/$name-nocheck-fixincludes.patch
 	patch -d $name-$version -p1 -i $SRC/$name-4.7.3-multilib-dirs.patch
