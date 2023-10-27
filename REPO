@@ -8,6 +8,7 @@ d:prt-get
 d:gdbm
 d:gcc
 d:glibc
+d:flex
 f:d41d8cd98f00b204e9800998ecf8427e:filesystem/.footprint
 f:3a874b8bcc6a2c8929f331db1dbe4eff:filesystem/.signature
 f:23ca393d922527b8b487020236c349da:filesystem/Pkgfile
@@ -87,3 +88,6 @@ f:5d37085c6a7714fcc5443f05a07a873d:glibc/.nostrip
 f:2cd83edc1d34b4446259508161c674c8:glibc/.signature
 f:8a65b146e5395ce08a822c6772744a6e:glibc/Pkgfile
 f:f97e0f0b12c43252fc60350f28797709:glibc/glibc-2.36-7.patch
+f:9165347c2c736b0c48b1846004e650e9:flex/.footprint
+f:fa859f9663558ab2b25a9df3b9ad8c40:flex/.signature
+f:c37d29a3858944cc65d34b7cc33ca64f:flex/Pkgfile
