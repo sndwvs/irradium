@@ -10,6 +10,7 @@ d:gcc
 d:glibc
 d:flex
 d:binutils
+d:cmake
 f:d41d8cd98f00b204e9800998ecf8427e:filesystem/.footprint
 f:3a874b8bcc6a2c8929f331db1dbe4eff:filesystem/.signature
 f:b2f414ce5064a36d8ae51b4b2dd2bd72:filesystem/Pkgfile
@@ -95,3 +96,6 @@ f:c37d29a3858944cc65d34b7cc33ca64f:flex/Pkgfile
 f:f5b5e6e7cc11185f20baedfb2bce2a4a:binutils/.footprint
 f:e174879c67c5c0a96f70facaf918f626:binutils/.signature
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
+f:68b61055a746a9c23c79cd48e50c8cf1:cmake/.footprint
+f:56a4c1bcffe6936dda44cf23edc25fb1:cmake/.signature
+f:4a61becf937e4e0f9d36b74e3cfb773d:cmake/Pkgfile
