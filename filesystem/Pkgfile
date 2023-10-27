@@ -86,7 +86,7 @@ NAME=irradium
 VERSION="$version"
 ID=irradium
 PRETTY_NAME="irradium"
-HOME_URL="https://irradium.org"
-BUG_REPORT_URL="https://irradium.org"
+HOME_URL="https://irradium.org/"
+BUG_REPORT_URL="https://irradium.org/bugs/"
 EOF
 }
