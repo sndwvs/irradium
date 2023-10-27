@@ -9,9 +9,10 @@ d:gdbm
 d:gcc
 d:glibc
 d:flex
+d:binutils
 f:d41d8cd98f00b204e9800998ecf8427e:filesystem/.footprint
 f:3a874b8bcc6a2c8929f331db1dbe4eff:filesystem/.signature
-f:23ca393d922527b8b487020236c349da:filesystem/Pkgfile
+f:b2f414ce5064a36d8ae51b4b2dd2bd72:filesystem/Pkgfile
 f:915cf64e2ab613887db6ce2e2c41eeb4:filesystem/fstab
 f:f05649d0184df6b4550efa3c513dde0e:filesystem/group
 f:5b18f7334387c8f5a4b213ac4264ff2b:filesystem/issue
@@ -91,3 +92,6 @@ f:f97e0f0b12c43252fc60350f28797709:glibc/glibc-2.36-7.patch
 f:9165347c2c736b0c48b1846004e650e9:flex/.footprint
 f:fa859f9663558ab2b25a9df3b9ad8c40:flex/.signature
 f:c37d29a3858944cc65d34b7cc33ca64f:flex/Pkgfile
+f:f5b5e6e7cc11185f20baedfb2bce2a4a:binutils/.footprint
+f:e174879c67c5c0a96f70facaf918f626:binutils/.signature
+f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
