@@ -7,6 +7,7 @@ d:pkgutils
 d:prt-get
 d:gdbm
 d:gcc
+d:glibc
 f:d41d8cd98f00b204e9800998ecf8427e:filesystem/.footprint
 f:3a874b8bcc6a2c8929f331db1dbe4eff:filesystem/.signature
 f:23ca393d922527b8b487020236c349da:filesystem/Pkgfile
@@ -73,3 +74,16 @@ f:49d27a85fa510edfa7c506b9db89482f:gcc/.signature
 f:c6875c8ce33e8d7178fcc80f93741769:gcc/Pkgfile
 f:507c1780a370500cdb233be39cc2c772:gcc/fix-nested-generic-lambda.patch
 f:dd44eeb6b7d12824ac0eb56e95713a59:gcc/gcc-aarch64-dirs.patch
+f:d36147e402e2e8aae19982d3436b3bec:glibc/.footprint
+f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
+f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
+f:f7fefce570a3c776e26e778c5e401490:glibc/ld.so.conf
+f:58867be9286ece55adff1226216fdd9f:glibc/locale-gen
+f:518de5e52f9166e58ed613a0d636e774:glibc/locale.gen.in
+f:75931315bf9bc9be15a5e25e4ddd5f0d:glibc/nsswitch.conf
+f:8ade3a1b3e11426f6c070daa3906c6f7:glibc/post-install
+f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
+f:5d37085c6a7714fcc5443f05a07a873d:glibc/.nostrip
+f:2cd83edc1d34b4446259508161c674c8:glibc/.signature
+f:8a65b146e5395ce08a822c6772744a6e:glibc/Pkgfile
+f:f97e0f0b12c43252fc60350f28797709:glibc/glibc-2.36-7.patch
