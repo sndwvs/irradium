@@ -70,6 +70,6 @@ f:61a057afa31006764b957a483ba90b9d:gcc/gcc-4.7.3-multilib-dirs.patch
 f:7c9128522053af79791bcfdd55834c2a:gcc/gcc-nocheck-fixincludes.patch
 f:a2de3a97241a6f5b8d55130be8877fee:gcc/.footprint
 f:49d27a85fa510edfa7c506b9db89482f:gcc/.signature
-f:d76357f638c8c615cd6a8f6894983f75:gcc/Pkgfile
+f:c6875c8ce33e8d7178fcc80f93741769:gcc/Pkgfile
 f:507c1780a370500cdb233be39cc2c772:gcc/fix-nested-generic-lambda.patch
 f:dd44eeb6b7d12824ac0eb56e95713a59:gcc/gcc-aarch64-dirs.patch
