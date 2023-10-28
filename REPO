@@ -6,7 +6,6 @@ d:medit
 d:sassc
 d:libglade
 d:libglade-compat
-d:pkgutils
 d:pygtk
 d:rust
 f:b931d81a019b3619260aeb89827f6be2:keybinder3/Pkgfile
@@ -36,8 +35,6 @@ f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-
 f:b49c2cd576cf8fb4d2373ca8dbfac511:libglade-compat/Pkgfile
 f:0b69b7e183ef02e5bdde1b757b5516f2:libglade-compat/.footprint
 f:8b26677e7291396f36efd4b7527bdaa9:libglade-compat/.md5sum
-f:64347d3b13c1cbc1b082f9cbc0840f8f:pkgutils/Pkgfile
-f:2751668634604cf74c51d347618c3825:pkgutils/pkgmk.conf
 f:1592034140f6a3200e359ee75ea6a85a:pygtk/.md5sum
 f:1fd62a70a3b296c59be018c1e8d4b229:pygtk/config.guess-support-aarch64-riscv64.patch
 f:94825788efcf66f56afcbd921d37a783:pygtk/Pkgfile
