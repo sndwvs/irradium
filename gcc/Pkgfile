@@ -19,9 +19,11 @@ build() {
 	patch -d $name-$version -p1 -i $SRC/$name-riscv-disable-multilib-support.patch
 	patch -d $name-$version -p1 -i $SRC/fix-nested-generic-lambda.patch
 
-	# pipe fails tests
-	CFLAGS=${CFLAGS/-pipe/}
-	CXXFLAGS=${CXXFLAGS/-pipe/}
+	# fcf-protection fails tests
+	CFLAGS=${CFLAGS/-fcf-protection/}
+	CXXFLAGS=${CXXFLAGS/-fcf-protection/}
+	CFLAGS=${CFLAGS/-Werror=format-security/}
+	CXXFLAGS=${CXXFLAGS/-Werror=format-security/}
 
 	mkdir build
 	cd build

@@ -74,7 +74,7 @@ f:61a057afa31006764b957a483ba90b9d:gcc/gcc-4.7.3-multilib-dirs.patch
 f:7c9128522053af79791bcfdd55834c2a:gcc/gcc-nocheck-fixincludes.patch
 f:a2de3a97241a6f5b8d55130be8877fee:gcc/.footprint
 f:49d27a85fa510edfa7c506b9db89482f:gcc/.signature
-f:44122f9b6dae7622bc652e4f721b3d82:gcc/Pkgfile
+f:6e7a510edbf7c3b9e36e338c9503cdf3:gcc/Pkgfile
 f:507c1780a370500cdb233be39cc2c772:gcc/fix-nested-generic-lambda.patch
 f:032ba6ae0bd4d6e405d012084816e334:gcc/gcc-aarch64-disable-multilib-support.patch
 f:d999afb2c8abba1591154b6e6717e6d8:gcc/gcc-riscv-disable-multilib-support.patch
