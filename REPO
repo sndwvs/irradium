@@ -49,3 +49,4 @@ f:b6c42cd675b3cdffbd05e5824a6a256e:rust/0001-bootstrap-Change-libexec-dir.patch
 f:524b2fea999df094231bd666b0d803ba:rust/0001-cargo-Change-libexec-dir.patch
 f:1513d503150fea7a73d3c81b9c7436e3:rust/0002-compiler-Change-LLVM-targets.patch
 f:08206d905b0749e1750a9a91f0f5ea6d:rust/maintainer_clean_footprint
+f:d32239bcb673463ab874e80d47fae504:COPYING
