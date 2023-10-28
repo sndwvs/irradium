@@ -9,6 +9,7 @@ d:libglade-compat
 d:pygtk
 d:rust
 d:opus
+d:python
 f:b931d81a019b3619260aeb89827f6be2:keybinder3/Pkgfile
 f:a989ce5f7666fdc91e55d0b143ac5fd0:libsass/Pkgfile
 f:0389af1eb18d4779b7cc7bdca4b6e35e:lightdm/50-directories.conf
@@ -51,3 +52,10 @@ f:d32239bcb673463ab874e80d47fae504:COPYING
 f:374070b50c8244a68857f578120ebd5d:opus/.footprint
 f:69dc11ec3e783a685e28d42733c28e34:opus/.signature
 f:c4d1603430a3d790c66f8b6cdfa1dc45:opus/Pkgfile
+f:5b7e8a119e09a1cbe747695617f6bc97:python/.footprint
+f:7a2b47ae647c27a8973ceb796a87afa5:python/.signature
+f:ebbe2c197d4cf6fbce10a17e09d2a609:python/CVE-2019-20907.patch
+f:59562d92ee153e7501f73be4ebd9e636:python/CVE-2020-26116.patch
+f:08323c8fe8a3c55d4609ebd6cd0b41ee:python/CVE-2021-3177.patch
+f:df61642943d353bec515a96e5a09d100:python/Pkgfile
+f:c5efe141e71f4dc85e71b3cae482ad85:python/pyconfig.h
