@@ -1,0 +1,10 @@
+untrusted comment: verify with /etc/ports/opt.pub
+RWSE3ohX2g5d/Xx27fCKwzPQZm6cN/jnFlz5T4Wl+lMxYhD3LkLOLf1dhwuhA3GBnZuZGarshaXZq3/KztceLDrMZ76Svr2G0w4=
+SHA256 (Pkgfile) = cb6128114a9a0eb5a7778ae3eca78b47df6cce30a55132af9ec14fbd819c0e75
+SHA256 (.footprint) = 72940e844772ce3754a0264e3dc4f9afc1d7c7abf5b1cc745e5c0c96edbebc15
+SHA256 (llvm-17.0.3.src.tar.xz) = 18fa6b5f172ddf5af9b3aedfdb58ba070fd07fc45e7e589c46c350b3cc066bc1
+SHA256 (cmake-17.0.3.src.tar.xz) = 54fc534f0da09088adbaa6c3bfc9899a500153b96e60c2fb9322a7aa37b1027a
+SHA256 (third-party-17.0.3.src.tar.xz) = 6e84ff16044d698ff0f24e7445f9f47818e6523913a006a5e1ea79625b429b7b
+SHA256 (install-prefix.patch) = 2649b61a459eb6d8a9aca38ab411aec27eeae57fe82e32d135db4ccb353c9dda
+SHA256 (rust-feature-tables.patch) = 88470afc557650112af05e9055d0010f07a888c34fcc61ed8b7cc165d8ecd9af
+SHA256 (llvm-config.h) = 2227b83b904348e5530f3475c978e11cb0f05a85024781dcb49ac86b65582707
