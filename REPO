@@ -12,6 +12,7 @@ d:opus
 d:python
 d:llvm
 d:startup-notification
+d:harfbuzz
 f:b931d81a019b3619260aeb89827f6be2:keybinder3/Pkgfile
 f:a989ce5f7666fdc91e55d0b143ac5fd0:libsass/Pkgfile
 f:0389af1eb18d4779b7cc7bdca4b6e35e:lightdm/50-directories.conf
@@ -71,3 +72,6 @@ f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
 f:db757b2e5a75e3cb9a5e2bdde32e6d3b:startup-notification/.footprint
 f:1b55fb23e4ca10397f5587e990656019:startup-notification/.signature
 f:5e60010ec73d7ec223954bc4b4498a9a:startup-notification/Pkgfile
+f:76523b390cbf0b50d43a2e1d829f9c69:harfbuzz/.footprint
+f:674fae555e8d1b17f7345d6a0122b15d:harfbuzz/.signature
+f:437e6c8bb978b15bbad0db211974abba:harfbuzz/Pkgfile
