@@ -4,7 +4,7 @@
 # Depends on: libxfce4ui xfconf ibxmu libwnck3
 
 name=xfce4-taskmanager
-version=1.5.5
+version=1.5.6
 release=1
 source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2)
 
@@ -15,7 +15,8 @@ build(){
     --prefix=/usr \
     --sysconfdir=/etc \
     --localstatedir=/var \
-    --disable-debug
+    --disable-debug \
+    --disable-nls
 
   make
   make DESTDIR=$PKG install || exit 1

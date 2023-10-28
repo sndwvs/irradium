@@ -4,7 +4,7 @@
 # Depends on: desktop-file-utils libexif hicolor-icon-theme libnotify pcre2 libgudev exo libxfce4util libxfce4ui libpng
 
 name=thunar
-version=4.18.4
+version=4.18.8
 release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
@@ -19,7 +19,8 @@ build(){
     --enable-notifications \
     --enable-exif \
     --disable-debug \
-    --enable-gtk-doc=no
+    --enable-gtk-doc=no \
+    --disable-nls
 
   make
   make DESTDIR=$PKG install || exit 1

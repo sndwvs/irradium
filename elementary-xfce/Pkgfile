@@ -4,7 +4,7 @@
 # Depends on: gtk3 optipng
 
 name=elementary-xfce
-version=0.17
+version=0.18
 release=1
 source=(https://github.com/shimmerproject/$name/archive/v$version.tar.gz)
 

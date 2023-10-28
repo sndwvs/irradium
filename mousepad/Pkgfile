@@ -1,10 +1,10 @@
-# Description: Application launcher and finder
-# URL: https://docs.xfce.org/xfce/xfce4-appfinder/start
+# Description: Widgets library for the Xfce desktop environment
+# URL: https://www.xfce.org/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: ibxfce4ui garcon xfconf hicolor-icon-theme
+# Depends on: desktop-file-utils gtksourceview4 hicolor-icon-theme gspell polkit
 
-name=xfce4-appfinder
-version=4.18.0
+name=mousepad
+version=0.6.1
 release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
@@ -14,13 +14,17 @@ build(){
   ./configure \
     --prefix=/usr \
     --sysconfdir=/etc \
+    --libexecdir=/usr/lib \
+    --sbindir=/usr/bin \
     --localstatedir=/var \
     --disable-debug \
+    --enable-gtk-doc=no \
     --disable-nls
 
   make
   make DESTDIR=$PKG install || exit 1
 
   rm -r $PKG/usr/share/locale
+  rm -r $PKG/usr/share/gtk-doc
 
 }

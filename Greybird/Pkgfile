@@ -4,7 +4,7 @@
 # Depends on: gdk-pixbuf librsvg meson sassc
 
 name=Greybird
-version=3.23.2
+version=3.23.3
 release=1
 source=(https://github.com/shimmerproject/$name/archive/v$version.tar.gz)
 

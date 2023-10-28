@@ -16,7 +16,8 @@ build(){
     --sysconfdir=/etc \
     --libexecdir=/usr/lib \
     --localstatedir=/var \
-    --disable-debug
+    --disable-debug \
+    --disable-nls
 
   make
   make DESTDIR=$PKG install || exit 1

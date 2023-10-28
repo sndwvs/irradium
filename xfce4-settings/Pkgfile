@@ -4,7 +4,7 @@
 # Depends on: exo garcon libxfce4ui xfconf libnotify libxklavier elementary-xfce gnome-themes-extra
 
 name=xfce4-settings
-version=4.18.2
+version=4.18.3
 release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2
         xfce4-settings.theme.diff.gz  xfce4-settings.xft.defaults.diff.gz)
@@ -24,7 +24,8 @@ build(){
     --localstatedir=/var \
     --enable-pluggable-dialogs \
     --enable-sound-settings \
-    --disable-debug
+    --disable-debug \
+    --disable-nls
 
   make
   make DESTDIR=$PKG install || exit 1

@@ -1,7 +1,7 @@
     # Description: Xfce's window manager
 # URL: https://docs.xfce.org/xfce/xfwm4/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: libxfce4ui xfconf libwnck3 libepoxy libxpresent hicolor-icon-theme
+# Depends on: libwnck-gtk3 libxfce4ui libxfce4util startup-notification xorg-libxpresenty
 
 name=xfwm4
 version=4.18.0
@@ -17,10 +17,15 @@ build(){
     --sysconfdir=/etc \
     --localstatedir=/var \
     --enable-startup-notification \
-    --enable-randr \
-    --enable-compositor \
+    --enable-shared \
     --enable-xsync \
-    --disable-debug
+    --enable-render \
+    --enable-randr \
+    --enable-xpresent \
+    --enable-compositor \
+    --enable-epoxy \
+    --disable-debug \
+    --disable-nls
 
   make
   make DESTDIR=$PKG install || exit 1

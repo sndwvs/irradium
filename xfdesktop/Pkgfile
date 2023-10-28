@@ -17,7 +17,8 @@ build(){
     --enable-thunarx \
     --enable-notifications \
     --disable-debug \
-    --enable-gtk-doc=no
+    --enable-gtk-doc=no \
+    --disable-nls
 
   make
   make DESTDIR=$PKG install || exit 1
