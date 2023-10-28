@@ -59,7 +59,7 @@ f:42de24f40ae2c7ea1b4c59352962029f:db/db-5.3.28_cve-2019-2708.patch
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:a0cd3dced180943a9e6a9757b629a631:pkgutils/.signature
 f:fa20b1877aa9fc8f9cfcfd45e73e60be:pkgutils/Pkgfile
-f:2751668634604cf74c51d347618c3825:pkgutils/pkgmk.conf
+f:ec19bb04372c324c36eb6c2bc8dd73a6:pkgutils/pkgmk.conf
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
 f:077fea960d8a490412eed744ce9bcc40:prt-get/.footprint
