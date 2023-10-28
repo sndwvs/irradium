@@ -19,9 +19,9 @@ build() {
 	patch -d $name-$version -p1 -i $SRC/$name-riscv-disable-multilib-support.patch
 	patch -d $name-$version -p1 -i $SRC/fix-nested-generic-lambda.patch
 
-	# fcf-protection fails tests
-	CFLAGS=${CFLAGS/-fcf-protection/}
-	CXXFLAGS=${CXXFLAGS/-fcf-protection/}
+	# Credits @allanmcrae
+	# https://github.com/allanmcrae/toolchain/blob/f18604d70c5933c31b51a320978711e4e6791cf1/gcc/PKGBUILD
+	# TODO: properly deal with the build issues resulting from this
 	CFLAGS=${CFLAGS/-Werror=format-security/}
 	CXXFLAGS=${CXXFLAGS/-Werror=format-security/}
 
