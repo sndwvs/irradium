@@ -13,6 +13,7 @@ d:binutils
 d:cmake
 d:kbd
 d:libpcre
+d:mlocate
 f:d41d8cd98f00b204e9800998ecf8427e:filesystem/.footprint
 f:3a874b8bcc6a2c8929f331db1dbe4eff:filesystem/.signature
 f:b2f414ce5064a36d8ae51b4b2dd2bd72:filesystem/Pkgfile
@@ -109,3 +110,8 @@ f:3347e420b2ae60c7b7815d774d5dee74:kbd/Pkgfile
 f:70363326336a5214c77029a68a6e8ff9:libpcre/.footprint
 f:acda2552daeadf967b9baec814472e83:libpcre/.signature
 f:3ff572040d876ab1c93e1669b85a35b1:libpcre/Pkgfile
+f:00947fd6d4e8c1316d4a7ff33b08b64e:mlocate/.footprint
+f:4a662da4b524e0f4e21f29ea8b34637b:mlocate/.signature
+f:1d8f153e2d849b7f52571872248432e5:mlocate/Pkgfile
+f:7d67badc004a8ade29648c8449b479e4:mlocate/mlocate
+f:f70c051ad1e30aa76820c6c6e7485eae:mlocate/updatedb.conf
