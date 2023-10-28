@@ -8,6 +8,7 @@ release=2
 source=(https://downloads.xiph.org/releases/opus/opus-$version.tar.gz)
 
 build() {
+    cd $name-$version
 
   ./configure \
     --prefix=/usr \
