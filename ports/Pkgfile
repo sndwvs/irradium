@@ -8,7 +8,9 @@ release=3
 
 source=(https://crux.nu/files/tools/ports/$name-$version.tar.gz
 	core.pub opt.pub xorg.pub contrib.pub
-	irradium-core.httpup irradium-opt.httpup irradium-xorg.httpup
+	irradium-core.pub irradium-opt.pub irradium-xorg.pub
+	irradium-xfce.pub irradium-core.httpup
+	irradium-opt.httpup irradium-xorg.httpup
 	irradium-xfce.httpup.inactive
 	core.rsync opt.rsync xorg.rsync
 	contrib.rsync.inactive)
@@ -17,7 +19,6 @@ build () {
 	cd $name-$version
 	make
 	make DESTDIR=$PKG MANDIR=/usr/share/man install
-
 	install -m 0644 $SRC/irradium-core.httpup $PKG/etc/ports
 	install -m 0644 $SRC/irradium-opt.httpup $PKG/etc/ports
 	install -m 0644 $SRC/irradium-xorg.httpup $PKG/etc/ports
@@ -26,6 +27,10 @@ build () {
 	install -m 0644 $SRC/opt.rsync $PKG/etc/ports
 	install -m 0644 $SRC/xorg.rsync $PKG/etc/ports
 	install -m 0644 $SRC/contrib.rsync.inactive $PKG/etc/ports
+	install -m 0644 $SRC/irradium-core.pub $PKG/etc/ports
+	install -m 0644 $SRC/irradium-opt.pub $PKG/etc/ports
+	install -m 0644 $SRC/irradium-xorg.pub $PKG/etc/ports
+	install -m 0644 $SRC/irradium-xfce.pub $PKG/etc/ports
 	install -m 0644 $SRC/core.pub $PKG/etc/ports
 	install -m 0644 $SRC/opt.pub $PKG/etc/ports
 	install -m 0644 $SRC/xorg.pub $PKG/etc/ports
