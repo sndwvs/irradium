@@ -12,6 +12,7 @@ d:flex
 d:binutils
 d:cmake
 d:kbd
+d:libpcre
 f:d41d8cd98f00b204e9800998ecf8427e:filesystem/.footprint
 f:3a874b8bcc6a2c8929f331db1dbe4eff:filesystem/.signature
 f:b2f414ce5064a36d8ae51b4b2dd2bd72:filesystem/Pkgfile
@@ -105,3 +106,6 @@ f:d32239bcb673463ab874e80d47fae504:COPYING
 f:cb16f26de91da8792221c4bb295a5329:kbd/.footprint
 f:7f1eed3acbbcd130c8800a0c53e21237:kbd/.signature
 f:3347e420b2ae60c7b7815d774d5dee74:kbd/Pkgfile
+f:70363326336a5214c77029a68a6e8ff9:libpcre/.footprint
+f:acda2552daeadf967b9baec814472e83:libpcre/.signature
+f:3ff572040d876ab1c93e1669b85a35b1:libpcre/Pkgfile
