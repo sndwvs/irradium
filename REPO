@@ -11,6 +11,7 @@ d:rust
 d:opus
 d:python
 d:llvm
+d:startup-notification
 f:b931d81a019b3619260aeb89827f6be2:keybinder3/Pkgfile
 f:a989ce5f7666fdc91e55d0b143ac5fd0:libsass/Pkgfile
 f:0389af1eb18d4779b7cc7bdca4b6e35e:lightdm/50-directories.conf
@@ -67,3 +68,6 @@ f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:27e80ba3bef2cc48c2d41d29e44237dc:llvm/llvm-config.h
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
+f:db757b2e5a75e3cb9a5e2bdde32e6d3b:startup-notification/.footprint
+f:1b55fb23e4ca10397f5587e990656019:startup-notification/.signature
+f:5e60010ec73d7ec223954bc4b4498a9a:startup-notification/Pkgfile
