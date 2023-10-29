@@ -50,10 +50,9 @@ f:eac8e165ad56dd6438fe556061dd9e9e:rust/.footprint
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:709f894b8e710c334590b40a0746ad30:rust/.signature
 f:be0cb1f8f06b2461c67857f7d6225253:rust/0001-bootstrap-Change-libexec-dir.patch
-f:2db8ab41638d26e25aace865f85df6a6:rust/0001-cargo-Change-libexec-dir.patch
 f:035ed9138488ff51b88f628d88284d89:rust/0002-compiler-Change-LLVM-targets.patch
 f:ddbc0b79f535ccf85f2492900fe8597e:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
-f:324fc7252ee885175dc3f6842647389b:rust/Pkgfile
+f:b84f0d3c097986869dffc5f7b0bb8d09:rust/Pkgfile
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:374070b50c8244a68857f578120ebd5d:opus/.footprint
