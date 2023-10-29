@@ -8,6 +8,7 @@ name=mesa
 version=23.2.1
 release=1
 source=(https://archive.mesa3d.org/$name-$version.tar.xz
+	patches/23827.patch patches/2d4fe5f229791fde52846b3f583c12508b5109d6.patch
 	patches/0001-panfrost-Abstract-some-kernel-driver-operations.patch
 	patches/0002-panfrost-Use-the-kmod-abstraction.patch
 	patches/0003-panfrost-Introduce-a-PAN_BO_SHAREABLE-flag.patch
