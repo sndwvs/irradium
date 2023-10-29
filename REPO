@@ -71,5 +71,5 @@ f:0449459489d4a6d8b6cc22d7cc0b4500:mesa/patches/0061-panfrost-Prepare-uniform-bu
 f:50f711fe59c59d8089e503d7c6532367:mesa/patches/0062-panfrost-Use-a-1-task-increment-in-csf_launch_xfb.patch
 f:536d48251699684557dcb2f65029432c:mesa/patches/0063-panfrost-Make-CS-decoding-more-robust.patch
 f:8186b2b05c0ee6966a94a2ee97cd5fac:mesa/patches/0064-panfrost-Move-occlusion_query-init-out-of-the-if-fs_.patch
-f:1d0fbb1e3fc0c6a3dff59d34e8d8113a:mesa/Pkgfile
+f:22d275710c011b60580c17b56d9f2aa3:mesa/Pkgfile
 f:c530d42f82a46a1a6812cbbc8e916d31:mesa/README.md
