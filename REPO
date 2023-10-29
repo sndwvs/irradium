@@ -62,6 +62,7 @@ f:13afde59ee7efaa4649fe1369ca8f01a:mesa/patches/0052-panfrost-Rename-panfrost_st
 f:01be7dfa5afd5b77db4ea5140a5f6bd2:mesa/patches/0053-panfrost-Provide-CSF-JM-specific-emit_fragment_job-h.patch
 f:6477303cb38ed970d54bd0d3c2bb8b16:mesa/patches/0054-panfrost-Use-JOBX-for-job-backend-specific-launch_xf.patch
 f:5258e3aa22c0399728425b2d896a16fb:mesa/patches/0055-panfrost-Deduplicate-panfrost_launch_grid.patch
+f:806e072f580cb826d93d9bd76fcb141c:mesa/patches/23827.patch
 f:0716f9af12279f482d41ee45568d918f:mesa/patches/0056-panfrost-Move-vertex_count-calculation-out-of-panfro.patch
 f:369600bf7a1cacfdae09a8144444ec1a:mesa/patches/0057-panfrost-Move-job-backend-specific-bits-out-of-panfr.patch
 f:ea4ddd01088e987574a1ed87a10f38ac:mesa/patches/0058-panfrost-Allocate-the-temporary-geometry-buffer-once.patch
@@ -71,5 +72,6 @@ f:0449459489d4a6d8b6cc22d7cc0b4500:mesa/patches/0061-panfrost-Prepare-uniform-bu
 f:50f711fe59c59d8089e503d7c6532367:mesa/patches/0062-panfrost-Use-a-1-task-increment-in-csf_launch_xfb.patch
 f:536d48251699684557dcb2f65029432c:mesa/patches/0063-panfrost-Make-CS-decoding-more-robust.patch
 f:8186b2b05c0ee6966a94a2ee97cd5fac:mesa/patches/0064-panfrost-Move-occlusion_query-init-out-of-the-if-fs_.patch
-f:22d275710c011b60580c17b56d9f2aa3:mesa/Pkgfile
+f:a92a0d5d4cf9604a4c6c925c5b3b8ebe:mesa/patches/2d4fe5f229791fde52846b3f583c12508b5109d6.patch
+f:b38bb73a75cfe6739e419c2a13ddcfd9:mesa/Pkgfile
 f:c530d42f82a46a1a6812cbbc8e916d31:mesa/README.md
