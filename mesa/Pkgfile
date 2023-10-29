@@ -76,7 +76,7 @@ build() {
 	prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
 	prt-get isinst libclc spirv-llvm-translator && PKGMK_MESA+=' -D gallium-opencl=icd'
 	prt-get isinst libclc rust-bindgen spirv-llvm-translator && PKGMK_MESA+=' -D gallium-rusticl=true'
-	prt-get isinst glslang && PKGMK_MESA+=' -D vulkan-drivers=auto -D vulkan-layers=device-select,overlay' || PKGMK_MESA+=' -D vulkan-drivers='
+	prt-get isinst glslang && PKGMK_MESA+=' -D vulkan-drivers=amd,swrast,broadcom,panfrost -D vulkan-layers=device-select,overlay' || PKGMK_MESA+=' -D vulkan-drivers='
 	prt-get isinst libunwind && PKGMK_MESA+=' -D libunwind=enabled'
 	prt-get isinst libva && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
 	prt-get isinst libvdpau && PKGMK_MESA+=' -D gallium-vdpau=enabled' || PKGMK_MESA+=' -D gallium-vdpau=disabled'
