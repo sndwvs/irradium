@@ -1,17 +1,17 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
-From: "Jan Alexander Steffens (heftig)" <jan.steffens@gmail.com>
+From: "Jan Alexander Steffens (heftig)" <heftig@archlinux.org>
 Date: Thu, 6 May 2021 20:13:31 +0200
 Subject: [PATCH] cargo: Change libexec dir
 
 ---
- src/cargo/ops/registry/auth.rs | 2 +-
+ src/cargo/util/auth/mod.rs | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/src/cargo/ops/registry/auth.rs b/src/cargo/ops/registry/auth.rs
-index 648e051e6dc2..a7b24e07e552 100644
---- a/src/cargo/ops/registry/auth.rs
-+++ b/src/cargo/ops/registry/auth.rs
-@@ -224,7 +224,7 @@ fn sysroot_credential(
+diff --git a/src/cargo/util/auth/mod.rs b/src/cargo/util/auth/mod.rs
+index 58309964f493..f621e1d643c4 100644
+--- a/src/cargo/util/auth/mod.rs
++++ b/src/cargo/util/auth/mod.rs
+@@ -711,7 +711,7 @@ fn sysroot_credential(
          .parent()
          .and_then(|p| p.parent())
          .ok_or_else(|| format_err!("expected cargo path {}", cargo.display()))?;
@@ -20,3 +20,4 @@ index 648e051e6dc2..a7b24e07e552 100644
          "cargo-credential-{}{}",
          cred_name,
          std::env::consts::EXE_SUFFIX
+
