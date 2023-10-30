@@ -77,7 +77,7 @@ f:4cfb1249b0f9608f78e0c24dddff1b07:xfce4-session/Pkgfile
 f:8df6ba54956111688839e483afaff5e0:xfce4-session/use-xfss-by-default-in-xfce.patch.gz
 f:f3d82bb06f9ec50cc38d634257113810:xfce4-session/.md5sum
 f:886c6b33e5e8cb6938e60662efd5532d:xfce4-session/.footprint
-f:96442e95e67e538d48f05f7c35de3a1f:xfce4-settings/Pkgfile
+f:afc836623730705b8b6627a2184ce9c6:xfce4-settings/Pkgfile
 f:6a046f6f2c81ffd718601542389340b0:xfce4-settings/xfce4-settings.theme.diff.gz
 f:7e44e7233a51eb31b11369b7f6a6792a:xfce4-settings/xfce4-settings.xft.defaults.diff.gz
 f:48c9e6df179c2bbb770dd407bcdb2683:xfce4-systemload-plugin/Pkgfile
