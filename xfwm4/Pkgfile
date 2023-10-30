@@ -30,7 +30,6 @@ build(){
   make
   make DESTDIR=$PKG install || exit 1
 
-  rm -r $PKG/usr/share/locale
   find $PKG -name README -exec rm '{}' \+
 
   install -D -m755 $SRC/xinitrc.xfce $PKG/etc/X11/xinit/xinitrc.xfce
