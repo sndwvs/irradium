@@ -13,6 +13,8 @@ d:python
 d:llvm
 d:startup-notification
 d:harfbuzz
+d:zip
+d:libtheora
 f:b931d81a019b3619260aeb89827f6be2:keybinder3/Pkgfile
 f:a989ce5f7666fdc91e55d0b143ac5fd0:libsass/Pkgfile
 f:0389af1eb18d4779b7cc7bdca4b6e35e:lightdm/50-directories.conf
@@ -78,3 +80,13 @@ f:5e60010ec73d7ec223954bc4b4498a9a:startup-notification/Pkgfile
 f:76523b390cbf0b50d43a2e1d829f9c69:harfbuzz/.footprint
 f:674fae555e8d1b17f7345d6a0122b15d:harfbuzz/.signature
 f:437e6c8bb978b15bbad0db211974abba:harfbuzz/Pkgfile
+f:5162e32d5379d4a34274987c389a85b4:zip/.footprint
+f:3311402d3ddb5a0d4e82c26eb54b6481:zip/.signature
+f:dd97abd563379eb438a09d654a92845c:zip/zip-3.0-currdir.patch
+f:929f39071a6e4491a7b1858b8fd25a9d:zip/zip-3.0-exec-shield.patch
+f:e0418c610312fb6e417398f1a29b7d07:zip/zip-3.0-format-security.patch
+f:8d60750c2f922cebbefd9de596518403:zip/zipnote.patch
+f:160dd1867ecbde8da924bedd4ca4da17:zip/Pkgfile
+f:4591619096a713a263fd7e57df3bbb49:libtheora/.footprint
+f:df9eafc048e222d79ba5d8ea0d180621:libtheora/.signature
+f:26b65479c14e8ff3fad493216daa083e:libtheora/Pkgfile
