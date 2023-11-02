@@ -14,6 +14,7 @@ d:cmake
 d:kbd
 d:libpcre
 d:mlocate
+d:dhcpcd
 f:d41d8cd98f00b204e9800998ecf8427e:filesystem/.footprint
 f:3a874b8bcc6a2c8929f331db1dbe4eff:filesystem/.signature
 f:b2f414ce5064a36d8ae51b4b2dd2bd72:filesystem/Pkgfile
@@ -67,6 +68,7 @@ f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:a0cd3dced180943a9e6a9757b629a631:pkgutils/.signature
 f:fa20b1877aa9fc8f9cfcfd45e73e60be:pkgutils/Pkgfile
 f:f1927bc2ae6c00c3191265c4170b9be8:pkgutils/pkgmk.conf
+f:e0656b4b1cb17aa24e859036db5cd806:pkgutils/pkgutils-5.40.10.tar.xz
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
 f:077fea960d8a490412eed744ce9bcc40:prt-get/.footprint
@@ -119,3 +121,8 @@ f:4a662da4b524e0f4e21f29ea8b34637b:mlocate/.signature
 f:1d8f153e2d849b7f52571872248432e5:mlocate/Pkgfile
 f:7d67badc004a8ade29648c8449b479e4:mlocate/mlocate
 f:f70c051ad1e30aa76820c6c6e7485eae:mlocate/updatedb.conf
+f:131a7abf96b5cbd339cba03d9cd7e595:dhcpcd/.footprint
+f:9b8f2bac610aad49e84ae7398c5735c1:dhcpcd/pre-install
+f:0b056dd3e5a3e1eacb7c9b38f0641e4d:dhcpcd/rc.dhcpcd
+f:9619b25ae3a52c477250421a9064b6f0:dhcpcd/.signature
+f:ac5f387f71ab4d79c7a6c056d9d2ddba:dhcpcd/Pkgfile
