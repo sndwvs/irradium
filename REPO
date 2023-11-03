@@ -35,8 +35,8 @@ f:bbe75de2204f61aa38c662ee43691d16:pkgconf/Pkgfile
 f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
 f:687531b3aaa50c078ac5b51afbfba743:pkgconf/.md5sum
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
-f:10f2f6be78dfed73f01a00a216ba1c34:ports/.footprint
-f:877583a9e621f869c5bc62f538a4ef32:ports/.signature
+f:d4c72854441fa2a9cbd0085ad891f05a:ports/.footprint
+f:08129077eff4408c25662db7af25e9ae:ports/.signature
 f:47fa2fdaba8f07cb54c3e240452982af:ports/Pkgfile
 f:804bb419e539a70ad80e4c03df3c3411:ports/contrib.pub
 f:d39f6279b5e125edb9f402b0e4d1865b:ports/contrib.rsync.inactive
@@ -74,7 +74,7 @@ f:e0656b4b1cb17aa24e859036db5cd806:pkgutils/pkgutils-5.40.10.tar.xz
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
 f:077fea960d8a490412eed744ce9bcc40:prt-get/.footprint
-f:241b42aa4cff04ea2b3106a3a07882b0:prt-get/.signature
+f:dadc399efe1e8bcfa9d1c71a3d415c99:prt-get/.signature
 f:fba3b19b1f9ef72c722360b8cfd73c3d:prt-get/Pkgfile
 f:a54c659c287b66d8d0b5e17fdd9246b9:prt-get/prt-get.conf
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint

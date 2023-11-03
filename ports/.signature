@@ -1,15 +1,23 @@
-untrusted comment: verify with /etc/ports/core.pub
-RWRJc1FUaeVeqjMs+RvdUvXk/8oivAZdUs0iuOnqmXC9hwnRdxZTgkxWt8Z2lovnQ9xr5N7b6srs8LbsAK834Wi2raKvD1uNNA8=
-SHA256 (Pkgfile) = 68cdc9628c11b904dcac671a31e0b08cab4b934bca6b2287e1c88156b63504cf
+untrusted comment: verify with /etc/ports/irradium-core.pub
+RWQAwxvZoACtGA8Rsq/mr6LFo3WZ2W73H3KXKhQZ7v7SSAauV9IlEng237ISDeHx0y6n12uTI2NgQ4X0URhwue9T5sfh4zKcRQ4=
+SHA256 (Pkgfile) = cbe60b3bfa630e837da1342de79372165dc759b4c77a7cb339c9bfc659079222
 SHA256 (.footprint) = b7adb63a38cbd15d9640333b2aa9f586b0577bbb5263ffbabec859a2ea3aba2c
 SHA256 (ports-1.6.tar.gz) = 8b2ba48e7440f4a71fa1c9c480a1212ce87c623e1d33121eb660829ba294ca94
 SHA256 (core.pub) = 5a08b7f21fb1768b9e639da0b768edb536de0590b75e663dab6d185617613791
 SHA256 (opt.pub) = 4711f488546c38cdec792c1f16b3bf7c4db0c7dc0c3cdab0ecdd85e2c7247ae5
 SHA256 (xorg.pub) = 5db27d455f658ea8a6c7ae9aac601d66e74cedff5dd497910fd1ffead08e5237
-SHA256 (compat-32.pub) = 851ed73c303213daf1ab73ec0dabf0312296b11af4b70dcd1b7ae37282b446c8
 SHA256 (contrib.pub) = cae797c624547b5ffb643f4cdf60d83a7cc28081f5929b882d48085085d76190
+SHA256 (irradium-contrib.pub) = c21256978bf379e66122ace912c37aa0ad2210c09bc2848764ef80e635ec3253
+SHA256 (irradium-core.pub) = 49b897a76732dde573a3648da8b694de24d1e850ffc6d408fa6409393ecde331
+SHA256 (irradium-opt.pub) = 33d97b3dcf51c400226dee0690282bb9f27994a77c42f77cc2eaa6f642044278
+SHA256 (irradium-xorg.pub) = 7f87200c7942cdcff54b27fae573664476fbc445fa064488832034de2447ccee
+SHA256 (irradium-xfce.pub) = 14f22e7afaae62e8c4602ccb636bcc4010e01a7a7716c3ac1147ac2c827f49a5
+SHA256 (irradium-contrib.httpup.inactive) = 61734ba5a37f15e2061332729f8fbe255610a0dc5927348cca0489b8c3ac54ab
+SHA256 (irradium-core.httpup) = 6fa419b705affebade203cd87f3bbc40d3c76b5402782b1b67fe3b626a4f2b58
+SHA256 (irradium-opt.httpup) = 17bf8f22104edcebec8b8f41cb0ab667deaddf56b70258ff7f01f191eeb95d3c
+SHA256 (irradium-xorg.httpup) = 06f60e68068f7dee993c541ab74eb7c284d0ae0b7ffd6ad234ded21461ebfd0a
+SHA256 (irradium-xfce.httpup.inactive) = 324806b3c5d3f5f564e6670c6177ffddf3443d383727973824900943e45fb598
 SHA256 (core.rsync) = a241801eaa34ea78f7bb362574fb4b14ea272518894f8a27e95f6a3c93464550
 SHA256 (opt.rsync) = 8538d1ced606856552e8a6989a3880b958ac5e0849d14aba199f3f89bd871845
 SHA256 (xorg.rsync) = 3dd6884b2b628e8d9ae575b95fb7e4bad0f9ddd4ee4088d2486f846a407a0278
-SHA256 (compat-32.rsync.inactive) = a85d86e3152b4872963019c224cc9bcb8646300069d80a23185f58f077898dd5
 SHA256 (contrib.rsync.inactive) = 55621db4b59fb45ecc9525c72d59576043bacbd9261d9ef031dcd1a3fda00957
