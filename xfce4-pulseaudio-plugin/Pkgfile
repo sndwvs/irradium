@@ -1,7 +1,7 @@
 # Description: Pulseaudio plugin for the Xfce4 panel
 # URL: https://goodies.xfce.org/projects/panel-plugins/xfce4-pulseaudio-plugin
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: xfce4-panel pulseaudio keybinder3 libnotify
+# Depends on: xfce4-panel pulseaudio libkeybinder3 libnotify
 
 name=xfce4-pulseaudio-plugin
 version=0.4.8
