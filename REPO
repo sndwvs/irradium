@@ -76,7 +76,7 @@ f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
 f:077fea960d8a490412eed744ce9bcc40:prt-get/.footprint
 f:241b42aa4cff04ea2b3106a3a07882b0:prt-get/.signature
 f:fba3b19b1f9ef72c722360b8cfd73c3d:prt-get/Pkgfile
-f:5ca103a43f7f8402490ec1cb0c90dc8e:prt-get/prt-get.conf
+f:a54c659c287b66d8d0b5e17fdd9246b9:prt-get/prt-get.conf
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:7b8e983ce515db7bebaa8bf62ed97b8a:gdbm/Pkgfile
 f:b6ad83d0e52c0d40ac7ef742897008a9:gdbm/.md5sum
