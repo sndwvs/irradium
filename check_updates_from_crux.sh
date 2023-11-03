@@ -4,13 +4,14 @@ GIT_URL_CRUX="git://crux.nu/ports"
 GIT_URL_IRRADIUM="https://gitlab.com/sndwvs"
 DISTR_VERSIONS=("3.7")
 
-PATH_IRRADIUM="/mnt/data/development/irradium"
-PATH_CRUX="/home/dev/build/crux"
-CRUX_UPDATE_GIT_REPO=${CRUX_UPDATE_GIT_REPO:-"yes"}
+#CRUX_UPDATE_GIT_REPO=${CRUX_UPDATE_GIT_REPO:-"yes"}
 WORK_DIR=$(mktemp -d)
 PORTS=(core opt xorg contrib)
 
 
+trap 'cleaning' INT
+trap 'cleaning' SIGINT
+trap 'cleaning' TERM
 
 
 message() {
@@ -54,41 +55,45 @@ cleaning() {
     if [[ -d ${WORK_DIR} ]]; then
         rm -rf ${WORK_DIR}
     fi
-    exit
+    exit 0
 }
 
-trap 'cleaning' INT
-trap 'cleaning' SIGINT
-trap 'cleaning' TERM
+check_repos() {
+    local distr_version="$1"
 
-for port in ${PORTS[*]}; do
-    # get repository
-    git_download ${GIT_URL_CRUX} ${port}
-    checkout_distr_version "3.7" "${port}"
-    git_download ${GIT_URL_IRRADIUM} irradium-${port}
-    checkout_distr_version "3.7" "irradium-${port}"
+    for port in ${PORTS[*]}; do
+        # get repository
+        git_download ${GIT_URL_CRUX} "${port}"
+        checkout_distr_version "${distr_version}" "${port}"
+        git_download ${GIT_URL_IRRADIUM} "irradium-${port}"
+        checkout_distr_version "${distr_version}" "irradium-${port}"
 
-    # update crux repository
-    #if [[ $CRUX_UPDATE_GIT_REPO = "yes" && -d $PATH_CRUX/$port ]]; then
-    #    pushd $PATH_CRUX/$port 2>&1>/dev/null
-    #    git pull -fq
-    #    popd 2>&1>/dev/null
-    #fi
+        # update crux repository
+        #if [[ $CRUX_UPDATE_GIT_REPO = "yes" && -d $PATH_CRUX/$port ]]; then
+        #    pushd $PATH_CRUX/$port 2>&1>/dev/null
+        #    git pull -fq
+        #    popd 2>&1>/dev/null
+        #fi
 
-    for irradium_pkgfile in ${WORK_DIR}/irradium-${port}/*/Pkgfile; do
-        if [[ -e $irradium_pkgfile ]]; then
-        irradium_package=$(get_package_name $irradium_pkgfile)
-        irradium_version=$(get_package_version $irradium_pkgfile)
-            if [[ -e $WORK_DIR/$port/$irradium_package/Pkgfile ]]; then
-                crux_pkg_path=$WORK_DIR/$port/$irradium_package/Pkgfile
-                crux_package=$(get_package_name $crux_pkg_path)
-                crux_version=$(get_package_version $crux_pkg_path)
-                if [[ $irradium_version != $crux_version ]]; then
-                    printf "port: %-15s update package: %-50s  %-10s -> %+10s\n" irradium-${port} $irradium_package $irradium_version $crux_version
+        for irradium_pkgfile in ${WORK_DIR}/irradium-${port}/*/Pkgfile; do
+            if [[ -e $irradium_pkgfile ]]; then
+            irradium_package=$(get_package_name $irradium_pkgfile)
+            irradium_version=$(get_package_version $irradium_pkgfile)
+                if [[ -e $WORK_DIR/$port/$irradium_package/Pkgfile ]]; then
+                    crux_pkg_path=$WORK_DIR/$port/$irradium_package/Pkgfile
+                    crux_package=$(get_package_name $crux_pkg_path)
+                    crux_version=$(get_package_version $crux_pkg_path)
+                    if [[ $irradium_version != $crux_version ]]; then
+                        printf "port: %-15s update package: %-30s  %-10s -> %+10s\n" irradium-${port} $irradium_package $irradium_version $crux_version
+                    fi
                 fi
             fi
-        fi
+        done
     done
+}
+
+for distr_version in ${DISTR_VERSIONS[*]}; do
+    check_repos ${distr_version}
 done
 
 cleaning
