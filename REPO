@@ -37,7 +37,7 @@ f:687531b3aaa50c078ac5b51afbfba743:pkgconf/.md5sum
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:10f2f6be78dfed73f01a00a216ba1c34:ports/.footprint
 f:877583a9e621f869c5bc62f538a4ef32:ports/.signature
-f:41a0421d5989475ec663a22cad4f5ed1:ports/Pkgfile
+f:47fa2fdaba8f07cb54c3e240452982af:ports/Pkgfile
 f:804bb419e539a70ad80e4c03df3c3411:ports/contrib.pub
 f:d39f6279b5e125edb9f402b0e4d1865b:ports/contrib.rsync.inactive
 f:b8dd0aad383810cad920d6548cd1cb56:ports/core.pub
@@ -51,6 +51,8 @@ f:7619ec1ec2d259deeb2b2aa154b5f3f3:ports/irradium-core.pub
 f:94d2a87245805d08044ed21dd007082a:ports/irradium-opt.pub
 f:c439515bdbd1e17d8a74c2a37d285718:ports/irradium-xfce.pub
 f:1ec983509e56966c5a7945a854c0f7bf:ports/irradium-xorg.pub
+f:ad54e3fef1fd4a4d0178d9f15df4ad0a:ports/irradium-contrib.pub
+f:e3660195afcd23fe87b6668a46bc469a:ports/irradium-contrib.httpup.inactive
 f:47553991a00a23fd9b7478838a3d15d3:libgmp/.footprint
 f:b79985bb41f137f6d8ed6bbd1399c258:libgmp/Pkgfile
 f:773c651f89a6d647d9c53d910c610135:libgmp/.md5sum
