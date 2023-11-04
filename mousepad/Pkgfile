@@ -1,11 +1,11 @@
 # Description: Widgets library for the Xfce desktop environment
 # URL: https://www.xfce.org/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: desktop-file-utils gtksourceview4 hicolor-icon-theme gspell polkit
+# Depends on: desktop-file-utils gtksourceview hicolor-icon-theme gspell polkit
 
 name=mousepad
 version=0.6.1
-release=1
+release=2
 source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2)
 
 build(){
