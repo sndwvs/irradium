@@ -1,9 +1,9 @@
 # Description: Xfce Screensaver
 # URL: https://docs.xfce.org/apps/screensaver/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: libxss libxklavier libwnck3 garcon dbus-glib python python-gobject
+# Depends on: dbus-glib garcon libwnck-gtk3 libxklavier xorg-libxscrnsaver python3-gobject
 
-name=xfdesktop
+name=xfce4-screensaver
 version=4.18.2
 release=1
 source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2)
