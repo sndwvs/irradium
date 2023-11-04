@@ -15,12 +15,12 @@ build(){
     --prefix=/usr \
     --sysconfdir=/etc \
     --disable-debug \
-    --enable-gtk-doc=no
+    --enable-gtk-doc=no \
+    --disable-nls
 
   make
   make DESTDIR=$PKG install || exit 1
 
-  rm -r $PKG/usr/share/locale
   rm -r $PKG/usr/share/gtk-doc
 
 }
