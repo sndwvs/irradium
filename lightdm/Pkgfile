@@ -29,8 +29,6 @@ build(){
   make
   make DESTDIR=$PKG install || exit 1
 
-  rm -r $PKG/usr/share/locale
-
   cp tests/src/lightdm-session $PKG/usr/bin
   sed -i '1 s/sh/bash --login/' $PKG/usr/bin/lightdm-session
 
