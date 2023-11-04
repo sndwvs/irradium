@@ -3,6 +3,7 @@ d:libglade-compat
 d:libglade
 d:accountsservice
 d:gtksourceview4
+d:elogind
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:1592034140f6a3200e359ee75ea6a85a:pygtk/.md5sum
 f:1fd62a70a3b296c59be018c1e8d4b229:pygtk/config.guess-support-aarch64-riscv64.patch
@@ -25,3 +26,8 @@ f:af2722ef31645effea175dc173154d31:libglade/.footprint
 f:8b26677e7291396f36efd4b7527bdaa9:libglade/.md5sum
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
 f:239b9ef46771b2f86c227b0e181cb8e7:gtksourceview4/Pkgfile
+f:7eb6338447c0f23f8e137d0fe7dec155:elogind/pre-install
+f:673e903cac381b0f975007165f78ab32:elogind/10-enable-elogind-power.rules.gz
+f:4c496ade639339ce5c1344cdb5d722a2:elogind/Pkgfile
+f:7c93e44662d1bc4ef512f44e0fee27d7:elogind/rc.elogind
+f:fb08cc6b7e61e6a69659037ca4ec199c:elogind/elogind
