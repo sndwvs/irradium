@@ -70,7 +70,6 @@ f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:a0cd3dced180943a9e6a9757b629a631:pkgutils/.signature
 f:fa20b1877aa9fc8f9cfcfd45e73e60be:pkgutils/Pkgfile
 f:f1927bc2ae6c00c3191265c4170b9be8:pkgutils/pkgmk.conf
-f:e0656b4b1cb17aa24e859036db5cd806:pkgutils/pkgutils-5.40.10.tar.xz
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
 f:077fea960d8a490412eed744ce9bcc40:prt-get/.footprint
