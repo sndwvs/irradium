@@ -18,6 +18,7 @@ build(){
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+    -DENABLE_GTK_LAYER_SHELL=OFF \
     -GNinja \
     .. || exit 1
 
