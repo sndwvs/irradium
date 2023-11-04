@@ -1,6 +1,7 @@
 d:pygtk
 d:libglade-compat
 d:libglade
+d:accountsservice
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:1592034140f6a3200e359ee75ea6a85a:pygtk/.md5sum
 f:1fd62a70a3b296c59be018c1e8d4b229:pygtk/config.guess-support-aarch64-riscv64.patch
@@ -21,3 +22,4 @@ f:1fd62a70a3b296c59be018c1e8d4b229:libglade/config.guess-support-aarch64-riscv64
 f:b6da3affda799df3025fb4deacb31652:libglade/Pkgfile
 f:af2722ef31645effea175dc173154d31:libglade/.footprint
 f:8b26677e7291396f36efd4b7527bdaa9:libglade/.md5sum
+f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
