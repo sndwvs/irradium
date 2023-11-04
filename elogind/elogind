@@ -10,15 +10,6 @@ OPTS="--daemon"
 
 case $1 in
 start)
-	if [ -x /lib/elogind/elogind ]; then
-	  if [ ! -d /run/user ]; then
-	  mkdir -p /run/user
-	fi
-	if [ ! -d /run/systemd ]; then
-	  mkdir -p /run/elogind /sys/fs/cgroup/elogind
-	  ( cd /run; rm -rf systemd; ln -sf elogind systemd; )
-	  ( cd /sys/fs/cgroup; rm -rf systemd; ln -sf elogind systemd; )
-	fi
 	$SSD --start --pidfile $PID --exec $PROG -- $OPTS
 	;;
 stop)
