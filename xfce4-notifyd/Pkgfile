@@ -20,5 +20,6 @@ build(){
   make
   make DESTDIR=$PKG install || exit 1
 
+  rm $PKG/usr/lib/xfce4/panel/plugins/*.la
   rm -rf $PKG/usr/lib/systemd
 }
