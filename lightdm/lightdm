@@ -8,7 +8,7 @@ PROG=/usr/bin/lightdm
 
 case $1 in
 start)
-	$SSD --start --exec $PROG -- $OPTS
+	$SSD --start --exec $PROG
 	;;
 stop)
 	$SSD --stop --retry 10 --exec $PROG

@@ -13,7 +13,7 @@ d:libsdl
 d:libkeybinder3
 f:0389af1eb18d4779b7cc7bdca4b6e35e:lightdm/50-directories.conf
 f:f05aa09e23a383a418d35078deae101b:lightdm/Pkgfile
-f:d47053082e044cbf86495f6a6e793b67:lightdm/lightdm
+f:d38cd8901475f02e52bd9be2bd285a46:lightdm/lightdm
 f:2a7326f4de1d949b8c96749b62cc5021:lightdm/lightdm.rules
 f:54ef775d0530ec0cf622b0ffbd038205:lightdm/pre-install
 f:622452e81ed49e76971451b0a224c9f6:lightdm/50-irradium-defaults.conf
