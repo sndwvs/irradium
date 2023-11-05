@@ -3,20 +3,32 @@
 # /etc/rc.d/lightdm: start/stop lightdm
 #
 
+SSD=/sbin/start-stop-daemon
+PROG=/usr/bin/lightdm
+
 case $1 in
 start)
-	XDG_CACHE_HOME=/var/cache/lightdm/ exec /usr/bin/lightdm  2>/dev/null &
+	$SSD --start --exec $PROG -- $OPTS
 	;;
 stop)
-	killall -q /usr/bin/lightdm
+	$SSD --stop --retry 10 --exec $PROG
 	;;
 restart)
 	$0 stop
 	sleep 2
 	$0 start
 	;;
+status)
+	$SSD --status --exec $PROG
+	case $? in
+	0) echo "$PROG is running with pid $(pidof $PROG)" ;;
+	1) echo "$PROG is not running but the pid file $PID exists" ;;
+	3) echo "$PROG is not running" ;;
+	4) echo "Unable to determine the program status" ;;
+	esac
+	;;
 *)
-	echo "usage: $0 [start|stop|restart]"
+	echo "usage: $0 [start|stop|restart|status]"
 	;;
 esac
 
