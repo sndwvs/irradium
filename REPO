@@ -75,7 +75,7 @@ f:9d94caa7f2eef5163f11339cf59e5ed2:libsdl/libsdl-1.2.15-bs.patch
 f:ebff7a0aef0b79a0199e394ff9b212ab:libsdl/libsdl-1.2.x-libx11.patch
 f:f3afe96ae4c323a7fffa8dbeabb3eda2:libkeybinder3/Pkgfile
 f:76ed237c811ad99b3667a46ec70346ea:slim/slim.pam
-f:577fef590e565c25a13f9a370f6cecd9:slim/Pkgfile
+f:f18616b1da5bdf36c0bde0baac0dce51:slim/Pkgfile
 f:ce3bdbd53ce92813401839651d9b213f:slim/slim
 f:cf25536a5fe01952520900f2e42f9b26:slim-themes/authfail.patch
 f:9afb076d223212e55b8f033c496a9501:slim-themes/Pkgfile

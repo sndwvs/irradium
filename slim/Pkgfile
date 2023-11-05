@@ -3,7 +3,7 @@
 # Maintainer: mara, mara at fail dot pp dot ua
 # Depends on: libx11 libxft libxrender libxrandr libxmu freetype2 libjpeg-turbo libpng zlib consolekit2 linux-pam
 
-name=lightdm
+name=slim
 version=1.4.0
 release=1
 source=(https://sourceforge.net/projects/${name}-fork/files/$name-$version.tar.gz
