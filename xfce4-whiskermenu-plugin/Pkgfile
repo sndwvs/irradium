@@ -1,7 +1,7 @@
 # Description: Menu for Xfce4
 # URL: https://gottcode.org/xfce4-whiskermenu-plugin/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: garcon exo cmake accountsservice libxfce4ui libxfce4util xfce4-panel
+# Depends on: garcon exo cmake elogind accountsservice libxfce4ui libxfce4util xfce4-panel
 
 
 name=xfce4-whiskermenu-plugin
@@ -19,10 +19,6 @@ build(){
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_INSTALL_LIBDIR=/usr/lib \
     -DENABLE_GTK_LAYER_SHELL=OFF \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-    -DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-    -Wno-dev \
     -GNinja \
     .. || exit 1
 
