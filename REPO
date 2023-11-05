@@ -28,5 +28,5 @@ f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
 f:239b9ef46771b2f86c227b0e181cb8e7:gtksourceview4/Pkgfile
 f:7eb6338447c0f23f8e137d0fe7dec155:elogind/pre-install
 f:673e903cac381b0f975007165f78ab32:elogind/10-enable-elogind-power.rules.gz
-f:4c496ade639339ce5c1344cdb5d722a2:elogind/Pkgfile
+f:4629e58d13670bdb132b3c90a8696acc:elogind/Pkgfile
 f:a9e7ccb4cc486e1967f58572f8a2060b:elogind/elogind
