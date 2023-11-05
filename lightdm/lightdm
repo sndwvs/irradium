@@ -5,10 +5,11 @@
 
 SSD=/sbin/start-stop-daemon
 PROG=/usr/bin/lightdm
+OPTS="-b -q"
 
 case $1 in
 start)
-	$SSD --start --exec $PROG
+	$SSD --start --exec $PROG -- $OPTS
 	;;
 stop)
 	$SSD --stop --retry 10 --exec $PROG
