@@ -24,7 +24,7 @@ build(){
     --sysconfdir=/etc \
     --localstatedir=/var \
     --sbindir=/usr/bin \
-    --libexecdir=/usr/libexec/$name \
+    --libexecdir=/usr/lib/$name \
     --enable-liblightdm-qt5=no \
     --with-greeter-user=lightdm \
     --with-greeter-session=lightdm-gtk-greeter \

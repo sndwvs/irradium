@@ -17,7 +17,7 @@ build(){
     --prefix=/usr \
     --sysconfdir=/etc \
     --sbindir=/usr/bin \
-    --libexecdir=/usr/libexec/$name \
+    --libexecdir=/usr/lib/$name \
     --with-libxklavier \
     --enable-kill-on-sigterm \
     --disable-libido \
