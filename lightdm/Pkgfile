@@ -7,7 +7,8 @@ name=lightdm
 version=1.32.0
 release=2
 source=(https://github.com/canonical/$name/releases/download/$version/$name-$version.tar.xz \
-        50-irradium-defaults.conf 50-directories.conf lightdm.rules lightdm)
+        50-irradium-defaults.conf 50-directories.conf lightdm.rules lightdm
+        Xsession)
 
 build(){
   cd $name-$version
@@ -32,6 +33,7 @@ build(){
   cp tests/src/lightdm-session $PKG/usr/bin
   sed -i '1 s/sh/bash --login/' $PKG/usr/bin/lightdm-session
 
+  install -Dm755 $SRC/Xsession $PKG/etc/lightdm/Xsession
   # install Xsession wrapper to use with lightdm
   install -dm 755 -g root $PKG/etc/lightdm/lightdm.conf.d
   install -m 644 $SRC/50-irradium-defaults.conf $PKG/etc/lightdm/lightdm.conf.d/50-irradium-defaults.conf
