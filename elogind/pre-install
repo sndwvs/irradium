@@ -1,2 +1,0 @@
-#!/bin/sh
-getent group power || /usr/sbin/groupadd power
