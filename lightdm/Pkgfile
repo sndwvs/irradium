@@ -7,11 +7,17 @@ name=lightdm
 version=1.32.0
 release=3
 source=(https://github.com/canonical/$name/releases/download/$version/$name-$version.tar.xz
-        50-irradium-defaults.conf 50-directories.conf lightdm.rules lightdm
-        Xsession $name.pam $name-autologin.pam)
+        50-irradium-defaults.conf 50-directories.conf
+        lightdm.rules lightdm Xsession)
 
 build(){
   cd $name-$version
+
+  # Then change the Linux-PAM configuration files so that elogind is used:
+  sed -i s/systemd/elogind/ data/pam/*
+
+  # if there is no password, request 
+  sed -i 's:\(^auth.*unix.*\)$:\1 nullok:g' data/pam/*
 
   ./configure \
     --prefix=/usr \
@@ -36,9 +42,8 @@ build(){
   # install PolKit rules
   install -Dm 644 $SRC/$name.rules $PKG/usr/share/polkit-1/rules.d/$name.rules
 
-  # install PAM configurations
-  install -Dm 644 $SRC/$name.pam $PKG/etc/pam.d/$name
-  install -Dm 644 $SRC/$name-autologin.pam $PKG/etc/pam.d/$name-autologin
+  cp tests/src/lightdm-session $PKG/usr/bin
+  sed -i '1 s/sh/bash --login/' $PKG/usr/bin/lightdm-session
 
   # install Xsession wrapper to use with lightdm
   install -dm 755 -g root $PKG/etc/lightdm/lightdm.conf.d
