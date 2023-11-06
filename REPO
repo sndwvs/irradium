@@ -12,13 +12,13 @@ d:libtheora
 d:libsdl
 d:libkeybinder3
 f:0389af1eb18d4779b7cc7bdca4b6e35e:lightdm/50-directories.conf
-f:3c2ad1b522fa98722d6d6c77a281f75a:lightdm/Pkgfile
 f:e17ca6846f2839f0cd4afaebdd61b02a:lightdm/lightdm
 f:2a7326f4de1d949b8c96749b62cc5021:lightdm/lightdm.rules
 f:54ef775d0530ec0cf622b0ffbd038205:lightdm/pre-install
 f:f5456b1c11ea76fff362a22957c66168:lightdm/50-irradium-defaults.conf
 f:4a4f56b1e3d8f8c39fce635de206688b:lightdm/Xsession
-f:53204c667948134c391709f9a949debc:lightdm-gtk-greeter/Pkgfile
+f:3c2ad1b522fa98722d6d6c77a281f75a:lightdm/Pkgfile
+f:eb00bcd1d5195c0845aede171546e142:lightdm-gtk-greeter/Pkgfile
 f:a94d0de7de8181e126056f377531e2b9:lightdm-gtk-greeter/post-install
 f:17b9fd0726e7654018d49789d0671442:medit/Pkgfile
 f:10394e93fa1a15d9693325386e864ec8:medit/.footprint
