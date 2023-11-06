@@ -1,7 +1,7 @@
     # Description: Xfce's window manager
 # URL: https://docs.xfce.org/xfce/xfwm4/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: libwnck-gtk3 libxfce4ui libxfce4util startup-notification xorg-libxpresenty
+# Depends on: libwnck-gtk3 libxfce4ui libxfce4util startup-notification xorg-libxcomposite
 
 name=xfwm4
 version=4.18.0

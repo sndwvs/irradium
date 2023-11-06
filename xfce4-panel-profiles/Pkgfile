@@ -1,7 +1,7 @@
 # Description: A simple application to manage Xfce panel layouts
 # URL: https://docs.xfce.org/apps/xfce4-panel-profiles/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: xfce4-panel python3
+# Depends on: python3-gobject xfce4-panel intltool gtk3
 
 name=xfce4-panel-profiles
 version=1.0.14

@@ -1,7 +1,7 @@
 # Description: Notification daemon for the Xfce desktop
 # URL: https://docs.xfce.org/apps/notifyd/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: libxfce4ui libxfce4util libnotify xfconf sqlite
+# Depends on: hicolor-icon-theme libcanberra libnotify libxfce4ui libxfce4util xfce4-panel xfconf sqlite3
 
 name=xfce4-notifyd
 version=0.9.2
@@ -21,5 +21,6 @@ build(){
   make DESTDIR=$PKG install || exit 1
 
   rm $PKG/usr/lib/xfce4/panel/plugins/*.la
+  rm -rf $PKG/usr/share/doc
   rm -rf $PKG/usr/lib/systemd
 }

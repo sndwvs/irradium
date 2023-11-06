@@ -14,7 +14,7 @@ build(){
   ./configure \
     --prefix=/usr \
     --sysconfdir=/etc \
-    --libexecdir=/usr/lib \
+    --libexecdir=/usr/lib/$name \
     --localstatedir=/var \
     --disable-debug \
     --enable-gtk-doc=no \

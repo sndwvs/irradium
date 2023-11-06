@@ -1,7 +1,7 @@
 # Description: Freedesktop.org compliant menu library
 # URL: https://docs.xfce.org/xfce/garcon/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: libxfce4ui intltool python gobject-introspection
+# Depends on: libxfce4ui
 
 name=garcon
 version=4.18.1

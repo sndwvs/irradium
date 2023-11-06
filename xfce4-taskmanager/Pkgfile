@@ -1,7 +1,7 @@
 # Description: Easy to use task manage
 # URL: https://docs.xfce.org/apps/xfce4-taskmanager
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: libxfce4ui xfconf ibxmu libwnck3
+# Depends on: libxfce4ui xfconf xorg-libxmu libwnck-gtk3
 
 name=xfce4-taskmanager
 version=1.5.6

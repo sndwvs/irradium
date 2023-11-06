@@ -16,7 +16,7 @@ build(){
   meson setup \
     --prefix=/usr \
     --libdir=lib \
-    --libexecdir=/usr/lib \
+    --libexecdir=/usr/lib/$name \
     --bindir=/usr/bin \
     --sbindir=/usr/sbin \
     --includedir=/usr/include \

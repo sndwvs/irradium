@@ -1,7 +1,7 @@
 # Description: Thumbnail service implementing the thumbnail management D-Bus specification
 # URL: https://docs.xfce.org/xfce/tumbler/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: glib freetype gdk-pixbuf gst-plugins-base libjpeg-turbo libpng poppler
+# Depends on: glib dbus-glib freetype gdk-pixbuf poppler
 
 name=tumbler
 version=4.18.1

@@ -1,7 +1,7 @@
 # Description: A clipboard plugin for the Xfce4 panel
 # URL: https://docs.xfce.org/panel-plugins/xfce4-clipman-plugin
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: xfce4-panel libxtst qrencode
+# Depends on: xfce4-panel intltool qrencode
 
 name=xfce4-clipman-plugin
 version=1.6.5

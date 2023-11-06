@@ -1,7 +1,7 @@
 # Description: Xfce's Configuration System
 # URL: https://docs.xfce.org/xfce/xfce4-settings/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: exo garcon libxfce4ui xfconf libnotify libxklavier elementary-xfce gnome-themes-extra
+# Depends on: exo garcon libxfce4ui libcanberra libnotify libxklavier elementary-xfce gnome-icon-theme libinput
 
 name=xfce4-settings
 version=4.18.3

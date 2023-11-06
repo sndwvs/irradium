@@ -1,7 +1,7 @@
-# Description: Widgets library for the Xfce desktop environment
+# Description: Simple GTK+ 2 text editor for the Xfce desktop environment
 # URL: https://www.xfce.org/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: desktop-file-utils gtksourceview4 hicolor-icon-theme gspell polkit
+# Depends on: gtksourceview4 xfconf
 
 name=mousepad
 version=0.6.1
@@ -14,7 +14,7 @@ build(){
   ./configure \
     --prefix=/usr \
     --sysconfdir=/etc \
-    --libexecdir=/usr/lib \
+    --libexecdir=/usr/lib/$name \
     --sbindir=/usr/bin \
     --localstatedir=/var \
     --disable-debug \

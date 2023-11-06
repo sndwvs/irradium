@@ -1,7 +1,7 @@
 # Description: A weather plugin for the Xfce4 panel
 # URL: https://docs.xfce.org/panel-plugins/xfce4-weather-plugin
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: xfce4-panel libxml2 libsoup hicolor-icon-theme
+# Depends on: xfce4-panel intltool libsoup
 
 name=xfce4-weather-plugin
 version=0.11.1
@@ -14,9 +14,9 @@ build(){
   ./configure \
     --prefix=/usr \
     --sysconfdir=/etc \
-    --libexecdir=/usr/lib \
+    --libexecdir=/usr/lib/$name \
     --localstatedir=/var \
-    --disable-upower \
+    --disable-static \
     --disable-debug \
     --disable-nls
 
