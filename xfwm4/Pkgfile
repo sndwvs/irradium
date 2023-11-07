@@ -1,7 +1,7 @@
-    # Description: Xfce's window manager
+# Description: Xfce's window manager
 # URL: https://docs.xfce.org/xfce/xfwm4/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: libwnck-gtk3 libxfce4ui libxfce4util startup-notification xorg-libxcomposite xorg-libxpresent
+# Depends on: libwnck-gtk3 libepoxy libxfce4ui libxfce4util startup-notification xorg-xrandr xorg-libxpresent xorg-libxcomposite
 
 name=xfwm4
 version=4.18.0
@@ -19,8 +19,10 @@ build(){
     --sysconfdir=/etc \
     --localstatedir=/var \
     --enable-startup-notification \
+    --enable-randr \
     --enable-xpresent \
     --enable-compositor \
+    --enable-xsync \
     --disable-static \
     --disable-debug \
     --disable-nls
