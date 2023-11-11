@@ -1,7 +1,7 @@
 # Description: A lightweight display manager
 # URL: https://github.com/canonical/lightdm
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: glib libgcrypt linux-pam polkit libxklavier intltool itstool vala gobject-introspection
+# Depends on: glib libgcrypt linux-pam elogind libxklavier intltool itstool vala gobject-introspection
 
 name=lightdm
 version=1.32.0
