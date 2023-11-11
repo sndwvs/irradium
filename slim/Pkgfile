@@ -1,7 +1,7 @@
 # Description: Simple Login Manager
 # URL: https://sourceforge.net/projects/slim
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: xorg-libx11 xorg-libxft xorg-libxrender xorg-libxrandr xorg-libxmu freetype libjpeg-turbo libpng zlib consolekit linux-pam
+# Depends on: xorg-libx11 xorg-libxft xorg-libxrender xorg-libxrandr xorg-libxmu freetype libjpeg-turbo libpng zlib linux-pam elogind
 
 name=slim
 version=1.4.0
@@ -19,8 +19,8 @@ build(){
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
     -DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-    -DUSE_CONSOLEKIT=yes \
-    -DUSE_PAM=yes \
+    -DUSE_CONSOLEKIT=OFF \
+    -DUSE_PAM=ON \
     -Wno-dev
     cmake --build build
     DESTDIR=$PKG cmake --install build
