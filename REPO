@@ -82,4 +82,4 @@ f:e0418c610312fb6e417398f1a29b7d07:zip/zip-3.0-format-security.patch
 f:8d60750c2f922cebbefd9de596518403:zip/zipnote.patch
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
 f:f989ef8f94af50c1246c3e1b3a422e8e:strace/.signature
-f:20a5933e6da636cdb7fc9bc750731a6e:strace/Pkgfile
+f:661beb35f62baddb8dc18b6c6cb300fc:strace/Pkgfile
