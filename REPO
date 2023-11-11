@@ -13,6 +13,7 @@ d:slim-themes
 d:slim
 d:startup-notification
 d:zip
+d:strace
 f:0389af1eb18d4779b7cc7bdca4b6e35e:lightdm/50-directories.conf
 f:2a7326f4de1d949b8c96749b62cc5021:lightdm/lightdm.rules
 f:54ef775d0530ec0cf622b0ffbd038205:lightdm/pre-install
@@ -79,3 +80,6 @@ f:dd97abd563379eb438a09d654a92845c:zip/zip-3.0-currdir.patch
 f:929f39071a6e4491a7b1858b8fd25a9d:zip/zip-3.0-exec-shield.patch
 f:e0418c610312fb6e417398f1a29b7d07:zip/zip-3.0-format-security.patch
 f:8d60750c2f922cebbefd9de596518403:zip/zipnote.patch
+f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
+f:f989ef8f94af50c1246c3e1b3a422e8e:strace/.signature
+f:20a5933e6da636cdb7fc9bc750731a6e:strace/Pkgfile
