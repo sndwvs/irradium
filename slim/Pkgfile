@@ -39,7 +39,7 @@ build(){
 
   # install our default theme
   install -d $PKG/usr/share/slim/themes/irradium
-  cp background.png panel.png slim.theme \
+  cp $SRC/background.png $SRC/panel.png $SRC/slim.theme \
      $PKG/usr/share/slim/themes/irradium/
 
   rm -rf $PKG/usr/share/slim/themes/default
