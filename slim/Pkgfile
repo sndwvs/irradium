@@ -13,8 +13,7 @@ source=(https://sourceforge.net/projects/${name}-fork/files/$name-$version.tar.g
 build(){
   cd $name-$version
 
-  sed -i -e 's|#xserver_arguments.*|xserver_arguments   -nolisten tcp vt07|'\
-    -e 's|/var/run/slim.lock|/var/lock/slim.lock|' \
+  sed -i -e 's|/var/run/slim.lock|/var/lock/slim.lock|' \
     -e 's|halt_cmd.*|halt_cmd            /sbin/poweroff|'\
     -e 's|reboot_cmd.*|reboot_cmd          /sbin/reboot|'\
     -e 's|login_cmd.*|login_cmd           exec /bin/sh -l /etc/X11/xinit/xinitrc|' \
