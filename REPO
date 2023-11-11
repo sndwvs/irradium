@@ -11,6 +11,7 @@ d:opus
 d:python
 d:slim-themes
 d:slim
+d:slim/theme
 d:startup-notification
 d:zip
 d:strace
@@ -67,9 +68,12 @@ f:df61642943d353bec515a96e5a09d100:python/Pkgfile
 f:c5efe141e71f4dc85e71b3cae482ad85:python/pyconfig.h
 f:dbcce60fb8b85304b39c38c1e3ef980e:slim-themes/Pkgfile
 f:cf25536a5fe01952520900f2e42f9b26:slim-themes/authfail.patch
-f:240e7275a41f7b20870e643fa947924a:slim/Pkgfile
+f:2c3847358518d484e90121e5bc9700f7:slim/Pkgfile
 f:ce3bdbd53ce92813401839651d9b213f:slim/slim
 f:7e1dde2712efaebd405f956088b67e02:slim/slim.pam
+f:74bd5175145e88e0dc7fd369ceeaa75a:slim/theme/panel.png
+f:96f4f709e3392b203642f641274e972e:slim/theme/slim.theme
+f:2874f3457c724a96ff926ceef88fc999:slim/theme/background.png
 f:db757b2e5a75e3cb9a5e2bdde32e6d3b:startup-notification/.footprint
 f:1b55fb23e4ca10397f5587e990656019:startup-notification/.signature
 f:5e60010ec73d7ec223954bc4b4498a9a:startup-notification/Pkgfile

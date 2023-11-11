@@ -7,10 +7,19 @@ name=slim
 version=1.4.0
 release=1
 source=(https://sourceforge.net/projects/${name}-fork/files/$name-$version.tar.gz
-        $name $name.pam)
+        $name $name.pam
+        theme/background.png theme/panel.png theme/slim.theme)
 
 build(){
   cd $name-$version
+
+  sed -i -e 's|#xserver_arguments.*|xserver_arguments   -nolisten tcp vt07|'\
+    -e 's|/var/run/slim.lock|/var/lock/slim.lock|' \
+    -e 's|halt_cmd.*|halt_cmd            /sbin/poweroff|'\
+    -e 's|reboot_cmd.*|reboot_cmd          /sbin/reboot|'\
+    -e 's|login_cmd.*|login_cmd           exec /bin/sh -l /etc/X11/xinit/xinitrc|' \
+    -e 's|current_theme.*|current_theme       irradium|' \
+    slim.conf
 
   cmake -B build \
     -DCMAKE_INSTALL_PREFIX=/usr \
@@ -28,4 +37,11 @@ build(){
   install -Dm644 $SRC/$name.pam $PKG/etc/pam.d/$name
   install -D -m 755 $SRC/$name $PKG/etc/rc.d/$name
 
+  # install our default theme
+  install -d $PKG/usr/share/slim/themes/irradium
+  cp background.png panel.png slim.theme \
+     $PKG/usr/share/slim/themes/irradium/
+
+  rm -rf $PKG/usr/share/slim/themes/default
+  rm -rf $PKG/usr/share/slim/themes/original
 }
