@@ -155,7 +155,7 @@ build() {
       'ffmpeg_branding="Chrome"'
       'proprietary_codecs=true'
       #'rtc_use_pipewire=true'
-      'link_pulseaudio=true'
+      #'link_pulseaudio=true'
       'use_custom_libcxx=false'
       'use_gnome_keyring=false'
       'use_qt=false' # look into enabling this
@@ -165,6 +165,7 @@ build() {
       'enable_hangout_services_extension=true'
       'enable_widevine=true'
       'enable_nacl=false'
+      'enable_rust=false'
       "google_api_key=\"$_google_api_key\""
     )
 
