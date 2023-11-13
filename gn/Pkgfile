@@ -1,0 +1,23 @@
+# Description: elogind - extracted logind from systemd
+# URL: https://github.com/elogind/elogind
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: python3 zstd
+
+name=gn
+version=20231023
+release=1
+source=(https://s3.sakamoto.pl/lnl-aports-snapshots/$name-e4702d7409069c4f12d45ea7b7f0890717ca3f4b.tar.zst)
+
+build() {
+    tar xf $SRC/$name-*.tar.zst
+    cd $name
+
+    python3 ./build/gen.py \
+        --no-last-commit-position \
+        --no-static-libstdc++ \
+        --no-strip \
+        --allow-warnings
+    ninja -C out
+
+   install -Dm755 out/gn $PKG/usr/bin/gn
+}
