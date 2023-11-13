@@ -9,7 +9,7 @@
 name=chromium
 version=119.0.6045.123
 release=1
-source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name-${version%.*}.tar.xz
+source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz
         chromium.default chromium.sh
         patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
         patches/REVERT-roll-src-third_party-ffmpeg-m106.patch
