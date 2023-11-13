@@ -49,5 +49,5 @@ f:312bb1d9580567156a2c704fa4b16a0a:chromium/patches/chromium-119-at-spi-variable
 f:fb2142170b687e12d1b808a971f62f4e:chromium/patches/chromium-119-clang16.patch
 f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
 f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
-f:193a2dcea5f570e30bb5e98fe6062b13:chromium/Pkgfile
+f:2d236fe3320d73132a25105d6eb2ac09:chromium/Pkgfile
 f:56422ca7805d56ad890b238bd9c7dbe5:chromium/post-install

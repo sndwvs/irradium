@@ -27,6 +27,7 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
 )
 
 build() {
+    cd $name-$version
 
     # Configuration
     CRFLAGS="CHROMIUM_FLAGS"
