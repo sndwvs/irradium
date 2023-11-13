@@ -1,10 +1,7 @@
 # Description: Chromium web browser
 # URL: https://www.chromium.org/Home
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: gtk3 nss alsa-lib xdg-utils cups libgcrypt
-# Depends on: ttf-liberation dbus pulseaudio pciutils libva
-# Depends on: libffi desktop-file-utils hicolor-icon-theme
-# Depends on: python3 gn ninja clang lld gperf nodejs git
+# Depends on: gtk3 nss alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme python3 gn ninja clang lld gperf nodejs git
 
 name=chromium
 version=119.0.6045.123
@@ -115,7 +112,7 @@ build() {
     mkdir -p third_party/node/linux/node-linux-x64/bin
     ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
     #ln -s /usr/bin/java third_party/jdk/current/bin/
-    #ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
+    ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
 
     # Remove bundled libraries for which we will use the system copies; this
     # *should* do what the remove_bundled_libraries.py script does, with the
@@ -155,7 +152,7 @@ build() {
       'ffmpeg_branding="Chrome"'
       'proprietary_codecs=true'
       #'rtc_use_pipewire=true'
-      #'link_pulseaudio=true'
+      'link_pulseaudio=true'
       'use_custom_libcxx=false'
       'use_gnome_keyring=false'
       'use_qt=false' # look into enabling this
