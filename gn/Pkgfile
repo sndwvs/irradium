@@ -1,5 +1,5 @@
-# Description: elogind - extracted logind from systemd
-# URL: https://github.com/elogind/elogind
+# Description: Meta-build system that generates build files for Ninja
+# URL: https://gn.googlesource.com/gn
 # Maintainer: mara, mara at fail dot pp dot ua
 # Depends on: python3 zstd
 
