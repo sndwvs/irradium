@@ -48,9 +48,9 @@ build() {
     --with-cacerts-file=$SRC/java_cacerts-$_cert_ver \
     --with-jtreg=no \
     --with-boot-jdk=$JAVA_HOME \
-    --with-version-opt="CRUX-r$release" \
+    --with-version-opt="irradium-r$release" \
     --with-version-build="${version#*+}" \
-    --with-vendor-name="CRUX" \
+    --with-vendor-name="irradium" \
     --with-jobs=$JOBS \
     --with-libjpeg=system \
     --with-giflib=system \
