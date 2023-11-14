@@ -7,6 +7,7 @@ d:elogind
 d:gn
 d:chromium
 d:chromium/patches
+d:openjdk20-jdk
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:1592034140f6a3200e359ee75ea6a85a:pygtk/.md5sum
 f:1fd62a70a3b296c59be018c1e8d4b229:pygtk/config.guess-support-aarch64-riscv64.patch
@@ -51,3 +52,6 @@ f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
 f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
 f:56422ca7805d56ad890b238bd9c7dbe5:chromium/post-install
 f:11451634ab37a81b37baf137d9a3ffc1:chromium/Pkgfile
+f:b9de1a5cd217513a591c2e5399dcf346:openjdk20-jdk/.footprint
+f:2aa8853051054c742c81fe8bb03f12c7:openjdk20-jdk/.signature
+f:f459b58ab92f946148c678ee29bf364c:openjdk20-jdk/Pkgfile
