@@ -51,7 +51,7 @@ f:df9eafc048e222d79ba5d8ea0d180621:libtheora/.signature
 f:26b65479c14e8ff3fad493216daa083e:libtheora/Pkgfile
 f:ffd0160f322e2e008d402646652d736e:llvm/.footprint
 f:97837119ca6d5b23b232c8e86ab554f0:llvm/.signature
-f:52a2a06ac4fbf3202a9677ac00c585af:llvm/Pkgfile
+f:d69e555e9413d50f0c5e5a3647e61055:llvm/Pkgfile
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:27e80ba3bef2cc48c2d41d29e44237dc:llvm/llvm-config.h
