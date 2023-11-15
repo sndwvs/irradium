@@ -38,7 +38,7 @@ f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:76523b390cbf0b50d43a2e1d829f9c69:harfbuzz/.footprint
 f:674fae555e8d1b17f7345d6a0122b15d:harfbuzz/.signature
-f:437e6c8bb978b15bbad0db211974abba:harfbuzz/Pkgfile
+f:a6c51143dafcb8ba8b106b59c3ae3349:harfbuzz/Pkgfile
 f:f3afe96ae4c323a7fffa8dbeabb3eda2:libkeybinder3/Pkgfile
 f:e901c5b6b83bc582e0d816201faa8b5d:libsdl/.footprint
 f:aa15fb035ad4bbef6f85a9c7bc30e376:libsdl/.signature
