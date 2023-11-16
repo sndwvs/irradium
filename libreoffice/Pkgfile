@@ -15,7 +15,7 @@ source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/
   https://dev-www.libreoffice.org/src/dtoa-20180411.tgz
   #https://dev-www.libreoffice.org/src/skia-m90-45c57e116ee0ce214bdf78405a4762722e4507d9.tar.xz
   https://dev-www.libreoffice.org/src/pdfium-$pdfiumversion.tar.bz2
-  #https://dev-www.libreoffice.org/src/libcmis-0.5.2.tar.xz
+  https://dev-www.libreoffice.org/src/libcmis-0.5.2.tar.xz
   optjava.patch
   makefile.in.patch)
 
