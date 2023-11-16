@@ -84,7 +84,7 @@ check_repos() {
                     crux_package=$(get_package_name $crux_pkg_path)
                     crux_version=$(get_package_version $crux_pkg_path)
                     if [[ $irradium_version != $crux_version ]]; then
-                        printf "port: %-15s update package: %-30s  %-10s -> %+10s\n" irradium-${port} $irradium_package $irradium_version $crux_version
+                        printf "port: %-20s update package: %s   %-1s -> %+1s\n" irradium-${port} $irradium_package $irradium_version $crux_version
                     fi
                 fi
             fi
