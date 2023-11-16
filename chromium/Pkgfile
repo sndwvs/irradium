@@ -210,7 +210,7 @@ build() {
     install -Dm644 chrome/installer/linux/common/desktop.template \
       "$PKG/usr/share/applications/chromium.desktop"
     install -Dm644 chrome/app/resources/manpage.1.in \
-      "$PKG/usr/man/man1/chromium.1"
+      "$PKG/usr/share/man/man1/chromium.1"
     sed -i \
       -e "s/@@MENUNAME@@/Chromium/g" \
       -e "s/@@PACKAGE@@/chromium/g" \
