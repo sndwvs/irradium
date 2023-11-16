@@ -1,0 +1,26 @@
+# Description: user-friendly dm-crypt/LUKS interface
+# URL: https://gitlab.com/cryptsetup/cryptsetup
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Depends on: json-c libdevmapper openssl popt
+
+name=cryptsetup
+version=2.6.1
+release=1
+source=(https://www.kernel.org/pub/linux/utils/$name/v${version%.*}/$name-$version.tar.xz)
+
+build() {
+	cd $name-$version
+
+	prt-get isinst asciidoctor || PKGMK_CRYPTSETUP+=' --disable-asciidoc'
+
+	./configure $PKGMK_CRYPTSETUP \
+		--prefix=/usr \
+		--disable-nls \
+		--disable-static \
+		--disable-ssh-token
+	make
+	make DESTDIR=$PKG install
+
+	#install -d $PKG/sbin
+	#mv $PKG/{usr/sbin,sbin}/cryptsetup.static
+}
