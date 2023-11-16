@@ -11,7 +11,8 @@ source=(https://github.com/annulen/webkit/releases/download/qtwebkit-$_qtver/qtw
         qt5-webkit-bison-3.7.patch
         qt5-webkit-python-3.9.patch
         icu68.patch
-        glib-2.68.patch)
+        glib-2.68.patch
+        webkit-offlineasm-warnings-ruby27.patch)
 
 build() {
     cd qtwebkit-$_qtver
@@ -20,6 +21,13 @@ build() {
     patch -p1 -i $SRC/glib-2.68.patch
     patch -p1 -i $SRC/qt5-webkit-bison-3.7.patch # Fix build with bison 3.7
     patch -p1 -i $SRC/qt5-webkit-python-3.9.patch # Fix build with python 3.9
+    patch -p1 -i $SRC/webkit-offlineasm-warnings-ruby27.patch
+
+    export CFLAGS+=" -DU_DEFINE_FALSE_AND_TRUE=1"
+    export CXXFLAGS+=" -fpermissive -fno-strict-aliasing -DU_DEFINE_FALSE_AND_TRUE=1"
+    export OPENSOURCE_CXXFLAGS+=" -fpermissive -fno-strict-aliasing -DU_DEFINE_FALSE_AND_TRUE=1"
+    export QTDIR="/usr/lib/qt5"
+    export LD_LIBRARY_PATH="${QTDIR}/qtbase/lib:${QTDIR}/qttools/lib:${LD_LIBRARY_PATH}"
 
     cmake -B build -G Ninja \
         -DCMAKE_INSTALL_PREFIX=/usr \
@@ -29,6 +37,7 @@ build() {
         -DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
         -DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
         -DPORT=Qt \
+        -DQt5_DIR=$QTDIR \
         -DENABLE_TOOLS=OFF \
         -Wno-dev 
     cmake --build build
