@@ -64,7 +64,7 @@ f:c422128406c35d7a06be0befdde1b872:libreoffice/Pkgfile
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
 f:330406e43a76603e3c86156ea1e0a779:libreoffice/makefile.in.patch
 f:ddc9e2e08ee5c3fb22a4b2bf4d4bee39:libreoffice/optjava.patch
-f:a94d0de7de8181e126056f377531e2b9:quiterss/post-install
+f:0ceeb0e0c8fd191e472a573b3296a9fa:quiterss/post-install
 f:8ab5923738c8e9edcee518763a2d2489:quiterss/Pkgfile
 f:3540b17b2229c92567aa6f57ae8f41e0:qt5-webkit/icu68.patch
 f:aec15c20d792575f72122967af1ee827:qt5-webkit/glib-2.68.patch
