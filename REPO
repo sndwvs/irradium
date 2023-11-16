@@ -8,6 +8,7 @@ d:gn
 d:chromium
 d:chromium/patches
 d:openjdk20-jdk
+d:libreoffice
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:1592034140f6a3200e359ee75ea6a85a:pygtk/.md5sum
 f:1fd62a70a3b296c59be018c1e8d4b229:pygtk/config.guess-support-aarch64-riscv64.patch
@@ -55,3 +56,9 @@ f:f78cdb37d9914f0542f0e01e3b55dc61:chromium/Pkgfile
 f:b9de1a5cd217513a591c2e5399dcf346:openjdk20-jdk/.footprint
 f:2aa8853051054c742c81fe8bb03f12c7:openjdk20-jdk/.signature
 f:66335fad72e8f133e2058387de78a2a7:openjdk20-jdk/Pkgfile
+f:1653cf07c243ea3494790f7f1782e766:libreoffice/.footprint
+f:ba32fe7d3ddff8be2cbd4707cd76c3d1:libreoffice/.signature
+f:c88e55c0bba5d8572275a1d152abdfff:libreoffice/Pkgfile
+f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
+f:330406e43a76603e3c86156ea1e0a779:libreoffice/makefile.in.patch
+f:ddc9e2e08ee5c3fb22a4b2bf4d4bee39:libreoffice/optjava.patch

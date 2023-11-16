@@ -1,0 +1,38 @@
+diff -Naur libreoffice-7.5.0.1.old/Makefile.in libreoffice-7.5.0.1/Makefile.in
+--- libreoffice-7.5.0.1.old/Makefile.in	2022-12-28 10:49:24.815353715 +0000
++++ libreoffice-7.5.0.1/Makefile.in	2022-12-28 10:50:18.325920089 +0000
+@@ -9,7 +9,7 @@
+ 
+ gb_Top_MODULE_CHECK_TARGETS := slowcheck unitcheck subsequentcheck perfcheck uicheck screenshot
+ 
+-.PHONY : check-if-root bootstrap gbuild build build-non-l10n-only build-l10n-only check clean clean-build clean-host test-install distclean distro-pack-install docs download etags fetch get-submodules id install install-gdb-printers install-strip tags debugrun help showmodules translations packageinfo coverage internal.clean $(gb_Top_MODULE_CHECK_TARGETS)
++.PHONY : bootstrap gbuild build build-non-l10n-only build-l10n-only check clean clean-build clean-host test-install distclean distro-pack-install docs download etags fetch get-submodules id install install-gdb-printers install-strip tags debugrun help showmodules translations packageinfo coverage internal.clean $(gb_Top_MODULE_CHECK_TARGETS)
+ 
+ MAKECMDGOALS?=build
+ build_goal:=$(if $(filter build uicheck,$(MAKECMDGOALS)),build)\
+@@ -61,16 +61,6 @@
+ 
+ # Nested test is to check if the systemd-detect-virt command doesn't exist or it reports we're not
+ # in a container:
+-check-if-root:
+-	@if test ! `uname` = 'Haiku' -a `id -u` = 0; then \
+-		if test ! -x "$$(command -v systemd-detect-virt)" || ! systemd-detect-virt -c -q; then \
+-			echo; \
+-			echo 'Building LibreOffice as root is a very bad idea, use a regular user.'; \
+-			echo; \
+-			exit 1; \
+-		fi \
+-	fi
+-
+ gb_Side ?= host
+ 
+ include $(BUILDDIR)/config_$(gb_Side).mk
+@@ -276,7 +266,7 @@
+ #
+ # Bootstrap
+ #
+-bootstrap: check-if-root compilerplugins
++bootstrap: compilerplugins
+ 
+ #
+ # Build
