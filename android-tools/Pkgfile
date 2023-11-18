@@ -1,0 +1,21 @@
+# Description: Android platform tools
+# URL: http://tools.android.com/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: cmake ninja libusb protobuf brotli zstd pcre2 go gtest
+
+name=android-tools
+version=34.0.4
+release=1
+source=(https://github.com/nmeum/$name/releases/download/$version/$name-$version.tar.xz)
+
+build() {
+    cd $name-$version
+
+    cmake -S $name-$version -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+        -DCMAKE_C_FLAGS="$CFLAGS"
+    cmake --build build
+    DESTDIR=$PKG cmake --install build
+}

@@ -11,6 +11,7 @@ d:openjdk20-jdk
 d:libreoffice
 d:quiterss
 d:qt5-webkit
+d:android-tools
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:1592034140f6a3200e359ee75ea6a85a:pygtk/.md5sum
 f:1fd62a70a3b296c59be018c1e8d4b229:pygtk/config.guess-support-aarch64-riscv64.patch
@@ -72,3 +73,4 @@ f:1038eb7dafe27f0f905a070613bac3e4:qt5-webkit/Pkgfile
 f:f852ddcf1cd49354d75084e491783ec0:qt5-webkit/qt5-webkit-bison-3.7.patch
 f:aa35a52d0a4560753650dd7e06369d6c:qt5-webkit/qt5-webkit-python-3.9.patch
 f:f3eb9379339542f1a37767a83131ff64:qt5-webkit/webkit-offlineasm-warnings-ruby27.patch
+f:fbf8cbf9ade84f6577914e7a233998bb:android-tools/Pkgfile
