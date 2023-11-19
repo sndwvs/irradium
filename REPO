@@ -13,6 +13,7 @@ d:quiterss
 d:qt5-webkit
 d:android-tools
 d:gtest
+d:u-boot-tools
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:1592034140f6a3200e359ee75ea6a85a:pygtk/.md5sum
 f:1fd62a70a3b296c59be018c1e8d4b229:pygtk/config.guess-support-aarch64-riscv64.patch
@@ -76,3 +77,4 @@ f:aa35a52d0a4560753650dd7e06369d6c:qt5-webkit/qt5-webkit-python-3.9.patch
 f:f3eb9379339542f1a37767a83131ff64:qt5-webkit/webkit-offlineasm-warnings-ruby27.patch
 f:58c9841c1e8752ad00dbd08162c7b678:android-tools/Pkgfile
 f:b4540ed22130bd01c84e5fb52785c5fb:gtest/Pkgfile
+f:49cc550379adcb0b42caf33faa5c95ba:u-boot-tools/Pkgfile
