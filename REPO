@@ -77,4 +77,4 @@ f:aa35a52d0a4560753650dd7e06369d6c:qt5-webkit/qt5-webkit-python-3.9.patch
 f:f3eb9379339542f1a37767a83131ff64:qt5-webkit/webkit-offlineasm-warnings-ruby27.patch
 f:58c9841c1e8752ad00dbd08162c7b678:android-tools/Pkgfile
 f:b4540ed22130bd01c84e5fb52785c5fb:gtest/Pkgfile
-f:cda2efe5db828d4c3808b21bf2492a17:u-boot-tools/Pkgfile
+f:e4b4ba0c1d0fd29607f029cd251a4396:u-boot-tools/Pkgfile

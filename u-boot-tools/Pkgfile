@@ -11,11 +11,12 @@ source=(ftp://ftp.denx.de/pub/u-boot/u-boot-$version.tar.bz2)
 build(){
   cd u-boot-$version
 
-  make defconfig
-  make tools-all KBUILD_HOSTLDFLAGS=${LDFLAGS} CONFIG_KIRKWOOD=y
+  make tools-only_defconfig
+  make tools-only
+  make envtools
 
   install -m 755 -d $PKG/usr/bin
-  install -m 755 -t $PKG/usr/bin/ u-boot-$version/tools/{mk{,env}image,env/fw_printenv,img2srec,dumpimage,netconsole,jtagconsole,ncb}
+  install -m 755 -t $PKG/usr/bin/ tools/{mk{,env}image,env/fw_printenv,img2srec,dumpimage,netconsole,jtagconsole}
   ln -s fw_printenv $PKG/usr/bin/fw_setenv
-  install -m 644 -Dt $PKG/usr/share/man/man1/ u-boot-$version/doc/{mkimage,dumpimage}.1
+  install -m 644 -Dt $PKG/usr/share/man/man1/ doc/{mkimage,dumpimage}.1
 }
