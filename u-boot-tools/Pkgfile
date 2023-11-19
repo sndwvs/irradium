@@ -9,13 +9,13 @@ release=1
 source=(ftp://ftp.denx.de/pub/u-boot/u-boot-$version.tar.bz2)
 
 build(){
-  cd $name-$version
+  cd u-boot-$version
 
   make defconfig
   make tools-all KBUILD_HOSTLDFLAGS=${LDFLAGS}
 
   install -m 755 -d $PKG/usr/bin
-  install -m 755 -t $PKG/usr/bin/ $name-$version/tools/{mk{,env}image,env/fw_printenv,img2srec,dumpimage,netconsole,jtagconsole,ncb}
+  install -m 755 -t $PKG/usr/bin/ u-boot-$version/tools/{mk{,env}image,env/fw_printenv,img2srec,dumpimage,netconsole,jtagconsole,ncb}
   ln -s fw_printenv $PKG/usr/bin/fw_setenv
-  install -m 644 -Dt $PKG/usr/share/man/man1/ $name-$version/doc/{mkimage,dumpimage}.1
+  install -m 644 -Dt $PKG/usr/share/man/man1/ u-boot-$version/doc/{mkimage,dumpimage}.1
 }
