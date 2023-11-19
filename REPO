@@ -34,7 +34,7 @@ f:709f894b8e710c334590b40a0746ad30:rust/.signature
 f:be0cb1f8f06b2461c67857f7d6225253:rust/0001-bootstrap-Change-libexec-dir.patch
 f:035ed9138488ff51b88f628d88284d89:rust/0002-compiler-Change-LLVM-targets.patch
 f:ddbc0b79f535ccf85f2492900fe8597e:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
-f:b84f0d3c097986869dffc5f7b0bb8d09:rust/Pkgfile
+f:a8b8952a27b00a3c2b22b8f0ce56f52a:rust/Pkgfile
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:76523b390cbf0b50d43a2e1d829f9c69:harfbuzz/.footprint

@@ -5,9 +5,9 @@
 # Optional: ccache clang libgit2 lld polly sccache
 
 name=rust
-version=1.73.0
-_date=2023-08-24
-_rustc=1.72.0
+version=1.74.0
+_date=2023-10-05
+_rustc=1.73.0
 _cargo=$_rustc
 release=1
 
@@ -82,7 +82,7 @@ build() {
 	# Use our *-pc-linux-gnu targets, making LTO with clang simpler
 	patch -p1 -i $SRC/0002-compiler-Change-LLVM-targets.patch
 
-	patch -Np1 -i $SRC/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
+	patch -p1 -i $SRC/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 
 cat <<- EOF > $SRC/config.toml
 	changelog-seen = 2
