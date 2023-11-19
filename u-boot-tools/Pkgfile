@@ -12,7 +12,7 @@ build(){
   cd u-boot-$version
 
   make defconfig
-  make tools-all KBUILD_HOSTLDFLAGS=${LDFLAGS}
+  make tools-all KBUILD_HOSTLDFLAGS=${LDFLAGS} CONFIG_KIRKWOOD=y
 
   install -m 755 -d $PKG/usr/bin
   install -m 755 -t $PKG/usr/bin/ u-boot-$version/tools/{mk{,env}image,env/fw_printenv,img2srec,dumpimage,netconsole,jtagconsole,ncb}
