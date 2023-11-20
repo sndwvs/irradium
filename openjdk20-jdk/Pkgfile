@@ -7,10 +7,11 @@ name=openjdk20-jdk
 version=20.0.2+9
 _boot_ver=20230715
 _cert_ver=20210916
-release=1
+release=2
 source=(https://github.com/openjdk/jdk20u/archive/jdk-$version/$name-$version.tar.gz
         https://download.java.net/java/GA/jdk20.0.2/6e380f22cbe7469fa75fb448bd903d8e/9/GPL/openjdk-20.0.2_linux-aarch64_bin.tar.gz
-        https://git.crux.nu:82/tb/java-distfiles/raw/branch/master/distfiles/java_cacerts-${_cert_ver})
+        https://git.crux.nu:82/tb/java-distfiles/raw/branch/master/distfiles/java_cacerts-${_cert_ver}
+        openjdk20.sh)
 
 build() {
   if [ -e '/usr/bin/ccache' ]; then
@@ -79,4 +80,6 @@ build() {
   echo "/usr/lib/java/$name/lib" > $PKG/etc/revdep.d/$name
   echo "/usr/lib/java/$name/lib/jli" >> $PKG/etc/revdep.d/$name
   echo "/usr/lib/java/$name/lib/server" >> $PKG/etc/revdep.d/$name
+
+  install -Dm 0755 $SRC/openjdk20.sh $PKG/etc/profile.d/openjdk20.sh
 }

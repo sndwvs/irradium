@@ -61,7 +61,8 @@ f:56422ca7805d56ad890b238bd9c7dbe5:chromium/post-install
 f:f78cdb37d9914f0542f0e01e3b55dc61:chromium/Pkgfile
 f:b9de1a5cd217513a591c2e5399dcf346:openjdk20-jdk/.footprint
 f:2aa8853051054c742c81fe8bb03f12c7:openjdk20-jdk/.signature
-f:66335fad72e8f133e2058387de78a2a7:openjdk20-jdk/Pkgfile
+f:1f65962a27c3a47e72a9dc22180c2d81:openjdk20-jdk/Pkgfile
+f:d4dc701a1ed12696aec46fae3396c77e:openjdk20-jdk/openjdk20.sh
 f:1653cf07c243ea3494790f7f1782e766:libreoffice/.footprint
 f:ba32fe7d3ddff8be2cbd4707cd76c3d1:libreoffice/.signature
 f:81537497be1e2d9dda6192504fd2be54:libreoffice/Pkgfile
