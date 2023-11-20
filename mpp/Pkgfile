@@ -1,0 +1,30 @@
+# Description: Media Process Platform (MPP) module 
+# URL: https://github.com/rockchip-linux/mpp
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: cmake ninja libusb protobuf brotli zstd pcre2 go gtest
+
+name=mpp
+version=20231118
+release=1
+source=(https://github.com/rockchip-linux/$name/archive/3b2784384468f13fb7659a47058024d990048cfa.tar.gz
+        fix-hardware-limited-to-memory-less-than-4G.patch)
+
+build() {
+    cd $name-$version
+
+    patch -p1 --verbose $SRC/fix-hardware-limited-to-memory-less-than-4G.patch
+
+    cmake \
+        -DCMAKE_C_FLAGS="$CFLAGS" \
+        -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DMAN_INSTALL_DIR=/usr/share/man \
+        -DCMAKE_INSTALL_LIBDIR=lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DRKPLATFORM=ON \
+        -DHAVE_DRM=ON \
+        -DARM_MIX_32_64=ON
+
+    make
+    make install DESTDIR=$PKG
+}
