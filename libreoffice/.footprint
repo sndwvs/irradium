@@ -304,6 +304,7 @@ lrwxrwxrwx	root/root	usr/lib/libreoffice/program/bootstraprc -> ../../../etc/lib
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libemboleobj.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libemfiolo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libevtattlo.so
+-rwxr-xr-x	root/root	usr/lib/libreoffice/program/libexslt.so.0
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libfilelo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libfilterconfiglo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libflatlo.so
@@ -452,6 +453,7 @@ lrwxrwxrwx	root/root	usr/lib/libreoffice/program/bootstraprc -> ../../../etc/lib
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libvcllo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libvclplug_genlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libvclplug_gtk3lo.so
+-rwxr-xr-x	root/root	usr/lib/libreoffice/program/libvclplug_qt5lo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwpftcalclo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwpftdrawlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwpftimpresslo.so
@@ -459,6 +461,7 @@ lrwxrwxrwx	root/root	usr/lib/libreoffice/program/bootstraprc -> ../../../etc/lib
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwriterfilterlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwriterlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwriterperfectlo.so
+-rwxr-xr-x	root/root	usr/lib/libreoffice/program/libxml2.so.2
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libxmlfalo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libxmlfdlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libxmlreaderlo.so
@@ -467,6 +470,7 @@ lrwxrwxrwx	root/root	usr/lib/libreoffice/program/bootstraprc -> ../../../etc/lib
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libxoflo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libxolo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libxsec_xmlsec.so
+-rwxr-xr-x	root/root	usr/lib/libreoffice/program/libxslt.so.1
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libxsltdlglo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libxsltfilterlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libxstor.so

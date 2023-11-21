@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7iGsZlmdTxJepp3DYWwXO28WN/6b+GoVN973BogTt8FXFhpaj0CngIvm2TlIuZ2BfAYo0i6Df5Th5NRSPp8qDQY=
+SHA256 (Pkgfile) = 71e12520add01ba023b7cf12fac88d5246a905bfbb53f36bd133348c2ebce4f1
+SHA256 (.footprint) = ad45e267cddd796b028b70f6870c98cc39e7ceefdc678b4a275b50c50347b049
+SHA256 (elogind-252.9.tar.gz) = 7af8caa8225a406e77fb99c9f33dba5e1f0a94f0e1277c9d91dcfc016f116d85
+SHA256 (10-enable-elogind-power.rules.gz) = 0fc0bde6e1ac833608db13d4ea561da2fa5553958933562a6aa94767bc8906c5
+SHA256 (elogind) = 40e236bf071f00c7b25c150cfaaf0c28f76683497afc369615781c0319b1616e

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7na5Q9saeV6vWqA2hA/JEdq8IbddX1vJ8qfx131JwKwC7dIC+VudHwT0Rh7wnvS6B2JEFkIak1/JpnGpWlGXNgc=
+SHA256 (Pkgfile) = c51cdc62d9ec290af39ce224c8683f9d2618fb0eaa22320f0fe2e8f427c60f84
+SHA256 (3b2784384468f13fb7659a47058024d990048cfa.tar.gz) = 9d09fa1306a13c3df6f888356bce39e2ad6315a672f04375131c2f0385f6ad57
+SHA256 (fix-hardware-limited-to-memory-less-than-4G.patch) = dc579e13aacdd6524a10fbe24868d401f208a0c3ff2a8a100a70403935e0f662
