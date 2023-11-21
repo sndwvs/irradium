@@ -1,6 +1,6 @@
-untrusted comment: verify with /etc/ports/opt.pub
-RWSE3ohX2g5d/aVU6u9wf8Nf+laNbQTeFq2trniZjlv53IdOnwMq3Tdgccn5Wqv4NS1ubSqmJYjl6xI9f25SJU0Pe5o3OEQbmQs=
-SHA256 (Pkgfile) = f0d29fd7378e375873f23073116c29bb87ac9a2a924a2179f8e890ea720bb76c
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCf+8YGysXcr41wJ4HlbL3SJyMIMIHQxcLksGL2kXmZuSpr9nlJLZhwUBeCcQnxvhzZaSLqi+aLa0Bp8Oa2tJawo=
+SHA256 (Pkgfile) = 218eedaf6b6f4e312cb57d86d8ac73a14007851dbd8217fe8a517d0f646e9b83
 SHA256 (.footprint) = 203217745aafde2a04cab5d6620fe36d940d3aba7cc5a678130cb771bd8284c7
 SHA256 (SDL-1.2.15.tar.gz) = d6d316a793e5e348155f0dd93b979798933fb98aa1edebcc108829d6474aad00
 SHA256 (libsdl-1.2.x-libx11.patch) = cdb44e23a1ce8336313f340e226e094d0c65d895772e396f9b3f55566ecd6394

@@ -1,0 +1,10 @@
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCT3DpgnplX5hgu98GnQ95Tmf9IA4fN69RaF0xKMUscbeffXk6PYhqKjkgRZwPTsZZRTPBt5g/sVeohbk03/erAg=
+SHA256 (Pkgfile) = cb118b05b78ead225c52baf25f6b6a8133ec35bc932beacecfe12973f947f311
+SHA256 (.footprint) = f0007fe24f4ead898724cc62f6bc623b691b51200508c6eb54bf7461d29d9380
+SHA256 (lightdm-1.32.0.tar.xz) = 12f5ab432748f0387c7cf8b94430495a558a035a4f8465e5181af6faff133e4b
+SHA256 (50-irradium-defaults.conf) = ef03955e4617c0de60aa99321edb41cfa621a7e874fde38f1ba4b3c9fd93895a
+SHA256 (50-directories.conf) = 7a5141e7b4a5808fe7c74b6c619ce5bd563477efa10252cc15d23bfb63ec87fa
+SHA256 (lightdm.rules) = a89566307e1c81c24f037d854cbd472d2f94f8a4b759877a01563a332319f7d6
+SHA256 (lightdm) = a94dce15feb245c7d0d4ed2599b2fdc8d80e1fbce911b5b555b595e2b4ce4dc5
+SHA256 (Xsession) = f22c41640d8d82c8b3fe5669b89f66d0224fe799bd45050c8901730a673f0097

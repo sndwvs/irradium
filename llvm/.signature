@@ -1,10 +1,10 @@
-untrusted comment: verify with /etc/ports/opt.pub
-RWSE3ohX2g5d/Xx27fCKwzPQZm6cN/jnFlz5T4Wl+lMxYhD3LkLOLf1dhwuhA3GBnZuZGarshaXZq3/KztceLDrMZ76Svr2G0w4=
-SHA256 (Pkgfile) = cb6128114a9a0eb5a7778ae3eca78b47df6cce30a55132af9ec14fbd819c0e75
-SHA256 (.footprint) = 72940e844772ce3754a0264e3dc4f9afc1d7c7abf5b1cc745e5c0c96edbebc15
-SHA256 (llvm-17.0.3.src.tar.xz) = 18fa6b5f172ddf5af9b3aedfdb58ba070fd07fc45e7e589c46c350b3cc066bc1
-SHA256 (cmake-17.0.3.src.tar.xz) = 54fc534f0da09088adbaa6c3bfc9899a500153b96e60c2fb9322a7aa37b1027a
-SHA256 (third-party-17.0.3.src.tar.xz) = 6e84ff16044d698ff0f24e7445f9f47818e6523913a006a5e1ea79625b429b7b
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCVgypc5k/zlu8NGUvcq2XoUzFqx4BbAsFgXzlzep0pRTgAYHM+7+PxeniTy6QXK/OBEGtD+aAaMDjG4jduc9lQY=
+SHA256 (Pkgfile) = ddecef1496bbf4ede258cfe9a2a7f244eff40ad85411747568c405a944fd03dd
+SHA256 (.footprint) = b1a11b777cd1bc985e0b2692e8aa079d43d085ccc78ca545fa81a57a26f9e043
+SHA256 (llvm-17.0.5.src.tar.xz) = 569526fd017478eee51518a79c064442c0499269c6a6de586e409d91282afd04
+SHA256 (cmake-17.0.5.src.tar.xz) = 734ea7767ebda642d22c878024c9fb14ae0521d048bdba54e463bb73260adaef
+SHA256 (third-party-17.0.5.src.tar.xz) = fe2f67bda7b1c28ff3930a91481cf64b6059aacf7b683c29b95424d32a258890
 SHA256 (install-prefix.patch) = 2649b61a459eb6d8a9aca38ab411aec27eeae57fe82e32d135db4ccb353c9dda
 SHA256 (rust-feature-tables.patch) = 88470afc557650112af05e9055d0010f07a888c34fcc61ed8b7cc165d8ecd9af
-SHA256 (llvm-config.h) = 2227b83b904348e5530f3475c978e11cb0f05a85024781dcb49ac86b65582707
+SHA256 (llvm-config.h) = 39dfd632a32169c8add6f94976a792db848b989d47fbf85af179419d83728556
