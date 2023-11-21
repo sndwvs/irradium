@@ -17,6 +17,7 @@ d:u-boot-tools
 d:mpp
 d:tg_owt
 d:telegram-desktop
+d:jemalloc
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:1fd62a70a3b296c59be018c1e8d4b229:pygtk/config.guess-support-aarch64-riscv64.patch
 f:94825788efcf66f56afcbd921d37a783:pygtk/Pkgfile
@@ -103,3 +104,4 @@ f:5d969854c3e1d59553f19fbc41224115:mpp/.signature
 f:597426cb5a51cfa0b2d932fc02860843:tg_owt/gcc13.patch
 f:e16d539e94f7978ae6c30507ece6a777:tg_owt/Pkgfile
 f:b0803067cfd3da731bfdf913eff3f1f5:telegram-desktop/Pkgfile
+f:8d008c7ebc775f1823ba35c211c98e8c:jemalloc/Pkgfile

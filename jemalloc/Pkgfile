@@ -1,0 +1,23 @@
+# Description: General-purpose scalable concurrent malloc implementation
+# URL: http://www.canonware.com/jemalloc/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: cmake ninja pipewire pulseaudio libjpeg-turbo libxcomposite
+
+name=jemalloc
+version=5.3.0
+release=1
+source=(https://github.com/jemalloc/jemalloc/releases/download/$version/$name-$version.tar.bz2)
+
+build() {
+    cd $name-$version
+
+    ./configure \
+        --prefix=/usr \
+        --disable-initial-exec-tls \
+        --enable-autogen \
+        --disable-nls \
+        --disable-debug
+
+    make
+    make DESTDIR=$PKG install
+}
