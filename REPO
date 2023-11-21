@@ -2,12 +2,9 @@ d:mtdev
 d:mesa
 d:mesa/patches
 f:d32239bcb673463ab874e80d47fae504:COPYING
-f:800a15cfc872acf9999bce55b30491a8:mtdev/.footprint
-f:8e9fbbcedd65b5874bccf980628a0ed5:mtdev/.signature
 f:3124e82d69af0ee140864b85bf904a25:mtdev/Pkgfile
-f:9999e2bb368fa83633a501be582c5399:mesa/.footprint
-f:de37f89553dcc5bd255dc8f5accca367:mesa/.signature
-f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
+f:800a15cfc872acf9999bce55b30491a8:mtdev/.footprint
+f:3ac078834db014ccf66b1425274e9f53:mtdev/.signature
 f:a471c8eb29c2746b3b56a5e05fae657d:mesa/patches/0001-panfrost-Abstract-some-kernel-driver-operations.patch
 f:3da2d580744d910e6f861bbe8ba25451:mesa/patches/0002-panfrost-Use-the-kmod-abstraction.patch
 f:ada1f6fe2dace43c628384893913c858:mesa/patches/0003-panfrost-Introduce-a-PAN_BO_SHAREABLE-flag.patch
@@ -74,4 +71,7 @@ f:536d48251699684557dcb2f65029432c:mesa/patches/0063-panfrost-Make-CS-decoding-m
 f:8186b2b05c0ee6966a94a2ee97cd5fac:mesa/patches/0064-panfrost-Move-occlusion_query-init-out-of-the-if-fs_.patch
 f:a92a0d5d4cf9604a4c6c925c5b3b8ebe:mesa/patches/2d4fe5f229791fde52846b3f583c12508b5109d6.patch
 f:b38bb73a75cfe6739e419c2a13ddcfd9:mesa/Pkgfile
+f:9999e2bb368fa83633a501be582c5399:mesa/.footprint
+f:afb249c6ded221459fe9de8d6cb32dde:mesa/.signature
+f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
 f:c530d42f82a46a1a6812cbbc8e916d31:mesa/README.md
