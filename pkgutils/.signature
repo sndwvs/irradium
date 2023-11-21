@@ -1,5 +1,6 @@
-untrusted comment: verify with /etc/ports/core.pub
-RWRJc1FUaeVeqr3tBrlDWRXSOHGMcMR7jI7W3N/g3ZW4bkK3O/J3c/5R5Y9z+76fJ7IS7GhT/dVYGz7/0xtF5qH35prWCOvZYQU=
-SHA256 (Pkgfile) = 6b7707560e674dbc4b55b5be4406c5cfde4cb616eb64ddbf1d23a2c46968245d
+untrusted comment: verify with /etc/ports/irradium-core.pub
+RWQAwxvZoACtGJGALTkJVguEwLUbhEnPAzj3idgSCwDq5LsSCFaed4QjeXhmVqD41ABmNZr/Ls4r+bQFRnLJlBLHkROFnZZUngo=
+SHA256 (Pkgfile) = 0f3bc89d3b968bd3a8ff901de9d17efd41ff712747da1819097233ed7dae3a77
 SHA256 (.footprint) = 7d143f18f63bba5569d729eefd0d0f04ae4b0539f8bd71f9cfd6955b9e7c639d
 SHA256 (pkgutils-5.40.10.tar.xz) = 2d86335be3d0452dcc7ae5f568e7296cd7ea80117f57646d15420a6dc192f174
+SHA256 (pkgmk.conf) = b9963780a196d4e1a860023e650a13c0d42d84a36b2183a480e4ae0d3ad3d568

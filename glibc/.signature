@@ -1,7 +1,7 @@
-untrusted comment: verify with /etc/ports/core.pub
-RWRJc1FUaeVeqpoW2OjCDQ3pK1hhqCCUSYuX9ciV1KAwTYdVuCv2RJf3OhZnimlfsBVUR/o0d8Asuyu4xcDxPYBt7fy7gMe/BAI=
-SHA256 (Pkgfile) = a7ea5f73724ac39fc56dda2879c73fd72c04e378b5694035d5ca8feea914ac92
-SHA256 (.footprint) = 9eff4b9e8478995dd0aceacfe9301a250827c8b27cb1d4605c696ac55eec873c
+untrusted comment: verify with /etc/ports/irradium-core.pub
+RWQAwxvZoACtGBWi32JLoUeNcRiNNao0JRg4e3/SLQhY1cigXmYPNdUqmdxoMrqzMlNiUB07OgP9Z61tkHX1WIL9jQ02S5Be3Qg=
+SHA256 (Pkgfile) = 60a9ec3483640d15a52fde4d9d939dda14e7fcbd951881db78af2053dfc5d120
+SHA256 (.footprint) = ebc0b37f69b6c3e389f78a4bc37379980c54ee44dedb55dee22b48a5ff629b6c
 SHA256 (glibc-2.36.tar.xz) = 1c959fea240906226062cb4b1e7ebce71a9f0e3c0836c09e7e3423d434fcfe75
 SHA256 (linux-5.15.55.tar.xz) = 1ef6bd508b6c3af3bef2d5b337e4477254dba284c79e329aa38f9763ae3bfdcc
 SHA256 (glibc-2.36-7.patch) = c167ddd1eb9e63fade7e60a2dc612a18e0900519d8c0ec1e0cf06fa92fca638a

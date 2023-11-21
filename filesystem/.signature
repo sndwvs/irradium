@@ -1,8 +1,8 @@
-untrusted comment: verify with /etc/ports/core.pub
-RWRJc1FUaeVeqsOuN5kCANz8IDAbseehSRFLW+1jx6QZa8scMn8fiB/BkaUci9CQjvtLm21MJHVuF/pj73kaBepVkuY2SxDCpAs=
-SHA256 (Pkgfile) = 24aa3dfa8f0e8123475c2d1a7a901457f2373cdfbc0c86e9566668b221488421
-SHA256 (.footprint) = a0b8a7ceee392c736b0c3847e7dea5ff429d95a1d61fa6f53ffad7d05ad9d29e
-SHA256 (issue) = e8f3a830102f902bf869c946634215f419ff76f4e03f627d84b8809ed85e65c2
+untrusted comment: verify with /etc/ports/irradium-core.pub
+RWQAwxvZoACtGOa5m1saxZy+yE3Jx7DHPUVOkx9XmKgnBJnPraMPUuSYXQe0RtE8fJMd/rCmRMMAgVW8WXZGfs5f2SpsLZh5ggg=
+SHA256 (Pkgfile) = 6a93ba917210a85f174a13b54f3926c5b5a51824ea66c8148ca7c1acb20ef572
+SHA256 (.footprint) = 3e5cde261deedb90620e02c4b34ba75a094798b4293d58453aa9d926bf681ff6
+SHA256 (issue) = 30bfc2ea7c2626df2de7e766b7e26cf8268e65ec18db946223580e2155c50aa8
 SHA256 (motd) = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 SHA256 (shells) = f5e8838cb33249bd0ab3a169097bcc411cfb1b37153f268e6655758942e46656
 SHA256 (group) = 6bb5cad2230ad0a7bda290386c345b80ee2e5d111a78d743584b47bc7defb30f

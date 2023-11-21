@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core.pub
-RWRJc1FUaeVeqn3Fa3O0uOxjhZiAiCr08Xb1QiWRGGpnq/y52BgisxavwPtlRdmbSxJnTTHWP5Q7y/zDeP1Fb1N62Qjn8lR3OQs=
-SHA256 (Pkgfile) = 8979c98582d1351e8edf52f899f3b5e0731acbf3a2cfb61828ae92035cc8405f
+untrusted comment: verify with /etc/ports/irradium-core.pub
+RWQAwxvZoACtGLJMzf5K9FYPAwxlsoKT2RWP62b4ibfpQdnh4q4e5Jriok69vwfRQ+hwPyLBje9t8TTeqa5iMC9XVOtn+HTdxQg=
+SHA256 (Pkgfile) = 0fdb37094943ee5c57af0bc23d6985eaaa3fb2a4512135d0cb85ed5090fa0322
 SHA256 (.footprint) = 4ded7e479fbecaf724eeed412013d7ec19ee65eceb2d4ef2804a6b575dd190d4
 SHA256 (flex-2.6.4.tar.gz) = e87aae032bf07c26f85ac0ed3250998c37621d95f8bd748b31f15b33c45ee995

@@ -11,7 +11,7 @@ lrwxrwxrwx	root/root	etc/localtime -> ../usr/share/zoneinfo/UTC
 -rw-r--r--	root/root	etc/resolv.conf
 -rw-r--r--	root/root	etc/rpc
 drwxr-xr-x	root/root	lib/
--rwxr-xr-x	root/root	lib/ld-linux-x86-64.so.2
+-rwxr-xr-x	root/root	lib/ld-linux-aarch64.so.1
 -rwxr-xr-x	root/root	lib/libBrokenLocale.so.1
 -rwxr-xr-x	root/root	lib/libanl.so.1
 -rwxr-xr-x	root/root	lib/libc.so.6
@@ -20,7 +20,6 @@ drwxr-xr-x	root/root	lib/
 -rwxr-xr-x	root/root	lib/libdl.so.2
 -rwxr-xr-x	root/root	lib/libm.so.6
 -rwxr-xr-x	root/root	lib/libmemusage.so
--rwxr-xr-x	root/root	lib/libmvec.so.1
 -rwxr-xr-x	root/root	lib/libnsl.so.1
 -rwxr-xr-x	root/root	lib/libnss_compat.so.2
 -rwxr-xr-x	root/root	lib/libnss_db.so.2
@@ -42,7 +41,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/getconf
 -rwxr-xr-x	root/root	usr/bin/getent
 -rwxr-xr-x	root/root	usr/bin/iconv
-lrwxrwxrwx	root/root	usr/bin/ld.so -> ../../lib/ld-linux-x86-64.so.2
+lrwxrwxrwx	root/root	usr/bin/ld.so -> ../../lib/ld-linux-aarch64.so.1
 -rwxr-xr-x	root/root	usr/bin/ldd
 -rwxr-xr-x	root/root	usr/bin/locale
 -rwxr-xr-x	root/root	usr/bin/localedef
@@ -106,69 +105,43 @@ drwxr-xr-x	root/root	usr/include/asm-generic/
 -rw-r--r--	root/root	usr/include/asm-generic/ucontext.h
 -rw-r--r--	root/root	usr/include/asm-generic/unistd.h
 drwxr-xr-x	root/root	usr/include/asm/
--rw-r--r--	root/root	usr/include/asm/a.out.h
 -rw-r--r--	root/root	usr/include/asm/auxvec.h
 -rw-r--r--	root/root	usr/include/asm/bitsperlong.h
--rw-r--r--	root/root	usr/include/asm/boot.h
--rw-r--r--	root/root	usr/include/asm/bootparam.h
 -rw-r--r--	root/root	usr/include/asm/bpf_perf_event.h
 -rw-r--r--	root/root	usr/include/asm/byteorder.h
--rw-r--r--	root/root	usr/include/asm/debugreg.h
--rw-r--r--	root/root	usr/include/asm/e820.h
 -rw-r--r--	root/root	usr/include/asm/errno.h
 -rw-r--r--	root/root	usr/include/asm/fcntl.h
--rw-r--r--	root/root	usr/include/asm/hw_breakpoint.h
--rw-r--r--	root/root	usr/include/asm/hwcap2.h
+-rw-r--r--	root/root	usr/include/asm/hwcap.h
 -rw-r--r--	root/root	usr/include/asm/ioctl.h
 -rw-r--r--	root/root	usr/include/asm/ioctls.h
 -rw-r--r--	root/root	usr/include/asm/ipcbuf.h
--rw-r--r--	root/root	usr/include/asm/ist.h
 -rw-r--r--	root/root	usr/include/asm/kvm.h
 -rw-r--r--	root/root	usr/include/asm/kvm_para.h
--rw-r--r--	root/root	usr/include/asm/kvm_perf.h
--rw-r--r--	root/root	usr/include/asm/ldt.h
--rw-r--r--	root/root	usr/include/asm/mce.h
 -rw-r--r--	root/root	usr/include/asm/mman.h
 -rw-r--r--	root/root	usr/include/asm/msgbuf.h
--rw-r--r--	root/root	usr/include/asm/msr.h
--rw-r--r--	root/root	usr/include/asm/mtrr.h
 -rw-r--r--	root/root	usr/include/asm/param.h
 -rw-r--r--	root/root	usr/include/asm/perf_regs.h
 -rw-r--r--	root/root	usr/include/asm/poll.h
 -rw-r--r--	root/root	usr/include/asm/posix_types.h
--rw-r--r--	root/root	usr/include/asm/posix_types_32.h
--rw-r--r--	root/root	usr/include/asm/posix_types_64.h
--rw-r--r--	root/root	usr/include/asm/posix_types_x32.h
--rw-r--r--	root/root	usr/include/asm/prctl.h
--rw-r--r--	root/root	usr/include/asm/processor-flags.h
--rw-r--r--	root/root	usr/include/asm/ptrace-abi.h
 -rw-r--r--	root/root	usr/include/asm/ptrace.h
 -rw-r--r--	root/root	usr/include/asm/resource.h
 -rw-r--r--	root/root	usr/include/asm/sembuf.h
 -rw-r--r--	root/root	usr/include/asm/setup.h
--rw-r--r--	root/root	usr/include/asm/sgx.h
 -rw-r--r--	root/root	usr/include/asm/shmbuf.h
 -rw-r--r--	root/root	usr/include/asm/sigcontext.h
--rw-r--r--	root/root	usr/include/asm/sigcontext32.h
 -rw-r--r--	root/root	usr/include/asm/siginfo.h
 -rw-r--r--	root/root	usr/include/asm/signal.h
 -rw-r--r--	root/root	usr/include/asm/socket.h
 -rw-r--r--	root/root	usr/include/asm/sockios.h
 -rw-r--r--	root/root	usr/include/asm/stat.h
 -rw-r--r--	root/root	usr/include/asm/statfs.h
--rw-r--r--	root/root	usr/include/asm/svm.h
+-rw-r--r--	root/root	usr/include/asm/sve_context.h
 -rw-r--r--	root/root	usr/include/asm/swab.h
 -rw-r--r--	root/root	usr/include/asm/termbits.h
 -rw-r--r--	root/root	usr/include/asm/termios.h
 -rw-r--r--	root/root	usr/include/asm/types.h
 -rw-r--r--	root/root	usr/include/asm/ucontext.h
 -rw-r--r--	root/root	usr/include/asm/unistd.h
--rw-r--r--	root/root	usr/include/asm/unistd_32.h
--rw-r--r--	root/root	usr/include/asm/unistd_64.h
--rw-r--r--	root/root	usr/include/asm/unistd_x32.h
--rw-r--r--	root/root	usr/include/asm/vm86.h
--rw-r--r--	root/root	usr/include/asm/vmx.h
--rw-r--r--	root/root	usr/include/asm/vsyscall.h
 -rw-r--r--	root/root	usr/include/assert.h
 drwxr-xr-x	root/root	usr/include/bits/
 -rw-r--r--	root/root	usr/include/bits/a.out.h
@@ -238,8 +211,6 @@ drwxr-xr-x	root/root	usr/include/bits/
 -rw-r--r--	root/root	usr/include/bits/msq.h
 -rw-r--r--	root/root	usr/include/bits/netdb.h
 -rw-r--r--	root/root	usr/include/bits/param.h
-drwxr-xr-x	root/root	usr/include/bits/platform/
--rw-r--r--	root/root	usr/include/bits/platform/x86.h
 -rw-r--r--	root/root	usr/include/bits/poll.h
 -rw-r--r--	root/root	usr/include/bits/poll2.h
 -rw-r--r--	root/root	usr/include/bits/posix1_lim.h
@@ -457,10 +428,10 @@ drwxr-xr-x	root/root	usr/include/finclude/
 -rw-r--r--	root/root	usr/include/glob.h
 -rw-r--r--	root/root	usr/include/gnu-versions.h
 drwxr-xr-x	root/root	usr/include/gnu/
--rw-r--r--	root/root	usr/include/gnu/lib-names-64.h
+-rw-r--r--	root/root	usr/include/gnu/lib-names-lp64.h
 -rw-r--r--	root/root	usr/include/gnu/lib-names.h
 -rw-r--r--	root/root	usr/include/gnu/libc-version.h
--rw-r--r--	root/root	usr/include/gnu/stubs-64.h
+-rw-r--r--	root/root	usr/include/gnu/stubs-lp64.h
 -rw-r--r--	root/root	usr/include/gnu/stubs.h
 -rw-r--r--	root/root	usr/include/grp.h
 -rw-r--r--	root/root	usr/include/gshadow.h
@@ -475,7 +446,6 @@ drwxr-xr-x	root/root	usr/include/gnu/
 -rw-r--r--	root/root	usr/include/limits.h
 -rw-r--r--	root/root	usr/include/link.h
 drwxr-xr-x	root/root	usr/include/linux/
--rw-r--r--	root/root	usr/include/linux/a.out.h
 -rw-r--r--	root/root	usr/include/linux/acct.h
 -rw-r--r--	root/root	usr/include/linux/acrn.h
 -rw-r--r--	root/root	usr/include/linux/adb.h
@@ -1436,7 +1406,6 @@ drwxr-xr-x	root/root	usr/include/sys/
 -rw-r--r--	root/root	usr/include/sys/auxv.h
 -rw-r--r--	root/root	usr/include/sys/bitypes.h
 -rw-r--r--	root/root	usr/include/sys/cdefs.h
--rw-r--r--	root/root	usr/include/sys/debugreg.h
 -rw-r--r--	root/root	usr/include/sys/dir.h
 -rw-r--r--	root/root	usr/include/sys/elf.h
 -rw-r--r--	root/root	usr/include/sys/epoll.h
@@ -1448,8 +1417,8 @@ drwxr-xr-x	root/root	usr/include/sys/
 -rw-r--r--	root/root	usr/include/sys/fsuid.h
 -rw-r--r--	root/root	usr/include/sys/gmon.h
 -rw-r--r--	root/root	usr/include/sys/gmon_out.h
+-rw-r--r--	root/root	usr/include/sys/ifunc.h
 -rw-r--r--	root/root	usr/include/sys/inotify.h
--rw-r--r--	root/root	usr/include/sys/io.h
 -rw-r--r--	root/root	usr/include/sys/ioctl.h
 -rw-r--r--	root/root	usr/include/sys/ipc.h
 -rw-r--r--	root/root	usr/include/sys/kd.h
@@ -1460,11 +1429,8 @@ drwxr-xr-x	root/root	usr/include/sys/
 -rw-r--r--	root/root	usr/include/sys/mtio.h
 -rw-r--r--	root/root	usr/include/sys/param.h
 -rw-r--r--	root/root	usr/include/sys/pci.h
--rw-r--r--	root/root	usr/include/sys/perm.h
 -rw-r--r--	root/root	usr/include/sys/personality.h
 -rw-r--r--	root/root	usr/include/sys/pidfd.h
-drwxr-xr-x	root/root	usr/include/sys/platform/
--rw-r--r--	root/root	usr/include/sys/platform/x86.h
 -rw-r--r--	root/root	usr/include/sys/poll.h
 -rw-r--r--	root/root	usr/include/sys/prctl.h
 -rw-r--r--	root/root	usr/include/sys/procfs.h
@@ -1475,7 +1441,6 @@ drwxr-xr-x	root/root	usr/include/sys/platform/
 -rw-r--r--	root/root	usr/include/sys/random.h
 -rw-r--r--	root/root	usr/include/sys/raw.h
 -rw-r--r--	root/root	usr/include/sys/reboot.h
--rw-r--r--	root/root	usr/include/sys/reg.h
 -rw-r--r--	root/root	usr/include/sys/resource.h
 -rw-r--r--	root/root	usr/include/sys/rseq.h
 -rw-r--r--	root/root	usr/include/sys/select.h
@@ -1513,7 +1478,6 @@ drwxr-xr-x	root/root	usr/include/sys/platform/
 -rw-r--r--	root/root	usr/include/sys/utsname.h
 -rw-r--r--	root/root	usr/include/sys/vfs.h
 -rw-r--r--	root/root	usr/include/sys/vlimit.h
--rw-r--r--	root/root	usr/include/sys/vm86.h
 -rw-r--r--	root/root	usr/include/sys/vt.h
 -rw-r--r--	root/root	usr/include/sys/wait.h
 -rw-r--r--	root/root	usr/include/sys/xattr.h
@@ -1832,12 +1796,9 @@ lrwxrwxrwx	root/root	usr/lib/libc_malloc_debug.so -> ../../lib/libc_malloc_debug
 lrwxrwxrwx	root/root	usr/lib/libcrypt.so -> ../../lib/libcrypt.so.1
 -rw-r--r--	root/root	usr/lib/libdl.a
 -rw-r--r--	root/root	usr/lib/libg.a
--rw-r--r--	root/root	usr/lib/libm-2.36.a
 -rw-r--r--	root/root	usr/lib/libm.a
--rw-r--r--	root/root	usr/lib/libm.so
+lrwxrwxrwx	root/root	usr/lib/libm.so -> ../../lib/libm.so.6
 -rw-r--r--	root/root	usr/lib/libmcheck.a
--rw-r--r--	root/root	usr/lib/libmvec.a
-lrwxrwxrwx	root/root	usr/lib/libmvec.so -> ../../lib/libmvec.so.1
 lrwxrwxrwx	root/root	usr/lib/libnss_compat.so -> ../../lib/libnss_compat.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_db.so -> ../../lib/libnss_db.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_hesiod.so -> ../../lib/libnss_hesiod.so.2
