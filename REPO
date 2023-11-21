@@ -15,6 +15,7 @@ d:android-tools
 d:gtest
 d:u-boot-tools
 d:mpp
+d:tg_owt
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:1fd62a70a3b296c59be018c1e8d4b229:pygtk/config.guess-support-aarch64-riscv64.patch
 f:94825788efcf66f56afcbd921d37a783:pygtk/Pkgfile
@@ -98,3 +99,5 @@ f:c77e8bf63589929985df9bf6d3d24dd3:u-boot-tools/.signature
 f:408b6e6380b0ec88608d2a4750dd218f:mpp/fix-hardware-limited-to-memory-less-than-4G.patch
 f:d0bdeeaca6164d0d79161f447ea2f53b:mpp/Pkgfile
 f:5d969854c3e1d59553f19fbc41224115:mpp/.signature
+f:597426cb5a51cfa0b2d932fc02860843:tg_owt/gcc13.patch
+f:e16d539e94f7978ae6c30507ece6a777:tg_owt/Pkgfile
