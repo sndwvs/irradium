@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-xfce.pub
+RWQ1yk7gkrBo0QzD9fWat+KPD3gKX/3SvUdXpjuW6pBzT42iFcBsQAOY82qltnfk7nLf1egQeZfQgbCisxx41ljPFXIjBcfyRg8=
+SHA256 (Pkgfile) = 7a43bf7f8a29fc3e18be37e0893b05e6a6524bd86f58cc92481917a847c6480f
+SHA256 (.footprint) = cebdf48ff19bada288f57949c4d0e39ceef92ea0bceb02f0cd1bbd8869c54922
+SHA256 (xfce4-screensaver-4.18.2.tar.bz2) = e4fcd2c414d3a4215e9e86a55edd87e2545b15c961917f5d72cace35b76e2b98

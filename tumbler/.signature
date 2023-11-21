@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-xfce.pub
+RWQ1yk7gkrBo0U+UZBZ4V2Neen7tHKIKBd/YOShNIwHNsHoRkk7XHTwJeqKYZIWhyHz+9DD5x+H6IXX8Z8bV0NtceirdyZP23gI=
+SHA256 (Pkgfile) = 7129f75903c52b2ddc5842d6d206a91409a6595e954eca0fe5838e23ce85f29b
+SHA256 (.footprint) = 5223b57d9db5286a9e76e8bb50d2c738a6fcb3aea473798123c8006b3cb5ca21
+SHA256 (tumbler-4.18.1.tar.bz2) = ff61981a9c0af5fec768d4f1552bd63948a64b2f4db1c2e3d93c31c19dc563a0

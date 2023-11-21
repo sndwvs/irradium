@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-xfce.pub
+RWQ1yk7gkrBo0bJu8o+mj0+TvEykiU1Xj/ypF3sqvgS5M7VbX/ppC8syCtdgGHAB3GMjj3j3VmCW+Hnh4/WUxEYOREa9FSPhzAQ=
+SHA256 (Pkgfile) = f6196bf1b21102eb27d7f1aee588774bf0fe2c913d6cfd8a1b55d7def18b2b36
+SHA256 (.footprint) = 44ad8da9817a71e2a0297f244de199c73b1bc437e3169c56a10042fe8780527f
+SHA256 (xfce4-clipman-plugin-1.6.5.tar.bz2) = 73156d66c1f866d2af0c20526c5ce58aedbce511b89bb436ba9bc6413fac5190
