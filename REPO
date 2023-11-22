@@ -115,4 +115,4 @@ f:516776fe66e77b0a15bf6dee857d0c1f:qt6-base/qtbase-6.5.3-xkbcommon160.patch
 f:d94b1d1d3dfd1696cb99a9642bf4d69a:mc/Pkgfile
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg-rockchip/add-av_stream_get_first_dts-for-chromium.patch
 f:dae0c10c99399580c929fc100e79faef:ffmpeg-rockchip/ffmpeg-x264-10bit.sh
-f:ad7d6b87c790e170e1232b3f5b7fbfe3:ffmpeg-rockchip/Pkgfile
+f:f5157ce4f11f99854740425a7ef41522:ffmpeg-rockchip/Pkgfile

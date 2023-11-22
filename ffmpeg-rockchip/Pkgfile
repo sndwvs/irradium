@@ -1,20 +1,19 @@
 # Description: Complete solution to record, convert and stream audio and video. fork Rockchip MPP.
 # URL: https://github.com/hbiyik/FFmpeg
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: yasm mpp
+# Depends on: yasm mpp librga
 # Optional: alsa-lib amf-headers cuda dav1d fdk-aac freetype gnutls gsm jack jack-audio-connection-kit lame libass libsdl2 libtheora libva libvdpau libvorbis libvpx libwebp nv-codec-headers opus pulseaudio svt-av1 x264 x265
 
 name=ffmpeg
 version=20230804
 release=1
-_commit=e243e8d0010dfdaab0a9e3f9bb94dba7a2c51c
-source=(https://ffmpeg.org/releases/$name-$version.tar.bz2  https://github.com/hbiyik/FFmpeg/archive/${_commit}.tar.gz
-
+_commit=e243e8d0010dfdaab0a9e3f9bb94dba7a2c51c69
+source=(https://github.com/hbiyik/FFmpeg/archive/${_commit}.tar.gz
     add-av_stream_get_first_dts-for-chromium.patch
     ffmpeg-x264-10bit.sh)
 
 build() {
-    cd $name-$version
+    cd FFmpeg-${_commit}
 
     prt-get isinst clang cuda nv-codec-headers && \
         PKGMK_FFMPEG+=' --enable-cuda-llvm --enable-nonfree --enable-cuda-nvcc --enable-libnpp' && \
