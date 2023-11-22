@@ -6,13 +6,14 @@
 name=mpp
 version=20231118
 release=1
-source=(https://github.com/rockchip-linux/$name/archive/3b2784384468f13fb7659a47058024d990048cfa.tar.gz
+_commit=3b2784384468f13fb7659a47058024d990048cfa
+source=(https://github.com/rockchip-linux/$name/archive/${_commit}.tar.gz
         fix-hardware-limited-to-memory-less-than-4G.patch)
 
 build() {
-    cd $name-$version
+    cd $name-${_commit}
 
-    patch -p1 --verbose $SRC/fix-hardware-limited-to-memory-less-than-4G.patch
+    patch -p1 --verbose -i $SRC/fix-hardware-limited-to-memory-less-than-4G.patch
 
     cmake \
         -DCMAKE_C_FLAGS="$CFLAGS" \
