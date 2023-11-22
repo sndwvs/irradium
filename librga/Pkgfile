@@ -1,0 +1,32 @@
+# Description: RGA - Raster Graphic Acceleration Unit
+# URL: https://github.com/tsukumijima/librga
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: meson ninja
+
+name=librga
+version=2.2.0
+release=1
+source=(https://github.com/tsukumijima/$name/archive/refs/tags/v${version}-1-edc2572.tar.gz)
+
+build(){
+  cd $name-$version
+
+  mkdir meson-build
+  cd meson-build
+  meson setup \
+    --prefix=/usr \
+    --libdir=lib \
+    --libexecdir=/usr/lib \
+    --bindir=/usr/bin \
+    --sbindir=/usr/sbin \
+    --includedir=/usr/include \
+    --datadir=/usr/share \
+    --mandir=/usr/share/man \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --buildtype=release \
+    .. || exit 1
+    "${NINJA:=ninja}" $NUMJOBS || exit 1
+    DESTDIR=$PKG $NINJA install || exit 1
+  cd ..
+}

@@ -19,6 +19,7 @@ d:telegram-desktop
 d:jemalloc
 d:range-v3
 d:go
+d:librga
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -107,3 +108,4 @@ f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
 f:8f4c7027c3b6a96e08915033c36e409e:go/Pkgfile
 f:94176bdc04fd60e98da8b5138e437d1a:go/.footprint
 f:3f3c02a1e8a60f7c252f474e481ff49e:go/.signature
+f:59c5beebc345bf550f204ce892da808f:librga/Pkgfile
