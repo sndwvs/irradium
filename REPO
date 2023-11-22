@@ -1,4 +1,3 @@
-d:pygtk
 d:libglade-compat
 d:libglade
 d:accountsservice
@@ -20,12 +19,6 @@ d:telegram-desktop
 d:jemalloc
 d:range-v3
 f:d32239bcb673463ab874e80d47fae504:COPYING
-f:1fd62a70a3b296c59be018c1e8d4b229:pygtk/config.guess-support-aarch64-riscv64.patch
-f:94825788efcf66f56afcbd921d37a783:pygtk/Pkgfile
-f:12acfacd26f19c504a0a2d0edeb66121:pygtk/python27.patch
-f:d7bbcdacd34b16dbf94e7f4df9e27b88:pygtk/fix-leaks-of-pango-objects.patch
-f:cea64ea71ace5b6b0287939ac1c90f40:pygtk/.footprint
-f:7432cc8836750a02cb76711ef5128bae:pygtk/.signature
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
 f:b49c2cd576cf8fb4d2373ca8dbfac511:libglade-compat/Pkgfile

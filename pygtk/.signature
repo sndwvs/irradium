@@ -1,7 +1,0 @@
-untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7guzdRTbyVQuvgNGWgBNqBFw4DqlsjiwdtA1Kgl4L4WZR8KEOlH2Dv0dtFTxU15leYiiZ4IYEEENgaGy2G5E+QE=
-SHA256 (Pkgfile) = 8b02d7318c193fc7cb967f3eebc638b33675e4721a040086d6f48352ec93552c
-SHA256 (pygtk-2.24.0.tar.bz2) = cd1c1ea265bd63ff669e92a2d3c2a88eb26bcd9e5363e0f82c896e649f206912
-SHA256 (python27.patch) = 39a30456cba055a452bb55c74ef1ff2f5f7bfaad22855b4dd569ab009b56b682
-SHA256 (fix-leaks-of-pango-objects.patch) = 0ca9e910e9bb88897089dd19752a419aa78de15463df766cb19a1d0c2dd45bcb
-SHA256 (config.guess-support-aarch64-riscv64.patch) = fd5193ecd6828b0ce0345611c8ced0cb729dd2d4c0fda9931aecbcb4048857d5
