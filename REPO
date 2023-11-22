@@ -18,6 +18,7 @@ d:strace
 d:cryptsetup
 d:libb2
 d:qt6-base
+d:mc
 f:0389af1eb18d4779b7cc7bdca4b6e35e:lightdm/50-directories.conf
 f:2a7326f4de1d949b8c96749b62cc5021:lightdm/lightdm.rules
 f:54ef775d0530ec0cf622b0ffbd038205:lightdm/pre-install
@@ -110,3 +111,4 @@ f:d6b10f4154e20d31f5ec6107e42db7b7:qt6-base/Pkgfile
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
 f:516776fe66e77b0a15bf6dee857d0c1f:qt6-base/qtbase-6.5.3-xkbcommon160.patch
+f:d94b1d1d3dfd1696cb99a9642bf4d69a:mc/Pkgfile
