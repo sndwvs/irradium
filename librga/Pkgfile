@@ -9,7 +9,7 @@ release=1
 source=(https://github.com/tsukumijima/$name/archive/refs/tags/v${version}-1-edc2572.tar.gz)
 
 build(){
-  cd $name-$version
+  cd ${name}-${version}-1-edc2572
 
   mkdir meson-build
   cd meson-build
