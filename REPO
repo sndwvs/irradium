@@ -104,6 +104,6 @@ f:d0bdeeaca6164d0d79161f447ea2f53b:mpp/Pkgfile
 f:5d969854c3e1d59553f19fbc41224115:mpp/.signature
 f:597426cb5a51cfa0b2d932fc02860843:tg_owt/gcc13.patch
 f:0252ab4dca2cb38001210ee1a4e883de:tg_owt/Pkgfile
-f:0fd6926e1355d3a2795a0f6dc00b408b:telegram-desktop/Pkgfile
+f:93ecdb372a46e4cc6f9f596f305ef814:telegram-desktop/Pkgfile
 f:8d008c7ebc775f1823ba35c211c98e8c:jemalloc/Pkgfile
 f:252da7d909cee2088734e606b6e5d8a5:range-v3/Pkgfile
