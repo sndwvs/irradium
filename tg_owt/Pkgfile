@@ -24,11 +24,11 @@ build() {
     cd $name-${_commit}
 
     mkdir -pv libyuv libvpx
-    bsdtar xzf $SRC/libyuv-${_libyuv_commit}.tar.gz -C libyuv
-    bsdtar xzf $SRC/libvpx-${_libvpx_commit}.tar.gz -C libvpx
-    bsdtar xzf $SRC/crc32c-${_crc32c_commit}.tar.gz --strip-components 1 -C src/third_party/crc32c/src 
-    bsdtar xzf $SRC/abseil-${_abseil_commit}.tar.gz --strip-components 1 -C src/third_party/abseil-cpp
-    bsdtar xzf $SRC/libsrtp-$_libsrtp_commit.tar.gz --strip-components 1 -C src/third_party/libsrtp/
+    bsdtar xzf ../../../${_libyuv_commit}.tar.gz -C libyuv
+    bsdtar xzf ../../../${_libvpx_commit}.tar.gz -C libvpx
+    bsdtar xzf ../../../${_crc32c_commit}.tar.gz --strip-components 1 -C src/third_party/crc32c/src
+    bsdtar xzf ../../../${_abseil_commit}.tar.gz --strip-components 1 -C src/third_party/abseil-cpp
+    bsdtar xzf ../../../$_libsrtp_commit.tar.gz --strip-components 1 -C src/third_party/libsrtp/
 
     mv libyuv/* src/third_party/libyuv/
     mv libvpx/* src/third_party/libvpx/
