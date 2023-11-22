@@ -1,0 +1,84 @@
+# Description: Complete solution to record, convert and stream audio and video. fork Rockchip MPP.
+# URL: https://github.com/hbiyik/FFmpeg
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: yasm mpp
+# Optional: alsa-lib amf-headers cuda dav1d fdk-aac freetype gnutls gsm jack jack-audio-connection-kit lame libass libsdl2 libtheora libva libvdpau libvorbis libvpx libwebp nv-codec-headers opus pulseaudio svt-av1 x264 x265
+
+name=ffmpeg
+version=20230804
+release=1
+_commit=e243e8d0010dfdaab0a9e3f9bb94dba7a2c51c
+source=(https://ffmpeg.org/releases/$name-$version.tar.bz2  https://github.com/hbiyik/FFmpeg/archive/${_commit}.tar.gz
+
+    add-av_stream_get_first_dts-for-chromium.patch
+    ffmpeg-x264-10bit.sh)
+
+build() {
+    cd $name-$version
+
+    prt-get isinst clang cuda nv-codec-headers && \
+        PKGMK_FFMPEG+=' --enable-cuda-llvm --enable-nonfree --enable-cuda-nvcc --enable-libnpp' && \
+        PKGMK_FFMPEG+=' --extra-cflags=-I/opt/cuda/include --extra-ldflags=-L/opt/cuda/lib64' && \
+        PATH="$PATH:/opt/cuda/bin"
+
+prt-get isinst amf-headers && PKGMK_FFMPEG+=' --enable-amf'
+    prt-get isinst dav1d && PKGMK_FFMPEG+=' --enable-libdav1d'
+    prt-get isinst fdk-aac && PKGMK_FFMPEG+=' --enable-libfdk-aac --enable-nonfree'
+    prt-get isinst freetype && PKGMK_FFMPEG+=' --enable-libfreetype'
+    prt-get isinst gnutls && PKGMK_FFMPEG+=' --enable-gnutls' || PKGMK_FFMPEG+=' --enable-openssl --enable-nonfree'
+    prt-get isinst gsm && PKGMK_FFMPEG+=' --enable-libgsm'
+    prt-get isinst jack && PKGMK_FFMPEG+=' --enable-libjack'
+    prt-get isinst lame && PKGMK_FFMPEG+=' --enable-libmp3lame'
+    prt-get isinst libass && PKGMK_FFMPEG+=' --enable-libass'
+    prt-get isinst libtheora && PKGMK_FFMPEG+=' --enable-libtheora'
+    prt-get isinst libvdpau && PKGMK_FFMPEG+=' --enable-vdpau'
+    prt-get isinst libvorbis && PKGMK_FFMPEG+=' --enable-libvorbis'
+    prt-get isinst libvpx && PKGMK_FFMPEG+=' --enable-libvpx'
+    prt-get isinst libwebp && PKGMK_FFMPEG+=' --enable-libwebp'
+    prt-get isinst nv-codec-headers && PKGMK_FFMPEG+=' --enable-nvdec --enable-nvenc'
+    prt-get isinst opus && PKGMK_FFMPEG+=' --enable-libopus'
+    prt-get isinst pulseaudio && PKGMK_FFMPEG+=' --enable-libpulse'
+    prt-get isinst svt-av1 && PKGMK_FFMPEG+=' --enable-libsvtav1'
+    prt-get isinst x264 && PKGMK_FFMPEG+=' --enable-libx264'
+    prt-get isinst x265 && PKGMK_FFMPEG+=' --enable-libx265'
+
+    patch -Np1 -i $SRC/add-av_stream_get_first_dts-for-chromium.patch
+
+    sed -i -e '/check_cflags -fdiagnostics-color=auto/d' configure
+
+    ./configure ${PKGMK_FFMPEG} \
+        --prefix=/usr \
+        --optflags="$CFLAGS" \
+        --cc=/usr/bin/gcc \
+        --cxx=/usr/bin/g++ \
+        --ar=/usr/bin/gcc-ar \
+        --nm=/usr/bin/gcc-nm \
+        --ranlib=/usr/bin/gcc-ranlib \
+        --strip=/usr/bin/strip \
+        --enable-gpl \
+        --enable-version3 \
+        --enable-shared \
+        --enable-pic \
+        --enable-lto \
+        --enable-ffplay \
+        --enable-avfilter \
+        --enable-postproc \
+        --enable-pthreads \
+        --enable-swresample \
+        --enable-rkmpp \
+        --disable-debug \
+        --disable-doc \
+        --disable-libcelt \
+        --disable-optimizations \
+        --disable-stripping
+
+    make
+    make DESTDIR=$PKG install install-man
+
+    rm -r $PKG/usr/share/ffmpeg/examples
+
+    if [ -e '/usr/lib/pkgconfig/x264.pc' ]; then
+        install -m 0755 -D $SRC/ffmpeg-x264-10bit.sh \
+            $PKG/usr/bin/ffmpeg-x264-10bit
+    fi
+}
