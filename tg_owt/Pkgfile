@@ -13,6 +13,11 @@ _libvpx_commit=03265cd42b3783532de72f2ded5436652e6f5ce3
 _abseil_commit=8c0b94e793a66495e0b1f34a5eb26bd7dc672db0
 _crc32c_commit=21fc8ef30415a635e7351ffa0e5d5367943d4a94
 source=(https://github.com/desktop-app/tg_owt/archive/${_commit}.tar.gz
+        https://chromium.googlesource.com/webm/libvpx/+archive/${_libvpx_commit}.tar.gz
+        https://chromium.googlesource.com/libyuv/libyuv/+archive/${_libyuv_commit}.tar.gz
+        https://github.com/google/crc32c/archive/${_crc32c_commit}.tar.gz
+        https://github.com/abseil/abseil-cpp/archive/${_abseil_commit}.tar.gz
+        https://github.com/cisco/libsrtp/archive/$_libsrtp_commit.tar.gz
         gcc13.patch)
 
 build() {
@@ -24,7 +29,7 @@ build() {
     bsdtar xzf $SRC/crc32c-${_crc32c_commit}.tar.gz --strip-components 1 -C src/third_party/crc32c/src 
     bsdtar xzf $SRC/abseil-${_abseil_commit}.tar.gz --strip-components 1 -C src/third_party/abseil-cpp
     bsdtar xzf $SRC/libsrtp-$_libsrtp_commit.tar.gz --strip-components 1 -C src/third_party/libsrtp/
-    
+
     mv libyuv/* src/third_party/libyuv/
     mv libvpx/* src/third_party/libvpx/
 

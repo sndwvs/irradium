@@ -103,7 +103,7 @@ f:408b6e6380b0ec88608d2a4750dd218f:mpp/fix-hardware-limited-to-memory-less-than-
 f:d0bdeeaca6164d0d79161f447ea2f53b:mpp/Pkgfile
 f:5d969854c3e1d59553f19fbc41224115:mpp/.signature
 f:597426cb5a51cfa0b2d932fc02860843:tg_owt/gcc13.patch
-f:e16d539e94f7978ae6c30507ece6a777:tg_owt/Pkgfile
+f:a48618def96d3977449ae0e114c2fbb0:tg_owt/Pkgfile
 f:0fd6926e1355d3a2795a0f6dc00b408b:telegram-desktop/Pkgfile
 f:8d008c7ebc775f1823ba35c211c98e8c:jemalloc/Pkgfile
 f:252da7d909cee2088734e606b6e5d8a5:range-v3/Pkgfile
