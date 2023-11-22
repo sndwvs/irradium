@@ -32,9 +32,7 @@ f:eb00bcd1d5195c0845aede171546e142:lightdm-gtk-greeter/Pkgfile
 f:a94d0de7de8181e126056f377531e2b9:lightdm-gtk-greeter/post-install
 f:4aa5b87a94f3507f16f9ac3838a4a54e:lightdm-gtk-greeter/.footprint
 f:bb233b17996d10bd9c3c282e05b95467:lightdm-gtk-greeter/.signature
-f:17b9fd0726e7654018d49789d0671442:medit/Pkgfile
-f:10394e93fa1a15d9693325386e864ec8:medit/.footprint
-f:d76f9cfba1caf009381e6a8f4f1f2f8f:medit/.signature
+f:4058919da1d2dae7a7dfe61d74d38643:medit/Pkgfile
 f:be0cb1f8f06b2461c67857f7d6225253:rust/0001-bootstrap-Change-libexec-dir.patch
 f:035ed9138488ff51b88f628d88284d89:rust/0002-compiler-Change-LLVM-targets.patch
 f:ddbc0b79f535ccf85f2492900fe8597e:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
