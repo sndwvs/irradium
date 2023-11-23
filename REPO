@@ -20,6 +20,7 @@ d:libb2
 d:qt6-base
 d:mc
 d:ffmpeg-rockchip
+d:ffmpeg
 f:0389af1eb18d4779b7cc7bdca4b6e35e:lightdm/50-directories.conf
 f:2a7326f4de1d949b8c96749b62cc5021:lightdm/lightdm.rules
 f:54ef775d0530ec0cf622b0ffbd038205:lightdm/pre-install
@@ -116,3 +117,6 @@ f:d94b1d1d3dfd1696cb99a9642bf4d69a:mc/Pkgfile
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg-rockchip/add-av_stream_get_first_dts-for-chromium.patch
 f:dae0c10c99399580c929fc100e79faef:ffmpeg-rockchip/ffmpeg-x264-10bit.sh
 f:f5157ce4f11f99854740425a7ef41522:ffmpeg-rockchip/Pkgfile
+f:8d01f9dc6e07549a5006967efd3622be:ffmpeg/add-av_stream_get_first_dts-for-chromium.patch
+f:dae0c10c99399580c929fc100e79faef:ffmpeg/ffmpeg-x264-10bit.sh
+f:a4f958914a4edf7e4381ef62687405a6:ffmpeg/Pkgfile
