@@ -20,7 +20,6 @@ build() {
     --disable-staticlink \
     --disable-portable \
     --disable-rpath \
-    --disable-libmad \
     --disable-gtk2 \
     --disable-adplug \
     --disable-coreaudio \
@@ -52,7 +51,7 @@ build() {
     --enable-vfs-curl \
     --enable-shared \
     --enable-m3u \
-    --enable-pltbrowser 
+    --enable-pltbrowser
 
     make
     make DESTDIR=$PKG install
