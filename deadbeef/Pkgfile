@@ -11,7 +11,9 @@ source=(https://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 build() {
   cd $name-$version
 
+  CFLAGS=${CFLAGS/-fstack-clash-protection/}
   export CC=clang CXX=clang++
+
   ./configure \
     --prefix=/usr \
     --disable-static \
