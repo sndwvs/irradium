@@ -4,7 +4,7 @@
 # Depends on: yasm mpp librga
 # Optional: alsa-lib amf-headers cuda dav1d fdk-aac freetype gnutls gsm jack jack-audio-connection-kit lame libass libsdl2 libtheora libva libvdpau libvorbis libvpx libwebp nv-codec-headers opus pulseaudio svt-av1 x264 x265
 
-name=ffmpeg
+name=ffmpeg-rockchip
 version=20230804
 release=1
 _commit=e243e8d0010dfdaab0a9e3f9bb94dba7a2c51c69
