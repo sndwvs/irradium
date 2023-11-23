@@ -6,13 +6,11 @@
 name=deadbeef
 version=1.9.6
 release=1
-source=(https://github.com/$name/$name/archive/v${version}/$name-$version.tar.gz
-    10-enable-elogind-power.rules.gz
-    elogind)
+source=(https://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 
 build() {
   cd $name-$version
-    
+
   export CC=clang CXX=clang++
   ./configure \
     --prefix=/usr \
