@@ -1,0 +1,59 @@
+# Description: the ultimate music player
+# URL: http://deadbeef.sourceforge.net
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: alsa-lib curl desktop-file-utils jansson gtk3 clang libdispatch libmad libtool libsamplerate yasm intltool gettext pkgconf ffmpeg
+
+name=deadbeef
+version=1.9.6
+release=1
+source=(https://github.com/$name/$name/archive/v${version}/$name-$version.tar.gz
+    10-enable-elogind-power.rules.gz
+    elogind)
+
+build() {
+  cd $name-$version
+    
+  export CC=clang CXX=clang++
+  ./configure \
+    --prefix=/usr \
+    --disable-static \
+    --disable-staticlink \
+    --disable-portable \
+    --disable-rpath \
+    --disable-libmad \
+    --disable-gtk2 \
+    --disable-adplug \
+    --disable-coreaudio \
+    --disable-dumb \
+    --disable-alac \
+    --disable-ffap \
+    --disable-gme \
+    --disable-mms \
+    --disable-mono2stereo \
+    --disable-psf \
+    --disable-rgscanner \
+    --disable-shn \
+    --disable-sid \
+    --disable-sndfile \
+    --disable-soundtouch \
+    --disable-src \
+    --disable-tta \
+    --disable-vfs-zip \
+    --disable-vtx \
+    --disable-wildmidi \
+    --disable-wma \
+    --disable-lfm \
+    --enable-alsa \
+    --enable-vorbis \
+    --enable-threads \
+    --enable-flac \
+    --enable-ffmpeg \
+    --enable-gtk3 \
+    --enable-vfs-curl \
+    --enable-shared \
+    --enable-m3u \
+    --enable-pltbrowser 
+
+    make
+    make DESTDIR=$PKG install
+}
