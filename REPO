@@ -21,6 +21,8 @@ d:range-v3
 d:go
 d:librga
 d:deadbeef
+d:keepassxc
+d:libdispatch
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -110,5 +112,7 @@ f:8f4c7027c3b6a96e08915033c36e409e:go/Pkgfile
 f:94176bdc04fd60e98da8b5138e437d1a:go/.footprint
 f:3f3c02a1e8a60f7c252f474e481ff49e:go/.signature
 f:f8bb0408167142e007fd12f48abba166:librga/Pkgfile
-f:46306d2c3db904e1a1ab5abe78cdf979:deadbeef/Pkgfile
+f:5ef456813a7422caa454c5561a864aeb:deadbeef/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
+f:de65bbf9b5e5765f1ebddec90f1c6bc4:keepassxc/Pkgfile
+f:5d7067b0661f91df5d4557c3a649fe51:libdispatch/Pkgfile
