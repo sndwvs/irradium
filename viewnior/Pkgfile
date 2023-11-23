@@ -1,0 +1,16 @@
+# Description: A simple, fast and elegant image viewer program
+# URL: https://siyanpanayotov.com/project/viewnior/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: exiv2 gtk2 gnome-common intltool meson perl
+
+name=viewnior
+version=1.8
+release=1
+source=(https://github.com/hellosiyan/Viewnior/archive/$name-$version.tar.gz)
+
+build() {
+  cd Viewnior-$name-$version
+  venom-meson build
+  meson compile -C build
+  DESTDIR=$PKG meson install --no-rebuild -C build
+}
