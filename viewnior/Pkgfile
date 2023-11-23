@@ -4,13 +4,14 @@
 # Depends on: exiv2 gtk2 gnome-common intltool meson perl
 
 name=viewnior
-version=1.8
+version=20211108
 release=1
-source=(https://github.com/hellosiyan/Viewnior/archive/$name-$version.tar.gz)
+_commit=4a4c6e8d4db8a2a05009f696f6fb3dd70741bb0c
+source=(https://github.com/hellosiyan/Viewnior/archive/${_commit}.tar.gz)
 
 build() {
-  cd Viewnior-$name-$version
-  venom-meson build
+  cd Viewnior-$name-${_commit}
+  meson build
   meson compile -C build
   DESTDIR=$PKG meson install --no-rebuild -C build
 }
