@@ -45,6 +45,8 @@ prt-get isinst amf-headers && PKGMK_FFMPEG+=' --enable-amf'
 
     sed -i -e '/check_cflags -fdiagnostics-color=auto/d' configure
 
+    [[ $(uname -m) == "armv7h" || $(uname -m) == "aarch64" ]] && PKGMK_FFMPEG+=' --host-cflags=-fPIC'
+
     ./configure ${PKGMK_FFMPEG} \
         --prefix=/usr \
         --optflags="$CFLAGS" \
