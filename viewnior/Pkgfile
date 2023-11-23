@@ -10,7 +10,7 @@ _commit=4a4c6e8d4db8a2a05009f696f6fb3dd70741bb0c
 source=(https://github.com/hellosiyan/Viewnior/archive/${_commit}.tar.gz)
 
 build() {
-  cd Viewnior-$name-${_commit}
+  cd Viewnior-${_commit}
   meson build
   meson compile -C build
   DESTDIR=$PKG meson install --no-rebuild -C build
