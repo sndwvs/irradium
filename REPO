@@ -28,7 +28,7 @@ f:dc4ff0c96d8dcd2141febc8b766e9a6b:filesystem/shells
 f:19abef94eef9b8ced2a8337b8d395c8e:filesystem/.footprint
 f:068b68679bd0abbe8a8606a1c8428593:filesystem/.signature
 f:6fec70b14f238ad94caf5dac367ee427:pkgconf/README
-f:bbe75de2204f61aa38c662ee43691d16:pkgconf/Pkgfile
+f:a80b5597e2c0b70064b447cdd2c3e36c:pkgconf/Pkgfile
 f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:626b74511e97a4562cf517ee7ae58234:pkgconf/.footprint
