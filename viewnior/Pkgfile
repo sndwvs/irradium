@@ -7,10 +7,14 @@ name=viewnior
 version=20211108
 release=1
 _commit=4a4c6e8d4db8a2a05009f696f6fb3dd70741bb0c
-source=(https://github.com/hellosiyan/Viewnior/archive/${_commit}.tar.gz)
+source=(https://github.com/hellosiyan/Viewnior/archive/${_commit}.tar.gz
+        exiv2-0.28.patch)
 
 build() {
   cd Viewnior-${_commit}
+
+  patch -p1 -i $SRC/exiv2-0.28.patch
+
   meson build
   meson compile -C build
   DESTDIR=$PKG meson install --no-rebuild -C build
