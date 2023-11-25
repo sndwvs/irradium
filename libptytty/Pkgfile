@@ -3,10 +3,10 @@
 # Maintainer: mara, mara at fail dot pp dot ua
 # Depends on: cmake ninja
 
-name=rxvt-unicode
+name=/libptytty
 version=2.0
 release=1
-source=(http://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz)
+source=(http://dist.schmorp.de/libptytty/$name-$version.tar.gz)
 
 build() {
   cmake -S $name-$version -B build -G Ninja \
