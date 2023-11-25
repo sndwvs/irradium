@@ -1,0 +1,22 @@
+# Description: X11 cursor theme
+# URL: http://www.kde-look.org/content/show.php?content=10163
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: xorg
+
+name=xcursor-justblue
+version=0.21
+release=1
+source=(http://www.kde-look.org/content/files/10163-${name#*-}-${version}.tar.bz2)
+
+build() {
+  cd $name-$version
+
+  rm install.sh
+  install -d $PKG/usr/share/icons/${name#*-}
+  mv * $PKG/usr/share/icons/${name#*-}/
+
+  install -Dm644 /dev/stdin usr/share/icons/default/index.theme <<END
+[Icon Theme]
+Inherits=justblue
+END
+}
