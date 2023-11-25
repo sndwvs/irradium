@@ -3,7 +3,7 @@
 # Maintainer: mara, mara at fail dot pp dot ua
 # Depends on: cmake ninja
 
-name=/libptytty
+name=libptytty
 version=2.0
 release=1
 source=(http://dist.schmorp.de/libptytty/$name-$version.tar.gz)
