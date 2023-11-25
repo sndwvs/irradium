@@ -122,6 +122,7 @@ f:5d7067b0661f91df5d4557c3a649fe51:libdispatch/Pkgfile
 f:6e3f456da8c441972ceec1d74e17cd26:viewnior/Pkgfile
 f:975eeae744a613e326b89b5dd4ef1fbe:viewnior/exiv2-0.28.patch
 f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
-f:7c96dae1b166bf18f5b630f8555f42ab:rxvt-unicode/URxvt
-f:470b183fe72a60fb78be5e00e8eeba33:rxvt-unicode/Pkgfile
+f:c43aabb643897ba4d2b5d95bef09bd4c:rxvt-unicode/Pkgfile
+f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
+f:8c8a9766ca645badffffeba4364183d5:rxvt-unicode/rxvt-unicode.desktop
 f:acb6955a0ecded0c40ab7cbdf3bf6d4f:geany/Pkgfile
