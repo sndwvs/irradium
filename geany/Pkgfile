@@ -19,5 +19,5 @@ build() {
     --disable-nls
 
   make
-  make DSTDIR=$PKG install
+  make DESTDIR=$PKG install
 }
