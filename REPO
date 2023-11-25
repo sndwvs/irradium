@@ -24,6 +24,8 @@ d:deadbeef
 d:keepassxc
 d:libdispatch
 d:viewnior
+d:rxvt-unicode
+d:geany
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -119,3 +121,11 @@ f:de65bbf9b5e5765f1ebddec90f1c6bc4:keepassxc/Pkgfile
 f:5d7067b0661f91df5d4557c3a649fe51:libdispatch/Pkgfile
 f:6e3f456da8c441972ceec1d74e17cd26:viewnior/Pkgfile
 f:975eeae744a613e326b89b5dd4ef1fbe:viewnior/exiv2-0.28.patch
+f:e6605d5bcbe6ea5f18b594ff3dd2701c:rxvt-unicode/spkgbuild
+f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
+f:7c96dae1b166bf18f5b630f8555f42ab:rxvt-unicode/URxvt
+f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
+f:8c8a9766ca645badffffeba4364183d5:rxvt-unicode/rxvt-unicode.desktop
+f:d3eac1c5d220d1b779962f7f8add09fa:rxvt-unicode/rxvt-unicode.SlackBuild
+f:0252ab4dca2cb38001210ee1a4e883de:rxvt-unicode/Pkgfile
+f:6d022b64fccb4bd0863fb2bbd5c75d77:geany/Pkgfile
