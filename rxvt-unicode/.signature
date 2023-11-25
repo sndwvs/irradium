@@ -1,0 +1,9 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7sGDAIlP5i8VdnZTxPaI0kVaLvdrvLq2jI8afRs/btw8h66RGpHPOx2+TYrZyRmp5IyoiKFMCqooywKbnLqylw0=
+SHA256 (Pkgfile) = b691a4e95a1d1a987e59205722ea64da85ad34340526d4eab2b796c6583aae45
+SHA256 (.footprint) = 466d32407d8ef5513c33be8fbca43c8638a3008ad5155400c352bde8de09cf0e
+SHA256 (rxvt-unicode-9.31.tar.bz2) = aaa13fcbc149fe0f3f391f933279580f74a96fd312d6ed06b8ff03c2d46672e8
+SHA256 (perl.5.38.patch) = 70e0af53dfc02874aa550471da59b4186a352729bf16dc97fc391fb124111d40
+SHA256 (rxvt-unicode-256color.desktop) = 66751c819b83b2295aee8dbf83a07833e2f0e6c0ccc36f418c1c36118328506b
+SHA256 (rxvt-unicode.desktop) = c3c2342f5bfd919cdb1e7ced595785e280e465e78201d02cd7294d52ee5a24b2
+SHA256 (rxvt-unicode-tabbed.desktop) = 970b6ce716e348fc855a3dcf4da5b2bb646ab0e68cc17d1fff18dd61d76ef130

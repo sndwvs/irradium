@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7i2i1fXA2M6+GVw0y8EQQnAOu/Ra9/n9pgQ3ILjka9iYXkA5aWWLv7fJT0frMVyc4lrlXkluXbu4cmaNdLQ/fA4=
+SHA256 (Pkgfile) = 3bf0b13c3469beb6c35907036e9977f7b2c4037b461f692a2fdde783ce16b8bc
+SHA256 (.footprint) = 65bad0c7d8aa969dcc3fd737c99246724fab690f46b9939b29f587ad5578e060
+SHA256 (libptytty-2.0.tar.gz) = 8033ed3aadf28759660d4f11f2d7b030acf2a6890cb0f7926fb0cfa6739d31f7
