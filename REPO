@@ -146,7 +146,7 @@ f:16ffa18c1c09afe0b76389b2d82bb7bb:xcursor-justblue/Pkgfile
 f:6c088fa48c3b7fc6fe23e270b379a39d:yt-dlp/Pkgfile
 f:1abacb2bacb4b664a3c365ab34a7f4cc:mpv/mpv-0.35.1-yt-dlp-edl-fragments.patch
 f:2afb336186c3466ee6604e8c9d55b635:mpv/README
-f:7c36e73de96a6e3cb9aa1d4a34bcb1b1:mpv/Pkgfile
+f:a6b8855571e732620e68d8b1c42070fc:mpv/Pkgfile
 f:bef48b648a86d17bad3adf0fbab8b238:libcddb/Pkgfile
 f:e360d5ec0c5b09c917b5cc7fe31c8214:libcdio/Pkgfile
 f:77a2a5bb7a9dca0bffee46eeca88e689:libcdio/format-security.patch
