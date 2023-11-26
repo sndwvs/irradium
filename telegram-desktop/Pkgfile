@@ -1,31 +1,26 @@
 # Description: Official Telegram Desktop client
 # URL: https://desktop.telegram.org
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: minizip jemalloc openal range-v3 tg_owt qt6-imageformats qt6-svg qt6-wayland qt6-5compat rnnoise protobuf fmt graphviz mm-common boost libsigc++
+# Depends on: minizip openal range-v3 tg_owt qt6-imageformats qt6-svg qt6-wayland qt6-5compat rnnoise protobuf fmt graphviz mm-common boost libsigc++
 
 name=telegram-desktop
 version=4.11.8
-release=1
-_cppgir=ed2afc920bfdc663bd54239716403500815ac08a
-_expected_lite=95b9cb015fa17baa749c2b396b335906e1596a9e
-source=(https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tdesktop-$version-full.tar.gz
-        https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz)
+release=2
+source=(https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tdesktop-$version-full.tar.gz)
 
 build() {
-    meson -D maintainer-mode=true -Dbuild-documentation=false -Dbuild-examples=false --default-library static --prefix $SRC/glibmm glibmm-2.77.0 build
-    meson compile -C build
-    meson install -C build
+  cd tdesktop-$version-full
 
-    cd tdesktop-$version-full
+  LDFLAGS="$LDFLAGS -Wl,-z,stack-size=1024768" \
+  cmake -B build -G Ninja . \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=MinSizeRel \
+    -DTDESKTOP_API_ID=28851236 \
+    -DTDESKTOP_API_HASH=830f83e5afbad782af2704a120e4dcdf \
+    -DDESKTOP_APP_DISABLE_CRASH_REPORTS=ON \
+    -DDESKTOP_APP_DISABLE_JEMALLOC=ON \
+    -DDESKTOP_APP_USE_PACKAGED=ON
 
-    export PKG_CONFIG_PATH=$SRC/glibmm/usr/local/lib/pkgconfig
-    cmake -B build -G Ninja \
-        -DCMAKE_INSTALL_PREFIX=/usr \
-        -DCMAKE_PREFIX_PATH=$SRC/glibmm \
-        -DCMAKE_BUILD_TYPE=Release \
-        -DTDESKTOP_API_ID=611335 \
-        -DTDESKTOP_API_HASH=d524b414d21f4d37f08684c1df41ac9c \
-        -DDESKTOP_APP_SPECIAL_TARGET=""
-    cmake --build build
-    DESTDIR=$PKG cmake --install build
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
 }

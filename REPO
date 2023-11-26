@@ -117,7 +117,7 @@ f:98e28a0d44dd1c7087577b993c8b25d7:mpp/.signature
 f:1b7e7d20633c75d507a5cf032a80544d:mpp/.footprint
 f:597426cb5a51cfa0b2d932fc02860843:tg_owt/gcc13.patch
 f:0252ab4dca2cb38001210ee1a4e883de:tg_owt/Pkgfile
-f:5fddfe5f69ee7077193bd2b267a9f0df:telegram-desktop/Pkgfile
+f:518aeb0bfe1532a48d71eeb4ca81207f:telegram-desktop/Pkgfile
 f:8d008c7ebc775f1823ba35c211c98e8c:jemalloc/Pkgfile
 f:252da7d909cee2088734e606b6e5d8a5:range-v3/Pkgfile
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
