@@ -6,7 +6,7 @@
 name=xcursor-justblue
 version=0.21
 release=1
-source=(${name#*-}-${version}.tar.bz2)
+source=(${name#*-}-${version}.patch.xz)
 
 build() {
   cd $name-$version
