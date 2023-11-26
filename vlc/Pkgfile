@@ -1,7 +1,7 @@
 # Description: A media player, streamer, and encoder
 # URL: http://www.videolan.org/vlc/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: alsa-lib ffmpeg libgcrypt libmad lua52 libvpx libwebp pulseaudio
+# Depends on: alsa-lib ffmpeg libmad lua52 libvpx libwebp pulseaudio
 # Optional: liba52 wayland libdvdnav libdvdread faad2 flac libcddb libva speex dav1d gnutls libsdl2 libtheora libva libvdpau libvorbis x264
 
 name=vlc
@@ -49,7 +49,8 @@ build() {
     --enable-merge-ffmpeg \
     --enable-run-as-root \
     --enable-skins2 \
-    --disable-kde-solid
+    --disable-opencv \
+    --disable-libgcrypt
 
   # prevent excessive overlinking due to libtool
   sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
