@@ -1,0 +1,19 @@
+# Description: A free, open source, and cross-platform media player
+# URL: https://github.com/yt-dlp/yt-dlp
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: mesa meson lcms2 ffmpeg libass libarchive luajit libcdio-paranoia xorg-libxpresent xorg-libxscrnsaver
+
+name=mpv
+version=0.37.0
+release=1
+source=(https://github.com/mpv-player/mpv/archive/v$version/$name-$version.tar.gz)
+
+build() {
+  meson $name-$version build \
+    -D libmpv=true \
+    -D libarchive=enabled \
+    -D cdda=enabled \
+    -D lua=luajit
+  meson compile -C build
+  DESTDIR=$PKG meson install --no-rebuild -C build
+}
