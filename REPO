@@ -33,7 +33,6 @@ d:yt-dlp
 d:mpv
 d:libcddb
 d:libcdio
-d:xfwm-theme-axiom
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -153,7 +152,3 @@ f:bef48b648a86d17bad3adf0fbab8b238:libcddb/Pkgfile
 f:e360d5ec0c5b09c917b5cc7fe31c8214:libcdio/Pkgfile
 f:77a2a5bb7a9dca0bffee46eeca88e689:libcdio/format-security.patch
 f:d45a467dbde7bf244c9777109a6afe52:libcdio/disable-broken-test.patch
-f:7136bd7ae8a824e6b84cfd00a8f7832f:xfwm-theme-axiom/Pkgfile
-f:9d04c67bd7df606a9360e2ca1a121a72:xfwm-theme-axiom/axiom.patch.xz
-f:6f4c9effa391d7c43f398a4bf8e1a62e:xfwm-theme-axiom/.footprint
-f:bfc10fb19e833f9e8e18ce80a89ad0d8:xfwm-theme-axiom/.signature

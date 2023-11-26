@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0fkzAjBYdWfEypGmOKnXZTkBbno7Mw+2xkgRyvG2FYRBlNNA3T3/jqBEFLqp+ugy13M/HX0JSxFrSUJTcJ74LgQ=
-SHA256 (Pkgfile) = 9671adbc49009a32e9fb098d5c333e6fcd47415b1c5fd8695ea862f70dd92725
-SHA256 (.footprint) = 7d381f0ce2f3015577113a9e2edea6a1f93b43f2367c457b8ebcbcf301c4fd30
-SHA256 (axiom.patch.xz) = cffef3fc6403d44b2de9bc3609d714b7987e3e1a67e53df8ae8e9ab0c33c7cc3
