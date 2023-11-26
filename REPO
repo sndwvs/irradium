@@ -33,6 +33,7 @@ d:yt-dlp
 d:mpv
 d:libcddb
 d:libcdio
+d:gtk-engine-murrine
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -152,3 +153,7 @@ f:bef48b648a86d17bad3adf0fbab8b238:libcddb/Pkgfile
 f:e360d5ec0c5b09c917b5cc7fe31c8214:libcdio/Pkgfile
 f:77a2a5bb7a9dca0bffee46eeca88e689:libcdio/format-security.patch
 f:d45a467dbde7bf244c9777109a6afe52:libcdio/disable-broken-test.patch
+f:761cf3a79dd405616f13d3a6c02eedcb:gtk-engine-murrine/Pkgfile
+f:bf01e0097b5f1e164dbcf807f4b9745e:gtk-engine-murrine/murrine-0.98.2.tar.xz
+f:b260a94ab9857f2a7ccf1e20b55278bd:gtk-engine-murrine/.footprint
+f:86d8b00014eadb80bf3209ce6edc82c2:gtk-engine-murrine/.signature
