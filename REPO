@@ -30,7 +30,6 @@ d:xfce4-xkb-plugin
 d:xfconf
 d:xfdesktop
 d:xfwm4
-d:xfwm-theme-axiom
 f:50d6b94df8dbf9db2c1ca0ef8e7112a8:Greybird/Pkgfile
 f:e724b7b74aed05552d1761a440de4678:Greybird/.footprint
 f:f1c4da9290d9f5f3eecbec2926e51c15:Greybird/.signature
@@ -135,5 +134,3 @@ f:1d04f43063ccb7f69e522a328edc0e9b:xfwm4/xinitrc.xfce
 f:f41488fea2601c2f47a491f0a42aa4dc:xfwm4/.footprint
 f:bfd5f3dc5fa735ad0b87348326783e69:xfwm4/.signature
 f:d32239bcb673463ab874e80d47fae504:COPYING
-f:7136bd7ae8a824e6b84cfd00a8f7832f:xfwm-theme-axiom/Pkgfile
-f:9d04c67bd7df606a9360e2ca1a121a72:xfwm-theme-axiom/axiom.patch.xz
