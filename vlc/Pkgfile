@@ -7,10 +7,13 @@
 name=vlc
 version=3.0.20
 release=1
-source=(https://download.videolan.org/$name/$version/$name-$version.tar.xz)
+source=(https://download.videolan.org/$name/$version/$name-$version.tar.xz
+         libplacebo-5.patch)
 
 build() {
   cd $name-$version
+
+  patch -p1 -i $SRC/libplacebo-5.patch
 
   prt-get isinst liba52 && PKGMK_VLC+=" --enable-a52" || PKGMK_VLC+=" --disable-a52"
   prt-get isinst wayland && PKGMK_VLC+=" --enable-wayland" || PKGMK_VLC+=" --disable-wayland"
@@ -34,7 +37,7 @@ build() {
 
   BUILDCC=gcc \
   CFLAGS="$CFLAGS" \
-  CXXFLAGS="$CXXFLAGS" \
+  CXXFLAGS="$CXXFLAGS -std=c++17" \
   LUA=lua5.2 \
   LUAC=luac5.2 \
   ./configure $PKGMK_VLC \
@@ -46,9 +49,12 @@ build() {
     --enable-merge-ffmpeg \
     --enable-run-as-root \
     --enable-skins2 \
-    --disable-libva \
     --disable-kde-solid
+
+  # prevent excessive overlinking due to libtool
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 
   make
   make DESTDIR=$PKG install
 }
+libplacebo-5.patch
