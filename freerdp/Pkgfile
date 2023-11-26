@@ -1,0 +1,40 @@
+# Description: FreeRDP client
+# URL: https://www.freerdp.com/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: alsa-lib cmake cups pulsaudio libjpeg-turbo xorg-libxcursor xorg-libxdamage wayland cairo
+
+name=freerdp
+version=2.11.2
+release=1
+source=(https://github.com/FreeRDP/FreeRDP/archive/$version.tar.gz)
+
+build(){
+  cd FreeRDP-$version
+
+  export CFLAGS="$CFLAGS -D_BSD_SOURCE -flto=auto"
+  cmake -B build -G Ninja \
+    -DCMAKE_BUILD_TYPE=MinSizeRel \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DCMAKE_C_FLAGS="$SLKCFLAGS" \
+    -DCMAKE_CXX_FLAGS="$SLKCFLAGS" \
+    -DWITH_ALSA=ON \
+    -DWITH_PULSE=ON \
+    -DWITH_CHANNELS=ON \
+    -DBUILTIN_CHANNELS=ON \
+    -DWITH_CUPS=ON \
+    -DWITH_PCSC=ON \
+    -DWITH_JPEG=ON \
+    -DWITH_FFMPEG=ON \
+    -DWITH_DSP_FFMPEG=ON \
+    -DWITH_WAYLAND=ON \
+    -DWITH_GSSAPI=OFF \
+    -DCHANNEL_URBDRC=ON \
+    -DCHANNEL_URBDRC_CLIENT=ON \
+    -DWITH_SERVER=ON \
+    -DWITH_CAIRO=ON \
+    -DBUILD_TESTING=OFF
+
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
+}
