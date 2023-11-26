@@ -35,6 +35,7 @@ d:libcddb
 d:libcdio
 d:gtk-engine-murrine
 d:freerdp
+d:vlc
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -160,3 +161,5 @@ f:86d8b00014eadb80bf3209ce6edc82c2:gtk-engine-murrine/.signature
 f:4fa8f6f5714871d861694c6840c220af:freerdp/Pkgfile
 f:2a2d63878176a114ab49583603fc1e5e:freerdp/.footprint
 f:39d4eff63a7ecf5a390b30858eda58a0:freerdp/.signature
+f:044042e9545eeb6e74d42a47cdd4bfda:vlc/Pkgfile
+f:af3d2bc27cffc9c1266670b21f054d96:vlc/post-install
