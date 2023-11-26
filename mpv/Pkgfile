@@ -13,7 +13,7 @@ build() {
   prt-get isinst libdvdnav && PKGMK_MPV="-D dvdnav=enabled"
   prt-get isinst libcdio-paranoia && PKGMK_MPV+=" -D cdda=enabled"
   prt-get isinst libsdl2 && PKGMK_MPV+=" -D sdl2=enabled"
-  prt-get isinst && PKGMK_MPV+=" -D lua=luajit"
+  prt-get isinst luajit && PKGMK_MPV+=" -D lua=luajit"
   [ -e /usr/lib/libsndio.so ] && PKGMK_MPV+=" -D sndio=enabled"
 
   meson setup $name-$version build $PKGMK_MPV \
