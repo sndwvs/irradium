@@ -32,6 +32,7 @@ d:xcursor-justblue
 d:yt-dlp
 d:mpv
 d:libcddb
+d:libcdio
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -146,3 +147,6 @@ f:6c088fa48c3b7fc6fe23e270b379a39d:yt-dlp/Pkgfile
 f:1abacb2bacb4b664a3c365ab34a7f4cc:mpv/mpv-0.35.1-yt-dlp-edl-fragments.patch
 f:654b830943ce462acd7bc915af58e8ac:mpv/Pkgfile
 f:bef48b648a86d17bad3adf0fbab8b238:libcddb/Pkgfile
+f:e360d5ec0c5b09c917b5cc7fe31c8214:libcdio/Pkgfile
+f:77a2a5bb7a9dca0bffee46eeca88e689:libcdio/format-security.patch
+f:d45a467dbde7bf244c9777109a6afe52:libcdio/disable-broken-test.patch
