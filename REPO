@@ -162,4 +162,4 @@ f:4fa8f6f5714871d861694c6840c220af:freerdp/Pkgfile
 f:2a2d63878176a114ab49583603fc1e5e:freerdp/.footprint
 f:39d4eff63a7ecf5a390b30858eda58a0:freerdp/.signature
 f:3b223a2f1f832928997760a6df869661:vlc/Pkgfile
-f:af3d2bc27cffc9c1266670b21f054d96:vlc/post-install
+f:362e3fa06abefde433f18c586fa2248b:vlc/post-install
