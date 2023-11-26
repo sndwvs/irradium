@@ -57,4 +57,3 @@ build() {
   make
   make DESTDIR=$PKG install
 }
-libplacebo-5.patch
