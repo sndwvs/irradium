@@ -1,3 +1,34 @@
+# Description: General Purpose video player based on MPlayer and mplayer2
+# URL: https://mpv.io/
+# Maintainer: John McQuah, jmcquah at disroot dot org
+# Depends on: ffmpeg libass libplacebo util-linux xorg-libxscrnsaver
+# Optional: libdvdnav libbluray libcdio-paranoia luajit libsdl2 libvdpau pipewire pulseaudio sndio rubberband xorg-libxpresent
+
+name=mpv
+version=0.37.0
+release=1
+source=(https://github.com/mpv-player/mpv/archive/v$version/$name-$version.tar.gz)
+
+build() {
+  prt-get isinst libdvdnav && PKGMK_MPV="-D dvdnav=enabled"
+  prt-get isinst libcdio-paranoia && PKGMK_MPV+=" -D cdda=enabled"
+  prt-get isinst libsdl2 && PKGMK_MPV+=" -D sdl2=enabled"
+  prt-get isinst && PKGMK_MPV+=" -D lua=luajit"
+  [ -e /usr/lib/libsndio.so ] && PKGMK_MPV+=" -D sndio=enabled"
+
+  meson setup $name-$version build $PKGMK_MPV \
+    --prefix=/usr \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    -D b_lto=true \
+    -D b_pie=true
+
+  ninja -C build -j ${JOBS:-1}
+  DESTDIR=$PKG meson install -C build
+
+  prt-get isinst bash-completion || rm -rf $PKG/usr/share/bash-completion
+  prt-get isinst zsh || rm -rf $PKG/usr/share/zsh
+}
 # Description: A free, open source, and cross-platform media player
 # URL: https://github.com/yt-dlp/yt-dlp
 # Maintainer: mara, mara at fail dot pp dot ua

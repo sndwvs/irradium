@@ -1,0 +1,15 @@
+NOTES
+
+For optical audio/dvd/blu-ray playback you need to install
+"libcdio-paranoia libdvdnav libbluray", respectively.
+
+To take advantage of shell completions, install either zsh or 
+bash-completion before building mpv.
+
+The choice of video backend is left up to the user, in order for 
+this port to satisfy a variety of use-cases (e.g., Wayland-only,
+X11 with SDL, X11 without SDL). Before building this port, make
+sure to install the desired optional dependencies for your
+use-case (e.g., libvdpau, xorg-libxpresent, libsdl2). If you build 
+mpv with *only* its hard dependencies present, you should expect a 
+crippled package.
