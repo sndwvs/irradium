@@ -1,7 +1,7 @@
 # Description: A free, open source, and cross-platform media player
 # URL: https://github.com/yt-dlp/yt-dlp
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: mesa meson lcms2 ffmpeg libass libarchive luajit libcdio-paranoia xorg-libxpresent xorg-libxscrnsaver
+# Depends on: mesa meson lcms2 ffmpeg libcdio libass libarchive luajit libcdio-paranoia xorg-libxpresent xorg-libxscrnsaver
 
 name=mpv
 version=0.37.0
