@@ -18,7 +18,7 @@ build() {
   install -d $PKG/usr/share/icons/${name#*-}
   mv * $PKG/usr/share/icons/${name#*-}/
 
-  install -Dm644 /dev/stdin usr/share/icons/default/index.theme <<END
+  install -Dm644 /dev/stdin $PKG/usr/share/icons/default/index.theme <<END
 [Icon Theme]
 Inherits=justblue
 END

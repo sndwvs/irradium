@@ -142,7 +142,7 @@ f:73e7b99b3c8ae2ce230a665abc9ed5e1:libptytty/Pkgfile
 f:a8f10ebe2f26f5568b711dfd72065754:libptytty/.footprint
 f:5b27dcac763479364cdaa0c9d6ab32ed:libptytty/.signature
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
-f:60e2a7c2fe9b7d0c76975acdf5407baa:xcursor-justblue/Pkgfile
+f:1697f3fadd7c76e45240c1b248a7f8fe:xcursor-justblue/Pkgfile
 f:536c8ab1bcfc4f13e33c77b61facb496:xcursor-justblue/justblue-0.21.patch.xz
 f:6c088fa48c3b7fc6fe23e270b379a39d:yt-dlp/Pkgfile
 f:1abacb2bacb4b664a3c365ab34a7f4cc:mpv/mpv-0.35.1-yt-dlp-edl-fragments.patch
