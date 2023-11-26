@@ -1,0 +1,16 @@
+# Description: Two xfwm themes are included, axiom for bright themes and axiomd for dark themes
+# URL: https://www.xfce-look.org/p/1016679
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: xfwm4
+
+name=xfwm-axiom-theme
+version=1
+release=1
+source=(axiom.patch.xz)
+
+build(){
+
+  xzcat axiom.patch.xz | patch -p1
+
+  find {axiom,axiomd} -type f -exec install -Dm644 '{}' $PKG/usr/share/themes/{} \;
+}
