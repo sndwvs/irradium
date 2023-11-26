@@ -10,7 +10,7 @@ source=(${name#*-}-${version}.patch.xz)
 
 build() {
 
- zxcat ${name#*-}-${version}.patch.xz | patch -p1
+ xzcat ${name#*-}-${version}.patch.xz | patch -p1
 
   cd ${name#*-}-$version
 
