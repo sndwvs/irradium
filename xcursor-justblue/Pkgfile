@@ -9,7 +9,7 @@ release=1
 source=(${name#*-}-${version}.patch.xz)
 
 build() {
-  cd $name-$version
+  cd ${name#*-}-$version
 
   rm install.sh
   install -d $PKG/usr/share/icons/${name#*-}
