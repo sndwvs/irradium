@@ -31,6 +31,7 @@ d:urxvt-perls
 d:xcursor-justblue
 d:yt-dlp
 d:mpv
+d:libcdio
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -144,3 +145,4 @@ f:16ffa18c1c09afe0b76389b2d82bb7bb:xcursor-justblue/Pkgfile
 f:6c088fa48c3b7fc6fe23e270b379a39d:yt-dlp/Pkgfile
 f:1abacb2bacb4b664a3c365ab34a7f4cc:mpv/mpv-0.35.1-yt-dlp-edl-fragments.patch
 f:654b830943ce462acd7bc915af58e8ac:mpv/Pkgfile
+f:d43ca36f62a687db9a2bf94fcc45c380:libcdio/Pkgfile
