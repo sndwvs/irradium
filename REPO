@@ -41,6 +41,7 @@ d:gtkspell3
 d:audacity
 d:portmidi
 d:portsmf
+d:libsbsms
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -173,3 +174,4 @@ f:cec7167db1a12a09d017ce47c0a10e02:gtkspell3/Pkgfile
 f:cd8a70da5014505047f4a47c1265b7ac:audacity/Pkgfile
 f:3106d55e7411563376abb99815096214:portmidi/Pkgfile
 f:baa6e56333bf05520828c35bdd00d394:portsmf/Pkgfile
+f:5c17cd23675c1df55aa910d451153ea1:libsbsms/Pkgfile
