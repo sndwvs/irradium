@@ -86,6 +86,7 @@ build() {
         --enable-postproc \
         --enable-pthreads \
         --enable-swresample \
+        --enable-libdrm \
         --enable-rkmpp \
         --disable-debug \
         --disable-doc \
