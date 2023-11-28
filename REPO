@@ -44,6 +44,7 @@ d:ungoogled-chromium
 d:ungoogled-chromium/patches
 d:chromium
 d:chromium/patches
+d:libyuv
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -199,3 +200,6 @@ f:312bb1d9580567156a2c704fa4b16a0a:chromium/patches/chromium-119-at-spi-variable
 f:fb2142170b687e12d1b808a971f62f4e:chromium/patches/chromium-119-clang16.patch
 f:37e6690eb4cd09de8aae36446269dae0:chromium/patches/use-oauth2-client-switches-as-default.patch
 f:56422ca7805d56ad890b238bd9c7dbe5:chromium/post-install
+f:5674f0571fc17c1c1a9aa627831478b0:libyuv/Pkgfile
+f:7412598ae4769358660aba59fadba6a9:libyuv/.footprint
+f:e8e5ffb12458c6d14a0a0ca8289d0ad8:libyuv/.signature
