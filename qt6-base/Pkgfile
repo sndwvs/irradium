@@ -5,7 +5,7 @@
 # Optional: gtk3 libproxy mariadb md4c pipewire postgresql pulseaudio tslib unixodbc xdg-utils xmlstarlet
 
 name=qt6-base
-version=6.6.0
+version=6.6.1
 release=1
 source=(https://download.qt.io/official_releases/qt/${version%.*}/$version/submodules/qtbase-everywhere-src-$version.tar.xz
   qt6-base-cflags.patch

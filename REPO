@@ -110,7 +110,7 @@ f:77ab1f5dfe58c1706dcbf46c53f0b581:cryptsetup/.signature
 f:61cd723d3066a3cad900b3d807e28ff6:libb2/Pkgfile
 f:0cbe4b6b310cac3e01dc9977b0c62f60:qt6-base/.footprint
 f:401276aaa7f2f12c996e097891a694f2:qt6-base/.signature
-f:d6b10f4154e20d31f5ec6107e42db7b7:qt6-base/Pkgfile
+f:3e85c94a203648e09cb4b5cdfc6086ca:qt6-base/Pkgfile
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
 f:516776fe66e77b0a15bf6dee857d0c1f:qt6-base/qtbase-6.5.3-xkbcommon160.patch
