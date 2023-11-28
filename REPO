@@ -44,6 +44,7 @@ d:ungoogled-chromium
 d:ungoogled-chromium/patches
 d:chromium
 d:chromium/patches
+d:libmali-valhall-g610-x11-gbm
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -199,3 +200,6 @@ f:312bb1d9580567156a2c704fa4b16a0a:chromium/patches/chromium-119-at-spi-variable
 f:fb2142170b687e12d1b808a971f62f4e:chromium/patches/chromium-119-clang16.patch
 f:37e6690eb4cd09de8aae36446269dae0:chromium/patches/use-oauth2-client-switches-as-default.patch
 f:56422ca7805d56ad890b238bd9c7dbe5:chromium/post-install
+f:6c2117e05786a8b9ef448e59208eb5eb:libmali-valhall-g610-x11-gbm/.footprint
+f:8f1847ceed814828d4ac94e267d57351:libmali-valhall-g610-x11-gbm/00-libmali.conf
+f:eb3537a2ea52db09651f06f7181bd325:libmali-valhall-g610-x11-gbm/Pkgfile
