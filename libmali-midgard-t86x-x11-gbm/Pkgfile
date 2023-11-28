@@ -1,0 +1,35 @@
+# Description: proprietary midgard t86x mali driver X11 gbm
+# URL: https://github.com/JeffyCN/mirrors/commits/libmali
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: cmake ninja
+
+name=libmali-midgard-t86x-x11-gbm
+version=r18p0
+release=1
+_commit=1d173f39b51a31212d9ec346044fa81587df34f4
+source=(https://github.com/JeffyCN/mirrors/archive/${_commit}.tar.gz
+        00-libmali.conf)
+
+build() {
+  cd mirrors-${_commit}
+
+  mkdir meson-build
+  cd meson-build
+  meson setup \
+    --prefix=/usr \
+    --libdir=lib/libmali \
+    --sysconfdir=/etc \
+    -Dgpu="midgard-t86x" \
+    -Dplatform="x11-gbm" \
+    -Dversion=$version \
+    -Dhooks=false \
+    -Dwrappers=disabled \
+    .. || exit 1
+
+  "${NINJA:=ninja}"
+  DESTDIR=$PKG $NINJA install
+  cd ..
+
+  install -Dm644 $SRC/00-libmali.conf $PKG/etc/ld.so.conf.d/00-libmali.conf
+  mv $PKG/usr/lib/libmali/pkgconfig $PKG/usr/lib/
+}
