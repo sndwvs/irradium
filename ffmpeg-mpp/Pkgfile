@@ -61,8 +61,6 @@ build() {
   patch -Np1 -i $SRC/obs-deps-${_obs_commit}/deps.ffmpeg/patches/FFmpeg/0001-flvdec-handle-unknown.patch
   patch -Np1 -i $SRC/obs-deps-${_obs_commit}/deps.ffmpeg/patches/FFmpeg/0002-libaomenc-presets.patch
 
-  patch -Np1 -i $SRC/add-av_stream_get_first_dts-for-chromium.patch
-
   sed -i -e '/check_cflags -fdiagnostics-color=auto/d' configure
 
   [[ $(uname -m) == "armv7h" || $(uname -m) == "aarch64" ]] && PKGMK_FFMPEG+=' --host-cflags=-fPIC'
