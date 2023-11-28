@@ -123,3 +123,5 @@ f:9b7540a197371561b62b9de0e67617af:ffmpeg-mpp/Pkgfile
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg-mpp/add-av_stream_get_first_dts-for-chromium.patch
 f:dae0c10c99399580c929fc100e79faef:ffmpeg-mpp/ffmpeg-x264-10bit.sh
 f:df409f613c10ae0b7e19e37e66717714:ffmpeg-mpp/rkmpp-6.patch
+f:b2c9d9a5b28f0803f79c748833911236:ffmpeg-mpp/.footprint
+f:5206bedf65b28e2b5b31038304f9202f:ffmpeg-mpp/.signature
