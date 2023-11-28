@@ -7,7 +7,7 @@ name=ungoogled-chromium
 version=119.0.6045.159
 _uc_version=$version-1
 release=1
-source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz
+source=(https://commondatastorage.googleapis.com/chromium-browser-official/${name#*-}-$version.tar.xz
         https://github.com/ungoogled-software/$name/archive/$_uc_version.tar.gz
         chromium.default chromium.sh
         patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
@@ -26,7 +26,7 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
 )
 
 build() {
-    cd $name-$version
+    cd ${name#*-}-$version
 
     # Configuration
     CRFLAGS="CHROMIUM_FLAGS"
@@ -278,22 +278,22 @@ build() {
     done
 
     # Install a wrapper script:
-    install -D -m0755 $SRC/${name}.sh $PKG/usr/bin/${name}
+    install -D -m0755 $SRC/${name#*-}.sh $PKG/usr/bin/${name#*-}
     sed \
-        -e "s/@NAME@/${name}/g" \
+        -e "s/@NAME@/${name#*-}/g" \
         -e "s/@LIBDIRSUFFIX@//g" \
         -e "s/@CRFLAGS@/${CRFLAGS}/g" \
         -e "s/@CRUSERFLAGS@/${CRUSERFLAGS}/g" \
-        -i $PKG/usr/bin/${name}
+        -i $PKG/usr/bin/${name#*-}
 
     # Move the 'default' file into place.
     # This allows users to override command-line options:
-    mkdir -p $PKG/etc/${name}
-    cat $SRC/${name}.default | sed \
-      -e "s/@NAME@/${name}/g" \
+    mkdir -p $PKG/etc/${name#*-}
+    cat $SRC/${name#*-}.default | sed \
+      -e "s/@NAME@/${name#*-}/g" \
       -e "s/@CRFLAGS@/${CRFLAGS}/g" \
       -e "s/@CRUSERFLAGS@/${CRUSERFLAGS}/g" \
       -e "s/@LIBDIRSUFFIX@//g" \
-      > $PKG/etc/${name}/00-default.conf
+      > $PKG/etc/${name#*-}/00-default.conf
 
 }
