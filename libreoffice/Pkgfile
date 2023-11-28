@@ -19,8 +19,8 @@ source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/
   https://dev-www.libreoffice.org/src/xmlsec1-1.2.37.tar.gz
   https://dev-www.libreoffice.org/src/libxml2-2.11.4.tar.xz
   https://dev-www.libreoffice.org/src/libxslt-1.1.38.tar.xz
-  https://dev-www.libreoffice.org/src/icu4c-73_2-src.tgz
-  https://dev-www.libreoffice.org/src/icu4c-73_2-data.zip
+  #https://dev-www.libreoffice.org/src/icu4c-73_2-src.tgz
+  #https://dev-www.libreoffice.org/src/icu4c-73_2-data.zip
   optjava.patch
   makefile.in.patch)
 
@@ -94,6 +94,8 @@ build() {
   # }}}
 
   CXXFLAGS+=" -fpermissive"
+  # http://site.icu-project.org/download/61#TOC-Migration-Issues
+  CPPFLAGS+=' -DU_USING_ICU_NAMESPACE=1'
 
   local build_date=$(date +%Y%m%d)
   NOCONFIGURE=1 ./autogen.sh

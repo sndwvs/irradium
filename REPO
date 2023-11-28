@@ -76,7 +76,7 @@ f:1f65962a27c3a47e72a9dc22180c2d81:openjdk20-jdk/Pkgfile
 f:d4dc701a1ed12696aec46fae3396c77e:openjdk20-jdk/openjdk20.sh
 f:b9de1a5cd217513a591c2e5399dcf346:openjdk20-jdk/.footprint
 f:f22546a659635eba23cb4561fd56cca5:openjdk20-jdk/.signature
-f:4306aef276a86a65623729ad2398145d:libreoffice/Pkgfile
+f:73da07ea8a226283ff292a8c17036186:libreoffice/Pkgfile
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
 f:330406e43a76603e3c86156ea1e0a779:libreoffice/makefile.in.patch
 f:ddc9e2e08ee5c3fb22a4b2bf4d4bee39:libreoffice/optjava.patch
