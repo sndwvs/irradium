@@ -1,7 +1,7 @@
 # Description: Complete solution to record, convert and stream audio and video. fork Rockchip MPP.
 # URL: https://github.com/hbiyik/FFmpeg
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: yasm mpp librga
+# Depends on: yasm mpp librga libyuv
 # Optional: alsa-lib amf-headers cuda dav1d fdk-aac freetype gnutls gsm jack jack-audio-connection-kit lame libass libsdl2 libtheora libva libvdpau libvorbis libvpx libwebp nv-codec-headers opus pulseaudio svt-av1 x264 x265
 
 name=ffmpeg-mpp

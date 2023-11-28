@@ -121,5 +121,5 @@ f:a4f958914a4edf7e4381ef62687405a6:ffmpeg/Pkgfile
 f:5db6190db9bd0114880d1295e86e5781:libart_lgpl/Pkgfile
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg-mpp/add-av_stream_get_first_dts-for-chromium.patch
 f:dae0c10c99399580c929fc100e79faef:ffmpeg-mpp/ffmpeg-x264-10bit.sh
-f:a5e8ce72b53be1780a3166f7e640ee56:ffmpeg-mpp/Pkgfile
+f:3bcd7a707ea2a04281e47a946ee86e96:ffmpeg-mpp/Pkgfile
 f:df409f613c10ae0b7e19e37e66717714:ffmpeg-mpp/rkmpp-6.patch
