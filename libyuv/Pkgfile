@@ -1,7 +1,7 @@
 # Description: Library for YUV scaling
 # URL: https://chromium.googlesource.com/libyuv/libyuv/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: gcc libjpeg
+# Depends on: gcc libjpeg-turbo
 
 name=libyuv
 version=20231128
