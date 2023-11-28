@@ -111,7 +111,7 @@ build() {
     patch -Np1 -i $SRC/chromium-119-clang16.patch
 
     # Ungoogled Chromium changes
-    UNGOOGLED_REPO="$name-$_uc_version"
+    UNGOOGLED_REPO="$SRC/$name-$_uc_version"
     UTILS="${UNGOOGLED_REPO}/utils"
     echo 'Pruning binaries'
     python3 "$UTILS/prune_binaries.py" ./ "$UNGOOGLED_REPO/pruning.list"

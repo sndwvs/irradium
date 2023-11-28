@@ -174,7 +174,7 @@ f:07e26eeeed3964a1ee9bb75fc69535a9:ungoogled-chromium/patches/chromium-119-Fragm
 f:312bb1d9580567156a2c704fa4b16a0a:ungoogled-chromium/patches/chromium-119-at-spi-variable-consumption.patch
 f:fb2142170b687e12d1b808a971f62f4e:ungoogled-chromium/patches/chromium-119-clang16.patch
 f:37e6690eb4cd09de8aae36446269dae0:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
-f:2e935400c3a9f0a8cdcb2c63d5028058:ungoogled-chromium/Pkgfile
+f:74201b911192578a1509d6eff4256665:ungoogled-chromium/Pkgfile
 f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:56422ca7805d56ad890b238bd9c7dbe5:ungoogled-chromium/post-install
