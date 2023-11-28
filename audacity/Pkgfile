@@ -12,7 +12,7 @@ source=(https://github.com/$name/$name/archive/refs/tags/Audacity-$version.tar.g
 build() {
 
   prt-get isinst vamp-plugin-sdk && PKGMK_AUDACITY+=" -D audacity_use_vamp=system" || PKGMK_AUDACITY+=" -D audacity_use_vamp=off"
-  prt-get isinst lv2 && PKGMK_AUDACITY+=" -D audacity_use_lv2=system" || PKGMK_AUDACITY+=" -D audacity_use_lv2=off"
+  prt-get isinst lv2 && PKGMK_AUDACITY+=" -D audacity_use_lv2=system" || PKGMK_AUDACITY+=" -D audacity_use_lv2=local"
   prt-get isinst twolame && PKGMK_AUDACITY+=" -D audacity_use_twolame=system" || PKGMK_AUDACITY+=" -D audacity_use_twolame=off"
   prt-get isinst soundtouch && PKGMK_AUDACITY+=" -D audacity_use_soundtouch=system" || PKGMK_AUDACITY+=" -D audacity_use_soundtouch=off"
   prt-get isinst vst3sdk && PKGMK_AUDACITY+=" -D audacity_has_vst3=system" || PKGMK_AUDACITY+=" -D audacity_has_vst3=off"
