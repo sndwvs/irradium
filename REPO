@@ -85,7 +85,7 @@ f:fb2142170b687e12d1b808a971f62f4e:chromium/patches/chromium-119-clang16.patch
 f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
 f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
 f:56422ca7805d56ad890b238bd9c7dbe5:chromium/post-install
-f:f78cdb37d9914f0542f0e01e3b55dc61:chromium/Pkgfile
+f:16a6aadd62ad20867ebb011afb7821b0:chromium/Pkgfile
 f:d77c98a13898b632d860a2f4bc85d338:chromium/.footprint
 f:3a28a377f56db8344aa2e3b97a3b6aa2:chromium/.signature
 f:1f65962a27c3a47e72a9dc22180c2d81:openjdk20-jdk/Pkgfile
