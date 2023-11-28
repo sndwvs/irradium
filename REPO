@@ -46,6 +46,7 @@ d:chromium
 d:chromium/patches
 d:libmali-valhall-g610-x11-gbm
 d:libmali-midgard-t86x-x11-gbm
+d:libmali-utgard-450-x11-gbm
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -207,3 +208,6 @@ f:eb3537a2ea52db09651f06f7181bd325:libmali-valhall-g610-x11-gbm/Pkgfile
 f:37b347dfb7b07b2a34df7b53a3e8a0b6:libmali-midgard-t86x-x11-gbm/.footprint
 f:8f1847ceed814828d4ac94e267d57351:libmali-midgard-t86x-x11-gbm/00-libmali.conf
 f:d0aa43af7672daf017d81453c1e51f06:libmali-midgard-t86x-x11-gbm/Pkgfile
+f:80e08f38077d4e1b2cf1017fd9797d87:libmali-utgard-450-x11-gbm/.footprint
+f:8f1847ceed814828d4ac94e267d57351:libmali-utgard-450-x11-gbm/00-libmali.conf
+f:d3d10b0849d89fc7643d25b971bdedf3:libmali-utgard-450-x11-gbm/Pkgfile
