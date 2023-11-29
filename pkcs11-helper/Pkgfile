@@ -1,0 +1,22 @@
+# Description: A library that simplifies the interaction with PKCS11 providers for end-user applications using a simple API and optional OpenSSL engine
+# URL: https://github.com/OpenSC/pkcs11-helper
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: gnutls nss openssl
+
+name=pkcs11-helper
+version=1.29.0
+release=1
+source=(https://github.com/OpenSC/pkcs11-helper/archive/${name}-${version}.tar.gz)
+
+build() {
+  cd $name-$version
+
+  libtoolize
+  aclocal
+  autoheader
+  automake --add-missing
+  autoreconf -v
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=${PKG} install
+}

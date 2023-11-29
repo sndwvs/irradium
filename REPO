@@ -52,6 +52,7 @@ d:libmali-bifrost-g31-x11-gbm
 d:slang
 d:openvpn
 d:libcap-ng
+d:pkcs11-helper
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -226,6 +227,7 @@ f:6b10d81e43c890e377dfadfe72dbfa3a:slang/.footprint
 f:01b4c8973511a76b596f5d110c488ff3:slang/.signature
 f:5ee1ede2ebe321245a17d2d2d75b5711:slang/Pkgfile
 f:2f135439cf6e9a6db466acf3d567b4c3:openvpn/rc.openvpn
-f:027a6e7b280a49c6d4f0e2a675f5b7b0:openvpn/Pkgfile
+f:16f365d38baab09d34be23d62541d6af:openvpn/Pkgfile
 f:6978f14ab88ed92240c18798e79102bd:openvpn/README
 f:28d54e9ca30752945039a04e4aaacfc1:libcap-ng/Pkgfile
+f:4527f6031eaddf40720978a0d162aada:pkcs11-helper/Pkgfile
