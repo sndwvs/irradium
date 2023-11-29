@@ -49,6 +49,7 @@ d:libmali-midgard-t86x-x11-gbm
 d:libmali-utgard-450-x11-gbm
 d:libmali-bifrost-g52-x11-gbm
 d:libmali-bifrost-g31-x11-gbm
+d:slang
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -219,3 +220,6 @@ f:73e7060e406b9756b5978ed258356e1e:libmali-bifrost-g52-x11-gbm/Pkgfile
 f:f2e879c27e067e80346f75fbffecde87:libmali-bifrost-g31-x11-gbm/.footprint
 f:8f1847ceed814828d4ac94e267d57351:libmali-bifrost-g31-x11-gbm/00-libmali.conf
 f:a5e822d74392addfd7a98bfde10b19db:libmali-bifrost-g31-x11-gbm/Pkgfile
+f:6b10d81e43c890e377dfadfe72dbfa3a:slang/.footprint
+f:01b4c8973511a76b596f5d110c488ff3:slang/.signature
+f:5ee1ede2ebe321245a17d2d2d75b5711:slang/Pkgfile
