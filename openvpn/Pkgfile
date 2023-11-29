@@ -1,7 +1,7 @@
 # Description: secure IP tunnel daemon
 # URL: http://openvpn.net
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: lzo lz4 iproute2 linux-pam openssl libcap-ng pkcs11-helper
+# Depends on: lzo lz4 iproute2 linux-pam openssl libcap-ng pkcs11-helper python-docutils
 
 name=openvpn
 version=2.6.8
@@ -30,8 +30,6 @@ build() {
 
   make
   make DESTDIR=$PKG install
-
-  install -D -m644 doc/openvpn.8 $PKG/usr/share/man/man8/openvpn.8
 
   # Create a decent config directory. openvpn doesn't have one by
   # default, nor does it have a single config file.
