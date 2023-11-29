@@ -227,7 +227,7 @@ f:6b10d81e43c890e377dfadfe72dbfa3a:slang/.footprint
 f:01b4c8973511a76b596f5d110c488ff3:slang/.signature
 f:5ee1ede2ebe321245a17d2d2d75b5711:slang/Pkgfile
 f:2f135439cf6e9a6db466acf3d567b4c3:openvpn/rc.openvpn
-f:e6f0c827143671227ceaf69b0f97f4e9:openvpn/Pkgfile
+f:588848e4d8c2e54685a04149928488d1:openvpn/Pkgfile
 f:6978f14ab88ed92240c18798e79102bd:openvpn/README
 f:28d54e9ca30752945039a04e4aaacfc1:libcap-ng/Pkgfile
 f:d044aacb1c513276ad985cd8ac10a563:pkcs11-helper/Pkgfile
