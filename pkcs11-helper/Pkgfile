@@ -9,7 +9,7 @@ release=1
 source=(https://github.com/OpenSC/pkcs11-helper/archive/${name}-${version}.tar.gz)
 
 build() {
-  cd $name-$version
+  cd $name-$name-$version
 
   libtoolize
   aclocal
