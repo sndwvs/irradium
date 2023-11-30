@@ -109,6 +109,7 @@ f:32eb7c972f06f9cb5409a0e5094a69af:gtest/.signature
 f:10ca5085e0dfb78c27e12b84d010c9ae:gtest/.footprint
 f:e4b4ba0c1d0fd29607f029cd251a4396:u-boot-tools/Pkgfile
 f:c77e8bf63589929985df9bf6d3d24dd3:u-boot-tools/.signature
+f:3229c9662669deee076eb6efc7791f99:u-boot-tools/.footprint
 f:408b6e6380b0ec88608d2a4750dd218f:mpp/fix-hardware-limited-to-memory-less-than-4G.patch
 f:57d8530224c720c1cf3650917c2e257b:mpp/Pkgfile
 f:98e28a0d44dd1c7087577b993c8b25d7:mpp/.signature
