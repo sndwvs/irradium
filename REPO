@@ -100,7 +100,7 @@ f:8df6ba54956111688839e483afaff5e0:xfce4-session/use-xfss-by-default-in-xfce.pat
 f:64f7cf5170d1e94ac6d51c259dc85c9f:xfce4-session/README
 f:886c6b33e5e8cb6938e60662efd5532d:xfce4-session/.footprint
 f:9df8992eecdb1a21c9cfff72f44e13d6:xfce4-session/.signature
-f:8cdde53465c6df4d382d823a796979c5:xfce4-settings/Pkgfile
+f:c7cdb656aa6853dd26fa940a2947ccf8:xfce4-settings/Pkgfile
 f:6a046f6f2c81ffd718601542389340b0:xfce4-settings/xfce4-settings.theme.diff.gz
 f:7e44e7233a51eb31b11369b7f6a6792a:xfce4-settings/xfce4-settings.xft.defaults.diff.gz
 f:eec5ad1bdec50629ca7089d80b278c17:xfce4-settings/.footprint
@@ -134,3 +134,4 @@ f:1d04f43063ccb7f69e522a328edc0e9b:xfwm4/xinitrc.xfce
 f:f41488fea2601c2f47a491f0a42aa4dc:xfwm4/.footprint
 f:bfd5f3dc5fa735ad0b87348326783e69:xfwm4/.signature
 f:d32239bcb673463ab874e80d47fae504:COPYING
+f:d41d8cd98f00b204e9800998ecf8427e:4.18.3
