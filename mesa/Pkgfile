@@ -5,122 +5,62 @@
 # Optional: directx-headers glslang libclc libunwind libva libvdpau lm_sensors rust-bindgen spirv-llvm-translator vulkan-loader wayland-protocols
 
 name=mesa
-version=23.2.1
+version=23.3.0
 release=1
 source=(https://archive.mesa3d.org/$name-$version.tar.xz
-	patches/23827.patch patches/2d4fe5f229791fde52846b3f583c12508b5109d6.patch
-	patches/0001-panfrost-Abstract-some-kernel-driver-operations.patch
-	patches/0002-panfrost-Use-the-kmod-abstraction.patch
-	patches/0003-panfrost-Introduce-a-PAN_BO_SHAREABLE-flag.patch
-	patches/0004-panvk-Pass-the-PAN_BO_SHAREABLE-when-relevant.patch
-	patches/0005-panfrost-Keep-original-BO-flags-when-linearizing-a-r.patch
-	patches/0006-panfrost-Flag-BO-shareable-when-appropriate.patch
-	patches/0007-panfrost-Add-a-flag-to-create-uncached-GPU-mappings.patch
-	patches/0008-panfrost-Create-scanout-kmsro-buffer-when-shared.patch
-	patches/0009-panfrost-Add-a-backend-for-the-Panthor-kernel-driver.patch
-	patches/0010-panfrost-Add-a-library-to-help-building-CSF-streams.patch
-	patches/0011-panfrost-genxml-Add-missing-Progress-increment-field.patch
-	patches/0012-panfrost-genxml-Fix-Last-First-Heap-Chunk-field-posi.patch
-	patches/0013-panfrost-Move-pan_afbc_compression_mode-to-pan_cs.c-.patch
-	patches/0014-panfrost-v10-support.patch
-	patches/0015-panfrost-do-not-open-code-panfrost_has_fragment_job.patch
-	patches/0016-panfrost-consult-draws-instead-of-draw_count.patch
-	patches/0017-panfrost-factor-out-ceu_vt_start-from-panfrost_emit_.patch
-	patches/0018-panfrost-Rename-panfrost_vtable-context_init.patch
-	patches/0019-panfrost-Add-arch-specific-context-init-cleanup-hook.patch
-	patches/0020-panfrost-Move-the-queue-heap-initialization-to-pan_c.patch
-	patches/0021-panfrost-Add-a-panfrost_context_reinit-helper-and-us.patch
-	patches/0022-panfrost-Set-the-heap-context-only-once-at-context-c.patch
-	patches/0023-panfrost-Move-the-heap-descriptor-creation-to-panfro.patch
-	patches/0024-panfrost-run-clang-format.patch
-	patches/0025-fixup-panfrost-Abstract-some-kernel-driver-operation.patch
-	patches/0026-panfrost-return-error-from-panthor_kmod_bo_get_sync_.patch
-	patches/0027-panfrost-handle-errors-in-panthor_kmod_bo_get_sync_p.patch
-	patches/0028-panfrost-debug_printf-on-unlikely-errors.patch
-	patches/0029-fixup-panfrost-Abstract-some-kernel-driver-operation.patch
-	patches/0030-fixup-panfrost-debug_printf-on-unlikely-errors.patch
-	patches/0031-panfrost-Fix-gnu-empty-initializer-warning.patch
-	patches/0032-fixup-panfrost-v10-support.patch
-	patches/0033-Revert-panfrost-consult-draws-instead-of-draw_count.patch
-	patches/0034-fixup-panfrost-v10-support.patch
-	patches/0035-panfrost-Set-batch-any_compute-true-any-time-we-issu.patch
-	patches/0037-panfrost-kmod-Add-locking-to-panfrost_kmod_vm-va_to_.patch
-	patches/0038-panfrost-Add-spec-egl-1.4-egl-ext_egl_image_storage-.patch
-	patches/0039-panfrost-Create-a-dedicated-hook-for-batch-ending-cl.patch
-	patches/0040-panfrost-introduce-and-use-PAN_USE_CSF.patch
-	patches/0041-panfrost-Add-JOBX-wrappers-to-simplify-jm_-vs-csf_-h.patch
-	patches/0042-panfrost-merge-top-level-draw-functions.patch
-	patches/0043-panfrost-reuse-panfrost_launch_xfb-for-v10.patch
-	patches/0044-panfrost-merge-panfrost_direct_draw-functions.patch
-	patches/0045-panfrost-clean-up-index_size-logic.patch
-	patches/0046-panfrost-Inline-panfrost_emit_heap_set.patch
-	patches/0047-panfrost-Use-JOBX-for-the-context_-init-cleanup-hook.patch
-	patches/0048-panfrost-Use-JOBX-for-emit_batch_end.patch
-	patches/0049-panfrost-Use-JOBX-for-tiler-heap-desc-emission.patch
-	patches/0050-panfrost-s-panfrost_emit_shader_regs-csf_emit_shader.patch
-	patches/0051-panfrost-Use-JOBX-for-init_batch.patch
-	patches/0052-panfrost-Rename-panfrost_start_tiling-and-use-JOBX.patch
-	patches/0053-panfrost-Provide-CSF-JM-specific-emit_fragment_job-h.patch
-	patches/0054-panfrost-Use-JOBX-for-job-backend-specific-launch_xf.patch
-	patches/0055-panfrost-Deduplicate-panfrost_launch_grid.patch
-	patches/0056-panfrost-Move-vertex_count-calculation-out-of-panfro.patch
-	patches/0057-panfrost-Move-job-backend-specific-bits-out-of-panfr.patch
-	patches/0058-panfrost-Allocate-the-temporary-geometry-buffer-once.patch
-	patches/0059-panfrost-Set-any_compute-true-in-the-panfrost_launch.patch
-	patches/0060-panfrost-Move-draw_count-increment-to-jm-csf-_emit_d.patch
-	patches/0061-panfrost-Prepare-uniform-buffers-in-panfrost_launch_.patch
-	patches/0062-panfrost-Use-a-1-task-increment-in-csf_launch_xfb.patch
-	patches/0063-panfrost-Make-CS-decoding-more-robust.patch
-	patches/0064-panfrost-Move-occlusion_query-init-out-of-the-if-fs_.patch)
+    patches/mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch
+    patches/mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch
+    patches/mesa-buildsystem-improvements.patch
+    patches/mesa-23.3-panthor.patch)
 
 build() {
-	prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
-	prt-get isinst libclc spirv-llvm-translator && PKGMK_MESA+=' -D gallium-opencl=icd'
-	prt-get isinst libclc rust-bindgen spirv-llvm-translator && PKGMK_MESA+=' -D gallium-rusticl=true'
-	prt-get isinst glslang && PKGMK_MESA+=' -D vulkan-drivers=amd,swrast,broadcom,panfrost -D vulkan-layers=device-select,overlay' || PKGMK_MESA+=' -D vulkan-drivers='
-	prt-get isinst libunwind && PKGMK_MESA+=' -D libunwind=enabled'
-	prt-get isinst libva && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
-	prt-get isinst libvdpau && PKGMK_MESA+=' -D gallium-vdpau=enabled' || PKGMK_MESA+=' -D gallium-vdpau=disabled'
-	prt-get isinst lm_sensors && PKGMK_MESA+=' -D lmsensors=enabled'
-	prt-get isinst vulkan-loader && PKGMK_MESA_GALLIUM+='zink,'
-	prt-get isinst wayland-protocols && PKGMK_MESA_PLATFORMS+='wayland'
-	## for future references
-	#prt-get isinst xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm && PKGMK_MESA_PLATFORMS+=',x11'
-	PKGMK_MESA_PLATFORMS+=',x11'
+    prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
+    prt-get isinst libclc spirv-llvm-translator && PKGMK_MESA+=' -D gallium-opencl=icd'
+    prt-get isinst libclc rust-bindgen spirv-llvm-translator && PKGMK_MESA+=' -D gallium-rusticl=true'
+    prt-get isinst glslang && PKGMK_MESA+=' -D vulkan-drivers=amd,swrast,broadcom,panfrost -D vulkan-layers=device-select,overlay' || PKGMK_MESA+=' -D vulkan-drivers='
+    prt-get isinst libunwind && PKGMK_MESA+=' -D libunwind=enabled'
+    prt-get isinst libva && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
+    prt-get isinst libvdpau && PKGMK_MESA+=' -D gallium-vdpau=enabled' || PKGMK_MESA+=' -D gallium-vdpau=disabled'
+    prt-get isinst lm_sensors && PKGMK_MESA+=' -D lmsensors=enabled'
+    prt-get isinst vulkan-loader && PKGMK_MESA_GALLIUM+='zink,'
+    prt-get isinst wayland-protocols && PKGMK_MESA_PLATFORMS+='wayland'
+    ## for future references
+    #prt-get isinst xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm && PKGMK_MESA_PLATFORMS+=',x11'
+    PKGMK_MESA_PLATFORMS+=',x11'
 
-	# add panfrost
-	if /bin/ls $SRC/*.patch 1> /dev/null 2> /dev/null ; then
-	    for patch in $SRC/*.patch ; do
-		patch -d $name-$version -p1 -i $patch || exit 1 ;
-	    done
-	fi
+    # add panfrost
+    if /bin/ls $SRC/*.patch 1> /dev/null 2> /dev/null ; then
+        for patch in $SRC/*.patch ; do
+        patch -d $name-$version -p1 -i $patch || exit 1 ;
+        done
+    fi
 
-	meson setup build $name-$version $PKGMK_MESA \
-		--prefix=/usr \
-		--sysconfdir=/etc \
-		--buildtype=plain \
-		--wrap-mode nodownload \
-		-D b_lto=false \
-		-D b_pie=true \
-		-D dri3=enabled \
-		-D egl=enabled \
-		-D llvm=enabled \
-		-D shared-llvm=enabled \
-		-D gbm=enabled \
-		-D gles1=disabled \
-		-D gles2=enabled \
-		-D glx=dri \
-		-D osmesa=true \
-		-D gallium-xa=enabled \
-		-D gallium-drivers=${PKGMK_MESA_GALLIUM}nouveau,r300,r600,radeonsi,swrast,virgl,freedreno,etnaviv,kmsro,lima,panfrost,v3d,vc4 \
-		-D platforms=${PKGMK_MESA_PLATFORMS#,} \
-		-D shared-glapi=enabled \
-		-D video-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
-		-D glvnd=true
+    meson setup build $name-$version $PKGMK_MESA \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --buildtype=plain \
+        --wrap-mode nodownload \
+        -D b_lto=false \
+        -D b_pie=true \
+        -D dri3=enabled \
+        -D egl=enabled \
+        -D llvm=enabled \
+        -D shared-llvm=enabled \
+        -D gbm=enabled \
+        -D gles1=disabled \
+        -D gles2=enabled \
+        -D glx=dri \
+        -D osmesa=true \
+        -D gallium-xa=enabled \
+        -D gallium-drivers=${PKGMK_MESA_GALLIUM}nouveau,r300,r600,radeonsi,swrast,virgl,freedreno,etnaviv,kmsro,lima,panfrost,v3d,vc4 \
+        -D platforms=${PKGMK_MESA_PLATFORMS#,} \
+        -D shared-glapi=enabled \
+        -D video-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
+        -D glvnd=true
 
-	meson compile -C build -j ${JOBS:-1}
-	DESTDIR=$PKG meson install -C build
+    meson compile -C build -j ${JOBS:-1}
+    DESTDIR=$PKG meson install -C build
 
-	# indirect rendering symlink
-	ln -s libGLX_mesa.so.0 $PKG/usr/lib/libGLX_indirect.so.0
+    # indirect rendering symlink
+    ln -s libGLX_mesa.so.0 $PKG/usr/lib/libGLX_indirect.so.0
 }
