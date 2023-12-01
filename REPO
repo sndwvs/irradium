@@ -78,7 +78,7 @@ f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:8baa3be58d05ab68006811ca8cfb1239:gdbm/.signature
 f:61a057afa31006764b957a483ba90b9d:gcc/gcc-4.7.3-multilib-dirs.patch
 f:7c9128522053af79791bcfdd55834c2a:gcc/gcc-nocheck-fixincludes.patch
-f:2bcc4a7b9044807429802713ad3292e0:gcc/Pkgfile
+f:ca5210d35484e4783c61834b8c25928b:gcc/Pkgfile
 f:507c1780a370500cdb233be39cc2c772:gcc/fix-nested-generic-lambda.patch
 f:032ba6ae0bd4d6e405d012084816e334:gcc/gcc-aarch64-disable-multilib-support.patch
 f:d999afb2c8abba1591154b6e6717e6d8:gcc/gcc-riscv-disable-multilib-support.patch

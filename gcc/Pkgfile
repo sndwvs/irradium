@@ -23,6 +23,8 @@ build() {
 	patch -d $name-$version -p1 -i $SRC/$name-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
 	patch -d $name-$version -p1 -i $SRC/$name-configure-fix-detection-of-atomic-builtins-in-libato.patch
 
+	[[ $(uname -m) == "riscv64" ]] && PKGMK_GCC+=' --enable-autolink-libatomic'
+
 	# Credits @allanmcrae
 	# https://github.com/allanmcrae/toolchain/blob/f18604d70c5933c31b51a320978711e4e6791cf1/gcc/PKGBUILD
 	# TODO: properly deal with the build issues resulting from this
@@ -31,7 +33,7 @@ build() {
 
 	mkdir build
 	cd build
-	../$name-$version/configure \
+	../$name-$version/configure PKGMK_GCC \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--enable-languages=c,c++,lto \
