@@ -62,10 +62,9 @@ f:4cdc0bad197ad366f28241a18323beb4:libsdl/.signature
 f:26b65479c14e8ff3fad493216daa083e:libtheora/Pkgfile
 f:4591619096a713a263fd7e57df3bbb49:libtheora/.footprint
 f:7f787ad4d591696b987daf3424515843:libtheora/.signature
-f:42f60df1497769d4456ec9f8c32fd175:llvm/Pkgfile
+f:ea96cd0bfe78d73f392937e7c13dde00:llvm/Pkgfile
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
-f:27e80ba3bef2cc48c2d41d29e44237dc:llvm/llvm-config.h
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
 f:d54a82a1ba48ee0aa2f6c300bec91a46:llvm/.footprint
 f:2b9284717ed8efd6d01b3510fd08b4a0:llvm/.signature
