@@ -17,8 +17,6 @@ build() {
 	prt-get isinst ccache && PKGMK_LLVM+=' -D LLVM_CCACHE_BUILD=ON' && \
 		export PATH="$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
 
-	[[ $(uname -m) == "riscv64" ]] && PKGMK_LLVM+=' -DCMAKE_SHARED_LINKER_FLAGS=-latomic'
-
 	cp -r $SRC/cmake-$version.src/Modules/* $name-$version.src/cmake/modules/.
 	mv $SRC/cmake-$version.src/ $SRC/cmake
 	mv $SRC/third-party-$version.src/ $SRC/third-party
