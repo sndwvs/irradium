@@ -1,11 +1,11 @@
 --- a/pkgmk.in	2023-02-03 18:32:32.000000000 +0200
-+++ b/pkgmk.in	2023-12-02 19:27:49.395965708 +0200
++++ b/pkgmk.in	2023-12-02 21:02:55.156538999 +0200
 @@ -324,7 +324,11 @@ check_signature() {
  		srcind=$(( srcind+1 ))
  		done
  
 -		for FILE in "$PKGMK_PKGFILE" "$PKGMK_FOOTPRINT" "${source[@]}"; do
-+		if [ ! -z $MULTI_ARCH ]; then
++		if [ ! -f $PKGMK_ROOT/$PKGMK_FOOTPRINT -a ! -z $MULTI_ARCH ]; then
 +		    PKGMK_FOOTPRINT=("${PKGMK_FOOTPRINT}.riscv64" "${PKGMK_FOOTPRINT}.aarch64")
 +		fi
 +
@@ -18,7 +18,7 @@
  	done
  
 -	for FILE in "$PKGMK_PKGFILE" "$PKGMK_FOOTPRINT" "${source[@]}"; do
-+	if [ ! -z $MULTI_ARCH ]; then
++	if [ ! -f $PKGMK_ROOT/$PKGMK_FOOTPRINT -a ! -z $MULTI_ARCH ]; then
 +	    PKGMK_FOOTPRINT=("${PKGMK_FOOTPRINT}.riscv64" "${PKGMK_FOOTPRINT}.aarch64")
 +	fi
 +
@@ -30,7 +30,7 @@
  
  	cd $PKGMK_ROOT
  
-+	if [ ! -z $MULTI_ARCH ]; then
++	if [ ! -f $PKGMK_FOOTPRINT -a ! -z $MULTI_ARCH ]; then
 +	    PKGMK_FOOTPRINT+=".$MULTI_ARCH"
 +	fi
 +
@@ -41,7 +41,7 @@
  		exit 1
  	fi
  
-+	if [ ! -z $MULTI_ARCH ]; then
++	if [ ! -f $PKGMK_ROOT/$PKGMK_FOOTPRINT -a ! -z $MULTI_ARCH ]; then
 +	    PKGMK_FOOTPRINT+=".${MULTI_ARCH}"
 +	fi
 +

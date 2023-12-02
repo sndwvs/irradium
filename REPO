@@ -63,10 +63,10 @@ f:015f019e2731e18c4229ed5772707feb:db/db-5.3.28-mmap-high-cpu-usage.patch
 f:42de24f40ae2c7ea1b4c59352962029f:db/db-5.3.28_cve-2019-2708.patch
 f:034680aa69ee64596517784fe1161c1b:db/.footprint
 f:7e30d22cd875710b997e739c6202893f:db/.signature
-f:b04a3899150e750d60a2df7f8b7245be:pkgutils/Pkgfile
+f:e4d23254b43b68649abc4e1c40e415ce:pkgutils/Pkgfile
 f:f1927bc2ae6c00c3191265c4170b9be8:pkgutils/pkgmk.conf
 f:03406266eb2507a7701b9a2800acb165:pkgutils/.signature
-f:4179c49842a3b84b525d70166d2ac49a:pkgutils/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
+f:338a880b8c4753391faffc3e4146a5c3:pkgutils/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint.aarch64
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
