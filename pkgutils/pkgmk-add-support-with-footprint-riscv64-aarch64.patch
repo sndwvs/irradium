@@ -1,0 +1,59 @@
+--- a/pkgmk.in	2023-02-03 18:32:32.000000000 +0200
++++ b/pkgmk.in	2023-12-02 19:27:49.395965708 +0200
+@@ -324,7 +324,11 @@ check_signature() {
+ 		srcind=$(( srcind+1 ))
+ 		done
+ 
+-		for FILE in "$PKGMK_PKGFILE" "$PKGMK_FOOTPRINT" "${source[@]}"; do
++		if [ ! -z $MULTI_ARCH ]; then
++		    PKGMK_FOOTPRINT=("${PKGMK_FOOTPRINT}.riscv64" "${PKGMK_FOOTPRINT}.aarch64")
++		fi
++
++		for FILE in "$PKGMK_PKGFILE" "${PKGMK_FOOTPRINT[@]}" "${source[@]}"; do
+ 			ln -s $(get_filename -a $FILE) .
+ 		done
+ 
+@@ -397,7 +401,11 @@ make_signature() {
+ 		srcind=$(( srcind+1 ))
+ 	done
+ 
+-	for FILE in "$PKGMK_PKGFILE" "$PKGMK_FOOTPRINT" "${source[@]}"; do
++	if [ ! -z $MULTI_ARCH ]; then
++	    PKGMK_FOOTPRINT=("${PKGMK_FOOTPRINT}.riscv64" "${PKGMK_FOOTPRINT}.aarch64")
++	fi
++
++	for FILE in "$PKGMK_PKGFILE" "${PKGMK_FOOTPRINT[@]}" "${source[@]}"; do
+ 		LOCAL_FILENAMES="$LOCAL_FILENAMES `get_filename $FILE`"
+ 	done
+ 
+@@ -502,6 +510,10 @@ check_footprint() {
+ 
+ 	cd $PKGMK_ROOT
+ 
++	if [ ! -z $MULTI_ARCH ]; then
++	    PKGMK_FOOTPRINT+=".$MULTI_ARCH"
++	fi
++
+ 	if [ -f $TARGET ]; then
+ 		make_footprint > $FILE.footprint
+ 		if [ -f $PKGMK_FOOTPRINT ]; then
+@@ -688,6 +700,10 @@ update_footprint() {
+ 		exit 1
+ 	fi
+ 
++	if [ ! -z $MULTI_ARCH ]; then
++	    PKGMK_FOOTPRINT+=".${MULTI_ARCH}"
++	fi
++
+ 	check_file "$PKGMK_FOOTPRINT"
+ 	make_footprint > $PKGMK_FOOTPRINT
+ 	touch $TARGET
+@@ -961,6 +977,8 @@ trap "interrupted" SIGHUP SIGINT SIGQUIT
+ 
+ export LC_ALL=C.UTF-8
+ 
++MULTI_ARCH=${MULTI_ARCH:-$( [ $( uname -m ) == "aarch64" -o $( uname -m ) == "riscv64" ] && echo "$( uname -m)" || echo "" )}
++
+ readonly PKGMK_VERSION="#VERSION#"
+ readonly PKGMK_COMMAND="$0"
+ readonly PKGMK_ROOT="$PWD"
