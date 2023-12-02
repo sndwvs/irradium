@@ -1,7 +1,9 @@
 untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGMYS+9yDXU7edKQOM0F9/nRrCfg2dfewLO6e0JDH61CWUqL4PqAz24aAtV9BD88eW3FtmZbeLm0oUvHw7R1UoQ8=
-SHA256 (Pkgfile) = ade6ded9ff960ea4ab6301beb05a102cc78ac9f948bc2e5360724c11b067736f
-SHA256 (.footprint) = 26802764ae3ae1e1a73ea56c859b3415e250a72ea444af410381df8c8f5d3ac8
+RWQAwxvZoACtGJMWrWJst+q089Myo4iktoQsU7shnQZE3jma8wAkA2Sl41ZKjnxVZVRiOVSO0CR4nyxJnoYJ1QfWx36WVTW0tgg=
+SHA256 (Pkgfile) = 272b8236fd98fcc0c5470f9bc41e001e93727a9f5174a8897c077d1cbb3e31f5
+SHA256 (.footprint.riscv64) = 26802764ae3ae1e1a73ea56c859b3415e250a72ea444af410381df8c8f5d3ac8
+SHA256 (.footprint.aarch64) = 26802764ae3ae1e1a73ea56c859b3415e250a72ea444af410381df8c8f5d3ac8
 SHA256 (prt-get-5.19.6.tar.xz) = 6ea89df308e19a6239f260c91036805cd2063d0cd24a7427235849634dd49f0d
 SHA256 (prt-get.conf) = 4c151f335172b5b22968e7d3331d98a2d7596f8d783ab717e7e00c63e308c8f8
 SHA256 (prt-get.aliases) = 2603ea52a4dd4263898b2ca5219b19963e84714c990c5fa80dcc0a82d2dd65e5
+SHA256 (fsearch-footprint-add-multi-arch-riscv64-aarch64.patch) = 655b16b3269eb07ab4c5d37423a5bb81795ceb082577a26cedddd98c6875a801
