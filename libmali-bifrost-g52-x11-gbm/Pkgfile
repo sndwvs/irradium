@@ -32,4 +32,7 @@ build() {
 
   install -Dm644 $SRC/00-libmali.conf $PKG/etc/ld.so.conf.d/00-libmali.conf
   mv $PKG/usr/lib/libmali/pkgconfig $PKG/usr/lib/
+
+  install -d $PKG/etc/revdep.d
+  echo "/usr/lib/libmali" > $PKG/etc/revdep.d/$name
 }
