@@ -6,12 +6,15 @@
 
 name=prt-get
 version=5.19.6
-release=1
+release=2
 source=(http://crux.nu/files/prt-get-$version.tar.xz
-        prt-get.conf prt-get.aliases)
+        prt-get.conf prt-get.aliases
+        fsearch-footprint-add-multi-arch-riscv64-aarch64.patch)
 
 build() {
   cd ${name}-${version}
+
+  patch -p1 -i $SRC/fsearch-footprint-add-multi-arch-riscv64-aarch64.patch
 
   ./configure --prefix=/usr
   make
