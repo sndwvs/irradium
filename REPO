@@ -105,11 +105,11 @@ f:759182ed8b1a814700a2a95cb0b8a094:quiterss/.footprint.aarch64
 f:759182ed8b1a814700a2a95cb0b8a094:quiterss/.footprint.riscv64
 f:3540b17b2229c92567aa6f57ae8f41e0:qt5-webkit/icu68.patch
 f:aec15c20d792575f72122967af1ee827:qt5-webkit/glib-2.68.patch
-f:e9f89dbecbd1017c2941dd385a52d933:qt5-webkit/Pkgfile
+f:bc45d6f33813a2ce1b4a6336fbcba543:qt5-webkit/Pkgfile
 f:f852ddcf1cd49354d75084e491783ec0:qt5-webkit/qt5-webkit-bison-3.7.patch
 f:aa35a52d0a4560753650dd7e06369d6c:qt5-webkit/qt5-webkit-python-3.9.patch
 f:f3eb9379339542f1a37767a83131ff64:qt5-webkit/webkit-offlineasm-warnings-ruby27.patch
-f:3d32e2eb99c485c0e8294d06ad28b1e7:qt5-webkit/.signature
+f:d5a39b45734cedd10b4f9a43e8ffa540:qt5-webkit/.signature
 f:5724912981bf349f0a05ca9d6ae6fdb3:qt5-webkit/.footprint.aarch64
 f:5724912981bf349f0a05ca9d6ae6fdb3:qt5-webkit/.footprint.riscv64
 f:58c9841c1e8752ad00dbd08162c7b678:android-tools/Pkgfile
