@@ -147,7 +147,7 @@ f:d83c5f91d79e44dac31755b256c102a8:libxklavier/.signature
 f:69a155a5d560e681791626563c084aa1:libxklavier/Pkgfile
 f:37584c57d350717ce1114454c6dfbb60:qt5/.footprint
 f:775fe956cdd985de5f6f2cf965ec5b47:qt5/.signature
-f:44a848de7b4a18c72aa24de4addbc244:qt5/Pkgfile
+f:72b31cf164b1b9c43f32bd41cc61ee66:qt5/Pkgfile
 f:138f9afe745c14c5bed2fa8ebfce0c41:qt5/qt-5.15.11-xkbcommon160.patch
 f:bfc114bfc210c5b5996941f7e186f8b3:qt5/qt5-cflags.patch
 f:67165bacd3231b57d7b7db1e6bcb7d89:qt5/qt5-logo.png

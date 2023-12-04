@@ -50,7 +50,7 @@ build() {
     #prt-get isinst clang lld && PKGMK_QT5+=' -linker lld' || PKGMK_QT5+=' -linker gold'
 
     # Set linker to use:
-    if [ $(uname) != "riscv64" ]; then
+    if [ $(uname -m) != "riscv64" ]; then
         # Upstream default:
         LINKER=gold
     else
