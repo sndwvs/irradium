@@ -56,6 +56,7 @@ d:pkcs11-helper
 d:tk
 d:tcl
 d:libcanberra
+d:qrencode
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -248,3 +249,6 @@ f:0a78c70bbcd031f03495f19aa5f29fd1:libcanberra/.signature
 f:7c21d490114fcf1fce4e855143fd47c6:libcanberra/Pkgfile
 f:08babe5f17deae110d5fa163b55824bf:libcanberra/libcanberra-broadway-fix.patch
 f:a7d538151a41689f42a2a6b589ef0a3e:libcanberra/libcanberra-multi-backend.patch
+f:4770d6cb197b8134c2f905d5bd449575:qrencode/.footprint
+f:027818aee8a1a2151f420b1303c006e7:qrencode/.signature
+f:cf0e1c50638343010e0e391cff496e8e:qrencode/Pkgfile
