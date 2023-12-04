@@ -265,4 +265,8 @@ f:6978f14ab88ed92240c18798e79102bd:openvpn/README
 f:28d54e9ca30752945039a04e4aaacfc1:libcap-ng/Pkgfile
 f:d044aacb1c513276ad985cd8ac10a563:pkcs11-helper/Pkgfile
 f:031803e77e6d0d6fcc5d9245ff972be7:tk/Pkgfile
+f:5a6869436a680dbd4333d18cf5ed8c13:tk/.footprint
+f:670bb032fcbae800dbc522eaa88a4d68:tk/.signature
 f:e4fc0be26b83b0c8b24bf609e1bdcd6e:tcl/Pkgfile
+f:52e302c05b583209854a61bfb6b0e62f:tcl/.footprint
+f:92bb7bb10f27c0d8e83962650036b2c6:tcl/.signature
