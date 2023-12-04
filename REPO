@@ -57,6 +57,7 @@ d:tk
 d:tcl
 d:libcanberra
 d:qrencode
+d:firefox
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -252,3 +253,10 @@ f:a7d538151a41689f42a2a6b589ef0a3e:libcanberra/libcanberra-multi-backend.patch
 f:4770d6cb197b8134c2f905d5bd449575:qrencode/.footprint
 f:027818aee8a1a2151f420b1303c006e7:qrencode/.signature
 f:cf0e1c50638343010e0e391cff496e8e:qrencode/Pkgfile
+f:20fa672fbd47bb217b5b5050b09a4353:firefox/.footprint
+f:ce8226895c981265c806fe855308406d:firefox/README
+f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
+f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
+f:022ca4e9eeac6d2090a0289ee01db9f4:firefox/icu-linebreak-classes.patch
+f:9e3c3a1a039ccab441594571858b79e3:firefox/.signature
+f:8b610b84e36901cb1be9b0ff4ed11ee2:firefox/Pkgfile
