@@ -55,6 +55,7 @@ d:libcap-ng
 d:pkcs11-helper
 d:tk
 d:tcl
+d:libcanberra
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -242,3 +243,8 @@ f:670bb032fcbae800dbc522eaa88a4d68:tk/.signature
 f:e4fc0be26b83b0c8b24bf609e1bdcd6e:tcl/Pkgfile
 f:52e302c05b583209854a61bfb6b0e62f:tcl/.footprint
 f:92bb7bb10f27c0d8e83962650036b2c6:tcl/.signature
+f:f603e28d540c1c053f73b6d7a00e5bf6:libcanberra/.footprint
+f:0a78c70bbcd031f03495f19aa5f29fd1:libcanberra/.signature
+f:7c21d490114fcf1fce4e855143fd47c6:libcanberra/Pkgfile
+f:08babe5f17deae110d5fa163b55824bf:libcanberra/libcanberra-broadway-fix.patch
+f:a7d538151a41689f42a2a6b589ef0a3e:libcanberra/libcanberra-multi-backend.patch
