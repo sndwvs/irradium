@@ -53,6 +53,7 @@ d:slang
 d:openvpn
 d:libcap-ng
 d:pkcs11-helper
+d:tk
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -96,10 +97,10 @@ f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
 f:330406e43a76603e3c86156ea1e0a779:libreoffice/makefile.in.patch
 f:ddc9e2e08ee5c3fb22a4b2bf4d4bee39:libreoffice/optjava.patch
 f:9911d3b01baeb32c8cddd9e87d1e07bb:libreoffice/.signature
-f:1a3bc55e7e05f278959b0d17e0ddf271:libreoffice/.footprint.aarch64
-f:1a3bc55e7e05f278959b0d17e0ddf271:libreoffice/.footprint.riscv64
 f:ab7812bd3ac3a2b8b95699e2cc0a9b19:libreoffice/libreoffice-7.5.8.2-icu-74-compatibility.patch
 f:21bb4927bf5a4d587f9b878324768b61:libreoffice/libxml2.patch
+f:1a3bc55e7e05f278959b0d17e0ddf271:libreoffice/.footprint.aarch64
+f:1a3bc55e7e05f278959b0d17e0ddf271:libreoffice/.footprint.riscv64
 f:0ceeb0e0c8fd191e472a573b3296a9fa:quiterss/post-install
 f:8ab5923738c8e9edcee518763a2d2489:quiterss/Pkgfile
 f:5cc9f626057a13975fdd59f6f62cb4b2:quiterss/.signature
@@ -262,3 +263,4 @@ f:588848e4d8c2e54685a04149928488d1:openvpn/Pkgfile
 f:6978f14ab88ed92240c18798e79102bd:openvpn/README
 f:28d54e9ca30752945039a04e4aaacfc1:libcap-ng/Pkgfile
 f:d044aacb1c513276ad985cd8ac10a563:pkcs11-helper/Pkgfile
+f:03a700674dd587c04c559991a213b890:tk/Pkgfile
