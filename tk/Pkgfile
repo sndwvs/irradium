@@ -14,9 +14,7 @@ build() {
   ./configure \
     --prefix=/usr \
     --mandir=/usr/share/man \
-    --enable-threads \
-    --disable-rpath \
-    --enable-64bit
+    --enable-threads
 
   make
   make INSTALL_ROOT=$PKG install install-private-headers

@@ -54,6 +54,7 @@ d:openvpn
 d:libcap-ng
 d:pkcs11-helper
 d:tk
+d:tcl
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -263,4 +264,5 @@ f:588848e4d8c2e54685a04149928488d1:openvpn/Pkgfile
 f:6978f14ab88ed92240c18798e79102bd:openvpn/README
 f:28d54e9ca30752945039a04e4aaacfc1:libcap-ng/Pkgfile
 f:d044aacb1c513276ad985cd8ac10a563:pkcs11-helper/Pkgfile
-f:03a700674dd587c04c559991a213b890:tk/Pkgfile
+f:031803e77e6d0d6fcc5d9245ff972be7:tk/Pkgfile
+f:2f19dd7747f277c441ffb58c80449cc6:tcl/Pkgfile
