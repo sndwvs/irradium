@@ -2,6 +2,8 @@ d:mtdev
 d:mesa
 d:mesa/patches
 d:xorg-xcb-util-xrm
+d:xorg-gccmakedep
+d:xorg-rendercheck
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:3124e82d69af0ee140864b85bf904a25:mtdev/Pkgfile
 f:3ac078834db014ccf66b1425274e9f53:mtdev/.signature
@@ -18,3 +20,9 @@ f:4a8b01cd8b4aaf1603d77bfc7f61472f:mesa/.footprint
 f:80e849824bbe614b2a87b956bf7fa46a:xorg-xcb-util-xrm/.footprint
 f:c76ef6c956f03063e01c6fb62ce7bd2d:xorg-xcb-util-xrm/.signature
 f:f64c724c19b49611ec9303cb75e44672:xorg-xcb-util-xrm/Pkgfile
+f:a915c0f538efd3e3899db131de646979:xorg-gccmakedep/.footprint
+f:48fcc73e6aa61006ac8dce57c5274a8a:xorg-gccmakedep/.signature
+f:8e94b5e832fa4177b3b972a9d1c65e6b:xorg-gccmakedep/Pkgfile
+f:04618950e29d6a926c05b43e027128a7:xorg-rendercheck/.footprint
+f:e18a0f25a1ab578d779ea8770330a013:xorg-rendercheck/.signature
+f:0431def0282c6bc31d27ef1653c4bd84:xorg-rendercheck/Pkgfile
