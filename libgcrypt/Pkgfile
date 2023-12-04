@@ -1,0 +1,24 @@
+# Description: A general purpose cryptographic library based on GnuPG
+# URL: https://www.gnupg.org
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Depends on: libgpg-error
+
+name=libgcrypt
+version=1.10.3
+release=1
+source=(https://www.gnupg.org/ftp/gcrypt/libgcrypt/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr \
+		--disable-padlock-support \
+		--enable-static=yes \
+		--build=$(uname -m)-unknown-linux-gnu
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
+}
