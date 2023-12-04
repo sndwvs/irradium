@@ -19,24 +19,14 @@ build() {
   make
   make INSTALL_ROOT=$PKG install install-private-headers
 
-  ln -sf wish${version%.*} $PKG/usr/bin/wish
-  ln -sf libtk${version%.*}.so $PKG/usr/lib/libtk.so
+  ln -sf tclsh${version%.*} $PKG/usr/bin/tclsh
+  ln -sf libtcl${version%.*}.so $PKG/usr/lib/libtcl.so
   install -Dm644 tcl.m4 -t $PKG/usr/share/aclocal
-  chmod 644 $PKG/usr/lib/libtclstub8.6.a
-
-  # install private headers (FS#14388, FS#47616)
-  cd ..
-  for dir in compat generic generic/ttk unix; do
-    install -dm755 $PKG/usr/include/tk-private/$dir
-    install -m644 -t $PKG/usr/include/tk-private/$dir $dir/*.h
-  done
+  chmod 644 $PKG/usr/lib/libtclstub${version%.*}.a
 
   # remove buildroot traces
   sed -e "s#${SRC}/tk${version}/unix#/usr/lib#" \
       -e "s#${SRC}/tk${version}#/usr/include#" \
       -e "s#'{/usr/lib} '#'/usr/lib/tcl${version%.*}'#" \
       -i "${PKG}/usr/lib/tclConfig.sh"
-
-  # conflict with perl
-  rm $PKG/usr/share/man/man3/Thread.3
 }
