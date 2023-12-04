@@ -1,0 +1,18 @@
+# Description: libmng - Mutliple Image Network Graphics
+# URL: https://libmng.com/
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: lcms2
+
+name=libmng
+version=2.0.3
+release=2
+source=(https://downloads.sourceforge.net/$name/$name-$version.tar.xz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr \
+    --build=$(uname -m)-unknown-linux-gnu
+
+  make
+  make DESTDIR=$PKG install
+}

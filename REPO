@@ -25,6 +25,7 @@ d:ffmpeg-mpp
 d:yasm
 d:pango-compat
 d:libgcrypt
+d:libmng
 f:57034dd469700fdc3f92e25ecf75dac8:lightdm/.signature
 f:0389af1eb18d4779b7cc7bdca4b6e35e:lightdm/50-directories.conf
 f:f5456b1c11ea76fff362a22957c66168:lightdm/50-irradium-defaults.conf
@@ -136,3 +137,6 @@ f:1f9176f6c67b5d36707ba4f94a4e8281:pango-compat/Pkgfile
 f:e606d51ea956a5fbc76832d647ebcc8b:libgcrypt/.footprint
 f:6b3759f71af984ff91ea8063a1f3c255:libgcrypt/.signature
 f:bc68d3f45a13782a3083d59c43d03d12:libgcrypt/Pkgfile
+f:320fd36c5fac83007fb50e74929656c9:libmng/.footprint
+f:b58aad445a045a8ff63d34413ccd240b:libmng/.signature
+f:e08a1ce7d9d744b8b6b47a021dcc2ad0:libmng/Pkgfile
