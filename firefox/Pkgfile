@@ -87,7 +87,7 @@ EOF
       echo 'ac_add_options --enable-linker=bfd' >> .mozconfig
 
   local clangVer=$(/usr/bin/clang -dumpversion)
-  local cruxVer=$(/usr/bin/crux | cut -d' ' -f3)
+  local cruxVer=$(/usr/bin/irradium | cut -d' ' -f3)
 
   # sandboxed web apps
   prt-get isinst lld wasi-libc++ && \
