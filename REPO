@@ -80,8 +80,7 @@ f:8d6089dbaf418afde5785bded444c6b6:python/.signature
 f:ebbe2c197d4cf6fbce10a17e09d2a609:python/CVE-2019-20907.patch
 f:59562d92ee153e7501f73be4ebd9e636:python/CVE-2020-26116.patch
 f:08323c8fe8a3c55d4609ebd6cd0b41ee:python/CVE-2021-3177.patch
-f:df61642943d353bec515a96e5a09d100:python/Pkgfile
-f:c5efe141e71f4dc85e71b3cae482ad85:python/pyconfig.h
+f:d51721f0feb9a204875af41db0e9a3de:python/Pkgfile
 f:5b7e8a119e09a1cbe747695617f6bc97:python/.footprint
 f:6f0e75649506c38e7d9a52285ef4f9c4:slim-themes/.signature
 f:dbcce60fb8b85304b39c38c1e3ef980e:slim-themes/Pkgfile
