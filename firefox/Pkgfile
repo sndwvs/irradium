@@ -10,7 +10,9 @@ release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   icu-linebreak-classes.patch
-  node-stdout-nonblocking-wrapper)
+  node-stdout-nonblocking-wrapper
+  lfs64.patch riscv64-no-lto.patch
+  rust-lto-thin.patch)
 
 build() {
   cd $name-$version
@@ -40,7 +42,6 @@ cat <<- EOF > .mozconfig
   ac_add_options --with-system-nspr
   ac_add_options --with-system-nss
   ac_add_options --with-system-libevent
-  ac_add_options --with-system-libvpx
   ac_add_options --with-system-webp
   ac_add_options --enable-av1
   ac_add_options --enable-system-ffi
@@ -60,7 +61,10 @@ cat <<- EOF > .mozconfig
   ac_add_options --disable-parental-controls
 EOF
 
-  [ $(uname -m) != "riscv64" ] && echo 'ac_add_options --disable-elf-hack' >> .mozconfig
+  if [ $(uname -m) != "riscv64" ]; then
+    echo 'ac_add_options --disable-elf-hack' >> .mozconfig
+    echo 'ac_add_options --with-system-libvpx' >> .mozconfig
+  fi
 
   # audio
   PKGMK_FFAUDIO="alsa"
@@ -141,3 +145,4 @@ EOF
   install -d $PKG/etc/revdep.d
   echo "/usr/lib/firefox" > $PKG/etc/revdep.d/firefox
 }
+lfs64.patch riscv64-no-lto.patch rust-lto-thin.patch
