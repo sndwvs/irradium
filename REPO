@@ -128,7 +128,7 @@ f:22ed72346922735d99787511716688e5:telegram-desktop/Pkgfile
 f:8d008c7ebc775f1823ba35c211c98e8c:jemalloc/Pkgfile
 f:252da7d909cee2088734e606b6e5d8a5:range-v3/Pkgfile
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
-f:8f4c7027c3b6a96e08915033c36e409e:go/Pkgfile
+f:31e766d928982fe49550d2842e38e74b:go/Pkgfile
 f:3f3c02a1e8a60f7c252f474e481ff49e:go/.signature
 f:94176bdc04fd60e98da8b5138e437d1a:go/.footprint
 f:7596de075e0ee7b81ce610dce48e4da3:librga/Pkgfile
