@@ -58,6 +58,7 @@ d:tcl
 d:libcanberra
 d:qrencode
 d:firefox
+d:p7zip
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -260,3 +261,6 @@ f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
 f:022ca4e9eeac6d2090a0289ee01db9f4:firefox/icu-linebreak-classes.patch
 f:9e3c3a1a039ccab441594571858b79e3:firefox/.signature
 f:13df8e1adcf0112e8c49871e85f87188:firefox/Pkgfile
+f:ddc8c17bfa1104a16754079f549f367c:p7zip/.footprint
+f:240192132e58ccc752ce9154ed79ef19:p7zip/.signature
+f:2adec77d4711ef18507afebca3e7cbbf:p7zip/Pkgfile

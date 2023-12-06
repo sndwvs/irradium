@@ -1,0 +1,34 @@
+# Description: 7-zip compression utilities
+# URL: https://github.com/p7zip-project/
+# Maintainer: John McQuah, jmcquah at disroot dot org
+# Depends on: 
+# Optional: yasm
+
+name=p7zip
+version=17.05
+release=2
+source=(https://github.com/$name-project/$name/archive/v$version/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  cp makefile.linux_any_cpu_gcc_4.X makefile.machine
+
+  make -j ${JOBS:-1} all3
+
+  mkdir -p $PKG/usr/bin $PKG/usr/share/man $PKG/usr/lib/$name
+  install -m 0755 bin/{7za,7zr} $PKG/usr/bin
+  install -m 0755 bin/{7z,7z.so,7zCon.sfx} $PKG/usr/lib/$name
+  cp -r bin/Codecs $PKG/usr/lib/$name
+  cp -r man1 $PKG/usr/share/man
+
+  # Shared library fails to load when placed in /usr/lib/$name.
+  # A wrapper script is more robust than -rpath or patchelf.
+  cat >$PKG/usr/bin/7z <<\EOF
+#!/bin/sh
+
+exec /usr/lib/p7zip/7z "$@"
+EOF
+
+  chmod 0755 $PKG/usr/bin/7z
+}
