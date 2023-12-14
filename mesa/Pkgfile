@@ -5,7 +5,7 @@
 # Optional: directx-headers glslang libclc libunwind libva libvdpau lm_sensors rust-bindgen spirv-llvm-translator vulkan-loader wayland-protocols
 
 name=mesa
-version=23.3.0
+version=23.3.1
 release=1
 source=(https://archive.mesa3d.org/$name-$version.tar.xz
     patches/mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch

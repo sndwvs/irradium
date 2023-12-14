@@ -12,7 +12,7 @@ f:feea18823cc9acb94405f6d9674188b1:mesa/patches/mesa-20.3.0-meson-radeon-arm-ris
 f:117aa876fbcb5c84fb58b2def118094f:mesa/patches/mesa-23.3-panthor.patch
 f:82dc157b55e14887e89f05b8ccba3f47:mesa/patches/mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch
 f:dbbafa516b18ce93cf4e6a68eb1f323d:mesa/patches/mesa-buildsystem-improvements.patch
-f:d83c983c3c38eb06e7f11aa95ef71c91:mesa/Pkgfile
+f:412646e16c2d89beaa8d5ffc0b3f6469:mesa/Pkgfile
 f:775a5e3cfac92980f00e567ab17f36ad:mesa/.signature
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
 f:c530d42f82a46a1a6812cbbc8e916d31:mesa/README.md
