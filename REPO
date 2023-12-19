@@ -10,11 +10,11 @@ d:gcc
 d:glibc
 d:flex
 d:binutils
-d:cmake
 d:kbd
 d:libpcre
 d:mlocate
 d:dhcpcd
+d:cmake
 f:b2f414ce5064a36d8ae51b4b2dd2bd72:filesystem/Pkgfile
 f:915cf64e2ab613887db6ce2e2c41eeb4:filesystem/fstab
 f:f05649d0184df6b4550efa3c513dde0e:filesystem/group
@@ -109,9 +109,6 @@ f:9165347c2c736b0c48b1846004e650e9:flex/.footprint
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
-f:159119de6edf5e796b96bc8add17982f:cmake/Pkgfile
-f:1d15188ada10c3e930fbb3422da48e66:cmake/.signature
-f:68b61055a746a9c23c79cd48e50c8cf1:cmake/.footprint
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:e7e7ee3934a07654f97ae96aae2cf72e:kbd/Pkgfile
 f:3b3c8c8ea6bacaff4613fd355be92398:kbd/.signature
@@ -126,6 +123,9 @@ f:6ff28f40999ecda935bbbd0f0d3da869:mlocate/.signature
 f:00947fd6d4e8c1316d4a7ff33b08b64e:mlocate/.footprint
 f:9b8f2bac610aad49e84ae7398c5735c1:dhcpcd/pre-install
 f:0b056dd3e5a3e1eacb7c9b38f0641e4d:dhcpcd/rc.dhcpcd
-f:5a94f2e61f0a375c3b92ad7eb24bb4e8:dhcpcd/Pkgfile
+f:d43333a392f4016eecca17c30051086b:dhcpcd/Pkgfile
 f:d775dd17a16f89e6e7c0ddbb69d9388f:dhcpcd/.signature
 f:131a7abf96b5cbd339cba03d9cd7e595:dhcpcd/.footprint
+f:68b61055a746a9c23c79cd48e50c8cf1:cmake/.footprint
+f:1d15188ada10c3e930fbb3422da48e66:cmake/.signature
+f:159119de6edf5e796b96bc8add17982f:cmake/Pkgfile
