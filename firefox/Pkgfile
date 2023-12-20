@@ -5,7 +5,7 @@
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wasi-libc++ wayland
 
 name=firefox
-version=120.0.1
+version=121.0
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -22,8 +22,8 @@ build() {
   done
 
   if [ "$(/usr/bin/python3 -c "import sys; print(sys.stdout.encoding)")" != 'utf-8' ]; then
-    printf "\e[031mError: set an UTF-8 locale to compile this!\033[0m\n"
-    exit 1
+  	printf "\e[031mError: set an UTF-8 locale to compile this!\033[0m\n"
+  	exit 1
   fi
 
   prt-get isinst sccache && export RUSTC_WRAPPER='/usr/bin/sccache'
@@ -78,7 +78,7 @@ EOF
 
   if prt-get isinst wayland xorg-server 2>/dev/null ; then
         echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-x11-wayland' >> .mozconfig
-  elif prt-get isinst wayland 2>/dev/null ; then
+  elif prt-get isinst wayland 2>/dev/null ; then 
         echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-wayland-only' >> .mozconfig
   else
         echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-x11-only' >> .mozconfig

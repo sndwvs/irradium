@@ -260,7 +260,7 @@ f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
 f:022ca4e9eeac6d2090a0289ee01db9f4:firefox/icu-linebreak-classes.patch
 f:9e3c3a1a039ccab441594571858b79e3:firefox/.signature
-f:588d77a460ee9e6f9c4968eb68fc2a4d:firefox/Pkgfile
+f:ff688e93b8129885f362de9b8fb82ef8:firefox/Pkgfile
 f:3af430358b862c73258c61b9cd6c2015:firefox/lfs64.patch
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
