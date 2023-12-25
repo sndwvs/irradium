@@ -59,6 +59,7 @@ d:libcanberra
 d:qrencode
 d:firefox
 d:p7zip
+d:libmtp
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -267,3 +268,4 @@ f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:ddc8c17bfa1104a16754079f549f367c:p7zip/.footprint
 f:acb2317440847a4652ddb2db90874d11:p7zip/.signature
 f:2adec77d4711ef18507afebca3e7cbbf:p7zip/Pkgfile
+f:b2be48c8ac7fa778b7ec273d03542c27:libmtp/Pkgfile
