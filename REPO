@@ -269,3 +269,5 @@ f:ddc8c17bfa1104a16754079f549f367c:p7zip/.footprint
 f:acb2317440847a4652ddb2db90874d11:p7zip/.signature
 f:2adec77d4711ef18507afebca3e7cbbf:p7zip/Pkgfile
 f:b2be48c8ac7fa778b7ec273d03542c27:libmtp/Pkgfile
+f:e4022aa0a783af978cff08b1bf15ee10:libmtp/.footprint
+f:fd5643cabf024477e219e3e18e511e2a:libmtp/.signature
