@@ -16,7 +16,8 @@ build() {
     --sysconfdir=/etc \
     --mandir=/usr/share/man \
     --disable-static \
-    --localstatedir=/var
+    --localstatedir=/var \
+    --build=$(uname -m)-unknown-linux-gnu
 
   make
   make DESTDIR=$PKG install
