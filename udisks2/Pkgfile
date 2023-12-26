@@ -6,7 +6,7 @@
 name=udisks2
 version=2.10.1
 release=1
-source=(https://github.com/storaged-project/udisks/releases/download/udisks-$version/udisks-$version.tar.bz)
+source=(https://github.com/storaged-project/udisks/releases/download/udisks-$version/udisks-$version.tar.bz2)
 
 build() {
     cd udisks-$version
