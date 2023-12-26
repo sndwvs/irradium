@@ -62,6 +62,7 @@ d:p7zip
 d:libmtp
 d:gvfs
 d:udisks2
+d:libatasmart
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-riscv64.patch
@@ -275,3 +276,4 @@ f:e4022aa0a783af978cff08b1bf15ee10:libmtp/.footprint
 f:fd5643cabf024477e219e3e18e511e2a:libmtp/.signature
 f:9dcfee00c1c5f760c207d327f5ab62ae:gvfs/Pkgfile
 f:ba82b096e39695cdfe72b8a9d7f02748:udisks2/Pkgfile
+f:3d46cca6f783e5c21e8f0cccffae10f0:libatasmart/Pkgfile
