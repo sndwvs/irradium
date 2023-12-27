@@ -2,7 +2,7 @@
 # URL: https://wiki.gnome.org/Projects/gvfs
 # Maintainer: mara, mara at fail dot pp dot ua
 # Depends on: glib gcr3 gtk3 libgudev libsecret libsoup3 udisks2 libcdio-paranoia openssh dbus meson libusb fuse3 elogind libimobiledevice
-# Optional: libmtp samba
+# Optional: libmtp samba gphoto2
 
 name=gvfs
 version=1.52.1
@@ -16,6 +16,7 @@ build() {
     prt-get isinst libbluray && PKGMK_GVFS+=" -Dbluray=true" || PKGMK_GVFS+=" -Dbluray=false"
     prt-get isinst libmtp && PKGMK_GVFS+=" -Dmtp=true" || PKGMK_GVFS+=" -Dmtp=false"
     prt-get isinst samba && PKGMK_GVFS+=" -Dsmb=true" || PKGMK_GVFS+=" -Dsmb=false"
+    prt-get isinst samba && PKGMK_GVFS+=" -Dgphoto2=true" || PKGMK_GVFS+=" -Dgphoto2=false"
 
     mkdir meson-build
     cd meson-build
