@@ -1,0 +1,3 @@
+#!/bin/sh
+
+getent group camera || /usr/sbin/groupadd -r camera
