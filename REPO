@@ -67,7 +67,7 @@ d:udisks2
 d:libatasmart
 d:libimobiledevice
 d:libusbmuxd
-f:c30c33214c33fce35095e1f2e4be1d04:libgphoto2/Pkgfile
+f:18c0d34abc89d5a6255c05279b4bd909:libgphoto2/Pkgfile
 f:13e543e3fac8536df124f7e61730a4e6:libgphoto2/pre-install
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
