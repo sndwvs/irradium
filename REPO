@@ -44,6 +44,7 @@ d:ungoogled-chromium
 d:ungoogled-chromium/patches
 d:chromium
 d:chromium/patches
+d:libplist
 d:libmali-valhall-g610-x11-gbm
 d:libmali-midgard-t86x-x11-gbm
 d:libmali-utgard-450-x11-gbm
@@ -223,6 +224,7 @@ f:fb2142170b687e12d1b808a971f62f4e:chromium/patches/chromium-119-clang16.patch
 f:37e6690eb4cd09de8aae36446269dae0:chromium/patches/use-oauth2-client-switches-as-default.patch
 f:56422ca7805d56ad890b238bd9c7dbe5:chromium/post-install
 f:d77c98a13898b632d860a2f4bc85d338:chromium/.footprint
+f:70f7c8432ab31670f6775fa673112eb5:libplist/Pkgfile
 f:8f1847ceed814828d4ac94e267d57351:libmali-valhall-g610-x11-gbm/00-libmali.conf
 f:97e69f6f3f15d76f862d5bcb2ce23ab1:libmali-valhall-g610-x11-gbm/Pkgfile
 f:6c2117e05786a8b9ef448e59208eb5eb:libmali-valhall-g610-x11-gbm/.footprint

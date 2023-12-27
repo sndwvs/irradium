@@ -1,0 +1,21 @@
+# Description: library to handle Apple Property List format whereas it's binary or XML
+# URL: https://libimobiledevice.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: cython glib python3-setuptools python3 swig
+
+name=libplist
+version=2.3.0
+release=1
+source=(https://github.com/libimobiledevice/libplist/releases/download/$version/$name-$version.tar.bz2)
+
+build() {
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --mandir=/usr/share/man \
+    --build=$(uname -m)-unknown-linux-gnu
+
+  make
+  make install DESTDIR=$PKG
+}
