@@ -24,7 +24,7 @@ build() {
   make install DESTDIR=$PKG
 
   # Provide a symlink from the old pkgconfig name:
-  ( cd $PKG/usr/lib$/pkgconfig
+  ( cd $PKG/usr/lib/pkgconfig
     ln -sf libusbmuxd-2.*.pc libusbmuxd.pc
   )
 
