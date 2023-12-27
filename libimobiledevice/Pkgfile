@@ -12,6 +12,8 @@ source=(https://github.com/libimobiledevice/libimobiledevice/releases/download/$
 build() {
   cd $name-$version
 
+  patch -p1 -i $SRC/libplist-2.3.0.patch
+
   export CFLAGS="$CFLAGS -Wno-error=int-conversion"
   ./configure \
     --prefix=/usr \
