@@ -1,0 +1,22 @@
+# Description: library for high quality time and pitch scale modification
+# URL: https://github.com/claytonotey/libsbsms
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: gcc
+
+name=libsbsms
+version=2.3.0
+release=1
+source=(https://github.com/claytonotey/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cmake -S $name-$version -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DCMAKE_INSTALL_LIBEXECDIR=lib \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+    -DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+    -Wno-dev
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
+}

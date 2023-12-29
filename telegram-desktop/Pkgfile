@@ -1,0 +1,34 @@
+# Description: Official Telegram Desktop client
+# URL: https://desktop.telegram.org
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: minizip openal range-v3 tg_owt qt6-imageformats qt6-svg qt6-wayland qt6-5compat rnnoise protobuf fmt graphviz mm-common boost libsigc++
+
+name=telegram-desktop
+version=4.12.2
+release=1
+source=(https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tdesktop-$version-full.tar.gz
+        https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.0.tar.xz)
+
+build() {
+  meson -D maintainer-mode=true -Dbuild-documentation=false -Dbuild-examples=false --default-library static --prefix $SRC/glibmm glibmm-2.78.0 build
+  meson compile -C build
+  meson install -C build
+
+  cd tdesktop-$version-full
+
+  export PKG_CONFIG_PATH=$SRC/glibmm/usr/local/lib/pkgconfig
+
+  LDFLAGS="$LDFLAGS -Wl,-z,stack-size=1024768" \
+  cmake -B build -G Ninja . \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_PREFIX_PATH=$SRC/glibmm \
+    -DCMAKE_BUILD_TYPE=MinSizeRel \
+    -DTDESKTOP_API_ID=28851236 \
+    -DTDESKTOP_API_HASH=830f83e5afbad782af2704a120e4dcdf \
+    -DDESKTOP_APP_DISABLE_CRASH_REPORTS=ON \
+    -DDESKTOP_APP_DISABLE_JEMALLOC=ON \
+    -DDESKTOP_APP_USE_PACKAGED=ON
+
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
+}

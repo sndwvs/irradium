@@ -1,0 +1,46 @@
+# Description: secure IP tunnel daemon
+# URL: http://openvpn.net
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: lzo lz4 iproute2 linux-pam openssl libcap-ng pkcs11-helper python3-docutils
+
+name=openvpn
+version=2.6.8
+release=1
+source=(https://github.com/OpenVPN/openvpn/archive/v$version/$name-$version.tar.gz
+        rc.openvpn)
+
+build() {
+  cd $name-$version
+
+  sed -i '/^CONFIGURE_DEFINES=/s/set/env/g' configure.ac
+
+  autoreconf -fi
+
+  ./configure \
+    --prefix=/usr \
+    --mandir=/usr/share/man \
+    --sysconfdir=/etc/openvpn \
+    --enable-iproute2 \
+    --enable-lzo \
+    --enable-lz4 \
+    --enable-plugins \
+    --enable-pkcs11 \
+    --enable-x509-alt-username \
+    --disable-systemd
+
+  make
+  make DESTDIR=$PKG install
+
+  # Create a decent config directory. openvpn doesn't have one by
+  # default, nor does it have a single config file.
+  mkdir -p $PKG/etc/openvpn/{certs,keys}
+  chown root:nobody $PKG/etc/openvpn/{certs,keys}
+  chmod 750 $PKG/etc/openvpn/{certs,keys}
+
+  # install samples
+  mkdir -p $PKG/usr/share/doc/$name/samples
+  cp -a sample/sample-* $PKG/usr/share/doc/$name/samples
+
+  # install a startup script:
+  install -Dm755 $SRC/rc.openvpn $PKG/etc/rc.d/openvpn
+}

@@ -1,0 +1,22 @@
+# Description: Provides word-processor-style highlighting and replacement of misspelled words in a GtkTextView widget
+# URL: http://gtkspell.sourceforge.net
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: gtk3 enchant intltool gobject-introspection vala
+
+name=gtkspell3
+version=3.0.10
+release=1
+source=(https://downloads.sourceforge.net/gtkspell/$name-$version.tar.xz)
+
+build() {
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --disable-nls
+
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+  make
+  make DESTDIR=$PKG install
+}

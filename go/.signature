@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7pmkm88Y6xgDGGk16es6/xh+QBXJcOGEfctW43gJh2IzYUsst86tcGQMWLIGe4OhvC04aNgNDf4S1HKKaPMmaw0=
+SHA256 (Pkgfile) = 9f54b8051f5ac5e71978d45cdc2dc01af55590dd8cbd29cb041fdc15959d6549
+SHA256 (.footprint) = 0d6a52fd1507090282988500b182135ed69e3d293811305e9d2c1a836b2318c5
+SHA256 (go1.21.4.src.tar.gz) = 47b26a83d2b65a3c1c1bcace273b69bee49a7a7b5168a7604ded3d26a37bd787

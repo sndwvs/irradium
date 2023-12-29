@@ -1,0 +1,28 @@
+# Description: plugins for geany
+# URL: https://plugins.geany.org
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: geany gpgme gtkspell3 git python vte3
+# Optional: lua51 webkitgtk
+
+name=geany-plugins
+version=2.0
+release=1
+source=(https://plugins.geany.org/geany-plugins/$name-$version.tar.bz2)
+
+build() {
+  cd $name-$version
+
+  autoreconf -fi
+
+  export CFLAGS+=' -w' PYTHON=/usr/bin/python
+
+  ./configure \
+    --prefix=/usr \
+    --libexecdir=/usr/lib \
+    --disable-nls
+
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+  make
+  make DESTDIR=$PKG install
+}

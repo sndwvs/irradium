@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7lStp1lHX3MiCDdmaWMkJLXYqOyPLUkBQPJnRmiI7M6u6bcLx5gC5UkebV5NSjUp+8HpisCPKeRDJja2J19cEAc=
+SHA256 (Pkgfile) = 0bd92d002ce0ec5d4ad8f0b3afa8da187caef75bb8ee463dc3ff0835258cf099
+SHA256 (.footprint) = 60bcd782db2cafa0ae4c87bf385a78a028923bb507ba02717d4cf44483d376bb
+SHA256 (libglade-2.6.4.tar.bz2) = 64361e7647839d36ed8336d992fd210d3e8139882269bed47dc4674980165dec
+SHA256 (libglade-2.0.1-nowarning.patch) = 423c12af1c73442caa851a0b8db33b00fa4b778b1b422a4e8ac33d121d043008
+SHA256 (config.guess-support-aarch64-riscv64.patch) = fd5193ecd6828b0ce0345611c8ced0cb729dd2d4c0fda9931aecbcb4048857d5

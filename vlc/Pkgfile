@@ -1,0 +1,58 @@
+# Description: A media player, streamer, and encoder
+# URL: http://www.videolan.org/vlc/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: alsa-lib ffmpeg libmad lua52 libvpx libwebp pulseaudio
+# Optional: liba52 wayland libdvdnav libdvdread faad2 flac libcddb libva speex dav1d gnutls libsdl2 libtheora libva libvdpau libvorbis x264
+
+name=vlc
+version=3.0.20
+release=1
+source=(https://download.videolan.org/$name/$version/$name-$version.tar.xz)
+
+build() {
+  cd $name-$version
+
+  prt-get isinst liba52 && PKGMK_VLC+=" --enable-a52" || PKGMK_VLC+=" --disable-a52"
+  prt-get isinst wayland && PKGMK_VLC+=" --enable-wayland" || PKGMK_VLC+=" --disable-wayland"
+  prt-get isinst libdvdnav && PKGMK_VLC+=" --enable-dvdnav" || PKGMK_VLC+=" --disable-dvdnav"
+  prt-get isinst libdvdread && PKGMK_VLC+=" --enable-dvdread" || PKGMK_VLC+=" --disable-dvdread"
+  prt-get isinst faad2 && PKGMK_VLC+=" --enable-faad" || PKGMK_VLC+=" --disable-faad"
+  prt-get isinst flac && PKGMK_VLC+=" --enable-flac" || PKGMK_VLC+=" --disable-flac"
+  prt-get isinst libcddb && PKGMK_VLC+=" --enable-libcddb" || PKGMK_VLC+=" --disable-libcddb"
+  #prt-get isinst libva && PKGMK_VLC+=" --enable-libva" || PKGMK_VLC+=" --disable-libva"
+  prt-get isinst speex && PKGMK_VLC+=" --enable-speex" || PKGMK_VLC+=" --disable-speex"
+  prt-get isinst taglib && PKGMK_VLC+=" --enable-taglib" || PKGMK_VLC+=" --disable-taglib"
+  prt-get isinst dav1d && PKGMK_VLC+=' --enable-dav1d' || PKGMK_VLC+=' --disable-dav1d'
+  prt-get isinst gnutls && PKGMK_VLC+=' --enable-gnutls' || PKGMK_VLC+=' --disable-gnutls'
+  prt-get isinst libtheora && PKGMK_VLC+=' --enable-theora' || PKGMK_VLC+=' --disable-theora'
+  prt-get isinst libvdpau && PKGMK_VLC+=' --enable-vdpau' || PKGMK_VLC+=' --disable-vdpau'
+  prt-get isinst libvorbis && PKGMK_VLC+=' --enable-vorbis' || PKGMK_VLC+=' --disable-vorbis'
+  prt-get isinst x264 && PKGMK_VLC+=' --enable-x264' || PKGMK_VLC+=' --disable-x264'
+  prt-get isinst x265 && PKGMK_VLC+=' --enable-x265' || PKGMK_VLC+=' --disable-x265'
+
+  NOCONFIGURE=1 ./bootstrap
+
+  BUILDCC=gcc \
+  CFLAGS="$CFLAGS" \
+  CXXFLAGS="$CXXFLAGS -std=c++17" \
+  LUA=lua5.2 \
+  LUAC=luac5.2 \
+  ./configure $PKGMK_VLC \
+    --prefix=/usr \
+    --libdir=/usr/lib \
+    --disable-nls \
+    --disable-rpath \
+    --disable-static \
+    --enable-merge-ffmpeg \
+    --enable-run-as-root \
+    --enable-skins2 \
+    --disable-opencv \
+    --disable-libgcrypt \
+    --disable-libplacebo \
+
+  # prevent excessive overlinking due to libtool
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+  make
+  make DESTDIR=$PKG install
+}

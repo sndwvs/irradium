@@ -1,0 +1,27 @@
+# Description: library for reading and writing Standard MIDI Files
+# URL: https://sourceforge.net/p/portmedia/wiki/portsmf/"
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: gcc glibc
+
+name=portsmf
+version=234
+release=2
+source=(https://ponce.cc/slackware/sources/repo/$name-$version.tar.gz
+        portsmf-shared.patch)
+
+build() {
+  cd $name-$version
+
+  patch -p1 -i $SRC/portsmf-shared.patch
+  autoreconf -vfi
+  chmod 755 configure
+
+  ./configure \
+    --prefix=/usr \
+    --libdir=/usr/lib \
+    --includedir=/usr/include/portsmf
+
+  make
+  make DESTDIR=$PKG includedir=/usr/include/portsmf install
+  install -vDm 644 portSMF.pc -t $PKG/usr/lib/pkgconfig/
+}

@@ -1,0 +1,26 @@
+# Description: Fast and lightweight IDE
+# URL: https://www.geany.org
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: gtk3 hicolor-icon-theme desktop-file-utils intltool
+
+name=geany
+version=2.0
+release=1
+source=(http://download.geany.org/$name-$version.tar.bz2)
+
+build() {
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --enable-gtk3  \
+    --disable-api-docs \
+    --disable-html-docs \
+    --disable-pdf-docs \
+    --disable-nls
+
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+  make
+  make DESTDIR=$PKG install
+}

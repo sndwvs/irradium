@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7jqA80iuSRDXhElbZUHIc1ed/bPprNcVFBO/6wBFv7F+uH8xSoqboRf7LjuTaa/mNOdjSRddyCJghYhxIsz0fAE=
+SHA256 (Pkgfile) = 178d418e3f459a9d7935ad78bb67cb76757bda69cf15a20185204cae2aea07be
+SHA256 (openjdk20-jdk-20.0.2+9.tar.gz) = 4d6f176075d5f2ce62fd16ebd5cc4c27a3e551ce4d3d3bc0e9946454e52fc88d
+SHA256 (openjdk-20.0.2_linux-aarch64_bin.tar.gz) = 3238c93267c663dbca00f5d5b0e3fbba40e1eea2b4281612f40542d208b6dd9a
+SHA256 (java_cacerts-20210916) = 983d71ae2fa404f102fbb7a02e48a56a96459f0d7473026daceef1219045f9de
+SHA256 (openjdk20.sh) = 13f3095b8ccc301490fed2b96539a6c291b79151bac7ab0e6e28ef9a7562b9b3

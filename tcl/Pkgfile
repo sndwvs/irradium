@@ -1,0 +1,45 @@
+# Description: The Tcl scripting language
+# URL: http://tcl.sourceforge.net/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: zlib
+
+name=tcl
+version=8.6.13
+release=1
+source=(https://downloads.sourceforge.net/tcl/$name$version-src.tar.gz)
+
+build() {
+  cd $name$version/unix
+
+  ./configure \
+    --prefix=/usr \
+    --mandir=/usr/share/man \
+    --enable-threads
+
+  make
+  make INSTALL_ROOT=$PKG install install-private-headers
+
+  ln -sf tclsh${version%.*} $PKG/usr/bin/tclsh
+  ln -sf libtcl${version%.*}.so $PKG/usr/lib/libtcl.so
+  install -Dm644 tcl.m4 -t $PKG/usr/share/aclocal
+  chmod 644 $PKG/usr/lib/libtclstub${version%.*}.a
+
+  # remove buildroot traces
+  sed -e "s#${SRC}/tk${version}/unix#/usr/lib#" \
+      -e "s#${SRC}/tk${version}#/usr/include#" \
+      -e "s#'{/usr/lib} '#'/usr/lib/tcl${version%.*}'#" \
+      -i "${PKG}/usr/lib/tclConfig.sh"
+
+  tdbcver=tdbc1.1.5
+  sed -e "s#${SRC}/tcl${version}/unix/pkgs/$tdbcver#/usr/lib/$tdbcver#" \
+      -e "s#${SRC}/tcl${version}/pkgs/$tdbcver/generic#/usr/include#" \
+      -e "s#${SRC}/tcl${version}/pkgs/$tdbcver/library#/usr/lib/tcl${version%.*}#" \
+      -e "s#${SRC}/tcl${version}/pkgs/$tdbcver#/usr/include#" \
+      -i "${PKG}/usr/lib/$tdbcver/tdbcConfig.sh"
+
+  itclver=itcl4.2.3
+  sed -e "s#${SRC}/tcl${version}/unix/pkgs/$itclver#/usr/lib/$itclver#" \
+      -e "s#${SRC}/tcl${version}/pkgs/$itclver/generic#/usr/include#" \
+      -e "s#${SRC}/tcl${version}/pkgs/$itclver#/usr/include#" \
+      -i "${PKG}/usr/lib/$itclver/itclConfig.sh"
+}

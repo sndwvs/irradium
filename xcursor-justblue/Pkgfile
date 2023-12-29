@@ -1,0 +1,25 @@
+# Description: X11 cursor theme
+# URL: https://www.opendesktop.org/p/999811/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: xorg
+
+name=xcursor-justblue
+version=0.21
+release=1
+source=(${name#*-}-${version}.patch.xz)
+
+build() {
+
+ xzcat ${name#*-}-${version}.patch.xz | patch -p1
+
+  cd ${name#*-}-$version
+
+  rm install.sh
+  install -d $PKG/usr/share/icons/${name#*-}
+  mv * $PKG/usr/share/icons/${name#*-}/
+
+  install -Dm644 /dev/stdin $PKG/usr/share/icons/default/index.theme <<END
+[Icon Theme]
+Inherits=justblue
+END
+}

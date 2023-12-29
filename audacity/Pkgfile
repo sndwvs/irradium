@@ -1,0 +1,46 @@
+# Description: Multitrack audio editor
+# URL: https://www.audacityteam.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: wxgtk3 portmidi libsoxr rapidjson portaudio libsbsms portsmf ffmpeg flac lame libogg libvorbis libmad libid3tag zlib expat sqlite3
+# Optional: libsndfile mpg123 wavpack opusfile opus vamp-plugin-sdk vst3sdk suil lilv twolame sratom lv2 soundtouch
+
+name=audacity
+version=3.4.2
+release=1
+source=(https://github.com/$name/$name/archive/refs/tags/Audacity-$version.tar.gz)
+
+build() {
+
+  prt-get isinst vamp-plugin-sdk && PKGMK_AUDACITY+=" -D audacity_use_vamp=system" || PKGMK_AUDACITY+=" -D audacity_use_vamp=off"
+  prt-get isinst lv2 && PKGMK_AUDACITY+=" -D audacity_use_lv2=system" || PKGMK_AUDACITY+=" -D audacity_use_lv2=local"
+  prt-get isinst twolame && PKGMK_AUDACITY+=" -D audacity_use_twolame=system" || PKGMK_AUDACITY+=" -D audacity_use_twolame=off"
+  prt-get isinst soundtouch && PKGMK_AUDACITY+=" -D audacity_use_soundtouch=system" || PKGMK_AUDACITY+=" -D audacity_use_soundtouch=off"
+  prt-get isinst vst3sdk && PKGMK_AUDACITY+=" -D audacity_has_vst3=system" || PKGMK_AUDACITY+=" -D audacity_has_vst3=off"
+  prt-get isinst wavpack && PKGMK_AUDACITY+=" -D audacity_use_wavpack=system" || PKGMK_AUDACITY+=" -D audacity_use_wavpack=off"
+  prt-get isinst opusfile && PKGMK_AUDACITY+=" -D audacity_use_opusfile=system" || PKGMK_AUDACITY+=" -D audacity_use_opusfile=off"
+
+  cmake -S $name-Audacity-$version -B build -G Ninja \
+    $PKGMK_AUDACITY \
+    -D CMAKE_INSTALL_PREFIX=/usr \
+    -D CMAKE_INSTALL_LIBDIR=lib \
+    -D CMAKE_INSTALL_LIBEXECDIR=lib \
+    -D CMAKE_BUILD_TYPE=Release \
+    -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+    -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+    -D AUDACITY_BUILD_LEVEL=2 \
+    -D audacity_conan_enabled=OFF \
+    -D audacity_has_networking=OFF \
+    -D audacity_has_crashreports=OFF \
+    -D audacity_has_updates_check=OFF \
+    -D audacity_has_sentry_reporting=OFF \
+    -D audacity_lib_preference=system \
+    -D audacity_obey_system_dependencies=ON \
+    -D audacity_use_portsmf=system \
+    -D audacity_use_expat=system \
+    -D audacity_use_lame=system \
+    -D audacity_use_ffmpeg=loaded \
+    -D audacity_use_wxwidgets=system
+
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
+}

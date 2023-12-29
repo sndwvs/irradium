@@ -1,0 +1,21 @@
+# Description: Cairo based GTK engine.
+# URL: https://launchpad.net/murrine
+# Maintainer: Matt Housh, jaeger at crux dot ninja
+# Depends on: gtk
+
+name=gtk-engine-murrine
+version=0.98.2
+release=1
+source=(https://download.gnome.org/sources/murrine/${version:0:4}/murrine-$version.tar.xz)
+
+build() {
+  cd murrine-$version
+
+  ./configure --prefix=/usr \
+    --enable-animation \
+    --enable-animationrtl \
+    --build=$(uname -m)-unknown-linux-gnu \
+
+  make
+  make DESTDIR=$PKG install
+}

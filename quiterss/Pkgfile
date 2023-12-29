@@ -1,0 +1,23 @@
+# Description: QuiteRSS is a open-source cross-platform RSS/Atom news feeds reader
+# URL: https://quiterss.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: sqlite3 qt5 qt5-webkit
+
+name=quiterss
+version=0.19.4
+release=1
+source=(https://github.com/QuiteRSS/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    qmake-qt5 \
+        CONFIG+=release \
+        PREFIX=/usr \
+        DISABLE_PHONON=1
+
+    make || exit 1
+    make install INSTALL_ROOT=$PKG
+
+    install -Dm644 quiterss.appdata.xml $PKG/usr/share/metainfo/quiterss.appdata.xml
+}

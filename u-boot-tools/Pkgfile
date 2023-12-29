@@ -1,0 +1,22 @@
+# Description: U-Boot bootloader utility tools
+# URL: https://www.denx.de/wiki/U-Boot/WebHome
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: openssl swig gnutls
+
+name=u-boot-tools
+version=2023.10
+release=1
+source=(ftp://ftp.denx.de/pub/u-boot/u-boot-$version.tar.bz2)
+
+build(){
+  cd u-boot-$version
+
+  make tools-only_defconfig
+  make tools-only
+  make envtools
+
+  install -m 755 -d $PKG/usr/bin
+  install -m 755 -t $PKG/usr/bin/ tools/{mk{,env}image,env/fw_printenv,img2srec,dumpimage,netconsole,jtagconsole}
+  ln -s fw_printenv $PKG/usr/bin/fw_setenv
+  install -m 644 -Dt $PKG/usr/share/man/man1/ doc/{mkimage,dumpimage}.1
+}

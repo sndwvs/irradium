@@ -1,0 +1,85 @@
+# Description: OpenJDK 20 Java Development Kit
+# URL: https://openjdk.java.net/
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: alsa-lib cups giflib harfbuzz lcms2 libxslt nss unzip xorg-libxrandr xorg-libxt xorg-libxtst zip
+
+name=openjdk20-jdk
+version=20.0.2+9
+_boot_ver=20230715
+_cert_ver=20210916
+release=2
+source=(https://github.com/openjdk/jdk20u/archive/jdk-$version/$name-$version.tar.gz
+        https://download.java.net/java/GA/jdk20.0.2/6e380f22cbe7469fa75fb448bd903d8e/9/GPL/openjdk-20.0.2_linux-aarch64_bin.tar.gz
+        https://git.crux.nu:82/tb/java-distfiles/raw/branch/master/distfiles/java_cacerts-${_cert_ver}
+        openjdk20.sh)
+
+build() {
+  if [ -e '/usr/bin/ccache' ]; then
+    PATH=$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')
+    PKGMK_JDK20+=' --enable-ccache'
+  fi
+
+  OLD_PATH=$PATH
+  export JAVA_HOME=$SRC/jdk-20.0.2
+  export PATH=$JAVA_HOME/bin:$OLD_PATH
+
+  unset CFLAGS
+  unset CXXFLAGS
+  unset LDFLAGS
+  unset MAKEFLAGS
+  export _CFLAGS+=' -fcommon'
+  export _CXXFLAGS+=' -fcommon'
+
+  [ -z $JOBS ] && JOBS=$(nproc)
+
+  mkdir $SRC/build
+  cd $SRC/build
+
+  LC_ALL=C
+  /bin/bash ../jdk20u-jdk-${version/+/-}/configure $PKGMK_JDK20 \
+    --prefix=/usr/lib/java/$name \
+    --disable-precompiled-headers \
+    --disable-warnings-as-errors \
+    --enable-dtrace=no \
+    --enable-unlimited-crypto \
+    --with-native-debug-symbols=internal \
+    --with-debug-level=release \
+    --with-stdc++lib=dynamic \
+    --with-jvm-variants=server \
+    --with-cacerts-file=$SRC/java_cacerts-$_cert_ver \
+    --with-jtreg=no \
+    --with-boot-jdk=$JAVA_HOME \
+    --with-version-opt="irradium-r$release" \
+    --with-version-build="${version#*+}" \
+    --with-vendor-name="irradium" \
+    --with-jobs=$JOBS \
+    --with-libjpeg=system \
+    --with-giflib=system \
+    --with-libpng=system \
+    --with-zlib=system \
+    --with-lcms=system \
+    --with-freetype=system \
+    --with-harfbuzz=system \
+    --with-extra-cflags="$_CFLAGS" \
+    --with-extra-cxxflags="$_CXXFLAGS"
+
+  # NOTE: for debugging build issues: set LOG to debug, JOBS to 1.
+  LC_ALL=C \
+  make LOG=warn JOBS=$JOBS jdk-image
+
+  rm -r images/jdk/demo
+  rm -r images/jdk/lib/src.zip
+  rm -r images/jdk/lib/*.ja
+  rm -r images/jdk/legal
+  rm images/jdk/conf/security/policy/README.txt
+
+  install -d -m 0755 $PKG/usr/lib/java/$name
+  cp -r images/jdk/* $PKG/usr/lib/java/$name/
+
+  install -d -m 0755 $PKG/etc/revdep.d
+  echo "/usr/lib/java/$name/lib" > $PKG/etc/revdep.d/$name
+  echo "/usr/lib/java/$name/lib/jli" >> $PKG/etc/revdep.d/$name
+  echo "/usr/lib/java/$name/lib/server" >> $PKG/etc/revdep.d/$name
+
+  install -Dm 0755 $SRC/openjdk20.sh $PKG/etc/profile.d/openjdk20.sh
+}
