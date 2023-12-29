@@ -1,0 +1,30 @@
+# Description: A GTK2 text editor
+# URL: https://sourceforge.net/projects/mooedit/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: gtk2 libxml2 python
+
+name=medit
+version=1.2.92
+release=1
+source=(https://sourceforge.net/projects/mooedit/files/$name/$version/${name}-${version}-devel.tar.bz2)
+
+build(){
+  cd ${name}-${version}-devel
+
+  # This is probably overkill
+  export LANG=C
+  export PYTHON=python
+  export PYTHON_VERSION=2.7
+  export PYTHON_INCLUDES=$(python-config --includes)
+  export PYTHON_LIBS=$(python-config --libs)
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --disable-nls
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+  rm -rf $PKG/usr/share/icons/hicolor/icon-theme.cache || exit 1
+}

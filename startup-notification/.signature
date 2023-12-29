@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCckiAL2VsZdA6tAJ6TyL6qDLZbZreKucffkOcOi8O12HbTccpkK9DNAPKFSguk6DWhVygEd/KTQVQqwLvFrJuAQ=
+SHA256 (Pkgfile) = c43e4401d42652283429dfe98786756d17bd3136df6afd51c705f7e95f048f01
+SHA256 (.footprint) = 37c20dd6d3bc2db4a4619e7f0b01d8ea91767ba6a1a5a3e1085f47bf074efd03
+SHA256 (startup-notification-0.12.tar.gz) = 3c391f7e930c583095045cd2d10eb73a64f085c7fde9d260f2652c7cb3cfbe4a

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCTpY9uhmhWWmTh1ou0sQCacyFrLqHMrUq2k7F+SGVWsGerWjjVj8oX6CSyg9bjAv8iQJLsre/TLvk8dDWkvKHQU=
+SHA256 (Pkgfile) = c808da1717b6da4b815e9b9d0fc748e7801892b428839f3d9a95a89b953ca2c6
+SHA256 (.footprint) = 01edbb852fbb9d1410d664d00dff135a975d8510ac95a91c1df1c6da579bc40f
+SHA256 (medit-1.2.92-devel.tar.bz2) = a5afd3bf5abf73dd36ba285b3c2118a02890bd8409541fa8e67b5c96c7a4de42

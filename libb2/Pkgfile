@@ -1,0 +1,31 @@
+# Description: C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp hash functions
+# URL: https://blake2.net/
+# Maintainer: Tim Biermann, tbier at posteo dot de
+
+name=libb2
+version=0.98.1
+release=1
+source=(https://github.com/BLAKE2/libb2/releases/download/v$version/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  case $(uname -m) in
+    x86*)
+            _fat_runtime=yes
+            ;;
+    *)
+            _fat_runtime=no
+            ;;
+  esac
+
+  export CC="${CC-cc} $CFLAGS"
+  ./configure --prefix=/usr \
+    --disable-static \
+    --enable-shared \
+    --disable-native \
+    --enable-fat=$_fat_runtime
+
+  make
+  make DESTDIR=$PKG install
+}

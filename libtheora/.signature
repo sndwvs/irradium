@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCYCtQM3hnD2oQqHVJ6dyWo7g3FV9Gd1ghBU21+VTi3gczHP2JkWVUiN1N7X7a5MTzsbqabiGKokcwROiof7cBAw=
+SHA256 (Pkgfile) = 7a7516e3ccc80acdddb2c2a50cff5ce4b6f01953d0d8699dbfcc8d966eb7f27c
+SHA256 (.footprint) = a6c47611530667abff9ad4c1953cfa917fed953808751ce57c9215d333deed10
+SHA256 (libtheora-1.1.1.tar.xz) = f36da409947aa2b3dcc6af0a8c2e3144bc19db2ed547d64e9171c59c66561c61

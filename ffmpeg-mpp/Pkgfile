@@ -1,0 +1,104 @@
+# Description: Complete solution to record, convert and stream audio and video. fork Rockchip MPP.
+# URL: https://github.com/hbiyik/FFmpeg
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: yasm mpp librga libyuv
+# Optional: alsa-lib amf-headers cuda dav1d fdk-aac freetype gnutls gsm jack jack-audio-connection-kit lame libass libsdl2 libtheora libva libvdpau libvorbis libvpx libwebp nv-codec-headers opus pulseaudio svt-av1 x264 x265
+
+name=ffmpeg-mpp
+version=6.0
+release=1
+_commit=3949db4d261748a9f34358a388ee255ad1a7f0c0
+_obs_commit=2023-04-03
+source=(https://github.com/hbiyik/FFmpeg/archive/${_commit}.tar.gz
+        https://github.com/obsproject/obs-deps/archive//${_obs_commit}.tar.gz
+        add-av_stream_get_first_dts-for-chromium.patch
+        rkmpp-6.patch
+        ffmpeg-x264-10bit.sh)
+
+build() {
+  cd FFmpeg-${_commit}
+
+  prt-get isinst clang cuda nv-codec-headers && \
+        PKGMK_FFMPEG+=' --enable-cuda-llvm --enable-nonfree --enable-cuda-nvcc --enable-libnpp' && \
+        PKGMK_FFMPEG+=' --extra-cflags=-I/opt/cuda/include --extra-ldflags=-L/opt/cuda/lib64' && \
+        PATH="$PATH:/opt/cuda/bin"
+
+  prt-get isinst amf-headers && PKGMK_FFMPEG+=' --enable-amf'
+  prt-get isinst dav1d && PKGMK_FFMPEG+=' --enable-libdav1d'
+  prt-get isinst fdk-aac && PKGMK_FFMPEG+=' --enable-libfdk-aac --enable-nonfree'
+  prt-get isinst freetype && PKGMK_FFMPEG+=' --enable-libfreetype'
+  prt-get isinst gnutls && PKGMK_FFMPEG+=' --enable-gnutls' || PKGMK_FFMPEG+=' --enable-openssl --enable-nonfree'
+  prt-get isinst gsm && PKGMK_FFMPEG+=' --enable-libgsm'
+  prt-get isinst jack && PKGMK_FFMPEG+=' --enable-libjack'
+  prt-get isinst lame && PKGMK_FFMPEG+=' --enable-libmp3lame'
+  prt-get isinst libass && PKGMK_FFMPEG+=' --enable-libass'
+  prt-get isinst libtheora && PKGMK_FFMPEG+=' --enable-libtheora'
+  prt-get isinst libvdpau && PKGMK_FFMPEG+=' --enable-vdpau'
+  prt-get isinst libvorbis && PKGMK_FFMPEG+=' --enable-libvorbis'
+  prt-get isinst libvpx && PKGMK_FFMPEG+=' --enable-libvpx'
+  prt-get isinst libwebp && PKGMK_FFMPEG+=' --enable-libwebp'
+  prt-get isinst nv-codec-headers && PKGMK_FFMPEG+=' --enable-nvdec --enable-nvenc'
+  prt-get isinst opus && PKGMK_FFMPEG+=' --enable-libopus'
+  prt-get isinst pulseaudio && PKGMK_FFMPEG+=' --enable-libpulse'
+  prt-get isinst svt-av1 && PKGMK_FFMPEG+=' --enable-libsvtav1'
+  prt-get isinst x264 && PKGMK_FFMPEG+=' --enable-libx264'
+  prt-get isinst x265 && PKGMK_FFMPEG+=' --enable-libx265'
+
+  # delete the newly created files after patching, so that patching can work next time
+  rm libavcodec/rkmpp.h || true
+  rm libavcodec/rkmpp.c || true
+  rm libavcodec/rkmppenc.c || true
+  rm libavcodec/rkplane.c || true
+  rm libavcodec/rkplane.h || true
+  ## Fix segfault with avisynthplus
+  sed -i 's/RTLD_LOCAL/RTLD_DEEPBIND/g' libavformat/avisynth.c
+  patch -Np1 -i $SRC/add-av_stream_get_first_dts-for-chromium.patch # https://crbug.com/1251779
+  patch -Np1 -i $SRC/rkmpp-6.patch
+
+  # This patch applies:
+  #  - Fix decoding of certain malformed FLV files
+  #  - Add additional CPU levels for libaom
+  patch -Np1 -i $SRC/obs-deps-${_obs_commit}/deps.ffmpeg/patches/FFmpeg/0001-flvdec-handle-unknown.patch
+  patch -Np1 -i $SRC/obs-deps-${_obs_commit}/deps.ffmpeg/patches/FFmpeg/0002-libaomenc-presets.patch
+
+  sed -i -e '/check_cflags -fdiagnostics-color=auto/d' configure
+
+  [[ $(uname -m) == "armv7h" || $(uname -m) == "aarch64" ]] && PKGMK_FFMPEG+=' --host-cflags=-fPIC'
+
+  ./configure ${PKGMK_FFMPEG} \
+        --prefix=/usr \
+        --optflags="$CFLAGS" \
+        --cc=/usr/bin/gcc \
+        --cxx=/usr/bin/g++ \
+        --ar=/usr/bin/gcc-ar \
+        --nm=/usr/bin/gcc-nm \
+        --ranlib=/usr/bin/gcc-ranlib \
+        --strip=/usr/bin/strip \
+        --enable-gpl \
+        --enable-version3 \
+        --enable-shared \
+        --enable-pic \
+        --enable-lto \
+        --enable-ffplay \
+        --enable-avfilter \
+        --enable-postproc \
+        --enable-pthreads \
+        --enable-swresample \
+        --enable-libdrm \
+        --enable-rkmpp \
+        --disable-debug \
+        --disable-doc \
+        --disable-libcelt \
+        --disable-optimizations \
+        --disable-stripping
+
+  make
+  make DESTDIR=$PKG install install-man
+
+  rm -r $PKG/usr/share/ffmpeg/examples
+
+  if [ -e '/usr/lib/pkgconfig/x264.pc' ]; then
+      install -m 0755 -D $SRC/ffmpeg-x264-10bit.sh \
+          $PKG/usr/bin/ffmpeg-x264-10bit
+  fi
+}

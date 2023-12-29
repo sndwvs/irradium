@@ -1,0 +1,26 @@
+# Description: Compression and file packaging/archive utility
+# URL: https://infozip.sourceforge.net/Zip.html
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Depends on: bzip2
+
+name=zip
+version=3.0
+release=2
+source=(https://downloads.sourceforge.net/sourceforge/infozip/${name}${version//./}.tar.gz
+	zip-3.0-currdir.patch
+	zip-3.0-exec-shield.patch
+	zip-3.0-format-security.patch
+	zipnote.patch
+)
+
+build() {
+	cd ${name}${version//./}
+
+	patch -p1 -i $SRC/zip-3.0-currdir.patch
+	patch -p1 -i $SRC/zip-3.0-exec-shield.patch
+	patch -p1 -i $SRC/zip-3.0-format-security.patch
+	patch -p1 -i $SRC/zipnote.patch
+
+	make -f unix/Makefile LOCAL_ZIP="$CFLAGS" prefix=/usr generic_gcc
+	make -f unix/Makefile INSTALL=install prefix=$PKG/usr MANDIR=$PKG/usr/share/man/man1 install
+}
