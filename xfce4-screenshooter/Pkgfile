@@ -1,0 +1,25 @@
+# Description: An application to take screenshots
+# URL: https://docs.xfce.org/apps/xfce4-screenshooter/start
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: xfce4-panel intltool libsoup3 hicolor-icon-theme
+
+name=xfce4-screenshooter
+version=1.10.4
+release=1
+source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --libexecdir=/usr/lib/$name \
+    --localstatedir=/var \
+    --disable-debug \
+    --disable-nls
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+}

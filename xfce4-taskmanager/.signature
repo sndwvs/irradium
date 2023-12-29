@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-xfce.pub
+RWQ1yk7gkrBo0Wd1CfuWE2ikmq55ST7aYQ7ZQLNAGQgQrOwy5a5QX3OO9EWZyE4PFUYlt4ZDCNvnOVX1NHd/5nvO2Mxxndj4lQQ=
+SHA256 (Pkgfile) = ac326e80791f5f66cddd44ef1fde5a351f88677c0df06ae8937ed4ce7f9b8dfe
+SHA256 (.footprint) = 15f101dfb0a1fb80b1a95cc80d8d14a208c70a4d143ee6d38800a6b24de99dc5
+SHA256 (xfce4-taskmanager-1.5.6.tar.bz2) = 20979000761a41faed4f7f63f27bd18bb36fb27db4f7ecc8784a460701fb4abb

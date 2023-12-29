@@ -1,0 +1,8 @@
+#
+# /etc/ports/irradium-xfce.httpup: irradium linux port collection
+#
+
+ROOT_DIR=/usr/ports/irradium-xfce
+URL=https://gitlab.com/sndwvs/irradium-xfce/raw/main/
+
+# End of file

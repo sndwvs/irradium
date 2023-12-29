@@ -1,0 +1,35 @@
+# Description: Menu for Xfce4
+# URL: https://gottcode.org/xfce4-whiskermenu-plugin/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: garcon xfce4-panel elogind cmake ninja
+
+
+name=xfce4-whiskermenu-plugin
+version=2.8.2
+release=1
+source=(https://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  mkdir -p build
+  cd build
+  cmake \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+    -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib/$name \
+    -DENABLE_GTK_LAYER_SHELL=OFF \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+    -DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+    -DENABLE_ACCOUNTS_SERVICE=OFF \
+    -Wno-dev \
+    -GNinja \
+    .. || exit 1
+
+  ninja
+  DESTDIR=$PKG ninja install
+
+  rm -r $PKG/usr/share/locale
+
+}

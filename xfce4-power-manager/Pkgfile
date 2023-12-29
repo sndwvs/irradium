@@ -1,0 +1,30 @@
+# Description: Power Manager for Xfce
+# URL: https://docs.xfce.org/xfce/xfce4-power-manager/start
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: libnotify upower libxfce4ui
+
+name=xfce4-power-manager
+version=4.18.3
+release=1
+source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --libexecdir=/usr/lib/$name \
+    --sysconfdir=/etc \
+    --disable-network-manager \
+    --disable-systemd \
+    --enable-xfce4panel \
+    --disable-debug \
+    --disable-nls \
+    --disable-gtk-doc \
+    --disable-gtk-doc-html \
+    --disable-gtk-doc-pdf
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+}

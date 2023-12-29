@@ -1,0 +1,24 @@
+# Description: A clipboard plugin for the Xfce4 panel
+# URL: https://docs.xfce.org/panel-plugins/xfce4-clipman-plugin
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: xfce4-panel intltool qrencode
+
+name=xfce4-clipman-plugin
+version=1.6.5
+release=1
+source=(https://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --disable-debug \
+    --disable-nls
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+}

@@ -1,0 +1,25 @@
+# Description: A modern terminal emulator primarily for the Xfce desktop environment
+# URL: https://docs.xfce.org/apps/terminal/start
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: libxfce4ui vte3
+
+name=xfce4-terminal
+version=1.1.1
+release=1
+source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --libexecdir=/usr/lib/$name \
+    --localstatedir=/var \
+    --disable-debug \
+    --disable-nls
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+}

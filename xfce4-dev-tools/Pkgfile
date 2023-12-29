@@ -1,0 +1,25 @@
+# Description: Xfce developer tools
+# URL: https://www.xfce.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: glib intltool
+
+name=xfce4-dev-tools
+version=4.18.1
+release=1
+source=(https://archive.xfce.org/src/xfce/xfce4-dev-tools/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --disable-debug \
+    --enable-gtk-doc=no \
+    --disable-nls
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+}

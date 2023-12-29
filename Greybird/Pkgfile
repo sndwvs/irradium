@@ -1,0 +1,33 @@
+# Description: Desktop theme suite for Xfce
+# URL: https://github.com/shimmerproject/Greybird
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: gdk-pixbuf librsvg meson sassc
+
+name=Greybird
+version=3.23.3
+release=1
+source=(https://github.com/shimmerproject/$name/archive/v$version.tar.gz)
+
+build(){
+  cd $name-$version
+
+  mkdir meson-build
+  cd meson-build
+  meson setup \
+    --prefix=/usr \
+    --libdir=lib \
+    --libexecdir=/usr/lib/$name \
+    --bindir=/usr/bin \
+    --sbindir=/usr/sbin \
+    --includedir=/usr/include \
+    --datadir=/usr/share \
+    --mandir=/usr/share/man \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --buildtype=release \
+    .. || exit 1
+    "${NINJA:=ninja}" || exit 1
+    DESTDIR=$PKG $NINJA install || exit 1
+  cd ..
+
+}

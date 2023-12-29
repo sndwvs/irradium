@@ -1,0 +1,27 @@
+# Description: Simple GTK+ 2 text editor for the Xfce desktop environment
+# URL: https://www.xfce.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: gtksourceview4 xfconf
+
+name=mousepad
+version=0.6.1
+release=2
+source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --libexecdir=/usr/lib/$name \
+    --sbindir=/usr/bin \
+    --localstatedir=/var \
+    --disable-debug \
+    --enable-gtk-doc=no \
+    --disable-nls
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+}
