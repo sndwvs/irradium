@@ -111,10 +111,13 @@ f:b8dd0aad383810cad920d6548cd1cb56:ports/core.pub
 f:bceca3aa28a0ee00f14e5634251a8322:ports/core.rsync
 f:1473ddce72b0475daa6760b804da537c:ports/irradium-contrib.httpup.inactive
 f:ad54e3fef1fd4a4d0178d9f15df4ad0a:ports/irradium-contrib.pub
+f:229c6985f1d42f31dfb5e0d89ba06ddc:ports/irradium-core.httpup
 f:7619ec1ec2d259deeb2b2aa154b5f3f3:ports/irradium-core.pub
+f:873157df69a9752589e520f38c1c534a:ports/irradium-opt.httpup
 f:94d2a87245805d08044ed21dd007082a:ports/irradium-opt.pub
 f:6da446b0cd83ab5484911a2e76ada068:ports/irradium-xfce.httpup.inactive
 f:c439515bdbd1e17d8a74c2a37d285718:ports/irradium-xfce.pub
+f:3ed201b86c93a06f23b7c602269a9423:ports/irradium-xorg.httpup
 f:1ec983509e56966c5a7945a854c0f7bf:ports/irradium-xorg.pub
 f:0d1f1fde50a9bd743d9cac6b235f038c:ports/opt.pub
 f:441330fe7eb6970873d287b0d38f83f6:ports/opt.rsync

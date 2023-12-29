@@ -13,4 +13,4 @@ index.html
 \.gitignore$
 \.htaccess$
 .git
-\.httpup$
+^irradium-core.httpup
