@@ -61,12 +61,14 @@ cleaning() {
 check_repos() {
     local distr_version="$1"
 
+    # get irradium repository
+    git_download ${GIT_URL_IRRADIUM} "irradium"
+
     for port in ${PORTS[*]}; do
-        # get repository
+        # get crux repository
         git_download ${GIT_URL_CRUX} "${port}"
         checkout_distr_version "${distr_version}" "${port}"
-        git_download ${GIT_URL_IRRADIUM} "irradium-${port}"
-        checkout_distr_version "${distr_version}" "irradium-${port}"
+        checkout_distr_version "${distr_version}" "irradium/irradium-${port}"
 
         # update crux repository
         #if [[ $CRUX_UPDATE_GIT_REPO = "yes" && -d $PATH_CRUX/$port ]]; then
@@ -75,7 +77,7 @@ check_repos() {
         #    popd 2>&1>/dev/null
         #fi
 
-        for irradium_pkgfile in ${WORK_DIR}/irradium-${port}/*/Pkgfile; do
+        for irradium_pkgfile in ${WORK_DIR}/irradium/irradium-${port}/*/Pkgfile; do
             if [[ -e $irradium_pkgfile ]]; then
             irradium_package=$(get_package_name $irradium_pkgfile)
             irradium_version=$(get_package_version $irradium_pkgfile)
