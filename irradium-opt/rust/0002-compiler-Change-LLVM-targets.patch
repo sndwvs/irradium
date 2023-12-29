@@ -1,28 +1,3 @@
-From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
-From: "Jan Alexander Steffens (heftig)" <jan.steffens@gmail.com>
-Date: Fri, 12 Mar 2021 17:31:56 +0100
-Subject: [PATCH] compiler: Change LLVM targets
-
- - Change x86_64-unknown-linux-gnu to use x86_64-pc-linux-gnu
- - Change i686-unknown-linux-gnu to use i686-pc-linux-gnu
-
-Reintroduce the aliasing that was removed in 1.52.0 and alias the -pc-
-triples to the -unknown- triples. This avoids defining proper -pc-
-targets, as things break when this is done:
-
- - The crate ecosystem expects the -unknown- targets. Making -pc-
-   rustc's host triple (and thus default target) would break various
-   crates.
- - Firefox's build breaks when the host triple (from
-   `rustc --version --verbose`) is different from the target triple
-   (from `rustc --print target-list`) that best matches autoconf.
----
- compiler/rustc_session/src/config.rs                     | 2 +-
- compiler/rustc_target/src/spec/i686_unknown_linux_gnu.rs | 2 +-
- compiler/rustc_target/src/spec/mod.rs                    | 9 +++++++++
- .../rustc_target/src/spec/x86_64_unknown_linux_gnu.rs    | 2 +-
- 4 files changed, 12 insertions(+), 3 deletions(-)
-
 diff --git a/compiler/rustc_session/src/config.rs b/compiler/rustc_session/src/config.rs
 index f2ee52262ade..6a813c4b8707 100644
 --- a/compiler/rustc_session/src/config.rs
@@ -38,8 +13,8 @@ index f2ee52262ade..6a813c4b8707 100644
  }
 diff --git a/compiler/rustc_target/src/spec/i686_unknown_linux_gnu.rs b/compiler/rustc_target/src/spec/i686_unknown_linux_gnu.rs
 index 73e536a7e4d9..af48d437533c 100644
---- a/compiler/rustc_target/src/spec/i686_unknown_linux_gnu.rs
-+++ b/compiler/rustc_target/src/spec/i686_unknown_linux_gnu.rs
+--- a/compiler/rustc_target/src/spec/targets/i686_unknown_linux_gnu.rs
++++ b/compiler/rustc_target/src/spec/targets/i686_unknown_linux_gnu.rs
 @@ -9,7 +9,7 @@ pub fn target() -> Target {
      base.stack_probes = StackProbeType::X86;
  
@@ -71,8 +46,8 @@ index 8909cf33af91..e5b5bce4c290 100644
      /// If this target is a path, the file name (without extension) is returned.
 diff --git a/compiler/rustc_target/src/spec/x86_64_unknown_linux_gnu.rs b/compiler/rustc_target/src/spec/x86_64_unknown_linux_gnu.rs
 index a91ab365b668..d605eb9ccf81 100644
---- a/compiler/rustc_target/src/spec/x86_64_unknown_linux_gnu.rs
-+++ b/compiler/rustc_target/src/spec/x86_64_unknown_linux_gnu.rs
+--- a/compiler/rustc_target/src/spec/targets/x86_64_unknown_linux_gnu.rs
++++ b/compiler/rustc_target/src/spec/targets/x86_64_unknown_linux_gnu.rs
 @@ -14,7 +14,7 @@ pub fn target() -> Target {
          | SanitizerSet::THREAD;
  
