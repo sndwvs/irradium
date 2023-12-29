@@ -3,6 +3,6 @@
 #
 
 ROOT_DIR=/usr/ports/irradium-contrib
-URL=https://gitlab.com/sndwvs/irradium-contrib/raw/3.7/
+URL=https://gitlab.com/sndwvs/irradium/raw/3.7/irradium-contrib/
 
 # End of file
