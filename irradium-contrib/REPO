@@ -67,7 +67,6 @@ d:viewnior
 d:vlc
 d:xcursor-justblue
 d:yt-dlp
-d:slim-themes
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -288,7 +287,3 @@ f:1697f3fadd7c76e45240c1b248a7f8fe:xcursor-justblue/Pkgfile
 f:536c8ab1bcfc4f13e33c77b61facb496:xcursor-justblue/justblue-0.21.patch.xz
 f:6c088fa48c3b7fc6fe23e270b379a39d:yt-dlp/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
-f:a029947593d7d591fcc85921693cc744:slim-themes/.footprint
-f:6f0e75649506c38e7d9a52285ef4f9c4:slim-themes/.signature
-f:dbcce60fb8b85304b39c38c1e3ef980e:slim-themes/Pkgfile
-f:cf25536a5fe01952520900f2e42f9b26:slim-themes/authfail.patch
