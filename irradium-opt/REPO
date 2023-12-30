@@ -23,7 +23,6 @@ d:qt6-base
 d:rust
 d:slim
 d:slim/theme
-d:slim-themes
 d:startup-notification
 d:strace
 d:yasm
@@ -133,10 +132,6 @@ f:7e1dde2712efaebd405f956088b67e02:slim/slim.pam
 f:2874f3457c724a96ff926ceef88fc999:slim/theme/background.png
 f:74bd5175145e88e0dc7fd369ceeaa75a:slim/theme/panel.png
 f:96fd21a461c54eec6c6a1e37a7aad719:slim/theme/slim.theme
-f:a029947593d7d591fcc85921693cc744:slim-themes/.footprint
-f:6f0e75649506c38e7d9a52285ef4f9c4:slim-themes/.signature
-f:dbcce60fb8b85304b39c38c1e3ef980e:slim-themes/Pkgfile
-f:cf25536a5fe01952520900f2e42f9b26:slim-themes/authfail.patch
 f:db757b2e5a75e3cb9a5e2bdde32e6d3b:startup-notification/.footprint
 f:8ecd5349b20cb16e9a830249d94b243a:startup-notification/.signature
 f:5e60010ec73d7ec223954bc4b4498a9a:startup-notification/Pkgfile
