@@ -106,7 +106,7 @@ cat <<- EOF > $SRC/config.toml
 	codegen-tests = false
 	# backtrace-on-ice = true
 	# remap-debuginfo = true
-	# jemalloc = true
+	# jemalloc = false
 
 	description = "iradium"
 	channel = "stable"
