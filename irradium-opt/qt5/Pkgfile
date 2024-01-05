@@ -5,10 +5,10 @@
 # Optional: assimp bluez cups double-conversion gtk3 ibus icu krb5 libinput libsdl2 mariadb mtdev openal pulseaudio unixodbc vulkan-headers wayland-protocols xkeyboard-config
 
 name=qt5
-version=5.15.11
+version=5.15.12
 release=1
 source=(https://download.qt.io/archive/qt/5.15/$version/single/qt-everywhere-opensource-src-$version.tar.xz
-    https://www.linuxfromscratch.org/patches/blfs/svn/qt-everywhere-opensource-src-$version-kf5-1.patch
+    qt-everywhere-opensource-src-$version-kf5-1.patch
     qtbase-5.15.8-fix-missing-qtsan-include.patch
     qt-5.15.11-xkbcommon160.patch
     qt5-cflags.patch
