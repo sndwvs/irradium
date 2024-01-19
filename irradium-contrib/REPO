@@ -91,7 +91,7 @@ f:07e26eeeed3964a1ee9bb75fc69535a9:chromium/patches/chromium-119-FragmentDataIte
 f:312bb1d9580567156a2c704fa4b16a0a:chromium/patches/chromium-119-at-spi-variable-consumption.patch
 f:fb2142170b687e12d1b808a971f62f4e:chromium/patches/chromium-119-clang16.patch
 f:37e6690eb4cd09de8aae36446269dae0:chromium/patches/use-oauth2-client-switches-as-default.patch
-f:56422ca7805d56ad890b238bd9c7dbe5:chromium/post-install
+f:b5ebb2a18df71bf46cf49364b7cfa57c:chromium/post-install
 f:5ef456813a7422caa454c5561a864aeb:deadbeef/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:a32b4ead34d990bce04051e6b1c6192b:elogind/.footprint
@@ -134,7 +134,8 @@ f:0b3c95f03a22c21e6316af8416c43100:gtksourceview4/.footprint
 f:c3102abb6b6921b9991aad39a862311c:gtksourceview4/.signature
 f:239b9ef46771b2f86c227b0e181cb8e7:gtksourceview4/Pkgfile
 f:cec7167db1a12a09d017ce47c0a10e02:gtkspell3/Pkgfile
-f:ccb0c299026a56f792473947a7f117a2:gvfs/Pkgfile
+f:f635844b167c1e8b17d4a582df3f66f8:gvfs/Pkgfile
+f:9f068dfb9541a08fe55d2ee3e5b64303:gvfs/post-install
 f:8d008c7ebc775f1823ba35c211c98e8c:jemalloc/Pkgfile
 f:de65bbf9b5e5765f1ebddec90f1c6bc4:keepassxc/Pkgfile
 f:ada212fbb7e606e4f24c1800ee7c30de:libatasmart/Pkgfile
@@ -277,7 +278,7 @@ f:07e26eeeed3964a1ee9bb75fc69535a9:ungoogled-chromium/patches/chromium-119-Fragm
 f:312bb1d9580567156a2c704fa4b16a0a:ungoogled-chromium/patches/chromium-119-at-spi-variable-consumption.patch
 f:fb2142170b687e12d1b808a971f62f4e:ungoogled-chromium/patches/chromium-119-clang16.patch
 f:37e6690eb4cd09de8aae36446269dae0:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
-f:56422ca7805d56ad890b238bd9c7dbe5:ungoogled-chromium/post-install
+f:b5ebb2a18df71bf46cf49364b7cfa57c:ungoogled-chromium/post-install
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:6e3f456da8c441972ceec1d74e17cd26:viewnior/Pkgfile
 f:975eeae744a613e326b89b5dd4ef1fbe:viewnior/exiv2-0.28.patch
