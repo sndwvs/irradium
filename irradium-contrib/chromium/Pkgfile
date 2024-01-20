@@ -105,10 +105,10 @@ build() {
 
     # Use prebuilt rust as system rust cannot be used due to the error:
     #   error: the option `Z` is only accepted on the nightly compiler
-    ./tools/rust/update_rust.py
+    #./tools/rust/update_rust.py
 
     # To link to rust libraries we need to compile with prebuilt clang
-    ./tools/clang/scripts/update.py
+    #./tools/clang/scripts/update.py
 
     # Remove bundled libraries for which we will use the system copies; this
     # *should* do what the remove_bundled_libraries.py script does, with the
