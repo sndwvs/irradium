@@ -9,8 +9,6 @@ release=1
 source=(init.in init.in.patch mkinitramfs mkinitramfs.patch)
 
 build() {
-    cd $name-$version
-
     cat $SRC/init.in.patch | patch -p1 --verbose || exit 1
     cat $SRC/mkinitramfs.patch | patch -p1 --verbose || exit 1
 
