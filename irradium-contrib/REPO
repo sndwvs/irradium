@@ -293,6 +293,6 @@ f:4461500806eba45e6f7dd0f5805ea777:mkinitramfs/init.in.patch
 f:0ccf2c3bbe610cff21943fc21e9d8764:mkinitramfs/mkinitramfs.patch
 f:1793b8523186ece9d46244e4c3b57fae:mkinitramfs/init.in
 f:ac7c2c0be8702ab9659ccca6679487f2:mkinitramfs/mkinitramfs
-f:b6b63fa3572fa41e185786f113469969:mkinitramfs/Pkgfile
-f:67e95d6ecdbe0166e41548b553622560:mkinitramfs/.footprint
+f:2b6514212e23bbade668dc74be1a178d:mkinitramfs/Pkgfile
+f:6fc9192870e3cd2924aceb60f46c974a:mkinitramfs/.footprint
 f:6053bdd151653f889f6597e5a01efdf1:mkinitramfs/.signature

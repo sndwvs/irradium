@@ -5,7 +5,7 @@
 
 name=mkinitramfs
 version=r11.3_314
-release=1
+release=2
 source=(init.in init.in.patch mkinitramfs mkinitramfs.patch)
 
 build() {
@@ -13,6 +13,6 @@ build() {
     cat $SRC/mkinitramfs.patch | patch -p1 --verbose || exit 1
 
     # Configuration
-    install -Dm755 mkinitramfs $PKG/usr/sbin/mkinitramfs
+    install -Dm755 mkinitramfs $PKG/sbin/mkinitramfs
     install -Dm644 init.in $PKG/usr/share/mkinitramfs/init.in
 }
