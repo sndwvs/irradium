@@ -1,0 +1,124 @@
+diff --git a/irradium-contrib/ungoogled-chromium/Pkgfile b/irradium-contrib/ungoogled-chromium/Pkgfile
+index d5bcaf8..09693b1 100644
+--- a/irradium-contrib/ungoogled-chromium/Pkgfile
++++ b/irradium-contrib/ungoogled-chromium/Pkgfile
+@@ -4,25 +4,19 @@
+ # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
+ 
+ name=ungoogled-chromium
+-version=119.0.6045.159
++version=121.0.6167.71
+ _uc_version=$version-1
+ release=1
+ source=(https://commondatastorage.googleapis.com/chromium-browser-official/${name#*-}-$version.tar.xz
+         https://github.com/ungoogled-software/$name/archive/$_uc_version.tar.gz
+         chromium.default chromium.sh
++        patches/0001-widevine-support-for-arm.patch
++        patches/0002-Run-blink-bindings-generation-single-threaded.patch
+         patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
+         patches/REVERT-roll-src-third_party-ffmpeg-m106.patch
+         patches/REVERT-roll-src-third_party-ffmpeg-m102.patch
+-        patches/REVERT-disable-autoupgrading-debug-info.patch
+-        patches/0001-widevine-support-for-arm.patch
+         patches/use-oauth2-client-switches-as-default.patch
+-        patches/0002-Run-blink-bindings-generation-single-threaded.patch
+-        patches/chromium-114-ruy-include.patch
+-        patches/chromium-114-vk_mem_alloc-include.patch
+-        patches/chromium-117-material-color-include.patch
+-        patches/chromium-119-FragmentDataIterator-std.patch
+-        patches/chromium-119-at-spi-variable-consumption.patch
+-        patches/chromium-119-clang16.patch
++        icu-74.patch
+ )
+ 
+ build() {
+@@ -49,7 +43,7 @@ build() {
+       [libdrm]=
+       [libjpeg]=libjpeg
+       #[libpng]=libpng    # https://crbug.com/752403#c10
+-      [libvpx]=libvpx
++      #[libvpx]=libvpx
+       [libwebp]=libwebp
+       #[libxml]=libxml2
+       #[libxslt]=libxslt
+@@ -76,6 +70,12 @@ build() {
+     patch -Np1 -i $SRC/0002-Run-blink-bindings-generation-single-threaded.patch || exit 1
+     patch -Np1 -i $SRC/0003-Fix-eu-strip-build-for-newer-GCC.patch || exit 1
+ 
++    # Revert ffmpeg roll requiring new channel layout API support
++    # https://crbug.com/1325301
++    patch -Rp1 -i $SRC/REVERT-roll-src-third_party-ffmpeg-m102.patch || exit 1
++    # Revert switch from AVFrame::pkt_duration to AVFrame::duration
++    patch -Rp1 -i $SRC/REVERT-roll-src-third_party-ffmpeg-m106.patch || exit 1
++
+     if [[ $ARCH == "armv7h" ]]; then
+         export ALARM_NINJA_JOBS="4"
+         export MAKEFLAGS="-j4"
+@@ -93,22 +93,19 @@ build() {
+     # runtime -- this allows signing into Chromium without baked-in values
+     patch -Np1 -i $SRC/use-oauth2-client-switches-as-default.patch || exit 1
+ 
+-    # Revert addition of compiler flag that needs newer clang
+-    patch -Rp1 -i $SRC/REVERT-disable-autoupgrading-debug-info.patch || exit 1
++    # Upstream fixes
+ 
+-    # Revert ffmpeg roll requiring new channel layout API support
+-    # https://crbug.com/1325301
+-    patch -Rp1 -i $SRC/REVERT-roll-src-third_party-ffmpeg-m102.patch || exit 1
+-    # Revert switch from AVFrame::pkt_duration to AVFrame::duration
+-    patch -Rp1 -i $SRC/REVERT-roll-src-third_party-ffmpeg-m106.patch || exit 1
++    # Fix build with ICU 74
++    patch -Np1 -i $SRC/icu-74.patch || exit 1
++
++    # Drop compiler flags that need newer clang
++    #patch -Np1 -i $SRC/drop-flags-unsupported-by-clang16.patch
+ 
+     # Fixes for building with libstdc++ instead of libc++
+-    patch -Np1 -i $SRC/chromium-114-ruy-include.patch
+-    patch -Np1 -i $SRC/chromium-114-vk_mem_alloc-include.patch
+-    patch -Np1 -i $SRC/chromium-117-material-color-include.patch
+-    patch -Np1 -i $SRC/chromium-119-FragmentDataIterator-std.patch
+-    patch -Np1 -i $SRC/chromium-119-at-spi-variable-consumption.patch
+-    patch -Np1 -i $SRC/chromium-119-clang16.patch
++    #patch -Np1 -i $SRC/chromium-114-ruy-include.patch
++    #patch -Np1 -i $SRC/chromium-117-material-color-include.patch
++    #patch -Np1 -i $SRC/chromium-119-clang16.patch
++
+ 
+     # Ungoogled Chromium changes
+     UNGOOGLED_REPO="$SRC/$name-$_uc_version"
+@@ -127,6 +124,13 @@ build() {
+     #ln -s /usr/bin/java third_party/jdk/current/bin/
+     ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
+ 
++    # Use prebuilt rust as system rust cannot be used due to the error:
++    #   error: the option `Z` is only accepted on the nightly compiler
++    ./tools/rust/update_rust.py
++
++    # To link to rust libraries we need to compile with prebuilt clang
++    ./tools/clang/scripts/update.py
++
+     # Remove bundled libraries for which we will use the system copies; this
+     # *should* do what the remove_bundled_libraries.py script does, with the
+     # added benefit of not having to list all the remaining libraries
+diff --git a/irradium-contrib/ungoogled-chromium/patches/REVERT-disable-autoupgrading-debug-info.patch b/irradium-contrib/ungoogled-chromium/patches/REVERT-disable-autoupgrading-debug-info.patch
+deleted file mode 100644
+index a60db7e..0000000
+diff --git a/irradium-contrib/ungoogled-chromium/patches/chromium-114-ruy-include.patch b/irradium-contrib/ungoogled-chromium/patches/chromium-114-ruy-include.patch
+deleted file mode 100644
+index 8ca942b..0000000
+diff --git a/irradium-contrib/ungoogled-chromium/patches/chromium-114-vk_mem_alloc-include.patch b/irradium-contrib/ungoogled-chromium/patches/chromium-114-vk_mem_alloc-include.patch
+deleted file mode 100644
+index fc34c44..0000000
+diff --git a/irradium-contrib/ungoogled-chromium/patches/chromium-117-material-color-include.patch b/irradium-contrib/ungoogled-chromium/patches/chromium-117-material-color-include.patch
+deleted file mode 100644
+index cc5410a..0000000
+diff --git a/irradium-contrib/ungoogled-chromium/patches/chromium-119-FragmentDataIterator-std.patch b/irradium-contrib/ungoogled-chromium/patches/chromium-119-FragmentDataIterator-std.patch
+deleted file mode 100644
+index f47ebc1..0000000
+diff --git a/irradium-contrib/ungoogled-chromium/patches/chromium-119-at-spi-variable-consumption.patch b/irradium-contrib/ungoogled-chromium/patches/chromium-119-at-spi-variable-consumption.patch
+deleted file mode 100644
+index 54b45bc..0000000
+diff --git a/irradium-contrib/ungoogled-chromium/patches/chromium-119-clang16.patch b/irradium-contrib/ungoogled-chromium/patches/chromium-119-clang16.patch
+deleted file mode 100644
+index 0d03e8e..0000000
