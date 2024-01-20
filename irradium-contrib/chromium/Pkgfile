@@ -68,12 +68,6 @@ build() {
     patch -Np1 -i $SRC/0002-Run-blink-bindings-generation-single-threaded.patch || exit 1
     patch -Np1 -i $SRC/0003-Fix-eu-strip-build-for-newer-GCC.patch || exit 1
 
-    # Revert ffmpeg roll requiring new channel layout API support
-    # https://crbug.com/1325301
-    patch -Rp1 -i $SRC/REVERT-roll-src-third_party-ffmpeg-m102.patch || exit 1
-    # Revert switch from AVFrame::pkt_duration to AVFrame::duration
-    patch -Rp1 -i $SRC/REVERT-roll-src-third_party-ffmpeg-m106.patch || exit 1
-
     if [[ $ARCH == "armv7h" ]]; then
         export ALARM_NINJA_JOBS="4"
         export MAKEFLAGS="-j4"
