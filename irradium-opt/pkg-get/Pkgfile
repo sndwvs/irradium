@@ -1,0 +1,14 @@
+# Description: package management tool for irradium
+# URL:        https://gitlab.com/sndwvs/pkg-get
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: pkgutils prt-get
+
+name=pkg-get
+version=0.1
+release=1
+source=(https://gitlab.com/sndwvs/$name/-/archive/$version/$name-$version.tar.bz2)
+
+build() {
+    cd $name-$version
+    make DESTDIR=$PKG install
+}
