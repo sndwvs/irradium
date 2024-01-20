@@ -1,0 +1,20 @@
+# Description: make the root filesystem
+# URL: http://www.linuxfromscratch.org/blfs/view/svn/postlfs/initramfs.html
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: coreutils cpio findutils kmod glibc
+
+name=mkinitramfs
+version=r11.3_314
+release=1
+source=(init.in init.in.patch mkinitramfs mkinitramfs.patch)
+
+build() {
+    cd $name-$version
+
+    cat $SRC/init.in.patch | patch -p1 --verbose || exit 1
+    cat $SRC/mkinitramfs.patch | patch -p1 --verbose || exit 1
+
+    # Configuration
+    install -Dm755 mkinitramfs $PKG/usr/sbin/mkinitramfs
+    install -Dm644 init.in $PKG/usr/share/mkinitramfs/init.in
+}

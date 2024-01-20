@@ -67,6 +67,7 @@ d:viewnior
 d:vlc
 d:xcursor-justblue
 d:yt-dlp
+d:mkinitramfs
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -288,3 +289,8 @@ f:1697f3fadd7c76e45240c1b248a7f8fe:xcursor-justblue/Pkgfile
 f:536c8ab1bcfc4f13e33c77b61facb496:xcursor-justblue/justblue-0.21.patch.xz
 f:6c088fa48c3b7fc6fe23e270b379a39d:yt-dlp/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
+f:4461500806eba45e6f7dd0f5805ea777:mkinitramfs/init.in.patch
+f:0ccf2c3bbe610cff21943fc21e9d8764:mkinitramfs/mkinitramfs.patch
+f:1793b8523186ece9d46244e4c3b57fae:mkinitramfs/init.in
+f:ac7c2c0be8702ab9659ccca6679487f2:mkinitramfs/mkinitramfs
+f:5a98900849626297627dd0afa31bd920:mkinitramfs/Pkgfile
