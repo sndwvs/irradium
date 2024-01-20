@@ -11,8 +11,6 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
         patches/0001-widevine-support-for-arm.patch
         patches/0002-Run-blink-bindings-generation-single-threaded.patch
         patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
-        patches/REVERT-roll-src-third_party-ffmpeg-m106.patch
-        patches/REVERT-roll-src-third_party-ffmpeg-m102.patch
         patches/use-oauth2-client-switches-as-default.patch
         patches/icu-74.patch
 )
