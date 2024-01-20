@@ -152,3 +152,6 @@ f:e0418c610312fb6e417398f1a29b7d07:zip/zip-3.0-format-security.patch
 f:8d60750c2f922cebbefd9de596518403:zip/zipnote.patch
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:020bbe9846aafbc0a0ed108c8f6676e8:pkg-get/Pkgfile
+f:ebf5486a2a0b5c0852bc6d9828e424f0:pkg-get/.md5sum
+f:55ff6c4bb435d43b67d6458a957a94c4:pkg-get/.signature
+f:0e22ef2c2b312bb2e78760262683a756:pkg-get/.footprint
