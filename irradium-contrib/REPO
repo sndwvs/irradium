@@ -85,7 +85,7 @@ f:ab665906667d3629ac4381da6ed160cf:chromium/patches/drop-flags-unsupported-by-cl
 f:07e9bfde85962a605871ce8bf3779d6b:chromium/patches/icu-74.patch
 f:37e6690eb4cd09de8aae36446269dae0:chromium/patches/use-oauth2-client-switches-as-default.patch
 f:b5ebb2a18df71bf46cf49364b7cfa57c:chromium/post-install
-f:dfd4adf237e609c6a1b13513599be091:chromium/Pkgfile
+f:118c7a3801edfca0e48f0be5902b6861:chromium/Pkgfile
 f:5ef456813a7422caa454c5561a864aeb:deadbeef/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:a32b4ead34d990bce04051e6b1c6192b:elogind/.footprint
@@ -256,7 +256,6 @@ f:3229c9662669deee076eb6efc7791f99:u-boot-tools/.footprint
 f:c77e8bf63589929985df9bf6d3d24dd3:u-boot-tools/.signature
 f:f8283c3226729d62f32b49b2cfba0152:u-boot-tools/Pkgfile
 f:ba82b096e39695cdfe72b8a9d7f02748:udisks2/Pkgfile
-f:efdfec7aa6a14c9a1935200c1fa0f79e:ungoogled-chromium/Pkgfile
 f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:93f6633da7f88c8af3c5c6ff8277f19b:ungoogled-chromium/patches/0001-widevine-support-for-arm.patch
@@ -266,6 +265,7 @@ f:37e6690eb4cd09de8aae36446269dae0:ungoogled-chromium/patches/use-oauth2-client-
 f:07e9bfde85962a605871ce8bf3779d6b:ungoogled-chromium/patches/icu-74.patch
 f:ab665906667d3629ac4381da6ed160cf:ungoogled-chromium/patches/drop-flags-unsupported-by-clang16.patch
 f:b5ebb2a18df71bf46cf49364b7cfa57c:ungoogled-chromium/post-install
+f:2c61e597177dfd1f2829ec892e13cca5:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:6e3f456da8c441972ceec1d74e17cd26:viewnior/Pkgfile
 f:975eeae744a613e326b89b5dd4ef1fbe:viewnior/exiv2-0.28.patch

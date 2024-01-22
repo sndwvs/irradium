@@ -18,6 +18,9 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/${nam
 )
 
 build() {
+
+    _system_clang=1
+
     cd ${name#*-}-$version
 
     # Configuration
@@ -29,26 +32,26 @@ build() {
     declare -gA _system_libs=(
       #[brotli]=brotli
       #[dav1d]=dav1d
-      [ffmpeg]=ffmpeg
+      #[ffmpeg]=ffmpeg
       [flac]=flac
       [fontconfig]=fontconfig
       #[freetype]=freetype2
       #[harfbuzz-ng]=harfbuzz
       #[icu]=icu
-      #[jsoncpp]=jsoncpp  # triggers a CFI violation (https://crbug.com/1365218)
+      #[jsoncpp]=jsoncpp  # needs libstdc++
       #[libaom]=aom
-      #[libavif]=libavif  # needs https://github.com/AOMediaCodec/libavif/commit/d22d4de94120
+      #[libavif]=libavif  # needs https://github.com/AOMediaCodec/libavif/commit/5410b23f76
       [libdrm]=
       [libjpeg]=libjpeg
-      #[libpng]=libpng    # https://crbug.com/752403#c10
+      [libpng]=libpng
       #[libvpx]=libvpx
       [libwebp]=libwebp
-      #[libxml]=libxml2
-      #[libxslt]=libxslt
+      [libxml]=libxml2
+      [libxslt]=libxslt
       [opus]=opus
-      #[re2]=re2
-      #[snappy]=snappy
-      [woff2]=woff2
+      #[re2]=re2          # needs libstdc++
+      #[snappy]=snappy    # needs libstdc++
+      #[woff2]=woff2      # needs libstdc++
       #[zlib]=minizip
     )
     _unwanted_bundled_libs=(
@@ -68,10 +71,13 @@ build() {
     patch -Np1 -i $SRC/0002-Run-blink-bindings-generation-single-threaded.patch || exit 1
     patch -Np1 -i $SRC/0003-Fix-eu-strip-build-for-newer-GCC.patch || exit 1
 
-    if [[ $ARCH == "armv7h" ]]; then
+    if [[ $(uname -m) == "armv7h" ]]; then
         export ALARM_NINJA_JOBS="4"
         export MAKEFLAGS="-j4"
     fi
+
+    # Allow build to set march and options on AArch64 (crc, crypto)
+    [[ $(uname -m) == "aarch64" ]] && CFLAGS=`echo $CFLAGS | sed -e 's/-march=armv8-a//'` && CXXFLAGS="$CFLAGS"
 
     # https://crbug.com/893950
     sed -i -e 's/\<xmlMalloc\>/malloc/' -e 's/\<xmlFree\>/free/' \
@@ -118,10 +124,10 @@ build() {
 
     # Use prebuilt rust as system rust cannot be used due to the error:
     #   error: the option `Z` is only accepted on the nightly compiler
-    ./tools/rust/update_rust.py
+    #./tools/rust/update_rust.py
 
     # To link to rust libraries we need to compile with prebuilt clang
-    ./tools/clang/scripts/update.py
+    #./tools/clang/scripts/update.py
 
     # Remove bundled libraries for which we will use the system copies; this
     # *should* do what the remove_bundled_libraries.py script does, with the
@@ -138,23 +144,32 @@ build() {
     python3 build/linux/unbundle/replace_gn_files.py \
       --system-libraries "${!_system_libs[@]}"
 
-    # Compilation
-    export CC=clang
-    export CXX=clang++
-    export AR=llvm-ar
-    export NM=llvm-nm
+    # Rebuild eu-strip
+    pushd buildtools/third_party/eu-strip
+    ./build.sh
+    popd
+
+    if (( _system_clang )); then
+      export CC=clang
+      export CXX=clang++
+      export AR=llvm-ar
+      export NM=llvm-nm
+    else
+      local _clang_path="$PWD/third_party/llvm-build/Release+Asserts/bin"
+      export CC=$_clang_path/clang
+      export CXX=$_clang_path/clang++
+      export AR=$_clang_path/llvm-ar
+      export NM=$_clang_path/llvm-nm
+    fi
 
     _flags=(
       'custom_toolchain="//build/toolchain/linux/unbundle:default"'
       'host_toolchain="//build/toolchain/linux/unbundle:default"'
-      'clang_base_path="/usr"'
-      'clang_use_chrome_plugins=false'
       'clang_use_default_sample_profile=false'
       'use_allocator="none"'
       'is_official_build=true' # implies is_cfi=true on x86_64
       'symbol_level=0' # sufficient for backtraces on x86(_64)
       'is_cfi=false'
-      'chrome_pgo_phase=0'
       'treat_warnings_as_errors=false'
       'disable_fieldtrial_testing_config=true'
       'blink_enable_generated_code_formatting=false'
@@ -162,7 +177,7 @@ build() {
       'proprietary_codecs=true'
       #'rtc_use_pipewire=true'
       'link_pulseaudio=true'
-      'use_custom_libcxx=false'
+      'use_custom_libcxx=true' # https://github.com/llvm/llvm-project/issues/61705
       'use_gnome_keyring=false'
       'use_qt=false' # look into enabling this
       'use_gold=false'
@@ -177,6 +192,18 @@ build() {
 
     if [[ -n ${_system_libs[icu]+set} ]]; then
       _flags+=('icu_use_data_file=false')
+    fi
+
+    if (( _system_clang )); then
+        local _clang_version=$(
+          clang --version | grep -m1 version | sed 's/.* \([0-9]\+\).*/\1/')
+
+      _flags+=(
+        'clang_base_path="/usr"'
+        'clang_use_chrome_plugins=false'
+        "clang_version=\"$_clang_version\""
+        'chrome_pgo_phase=0' # needs newer clang to read the bundled PGO profile
+      )
     fi
 
     if [[ $CARCH == "armv7h" ]]; then
