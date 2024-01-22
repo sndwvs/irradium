@@ -145,9 +145,9 @@ build() {
       --system-libraries "${!_system_libs[@]}"
 
     # Rebuild eu-strip
-    pushd buildtools/third_party/eu-strip
-    ./build.sh
-    popd
+    #pushd buildtools/third_party/eu-strip
+    #./build.sh
+    #popd
 
     if (( _system_clang )); then
       export CC=clang
