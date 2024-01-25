@@ -6,7 +6,7 @@ d:xorg-rendercheck
 d:xorg-xcb-util-xrm
 f:4a8b01cd8b4aaf1603d77bfc7f61472f:mesa/.footprint
 f:775a5e3cfac92980f00e567ab17f36ad:mesa/.signature
-f:9762d16c6afcc67149c7ccd0586e6895:mesa/Pkgfile
+f:52e23973113de1475f52b5d340b0a91e:mesa/Pkgfile
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
 f:c530d42f82a46a1a6812cbbc8e916d31:mesa/README.md
 f:feea18823cc9acb94405f6d9674188b1:mesa/patches/mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch
