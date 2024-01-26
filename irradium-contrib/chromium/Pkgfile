@@ -13,6 +13,7 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
         patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
         patches/use-oauth2-client-switches-as-default.patch
         patches/icu-74.patch
+        patches/compiler.patch
 )
 
 build() {
@@ -102,6 +103,7 @@ build() {
     #patch -Np1 -i $SRC/chromium-117-material-color-include.patch
     #patch -Np1 -i $SRC/chromium-119-clang16.patch
 
+    patch -Np1 -i $SRC/compiler.patch
 
     # Link to system tools required by the build
     mkdir -p third_party/node/linux/node-linux-x64/bin
@@ -173,7 +175,9 @@ build() {
       'enable_hangout_services_extension=true'
       'enable_widevine=true'
       'enable_nacl=false'
-      'enable_rust=false'
+      'enable_rust=true'
+      'rustc_version="yes"'
+      'rust_sysroot_absolute="/usr"'
       "google_api_key=\"$_google_api_key\""
     )
 

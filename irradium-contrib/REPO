@@ -84,8 +84,9 @@ f:33f8cfb1314a5c527a1d3e1142513909:chromium/patches/0003-Fix-eu-strip-build-for-
 f:ab665906667d3629ac4381da6ed160cf:chromium/patches/drop-flags-unsupported-by-clang16.patch
 f:07e9bfde85962a605871ce8bf3779d6b:chromium/patches/icu-74.patch
 f:37e6690eb4cd09de8aae36446269dae0:chromium/patches/use-oauth2-client-switches-as-default.patch
+f:f424ec5185b0d079bbdfe49702a6b1bf:chromium/patches/compiler.patch
 f:b5ebb2a18df71bf46cf49364b7cfa57c:chromium/post-install
-f:f7f2854441fc97b160c89b68c22c5826:chromium/Pkgfile
+f:c31e6dcc97750f5a71fbe730df8edcb1:chromium/Pkgfile
 f:5ef456813a7422caa454c5561a864aeb:deadbeef/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:a32b4ead34d990bce04051e6b1c6192b:elogind/.footprint
@@ -264,8 +265,9 @@ f:33f8cfb1314a5c527a1d3e1142513909:ungoogled-chromium/patches/0003-Fix-eu-strip-
 f:37e6690eb4cd09de8aae36446269dae0:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
 f:07e9bfde85962a605871ce8bf3779d6b:ungoogled-chromium/patches/icu-74.patch
 f:ab665906667d3629ac4381da6ed160cf:ungoogled-chromium/patches/drop-flags-unsupported-by-clang16.patch
+f:f424ec5185b0d079bbdfe49702a6b1bf:ungoogled-chromium/patches/compiler.patch
 f:b5ebb2a18df71bf46cf49364b7cfa57c:ungoogled-chromium/post-install
-f:135cd3751fc8ad4278600362f973ec2a:ungoogled-chromium/Pkgfile
+f:e38bcb80dc3989eeb3c0f0386429071f:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:6e3f456da8c441972ceec1d74e17cd26:viewnior/Pkgfile
 f:975eeae744a613e326b89b5dd4ef1fbe:viewnior/exiv2-0.28.patch
