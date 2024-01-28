@@ -1,6 +1,6 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/pkg-get/
-drwxr-xr-x	root/root	etc/pkg-get/pkg-get.pub/
+-rw-r--r--	root/root	etc/pkg-get/pkg-get.pub
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/pkg-get
