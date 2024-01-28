@@ -4,7 +4,7 @@
 # Depends on: alsa-lib cmake cups pulsaudio libjpeg-turbo xorg-libxcursor xorg-libxdamage wayland cairo
 
 name=freerdp
-version=2.11.2
+version=2.11.5
 release=1
 source=(https://github.com/FreeRDP/FreeRDP/archive/$version.tar.gz)
 
