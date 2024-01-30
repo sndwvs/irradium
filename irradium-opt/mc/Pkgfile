@@ -4,7 +4,7 @@
 # Depends on: glib slang
 
 name=mc
-version=4.8.30
+version=4.8.31
 release=1
 source=(https://ftp.osuosl.org/pub/midnightcommander/$name-$version.tar.xz)
 

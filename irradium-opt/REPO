@@ -85,7 +85,7 @@ f:93e7d9e3bf065191492dd4b652e85970:llvm/Pkgfile
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
-f:d94b1d1d3dfd1696cb99a9642bf4d69a:mc/Pkgfile
+f:00f0bded92066039015ff856aab86dcd:mc/Pkgfile
 f:13caa329106b87c04f476404898110a8:medit/.footprint
 f:1660f93d6be76a41334168f8156628ed:medit/.signature
 f:4058919da1d2dae7a7dfe61d74d38643:medit/Pkgfile
@@ -139,7 +139,7 @@ f:8ecd5349b20cb16e9a830249d94b243a:startup-notification/.signature
 f:5e60010ec73d7ec223954bc4b4498a9a:startup-notification/Pkgfile
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
 f:d5fa73ffdbe8e2fce6f075b7c95d631c:strace/.signature
-f:661beb35f62baddb8dc18b6c6cb300fc:strace/Pkgfile
+f:870b5169ff740ea96b02737551dc4868:strace/Pkgfile
 f:161ceacea96c510d80f4509f8d7d5f65:yasm/.footprint
 f:52cb197f8e5f82bd3c4b94557050d69f:yasm/.signature
 f:88d28f3f201f0d41f7438a52c8d248c6:yasm/Pkgfile
