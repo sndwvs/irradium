@@ -5,13 +5,37 @@
 # Optional: directx-headers glslang libclc libunwind libva libvdpau lm_sensors rust-bindgen spirv-llvm-translator vulkan-loader wayland-protocols
 
 name=mesa
-version=23.3.5
+version=24.0.0
 release=1
 source=(https://archive.mesa3d.org/$name-$version.tar.xz
-    patches/mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch
-    patches/mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch
-    patches/mesa-buildsystem-improvements.patch
-    patches/mesa-23.3-panthor.patch)
+    patches/0000-mesa-20.1.1-fix-opencl.patch
+    patches/0001-mesa-23.1-x86_32-llvm-detection.patch
+    patches/0002-mesa-23.1-intel-vk-compile.patch
+    patches/0003-26165.patch
+    patches/0004-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch
+    patches/0005-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch
+    patches/0006-mesa-rustdeps.patch
+    patches/0007-mesa-24-llvmspirv-detection.patch
+    patches/0008-mesa-buildsystem-improvements.patch
+    patches/0009-0011-drm-uapi-Add-panthor-uAPI.patch
+    patches/0010-0012-pan-kmod-Add-a-backend-for-panthor.patch
+    patches/0011-0013-panfrost-Patch-panfrost_max_thread_count-for-v10.patch
+    patches/0012-0014-panfrost-Add-v10-support-to-libpanfrost.patch
+    patches/0013-0015-panfrost-genxml-Add-missing-Progress-increment-field.patch
+    patches/0014-0016-pandecode-csf-Introduce-the-concept-of-usermode-queu.patch
+    patches/0015-0017-panfrost-Don-t-allocate-a-tiler-heap-buffer-on-v10.patch
+    patches/0016-0018-panfrost-Add-a-library-to-build-CSF-command-streams.patch
+    patches/0017-0019-panfrost-Relax-position-result-alignment-constraint-.patch
+    patches/0018-0020-panfrost-Add-arch-specific-context-init-cleanup-hook.patch
+    patches/0019-0021-panfrost-Add-a-panfrost_context_reinit-helper.patch
+    patches/0020-0022-panfrost-Add-a-cleanup_batch-method-to-panfrost_vtab.patch
+    patches/0021-0023-panfrost-Add-support-for-the-CSF-job-frontend.patch
+    patches/0022-0024-panfrost-Enable-v10-in-the-gallium-driver.patch
+    patches/0023-0025-panfrost-Add-a-panfrost_model-entry-for-G610.patch
+    patches/0024-0026-panfrost-Add-G310-to-the-list-of-supported-GPUs.patch
+    patches/0025-0027-panfrost-Add-an-entry-for-panthor-in-the-renderonly_.patch
+    patches/0026-0028-panfrost-Add-the-gallium-glue-to-get-panfrost-loaded.patch
+    patches/0027-panthor-fix-panthor_kmod_bo_export-return.patch)
 
 build() {
     prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
