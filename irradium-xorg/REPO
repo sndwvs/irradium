@@ -4,8 +4,8 @@ d:mtdev
 d:xorg-gccmakedep
 d:xorg-rendercheck
 d:xorg-xcb-util-xrm
-f:4a8b01cd8b4aaf1603d77bfc7f61472f:mesa/.footprint
-f:775a5e3cfac92980f00e567ab17f36ad:mesa/.signature
+f:0e03bbc08af89db26c3e3a8d4a5fbfbf:mesa/.footprint
+f:f9d74a1be38f6e858295d7caeaacb2c0:mesa/.signature
 f:8a23c8ff554b45cd2e9e9afa3ba64f7f:mesa/Pkgfile
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
 f:c530d42f82a46a1a6812cbbc8e916d31:mesa/README.md
