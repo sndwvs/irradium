@@ -42,6 +42,7 @@ cat <<- EOF > .mozconfig
   ac_add_options --with-system-nspr
   ac_add_options --with-system-nss
   ac_add_options --with-system-libevent
+  ac_add_options --with-system-libvpx
   ac_add_options --with-system-webp
   ac_add_options --enable-av1
   ac_add_options --enable-system-ffi
@@ -63,7 +64,6 @@ EOF
 
   if [ $(uname -m) != "riscv64" ]; then
     echo 'ac_add_options --disable-elf-hack' >> .mozconfig
-    echo 'ac_add_options --with-system-libvpx' >> .mozconfig
   fi
 
   # audio
