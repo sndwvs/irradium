@@ -92,7 +92,7 @@ f:7d67badc004a8ade29648c8449b479e4:mlocate/mlocate
 f:f70c051ad1e30aa76820c6c6e7485eae:mlocate/updatedb.conf
 f:626b74511e97a4562cf517ee7ae58234:pkgconf/.footprint
 f:5d096d3ee2c7c18818036b4335ad6e02:pkgconf/.signature
-f:a80b5597e2c0b70064b447cdd2c3e36c:pkgconf/Pkgfile
+f:0c3a4a136b8d6325a22dbe39290d1223:pkgconf/Pkgfile
 f:6fec70b14f238ad94caf5dac367ee427:pkgconf/README
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
