@@ -1,0 +1,21 @@
+# Description: Utilities for handling MTD devices, and for dealing with FTL, NFTL JFFS2, etc.
+# URL: http://www.linux-mtd.infradead.org
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: acl autoconf automake coreutils libtool lzo openssl util-linux zlib zstd
+
+name=mtd-utils
+version=2.1.6
+release=1
+source=(https://infraroot.at/pub/mtd/$name-$version.tar.bz2)
+
+build() {
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --mandir=/usr/share/man
+
+  make
+  make DESTDIR=$PKG install
+}

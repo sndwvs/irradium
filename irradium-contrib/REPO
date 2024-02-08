@@ -68,6 +68,7 @@ d:vlc
 d:xcursor-justblue
 d:yt-dlp
 d:mkinitramfs
+d:mtd-utils
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -284,3 +285,6 @@ f:ac7c2c0be8702ab9659ccca6679487f2:mkinitramfs/mkinitramfs
 f:2b6514212e23bbade668dc74be1a178d:mkinitramfs/Pkgfile
 f:6fc9192870e3cd2924aceb60f46c974a:mkinitramfs/.footprint
 f:14abbb7b1cb6ced8d5de6e17d1a9ef95:mkinitramfs/.signature
+f:de6d6213bb00983fbe1a288827c68cac:mtd-utils/Pkgfile
+f:8f64ab560029554ac2e83c402ae96480:mtd-utils/.footprint
+f:ddb240ac5795d5779b692b0c47cd6db1:mtd-utils/.signature
