@@ -125,7 +125,7 @@ f:968d7afec16f7693b5e00daaf3871d5b:rust/0002-compiler-Change-LLVM-targets.patch
 f:d625886fd507b8b69686819d9a4684f4:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:60146fd38067426eb41e539e1c0d2794:rust/.footprint
-f:d8a3390eacbbdaed6cda2fcf1fb27920:rust/Pkgfile
+f:01fcd5e1674ce2408df3a15939e39b98:rust/Pkgfile
 f:a23a8aac5a57faa325cbaf32d2f261c8:slim/.footprint
 f:9654119211dec3b51f819b7cc34380ac:slim/.signature
 f:6bde2566611eb08c5b2d304416898527:slim/Pkgfile

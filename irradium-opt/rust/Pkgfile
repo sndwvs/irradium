@@ -5,9 +5,9 @@
 # Optional: ccache clang libgit2 lld polly sccache
 
 name=rust
-version=1.75.0
-_date=2023-11-16
-_rustc=1.74.0
+version=1.76.0
+_date=2023-12-28
+_rustc=1.75.0
 _cargo=$_rustc
 release=1
 
