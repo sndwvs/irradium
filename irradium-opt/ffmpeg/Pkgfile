@@ -37,7 +37,7 @@ build() {
   prt-get isinst libass && PKGMK_FFMPEG+=' --enable-libass'
   prt-get isinst libbs2b && PKGMK_FFMPEG+=' --enable-libbs2b'
   prt-get isinst libcaca && PKGMK_FFMPEG+=' --enable-libcaca'
-  prt-get isinst libcdio && PKGMK_FFMPEG+=' --enable-libcdio'
+  prt-get isinst libcdio-paranoia && PKGMK_FFMPEG+=' --enable-libcdio'
   prt-get isinst libdrm && PKGMK_FFMPEG+=' --enable-libdrm'
   prt-get isinst libmodplug && PKGMK_FFMPEG+=' --enable-libmodplug'
   prt-get isinst libplacebo && PKGMK_FFMPEG+=' --enable-libplacebo'
@@ -68,7 +68,6 @@ build() {
   prt-get isinst v4l-utils && PKGMK_FFMPEG+=' --enable-libv4l2'
   prt-get isinst x264 && PKGMK_FFMPEG+=' --enable-libx264'
   prt-get isinst x265 && PKGMK_FFMPEG+=' --enable-libx265'
-  prt-get isinst libdrm && PKGMK_FFMPEG+=' --enable-libdrm'
   prt-get isinst mpp && PKGMK_FFMPEG+=' --enable-rkmpp'
 
   patch -Np1 -i $SRC/250471ea1745fc703eb346a2a662304536a311b1.patch
