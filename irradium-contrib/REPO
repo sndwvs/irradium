@@ -276,7 +276,7 @@ f:3b223a2f1f832928997760a6df869661:vlc/Pkgfile
 f:362e3fa06abefde433f18c586fa2248b:vlc/post-install
 f:1697f3fadd7c76e45240c1b248a7f8fe:xcursor-justblue/Pkgfile
 f:536c8ab1bcfc4f13e33c77b61facb496:xcursor-justblue/justblue-0.21.patch.xz
-f:6c088fa48c3b7fc6fe23e270b379a39d:yt-dlp/Pkgfile
+f:324065c3fe21d830bc805a93409da3de:yt-dlp/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4461500806eba45e6f7dd0f5805ea777:mkinitramfs/init.in.patch
 f:0ccf2c3bbe610cff21943fc21e9d8764:mkinitramfs/mkinitramfs.patch
