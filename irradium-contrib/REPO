@@ -200,7 +200,7 @@ f:1b7e7d20633c75d507a5cf032a80544d:mpp/.footprint
 f:98e28a0d44dd1c7087577b993c8b25d7:mpp/.signature
 f:57d8530224c720c1cf3650917c2e257b:mpp/Pkgfile
 f:408b6e6380b0ec88608d2a4750dd218f:mpp/fix-hardware-limited-to-memory-less-than-4G.patch
-f:a6b8855571e732620e68d8b1c42070fc:mpv/Pkgfile
+f:a4c70b2abccdff90dc978942ec61187b:mpv/Pkgfile
 f:2afb336186c3466ee6604e8c9d55b635:mpv/README
 f:1abacb2bacb4b664a3c365ab34a7f4cc:mpv/mpv-0.35.1-yt-dlp-edl-fragments.patch
 f:b9de1a5cd217513a591c2e5399dcf346:openjdk20-jdk/.footprint
