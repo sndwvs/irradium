@@ -5,10 +5,14 @@
 
 name=keepassxc
 version=2.7.6
-release=1
-source=(https://github.com/keepassxreboot/${name}/releases/download/${version}/${name}-${version}-src.tar.xz)
+release=2
+source=(https://github.com/keepassxreboot/${name}/releases/download/${version}/${name}-${version}-src.tar.xz
+        https://github.com/keepassxreboot/keepassxc/commit/cc0530ba.patch)
 
 build() {
+  # Fix build with botan 3.3
+  patch -d $name-$version -p1 < $SRC/cc0530ba.patch
+
   cmake -S $name-$version -B build \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_INSTALL_LIBDIR=lib \
