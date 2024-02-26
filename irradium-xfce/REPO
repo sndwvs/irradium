@@ -113,7 +113,9 @@ f:99692738ad9f501038a973886b5d9c8e:xfce4-taskmanager/.signature
 f:27560e56539ada080c3e15433d813aeb:xfce4-taskmanager/Pkgfile
 f:eff8da202cf91b8346f12d87d87c2281:xfce4-terminal/.footprint
 f:86cbb5607ccf5b41aab99cdd77e96094:xfce4-terminal/.signature
-f:60677aa025d4add67ace5ed7e3528bb9:xfce4-terminal/Pkgfile
+f:4d775aa771b398f3e93bd72ba325fcc1:xfce4-terminal/Pkgfile
+f:777b58734170d5c0480295a16d8c074c:xfce4-terminal/177fda86451cdeaaea8ed409e6d711b670699a97.patch
+f:b9d40c9e994b018eb80e82b02bdd947d:xfce4-terminal/71ecd2a721b059394edcfb316a20ac9d46a7b2cd.patch
 f:3abf6c825e6358eae5f4edd8a9d45c91:xfce4-weather-plugin/.footprint
 f:4e944f424ed22ce1abfd8cb8edad4700:xfce4-weather-plugin/.signature
 f:86de3e50788caa6c64c654958ea92048:xfce4-weather-plugin/Pkgfile
