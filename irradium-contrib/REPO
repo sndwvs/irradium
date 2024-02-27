@@ -131,7 +131,8 @@ f:c3102abb6b6921b9991aad39a862311c:gtksourceview4/.signature
 f:239b9ef46771b2f86c227b0e181cb8e7:gtksourceview4/Pkgfile
 f:cec7167db1a12a09d017ce47c0a10e02:gtkspell3/Pkgfile
 f:1f3b42226bdf3e82b7344dfcff35a8d1:gvfs/Pkgfile
-f:9f068dfb9541a08fe55d2ee3e5b64303:gvfs/post-install
+f:4b18f25de52294265f155bf08ce5c928:gvfs/post-install
+f:87c087d868352e702e5dcaf42eb729ea:gvfs/gvfs-1.52.2.tar.xz
 f:8d008c7ebc775f1823ba35c211c98e8c:jemalloc/Pkgfile
 f:1cf7b686ad58a8785a197996d447921f:keepassxc/Pkgfile
 f:ada212fbb7e606e4f24c1800ee7c30de:libatasmart/Pkgfile
