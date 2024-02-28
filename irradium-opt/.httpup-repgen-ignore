@@ -3,6 +3,7 @@
 \.tgz$
 \.partial$
 \.tar\.bz2$
+\.tar\.xz$
 \.zip$
 (^|/)CVS(/|$)
 .*~$

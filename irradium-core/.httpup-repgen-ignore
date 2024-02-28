@@ -3,6 +3,7 @@
 \.tgz$
 \.partial$
 \.tar\.bz2$
+\.tar\.xz$
 \.zip$
 (^|/)CVS(/|$)
 .*~$
@@ -13,4 +14,4 @@ index.html
 \.gitignore$
 \.htaccess$
 .git
-^irradium-core.httpup
+\.httpup$
