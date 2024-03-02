@@ -69,6 +69,7 @@ d:xcursor-justblue
 d:yt-dlp
 d:mkinitramfs
 d:mtd-utils
+d:cpufrequtils
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -288,3 +289,13 @@ f:14abbb7b1cb6ced8d5de6e17d1a9ef95:mkinitramfs/.signature
 f:de6d6213bb00983fbe1a288827c68cac:mtd-utils/Pkgfile
 f:8f64ab560029554ac2e83c402ae96480:mtd-utils/.footprint
 f:ddb240ac5795d5779b692b0c47cd6db1:mtd-utils/.signature
+f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch
+f:4ccbd46b0b1563067d0c31fe510ff89d:cpufrequtils/0002-cpufrequtils-Remove-proc-compile-option-and-interfac.patch
+f:5dd9add84e63b213295e2e2a30fd3667:cpufrequtils/0003-cpufrequtils-aperf-Fix-MSR-read-on-32-bit.patch
+f:139b340b964e2c942dbe426b061c6bc8:cpufrequtils/0005-cpufrequtils-sysfs-increase-MAX_LINE_LEN.patch
+f:2242f015ca6b8478d6c1a3bfbca5ea48:cpufrequtils/0006-aperf-fix-compilation-on-x86-32-with-fPIC.patch
+f:0b7d50274fa8286796c9df0b156e2962:cpufrequtils/0007-po-add-missing-word-in-DE.patch
+f:a99653aab0d334569496a402389f062f:cpufrequtils/0008-cpufrequtils-make-NLS-optional.patch
+f:aec28cfb2c4c931bbd83db9601f7d44e:cpufrequtils/Pkgfile
+f:12f78a8be4175673a0ef34bf1c9feebf:cpufrequtils/rc.cpufreq
+f:2c39db2428d9a0f54d505d5c638793dc:cpufrequtils/cpufreq

@@ -1,0 +1,39 @@
+# Description: Userspace tools for the kernel cpufreq subsystem
+# URL: https://www.kernel.org/pub/linux/utils/kernel/cpufreq/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: sysfsutils libtool
+
+name=cpufrequtils
+version=008
+release=1
+source=(https://sources.archlinux.org/other/cpufrequtils/$name-$version.tar.bz2
+    cpufreq rc.cpufreq
+    0001-Only-x86-has-cpuid-instruction.patch
+    0002-cpufrequtils-Remove-proc-compile-option-and-interfac.patch
+    0003-cpufrequtils-aperf-Fix-MSR-read-on-32-bit.patch
+    0005-cpufrequtils-sysfs-increase-MAX_LINE_LEN.patch
+    0006-aperf-fix-compilation-on-x86-32-with-fPIC.patch
+    0007-po-add-missing-word-in-DE.patch
+    0008-cpufrequtils-make-NLS-optional.patch)
+
+build(){
+  cd $name-$version
+
+  for i in $SRC/*.patch; do
+    echo "Applying $i..."
+    patch -p1 < $i
+  done
+
+  make -j1 LIBTOOL_OPT="--tag=CC --silent" \
+    NLS=false \
+    PROC=false
+
+  make mandir=/usr/share/man \
+    NLS=false \
+    INSTALL=install \
+    DESTDIR=$PKG \
+    install
+
+  install -D -m644 $SRC/cpufreq $PKG/etc/default/cpufreq
+  install -D -m755 $SRC/rc.cpufreq $PKG/etc/rc.d/rc.cpufreq
+}
