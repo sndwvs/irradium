@@ -296,6 +296,6 @@ f:139b340b964e2c942dbe426b061c6bc8:cpufrequtils/0005-cpufrequtils-sysfs-increase
 f:2242f015ca6b8478d6c1a3bfbca5ea48:cpufrequtils/0006-aperf-fix-compilation-on-x86-32-with-fPIC.patch
 f:0b7d50274fa8286796c9df0b156e2962:cpufrequtils/0007-po-add-missing-word-in-DE.patch
 f:a99653aab0d334569496a402389f062f:cpufrequtils/0008-cpufrequtils-make-NLS-optional.patch
-f:aec28cfb2c4c931bbd83db9601f7d44e:cpufrequtils/Pkgfile
+f:cde38da2baad59614675eb141a7315e0:cpufrequtils/Pkgfile
 f:12f78a8be4175673a0ef34bf1c9feebf:cpufrequtils/rc.cpufreq
 f:2c39db2428d9a0f54d505d5c638793dc:cpufrequtils/cpufreq

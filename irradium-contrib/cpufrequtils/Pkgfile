@@ -35,5 +35,5 @@ build(){
     install
 
   install -D -m644 $SRC/cpufreq $PKG/etc/default/cpufreq
-  install -D -m755 $SRC/rc.cpufreq $PKG/etc/rc.d/rc.cpufreq
+  install -D -m755 $SRC/rc.cpufreq $PKG/etc/rc.d/cpufreq
 }
