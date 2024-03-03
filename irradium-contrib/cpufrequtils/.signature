@@ -1,0 +1,14 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7kt+//QEw/wfd2UNf1YfiLvBn4L6RM7UrGyR6G2FqWN7xubPzGisjhwuEp5cri82N5GtYxhmpFG+9MgRH73A7A0=
+SHA256 (Pkgfile) = 9b41dbe0b7f3243e31b26b261ddd8a600a19a323ca6d5951c94fee94c0ec0cfa
+SHA256 (.footprint) = 5245b6d0f4e2efa2a895b547a8d84ab51bd99f8ec6f6d82519cbc887bfd30727
+SHA256 (cpufrequtils-008.tar.bz2) = 1b9daa591d977679fb09ffb9b4d58afa94b9387f3c0be92ec077080e328130f1
+SHA256 (cpufreq) = 6431274d9b66bca78029d53dd3dc0b965169d363f29624dd3af068b75e210bb9
+SHA256 (rc.cpufreq) = 120e563a94707a271d96cf76cd43038856af5f6bb76f716dba425f8632b6ff3d
+SHA256 (0001-Only-x86-has-cpuid-instruction.patch) = 6793e7e330fe6c9125c998011f203a4d8d5887872178fc872861db1d5dce55ef
+SHA256 (0002-cpufrequtils-Remove-proc-compile-option-and-interfac.patch) = 62efd52ea004e1974a09cc5646fbc18d47b372a54ed33361fb2c8470bd931501
+SHA256 (0003-cpufrequtils-aperf-Fix-MSR-read-on-32-bit.patch) = 5ef9bae9272f867c0187ba0b4845888cf6bb567a4a242da5001b3a4a05935a2c
+SHA256 (0005-cpufrequtils-sysfs-increase-MAX_LINE_LEN.patch) = 76038bb0197d02c91b7dfde5e65cab9379526bba02cb2bab751bbf23a63b392e
+SHA256 (0006-aperf-fix-compilation-on-x86-32-with-fPIC.patch) = 99b2b04301f1656ea263e5d693be701be8af40880747fd3e34c9c27e5540eefa
+SHA256 (0007-po-add-missing-word-in-DE.patch) = 245f1c9db3f8120eb014f782476df6a38c22700dd438d532943ad35f4e4ca46d
+SHA256 (0008-cpufrequtils-make-NLS-optional.patch) = bb1cba04abb42843085ea4f2b38d539cfe7d4db93ffaca453891ee2de6c6feac

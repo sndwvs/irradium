@@ -299,3 +299,5 @@ f:a99653aab0d334569496a402389f062f:cpufrequtils/0008-cpufrequtils-make-NLS-optio
 f:cde38da2baad59614675eb141a7315e0:cpufrequtils/Pkgfile
 f:12f78a8be4175673a0ef34bf1c9feebf:cpufrequtils/rc.cpufreq
 f:2c39db2428d9a0f54d505d5c638793dc:cpufrequtils/cpufreq
+f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
+f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
