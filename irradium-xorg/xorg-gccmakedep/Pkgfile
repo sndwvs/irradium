@@ -3,8 +3,8 @@
 # Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
 
 name=xorg-gccmakedep
-version=1.0.3
-release=2
+version=1.0.4
+release=1
 source=(https://www.x.org/releases/individual/util/gccmakedep-$version.tar.bz2)
 
 build() {
