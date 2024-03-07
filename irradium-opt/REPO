@@ -15,7 +15,6 @@ d:lightdm-gtk-greeter
 d:llvm
 d:mc
 d:medit
-d:opus
 d:pango-compat
 d:python
 d:qt5
@@ -90,9 +89,6 @@ f:00f0bded92066039015ff856aab86dcd:mc/Pkgfile
 f:13caa329106b87c04f476404898110a8:medit/.footprint
 f:1660f93d6be76a41334168f8156628ed:medit/.signature
 f:4058919da1d2dae7a7dfe61d74d38643:medit/Pkgfile
-f:29d3aeede478e70c424a072d08806048:opus/.footprint
-f:c3a37d226c7ea7ff5dac2b43e6d06db6:opus/.signature
-f:c4d1603430a3d790c66f8b6cdfa1dc45:opus/Pkgfile
 f:c0a17c722f85320e7d1e7cf73fcd25ee:pango-compat/.footprint
 f:43a55a25d68fb0dff362b168aa2eadee:pango-compat/.signature
 f:1f9176f6c67b5d36707ba4f94a4e8281:pango-compat/Pkgfile
