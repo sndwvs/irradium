@@ -5,7 +5,7 @@
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wasi-libc++ wayland
 
 name=firefox
-version=122.0.1
+version=123.0.1
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -91,7 +91,7 @@ EOF
       echo 'ac_add_options --enable-linker=bfd' >> .mozconfig
 
   local clangVer=$(/usr/bin/clang -dumpversion)
-  local cruxVer=$(/usr/bin/irradium | cut -d' ' -f3)
+  local irradiumVer=$(/usr/bin/irradium | cut -d' ' -f3)
 
   # sandboxed web apps
   prt-get isinst lld wasi-libc++ && \
@@ -100,7 +100,7 @@ EOF
 
   if [ -e '/usr/bin/ccache' ]; then
      echo 'ac_add_options --enable-ccache' >> .mozconfig
-     export OS_CCACHE_COMPILERCHECK="$clangVer $cruxVer"
+     export OS_CCACHE_COMPILERCHECK="$clangVer $irradiumVer"
      export CCACHE_COMPILERCHECK="string:$OS_CCACHE_COMPILERCHECK"
      PATH=$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')
   fi
