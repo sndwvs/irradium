@@ -1,11 +1,12 @@
 # Description: LLVM compiler backend
 # URL: https://llvm.org/
 # Maintainer: CRUX System Team, core-ports at crux dot nu
-# Depends on: cmake libffi libxml2 ninja python3-setuptools
+# Depends on: libxml2 ninja python3-setuptools
 # Optional: lld
 
 name=llvm
-version=17.0.6
+version=18.1.0
+
 release=1
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-$version.src.tar.xz
 	https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/cmake-$version.src.tar.xz
@@ -35,6 +36,7 @@ build() {
 		-D LLVM_BUILD_LLVM_DYLIB=ON \
 		-D LLVM_LINK_LLVM_DYLIB=ON \
 		-D LLVM_PARALLEL_COMPILE_JOBS="${JOBS:-1}" \
+		-D LLVM_BUILD_RUNTIME=ON \
 		-D LLVM_BUILD_EXTERNAL_COMPILER_RT=ON \
 		-D LLVM_INCLUDE_EXAMPLES=OFF \
 		-D LLVM_INCLUDE_TESTS=OFF \
@@ -51,6 +53,7 @@ build() {
 		-D LLVM_APPEND_VC_REV=OFF \
 		-Wno-dev
 
+	cmake --build build --target LLVM
 	cmake --build build
 	DESTDIR=$PKG cmake --install build
 
