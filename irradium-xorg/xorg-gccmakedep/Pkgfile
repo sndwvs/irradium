@@ -5,7 +5,7 @@
 name=xorg-gccmakedep
 version=1.0.4
 release=1
-source=(https://www.x.org/releases/individual/util/gccmakedep-$version.tar.bz2)
+source=(https://www.x.org/releases/individual/util/gccmakedep-$version.tar.xz)
 
 build() {
 	cd gccmakedep-$version
