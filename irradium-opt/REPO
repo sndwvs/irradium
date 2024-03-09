@@ -81,7 +81,7 @@ f:eb00bcd1d5195c0845aede171546e142:lightdm-gtk-greeter/Pkgfile
 f:a94d0de7de8181e126056f377531e2b9:lightdm-gtk-greeter/post-install
 f:d54a82a1ba48ee0aa2f6c300bec91a46:llvm/.footprint
 f:2b9284717ed8efd6d01b3510fd08b4a0:llvm/.signature
-f:604aadff1c6b6ebddedbb2fc9528cef9:llvm/Pkgfile
+f:993d319ca56d369d7ffba003f382d9cb:llvm/Pkgfile
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
@@ -116,13 +116,14 @@ f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
 f:516776fe66e77b0a15bf6dee857d0c1f:qt6-base/qtbase-6.5.3-xkbcommon160.patch
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:dfcc8732b4d19467a2f70a8a2b983bda:rust/.signature
+f:017b3e56b57ec6926488b222f054e81d:rust/.signature
 f:5a0b11e0bc8abe2369f83cde6ea265a9:rust/0001-bootstrap-Change-libexec-dir.patch
 f:968d7afec16f7693b5e00daaf3871d5b:rust/0002-compiler-Change-LLVM-targets.patch
 f:d625886fd507b8b69686819d9a4684f4:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
-f:60146fd38067426eb41e539e1c0d2794:rust/.footprint
-f:01fcd5e1674ce2408df3a15939e39b98:rust/Pkgfile
+f:2d7676d7f9791a67f3b4ca423c48a39a:rust/.footprint
+f:be468fa2fd3b49124ad9eba3e4565f1d:rust/Pkgfile
+f:31d1e95c67fbcf60d69d297046d9ccda:rust/llvm18.patch
 f:a23a8aac5a57faa325cbaf32d2f261c8:slim/.footprint
 f:9654119211dec3b51f819b7cc34380ac:slim/.signature
 f:6bde2566611eb08c5b2d304416898527:slim/Pkgfile

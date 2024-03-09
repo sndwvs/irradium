@@ -9,7 +9,7 @@ version=1.76.0
 _date=2023-12-28
 _rustc=1.75.0
 _cargo=$_rustc
-release=1
+release=3
 
 ARCH=$(uname -m)
 BABI="gnu"
@@ -30,6 +30,7 @@ source=(https://static.rust-lang.org/dist/${name}c-$version-src.tar.xz
 	https://static.rust-lang.org/dist/$_date/rust-std-$_rustc-$TARCH-unknown-linux-gnu.tar.xz
 	https://static.rust-lang.org/dist/$_date/rustc-$_rustc-$TARCH-unknown-linux-gnu.tar.xz
 	https://static.rust-lang.org/dist/$_date/cargo-$_cargo-$TARCH-unknown-linux-gnu.tar.xz
+	llvm18.patch
 	0001-bootstrap-Change-libexec-dir.patch
 	0002-compiler-Change-LLVM-targets.patch
 	0004-compiler-Use-wasm-ld-for-wasm-targets.patch)
@@ -77,6 +78,8 @@ build() {
 
 	cd "${name}c-$version-src"
 
+	patch -p1 -i $SRC/llvm18.patch
+
 	patch -p1 -i $SRC/0001-bootstrap-Change-libexec-dir.patch
 
 	# Use our *-pc-linux-gnu targets, making LTO with clang simpler
@@ -85,7 +88,7 @@ build() {
 	patch -p1 -i $SRC/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 
 cat <<- EOF > $SRC/config.toml
-	change-id = 116881
+	change-id = 118703
 
 	[llvm]
 	ninja = true
@@ -108,7 +111,7 @@ cat <<- EOF > $SRC/config.toml
 	# remap-debuginfo = true
 	# jemalloc = false
 
-	description = "iradium"
+	description = "irradium"
 	channel = "stable"
 	parallel-compiler = true
 	rpath = false
@@ -147,8 +150,7 @@ cat <<- EOF > $SRC/config.toml
 EOF
 
 	if [ -e '/usr/bin/rustc' ]; then
-		if ! /usr/bin/ldd /usr/bin/rustc | grep -q -E '.*libLLVM.*.so => not found' && \
-		! /usr/bin/ldd /usr/bin/cargo | grep -q -E 'libgit2.so.* => not found'; then
+		if ! /usr/bin/ldd /usr/bin/rustc | grep -q -E '.*not found'; then
 			sed	-e 's|@CARGO@|cargo = "/usr/bin/cargo"|' \
 				-e 's|@RUST@|rustc = "/usr/bin/rustc"|' \
 				-e 's|@RUSTFMT@|rustfmt = "/usr/bin/rustfmt"|' \
