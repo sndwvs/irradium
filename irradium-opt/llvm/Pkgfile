@@ -5,8 +5,7 @@
 # Optional: lld
 
 name=llvm
-version=18.1.0
-
+version=18.1.1
 release=1
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-$version.src.tar.xz
 	https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/cmake-$version.src.tar.xz
