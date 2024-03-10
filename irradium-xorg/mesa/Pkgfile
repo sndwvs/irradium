@@ -35,7 +35,8 @@ source=(https://archive.mesa3d.org/$name-$version.tar.xz
     patches/0024-0026-panfrost-Add-G310-to-the-list-of-supported-GPUs.patch
     patches/0025-0027-panfrost-Add-an-entry-for-panthor-in-the-renderonly_.patch
     patches/0026-0028-panfrost-Add-the-gallium-glue-to-get-panfrost-loaded.patch
-    patches/0027-panthor-fix-panthor_kmod_bo_export-return.patch)
+    patches/0027-panthor-fix-panthor_kmod_bo_export-return.patch
+    patches/fix-check-version-18.1.1-llvmspirvlib.patch)
 
 build() {
 	prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'

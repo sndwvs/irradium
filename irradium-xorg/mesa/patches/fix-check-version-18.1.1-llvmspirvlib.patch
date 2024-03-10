@@ -1,0 +1,13 @@
+--- a/meson.build	2024-03-10 01:53:32.092139249 +0000
++++ b/meson.build	2024-03-10 01:54:37.215479126 +0000
+@@ -1836,8 +1836,8 @@ if with_opencl_spirv
+ 
+   _llvmspirvlib_version = [
+     _llvmspirvlib_min_version,
+-    '>= @0@.@1@'.format(chosen_llvm_version_major, chosen_llvm_version_minor),
+-    '< @0@.@1@'.format(chosen_llvm_version_major, chosen_llvm_version_minor + 1) ]
++    '>= 18.1.0'.format(chosen_llvm_version_major, chosen_llvm_version_minor),
++    '< 18.2.0'.format(chosen_llvm_version_major, chosen_llvm_version_minor + 1) ]
+ 
+   dep_spirv_tools = dependency('SPIRV-Tools', required : true, version : '>= 2018.0')
+   # LLVMSPIRVLib is available at https://github.com/KhronosGroup/SPIRV-LLVM-Translator
