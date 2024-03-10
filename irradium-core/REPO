@@ -66,7 +66,7 @@ f:7b8e983ce515db7bebaa8bf62ed97b8a:gdbm/Pkgfile
 f:3729c5303163f2968af373d64f493107:glibc/.footprint
 f:5d37085c6a7714fcc5443f05a07a873d:glibc/.nostrip
 f:4154c426c73d51de4a1d2980b48a16e4:glibc/.signature
-f:388d2dbb534f6e1aea005998f5ab702e:glibc/Pkgfile
+f:369f123812c704f6fbbd4fa2de0c0ef4:glibc/Pkgfile
 f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
 f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
 f:f7fefce570a3c776e26e778c5e401490:glibc/ld.so.conf
@@ -75,7 +75,7 @@ f:518de5e52f9166e58ed613a0d636e774:glibc/locale.gen.in
 f:75931315bf9bc9be15a5e25e4ddd5f0d:glibc/nsswitch.conf
 f:8ade3a1b3e11426f6c070daa3906c6f7:glibc/post-install
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
-f:5a818501fe1f4fbe3b38752cc9221721:glibc/glibc-2.36-8.patch
+f:7f2ac95e3220ebfa0222095a2f6ca0ba:glibc/glibc-2.36-9.patch
 f:cb16f26de91da8792221c4bb295a5329:kbd/.footprint
 f:3b3c8c8ea6bacaff4613fd355be92398:kbd/.signature
 f:e7e7ee3934a07654f97ae96aae2cf72e:kbd/Pkgfile
