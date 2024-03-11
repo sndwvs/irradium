@@ -4,14 +4,11 @@
 # Depends on: argon2 botan curl hicolor-icon-theme libgcrypt libsodium libxtst qrencode qt5 quazip
 
 name=keepassxc
-version=2.7.6
-release=2
-source=(https://github.com/keepassxreboot/${name}/releases/download/${version}/${name}-${version}-src.tar.xz
-        https://github.com/keepassxreboot/keepassxc/commit/cc0530ba.patch)
+version=2.7.7
+release=1
+source=(https://github.com/keepassxreboot/${name}/releases/download/${version}/${name}-${version}-src.tar.xz)
 
 build() {
-  # Fix build with botan 3.3
-  patch -d $name-$version -p1 < $SRC/cc0530ba.patch
 
   cmake -S $name-$version -B build \
     -DCMAKE_INSTALL_PREFIX=/usr \
@@ -31,6 +28,7 @@ build() {
     -DWITH_XC_UPDATECHECK=ON \
     -DWITH_XC_DOCS=OFF \
     -Wno-dev
-cmake --build build
-DESTDIR=$PKG cmake --install build
+
+    cmake --build build
+    DESTDIR=$PKG cmake --install build
 }
