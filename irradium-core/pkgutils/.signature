@@ -1,8 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-core.pub
 RWQAwxvZoACtGMa6mQ+8aVdvAdnaL0Txg5meQCt1NpDBsBBXZKqL99ZmgO38fmKt50gExfy7Aqfb/EaYmQhiSANMxreRVMz4/Ac=
 SHA256 (Pkgfile) = c6196b3de7cc518394ab6303d6c06eb90a166fea3979ac4a2a71c79fa60a6fc1
-SHA256 (.footprint.riscv64) = 7d143f18f63bba5569d729eefd0d0f04ae4b0539f8bd71f9cfd6955b9e7c639d
-SHA256 (.footprint.aarch64) = 7d143f18f63bba5569d729eefd0d0f04ae4b0539f8bd71f9cfd6955b9e7c639d
+SHA256 (.footprint) = 7d143f18f63bba5569d729eefd0d0f04ae4b0539f8bd71f9cfd6955b9e7c639d
 SHA256 (pkgutils-5.40.10.tar.xz) = 2d86335be3d0452dcc7ae5f568e7296cd7ea80117f57646d15420a6dc192f174
 SHA256 (pkgmk.conf) = b9963780a196d4e1a860023e650a13c0d42d84a36b2183a480e4ae0d3ad3d568
 SHA256 (pkgmk-add-support-with-footprint-riscv64-aarch64.patch) = 5d93450fea51133f5957e6bf6c9a7f5cd44c6b32b5568e3e61a2aac55ecb9150
