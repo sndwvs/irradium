@@ -37,7 +37,8 @@ f:332b2d9156cf016a49044b44674199ec:mesa/patches/0025-0027-panfrost-Add-an-entry-
 f:40f71bec442fcd5e639c3ad6bcca8f84:mesa/patches/0026-0028-panfrost-Add-the-gallium-glue-to-get-panfrost-loaded.patch
 f:6ac094c00e08ba9e8fb5bd6903d5a769:mesa/patches/0027-panthor-fix-panthor_kmod_bo_export-return.patch
 f:36474c54efb0184354d001afe77ce254:mesa/patches/fix-check-version-18.1.1-llvmspirvlib.patch
-f:819317c583bdc557272bbc228a7ed2b3:mesa/Pkgfile
+f:183264685747cbc4e40fb7e65269841c:mesa/patches/vulkan-dispatch-table-add-an-uncompacted-version.patch
+f:51bc736181d40b8084ec3cec72bec07a:mesa/Pkgfile
 f:800a15cfc872acf9999bce55b30491a8:mtdev/.footprint
 f:3ac078834db014ccf66b1425274e9f53:mtdev/.signature
 f:3124e82d69af0ee140864b85bf904a25:mtdev/Pkgfile
