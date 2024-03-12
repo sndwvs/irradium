@@ -15,6 +15,7 @@ d:pkgconf
 d:pkgutils
 d:ports
 d:prt-get
+d:rc
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
@@ -128,3 +129,15 @@ f:1e68ce5a010624ae6f5c305937163e62:prt-get/fsearch-footprint-add-multi-arch-risc
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
 f:a54c659c287b66d8d0b5e17fdd9246b9:prt-get/prt-get.conf
 f:d32239bcb673463ab874e80d47fae504:COPYING
+f:db05a461d6e76ee8d865d1aaa7ef75d3:rc/.footprint
+f:21806bfb88ec4c3c978c6171a645af1b:rc/.signature
+f:75633e844789eb7559ad6c6afa3fe50c:rc/Pkgfile
+f:0802ffb5c86fdfe58cb792d4b6f6f79d:rc/inittab
+f:5c5c94f219585b38ca58ca69465c38cb:rc/rc
+f:670f547fca904321c968c61a73714a63:rc/rc.conf
+f:49624df1d0aa300d4ca7ce4c58ceb43f:rc/rc.fix
+f:d1be35927946756c68242f29c16ee983:rc/rc.local
+f:394d5cff98ab59fd1a0ec64fe79292cb:rc/rc.modules
+f:84045450ba3710bd4569508a82a6a9d3:rc/rc.multi
+f:a46c238c63564a289318b771f81e602d:rc/rc.shutdown
+f:cf1f0d9f6d467e2c2efa689a90413ef6:rc/rc.single
