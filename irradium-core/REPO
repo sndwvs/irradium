@@ -131,11 +131,11 @@ f:a54c659c287b66d8d0b5e17fdd9246b9:prt-get/prt-get.conf
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:db05a461d6e76ee8d865d1aaa7ef75d3:rc/.footprint
 f:21806bfb88ec4c3c978c6171a645af1b:rc/.signature
-f:75633e844789eb7559ad6c6afa3fe50c:rc/Pkgfile
+f:3ef6941ffa1006e5aa49bacc1e59eebb:rc/Pkgfile
 f:0802ffb5c86fdfe58cb792d4b6f6f79d:rc/inittab
 f:5c5c94f219585b38ca58ca69465c38cb:rc/rc
 f:670f547fca904321c968c61a73714a63:rc/rc.conf
-f:49624df1d0aa300d4ca7ce4c58ceb43f:rc/rc.fix
+f:b418036c2cf8d99d2a236872edf24697:rc/rc.fix
 f:d1be35927946756c68242f29c16ee983:rc/rc.local
 f:394d5cff98ab59fd1a0ec64fe79292cb:rc/rc.modules
 f:84045450ba3710bd4569508a82a6a9d3:rc/rc.multi
