@@ -4,8 +4,8 @@
 # Depends on: gtk3 lightdm exo Greybird xfce4-dev-tools
 
 name=lightdm-gtk-greeter
-version=2.0.8
-release=3
+version=2.0.9
+release=1
 source=(https://github.com/Xubuntu/$name/releases/download/$name-$version/$name-$version.tar.gz)
 
 build(){

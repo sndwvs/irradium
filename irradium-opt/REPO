@@ -77,7 +77,7 @@ f:2a7326f4de1d949b8c96749b62cc5021:lightdm/lightdm.rules
 f:54ef775d0530ec0cf622b0ffbd038205:lightdm/pre-install
 f:4aa5b87a94f3507f16f9ac3838a4a54e:lightdm-gtk-greeter/.footprint
 f:bb233b17996d10bd9c3c282e05b95467:lightdm-gtk-greeter/.signature
-f:c3b550cd59e4d64a5e48a627745d2a2f:lightdm-gtk-greeter/Pkgfile
+f:6ebebc726135f1448067c1b553b0782c:lightdm-gtk-greeter/Pkgfile
 f:8588e227a9e80787b8c4ed61b123a03a:lightdm-gtk-greeter/post-install
 f:d54a82a1ba48ee0aa2f6c300bec91a46:llvm/.footprint
 f:2b9284717ed8efd6d01b3510fd08b4a0:llvm/.signature
