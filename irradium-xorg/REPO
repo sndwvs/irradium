@@ -39,7 +39,7 @@ f:c3afb38ffe144feab75285714b58764f:mesa/patches/0027-0026-panfrost-Add-G310-to-t
 f:332b2d9156cf016a49044b44674199ec:mesa/patches/0028-0027-panfrost-Add-an-entry-for-panthor-in-the-renderonly_.patch
 f:40f71bec442fcd5e639c3ad6bcca8f84:mesa/patches/0029-0028-panfrost-Add-the-gallium-glue-to-get-panfrost-loaded.patch
 f:6ac094c00e08ba9e8fb5bd6903d5a769:mesa/patches/0030-panthor-fix-panthor_kmod_bo_export-return.patch
-f:169c4a29b99301125700338dfa40188a:mesa/Pkgfile
+f:53d00b13e62200f90915cc369c04c6f1:mesa/Pkgfile
 f:800a15cfc872acf9999bce55b30491a8:mtdev/.footprint
 f:3ac078834db014ccf66b1425274e9f53:mtdev/.signature
 f:3124e82d69af0ee140864b85bf904a25:mtdev/Pkgfile
