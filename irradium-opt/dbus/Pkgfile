@@ -1,0 +1,55 @@
+# Description: A message bus system
+# URL: https://freedesktop.org/wiki/Software/dbus
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Depends on: expat
+
+name=dbus
+version=1.14.10
+release=2
+source=(https://dbus.freedesktop.org/releases/dbus/$name-$version.tar.xz
+	rc.dbus 30-dbus.launch
+	dbus-1.12.x-allow_root_globally.diff
+	dbus-enable-elogind.patch
+	configure.ac.patch)
+
+build() {
+	cd $name-$version
+
+	patch -p1 -i $SRC/configure.ac.patch
+	patch -p1 -i $SRC/dbus-1.12.x-allow_root_globally.diff
+	patch -p1 -i $SRC/dbus-enable-elogind.patch
+
+	NOCONFIGURE=1 ./autogen.sh
+
+	./configure \
+		--prefix=/usr \
+		--with-dbus-daemondir=/usr/sbin \
+		--localstatedir=/var \
+		--runstatedir=/run \
+		--sysconfdir=/etc \
+		--libexecdir=/usr/lib/dbus \
+		--with-dbus-user=messagebus \
+		--disable-apparmor \
+		--disable-selinux \
+		--enable-shared=yes \
+		--enable-static=no \
+		--enable-inotify \
+		--enable-user-session \
+		--enable-x11-autolaunch \
+		--enable-elogind \
+		--disable-systemd \
+		--without-systemdsystemunitdir \
+		--with-system-pid-file=/run/dbus/pid \
+		--with-system-socket=/run/dbus/system_bus_socket \
+		--with-console-auth-dir=/var/run/console
+
+	make
+	make DESTDIR=$PKG install
+
+	install -D -m 0755 $SRC/rc.dbus $PKG/etc/rc.d/dbus
+	install -D -m 0755 $SRC/30-dbus.launch \
+		$PKG/etc/X11/xinit/xinitrc.d/30-dbus.launch.sh
+
+	rm -r $PKG/usr/share/doc $PKG/var/run
+	rm -rf $PKG/usr/share/xml
+}

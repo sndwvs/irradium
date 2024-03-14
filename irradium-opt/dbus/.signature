@@ -1,0 +1,10 @@
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCWZLB4HcVNZraTADlPxzOT/Q1RQdgdxAYtulFsFq82DNA7e37gTtB491Qp5nJP2npWmdvRag7t6GXzbEXim1FQY=
+SHA256 (Pkgfile) = 9280b818ee6aa8c14f25c1b7afcba7349dd6a72657949088155b76cdcaaff137
+SHA256 (.footprint) = 239f39c443493d433d99a58a1d3683c57af2f77d460d75e45c47d3a1f90b702e
+SHA256 (dbus-1.14.10.tar.xz) = ba1f21d2bd9d339da2d4aa8780c09df32fea87998b73da24f49ab9df1e36a50f
+SHA256 (rc.dbus) = 6d67e387a8b3296f7c5b88cbe5e5c4ec113ce9b36abc8da4b733aae624a6a6d6
+SHA256 (30-dbus.launch) = 18ea1e79698bb876f7f5fb298daae5ff6cd17c56764b087f8da2e1d5809af37a
+SHA256 (dbus-1.12.x-allow_root_globally.diff) = 82b725bd31c9fb5eccb6a0af1a22907c51dff503324f5d33bdec3cac3c1ef978
+SHA256 (dbus-enable-elogind.patch) = faffcaa5b295f49fcedeed2c9ece5298949096be3062fd99a4bf1a6ac3ad1ea0
+SHA256 (configure.ac.patch) = 8eed572e0baafd3f267f015cd621ae149e5644f551ae9f740c209eb39fcbd6c0

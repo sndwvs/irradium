@@ -1,0 +1,11 @@
+--- a/configure.ac	2023-09-01 14:30:58.000000000 +0000
++++ b/configure.ac	2024-03-14 18:15:40.150276625 +0000
+@@ -92,7 +92,7 @@ AS_IF([test "x$enable_developer" = "xyes
+ # The debugging check must run before the compiler tests. Other command-line
+ # options also use it to set their defaults. We disable debugging by default,
+ # except for developer builds.
+-AX_CHECK_ENABLE_DEBUG([$enable_developer])
++#AX_CHECK_ENABLE_DEBUG([$enable_developer])
+ 
+ AC_PROG_CC
+ AM_PROG_CC_C_O

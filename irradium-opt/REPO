@@ -27,6 +27,7 @@ d:strace
 d:yasm
 d:zip
 d:pkg-get
+d:dbus
 f:9fb2e0a0ce730c3da4bc8e3c4c63b482:cryptsetup/.footprint
 f:77ab1f5dfe58c1706dcbf46c53f0b581:cryptsetup/.signature
 f:618a3c920e80bb72eadae7b2ee58efe1:cryptsetup/Pkgfile
@@ -152,3 +153,12 @@ f:d32239bcb673463ab874e80d47fae504:COPYING
 f:66c5eeb1080ae2f78effbd9e19839269:pkg-get/Pkgfile
 f:a73670586b5705c6916dea01ced302eb:pkg-get/.signature
 f:f913a88593534bc507234e71f1da34f4:pkg-get/.footprint
+f:75eaa36a2c8a27447308827ef0178aa1:dbus/.footprint
+f:d3a2dbaff9192a1260dc4821328d0f86:dbus/.signature
+f:23bc5ff22fe4f9a208d65fbbfd489ad9:dbus/30-dbus.launch
+f:6afcb663b8cb68271e80357b98fcdc05:dbus/Pkgfile
+f:95412978f8aa3c9fc667543107086479:dbus/post-install
+f:c51f2067699af541512233bbdd48dec4:dbus/rc.dbus
+f:32c26cdf1e3062bebc1e015a6bbfce12:dbus/dbus-1.12.x-allow_root_globally.diff
+f:bf567c5e6650b609d4dd8e48efb18864:dbus/dbus-enable-elogind.patch
+f:27b3be348c02358c15a50649979a9305:dbus/configure.ac.patch
