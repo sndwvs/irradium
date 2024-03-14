@@ -32,6 +32,12 @@ get_package_version() {
     echo $version
 }
 
+get_package_release() {
+    local path="$1"
+    release=$(grep -e "^release" $path | rev | cut -d "=" -f 1 | rev)
+    echo $release
+}
+
 git_download() {
     local url="$1"
     local port="$2"
@@ -81,12 +87,16 @@ check_repos() {
             if [[ -e $irradium_pkgfile ]]; then
             irradium_package=$(get_package_name $irradium_pkgfile)
             irradium_version=$(get_package_version $irradium_pkgfile)
+            irradium_release=$(get_package_release $irradium_pkgfile)
                 if [[ -e $WORK_DIR/$port/$irradium_package/Pkgfile ]]; then
                     crux_pkg_path=$WORK_DIR/$port/$irradium_package/Pkgfile
                     crux_package=$(get_package_name $crux_pkg_path)
                     crux_version=$(get_package_version $crux_pkg_path)
+                    crux_release=$(get_package_release $crux_pkg_path)
                     if [[ $irradium_version != $crux_version ]]; then
                         printf "port: %-20s update package: %s   %-1s -> %+1s\n" irradium-${port} $irradium_package $irradium_version $crux_version
+                    elif [[ $irradium_version = $crux_version && $irradium_release < $crux_release ]]; then
+                        printf "port: %-20s rebuild package: %s   %-1s -> %+1s\n" irradium-${port} $irradium_package ${irradium_release} ${crux_release}
                     fi
                 fi
             fi
