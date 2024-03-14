@@ -138,7 +138,7 @@ f:05f8f2a2b239e4be3f647925df635138:keepassxc/Pkgfile
 f:ada212fbb7e606e4f24c1800ee7c30de:libatasmart/Pkgfile
 f:f603e28d540c1c053f73b6d7a00e5bf6:libcanberra/.footprint
 f:0a78c70bbcd031f03495f19aa5f29fd1:libcanberra/.signature
-f:7c21d490114fcf1fce4e855143fd47c6:libcanberra/Pkgfile
+f:eb30b04e68004ee571ced332628c8dc9:libcanberra/Pkgfile
 f:08babe5f17deae110d5fa163b55824bf:libcanberra/libcanberra-broadway-fix.patch
 f:a7d538151a41689f42a2a6b589ef0a3e:libcanberra/libcanberra-multi-backend.patch
 f:28d54e9ca30752945039a04e4aaacfc1:libcap-ng/Pkgfile

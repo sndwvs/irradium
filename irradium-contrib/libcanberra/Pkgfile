@@ -6,7 +6,7 @@
 
 name=libcanberra
 version=0.30
-release=3
+release=4
 source=(http://0pointer.de/lennart/projects/libcanberra/libcanberra-$version.tar.xz
   libcanberra-broadway-fix.patch libcanberra-multi-backend.patch)
 
