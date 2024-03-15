@@ -5,15 +5,17 @@
 
 name=rxvt-unicode
 version=9.31
-release=1
+release=2
 source=(http://dist.schmorp.de/$name/Attic/$name-$version.tar.bz2
-        perl.5.38.patch rxvt-unicode-256color.desktop rxvt-unicode.desktop
+        perl.5.38.patch rxvt.tmux.patch
+        rxvt-unicode-256color.desktop rxvt-unicode.desktop
         rxvt-unicode-tabbed.desktop)
 
 build() {
   cd $name-$version
 
   patch -Np1 -i $SRC/perl.5.38.patch
+  patch -Np1 -i $SRC/rxvt.tmux.patch
 
   run_configure() {
     ./configure \
