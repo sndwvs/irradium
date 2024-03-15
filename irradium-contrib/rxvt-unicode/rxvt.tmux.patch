@@ -4,8 +4,8 @@ as was in the query but doesn't correctly handle the multiple-char sequence
 used for 7-bit queries. Force to using ESC \ instead for now.
 
 Index: src/command.C
---- src/command.C.orig
-+++ src/command.C
+--- a/src/command.C.orig
++++ b/src/command.C
 @@ -3426,9 +3426,9 @@ rxvt_term::process_color_seq (int report, int color, c
          snprintf (rgba_str, sizeof (rgba_str), "rgb:%04x/%04x/%04x", c.r, c.g, c.b);
  

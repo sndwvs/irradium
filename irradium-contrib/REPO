@@ -52,7 +52,6 @@ d:qrencode
 d:qt5-webkit
 d:quiterss
 d:range-v3
-d:rxvt-unicode
 d:slang
 d:tcl
 d:telegram-desktop
@@ -70,6 +69,7 @@ d:yt-dlp
 d:mkinitramfs
 d:mtd-utils
 d:cpufrequtils
+d:rxvt-unicode
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -236,14 +236,6 @@ f:5cc9f626057a13975fdd59f6f62cb4b2:quiterss/.signature
 f:8ab5923738c8e9edcee518763a2d2489:quiterss/Pkgfile
 f:0ceeb0e0c8fd191e472a573b3296a9fa:quiterss/post-install
 f:252da7d909cee2088734e606b6e5d8a5:range-v3/Pkgfile
-f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
-f:efb7e0398bb1fac2b467b930014bb50d:rxvt-unicode/.signature
-f:4c0eec3ce8af41069a18e886af713545:rxvt-unicode/Pkgfile
-f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
-f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
-f:98de2ee8e027f60ddc227e7675758784:rxvt-unicode/rxvt-unicode-tabbed.desktop
-f:8c8a9766ca645badffffeba4364183d5:rxvt-unicode/rxvt-unicode.desktop
-f:efb1519c4ddc567e289571265449ba75:rxvt-unicode/rxvt.tmux.patch
 f:6b10d81e43c890e377dfadfe72dbfa3a:slang/.footprint
 f:01b4c8973511a76b596f5d110c488ff3:slang/.signature
 f:5ee1ede2ebe321245a17d2d2d75b5711:slang/Pkgfile
@@ -302,3 +294,11 @@ f:12f78a8be4175673a0ef34bf1c9feebf:cpufrequtils/rc.cpufreq
 f:2c39db2428d9a0f54d505d5c638793dc:cpufrequtils/cpufreq
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
+f:5d65521f74949efa5bb8d3a90e97d33c:rxvt-unicode/.signature
+f:4c0eec3ce8af41069a18e886af713545:rxvt-unicode/Pkgfile
+f:f5ab33ea05c3c026384dd1bda255438c:rxvt-unicode/rxvt.tmux.patch
+f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
+f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
+f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
+f:98de2ee8e027f60ddc227e7675758784:rxvt-unicode/rxvt-unicode-tabbed.desktop
+f:8c8a9766ca645badffffeba4364183d5:rxvt-unicode/rxvt-unicode.desktop
