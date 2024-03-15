@@ -94,7 +94,7 @@ f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:a32b4ead34d990bce04051e6b1c6192b:elogind/.footprint
 f:97de8b8d06ea560e7240ff839d53fa9e:elogind/.signature
 f:673e903cac381b0f975007165f78ab32:elogind/10-enable-elogind-power.rules.gz
-f:3d3f480d67c690ed88b6b8f36792a70d:elogind/Pkgfile
+f:522dc4fbe03b7c3643aff651e58014cb:elogind/Pkgfile
 f:5009a303246ecef5ea0aaa49952c52af:elogind/pre-install
 f:a9e7ccb4cc486e1967f58572f8a2060b:elogind/rc.elogind
 f:20fa672fbd47bb217b5b5050b09a4353:firefox/.footprint

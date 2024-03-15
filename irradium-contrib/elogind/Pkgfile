@@ -5,7 +5,7 @@
 
 name=elogind
 version=252.23
-release=1
+release=2
 source=(https://github.com/$name/$name/archive/v${version}/$name-$version.tar.gz
 	10-enable-elogind-power.rules.gz
 	rc.elogind)
@@ -59,8 +59,7 @@ build() {
 	find $PKG -type f -name ".keep_dir" -exec rm -f {} \;
 
 	# Add start/stop script
-	mkdir -p $PKG/etc/rc.d
-	install -m 0755 rc.elogind $PKG/etc/rc.d
+	install -Dm0755 rc.elogind $PKG/etc/rc.d/elogind
 
 	rm -rf $PKG/usr/share/{bash-completion,doc,locale,zsh}
 }
