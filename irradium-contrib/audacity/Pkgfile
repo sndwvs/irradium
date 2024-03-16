@@ -6,7 +6,7 @@
 
 name=audacity
 version=3.4.2
-release=1
+release=2
 source=(https://github.com/$name/$name/archive/refs/tags/Audacity-$version.tar.gz)
 
 build() {
@@ -24,9 +24,9 @@ build() {
     -D CMAKE_INSTALL_PREFIX=/usr \
     -D CMAKE_INSTALL_LIBDIR=lib \
     -D CMAKE_INSTALL_LIBEXECDIR=lib \
-    -D CMAKE_BUILD_TYPE=Release \
-    -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-    -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+    -D CMAKE_BUILD_TYPE=None \
+    -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG" \
+    -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG" \
     -D AUDACITY_BUILD_LEVEL=2 \
     -D audacity_conan_enabled=OFF \
     -D audacity_has_networking=OFF \
@@ -39,7 +39,8 @@ build() {
     -D audacity_use_expat=system \
     -D audacity_use_lame=system \
     -D audacity_use_ffmpeg=loaded \
-    -D audacity_use_wxwidgets=system
+    -D audacity_use_wxwidgets=system \
+    -W no-dev
 
   cmake --build build
   DESTDIR=$PKG cmake --install build
