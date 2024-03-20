@@ -138,7 +138,7 @@ f:8ecd5349b20cb16e9a830249d94b243a:startup-notification/.signature
 f:5e60010ec73d7ec223954bc4b4498a9a:startup-notification/Pkgfile
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
 f:d5fa73ffdbe8e2fce6f075b7c95d631c:strace/.signature
-f:870b5169ff740ea96b02737551dc4868:strace/Pkgfile
+f:30ee2d690dcb59eba850e1bfcaaea174:strace/Pkgfile
 f:161ceacea96c510d80f4509f8d7d5f65:yasm/.footprint
 f:52cb197f8e5f82bd3c4b94557050d69f:yasm/.signature
 f:88d28f3f201f0d41f7438a52c8d248c6:yasm/Pkgfile
