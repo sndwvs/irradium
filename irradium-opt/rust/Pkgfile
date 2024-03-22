@@ -5,11 +5,11 @@
 # Optional: ccache clang libgit2 lld polly sccache
 
 name=rust
-version=1.76.0
-_date=2023-12-28
-_rustc=1.75.0
+version=1.77.0
+_date=2024-02-08
+_rustc=1.76.0
 _cargo=$_rustc
-release=3
+release=1
 
 ARCH=$(uname -m)
 BABI="gnu"
@@ -30,9 +30,9 @@ source=(https://static.rust-lang.org/dist/${name}c-$version-src.tar.xz
 	https://static.rust-lang.org/dist/$_date/rust-std-$_rustc-$TARCH-unknown-linux-gnu.tar.xz
 	https://static.rust-lang.org/dist/$_date/rustc-$_rustc-$TARCH-unknown-linux-gnu.tar.xz
 	https://static.rust-lang.org/dist/$_date/cargo-$_cargo-$TARCH-unknown-linux-gnu.tar.xz
-	llvm18.patch
 	0001-bootstrap-Change-libexec-dir.patch
-	0002-compiler-Change-LLVM-targets.patch
+	0002-bootstrap-Change-bash-completion-dir.patch
+	0003-compiler-Change-LLVM-targets.patch
 	0004-compiler-Use-wasm-ld-for-wasm-targets.patch)
 
 unpack_source() {
@@ -78,13 +78,9 @@ build() {
 
 	cd "${name}c-$version-src"
 
-	patch -p1 -i $SRC/llvm18.patch
-
 	patch -p1 -i $SRC/0001-bootstrap-Change-libexec-dir.patch
-
-	# Use our *-pc-linux-gnu targets, making LTO with clang simpler
-	patch -p1 -i $SRC/0002-compiler-Change-LLVM-targets.patch
-
+	patch -p1 -i $SRC/0002-bootstrap-Change-bash-completion-dir.patch
+	patch -p1 -i $SRC/0003-compiler-Change-LLVM-targets.patch
 	patch -p1 -i $SRC/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 
 cat <<- EOF > $SRC/config.toml
@@ -183,10 +179,11 @@ EOF
 	mkdir "$PKGMK_SOURCE_DIR/rust" || true
 	export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
 
-	if [ -e '/usr/bin/sccache' ]; then
-		export RUSTC_WRAPPER='/usr/bin/sccache'
-		export SCCACHE_IDLE_TIMEOUT='1500'
-	fi
+	## sccache currently leads to errors
+	#if [ -e '/usr/bin/sccache' ]; then
+	#	export RUSTC_WRAPPER='/usr/bin/sccache'
+	#	export SCCACHE_IDLE_TIMEOUT='1500'
+	#fi
 
 	#error: field is never read: `id`
 	#   --> src/bootstrap/lib.rs:280:5
@@ -199,7 +196,7 @@ EOF
 	/usr/bin/python3 ./x.py build --config="${SRC}"/config.toml -j ${JOBS-1}
 	DESTDIR=$PKG /usr/bin/python3 ./x.py --config="${SRC}"/config.toml install
 
-	prt-get isinst bash-completion || rm -r $PKG/etc/bash_completion.d/
+	prt-get isinst bash-completion || rm -r $PKG/usr/share/bash-completion
 	prt-get isinst zsh || rm -r $PKG/usr/share/zsh
 
 	install -d $PKG/etc/revdep.d
@@ -208,7 +205,6 @@ EOF
 	# cleanup
 	rm -r $PKG/usr/share/doc
 	rm $PKG/usr/lib/rustlib/{components,manifest-rustc,rust-installer-version,uninstall.sh}
-	#rm -rf $PKG/usr/lib/rustlib/x86_64-unknown-linux-gnu/bin
 
 	# Remove analysis data for libs that weren't installed
 	local file lib
