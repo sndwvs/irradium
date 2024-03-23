@@ -75,9 +75,9 @@ f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
 f:aea3cadd39a0af94c3bac5185921d6ca:android-tools/.signature
 f:58c9841c1e8752ad00dbd08162c7b678:android-tools/Pkgfile
-f:59a90d8dd4929ac7f5c6f769099ebea0:audacity/Pkgfile
 f:471e1504d10410f8cef3abbe75de698a:audacity/.footprint
 f:54d084336c38ec0391119cc60330a06b:audacity/.signature
+f:59a90d8dd4929ac7f5c6f769099ebea0:audacity/Pkgfile
 f:d77c98a13898b632d860a2f4bc85d338:chromium/.footprint
 f:3a28a377f56db8344aa2e3b97a3b6aa2:chromium/.signature
 f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
@@ -103,7 +103,7 @@ f:20fa672fbd47bb217b5b5050b09a4353:firefox/.footprint
 f:9e3c3a1a039ccab441594571858b79e3:firefox/.signature
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
-f:9b766343c37df86b9f5682a4f6166c8f:firefox/Pkgfile
+f:d45367554a8b8a022165d4015dc79d73:firefox/Pkgfile
 f:ce8226895c981265c806fe855308406d:firefox/README
 f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
 f:022ca4e9eeac6d2090a0289ee01db9f4:firefox/icu-linebreak-classes.patch
