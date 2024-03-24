@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7gqbcktmcoaoskW0aDpSYuYbmhMWRQcpUnz521hcf2cpdevLKhHGa9Kk6Hufok39aAGHce/Yoq3uSy7s4yrz9wk=
+SHA256 (Pkgfile) = a35cb2c97fe3ae481a1a236b849cc611e37768db20dcc99bf2d35df806e1ff03
+SHA256 (.footprint) = ee6b03d9c2b0fa9c88c911ab26689f2128ca3b55a71cf9008037d032d43d26fd
+SHA256 (rkdeveloptool-1.1.0.tar.gz) = 6622e51e2f3ec1e7f28c86693a36631948f269b02eb013e014ad83f0e407adda

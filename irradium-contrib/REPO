@@ -70,6 +70,7 @@ d:mkinitramfs
 d:mtd-utils
 d:cpufrequtils
 d:rxvt-unicode
+d:rkdeveloptool
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -304,3 +305,6 @@ f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
 f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
 f:98de2ee8e027f60ddc227e7675758784:rxvt-unicode/rxvt-unicode-tabbed.desktop
 f:8c8a9766ca645badffffeba4364183d5:rxvt-unicode/rxvt-unicode.desktop
+f:b9575beb4eac90837a56e37d33c6885a:rkdeveloptool/Pkgfile
+f:338efa5286ab44dd604cb39fdce56c74:rkdeveloptool/.signature
+f:52ea3ad1a4c24a7663a3c6ed8aa98095:rkdeveloptool/.footprint

@@ -1,0 +1,19 @@
+# Description: opensource client for rockusb devices
+# URL: https://gitlab.com/pine64-org/quartz-bsp/rkdeveloptool
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: meson libusb eudev
+
+name=rkdeveloptool
+version=1.1.0
+release=1
+source=(https://gitlab.com/pine64-org/quartz-bsp/$name/-/archive/$version/$name-$version.tar.gz)
+
+build() {
+
+    meson setup $name-$version build \
+        --prefix /usr
+
+    meson compile -C build
+
+    DESTDIR=$PKG meson install --no-rebuild -C build
+}
