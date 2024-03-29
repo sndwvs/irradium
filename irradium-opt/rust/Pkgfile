@@ -5,7 +5,7 @@
 # Optional: ccache clang libgit2 lld polly sccache
 
 name=rust
-version=1.77.0
+version=1.77.1
 _date=2024-02-08
 _rustc=1.76.0
 _cargo=$_rustc
@@ -84,7 +84,7 @@ build() {
 	patch -p1 -i $SRC/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 
 cat <<- EOF > $SRC/config.toml
-	change-id = 118703
+	change-id = 102579
 
 	[llvm]
 	ninja = true
@@ -112,6 +112,7 @@ cat <<- EOF > $SRC/config.toml
 	parallel-compiler = true
 	rpath = false
 	optimize = true
+	codegen-backends = ["llvm"]
 	@LLD@
 
 	[build]
@@ -132,6 +133,7 @@ cat <<- EOF > $SRC/config.toml
 	vendor = true
 	locked-deps = true
 	python = "/usr/bin/python3"
+	optimized-compiler-builtins = true
 	@CARGO@
 	@RUST@
 	@RUSTFMT@
