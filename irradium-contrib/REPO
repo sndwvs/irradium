@@ -71,6 +71,7 @@ d:mtd-utils
 d:cpufrequtils
 d:rxvt-unicode
 d:rkdeveloptool
+d:shntool
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -308,3 +309,10 @@ f:8c8a9766ca645badffffeba4364183d5:rxvt-unicode/rxvt-unicode.desktop
 f:b9575beb4eac90837a56e37d33c6885a:rkdeveloptool/Pkgfile
 f:338efa5286ab44dd604cb39fdce56c74:rkdeveloptool/.signature
 f:52ea3ad1a4c24a7663a3c6ed8aa98095:rkdeveloptool/.footprint
+f:4265935ef1d684a4b49041278ffda7de:shntool/shntool-3.0.10-large-size.diff
+f:6f0d61ddbf8cbee5c0b51a99e987ddda:shntool/shntool-3.0.10-large-times.diff
+f:566b803bc3e30fb29158baf4ab0a6884:shntool/Pkgfile
+f:a3aa5b817cedb4226fa32340609a5995:shntool/debian_patches_950803.patch
+f:596398b13e02b243078320ebde4743fb:shntool/debian_patches_no-cdquality-check.patch
+f:3f2373714975c956b5ef730517c4c2ce:shntool/.footprint
+f:760bb707ead1768ea250b5606dd61282:shntool/.signature

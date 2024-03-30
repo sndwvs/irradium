@@ -1,0 +1,9 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7mIzyBsku+p9J9S/LzghDFaeCZUEwuggjioZTqOboGqaYX8Whz9gPC0D16QJ6ThnoKq9EnayfosWg+d9Wqp8QAY=
+SHA256 (Pkgfile) = c22868029f9a49071fa749836604ae842e0d603f4368f7f1be1536dd61efe18e
+SHA256 (.footprint) = f2aa7954924d2609d9770a84aa470d182d65645b7797d16be76d140190ac673d
+SHA256 (shntool-3.0.10.tar.gz) = 74302eac477ca08fb2b42b9f154cc870593aec8beab308676e4373a5e4ca2102
+SHA256 (debian_patches_950803.patch) = 2982c4c030409f2de035b7a833048692440ec9f3445b42326e7e386caa5c9e66
+SHA256 (shntool-3.0.10-large-size.diff) = 605f2030112e1ed6b68001d97a2ea839b00328995bbd795850fb2595f5797c68
+SHA256 (shntool-3.0.10-large-times.diff) = 418f9cc575e9d9964ee85819b5db7b38108d2b19a32459ad5e9b5c19d5296292
+SHA256 (debian_patches_no-cdquality-check.patch) = fc5b6b0138cb2ff492f074d8c58c1bd8f562d8dee2e536d45d9098bffc0f44e3
