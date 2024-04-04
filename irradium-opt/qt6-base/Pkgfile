@@ -1,11 +1,11 @@
 # Description: A cross-platform application and UI framework
 # URL: https://www.qt.io/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: at-spi2-core brotli dbus double-conversion harfbuzz libb2 libinput libtiff libxkbcommon mesa vulkan-headers xorg-xcb-util-cursor xorg-xcb-util-keysyms xorg-xcb-util-wm
-# Optional: gtk3 libproxy mariadb md4c pipewire postgresql pulseaudio tslib unixodbc xdg-utils xmlstarlet
+# Depends on: at-spi2-core harfbuzz libb2 libtiff libxkbcommon mesa xorg-xcb-util-cursor xorg-xcb-util-keysyms xorg-xcb-util-wm
+# Optional: brotli cups double-conversion gtk3 icu krb5 libinput libproxy mariadb md4c pipewire postgresql pulseaudio tslib unixodbc xdg-utils xmlstarlet vulkan-headers
 
 name=qt6-base
-version=6.6.3
+version=6.7.0
 release=1
 source=(https://download.qt.io/official_releases/qt/${version%.*}/$version/submodules/qtbase-everywhere-src-$version.tar.xz
   qt6-base-cflags.patch
@@ -42,6 +42,7 @@ build() {
     -D INSTALL_SYSCONFDIR=/etc/xdg \
     -D INSTALL_TRANSLATIONSDIR=share/qt6/translations \
     -D INSTALL_EXAMPLESDIR=share/doc/qt6/examples \
+    -D QT_FEATURE_no_direct_extern_access=ON \
     -D QT_FEATURE_openssl_linked=ON \
     -D QT_FEATURE_system_sqlite=ON \
     -D QT_FEATURE_vulkan=ON \
