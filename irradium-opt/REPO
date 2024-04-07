@@ -112,7 +112,7 @@ f:fe7af17c56fd33a78bf3fc8f81066902:qt5/qtbase-use-wayland-on-gnome.patch
 f:8720dded76addbcb4de849876d9402f2:qt5/qt-everywhere-opensource-src-5.15.12-kf5-1.patch
 f:8c12ae0258b1b3e579f067cbbe19e3d1:qt6-base/.footprint
 f:28a3f4829fe1c225fa510025f94431bf:qt6-base/.signature
-f:78d067a70b3a7d5f5a5017b78aa3ee8d:qt6-base/Pkgfile
+f:cf4def4fb237104e6ad802adfabdc519:qt6-base/Pkgfile
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
 f:516776fe66e77b0a15bf6dee857d0c1f:qt6-base/qtbase-6.5.3-xkbcommon160.patch

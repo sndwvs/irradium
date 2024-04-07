@@ -19,7 +19,18 @@ build() {
 
   prt-get isinst ccache && PKGMK_QT6+=' -D QT_USE_CCACHE=ON' && PATH="$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
 
-  [[ -e /usr/include/xkbcommon/xkbcommon-x11.h ]] && PKGMK_QT6+=' -D QT_FEATURE_xcb=ON -D QT_FEATURE_xkbcommon_x11=ON' || PKGMK_QT6+=' -D QT_FEATURE_xcb=OFF -D QT_FEATURE_xkbcommon_x11=OFF'
+  if [[ -e /usr/include/xkbcommon/xkbcommon-x11.h ]]; then
+    PKGMK_QT6+=' -D QT_FEATURE_xcb=ON -D QT_FEATURE_xkbcommon_x11=ON'
+  else
+    PKGMK_QT6+=' -D QT_FEATURE_xcb=OFF -D QT_FEATURE_xkbcommon_x11=OFF'
+    printf '\e[33m%s\e[m\n' "
+Your currently installed version of opt/libxkbcommon is not providing
+support for the x11-platform.
+This is not mandatory at this point, but depending on your needs, you may
+want to install xorg/xkeyboard-config, rebuild opt/libxkbcommon and then
+build opt/qt6-base again.
+"
+  fi
 
   cmake -S qtbase-everywhere-src-$version -B build -G Ninja $PKGMK_QT6 \
     -D BUILD_SHARED_LIBS=ON \
