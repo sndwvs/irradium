@@ -121,14 +121,13 @@ f:0d1f1fde50a9bd743d9cac6b235f038c:ports/opt.pub
 f:441330fe7eb6970873d287b0d38f83f6:ports/opt.rsync
 f:69927e5d0ae5dc3455faeaac916c4db2:ports/xorg.pub
 f:d57279f5bd8b1b705b7be4f6866c9ced:ports/xorg.rsync
-f:077fea960d8a490412eed744ce9bcc40:prt-get/.footprint.aarch64
-f:077fea960d8a490412eed744ce9bcc40:prt-get/.footprint.riscv64
-f:a498e055973d31e7911c424d9f8cd493:prt-get/.signature
+f:a13e62be3f90588f8b825e7a76fbef42:prt-get/.signature
 f:bbbf47646dcdba0735c7c85755baa48e:prt-get/Pkgfile
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:1e68ce5a010624ae6f5c305937163e62:prt-get/fsearch-footprint-add-multi-arch-riscv64-aarch64.patch
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
 f:a54c659c287b66d8d0b5e17fdd9246b9:prt-get/prt-get.conf
+f:077fea960d8a490412eed744ce9bcc40:prt-get/.footprint
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:db05a461d6e76ee8d865d1aaa7ef75d3:rc/.footprint
 f:1a66081b50861cf0fe5001d3aacee72b:rc/.signature
