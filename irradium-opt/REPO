@@ -121,7 +121,7 @@ f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:017b3e56b57ec6926488b222f054e81d:rust/.signature
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:2d7676d7f9791a67f3b4ca423c48a39a:rust/.footprint
-f:c82abc7e3c54d47686bfa12e86d4fddc:rust/Pkgfile
+f:82a685641a8ebbe3754240bd876267cc:rust/Pkgfile
 f:dcfd680eda613a2ed3b17ead14ba54ad:rust/0001-bootstrap-Change-libexec-dir.patch
 f:e417cb0840a885906bcfca9f3dbbd1fc:rust/0002-bootstrap-Change-bash-completion-dir.patch
 f:7bdf4a4abd582478ce47b17cae53bb0c:rust/0003-compiler-Change-LLVM-targets.patch
