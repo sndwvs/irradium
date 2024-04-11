@@ -5,7 +5,7 @@
 # Optional: directx-headers glslang libclc libunwind libva libvdpau lm_sensors rust-bindgen spirv-llvm-translator vulkan-loader wayland-protocols
 
 name=mesa
-version=24.0.4
+version=24.0.5
 release=1
 source=(https://archive.mesa3d.org/$name-$version.tar.xz
     patches/0000-mesa-20.1.1-fix-opencl.patch
