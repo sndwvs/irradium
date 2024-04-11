@@ -1,0 +1,27 @@
+# Description: PPP over Ethernet client (for xDSL support)
+# URL: https://dianne.skoll.ca/projects/rp-pppoe/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: ppp linux-headers
+
+name=rp-pppoe
+version=4.0
+release=1
+source=(https://salsa.debian.org/dskoll/$name/-/archive/$version/$name-$version.tar.gz
+        rc.rp-pppoe)
+
+build() {
+  cd $name-$version/src
+
+  # strlcpy
+  CFLAGS="$CFLAGS -D_BSD_SOURCE" \
+  ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --mandir=/usr/share/man \
+        --infodir=/usr/share/info \
+        --enable-plugin=/usr/include/pppd
+
+  make all
+  make DESTDIR=$PKG install
+  install -m755 -D $SRC/rc.$name $PKG/etc/rc.d/$name
+}
