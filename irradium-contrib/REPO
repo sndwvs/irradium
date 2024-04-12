@@ -73,6 +73,7 @@ d:rxvt-unicode
 d:rkdeveloptool
 d:shntool
 d:rp-pppoe
+d:pkgtools
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -320,3 +321,7 @@ f:3f2373714975c956b5ef730517c4c2ce:shntool/.footprint
 f:760bb707ead1768ea250b5606dd61282:shntool/.signature
 f:3af74baf8ecfce8f7397dab445b785e1:rp-pppoe/Pkgfile
 f:4f2514bfd07a31a991ad8720c381e532:rp-pppoe/rc.rp-pppoe
+f:3129b1af7f0f5fb986dfdafc3507dace:pkgtools/Pkgfile
+f:ea29b259b6fda2cfaaae1e8ab1239cf0:pkgtools/post-install
+f:c87e34bbbedfc0c6540be5f39e7179cd:pkgtools/.signature
+f:c3d31fc159c031b509e3b70466661896:pkgtools/.footprint

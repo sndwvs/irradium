@@ -1,0 +1,56 @@
+# Description: the slackware package maintenance system
+# URL: https://docs.slackware.com/slackware:package_management
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: bash
+
+name=pkgtools
+version=15.1
+release=1
+source=(https://gitlab.com/sndwvs/$name/-/archive/$version/$name-$version.tar.bz2)
+
+build() {
+    cd $name-$version
+
+    # Install Slackware script manpages:
+    mkdir -p $PKG/usr/share/man/man8
+    cp -a manpages/* $PKG/usr/share/man/man8/
+
+    # Install internationalized manpages from
+    # http://slint.fr/forSlackware/man_l10n/pkgtools/
+    ( cp -a manpages-l10n $PKG/usr/share/man/
+      cd $PKG/usr/share/man
+      for page in manpages-l10n/* ; do
+        manpage=$(basename $page)
+        mkdir -p ${manpage%%.*}/man8
+        mv $page ${manpage%%.*}/man8/${page#*.}.8
+      done
+      rmdir manpages-l10n
+    )
+
+    # Install Slackware scripts:
+    ( cd scripts
+      # Install the core Slackware package tools:
+      mkdir -p $PKG/sbin
+      # Don't include makebootdisk...  it's useless since a kernel won't fit on a
+      # floppy disk, and nobody uses floppies any more anyway.
+      for file in explodepkg installpkg makepkg pkgdiff pkgtool removepkg upgradepkg ; do
+        cp -a $file $PKG/sbin
+      done
+      chown root:root $PKG/sbin/*
+      chmod 755 $PKG/sbin/*
+      # These scripts are used during the installation:
+      mkdir -p $PKG/var/lib/pkgtools/setup/tmp
+      chmod 700 $PKG/var/lib/pkgtools/setup/tmp
+      for file in setup.* ; do
+        cp -a $file $PKG/var/lib/pkgtools/setup
+      done
+      chown root:root $PKG/var/lib/pkgtools/setup/setup.*
+      chmod 755 $PKG/var/lib/pkgtools/setup/setup.*
+      # Add a link for makebootstick:
+      ( cd $PKG/sbin ; ln -sf ../var/lib/pkgtools/setup/setup.80.make-bootdisk makebootstick )
+    )
+
+    # Create the base directories (not really necessary, but doesn't hurt):
+    mkdir -p $PKG/var/lib/pkgtools/{packages,scripts,douninst.sh}
+    mkdir -p $PKG/var/log/pkgtools/{removed_packages,removed_scripts}
+}
