@@ -27,8 +27,8 @@ build() {
 	meson setup $name-$version build \
 		--buildtype release \
 		--prefix /usr \
-		--libdir /usr/lib \
-		--libexecdir /usr/lib/$name \
+		--libdir /lib \
+		--libexecdir /lib/$name \
 		-D pkgconfiglibdir=/usr/lib/pkgconfig \
 		-D pamlibdir=/lib/security \
 		-D udevrulesdir="/lib/udev/rules.d" \
