@@ -29,7 +29,8 @@ build() {
 		--prefix /usr \
 		--libdir /usr/lib \
 		--libexecdir /usr/lib/$name \
-		-D pkgconfiglibdir="/usr/lib/pkgconfig" \
+		-D pkgconfiglibdir=/usr/lib/pkgconfig \
+		-D pamlibdir=/lib/security \
 		-D udevrulesdir="/lib/udev/rules.d" \
 		-D mandir="/usr/share/man" \
 		-D man=enabled \
