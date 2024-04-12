@@ -29,7 +29,8 @@ build() {
 		--prefix /usr \
 		--libdir /usr/lib \
 		--libexecdir /usr/lib/$name \
-		-D pkgconfiglibdir="/usr/lib/pkgconfig" \
+		-D pkgconfiglibdir=/usr/lib/pkgconfig \
+		-D pamlibdir=/lib/security \
 		-D udevrulesdir="/lib/udev/rules.d" \
 		-D mandir="/usr/share/man" \
 		-D man=enabled \
@@ -53,10 +54,10 @@ build() {
 
 	DESTDIR=$PKG ninja -C build install
 
-	# Create symlinks for elogind binaries to /usr/bin/:
-	mkdir -p $PKG/usr/bin
-	ln -sf /bin/elogind-inhibit $PKG/usr/bin/elogind-inhibit
-	ln -sf /bin/loginctl $PKG/usr/bin/loginctl
+	# Create symlinks for elogind binaries to /bin/:
+	mkdir -p $PKG/bin
+	ln -sf /usr/bin/elogind-inhibit $PKG/bin/elogind-inhibit
+	ln -sf /usr/bin/loginctl $PKG/bin/loginctl
 
 	# Create supported dirs in /etc/elogind/ (local config)
 	mkdir -p $PKG/etc/elogind/logind.conf.d/ $PKG/etc/elogind/sleep.conf.d/

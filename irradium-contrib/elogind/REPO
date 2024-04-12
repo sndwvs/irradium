@@ -1,7 +1,0 @@
-f:a32b4ead34d990bce04051e6b1c6192b:.footprint
-f:97de8b8d06ea560e7240ff839d53fa9e:.signature
-f:673e903cac381b0f975007165f78ab32:10-enable-elogind-power.rules.gz
-f:bd8fa1cc13a859e88366b1c0f7ec09f0:Pkgfile
-f:5009a303246ecef5ea0aaa49952c52af:pre-install
-f:a9e7ccb4cc486e1967f58572f8a2060b:rc.elogind
-f:d79228bd03926d682b692726315bb97b:elogind.nobody.nogroup.99.99.diff
