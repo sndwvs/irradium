@@ -4,16 +4,25 @@
 # Depends on: meson ninja python3-jinja2 intltool libseccomp linux-pam glib acl libcap eudev gettext
 
 name=elogind
-version=252.23
-release=2
+version=255.4
+release=1
 source=(https://github.com/$name/$name/archive/v${version}/$name-$version.tar.gz
 	10-enable-elogind-power.rules.gz
 	rc.elogind)
 
 build() {
 
-	# Our nobody user has UIDNumber 99, not 65534:
-	sed -e "s/65534/99/g" -i $(grep -lr 65534 .)
+	# Once upon a time we were encouraged to go against long-standing UNIX
+	# traditions and use 99:99 for nobody:nogroup.
+	# This may have been a bad idea.
+	# But since to change this we'll have to dig through the system and make
+	# sure that nothing hardcodes 99:99, we'll leave it as-is for now.
+	# It's more than likely on the TODO list to change these back to
+	# 65534:65534, however.
+	# Meanwhile we'll at least change this from a sed to a patch.
+	# Always hated sed in these situations because the underlying code can change
+	# but sed will still happily scribble all over everything.
+	cat $SRC/elogind.nobody.nogroup.99.99.diff | patch -p1 --verbose || exit 1
 
 	meson setup $name-$version build \
 		--buildtype release \
