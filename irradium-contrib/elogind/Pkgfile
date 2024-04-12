@@ -39,8 +39,8 @@ build() {
 		-D pamlibdir=/lib/security \
 		-D pamconfdir=/etc/pam.d \
 		-D acl=enabled \
-		-D smack=disabled \
-		-D utmp=enabled \
+		-D smack=false \
+		-D utmp=true \
 		-D default-hierarchy=legacy \
 		-D cgroup-controller=elogind \
 		-D halt-path=/sbin/halt \
