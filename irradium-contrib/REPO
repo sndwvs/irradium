@@ -105,7 +105,7 @@ f:5009a303246ecef5ea0aaa49952c52af:elogind/pre-install
 f:a9e7ccb4cc486e1967f58572f8a2060b:elogind/rc.elogind
 f:d79228bd03926d682b692726315bb97b:elogind/elogind.nobody.nogroup.99.99.diff
 f:20fa672fbd47bb217b5b5050b09a4353:firefox/.footprint
-f:9e3c3a1a039ccab441594571858b79e3:firefox/.signature
+f:455adb33276f132a3fb3550dccb38d78:firefox/.signature
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:11f6b8d61ef2cf7af9ebcc8782006c3a:firefox/Pkgfile
