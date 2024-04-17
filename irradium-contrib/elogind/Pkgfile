@@ -8,6 +8,7 @@ version=255.4-r2
 release=1
 source=(https://github.com/$name/$name/archive/v${version}/$name-$version.tar.gz
 	10-enable-elogind-power.rules.gz
+	elogind.nobody.nogroup.99.99.diff
 	11-prefer-deep-suspend.patch
 	rc.elogind)
 
@@ -23,10 +24,10 @@ build() {
 	# Meanwhile we'll at least change this from a sed to a patch.
 	# Always hated sed in these situations because the underlying code can change
 	# but sed will still happily scribble all over everything.
-	cat $SRC/elogind.nobody.nogroup.99.99.diff | patch -p1 --verbose || exit 1
+	cat $SRC/elogind.nobody.nogroup.99.99.diff | patch -p1 --verbose -d $name-$version || exit 1
 
 	# Don't prefer s2idle, as it doesn't seem to work:
-	cat $SRC/11-prefer-deep-suspend.patch | patch -p1 --verbose || exit 1
+	cat $SRC/11-prefer-deep-suspend.patch | patch -p1 --verbose -d $name-$version || exit 1
 
 	meson setup $name-$version build \
 		--buildtype release \
