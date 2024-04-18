@@ -83,7 +83,7 @@ f:6ebebc726135f1448067c1b553b0782c:lightdm-gtk-greeter/Pkgfile
 f:8588e227a9e80787b8c4ed61b123a03a:lightdm-gtk-greeter/post-install
 f:d54a82a1ba48ee0aa2f6c300bec91a46:llvm/.footprint
 f:2b9284717ed8efd6d01b3510fd08b4a0:llvm/.signature
-f:fbe6bd41c3c10eb131f3ffb993c84c60:llvm/Pkgfile
+f:7b67a7a4d29985613b1fbab967a7975b:llvm/Pkgfile
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
