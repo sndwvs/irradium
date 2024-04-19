@@ -11,16 +11,7 @@ source=(https://github.com/yt-dlp/yt-dlp/archive/$version/$name-$version.tar.gz)
 build() {
   cd $name-$version
 
-  # adjust optional dependencies
-  sed -ri requirements.txt \
-  -e "/^(brotli.*|certifi|mutagen|pycryptodome|websockets)/d"
+  python3 -m build --wheel --no-isolation
 
-  # shells completions
-  sed -i 's|etc/bash_completion.d|share/bash-completion/completions|' setup.py
-  sed -i 's|etc/fish/completions|share/fish/completions|' setup.py
-
-  python3 setup.py build
-  make completions
-
-  python3 setup.py install --prefix=/usr --root=$PKG
+  python3 -m installer --destdir=$PKG dist/*.whl
 }
