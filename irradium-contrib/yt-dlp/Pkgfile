@@ -4,7 +4,7 @@
 # Depends on: python3
 
 name=yt-dlp
-version=2023.12.30
+version=2024.04.09
 release=1
 source=(https://github.com/yt-dlp/yt-dlp/archive/$version/$name-$version.tar.gz)
 
