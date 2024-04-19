@@ -4,12 +4,11 @@
 # Depends on: meson ninja python3-jinja2 intltool libseccomp linux-pam glib acl libcap eudev gettext
 
 name=elogind
-version=255.4-r2
+version=252.23
 release=1
 source=(https://github.com/$name/$name/archive/v${version}/$name-$version.tar.gz
 	10-enable-elogind-power.rules.gz
 	elogind.nobody.nogroup.99.99.diff
-	11-prefer-deep-suspend.patch
 	rc.elogind)
 
 build() {
@@ -26,26 +25,23 @@ build() {
 	# but sed will still happily scribble all over everything.
 	cat $SRC/elogind.nobody.nogroup.99.99.diff | patch -p1 --verbose -d $name-$version || exit 1
 
-	# Don't prefer s2idle, as it doesn't seem to work:
-	cat $SRC/11-prefer-deep-suspend.patch | patch -p1 --verbose -d $name-$version || exit 1
-
 	meson setup $name-$version build \
 		--buildtype release \
 		--prefix /usr \
-		--libdir /lib \
-		--libexecdir /lib/$name \
-		-D pkgconfiglibdir=/usr/lib/pkgconfig \
-		-D pamlibdir=/lib/security \
+		--libdir /usr/lib \
+		-D rootlibdir="/lib" \
+		-D rootlibexecdir="/lib/elogind" \
 		-D udevrulesdir="/lib/udev/rules.d" \
 		-D mandir="/usr/share/man" \
-		-D man=enabled \
-		-D html=disabled \
+		-D man=true \
+		-D html=false \
 		-D bashcompletiondir="/usr/share/bash-completion/completions" \
+		-D nobody-user=nobody \
 		-D nobody-group=nogroup \
-		-D pam=enabled \
+		-D pam=true \
 		-D pamlibdir="/lib/security" \
 		-D pamconfdir="/etc/pam.d" \
-		-D acl=enabled \
+		-D acl=true \
 		-D smack=false \
 		-D utmp=true \
 		-D default-hierarchy=legacy \
@@ -53,16 +49,17 @@ build() {
 		-D halt-path=/sbin/halt \
 		-D poweroff-path=/sbin/poweroff \
 		-D reboot-path=/sbin/reboot \
-		-D default-kill-user-processes=false
+		-D default-kill-user-processes=false \
+		-D mode=release
 
 	ninja -C build
 
 	DESTDIR=$PKG ninja -C build install
 
-	# Create symlinks for elogind binaries to /bin/:
-	mkdir -p $PKG/bin
-	ln -sf /usr/bin/elogind-inhibit $PKG/bin/elogind-inhibit
-	ln -sf /usr/bin/loginctl $PKG/bin/loginctl
+	# Create symlinks for elogind binaries to /usr/bin/:
+	mkdir -p $PKG/usr/bin
+	ln -sf /bin/elogind-inhibit $PKG/usr/bin/elogind-inhibit
+	ln -sf /bin/loginctl $PKG/usr/bin/loginctl
 
 	# Create supported dirs in /etc/elogind/ (local config)
 	mkdir -p $PKG/etc/elogind/logind.conf.d/ $PKG/etc/elogind/sleep.conf.d/
