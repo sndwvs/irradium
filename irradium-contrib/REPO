@@ -115,8 +115,8 @@ f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
 f:022ca4e9eeac6d2090a0289ee01db9f4:firefox/icu-linebreak-classes.patch
 f:3af430358b862c73258c61b9cd6c2015:firefox/lfs64.patch
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
-f:2a2d63878176a114ab49583603fc1e5e:freerdp/.footprint
-f:39d4eff63a7ecf5a390b30858eda58a0:freerdp/.signature
+f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
+f:21a0da3ebc24d023dceaf01a0f4a8f0a:freerdp/.signature
 f:30411ebdac6139592d7398dc043739b6:freerdp/Pkgfile
 f:b12bf9ffeeb516dc7dd0f3c50dd1f3bc:geany/.footprint
 f:52f0c3f34ea09772683334b565b146b8:geany/.signature
