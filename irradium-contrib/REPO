@@ -117,7 +117,7 @@ f:3af430358b862c73258c61b9cd6c2015:firefox/lfs64.patch
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
 f:2a2d63878176a114ab49583603fc1e5e:freerdp/.footprint
 f:39d4eff63a7ecf5a390b30858eda58a0:freerdp/.signature
-f:f42385110dfef59ac7bb92f3a998fcee:freerdp/Pkgfile
+f:30411ebdac6139592d7398dc043739b6:freerdp/Pkgfile
 f:b12bf9ffeeb516dc7dd0f3c50dd1f3bc:geany/.footprint
 f:52f0c3f34ea09772683334b565b146b8:geany/.signature
 f:0b68eb63a6d2ffaf77ed0dd6279fa343:geany/Pkgfile
