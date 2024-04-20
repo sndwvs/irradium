@@ -81,12 +81,14 @@ f:4aa5b87a94f3507f16f9ac3838a4a54e:lightdm-gtk-greeter/.footprint
 f:bb233b17996d10bd9c3c282e05b95467:lightdm-gtk-greeter/.signature
 f:6ebebc726135f1448067c1b553b0782c:lightdm-gtk-greeter/Pkgfile
 f:8588e227a9e80787b8c4ed61b123a03a:lightdm-gtk-greeter/post-install
-f:d54a82a1ba48ee0aa2f6c300bec91a46:llvm/.footprint
-f:2b9284717ed8efd6d01b3510fd08b4a0:llvm/.signature
 f:7b67a7a4d29985613b1fbab967a7975b:llvm/Pkgfile
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
+f:d54a82a1ba48ee0aa2f6c300bec91a46:llvm/.footprint.aarch64
+f:2b9284717ed8efd6d01b3510fd08b4a0:llvm/.signature.aarch64
+f:4cad80bd8b198c021bd2809b1ec01ab9:llvm/.footprint.riscv64
+f:1bb210b88874f75a7a5660a3e8dc7377:llvm/.signature.riscv64
 f:00f0bded92066039015ff856aab86dcd:mc/Pkgfile
 f:13caa329106b87c04f476404898110a8:medit/.footprint
 f:1660f93d6be76a41334168f8156628ed:medit/.signature
