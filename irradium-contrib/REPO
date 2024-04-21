@@ -142,6 +142,8 @@ f:1f3b42226bdf3e82b7344dfcff35a8d1:gvfs/Pkgfile
 f:4b18f25de52294265f155bf08ce5c928:gvfs/post-install
 f:8d008c7ebc775f1823ba35c211c98e8c:jemalloc/Pkgfile
 f:0491583a4aa5352882897958dd1c2fa1:keepassxc/Pkgfile
+f:cdb5f0b78f17170f97a88ec77e1c7213:keepassxc/.footprint
+f:83beba6ded094efb3eb99cbb8b443e95:keepassxc/.signature
 f:ada212fbb7e606e4f24c1800ee7c30de:libatasmart/Pkgfile
 f:f603e28d540c1c053f73b6d7a00e5bf6:libcanberra/.footprint
 f:0a78c70bbcd031f03495f19aa5f29fd1:libcanberra/.signature

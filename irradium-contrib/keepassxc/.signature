@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7uvGNiZYRzwklLaEaR+s4IonE9FZr2Y4KDzcBXvOzxqkfmywilREiPgYqxoNRyObhbGast2ax6YXAt2HcKRa4gg=
+SHA256 (Pkgfile) = 79d9f84ea30e10da033c3ea29f7b4a8e3252e58272fbd9291fb879496da86b53
+SHA256 (.footprint) = 7dcd7010348edcff5094bec1019370e44d7b554f86e828d2a2c47b83671f369e
+SHA256 (keepassxc-2.7.7-src.tar.xz) = 58fc45ae98e4b3ffb052103014f5b97a41fefd17102c7f56073934dd3a82ee67
