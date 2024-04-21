@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ -e /usr/share/icons/elementary-xfce/icon-theme.cache ]; then
   if [ -x /usr/bin/gtk-update-icon-cache ]; then

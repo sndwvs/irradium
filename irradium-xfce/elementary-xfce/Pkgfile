@@ -5,12 +5,17 @@
 
 name=elementary-xfce
 version=0.19
-release=1
+release=2
 source=(https://github.com/shimmerproject/$name/archive/v$version.tar.gz)
 
 
 build(){
   cd $name-$version
+
+  # fix error "Couldn?t recognize the image file format for file"
+  if [[ -x /usr/bin/update-gdk-pixbuf-loaders ]]; then
+    /usr/bin/update-gdk-pixbuf-loaders 1> /dev/null 2> /dev/null
+  fi
 
   ./configure \
     --prefix=/usr
