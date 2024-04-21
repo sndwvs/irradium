@@ -13,8 +13,8 @@ build(){
   cd $name-$version
 
   # fix error "Couldn?t recognize the image file format for file"
-  if [[ -x /usr/bin/update-gdk-pixbuf-loaders ]]; then
-    /usr/bin/update-gdk-pixbuf-loaders 1> /dev/null 2> /dev/null
+  if [[ -x /usr/bin/gdk-pixbuf-query-loaders ]]; then
+    /usr/bin/gdk-pixbuf-query-loaders --update-cache
   fi
 
   ./configure \
