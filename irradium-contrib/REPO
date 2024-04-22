@@ -196,7 +196,7 @@ f:5b27dcac763479364cdaa0c9d6ab32ed:libptytty/.signature
 f:73e7b99b3c8ae2ce230a665abc9ed5e1:libptytty/Pkgfile
 f:1a3bc55e7e05f278959b0d17e0ddf271:libreoffice/.footprint
 f:9911d3b01baeb32c8cddd9e87d1e07bb:libreoffice/.signature
-f:b44f40213bb90dddc5fc062e036f8381:libreoffice/Pkgfile
+f:c8a8d469021006170700a3db1633caa8:libreoffice/Pkgfile
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
 f:ab7812bd3ac3a2b8b95699e2cc0a9b19:libreoffice/libreoffice-7.5.8.2-icu-74-compatibility.patch
 f:21bb4927bf5a4d587f9b878324768b61:libreoffice/libxml2.patch

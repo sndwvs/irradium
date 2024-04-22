@@ -6,7 +6,7 @@
 
 name=libreoffice
 version=7.6.4.1
-release=2
+release=3
 pdfiumversion=5778
 source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-$version.tar.xz
   https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-dictionaries-$version.tar.xz
