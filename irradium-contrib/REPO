@@ -74,6 +74,7 @@ d:rkdeveloptool
 d:shntool
 d:rp-pppoe
 d:pkgtools
+d:rnnoise
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -329,3 +330,7 @@ f:3129b1af7f0f5fb986dfdafc3507dace:pkgtools/Pkgfile
 f:ea29b259b6fda2cfaaae1e8ab1239cf0:pkgtools/post-install
 f:c87e34bbbedfc0c6540be5f39e7179cd:pkgtools/.signature
 f:c3d31fc159c031b509e3b70466661896:pkgtools/.footprint
+f:568d5ccd1a9025540a94b19e9b4f4240:rnnoise/.footprint
+f:e0c9a3b41113629314aa8fd7e9796a71:rnnoise/.signature
+f:1e07e15b2817ac5de6c44677f9a18391:rnnoise/Pkgfile
+f:5d34cf9a9dce815ce60455a67d11000a:rnnoise/372f7b4b76cde4ca1ec4605353dd17898a99de38.patch
