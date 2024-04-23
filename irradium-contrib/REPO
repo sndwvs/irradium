@@ -98,8 +98,8 @@ f:b5ebb2a18df71bf46cf49364b7cfa57c:chromium/post-install
 f:7113a32eab7a69efe32e819a6a31bbb0:chromium/Pkgfile
 f:5ef456813a7422caa454c5561a864aeb:deadbeef/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
-f:a32b4ead34d990bce04051e6b1c6192b:elogind/.footprint
-f:97de8b8d06ea560e7240ff839d53fa9e:elogind/.signature
+f:8dcee42dffdce3de58873c0e149339c3:elogind/.footprint
+f:db49148860be3b7c0c64368a9060118d:elogind/.signature
 f:673e903cac381b0f975007165f78ab32:elogind/10-enable-elogind-power.rules.gz
 f:4f7b29eb38aa1ade091f8478b4c8057b:elogind/11-prefer-deep-suspend.patch
 f:4349cc356ed5193f043484c5f8182f3e:elogind/Pkgfile
