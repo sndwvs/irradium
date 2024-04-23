@@ -1,15 +1,14 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7p+q3NJ2LOsF7IPRzrt2brgubtx4bqOJB5IbUlvwINSsMhEYovom+d6WvnZgVr7riIBW0gKfdtSgBGZVr9L7rQc=
-SHA256 (Pkgfile) = 095a8ad636f6f6c4a0fe04afcde42b92be27cd3e889b30533f1dfd1214c6af69
-SHA256 (.footprint) = 7cbfd7c7dcf70a0c3173c27503b14fd41c99d9201f0b77fabb058a865dfff113
-SHA256 (libreoffice-7.6.3.1.tar.xz) = 0727572eee27e849cb5db15a864e867d8231d9669b77e00722e00ccc14410091
-SHA256 (libreoffice-dictionaries-7.6.3.1.tar.xz) = dc4c698df3953091caa9df6cb377accf8db96a4f2b70c8c1ef00e0bc2c6ce7a8
+RWTmT3d9kqan7hCPco/RT7m8ziveXaL544FaOeXLkZzB8jo7dUEeFueXL9LNGK0N/Avk1y1TjPGbwZf2LbIzwAoZYt/SiKbYfgc=
+SHA256 (Pkgfile) = 2543e4b079b29a80703070b58074b6a973acc1725e80327472ffb94e9539f018
+SHA256 (.footprint) = a005854cd6aa44df0cb1a8676c6bd291dd926ace1107639d2593d16d1f529679
+SHA256 (libreoffice-7.6.4.1.tar.xz) = 13fea7b8f24c776313b9e08628aa590390bea45064be73bc70ee7b1b70aa6a1e
+SHA256 (libreoffice-dictionaries-7.6.4.1.tar.xz) = 36c0526e4c12ab38dd1e1766cd878118dd5692578b80411b9b443e389e3712fa
 SHA256 (185d60944ea767075d27247c3162b3bc-unowinreg.dll) = eafde646a7dbe46d20c291685b0beac2382174d78d66ee990e229a1bf6e6cec6
 SHA256 (0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz) = 983941d31ee8d366085cadf28db75eb1f5cb03ba1e5853b98f12f7f51c63b776
 SHA256 (dtoa-20180411.tgz) = 0082d0684f7db6f62361b76c4b7faba19e0c7ce5cb8e36c4b65fea8281e711b4
 SHA256 (pdfium-5778.tar.bz2) = b1052ff24e9ffb11af017c444bb0f6ad508d64c9a0fb88cacb0e8210245dde06
-SHA256 (xmlsec1-1.2.37.tar.gz) = 5f8dfbcb6d1e56bddd0b5ec2e00a3d0ca5342a9f57c24dffde5c796b2be2871c
-SHA256 (libxml2-2.11.4.tar.xz) = 737e1d7f8ab3f139729ca13a2494fd17bf30ddb4b7a427cf336252cab57f57f7
-SHA256 (libxslt-1.1.38.tar.xz) = 1f32450425819a09acaff2ab7a5a7f8a2ec7956e505d7beeb45e843d0e1ecab1
 SHA256 (optjava.patch) = 48e8f354b6471faa0a49dec2e1efba03c0da2c25bd98285b1a43c500ccda484d
+SHA256 (libreoffice-7.5.8.2-icu-74-compatibility.patch) = d7b952a51e1e40d3faf2f465b68f46d56828d8c46948748fa82fe82a29af2599
+SHA256 (libxml2.patch) = e21e2b1320a35f3ba582f435865b3c40822fb63b6b325d27d991f5f92f1fccc4
 SHA256 (makefile.in.patch) = b4889affa4d2f8dac4e3c16c0a142fd0d403ecbb7a1c00ed593128dd613b737a
