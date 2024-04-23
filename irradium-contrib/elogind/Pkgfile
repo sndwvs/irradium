@@ -47,12 +47,12 @@ build() {
 	# for you, but we'll continue to default to deep for now.
 	#
 	# Don't prefer s2idle, as it doesn't seem to work:
-	cat $SRC/11-prefer-deep-suspend.patch | patch -p1 --verbose || exit 1
-	cat $SRC/12-default-deep-suspend.patch | patch -p1 --verbose || exit 1
+	cat $SRC/11-prefer-deep-suspend.patch | patch -p1 -d $name-$version --verbose || exit 1
+	cat $SRC/12-default-deep-suspend.patch | patch -p1 -d $name-$version --verbose || exit 1
 
 	# Upstream sleep fixes:
-	cat $SRC/ce3616c8864e56bf7efb233242f20197108a9dba.patch | patch -p1 --verbose || exit 1
-	cat $SRC/5d16d94aa9a5e3afe5b51f591497149630763b24.patch | patch -p1 --verbose || exit 1
+	cat $SRC/ce3616c8864e56bf7efb233242f20197108a9dba.patch | patch -p1 -d $name-$version --verbose || exit 1
+	cat $SRC/5d16d94aa9a5e3afe5b51f591497149630763b24.patch | patch -p1 -d $name-$version --verbose || exit 1
 
 	meson setup $name-$version build \
 		--buildtype=release \

@@ -102,7 +102,7 @@ f:a32b4ead34d990bce04051e6b1c6192b:elogind/.footprint
 f:97de8b8d06ea560e7240ff839d53fa9e:elogind/.signature
 f:673e903cac381b0f975007165f78ab32:elogind/10-enable-elogind-power.rules.gz
 f:4f7b29eb38aa1ade091f8478b4c8057b:elogind/11-prefer-deep-suspend.patch
-f:980f9cd48ab7841720e899f047f48b5f:elogind/Pkgfile
+f:4349cc356ed5193f043484c5f8182f3e:elogind/Pkgfile
 f:d79228bd03926d682b692726315bb97b:elogind/elogind.nobody.nogroup.99.99.diff
 f:5009a303246ecef5ea0aaa49952c52af:elogind/pre-install
 f:a9e7ccb4cc486e1967f58572f8a2060b:elogind/rc.elogind
