@@ -109,8 +109,8 @@ f:a9e7ccb4cc486e1967f58572f8a2060b:elogind/rc.elogind
 f:0a13ac50fadfb4d9dc20b3e8c81ebce1:elogind/12-default-deep-suspend.patch
 f:df82990f1366d5c79af8e0cde9e116bc:elogind/5d16d94aa9a5e3afe5b51f591497149630763b24.patch
 f:244dedbe09766a7f3c52b300c94bf38b:elogind/ce3616c8864e56bf7efb233242f20197108a9dba.patch
-f:20fa672fbd47bb217b5b5050b09a4353:firefox/.footprint
-f:455adb33276f132a3fb3550dccb38d78:firefox/.signature
+f:5ca9c4e85a9748363df2d571ecd7f884:firefox/.footprint
+f:51b802f3d64fea01cb8e2b8a4eb31a35:firefox/.signature
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:ce8226895c981265c806fe855308406d:firefox/README

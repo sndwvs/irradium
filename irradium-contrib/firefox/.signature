@@ -1,8 +1,11 @@
-untrusted comment: verify with /etc/ports/contrib.pub
-RWSagIOpLGJF31AioAHOcxKshnA7bj20bgGIVkHyBPW66aV/Ifm1aCeFJEUdSJf7WlWwD27wgduVZScAclrLfe85dZjqrCV3Dgk=
-SHA256 (Pkgfile) = 151d0fc6becfb3d5b1b62dbf29d7716c2a2084354ac7b84b5d70c96be7912944
-SHA256 (.footprint) = c6149f123c43d45e03a0d84332c26a699352ffb2a6fc005dd4d69efd6a056cf8
-SHA256 (firefox-125.0.source.tar.xz) = beeef124a0808ca2e71b84b45251de42c4b1a818467505b8778935df1d829b19
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7jTMRO/kBTlUrQLOOEI5meDcNlpyYMTvsnzYlVo8HaeMy/qr3VgPTFTdwyTalg/PCqmpXokslfhSNMsadt5NaAI=
+SHA256 (Pkgfile) = ef6612a99da299cc569f27b15178af4873d68709f7b528e9cb01fab58896cfd0
+SHA256 (.footprint) = 8372f2f05216870a2bd94765e7c77ea4090893722e9763a968a86a8f5271f91a
+SHA256 (firefox-125.0.2.source.tar.xz) = 69d0563361bab375407b25430c782346bec7623f3f1005e7dc505351ac69f799
 SHA256 (firefox.desktop) = 05bd1a4e283bc68f525f87cabf35ad0a59e5e63e107ce3901a4ac73e3d16ef33
 SHA256 (icu-linebreak-classes.patch) = bdfd2a93be5eed5c723ae67b308c4c2d9ed91d3173839fe560a7ca47946c7813
 SHA256 (node-stdout-nonblocking-wrapper) = bb8c503015e49ed1b152225bdc56cf502cd831f35962d113dcbb9121967f3523
+SHA256 (lfs64.patch) = 79e73aed3afb15d2ea73134649e9de6adbeb7b07f8bebefe4505ee6754678141
+SHA256 (01-rust-lto-thin.patch) = af0ce7f1c11dc12247e2ef57f088bdb8bb780fe73033af7e380b76d32fc8338b
+SHA256 (02-riscv64-no-lto.patch) = 219e23dc21e6193eaa89166c9e82ada9b50ccd0df691527ff55c13954cab0079
