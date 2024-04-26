@@ -5,7 +5,7 @@ d:xorg-gccmakedep
 d:xorg-rendercheck
 d:xorg-xcb-util-xrm
 f:0e03bbc08af89db26c3e3a8d4a5fbfbf:mesa/.footprint
-f:f9d74a1be38f6e858295d7caeaacb2c0:mesa/.signature
+f:b0ef675df7ac090ffcd067695c361020:mesa/.signature
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
 f:c530d42f82a46a1a6812cbbc8e916d31:mesa/README.md
 f:8131f4692810118d4c7882634169f585:mesa/patches/0000-mesa-20.1.1-fix-opencl.patch
