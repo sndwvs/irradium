@@ -45,7 +45,7 @@ build() {
       [libjpeg]=libjpeg
       [libpng]=libpng
       #[libvpx]=libvpx
-      [libwebp]=libwebp
+      #[libwebp]=libwebp  # //third_party/libavif:libavif_enc needs //third_party/libwebp:libwebp_sharpyuv
       [libxml]=libxml2
       [libxslt]=libxslt
       [opus]=opus
