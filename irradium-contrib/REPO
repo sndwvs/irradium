@@ -95,8 +95,9 @@ f:e63cb7c0e107a6a07898e85d13e09f5f:chromium/patches/compiler-rt-adjust-paths.pat
 f:db1b3f7453b34288040393db8d64fa02:chromium/patches/drop-flag-unsupported-by-clang17.patch
 f:451b216bf7f65e9130d3e39423ba4915:chromium/patches/random-build-fixes.patch
 f:943a8ad7c3d3d871b2c76ee24860c36e:chromium/patches/chromium-117-material-color-include.patch
+f:bb502cba864ac4c43057edd40ecfcc30:chromium/patches/chromium-125-ninja-1-12.patch
 f:cca42a21584d2e7a49baa60bb486c5d2:chromium/post-install
-f:fe22fbe5c0ceded1d293c4b5bbfff834:chromium/Pkgfile
+f:3c36b9fd03c303126f048fb0dfe4d706:chromium/Pkgfile
 f:5ef456813a7422caa454c5561a864aeb:deadbeef/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:8dcee42dffdce3de58873c0e149339c3:elogind/.footprint
