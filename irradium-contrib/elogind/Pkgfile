@@ -4,15 +4,13 @@
 # Depends on: meson ninja python3-jinja2 intltool libseccomp linux-pam glib acl libcap eudev gettext
 
 name=elogind
-version=255.4-r2
-release=2
+version=255.5
+release=1
 source=(https://github.com/$name/$name/archive/v${version}/$name-$version.tar.gz
-	10-enable-elogind-power.rules.gz
+	10-enable-elogind-power.rules
 	11-prefer-deep-suspend.patch
 	12-default-deep-suspend.patch
 	elogind.nobody.nogroup.99.99.diff
-	ce3616c8864e56bf7efb233242f20197108a9dba.patch
-	5d16d94aa9a5e3afe5b51f591497149630763b24.patch
 	rc.elogind)
 
 build() {
@@ -49,10 +47,6 @@ build() {
 	# Don't prefer s2idle, as it doesn't seem to work:
 	cat $SRC/11-prefer-deep-suspend.patch | patch -p1 -d $name-$version --verbose || exit 1
 	cat $SRC/12-default-deep-suspend.patch | patch -p1 -d $name-$version --verbose || exit 1
-
-	# Upstream sleep fixes:
-	cat $SRC/ce3616c8864e56bf7efb233242f20197108a9dba.patch | patch -p1 -d $name-$version --verbose || exit 1
-	cat $SRC/5d16d94aa9a5e3afe5b51f591497149630763b24.patch | patch -p1 -d $name-$version --verbose || exit 1
 
 	meson setup $name-$version build \
 		--buildtype=release \
@@ -94,9 +88,10 @@ build() {
 	# Create supported dirs in /etc/elogind/ (local config)
 	mkdir -p $PKG/etc/elogind/logind.conf.d/ $PKG/etc/elogind/sleep.conf.d/
 
-	# Add login1 policy file that allows users in the 'power' group to shutdown/reboot the computer:
+	# Add login1 policy file that allows users in the 'power' group
+	# to shutdown/reboot the computer:
 	mkdir -p $PKG/usr/share/polkit-1/rules.d
-	zcat 10-enable-elogind-power.rules.gz > $PKG/usr/share/polkit-1/rules.d/10-enable-session-power.rules
+	cat $CWD/10-enable-elogind-power.rules > $PKG/usr/share/polkit-1/rules.d/10-enable-session-power.rules
 
 	# We don't need the hidden files to make inferior package managers keep dirs:
 	find $PKG -type f -name ".keep_dir" -exec rm -f {} \;
