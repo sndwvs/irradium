@@ -104,7 +104,7 @@ f:8dcee42dffdce3de58873c0e149339c3:elogind/.footprint
 f:db49148860be3b7c0c64368a9060118d:elogind/.signature
 f:4f7b29eb38aa1ade091f8478b4c8057b:elogind/11-prefer-deep-suspend.patch
 f:0a13ac50fadfb4d9dc20b3e8c81ebce1:elogind/12-default-deep-suspend.patch
-f:6d3d1e419ef233136386dce3673fbdfa:elogind/Pkgfile
+f:cdbbe1f913307ad60cea4f0e9130205d:elogind/Pkgfile
 f:d79228bd03926d682b692726315bb97b:elogind/elogind.nobody.nogroup.99.99.diff
 f:5009a303246ecef5ea0aaa49952c52af:elogind/pre-install
 f:a9e7ccb4cc486e1967f58572f8a2060b:elogind/rc.elogind

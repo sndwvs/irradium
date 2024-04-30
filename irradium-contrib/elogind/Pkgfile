@@ -91,7 +91,7 @@ build() {
 	# Add login1 policy file that allows users in the 'power' group
 	# to shutdown/reboot the computer:
 	mkdir -p $PKG/usr/share/polkit-1/rules.d
-	cat $CWD/10-enable-elogind-power.rules > $PKG/usr/share/polkit-1/rules.d/10-enable-session-power.rules
+	cat $SRC/10-enable-elogind-power.rules > $PKG/usr/share/polkit-1/rules.d/10-enable-session-power.rules
 
 	# We don't need the hidden files to make inferior package managers keep dirs:
 	find $PKG -type f -name ".keep_dir" -exec rm -f {} \;
