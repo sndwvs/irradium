@@ -101,7 +101,7 @@ f:8c836286b40555eb97fec95b41e0d6b1:chromium/Pkgfile
 f:5ef456813a7422caa454c5561a864aeb:deadbeef/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:8dcee42dffdce3de58873c0e149339c3:elogind/.footprint
-f:db49148860be3b7c0c64368a9060118d:elogind/.signature
+f:5667c121bae88125888ff567fc52e544:elogind/.signature
 f:4f7b29eb38aa1ade091f8478b4c8057b:elogind/11-prefer-deep-suspend.patch
 f:0a13ac50fadfb4d9dc20b3e8c81ebce1:elogind/12-default-deep-suspend.patch
 f:cdbbe1f913307ad60cea4f0e9130205d:elogind/Pkgfile

@@ -1,12 +1,10 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7s9+zLuzdgeaODGgexZ7WTfFmme9469ylxseLkNZDW3TImkY39gxmDUKhrC9LZo+WIlb9iCiU33eYdmFDP/8KwQ=
-SHA256 (Pkgfile) = 1189b221b117192171e1147177f168bbc4404f35b7ad4327752487ba24b7c07c
+RWTmT3d9kqan7juLw5SoVjsjBZhiaeAqva8ZfrpQNkIuJzaTwL9hWHqK3EXB3x6jRSRwiXuP/+s1Ytp7jSiqNkUWyFvgn2/j/ws=
+SHA256 (Pkgfile) = 1051a7ef1032d52789dfcdf15db462ca326fd792c20b5bc3c7acf906c554c7d3
 SHA256 (.footprint) = 8b5a0346c058e5c6561012a7e678dc4a369dac6de883af43117f7c3d9c99e05f
-SHA256 (elogind-255.4-r2.tar.gz) = 7eb90c50d0e06ac1aa071f3f8cc475e5b94d113a752a0416b6c9071bac957c0f
-SHA256 (10-enable-elogind-power.rules.gz) = 0fc0bde6e1ac833608db13d4ea561da2fa5553958933562a6aa94767bc8906c5
+SHA256 (elogind-255.5.tar.gz) = ef83beb381064516c29290f0fedcbbe36de052f313d72d120eade69ab26b82fe
+SHA256 (10-enable-elogind-power.rules) = 201c8a5fb26815565de4d9d0a23e698e36b96e07077f7b0cb3ccf592175ff344
 SHA256 (11-prefer-deep-suspend.patch) = 96469395936309cf9373910b57baf5b64f785c5b99f293b033b52b1e3dbbaf6d
 SHA256 (12-default-deep-suspend.patch) = 3c504be914c8530eadb2a4d41912bc4e0971e1ef73fff93e4fd0aa060754e42a
 SHA256 (elogind.nobody.nogroup.99.99.diff) = 9383a0f9ce53b84d25543037f6e5bce955fd507f01f9420407218b137fdb1c25
-SHA256 (ce3616c8864e56bf7efb233242f20197108a9dba.patch) = ceae8b067eda2d0be4e799d96c5883bb32ac4a3439ebb7c666fecdfd96d7de81
-SHA256 (5d16d94aa9a5e3afe5b51f591497149630763b24.patch) = 041cafb34a9c66007a06e29a258067f9809d2fd3e728f4db322b5e45ac647ecf
 SHA256 (rc.elogind) = 40e236bf071f00c7b25c150cfaaf0c28f76683497afc369615781c0319b1616e
