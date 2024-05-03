@@ -97,8 +97,7 @@ f:e63cb7c0e107a6a07898e85d13e09f5f:chromium/patches/compiler-rt-adjust-paths.pat
 f:db1b3f7453b34288040393db8d64fa02:chromium/patches/drop-flag-unsupported-by-clang17.patch
 f:451b216bf7f65e9130d3e39423ba4915:chromium/patches/random-build-fixes.patch
 f:cca42a21584d2e7a49baa60bb486c5d2:chromium/post-install
-f:71be2ce06c8ea7cb61714fbe695e7ccd:chromium/0.patch
-f:73a9b396c9cf7f1f820806a9aafd610d:chromium/Pkgfile
+f:f75212bd3aabc4b7f924d818d8625440:chromium/Pkgfile
 f:5ef456813a7422caa454c5561a864aeb:deadbeef/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:8dcee42dffdce3de58873c0e149339c3:elogind/.footprint
@@ -282,7 +281,7 @@ f:e63cb7c0e107a6a07898e85d13e09f5f:ungoogled-chromium/patches/compiler-rt-adjust
 f:db1b3f7453b34288040393db8d64fa02:ungoogled-chromium/patches/drop-flag-unsupported-by-clang17.patch
 f:451b216bf7f65e9130d3e39423ba4915:ungoogled-chromium/patches/random-build-fixes.patch
 f:b5ebb2a18df71bf46cf49364b7cfa57c:ungoogled-chromium/post-install
-f:21b502ea2d840f2b14b3b1313d9ba38f:ungoogled-chromium/Pkgfile
+f:6a1d4235fe0c0fb57bc144b4cf47e939:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:6e3f456da8c441972ceec1d74e17cd26:viewnior/Pkgfile
 f:975eeae744a613e326b89b5dd4ef1fbe:viewnior/exiv2-0.28.patch
