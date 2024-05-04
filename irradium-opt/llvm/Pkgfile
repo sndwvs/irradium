@@ -5,7 +5,7 @@
 # Optional: lld
 
 name=llvm
-version=18.1.4
+version=18.1.5
 release=1
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-$version.src.tar.xz
 	https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/cmake-$version.src.tar.xz
@@ -34,26 +34,31 @@ build() {
 		-D LLVM_BINUTILS_INCDIR=/usr/include \
 		-D LLVM_BUILD_LLVM_DYLIB=ON \
 		-D LLVM_LINK_LLVM_DYLIB=ON \
-		-D LLVM_PARALLEL_COMPILE_JOBS="${JOBS:-1}" \
+		-D FFI_INCLUDE_DIR=/usr/include \
 		-D LLVM_BUILD_RUNTIME=ON \
 		-D LLVM_BUILD_EXTERNAL_COMPILER_RT=ON \
-		-D LLVM_INCLUDE_EXAMPLES=OFF \
-		-D LLVM_INCLUDE_TESTS=OFF \
 		-D LLVM_ENABLE_FFI=ON \
 		-D LLVM_ENABLE_RTTI=ON \
-		-D LLVM_ENABLE_OCAMLDOC=OFF \
 		-D LLVM_INCLUDE_UTILS=ON \
 		-D LLVM_INSTALL_UTILS=ON \
+		-D LLVM_ENABLE_PIC=ON \
+		-D LLVM_ENABLE_TERMINFO=ON \
+		-D LLVM_ENABLE_ZLIB=ON \
+		-D LLVM_ENABLE_ZSTD=ON \
+		-D LLVM_OPTIMIZED_TABLEGEN=ON \
+		-D LLVM_BUILD_TOOLS=ON \
 		-D LLVM_UTILS_INSTALL_DIR=/usr/bin \
+		-D LLVM_INCLUDE_EXAMPLES=OFF \
+		-D LLVM_INCLUDE_TESTS=OFF \
+		-D LLVM_ENABLE_OCAMLDOC=OFF \
 		-D LLVM_ENABLE_LIBCXX=OFF \
 		-D LLVM_ENABLE_LLD="$(prt-get isinst lld >/dev/null && echo ON || echo OFF)" \
-		-D LLVM_OPTIMIZED_TABLEGEN=ON \
 		-D LLVM_INCLUDE_BENCHMARKS=OFF \
 		-D LLVM_APPEND_VC_REV=OFF \
 		-Wno-dev
 
-	cmake --build build --target LLVM
-	cmake --build build
+	cmake --build build --target LLVM -j ${JOBS:-1}
+	cmake --build build -j ${JOBS:-1}
 	DESTDIR=$PKG cmake --install build
 
 	install -d $PKG/usr/lib/bfd-plugins
