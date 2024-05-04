@@ -115,10 +115,12 @@ f:fe7af17c56fd33a78bf3fc8f81066902:qt5/qtbase-use-wayland-on-gnome.patch
 f:8720dded76addbcb4de849876d9402f2:qt5/qt-everywhere-opensource-src-5.15.12-kf5-1.patch
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
-f:516776fe66e77b0a15bf6dee857d0c1f:qt6-base/qtbase-6.5.3-xkbcommon160.patch
-f:8c12ae0258b1b3e579f067cbbe19e3d1:qt6-base/.footprint
-f:28a3f4829fe1c225fa510025f94431bf:qt6-base/.signature
-f:cf4def4fb237104e6ad802adfabdc519:qt6-base/Pkgfile
+f:10fdca5f19b934636d2d93337e71cacd:qt6-base/.footprint
+f:f27084d66bbd3066f95f6258cd17a374:qt6-base/.signature
+f:7115485095bc80a1edeca90f96ec467b:qt6-base/Pkgfile
+f:a73da34a32f071aa12ea713d8df96996:qt6-base/fix-qeventlooplocker-regression.patch
+f:12047d3ec6ec517ac42bb253e73d0b80:qt6-base/icu.patch
+f:59de81b87081d854e0056b7201e89fe7:qt6-base/ifdef.patch
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:2d7676d7f9791a67f3b4ca423c48a39a:rust/.footprint

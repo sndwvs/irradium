@@ -1179,7 +1179,6 @@ drwxr-xr-x	root/root	usr/include/qt6/QtGui/6.7.0/QtGui/private/
 -rw-r--r--	root/root	usr/include/qt6/QtGui/6.7.0/QtGui/private/qtguiglobal_p.h
 -rw-r--r--	root/root	usr/include/qt6/QtGui/6.7.0/QtGui/private/qtriangulatingstroker_p.h
 -rw-r--r--	root/root	usr/include/qt6/QtGui/6.7.0/QtGui/private/qtriangulator_p.h
--rw-r--r--	root/root	usr/include/qt6/QtGui/6.7.0/QtGui/private/qtx11extras_p.h
 -rw-r--r--	root/root	usr/include/qt6/QtGui/6.7.0/QtGui/private/qundostack_p.h
 -rw-r--r--	root/root	usr/include/qt6/QtGui/6.7.0/QtGui/private/qunixeventdispatcher_qpa_p.h
 -rw-r--r--	root/root	usr/include/qt6/QtGui/6.7.0/QtGui/private/qvectorpath_p.h
@@ -3018,24 +3017,6 @@ drwxr-xr-x	root/root	usr/lib/cmake/Qt6Gui/
 -rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QVncIntegrationPluginConfigVersionImpl.cmake
 -rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QVncIntegrationPluginTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QVncIntegrationPluginTargets.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginAdditionalTargetInfo.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginConfigVersionImpl.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginAdditionalTargetInfo.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginConfigVersionImpl.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbIntegrationPluginAdditionalTargetInfo.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbIntegrationPluginConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbIntegrationPluginConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbIntegrationPluginConfigVersionImpl.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbIntegrationPluginTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXcbIntegrationPluginTargets.cmake
 -rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginAdditionalTargetInfo.cmake
 -rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginConfigVersion.cmake
@@ -3178,15 +3159,6 @@ drwxr-xr-x	root/root	usr/lib/cmake/Qt6WidgetsTools/
 -rw-r--r--	root/root	usr/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake
 -rw-r--r--	root/root	usr/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake
-drwxr-xr-x	root/root	usr/lib/cmake/Qt6XcbQpaPrivate/
--rw-r--r--	root/root	usr/lib/cmake/Qt6XcbQpaPrivate/Qt6XcbQpaPrivateAdditionalTargetInfo.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6XcbQpaPrivate/Qt6XcbQpaPrivateConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6XcbQpaPrivate/Qt6XcbQpaPrivateConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6XcbQpaPrivate/Qt6XcbQpaPrivateConfigVersionImpl.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6XcbQpaPrivate/Qt6XcbQpaPrivateDependencies.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6XcbQpaPrivate/Qt6XcbQpaPrivateTargets-release.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6XcbQpaPrivate/Qt6XcbQpaPrivateTargets.cmake
--rw-r--r--	root/root	usr/lib/cmake/Qt6XcbQpaPrivate/Qt6XcbQpaPrivateVersionlessTargets.cmake
 drwxr-xr-x	root/root	usr/lib/cmake/Qt6Xml/
 -rw-r--r--	root/root	usr/lib/cmake/Qt6Xml/Qt6XmlAdditionalTargetInfo.cmake
 -rw-r--r--	root/root	usr/lib/cmake/Qt6Xml/Qt6XmlConfig.cmake
@@ -3262,10 +3234,6 @@ lrwxrwxrwx	root/root	usr/lib/libQt6Test.so.6 -> libQt6Test.so.6.7.0
 lrwxrwxrwx	root/root	usr/lib/libQt6Widgets.so -> libQt6Widgets.so.6
 lrwxrwxrwx	root/root	usr/lib/libQt6Widgets.so.6 -> libQt6Widgets.so.6.7.0
 -rwxr-xr-x	root/root	usr/lib/libQt6Widgets.so.6.7.0
--rw-r--r--	root/root	usr/lib/libQt6XcbQpa.prl
-lrwxrwxrwx	root/root	usr/lib/libQt6XcbQpa.so -> libQt6XcbQpa.so.6
-lrwxrwxrwx	root/root	usr/lib/libQt6XcbQpa.so.6 -> libQt6XcbQpa.so.6.7.0
--rwxr-xr-x	root/root	usr/lib/libQt6XcbQpa.so.6.7.0
 -rw-r--r--	root/root	usr/lib/libQt6Xml.prl
 lrwxrwxrwx	root/root	usr/lib/libQt6Xml.so -> libQt6Xml.so.6
 lrwxrwxrwx	root/root	usr/lib/libQt6Xml.so.6 -> libQt6Xml.so.6.7.0
@@ -3321,7 +3289,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/metatypes/
 -rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6sql_release_metatypes.json
 -rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6test_release_metatypes.json
 -rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6widgets_release_metatypes.json
--rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6xcbqpaprivate_release_metatypes.json
 -rw-r--r--	root/root	usr/lib/qt6/metatypes/qt6xml_release_metatypes.json
 drwxr-xr-x	root/root	usr/lib/qt6/mkspecs/
 drwxr-xr-x	root/root	usr/lib/qt6/mkspecs/aix-g++-64/
@@ -3834,7 +3801,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/mkspecs/modules/
 -rw-r--r--	root/root	usr/lib/qt6/mkspecs/modules/qt_lib_testlib_private.pri
 -rw-r--r--	root/root	usr/lib/qt6/mkspecs/modules/qt_lib_widgets.pri
 -rw-r--r--	root/root	usr/lib/qt6/mkspecs/modules/qt_lib_widgets_private.pri
--rw-r--r--	root/root	usr/lib/qt6/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri
 -rw-r--r--	root/root	usr/lib/qt6/mkspecs/modules/qt_lib_xml.pri
 -rw-r--r--	root/root	usr/lib/qt6/mkspecs/modules/qt_lib_xml_private.pri
 drwxr-xr-x	root/root	usr/lib/qt6/mkspecs/netbsd-g++/
@@ -3957,7 +3923,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/modules/
 -rw-r--r--	root/root	usr/lib/qt6/modules/Sql.json
 -rw-r--r--	root/root	usr/lib/qt6/modules/Test.json
 -rw-r--r--	root/root	usr/lib/qt6/modules/Widgets.json
--rw-r--r--	root/root	usr/lib/qt6/modules/XcbQpaPrivate.json
 -rw-r--r--	root/root	usr/lib/qt6/modules/Xml.json
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/egldeviceintegrations/
@@ -3988,7 +3953,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/platforms/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/platforms/libqminimalegl.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/platforms/libqoffscreen.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/platforms/libqvnc.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/platforms/libqxcb.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/platformthemes/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/platformthemes/libqxdgdesktopportal.so
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/sqldrivers/
@@ -3996,9 +3960,6 @@ drwxr-xr-x	root/root	usr/lib/qt6/plugins/sqldrivers/
 drwxr-xr-x	root/root	usr/lib/qt6/plugins/tls/
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/tls/libqcertonlybackend.so
 -rwxr-xr-x	root/root	usr/lib/qt6/plugins/tls/libqopensslbackend.so
-drwxr-xr-x	root/root	usr/lib/qt6/plugins/xcbglintegrations/
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/xcbglintegrations/libqxcb-egl-integration.so
--rwxr-xr-x	root/root	usr/lib/qt6/plugins/xcbglintegrations/libqxcb-glx-integration.so
 -rwxr-xr-x	root/root	usr/lib/qt6/qlalr
 -rwxr-xr-x	root/root	usr/lib/qt6/qt-cmake-private
 -rw-r--r--	root/root	usr/lib/qt6/qt-cmake-private-install.cmake

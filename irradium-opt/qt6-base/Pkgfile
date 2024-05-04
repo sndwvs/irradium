@@ -6,18 +6,25 @@
 
 name=qt6-base
 version=6.7.0
-release=1
+release=2
 source=(https://download.qt.io/official_releases/qt/${version%.*}/$version/submodules/qtbase-everywhere-src-$version.tar.xz
   qt6-base-cflags.patch
   qt6-base-nostrip.patch
-  qtbase-6.5.3-xkbcommon160.patch)
+  fix-qeventlooplocker-regression.patch
+  icu.patch
+  ifdef.patch)
 
 build() {
   patch -d qtbase-everywhere-src-$version -p1 -i $SRC/qt6-base-cflags.patch
   patch -d qtbase-everywhere-src-$version -p1 -i $SRC/qt6-base-nostrip.patch
-  patch -d qtbase-everywhere-src-$version -p1 -i $SRC/qtbase-6.5.3-xkbcommon160.patch
+  patch -d qtbase-everywhere-src-$version -p1 -i $SRC/ifdef.patch
+  patch -d qtbase-everywhere-src-$version -p1 -i $SRC/fix-qeventlooplocker-regression.patch
+  patch -d qtbase-everywhere-src-$version -p1 -i $SRC/icu.patch
 
-  prt-get isinst ccache && PKGMK_QT6+=' -D QT_USE_CCACHE=ON' && PATH="$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
+  if prt-get isinst ccache; then
+    PKGMK_QT6+=' -D QT_USE_CCACHE=ON'
+    PATH="$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
+  fi
 
   if [[ -e /usr/include/xkbcommon/xkbcommon-x11.h ]]; then
     PKGMK_QT6+=' -D QT_FEATURE_xcb=ON -D QT_FEATURE_xkbcommon_x11=ON'
@@ -53,10 +60,11 @@ build opt/qt6-base again.
     -D INSTALL_SYSCONFDIR=/etc/xdg \
     -D INSTALL_TRANSLATIONSDIR=share/qt6/translations \
     -D INSTALL_EXAMPLESDIR=share/doc/qt6/examples \
+    -D QT_FEATURE_no_direct_extern_access=ON \
     -D QT_FEATURE_openssl_linked=ON \
     -D QT_FEATURE_system_sqlite=ON \
-    -D QT_FEATURE_vulkan=ON \
     -D QT_BUILD_TESTS_BY_DEFAULT=OFF \
+    -D QT_FEATURE_reduce_relocations=OFF \
     -D QT_FEATURE_androiddeployqt=OFF \
     -D QT_FEATURE_rpath=OFF \
     -Wno-dev
