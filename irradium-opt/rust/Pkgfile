@@ -5,9 +5,9 @@
 # Optional: ccache clang libgit2 lld polly sccache
 
 name=rust
-version=1.77.2
-_date=2024-02-08
-_rustc=1.76.0
+version=1.78.0
+_date=2024-03-21
+_rustc=1.77.0
 _cargo=$_rustc
 release=1
 
@@ -84,7 +84,7 @@ build() {
 	patch -p1 -i $SRC/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 
 cat <<- EOF > $SRC/config.toml
-	change-id = 102579
+	change-id = 121754
 
 	[llvm]
 	ninja = true
@@ -101,6 +101,7 @@ cat <<- EOF > $SRC/config.toml
 	# http://blog.llvm.org/2019/09/closing-gap-cross-language-lto-between.html
 	# https://github.com/rust-lang/rust/issues/54872
 	codegen-units-std = 1
+	debuginfo-level = 1
 	debuginfo-level-std = 2
 	codegen-tests = false
 	# backtrace-on-ice = true
@@ -111,6 +112,8 @@ cat <<- EOF > $SRC/config.toml
 	channel = "stable"
 	parallel-compiler = true
 	rpath = false
+	frame-pointers = true
+	deny-warnings = false
 	optimize = true
 	codegen-backends = ["llvm"]
 	@LLD@
@@ -191,6 +194,8 @@ EOF
 	#   --> src/bootstrap/lib.rs:280:5
 	#   = note: `-D dead-code` implied by `-D warnings`
 	export RUSTFLAGS+=' -A dead_code'
+
+	unset CFLAGS CXXFLAGS
 
 	{ [ ! -e /usr/include/libssh2.h ] ||
 		export LIBSSH2_SYS_USE_PKG_CONFIG=1; }
