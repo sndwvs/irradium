@@ -83,8 +83,8 @@ f:58c9841c1e8752ad00dbd08162c7b678:android-tools/Pkgfile
 f:d3f4e49b9c059e8b6193ed4d4f3efe63:audacity/.footprint
 f:75bcfae54c87ec4ff8a2260faa24397b:audacity/.signature
 f:41a900c69cd6d7da41547b7d790ef07c:audacity/Pkgfile
-f:d77c98a13898b632d860a2f4bc85d338:chromium/.footprint
-f:3a28a377f56db8344aa2e3b97a3b6aa2:chromium/.signature
+f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint
+f:e68deebb6edd5e04b363d9c808d6934d:chromium/.signature
 f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
 f:37e6690eb4cd09de8aae36446269dae0:chromium/patches/use-oauth2-client-switches-as-default.patch
