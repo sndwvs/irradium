@@ -39,6 +39,10 @@ build opt/qt6-base again.
 "
   fi
 
+  # fix: c++: error: unrecognized command-line option '-mno-direct-extern-access'
+  export CC="clang"
+  export CXX="clang++"
+
   cmake -S qtbase-everywhere-src-$version -B build -G Ninja $PKGMK_QT6 \
     -D BUILD_SHARED_LIBS=ON \
     -D CMAKE_INSTALL_PREFIX=/usr \
