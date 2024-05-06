@@ -280,7 +280,7 @@ f:bb502cba864ac4c43057edd40ecfcc30:ungoogled-chromium/patches/chromium-125-ninja
 f:e63cb7c0e107a6a07898e85d13e09f5f:ungoogled-chromium/patches/compiler-rt-adjust-paths.patch
 f:db1b3f7453b34288040393db8d64fa02:ungoogled-chromium/patches/drop-flag-unsupported-by-clang17.patch
 f:451b216bf7f65e9130d3e39423ba4915:ungoogled-chromium/patches/random-build-fixes.patch
-f:b5ebb2a18df71bf46cf49364b7cfa57c:ungoogled-chromium/post-install
+f:cca42a21584d2e7a49baa60bb486c5d2:ungoogled-chromium/post-install
 f:1faa50f4d68a3ea4e5917802a443d350:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:6e3f456da8c441972ceec1d74e17cd26:viewnior/Pkgfile
