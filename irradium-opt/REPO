@@ -130,6 +130,8 @@ f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targe
 f:d2377f68fccda9ffe1b980768564e3fd:rust/Pkgfile
 f:db9ee8868422bc9bd50edcee90de8024:rust/.footprint.aarch64
 f:efcfc5dc0ab9a7048ed1b6239222e753:rust/.signature.aarch64
+f:6a38f7a5fac338bac8a7655aac5ba9d4:rust/.footprint.riscv64
+f:34c2549da5b27a03c7e1e667430e329e:rust/.signature.riscv64
 f:a23a8aac5a57faa325cbaf32d2f261c8:slim/.footprint
 f:9654119211dec3b51f819b7cc34380ac:slim/.signature
 f:6bde2566611eb08c5b2d304416898527:slim/Pkgfile
