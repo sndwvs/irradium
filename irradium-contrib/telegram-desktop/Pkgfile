@@ -18,6 +18,9 @@ build() {
 
   export PKG_CONFIG_PATH=$SRC/glibmm/usr/local/lib/pkgconfig
 
+  export CC="clang"
+  export CXX="clang++"
+
   LDFLAGS="$LDFLAGS -Wl,-z,stack-size=1024768" \
   cmake -B build -G Ninja . \
     -DCMAKE_INSTALL_PREFIX=/usr \
