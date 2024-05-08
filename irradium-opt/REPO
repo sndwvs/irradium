@@ -115,7 +115,7 @@ f:fe7af17c56fd33a78bf3fc8f81066902:qt5/qtbase-use-wayland-on-gnome.patch
 f:8720dded76addbcb4de849876d9402f2:qt5/qt-everywhere-opensource-src-5.15.12-kf5-1.patch
 f:1f1a81974b1e8093e2eadc23b4c6ffc0:qt6-base/.footprint
 f:d2036c679ce1467c1fe94b6aebb8ef66:qt6-base/.signature
-f:cd5464b5cc81b82293cedf9b7c22d230:qt6-base/Pkgfile
+f:7b2829b9e5a8fa88cc02d709b503f3b3:qt6-base/Pkgfile
 f:a73da34a32f071aa12ea713d8df96996:qt6-base/fix-qeventlooplocker-regression.patch
 f:12047d3ec6ec517ac42bb253e73d0b80:qt6-base/icu.patch
 f:59de81b87081d854e0056b7201e89fe7:qt6-base/ifdef.patch
