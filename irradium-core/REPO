@@ -76,8 +76,8 @@ f:518de5e52f9166e58ed613a0d636e774:glibc/locale.gen.in
 f:75931315bf9bc9be15a5e25e4ddd5f0d:glibc/nsswitch.conf
 f:8ade3a1b3e11426f6c070daa3906c6f7:glibc/post-install
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
-f:369f123812c704f6fbbd4fa2de0c0ef4:glibc/Pkgfile
-f:7f2ac95e3220ebfa0222095a2f6ca0ba:glibc/glibc-2.36-9.patch
+f:6f3ee851ec5e6d034b07904c7e88b296:glibc/Pkgfile
+f:d0716a8f4d12804bb0ada5826c89b2c4:glibc/glibc-2.36-10.patch
 f:cb16f26de91da8792221c4bb295a5329:kbd/.footprint
 f:3b3c8c8ea6bacaff4613fd355be92398:kbd/.signature
 f:e7e7ee3934a07654f97ae96aae2cf72e:kbd/Pkgfile
