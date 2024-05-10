@@ -7,7 +7,7 @@ d:xorg-xcb-util-xrm
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
 f:c530d42f82a46a1a6812cbbc8e916d31:mesa/README.md
 f:0e03bbc08af89db26c3e3a8d4a5fbfbf:mesa/.footprint
-f:b0ef675df7ac090ffcd067695c361020:mesa/.signature
+f:eabc5968e61c203f0380bb3eabdbb93c:mesa/.signature
 f:2544d2e8201ef6e4aa4073fb1d62a7ee:mesa/Pkgfile
 f:8131f4692810118d4c7882634169f585:mesa/patches/0000-mesa-20.1.1-fix-opencl.patch
 f:90ff24f8710a92bbd158d50e46cb448d:mesa/patches/0001-mesa-23.1-x86_32-llvm-detection.patch
