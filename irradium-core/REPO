@@ -104,7 +104,7 @@ f:338a880b8c4753391faffc3e4146a5c3:pkgutils/pkgmk-add-support-with-footprint-ris
 f:f1927bc2ae6c00c3191265c4170b9be8:pkgutils/pkgmk.conf
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:4c9c737980d324bb8741e96d0c57ed67:pkgutils/.signature
-f:03a4d16acab9a0bbe574ef1c3bf61903:pkgutils/Pkgfile
+f:2bc869e23ae8cf6433772948b46e6082:pkgutils/Pkgfile
 f:d4c72854441fa2a9cbd0085ad891f05a:ports/.footprint
 f:08129077eff4408c25662db7af25e9ae:ports/.signature
 f:dda7a4deaf5a68da6ddcc460f2afe649:ports/Pkgfile
