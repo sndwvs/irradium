@@ -123,7 +123,7 @@ f:0d1f1fde50a9bd743d9cac6b235f038c:ports/opt.pub
 f:441330fe7eb6970873d287b0d38f83f6:ports/opt.rsync
 f:69927e5d0ae5dc3455faeaac916c4db2:ports/xorg.pub
 f:d57279f5bd8b1b705b7be4f6866c9ced:ports/xorg.rsync
-f:bbbf47646dcdba0735c7c85755baa48e:prt-get/Pkgfile
+f:ca5e2f248350d1b182c358ef3416beda:prt-get/Pkgfile
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:1e68ce5a010624ae6f5c305937163e62:prt-get/fsearch-footprint-add-multi-arch-riscv64-aarch64.patch
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
