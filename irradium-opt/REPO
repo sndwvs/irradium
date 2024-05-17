@@ -102,8 +102,8 @@ f:ebbe2c197d4cf6fbce10a17e09d2a609:python/CVE-2019-20907.patch
 f:59562d92ee153e7501f73be4ebd9e636:python/CVE-2020-26116.patch
 f:08323c8fe8a3c55d4609ebd6cd0b41ee:python/CVE-2021-3177.patch
 f:d51721f0feb9a204875af41db0e9a3de:python/Pkgfile
-f:37584c57d350717ce1114454c6dfbb60:qt5/.footprint
-f:775fe956cdd985de5f6f2cf965ec5b47:qt5/.signature
+f:b98842c9b1cc2d83c4e60fba38e2966e:qt5/.footprint
+f:d43ba5d4d205eb02832d8f2214dbca79:qt5/.signature
 f:67165bacd3231b57d7b7db1e6bcb7d89:qt5/qt5-logo.png
 f:7bd69345f9439dbe79ac9d8f1d251cf7:qt5/qt-everywhere-opensource-src-5.15.13-kf5-1.patch
 f:bfc114bfc210c5b5996941f7e186f8b3:qt5/qt5-cflags.patch
