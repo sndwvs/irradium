@@ -114,7 +114,8 @@ f:022ca4e9eeac6d2090a0289ee01db9f4:firefox/icu-linebreak-classes.patch
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
 f:5ca9c4e85a9748363df2d571ecd7f884:firefox/.footprint
 f:740c9194c0520d3d444da72c247f811d:firefox/.signature
-f:41318a567b6b94bfe7e9c6c96c35e987:firefox/Pkgfile
+f:55d892a4c0f6de1012f1f5dbad0bb7e1:firefox/Pkgfile
+f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/rust-lto-thin.patch
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:21a0da3ebc24d023dceaf01a0f4a8f0a:freerdp/.signature
 f:30411ebdac6139592d7398dc043739b6:freerdp/Pkgfile
