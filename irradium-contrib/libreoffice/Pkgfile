@@ -1,50 +1,49 @@
 # Description: LibreOffice is a powerful office suite
 # URL: https://www.libreoffice.org/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: abseil-cpp box2d clucene dragonbox fakeroot fontforge frozen graphite2 gst-plugins-base hyphen libabw libcdr libcmis libcuckoo libe-book libepubgen libetonyek libexttextcat libfixmath libfreehand libmspub libmwaw libmythes libnumbertext libodfgen liborcus libpagemaker libqrcodegen libqxp libstaroffice libtommath libvisio libwpg libwps libzmf neon nss openjpeg2 paper redland unzip xmlsec xorg-libxcomposite zip
+# Depends on: abseil-cpp argon2 box2d clucene dragonbox fakeroot fontforge frozen graphite2 gst-plugins-base gtk4 hyphen libabw libcdr libcmis libcuckoo libe-book libepubgen libetonyek libexttextcat libfixmath libfreehand libmspub libmwaw libmythes libnumbertext libodfgen liborcus libpagemaker libqrcodegen libqxp libstaroffice libtommath libvisio libwpg libwps libzmf neon nss openjpeg2 paper redland xmlsec xorg-libxcomposite zip zxcvbn-c
 # Optional: avahi coin-or-mp cups dconf gpgme kio lpsolve mariadb openldap postgresql python3-lxml qt5 sane valgrind
 
 name=libreoffice
-version=7.6.4.1
-release=3
-pdfiumversion=5778
+version=24.2.3.2
+release=1
+pdfiumversion=6179
 source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-$version.tar.xz
   https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-dictionaries-$version.tar.xz
+  https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-translations-$version.tar.xz
+  https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-help-$version.tar.xz
   https://dev-www.libreoffice.org/extern/185d60944ea767075d27247c3162b3bc-unowinreg.dll
   https://dev-www.libreoffice.org/src/0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz
   https://dev-www.libreoffice.org/src/dtoa-20180411.tgz
   https://dev-www.libreoffice.org/src/pdfium-$pdfiumversion.tar.bz2
-  #https://dev-www.libreoffice.org/src/xmlsec1-1.2.37.tar.gz
-  #https://dev-www.libreoffice.org/src/libxml2-2.11.4.tar.xz
-  #https://dev-www.libreoffice.org/src/libxslt-1.1.38.tar.xz
-  #https://dev-www.libreoffice.org/src/icu4c-73_2-src.tgz
-  #https://dev-www.libreoffice.org/src/icu4c-73_2-data.zip
-  optjava.patch
-  libreoffice-7.5.8.2-icu-74-compatibility.patch
-  libxml2.patch
+  https://dev-www.libreoffice.org/src/skia-m116-2ddcf183eb260f63698aa74d1bb380f247ad7ccd.tar.xz
+  https://raw.githubusercontent.com/unicode-org/icu/main/icu4c/source/data/brkitr/rules/line.txt
+  libreoffice-7.6-qt6-wayland-egl.patch
   makefile.in.patch)
 
 # unpack_source() {{{
 unpack_source() {
-  mkdir $SRC/tarballs
+  mkdir -p $SRC/tarballs $SRC/$name-$version/external/tarballs
   for file in ${source[@]}; do
     case ${file##*/} in
-      libreoffice-*.tar.xz)
-        echo "Unpacking $(get_filename $file)"
-        bsdtar -p -o -C $SRC -xf $(get_filename $file) ;;
-      185d60944ea767075d27247c3162b3bc-unowinreg.dll|\
-      pdfium-$pdfiumversion.tar.bz2|\
-      dtoa-20180411.tgz|\
-      xmlsec1-1.2.37.tar.gz|\
-      libxml2-2.11.4.tar.xz|\
-      libxslt-1.1.38.tar.xz|\
-      icu4c-73_2-src.tgz|\
-      icu4c-73_2-data.zip|\
+    $name-$version.tar.xz | \
+      $name-dictionaries-$version.tar.xz | \
+      $name-translations-$version.tar.xz | \
+      $name-help-$version.tar.xz)
+      echo "Unpacking $(get_filename $file)"
+      bsdtar -p -o -C $SRC -xf $(get_filename $file)
+      ;;
+    185d60944ea767075d27247c3162b3bc-unowinreg.dll | \
+      pdfium-$pdfiumversion.tar.bz2 | \
+      dtoa-20180411.tgz | \
+      skia-m116-2ddcf183eb260f63698aa74d1bb380f247ad7ccd.tar.xz | \
       0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz)
-        echo "Moving $(get_filename $file) to $SRC/tarballs"
-        cp $(get_filename $file) $SRC/tarballs ;;
-      *)
-        cp $(get_filename $file) $SRC ;;
+      echo "Moving $(get_filename $file) to $SRC/tarballs"
+      cp $(get_filename $file) $SRC/tarballs
+      ;;
+    *)
+      cp $(get_filename $file) $SRC
+      ;;
     esac
   done
 }
@@ -52,8 +51,14 @@ unpack_source() {
 
 build() {
   # fail the build if dependencies are not met {{{
-  ls /usr/include/harfbuzz/hb-icu.h || (printf '\e[1;31m%-6s\e[m\n' "you need to install icu, then rebuild harfbuzz for libreoffice to work, quitting.." ; exit 1)
-  ls /usr/lib/pkgconfig/xmlsec1-nss.pc || (printf '\e[1;31m%-6s\e[m\n' "you need to install nss, then rebuild xmlsec for libreoffice to work, quitting.." ; exit 1)
+  ls /usr/include/harfbuzz/hb-icu.h || (
+    printf '\e[1;31m%-6s\e[m\n' "you need to install icu, then rebuild harfbuzz for libreoffice to work, quitting.."
+    exit 1
+  )
+  ls /usr/lib/pkgconfig/xmlsec1-nss.pc || (
+    printf '\e[1;31m%-6s\e[m\n' "you need to install nss, then rebuild xmlsec for libreoffice to work, quitting.."
+    exit 1
+  )
   # }}}
 
   cd $name-$version
@@ -62,24 +67,36 @@ build() {
   sed -i 's:application/pdf;::g' sysui/desktop/menus/draw.desktop
   sed -i 's:text/plain;::g' sysui/desktop/menus/writer.desktop
   sed -i 's:dragonbox-1.0.0:dragonbox:g' configure.ac
+  sed -i '/icuuc \\/a zlib\\' writerperfect/Library_wpftdraw.mk
+  export CPPFLAGS="$CPPFLAGS -DU_USING_ICU_NAMESPACE=1"
 
-  patch -Np0 -i $SRC/optjava.patch
-  patch -Np1 -i $SRC/libxml2.patch
-  patch -Np1 -i $SRC/libreoffice-7.5.8.2-icu-74-compatibility.patch
+  sed -e "/gzip -f/d" \
+    -e "s|.1.gz|.1|g" \
+    -i bin/distro-install-desktop-integration
+
+  sed -e "/distro-install-file-lists/d" -i Makefile.in
+
+  patch -Np1 -i $SRC/libreoffice-7.6-qt6-wayland-egl.patch
+  cp $SRC/line.txt i18npool/source/breakiterator/data/line.txt
+
+  export LC_ALL=en_US.UTF-8
+  export LANG=en_US
+  export CFLAGS="$CFLAGS -fno-omit-frame-pointer -fno-strict-aliasing -Wno-unreachable-code"
+  export CXXFLAGS="$CXXFLAGS -fno-omit-frame-pointer -fno-strict-aliasing -fpermissive -std=gnu++20 -Wno-unreachable-code"
+
   # optionals {{{
   prt-get isinst avahi && PKGMK_LIBREOFFICE+=' --enable-avahi' || PKGMK_LIBREOFFICE+=' --disable-avahi'
-  #prt-get isinst box2d && PKGMK_LIBREOFFICE+=' --with-system-box2d' || PKGMK_LIBREOFFICE+=' --without-system-box2d'
-  prt-get isinst ccache && PKGMK_LIBREOFFICE+=' --enable-ccache' || PKGMK_LIBREOFFICE+=' --disable-ccache'
+  prt-get isinst box2d && PKGMK_LIBREOFFICE+=' --with-system-box2d' || PKGMK_LIBREOFFICE+=' --without-system-box2d'
+  #prt-get isinst ccache && PKGMK_LIBREOFFICE+=' --enable-ccache' || PKGMK_LIBREOFFICE+=' --disable-ccache'
   #prt-get isinst ccache && export PATH="$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
   prt-get isinst ccache && export CCACHE_CPP2=1
-  #prt-get isinst clucene && PKGMK_LIBREOFFICE+=' --with-system-clucene' || PKGMK_LIBREOFFICE+=' --without-system-clucene'
+  prt-get isinst clucene && PKGMK_LIBREOFFICE+=' --with-system-clucene' || PKGMK_LIBREOFFICE+=' --without-system-clucene'
   prt-get isinst coin-or-mp && PKGMK_LIBREOFFICE+=' --with-system-coinmp' || PKGMK_LIBREOFFICE+=' --disable-coinmp'
   prt-get isinst cups && PKGMK_LIBREOFFICE+=' --enable-cups' || PKGMK_LIBREOFFICE+=' --disable-cups'
   prt-get isinst gpgme && PKGMK_LIBREOFFICE+=' --enable-gpgmepp' || PKGMK_LIBREOFFICE+=' --disable-gpgmepp'
   prt-get isinst gpgme && export ac_cv_lib_gpgmepp_progress_callback=yes
   prt-get isinst dconf && PKGMK_LIBREOFFICE+=' --enable-dconf' || PKGMK_LIBREOFFICE+=' --disable-dconf'
-  #prt-get isinst gtk4 && PKGMK_LIBREOFFICE+=' --enable-gtk4'
-  prt-get isinst kio && PKGMK_LIBREOFFICE+=' --enable-kde5 --enable-gtk3-kde5'
+  #prt-get isinst kio && PKGMK_LIBREOFFICE+=' --enable-kde5 --enable-gtk3-kde5'
   #prt-get isinst libstaroffice && PKGMK_LIBREOFFICE+=' --with-system-libstaroffice' || PKGMK_LIBREOFFICE+=' --without-system-libstaroffice'
   #prt-get isinst libtommath && PKGMK_LIBREOFFICE+= ' --with-system-libtommath' || PKGMK_LIBREOFFICE+=' --without-system-libtommath'
   prt-get isinst lpsolve && PKGMK_LIBREOFFICE+=' --enable-lpsolve' || PKGMK_LIBREOFFICE+=' --disable-lpsolve'
@@ -87,22 +104,23 @@ build() {
   prt-get isinst openldap || PKGMK_LIBREOFFICE+=' --disable-ldap'
   prt-get isinst postgresql || PKGMK_LIBREOFFICE+=' --disable-postgresql-sdbc'
   prt-get isinst python3-lxml || PKGMK_LIBREOFFICE+=' --without-lxml'
-  prt-get isinst qt5 && PKGMK_LIBREOFFICE+=' --enable-qt5' || PKGMK_LIBREOFFICE+=' --disable-qt5'
-  #prt-get isinst qt6-base && PKGMK_LIBREOFFICE+=' --enable-qt6' || PKGMK_LIBREOFFICE+=' --disable-qt6'
+  prt-get isinst qt6-base && PKGMK_LIBREOFFICE+=' --enable-qt6' || PKGMK_LIBREOFFICE+=' --disable-qt6'
   prt-get isinst sane && PKGMK_LIBREOFFICE+=' --with-system-sane' || PKGMK_LIBREOFFICE+=' --without-system-sane'
   prt-get isinst valgrind && PKGMK_LIBREOFFICE+=' --with-valgrind'
   # }}}
 
-  CXXFLAGS+=" -fpermissive"
+  export CFLAGS="$CLFAGS -fPIC"
+  export CXXFLAGS="$CFLAGS"
 
+  #unset CFLAGS CXXFLAGS CPPFLAGS
   local build_date=$(date +%Y%m%d)
   NOCONFIGURE=1 ./autogen.sh
-  ./configure $PKGMK_LIBREOFFICE \
+  bash ./configure $PKGMK_LIBREOFFICE \
     --with-parallelism=${JOBS-1} \
     --prefix=/usr \
     --with-external-tar="$SRC/tarballs" \
-    --enable-{build-opensymbol,dbus,firebird-sdbc=no,gtk3,introspection=yes} \
-    --enable-{ld=gold,odk,openssl,pdfium,python=system,release-build} \
+    --enable-{build-opensymbol,dbus,firebird-sdbc=no,gtk3,introspection=no} \
+    --enable-{pdfium,python=system,release-build} \
     --with-{lang="",package-format=archive,myspell-dicts} \
     --with-extra-buildid="$(irradium | awk '{ print $1 " " $3 }') ${build_date}" \
     --with-package-version="$version" \
@@ -110,13 +128,14 @@ build() {
     --with-external-dict-dir=/usr/share/hunspell \
     --with-external-hyph-dir=/usr/share/hypen \
     --with-external-thes-dir=/usr/share/mythes \
+    --disable-scripting-{beanshell,javascript} \
     --without-{doxygen,fonts,gssapi,help,helppack-integration,java,system-firebird} \
-    --disable-{ccache,dependency-tracking,extension-update,fetch-external,firebird-sdbc} \
-    --disable-{online-update,poppler,report-builder,sdremote-bluetooth,skia,werror,zxing}
+    --disable-{ccache,community-flavor,dependency-tracking,extension-update,fetch-external,firebird-sdbc,gtk4,odk,qt5} \
+    --disable-{online-update,pch,poppler,report-builder,sdremote-bluetooth,werror,xmlhelp,zxing}
 
   touch {sources.ver,src.downloaded}
-  echo "lo_sources_ver=${version}" > sources.ver
-  make
+  echo "lo_sources_ver=${version}" >sources.ver
+  make build
 
   pushd workdir/installation/LibreOffice/archive/install/en-US
   tar xf *.tar.gz
@@ -135,8 +154,6 @@ build() {
   ln -vsrf $PKG/usr/etc/libreoffice/{bootstraprc,sofficerc} .
 
   # cleanup {{{
-  rm -r $PKG/usr/share/{doc,libreoffice/sdk}
-  rm -r $PKG/usr/lib/libreoffice/sdk
   find $PKG -iname "*readme*" -exec rm -fr '{}' \+
   # }}}
 }
