@@ -11,8 +11,10 @@ source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$versio
   firefox.desktop
   icu-linebreak-classes.patch
   node-stdout-nonblocking-wrapper
-  riscv64-no-lto.patch
-  rust-lto-thin.patch)
+  01-rust-lto-thin.patch
+  02-riscv64-no-lto.patch
+  fix-fortify-system-wrappers.patch
+  fix-rust-target.patch)
 
 build() {
   cd $name-$version
