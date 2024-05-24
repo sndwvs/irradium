@@ -10,10 +10,7 @@ release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   icu-linebreak-classes.patch
-  node-stdout-nonblocking-wrapper
-  01-rust-lto-thin.patch
-  02-riscv64-no-lto.patch
-  fix-fortify-system-wrappers.patch)
+  node-stdout-nonblocking-wrapper)
 
 build() {
   cd $name-$version
@@ -50,7 +47,6 @@ cat <<- EOF > .mozconfig
   ac_add_options --enable-system-pixman
   ac_add_options --enable-optimize
   ac_add_options --enable-release
-  ac_add_options --enable-rust-simd
   ac_add_options --enable-sandbox
   ac_add_options --enable-official-branding
   ac_add_options --with-distribution-id=org.irradium
