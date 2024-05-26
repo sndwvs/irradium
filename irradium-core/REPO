@@ -33,7 +33,7 @@ f:cbbbdecab1948c6255c091398b8393ed:db/db-5.3.28-lemon_hash.patch
 f:015f019e2731e18c4229ed5772707feb:db/db-5.3.28-mmap-high-cpu-usage.patch
 f:42de24f40ae2c7ea1b4c59352962029f:db/db-5.3.28_cve-2019-2708.patch
 f:131a7abf96b5cbd339cba03d9cd7e595:dhcpcd/.footprint
-f:d775dd17a16f89e6e7c0ddbb69d9388f:dhcpcd/.signature
+f:60a6fe0f2709667d22bf34a37d083207:dhcpcd/.signature
 f:85091b274731b56d821cfa6e3fd9badd:dhcpcd/Pkgfile
 f:9b8f2bac610aad49e84ae7398c5735c1:dhcpcd/pre-install
 f:0b056dd3e5a3e1eacb7c9b38f0641e4d:dhcpcd/rc.dhcpcd
