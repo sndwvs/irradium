@@ -10,7 +10,9 @@ release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   icu-linebreak-classes.patch
-  node-stdout-nonblocking-wrapper)
+  node-stdout-nonblocking-wrapper
+  01-rust-lto-thin.patch
+  02-riscv64-no-lto.patch)
 
 build() {
   cd $name-$version
