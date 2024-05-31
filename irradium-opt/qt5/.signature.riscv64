@@ -1,0 +1,12 @@
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCVB7z8DtpjrYvbw2OzIo+ZmZeizJNHk5/4tcm669XRW7Xdmax9K69jjQ+eCJSGuu80I7/5IwFwrENcEqhfTtWwQ=
+SHA256 (Pkgfile) = 40b484c52a6cc864bc337f6c801a81f484953e6c66d2a267e2c3bf824edd5a7d
+SHA256 (.footprint) = 611aaa4cccabaa5f2ec2e10fd93688f8679906675f65b4d06e0fbcce3b527cb4
+SHA256 (qt-everywhere-opensource-src-5.15.13.tar.xz) = 9550ec8fc758d3d8d9090e261329700ddcd712e2dda97e5fcfeabfac22bea2ca
+SHA256 (qt-everywhere-opensource-src-5.15.13-kf5-1.patch) = 4b3e79176ae712afe4092c7080c98f456fbdc1b82e54790d87a108e6f9602e9c
+SHA256 (qtbase-5.15.8-fix-missing-qtsan-include.patch) = 65b435d09220fc66584f9613cdf7518367185af4e166c5b670301be6af98e8b1
+SHA256 (qt5-cflags.patch) = cf707cd970650f8b60f8897692b36708ded9ba116723ec8fcd885576783fe85c
+SHA256 (qt5-logo.png) = ae1335ecd1cd2d17032184895ab298a636cdfa8121b0ed71307c4f2b23ec928e
+SHA256 (qtbase-everywhere-src-5.14.2-no_relocatable.patch) = 1fed8b9e4eb5749e70d85d7678f08a5abc881e2a2ecab85fb21f59cb124500e5
+SHA256 (qtbase-everywhere-src-5.15.2-libglvnd.patch) = 6dd54f841127f20c27300874833636105f15e7481f549c007504bb82cf26c177
+SHA256 (qtbase-use-wayland-on-gnome.patch) = d62367c679e655a472f2777b9a7a97e17bd1340c0f0b2d40d1621217743122b8

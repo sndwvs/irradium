@@ -108,10 +108,12 @@ f:1eb31303f498bd070c0954effcdeaee1:qt5/qtbase-5.15.8-fix-missing-qtsan-include.p
 f:75876c4621aa6c0e89a7f0874ef71483:qt5/qtbase-everywhere-src-5.14.2-no_relocatable.patch
 f:47201f77ae59fe0fc782e2b56ce59e08:qt5/qtbase-everywhere-src-5.15.2-libglvnd.patch
 f:fe7af17c56fd33a78bf3fc8f81066902:qt5/qtbase-use-wayland-on-gnome.patch
-f:b98842c9b1cc2d83c4e60fba38e2966e:qt5/.footprint
-f:d43ba5d4d205eb02832d8f2214dbca79:qt5/.signature
 f:5a475dbed677723bb3d86c6d613735a0:qt5/Pkgfile
 f:7bd69345f9439dbe79ac9d8f1d251cf7:qt5/qt-everywhere-opensource-src-5.15.13-kf5-1.patch
+f:b98842c9b1cc2d83c4e60fba38e2966e:qt5/.footprint.aarch64
+f:d43ba5d4d205eb02832d8f2214dbca79:qt5/.signature.aarch64
+f:5818865f6d9ebde8f15510c13094cb59:qt5/.footprint.riscv64
+f:22c7cfe09487f66fd78ce884c42562d8:qt5/.signature.riscv64
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
 f:f537e5558cddfb4ccd07257609254a80:qt6-base/Pkgfile
