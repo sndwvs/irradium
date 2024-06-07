@@ -113,7 +113,7 @@ f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
 f:022ca4e9eeac6d2090a0289ee01db9f4:firefox/icu-linebreak-classes.patch
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
 f:5ca9c4e85a9748363df2d571ecd7f884:firefox/.footprint
-f:174ef7004043eb14aadd662cd3bd39d6:firefox/Pkgfile
+f:8ef67fa879b47a901b4c9952cf38b3c6:firefox/Pkgfile
 f:0e21454785ff8bca3f1d0a88ec1e16a7:firefox/fix-fortify-system-wrappers.patch
 f:d04b533ba603a6eb9be7c9999e991fd8:firefox/.signature
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
@@ -131,7 +131,7 @@ f:01bd8f664d478c92ee4d20dffc9fa36f:gn/Pkgfile
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
 f:ac7f7a45277bcd6f3f44fd075d40be09:go/.footprint
 f:e40fc5ec5832eaa266d529cfdf37a6f6:go/.signature
-f:987db53f2812b3d3db02ee4eee51af57:go/Pkgfile
+f:6c364d5731060fef78d677359e33441f:go/Pkgfile
 f:10ca5085e0dfb78c27e12b84d010c9ae:gtest/.footprint
 f:32eb7c972f06f9cb5409a0e5094a69af:gtest/.signature
 f:b4540ed22130bd01c84e5fb52785c5fb:gtest/Pkgfile
