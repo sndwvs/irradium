@@ -183,6 +183,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/archive/zip/
 -rw-r--r--	root/root	usr/lib/go/src/archive/zip/register.go
 -rw-r--r--	root/root	usr/lib/go/src/archive/zip/struct.go
 drwxr-xr-x	root/root	usr/lib/go/src/archive/zip/testdata/
+-rw-r--r--	root/root	usr/lib/go/src/archive/zip/testdata/comment-truncated.zip
 -rw-r--r--	root/root	usr/lib/go/src/archive/zip/testdata/crc32-not-streamed.zip
 -rw-r--r--	root/root	usr/lib/go/src/archive/zip/testdata/dd.zip
 -rw-r--r--	root/root	usr/lib/go/src/archive/zip/testdata/dupdir.zip
@@ -2559,6 +2560,7 @@ drwxr-xr-x	root/root	usr/lib/go/src/cmd/go/testdata/script/
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/gopath_vendor_dup_err.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/goroot_executable.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/goroot_executable_trimpath.txt
+-rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/gotoolchain_issue66175.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/gotoolchain_local.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/gotoolchain_loop.txt
 -rw-r--r--	root/root	usr/lib/go/src/cmd/go/testdata/script/gotoolchain_modcmds.txt
@@ -5299,7 +5301,6 @@ drwxr-xr-x	root/root	usr/lib/go/src/crypto/x509/pkix/
 -rw-r--r--	root/root	usr/lib/go/src/crypto/x509/root_aix.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/x509/root_bsd.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/x509/root_darwin.go
--rw-r--r--	root/root	usr/lib/go/src/crypto/x509/root_darwin_test.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/x509/root_linux.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/x509/root_plan9.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/x509/root_solaris.go
@@ -5308,7 +5309,6 @@ drwxr-xr-x	root/root	usr/lib/go/src/crypto/x509/pkix/
 -rw-r--r--	root/root	usr/lib/go/src/crypto/x509/root_unix_test.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/x509/root_wasm.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/x509/root_windows.go
--rw-r--r--	root/root	usr/lib/go/src/crypto/x509/root_windows_test.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/x509/sec1.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/x509/sec1_test.go
 -rw-r--r--	root/root	usr/lib/go/src/crypto/x509/test-file.crt
@@ -13203,6 +13203,9 @@ drwxr-xr-x	root/root	usr/lib/go/test/fixedbugs/issue6513.dir/
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue6703x.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue6703y.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue6703z.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue67141.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue67160.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue67255.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue6750.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue6772.go
 drwxr-xr-x	root/root	usr/lib/go/test/fixedbugs/issue6789.dir/

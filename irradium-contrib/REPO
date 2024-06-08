@@ -130,8 +130,8 @@ f:026e4f0c29fb9a901487f616b02e850b:gn/.footprint
 f:a3fec4f73d0291b1be4b645553143e5a:gn/.signature
 f:01bd8f664d478c92ee4d20dffc9fa36f:gn/Pkgfile
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
-f:ac7f7a45277bcd6f3f44fd075d40be09:go/.footprint
-f:e40fc5ec5832eaa266d529cfdf37a6f6:go/.signature
+f:15159864350d7de6cae05c23883a6020:go/.footprint
+f:7a78c2620fa51ac9c32dde6a7b4e9894:go/.signature
 f:6c364d5731060fef78d677359e33441f:go/Pkgfile
 f:10ca5085e0dfb78c27e12b84d010c9ae:gtest/.footprint
 f:32eb7c972f06f9cb5409a0e5094a69af:gtest/.signature
@@ -340,3 +340,5 @@ f:4265935ef1d684a4b49041278ffda7de:shntool/shntool-3.0.10-large-size.diff
 f:6f0d61ddbf8cbee5c0b51a99e987ddda:shntool/shntool-3.0.10-large-times.diff
 f:36663982cb2dd06e86a2afb7493af5a4:crosstool-ng/0001-sunrpc.diff
 f:08a0605474b5f91faaaafd0725f98117:crosstool-ng/Pkgfile
+f:3ff067b92571568863f959eda7003ff9:crosstool-ng/.footprint
+f:996508e98fec4acff8e2921c7a909b68:crosstool-ng/.signature
