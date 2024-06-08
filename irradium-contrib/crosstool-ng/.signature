@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7lh9C34W0MPLdjWny2OGoqSCcjk6BlNtBFAkvZgdm/d6jBHaJUJAoh/oC9Qbhs9YtKb5gyDuOmI35GsU5Vf0Iw0=
+SHA256 (Pkgfile) = ec1b7b04a74fdc97605369da4e1f6b10e5f31594773ac48fc312ad8070e90828
+SHA256 (.footprint) = 59834bd2bc11c15c1eea19bf9fcf3ef704657461d6d0c97d6d51c2cb1f505ab1
+SHA256 (crosstool-ng-1.25.0.tar.xz) = 68162f342243cd4189ed7c1f4e3bb1302caa3f2cbbf8331879bd01fe06c60cd3
+SHA256 (0001-sunrpc.diff) = a90925096e9cc5eae20e8734df09619691fc2c06d58f3d0f7d6a0a7a2dd3d602
