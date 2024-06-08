@@ -4,7 +4,7 @@
 # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
 
 name=chromium
-version=124.0.6367.118
+version=125.0.6422.141
 release=1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz
         chromium.default chromium.sh
@@ -15,7 +15,8 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
         patches/0002-Run-blink-bindings-generation-single-threaded.patch
         patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
         patches/chromium-117-material-color-include.patch
-        patches/chromium-125-ninja-1-12.patch
+        patches/fix-a-missing-build-dependency.patch
+        patches/allow-ANGLEImplementation-kVulkan.patch
 )
 
 build() {
@@ -77,6 +78,8 @@ build() {
         export MAKEFLAGS="-j4"
     fi
 
+    CFLAGS="${CFLAGS/_FORTIFY_SOURCE=3/_FORTIFY_SOURCE=2}" && CXXFLAGS="$CFLAGS"
+
     # Allow build to set march and options on AArch64 (crc, crypto)
     [[ $(uname -m) == "aarch64" ]] && CFLAGS=`echo $CFLAGS | sed -e 's/-march=armv8-a//'` && CXXFLAGS="$CFLAGS"
 
@@ -93,6 +96,8 @@ build() {
     patch -Np1 -i $SRC/use-oauth2-client-switches-as-default.patch || exit 1
 
     # Upstream fixes
+    patch -Np1 -i $SRC/fix-a-missing-build-dependency.patch || exit 1
+    patch -Np1 -i $SRC/allow-ANGLEImplementation-kVulkan.patch || exit 1
 
     # Drop compiler flags that need newer clang
     patch -Np1 -i $SRC/drop-flag-unsupported-by-clang17.patch || exit 1
@@ -102,7 +107,6 @@ build() {
 
     # Fixes for building with libstdc++ instead of libc++
     patch -Np1 -i $SRC/chromium-117-material-color-include.patch || exit 1
-    patch -Np1 -i $SRC/chromium-125-ninja-1-12.patch || exit 1
 
     # Custom Patches
     sed -i '/^bool IsHevcProfileSupported(const VideoType& type) {$/{s++bool IsHevcProfileSupported(const VideoType\& type) { return true;+;h};${x;/./{x;q0};x;q1}' \
