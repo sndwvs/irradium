@@ -1,0 +1,35 @@
+# Description: tool for building toolchains
+# URL: http://crosstool-ng.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: autoconf automake bash bison file gcc flex gawk gperf libtool patch make sed wget xz texinfo ncurses gettext
+
+name=crosstool-ng
+version=1.25.0
+release=1
+source=(http://crosstool-ng.org/download/crosstool-ng/$name-$version.tar.xz
+    0001-sunrpc.diff)
+
+build() {
+    cd $name-$version
+
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --mandir=/usr/share/man \
+        --disable-nls \
+        --disable-debug
+
+    make
+    make DESTDIR=$PKG install
+
+    # bash completion
+    mkdir -p $PKG/usr/share/bash-completion/completions/
+    mv $PKG/usr/share/bash-completion/completions/ct-ng \
+        $PKG/usr/share/bash-completion/completions/$name
+
+    # glibc patch
+    for glibc in 2.28 2.29; do
+        install -D -m 0644 $SRC/0001-sunrpc.diff \
+            $PKG/usr/share/crosstool-ng/packages/glibc/$glibc/0001-sunrpc.patch
+    done
+}
