@@ -28,6 +28,7 @@ d:yasm
 d:zip
 d:pkg-get
 d:dbus
+d:hyphen
 f:9fb2e0a0ce730c3da4bc8e3c4c63b482:cryptsetup/.footprint
 f:77ab1f5dfe58c1706dcbf46c53f0b581:cryptsetup/.signature
 f:27a77b923be11c293103faabfe90269a:cryptsetup/Pkgfile
@@ -167,3 +168,6 @@ f:32c26cdf1e3062bebc1e015a6bbfce12:dbus/dbus-1.12.x-allow_root_globally.diff
 f:bf567c5e6650b609d4dd8e48efb18864:dbus/dbus-enable-elogind.patch
 f:95412978f8aa3c9fc667543107086479:dbus/post-install
 f:c51f2067699af541512233bbdd48dec4:dbus/rc.dbus
+f:761d01b09e41159c71636c6ce8e18f65:hyphen/.footprint
+f:f2a6bc2de0496063825791220cf24be6:hyphen/.signature
+f:e1dadd566a18049c0bdcfe2c7b4773a5:hyphen/Pkgfile
