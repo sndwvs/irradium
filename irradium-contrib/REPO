@@ -70,6 +70,7 @@ d:rxvt-unicode
 d:rkdeveloptool
 d:pkgtools
 d:libwpd
+d:libodfgen
 d:cpufrequtils
 d:mtd-utils
 d:rnnoise
@@ -327,6 +328,11 @@ f:9e3afdf11c75bbc130ec27e13dee8627:libwpd/gcc11.patch
 f:6b480ba79c80d67430c5ed6c765d55bf:libwpd/include.patch
 f:78aeefde3f92827181e390abe4a6f97f:libwpd/libwpd-bundled-soname.patch.0
 f:9613763b2b1a85b6799538d15d3b88d5:libwpd/rpath.patch
+f:62fb922566759397e66d9ff63e3d0a2b:libodfgen/.footprint
+f:121e425f9f84dbb86a95993df1870998:libodfgen/.signature
+f:439ae9ab4b141e586319b983d596738e:libodfgen/Pkgfile
+f:7646dfbff6611dd019cc29d01741e5f9:libodfgen/ellipticalarc.patch
+f:102c5aabe65793793e36f1b2a849898e:libodfgen/rpath.patch
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch

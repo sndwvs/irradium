@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/contrib.pub
+RWSagIOpLGJF30tyuE4P5l9nCO5trupl5Dp2ZLFPwb4cb86okJV+M3qKzK7TcrQvctUuBPD/E6Ko/KzUdi5FdWUxnJXeJY5tWw8=
+SHA256 (Pkgfile) = d2ea97ef5459ae02cf2ca5bdc9a00648a409aa3569f2f7ee1eedbc3d9481525b
+SHA256 (.footprint) = 3b091d64dfdb60806313f7ed17ebe9fa035d7f5114b075823cc280f3400b5fa6
+SHA256 (libodfgen-0.1.8.tar.xz) = 55200027fd46623b9bdddd38d275e7452d1b0ff8aeddcad6f9ae6dc25f610625
+SHA256 (ellipticalarc.patch) = d73447cd236f5c20fceefdb278c856af2f05a185782ad2bdb23a220d38ac0a9c
+SHA256 (rpath.patch) = 02f11d9b12f858482a958feb91e9a0b1ed303976888142a464d33c3560d1d908
