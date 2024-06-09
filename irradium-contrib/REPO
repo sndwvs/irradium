@@ -71,6 +71,7 @@ d:rkdeveloptool
 d:pkgtools
 d:libwpd
 d:libodfgen
+d:libstaroffice
 d:cpufrequtils
 d:mtd-utils
 d:rnnoise
@@ -334,6 +335,10 @@ f:121e425f9f84dbb86a95993df1870998:libodfgen/.signature
 f:439ae9ab4b141e586319b983d596738e:libodfgen/Pkgfile
 f:7646dfbff6611dd019cc29d01741e5f9:libodfgen/ellipticalarc.patch
 f:102c5aabe65793793e36f1b2a849898e:libodfgen/rpath.patch
+f:f47b92f267e5b4c84169653e0d53a0f2:libstaroffice/.footprint
+f:828c962163763983d236dbd212dc118b:libstaroffice/.signature
+f:c83a81104d32105066801610fa78fb5b:libstaroffice/Pkgfile
+f:ac378fbcbb37eb1067a366a23c3a8bb2:libstaroffice/libstaroffice-bundled-soname.patch.0
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch

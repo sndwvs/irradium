@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/contrib.pub
+RWSagIOpLGJF3089ky/m8yrI+Wdeb3054Jt9ID/yLWK8a/WhuTlHGwmwuJnlSgYvO3Ly6wT9hK/gal+DtoU29tOgbX79GMko9gg=
+SHA256 (Pkgfile) = 78c4e2f38f6cf9a290903b31cafc7724e46ee0aca767300bae9a7ea3fe6e33ae
+SHA256 (.footprint) = dd394d998561b8948a466593c2ac91602fda892217305411eb57d136c14a9df6
+SHA256 (libstaroffice-0.0.7.tar.xz) = f94fb0ad8216f97127bedef163a45886b43c62deac5e5b0f5e628e234220c8db
+SHA256 (libstaroffice-bundled-soname.patch.0) = 6ccbb13924733c05d4cd44bb1f6668b824baf0fad74de9dd3618053b1a689266
