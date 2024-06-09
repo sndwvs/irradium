@@ -77,6 +77,7 @@ d:shntool
 d:crosstool-ng
 d:unixodbc
 d:librevenge
+d:libabw
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -356,3 +357,6 @@ f:3005a6fd1d6897bba2c04ca61addef1c:librevenge/.signature
 f:d5f2df786bbdaaef962762a25618a1cf:librevenge/Pkgfile
 f:d1cf564bc91f33d6cd5a49bfebfa4ea2:librevenge/librevenge-bundled-soname.patch.0
 f:01cac828226a1d01fae89db33e5a0a64:librevenge/rpath.patch
+f:63dc65925299640665e0b5a885d53ae6:libabw/.footprint
+f:24b2d10a1ec0bd6c4af145db9a6a00fb:libabw/.signature
+f:af871f5c000e15590949975dab938807:libabw/Pkgfile
