@@ -78,6 +78,7 @@ d:crosstool-ng
 d:unixodbc
 d:librevenge
 d:libabw
+d:libepubgen
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -360,3 +361,6 @@ f:01cac828226a1d01fae89db33e5a0a64:librevenge/rpath.patch
 f:63dc65925299640665e0b5a885d53ae6:libabw/.footprint
 f:24b2d10a1ec0bd6c4af145db9a6a00fb:libabw/.signature
 f:af871f5c000e15590949975dab938807:libabw/Pkgfile
+f:0dfbfc2af3fe6ef796478c3b2db1701e:libepubgen/.footprint
+f:f39be2913cae2a1199e01985494ad874:libepubgen/.signature
+f:1960d034cb0e926888d43616fc0f5521:libepubgen/Pkgfile
