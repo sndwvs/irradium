@@ -84,6 +84,7 @@ d:libabw
 d:libepubgen
 d:libmwaw
 d:libpagemaker
+d:libvisio
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -393,3 +394,7 @@ f:877c3e2c8f3c7ed586aaae3507cee30a:libmwaw/rpath.patch
 f:77cf7e4fd5b4a4a80309f3f2fae862f0:libpagemaker/.footprint
 f:a4cb3399cc3409ec3da081d8d88befac:libpagemaker/.signature
 f:2d8dcd24462e890847439a243d2a25e2:libpagemaker/Pkgfile
+f:991aefdd7a2e001c317517ae37a3c1c3:libvisio/.footprint
+f:eb6413e46f43a626a8e1e47ce3256e5c:libvisio/ubsan.patch
+f:c2a4a839dcddd07755cc7e8cf2c04dc6:libvisio/.signature
+f:5f0906f2b9a6b0490a58e6f4671eaac9:libvisio/Pkgfile
