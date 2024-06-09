@@ -75,6 +75,7 @@ d:rnnoise
 d:rp-pppoe
 d:shntool
 d:crosstool-ng
+d:unixodbc
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -346,3 +347,6 @@ f:36663982cb2dd06e86a2afb7493af5a4:crosstool-ng/0001-sunrpc.diff
 f:08a0605474b5f91faaaafd0725f98117:crosstool-ng/Pkgfile
 f:3ff067b92571568863f959eda7003ff9:crosstool-ng/.footprint
 f:996508e98fec4acff8e2921c7a909b68:crosstool-ng/.signature
+f:956ee3791214de44f39d849a24a55a89:unixodbc/.footprint
+f:d06d6514ba41fa0c78656a1fd34b1357:unixodbc/.signature
+f:acb8b825a8c21f048b9e92df69931c45:unixodbc/Pkgfile
