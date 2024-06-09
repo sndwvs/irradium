@@ -82,6 +82,7 @@ d:librevenge
 d:libabw
 d:libepubgen
 d:libmwaw
+d:libpagemaker
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -384,3 +385,6 @@ f:ad8ab14173380290f4750c382cd24be7:libmwaw/.signature
 f:66f98b4d6c07afb31ce230504b28d91b:libmwaw/Pkgfile
 f:3ab83c4eb63f1a8743cfa9915015725d:libmwaw/libmwaw-bundled-soname.patch.0
 f:877c3e2c8f3c7ed586aaae3507cee30a:libmwaw/rpath.patch
+f:77cf7e4fd5b4a4a80309f3f2fae862f0:libpagemaker/.footprint
+f:a4cb3399cc3409ec3da081d8d88befac:libpagemaker/.signature
+f:2d8dcd24462e890847439a243d2a25e2:libpagemaker/Pkgfile
