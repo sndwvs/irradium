@@ -51,7 +51,6 @@ cat <<- EOF > .mozconfig
   ac_add_options --enable-release
   ac_add_options --enable-official-branding
   ac_add_options --with-distribution-id=org.irradium
-  ac_add_options --enable-lto=thin
   ac_add_options --disable-tests
   ac_add_options --disable-debug-symbols
   ac_add_options --disable-updater
@@ -63,8 +62,10 @@ EOF
   if [ $(uname -m) != "riscv64" ]; then
     echo 'ac_add_options --disable-elf-hack' >> .mozconfig
     echo 'ac_add_options --enable-sandbox' >> .mozconfig
+    echo 'ac_add_options --enable-lto=thin' >> .mozconfig
   else
     echo 'ac_add_options --disable-sandbox' >> .mozconfig
+    echo 'ac_add_options --disable-lto' >> .mozconfig
   fi
 
   # disable packed_simd with rust >= 1.78.0, because the bundled crate in this tarball 
@@ -95,7 +96,7 @@ EOF
   # use llvm linker, if present
   prt-get isinst lld && \
       { echo 'ac_add_options --enable-linker=lld' >> .mozconfig;
-        export LDFLAGS+=" -Wl,--thinlto-jobs=$((JOBS / 2))"; } || \
+        if [ $(uname -m) != "riscv64" ]; then  export LDFLAGS+=" -Wl,--thinlto-jobs=$((JOBS / 2))"; fi ; } || \
       echo 'ac_add_options --enable-linker=bfd' >> .mozconfig
 
   local clangVer=$(/usr/bin/clang -dumpversion)
