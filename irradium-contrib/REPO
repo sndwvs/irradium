@@ -69,6 +69,7 @@ d:mkinitramfs
 d:rxvt-unicode
 d:rkdeveloptool
 d:pkgtools
+d:libwpd
 d:cpufrequtils
 d:mtd-utils
 d:rnnoise
@@ -318,6 +319,13 @@ f:c3d31fc159c031b509e3b70466661896:pkgtools/.footprint
 f:c87e34bbbedfc0c6540be5f39e7179cd:pkgtools/.signature
 f:3129b1af7f0f5fb986dfdafc3507dace:pkgtools/Pkgfile
 f:ea29b259b6fda2cfaaae1e8ab1239cf0:pkgtools/post-install
+f:4db8b7c90cd5f8d488018b4c3493765f:libwpd/.footprint
+f:bac76af653fcaaf39f36c99832cc5649:libwpd/.signature
+f:981e99a1daecb2f2a3ad864e239d68f1:libwpd/Pkgfile
+f:9e3afdf11c75bbc130ec27e13dee8627:libwpd/gcc11.patch
+f:6b480ba79c80d67430c5ed6c765d55bf:libwpd/include.patch
+f:78aeefde3f92827181e390abe4a6f97f:libwpd/libwpd-bundled-soname.patch.0
+f:9613763b2b1a85b6799538d15d3b88d5:libwpd/rpath.patch
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch

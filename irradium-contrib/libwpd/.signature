@@ -1,0 +1,9 @@
+untrusted comment: verify with /etc/ports/contrib.pub
+RWSagIOpLGJF30tzfkPxPjjuJpVq7Qtd/QlaPGZYy4jucDu1XjWbCEbo5lD9hFAl0+GgcyB9jcqyKLMoR5CfTh2E13NBB+F23ws=
+SHA256 (Pkgfile) = 7b8a0e9e0208d294fee2b0a2b22cc4e1045fbb0d4465ce4371792dc4b8a7a12a
+SHA256 (.footprint) = 1d6410b90c76d957843dffb60847ff00da5a64c9f1e54340d2dfbfa925cbe5a5
+SHA256 (libwpd-0.10.3.tar.xz) = 2465b0b662fdc5d4e3bebcdc9a79027713fb629ca2bff04a3c9251fdec42dd09
+SHA256 (gcc11.patch) = 7612c36e5e16df2b786fc4c905f096a6e7d600aade292e91950607bfbfba6c32
+SHA256 (include.patch) = 6aaf775b160e05bcb6ff9d0f6c1dc05ccb337d49efe76ec4078b8acfc207fa42
+SHA256 (libwpd-bundled-soname.patch.0) = 22589eecd0e6128f03dc3650baee2bd4dddb93cadcc52da9a9192dcdc353cdf0
+SHA256 (rpath.patch) = 9a6fe23afbc0453ce920335ed680320c6d6436a887a2a486c3cdd688311687fb
