@@ -76,6 +76,7 @@ d:rp-pppoe
 d:shntool
 d:crosstool-ng
 d:unixodbc
+d:librevenge
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -350,3 +351,8 @@ f:996508e98fec4acff8e2921c7a909b68:crosstool-ng/.signature
 f:956ee3791214de44f39d849a24a55a89:unixodbc/.footprint
 f:d06d6514ba41fa0c78656a1fd34b1357:unixodbc/.signature
 f:acb8b825a8c21f048b9e92df69931c45:unixodbc/Pkgfile
+f:c5b5efe6696754fd269075f8cc38f758:librevenge/.footprint
+f:3005a6fd1d6897bba2c04ca61addef1c:librevenge/.signature
+f:d5f2df786bbdaaef962762a25618a1cf:librevenge/Pkgfile
+f:d1cf564bc91f33d6cd5a49bfebfa4ea2:librevenge/librevenge-bundled-soname.patch.0
+f:01cac828226a1d01fae89db33e5a0a64:librevenge/rpath.patch
