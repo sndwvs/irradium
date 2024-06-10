@@ -73,6 +73,7 @@ d:libwpd
 d:libodfgen
 d:libstaroffice
 d:libzmf
+d:libmspub
 d:cpufrequtils
 d:mtd-utils
 d:rnnoise
@@ -345,6 +346,11 @@ f:ac378fbcbb37eb1067a366a23c3a8bb2:libstaroffice/libstaroffice-bundled-soname.pa
 f:908a6ee3fcf2a19e7c91feb675f22a31:libzmf/.footprint
 f:12ca433b29d5964fb6f2ff8ddb2ea8fe:libzmf/.signature
 f:adc0d9a61c38c9ad8050b8aa6dd01b2f:libzmf/Pkgfile
+f:24b1efc1816abd49a6528b1e902b7902:libmspub/.footprint
+f:ee3f2f2e58437aa66408efcd61810ab9:libmspub/missing_include.patch
+f:602f2c152bf6e15983b496beb2ae8a27:libmspub/ubsan.patch
+f:3e169bd43bb587db0c5b9336013032d4:libmspub/.signature
+f:905b683776e6d0c20a0dc3557209d8e9:libmspub/Pkgfile
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch
