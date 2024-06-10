@@ -65,6 +65,7 @@ d:viewnior
 d:vlc
 d:xcursor-justblue
 d:yt-dlp
+d:redland
 d:mkinitramfs
 d:rxvt-unicode
 d:rkdeveloptool
@@ -305,6 +306,14 @@ f:536c8ab1bcfc4f13e33c77b61facb496:xcursor-justblue/justblue-0.21.patch.xz
 f:411f322dcc58e38d44687094c07c32a4:yt-dlp/.footprint
 f:9e0ccbbfa96489f1a54fea604c4c8b17:yt-dlp/.signature
 f:61692ab69cd3741affc3e42082b44867:yt-dlp/Pkgfile
+f:9a38c472262b43d142346e09bb0ddd48:redland/.footprint
+f:9e59f9d9bead213f2ceba7dcd164c640:redland/.signature
+f:c7c80f0ba4c4fa7c25365a2379100ae9:redland/Pkgfile
+f:d13fe4d993ecc3bccb9b9fbcf0142933:redland/libtool.patch
+f:2aef15a3be345ec0a1a7592e270d7619:redland/redland-bundled-soname.patch.1
+f:62f993e9827bb450366d6e1ce6cced90:redland/redland-format.patch.0
+f:5950616e33d65d96e8e00d88c884218d:redland/redland-xcompile.patch.1
+f:e890fb779dac0f855d41cc843329ddb8:redland/rpath.patch
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4461500806eba45e6f7dd0f5805ea777:mkinitramfs/init.in.patch
 f:0ccf2c3bbe610cff21943fc21e9d8764:mkinitramfs/mkinitramfs.patch
