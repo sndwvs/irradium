@@ -86,6 +86,7 @@ d:libepubgen
 d:libmwaw
 d:libpagemaker
 d:libvisio
+d:libfreehand
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -402,3 +403,7 @@ f:991aefdd7a2e001c317517ae37a3c1c3:libvisio/.footprint
 f:eb6413e46f43a626a8e1e47ce3256e5c:libvisio/ubsan.patch
 f:c2a4a839dcddd07755cc7e8cf2c04dc6:libvisio/.signature
 f:5f0906f2b9a6b0490a58e6f4671eaac9:libvisio/Pkgfile
+f:7b85252bbb2263bfb6322d2496533ba8:libfreehand/.footprint
+f:f91d998156747fed18066aa8d45b9435:libfreehand/.signature
+f:83e97f4fb0e66fd10d10fcd75a3ab497:libfreehand/0001-Add-missing-semicolon-to-fix-build-with-icu-65.1.patch
+f:3bef73249ab3b892b1d4b5d7ef73fef4:libfreehand/Pkgfile
