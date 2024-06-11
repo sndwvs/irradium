@@ -1,0 +1,22 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7mVAoEJxg37xEejiN7BFiGaGLMaCyazCjTpjrsXDmWFj1VOSlwI4pVBe9/2h2ssVAi+BTXoFm5R/ndIPSprVUQk=
+SHA256 (Pkgfile) = 76714302b84a85970093026fe60514e70f4200d8b816f5eda1fa8a9e7ee96615
+SHA256 (.footprint.riscv64) = 1b7f29b3d2d743708bcfe00c7c882a3cb6a23f6e98562e1da0076a645961d162
+SHA256 (.footprint.aarch64) = 1b7f29b3d2d743708bcfe00c7c882a3cb6a23f6e98562e1da0076a645961d162
+SHA256 (chromium-125.0.6422.141.tar.xz) = 9966b50279d0cfaaf4b58570387f0d526388f8d5f6dd990e3f083a55d8d8e603
+SHA256 (chromium.default) = f94677036f4d820c8361241bac84594ae6f2ae22839d906c66b2005bdde8ad78
+SHA256 (chromium.sh) = 0cfc11faeaf9a1e8775a248876d86cb798c17077618cbe4ccf9797d7c71386d5
+SHA256 (drop-flag-unsupported-by-clang17.patch) = 3bd35dab1ded5d9e1befa10d5c6c4555fe0a76d909fb724ac57d0bf10cb666c1
+SHA256 (compiler-rt-adjust-paths.patch) = b3de01b7df227478687d7517f61a777450dca765756002c80c4915f271e2d961
+SHA256 (use-oauth2-client-switches-as-default.patch) = 69d2f076223cab0cf1094ae58c39b5687a98f69bf4545414a35f6a4d2708ed83
+SHA256 (0001-widevine-support-for-arm.patch) = 6775b8d6b0662d61ba9f925bbb00c51eb06e871c7bf9308d608db7a131fdeb63
+SHA256 (0002-Run-blink-bindings-generation-single-threaded.patch) = f0cba56bf1625ac18836a8b71cfc5359ac6e4b33dbbd0da4a67ae6dda70d3e5e
+SHA256 (0003-Fix-eu-strip-build-for-newer-GCC.patch) = 38d3b2375c2d36b04ec9486044a466cd08701f428471e64707f241d3ac300b82
+SHA256 (chromium-117-material-color-include.patch) = c94785e3258be7ebdb50fdc40044cf65a91fdb11772eabe7a58e260757453cae
+SHA256 (fix-a-missing-build-dependency.patch) = 75e1482d1b27c34ebe9d4bf27104fedcc219cdd95ce71fc41e77a486befd3f93
+SHA256 (allow-ANGLEImplementation-kVulkan.patch) = 8f81059d79040ec598b5fb077808ec69d26d6c9cbebf9c4f4ea48b388a2596c5
+SHA256 (riscv-build.patch) = d610acb2d7a4b04c4a0fb3d999c8086cee5b385fe33db3d070fbc0c572e30081
+SHA256 (riscv-cpuinfo.patch) = 83fbed2a3a98394bbc56a7e9f6cf7ad82539819d96ff648f3ffe64d1693b8157
+SHA256 (riscv-dav1d.patch) = 5689e9422624c8725509b6fdc277e20c3e8862cf515656faef7507978489bc4e
+SHA256 (riscv-sandbox.patch) = e4ebbbadf4ab416fcc1e3496a07f8a444fe158e96344f96454e1f997fece1136
+SHA256 (riscv-swiftshader.patch) = 91a1f0f174ddf66e652c4dcae955909096962595080721094f7d13ed1ca8c4da
