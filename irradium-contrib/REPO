@@ -303,7 +303,12 @@ f:451b216bf7f65e9130d3e39423ba4915:ungoogled-chromium/patches/random-build-fixes
 f:859a22c4cb5b621221840f2d36a0bf5c:ungoogled-chromium/patches/allow-ANGLEImplementation-kVulkan.patch
 f:a251323b4583ef6756a1891f286035ab:ungoogled-chromium/patches/fix-a-missing-build-dependency.patch
 f:943a8ad7c3d3d871b2c76ee24860c36e:ungoogled-chromium/patches/chromium-117-material-color-include.patch
-f:caad623bd90e7464ef7f6da92b047942:ungoogled-chromium/Pkgfile
+f:8f1a882079ab626550f488b175978660:ungoogled-chromium/patches/riscv-build.patch
+f:1b0234bfa26d46de50ebe9ccfecf3ec3:ungoogled-chromium/patches/riscv-cpuinfo.patch
+f:ff5ce5d2dfa698c8f2b4a8e554d654a2:ungoogled-chromium/patches/riscv-dav1d.patch
+f:98cc3cfb15d2c63349215abb1cb3fd9c:ungoogled-chromium/patches/riscv-sandbox.patch
+f:6b2e0838b213cc8c0f892f942ebfafc0:ungoogled-chromium/patches/riscv-swiftshader.patch
+f:c34cb2ae05941bf65eb6e4e5b602b8f9:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:6e3f456da8c441972ceec1d74e17cd26:viewnior/Pkgfile
 f:975eeae744a613e326b89b5dd4ef1fbe:viewnior/exiv2-0.28.patch
