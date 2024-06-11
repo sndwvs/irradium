@@ -1,5 +1,5 @@
---- a/pkgmk.in	2023-02-03 18:32:32.000000000 +0200
-+++ b/pkgmk.in	2023-12-02 21:02:55.156538999 +0200
+--- a/pkgmk.in	2023-12-02 00:44:50.922529207 +0200
++++ b/pkgmk.in	2024-06-11 20:37:13.229228265 +0300
 @@ -324,7 +324,11 @@ check_signature() {
  		srcind=$(( srcind+1 ))
  		done
@@ -26,7 +26,33 @@
  		LOCAL_FILENAMES="$LOCAL_FILENAMES `get_filename $FILE`"
  	done
  
-@@ -502,6 +510,10 @@ check_footprint() {
+@@ -419,7 +427,11 @@ make_signature() {
+ 		error "Creating signature failed"
+ 		exit $E_SIGNATURE
+ 	else
+-		mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
++		if [ -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
++		    mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}.${MULTI_ARCH}
++		else
++		    mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
++		fi
+ 	fi
+ }
+ 
+@@ -442,7 +454,11 @@ refresh_signature() {
+ 		error "Refreshing signature failed"
+ 		exit $E_SIGNATURE
+ 	else
+-		mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
++		if [ -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
++		    mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}.${MULTI_ARCH}
++		else
++		    mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
++		fi
+ 	fi
+ }
+ 
+@@ -502,6 +518,10 @@ check_footprint() {
  
  	cd $PKGMK_ROOT
  
@@ -37,7 +63,7 @@
  	if [ -f $TARGET ]; then
  		make_footprint > $FILE.footprint
  		if [ -f $PKGMK_FOOTPRINT ]; then
-@@ -688,6 +700,10 @@ update_footprint() {
+@@ -688,6 +708,10 @@ update_footprint() {
  		exit 1
  	fi
  
@@ -48,7 +74,7 @@
  	check_file "$PKGMK_FOOTPRINT"
  	make_footprint > $PKGMK_FOOTPRINT
  	touch $TARGET
-@@ -961,6 +977,8 @@ trap "interrupted" SIGHUP SIGINT SIGQUIT
+@@ -961,6 +985,8 @@ trap "interrupted" SIGHUP SIGINT SIGQUIT
  
  export LC_ALL=C.UTF-8
  
