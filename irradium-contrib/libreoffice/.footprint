@@ -10,6 +10,7 @@
 -rw-r--r--	root/root	gid_Module_Oo_Linguistic
 -rw-r--r--	root/root	gid_Module_Optional_Gnome
 -rw-r--r--	root/root	gid_Module_Optional_Grfflt
+-rw-r--r--	root/root	gid_Module_Optional_Kde
 -rw-r--r--	root/root	gid_Module_Optional_OGLTrans
 -rw-r--r--	root/root	gid_Module_Optional_Pyuno_LibreLogo
 -rw-r--r--	root/root	gid_Module_Optional_Xsltfiltersamples
@@ -288,6 +289,7 @@ lrwxrwxrwx	root/root	usr/lib/libreoffice/program/bootstraprc -> ../../../etc/lib
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libvcllo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libvclplug_genlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libvclplug_gtk3lo.so
+-rwxr-xr-x	root/root	usr/lib/libreoffice/program/libvclplug_qt6lo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwpftcalclo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwpftdrawlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwpftimpresslo.so
