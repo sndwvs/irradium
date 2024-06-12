@@ -32,10 +32,9 @@ d:hyphen
 f:9fb2e0a0ce730c3da4bc8e3c4c63b482:cryptsetup/.footprint
 f:77ab1f5dfe58c1706dcbf46c53f0b581:cryptsetup/.signature
 f:27a77b923be11c293103faabfe90269a:cryptsetup/Pkgfile
-f:8d01f9dc6e07549a5006967efd3622be:ffmpeg/add-av_stream_get_first_dts-for-chromium.patch
 f:dae0c10c99399580c929fc100e79faef:ffmpeg/ffmpeg-x264-10bit.sh
-f:2ea1a6a9af35bdfd2296d77426a0b022:ffmpeg/250471ea1745fc703eb346a2a662304536a311b1.patch
-f:bed50de44f4e060ea0a297b77800492d:ffmpeg/Pkgfile
+f:d22c503b98f55c21f81c0b3a4fb457e1:ffmpeg/Pkgfile
+f:8d01f9dc6e07549a5006967efd3622be:ffmpeg/add-av_stream_get_first_dts-for-chromium.patch
 f:89ad92073c2c3f61771204c4780a37bc:ffmpeg/fef22c87ada4517441701e6e61e062c9f4399c8e.patch
 f:b2c9d9a5b28f0803f79c748833911236:ffmpeg-mpp/.footprint
 f:5206bedf65b28e2b5b31038304f9202f:ffmpeg-mpp/.signature

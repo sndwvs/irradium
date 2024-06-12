@@ -5,12 +5,11 @@
 # Optional: alsa-lib amf-headers aom chromaprint cuda dav1d fdk-aac fontconfig freetype gnutls gsm jack jack-audio-connection-kit ladspa lame lcms2 lensfun libass libbs2b libcaca libcdio-paranoia libdrm libmodplug libplacebo librsvg libsdl2 libsoxr libssh libtheora libva libvdpau libvorbis libvpx libwebp libxml2 lv2 nv-codec-headers openal opencv openh264 openjpeg2 opus pulseaudio rav1e rtmpdump rubberband shaderc snappy speex svt-av1 v4l-utils x264 x265
 
 name=ffmpeg
-version=6.1.1
-release=3
+version=7.0.1
+release=1
 source=(https://ffmpeg.org/releases/$name-$version.tar.bz2
   add-av_stream_get_first_dts-for-chromium.patch
   fef22c87ada4517441701e6e61e062c9f4399c8e.patch
-  250471ea1745fc703eb346a2a662304536a311b1.patch
   ffmpeg-x264-10bit.sh)
 
 build() {
@@ -57,7 +56,7 @@ build() {
   prt-get isinst openh264 && PKGMK_FFMPEG+=' --enable-libopenh264'
   prt-get isinst openjpeg2 && PKGMK_FFMPEG+=' --enable-libopenjpeg'
   prt-get isinst openal && PKGMK_FFMPEG+=' --enable-openal'
-  prt-get isinst opencv && PKGMK_FFMPEG+=' --enable-libopencv'
+  #prt-get isinst opencv && PKGMK_FFMPEG+=' --enable-libopencv'
   prt-get isinst pulseaudio && PKGMK_FFMPEG+=' --enable-libpulse'
   prt-get isinst rtmpdump && PKGMK_FFMPEG+=' --enable-librtmp'
   prt-get isinst rav1e && PKGMK_FFMPEG+=' --enable-librav1e'
@@ -71,8 +70,6 @@ build() {
   prt-get isinst x265 && PKGMK_FFMPEG+=' --enable-libx265'
   prt-get isinst mpp && PKGMK_FFMPEG+=' --enable-rkmpp'
 
-  patch -Np1 -i $SRC/250471ea1745fc703eb346a2a662304536a311b1.patch
-  patch -Np1 -i $SRC/fef22c87ada4517441701e6e61e062c9f4399c8e.patch
   patch -Np1 -i $SRC/add-av_stream_get_first_dts-for-chromium.patch
 
   sed -i -e '/check_cflags -fdiagnostics-color=auto/d' configure
