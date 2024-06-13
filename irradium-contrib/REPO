@@ -137,14 +137,14 @@ f:ce8226895c981265c806fe855308406d:firefox/README
 f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
 f:022ca4e9eeac6d2090a0289ee01db9f4:firefox/icu-linebreak-classes.patch
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
-f:63a5d80af40d66031e68390b71cd6c45:firefox/Pkgfile
-f:0e21454785ff8bca3f1d0a88ec1e16a7:firefox/fix-fortify-system-wrappers.patch
+f:d471037d254e3d98789abe10e1c16b4a:firefox/Pkgfile
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:5ca9c4e85a9748363df2d571ecd7f884:firefox/.footprint.aarch64
 f:d04b533ba603a6eb9be7c9999e991fd8:firefox/.signature.aarch64
 f:3532ee64b1594fa2d9854b5d71d87224:firefox/.footprint.riscv64
 f:7ab33d90c660b3ca1ce13f54be36418f:firefox/.signature.riscv64
+f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:21a0da3ebc24d023dceaf01a0f4a8f0a:freerdp/.signature
 f:30411ebdac6139592d7398dc043739b6:freerdp/Pkgfile

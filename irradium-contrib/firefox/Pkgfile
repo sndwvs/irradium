@@ -5,11 +5,12 @@
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wasi-libc++ wayland
 
 name=firefox
-version=126.0.1
+version=127.0
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   icu-linebreak-classes.patch
+  fix-target-detection.patch
   node-stdout-nonblocking-wrapper
   01-rust-lto-thin.patch
   02-riscv64-no-lto.patch)
@@ -39,24 +40,32 @@ cat <<- EOF > .mozconfig
   ac_add_options --with-system-jpeg
   ac_add_options --with-system-zlib
   ac_add_options --with-system-png
+  ac_add_options --with-system-ffi
   ac_add_options --with-system-nspr
   ac_add_options --with-system-nss
   ac_add_options --with-system-libevent
   ac_add_options --with-system-libvpx
   ac_add_options --with-system-webp
   ac_add_options --enable-av1
-  ac_add_options --enable-system-ffi
   ac_add_options --enable-system-pixman
   ac_add_options --enable-optimize
+  ac_add_options --enable-strip
   ac_add_options --enable-release
+  ac_add_options --enable-install-strip
   ac_add_options --enable-official-branding
   ac_add_options --with-distribution-id=org.irradium
   ac_add_options --disable-tests
+  ac_add_options --disable-debug
   ac_add_options --disable-debug-symbols
+  ac_add_options --disable-eme
+  ac_add_options --disable-callgrind
   ac_add_options --disable-updater
   ac_add_options --disable-crashreporter
   ac_add_options --disable-necko-wifi
+  ac_add_options --disable-profiling
+  ac_add_options --disable-vtune
   ac_add_options --disable-parental-controls
+  ac_add_options --disable-system-extension-dirs
 EOF
 
   if [ $(uname -m) != "riscv64" ]; then
@@ -67,13 +76,6 @@ EOF
     echo 'ac_add_options --disable-sandbox' >> .mozconfig
     echo 'ac_add_options --disable-lto' >> .mozconfig
   fi
-
-  # disable packed_simd with rust >= 1.78.0, because the bundled crate in this tarball 
-  # relies on a deprecated API (see https://bugzilla.mozilla.org/show_bug.cgi?id=1896958).
-  # But keep enabling the simd speedup for users who locked rust to an older version.
-  local rustVer=$(rustc --version | cut -d' ' -f2 | sed 's/\.[[:digit:]]*$//')
-  awk -v rV=$rustVer 'BEGIN { if ( rV < 1.78 ) print "ac_add_options --enable-rust-simd" }' \
-         >> .mozconfig
 
   # audio
   PKGMK_FFAUDIO="alsa"
@@ -145,7 +147,7 @@ EOF
   DESTDIR=$PKG ./mach install
 
   install -d $PKG/usr/share/pixmaps
-  ln -s /usr/lib/firefox/browser/chrome/icons/default/default48.png $PKG/usr/share/pixmaps/firefox.png
+  ln -s /usr/lib/firefox/browser/chrome/icons/default/default128.png $PKG/usr/share/pixmaps/firefox.png
   install -D -m 0644 $SRC/firefox.desktop $PKG/usr/share/applications/firefox.desktop
   # Remove crap
   rm -r $PKG/usr/lib/firefox/browser/features
