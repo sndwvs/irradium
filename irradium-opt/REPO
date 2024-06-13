@@ -36,6 +36,8 @@ f:dae0c10c99399580c929fc100e79faef:ffmpeg/ffmpeg-x264-10bit.sh
 f:d22c503b98f55c21f81c0b3a4fb457e1:ffmpeg/Pkgfile
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg/add-av_stream_get_first_dts-for-chromium.patch
 f:89ad92073c2c3f61771204c4780a37bc:ffmpeg/fef22c87ada4517441701e6e61e062c9f4399c8e.patch
+f:3438aca528f53d4aa58fcb689b38f402:ffmpeg/.footprint
+f:3ab5c01bce88ca4db5f3a152e76f7ec5:ffmpeg/.signature
 f:b2c9d9a5b28f0803f79c748833911236:ffmpeg-mpp/.footprint
 f:5206bedf65b28e2b5b31038304f9202f:ffmpeg-mpp/.signature
 f:9b7540a197371561b62b9de0e67617af:ffmpeg-mpp/Pkgfile
