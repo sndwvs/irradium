@@ -71,7 +71,6 @@ EOF
     echo 'ac_add_options --enable-sandbox' >> .mozconfig
     echo 'ac_add_options --enable-lto=thin' >> .mozconfig
     echo 'ac_add_options --disable-elf-hack' >> .mozconfig
-    echo 'ac_add_options --disable-eme' >> .mozconfig
   else
     echo 'ac_add_options --disable-sandbox' >> .mozconfig
     echo 'ac_add_options --disable-lto' >> .mozconfig
