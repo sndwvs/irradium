@@ -238,7 +238,7 @@ f:57d8530224c720c1cf3650917c2e257b:mpp/Pkgfile
 f:408b6e6380b0ec88608d2a4750dd218f:mpp/fix-hardware-limited-to-memory-less-than-4G.patch
 f:2afb336186c3466ee6604e8c9d55b635:mpv/README
 f:817c5b12c6eeb2155b0f0b24b2688448:mpv/.footprint
-f:eea477e2e4de210a65afa198d1c8f870:mpv/.signature
+f:0d8fc3e3f3bb3e56fd17f5587b117478:mpv/.signature
 f:96dd25857e097ca074980f969c25893a:mpv/Pkgfile
 f:b9de1a5cd217513a591c2e5399dcf346:openjdk20-jdk/.footprint
 f:f22546a659635eba23cb4561fd56cca5:openjdk20-jdk/.signature
