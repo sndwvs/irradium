@@ -141,7 +141,7 @@ f:6d99f7507b7ebe194359a834ebde37da:firefox/Pkgfile
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:5ca9c4e85a9748363df2d571ecd7f884:firefox/.footprint.aarch64
-f:d04b533ba603a6eb9be7c9999e991fd8:firefox/.signature.aarch64
+f:3343cd29357a98bcaf7b3af667fa881d:firefox/.signature.aarch64
 f:3532ee64b1594fa2d9854b5d71d87224:firefox/.footprint.riscv64
 f:7ab33d90c660b3ca1ce13f54be36418f:firefox/.signature.riscv64
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
