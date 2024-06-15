@@ -78,7 +78,7 @@ f:ffd59b0f7c8b5d66cdc3a5f33fa50e57:glibc/glibc-2.39-fhs-1.patch
 f:93f69e36a8911ebdedfdf659d7c3d588:glibc/glibc-std.patch
 f:cb16f26de91da8792221c4bb295a5329:kbd/.footprint
 f:3b3c8c8ea6bacaff4613fd355be92398:kbd/.signature
-f:e7e7ee3934a07654f97ae96aae2cf72e:kbd/Pkgfile
+f:e086715cab0b077a65a65f2232981f27:kbd/Pkgfile
 f:65632d841dc92bec22aa9354ad76ab5b:libgmp/.footprint
 f:5d6e03c51d708196b0994d3d5c826c65:libgmp/.signature
 f:b79985bb41f137f6d8ed6bbd1399c258:libgmp/Pkgfile
