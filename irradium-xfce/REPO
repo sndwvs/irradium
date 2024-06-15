@@ -85,7 +85,7 @@ f:a570c9341f512802f4fbe8160b89a5c3:xfce4-panel-profiles/.signature
 f:114f77323184ec9553be7d2c1a04de15:xfce4-panel-profiles/Pkgfile
 f:7f5693225347bce0f2fec86c60915870:xfce4-power-manager/.footprint
 f:c158b9f2b0e9173a0ea3547cb69f42c3:xfce4-power-manager/.signature
-f:494a70f134fbce85ef5f9e4a30fc5ba7:xfce4-power-manager/Pkgfile
+f:0b91c310da59b2ac00e06bebd41812d8:xfce4-power-manager/Pkgfile
 f:feabb7500e1a111b11b0360c7d68ed98:xfce4-power-manager/post-install
 f:576c61af73b3837854e19cde9d57d2b2:xfce4-pulseaudio-plugin/.footprint
 f:69ede1d06bd52a36fc989445d8feef95:xfce4-pulseaudio-plugin/.signature
@@ -98,7 +98,7 @@ f:b40071ccd558fbf5eb0ebb2018660299:xfce4-screenshooter/.signature
 f:b3687d65c813fd587e2e2fdbe3b053a4:xfce4-screenshooter/Pkgfile
 f:886c6b33e5e8cb6938e60662efd5532d:xfce4-session/.footprint
 f:9df8992eecdb1a21c9cfff72f44e13d6:xfce4-session/.signature
-f:8c7036833f368e80d59ec227e0744781:xfce4-session/Pkgfile
+f:09f254fd2b61d7451a504e1fe14eaed8:xfce4-session/Pkgfile
 f:64f7cf5170d1e94ac6d51c259dc85c9f:xfce4-session/README
 f:8df6ba54956111688839e483afaff5e0:xfce4-session/use-xfss-by-default-in-xfce.patch.gz
 f:eec5ad1bdec50629ca7089d80b278c17:xfce4-settings/.footprint
