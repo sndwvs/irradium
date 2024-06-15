@@ -8,22 +8,22 @@ release=1
 source=(https://downloads.sourceforge.net/project/pcre/pcre/$version/pcre-$version.tar.bz2)
 
 build() {
-	cd pcre-$version
+    cd pcre-$version
 
-	[[ $(uname -m) != "riscv64" ]] && JIT="--enable-jit"
+    [[ $(uname -m) != "riscv64" ]] && JIT="--enable-jit"
 
-	./configure \
-		--prefix=/usr \
-		--enable-utf8 \
-		--enable-unicode-properties \
-		$JIT
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --enable-utf8 \
+        --enable-unicode-properties \
+        $JIT
+    make
+    make DESTDIR=$PKG install
 
-	install -d $PKG/lib
-	mv $PKG/usr/lib/libpcre.so.* $PKG/lib
-	ln -sf ../../lib/$(readlink $PKG/usr/lib/libpcre.so) $PKG/usr/lib/libpcre.so
+    install -d $PKG/lib
+    mv $PKG/usr/lib/libpcre.so.* $PKG/lib
+    ln -sf ../../lib/$(readlink $PKG/usr/lib/libpcre.so) $PKG/usr/lib/libpcre.so
 
-	rm -r $PKG/usr/share/doc
-	rm $PKG/usr/share/man/man3/{pcre{16,32}*,pcre_utf{16,32}*}
+    rm -r $PKG/usr/share/doc
+    rm $PKG/usr/share/man/man3/{pcre{16,32}*,pcre_utf{16,32}*}
 }
