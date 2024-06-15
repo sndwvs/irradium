@@ -87,7 +87,7 @@ f:9854336e424571fd39c16689e50321ae:libpcre/.signature
 f:767d4a1f26c66654071faa19ee011e38:libpcre/Pkgfile
 f:00947fd6d4e8c1316d4a7ff33b08b64e:mlocate/.footprint
 f:6ff28f40999ecda935bbbd0f0d3da869:mlocate/.signature
-f:1d8f153e2d849b7f52571872248432e5:mlocate/Pkgfile
+f:f0fdc422afa0d319b229c08a9d73b08f:mlocate/Pkgfile
 f:7d67badc004a8ade29648c8449b479e4:mlocate/mlocate
 f:f70c051ad1e30aa76820c6c6e7485eae:mlocate/updatedb.conf
 f:626b74511e97a4562cf517ee7ae58234:pkgconf/.footprint

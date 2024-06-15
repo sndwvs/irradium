@@ -6,19 +6,19 @@ name=mlocate
 version=0.26
 release=3
 source=(https://releases.pagure.org/$name/$name-$version.tar.xz
-	mlocate updatedb.conf)
+    mlocate updatedb.conf)
 
 build() {
-	cd $name-$version
+    cd $name-$version
 
-	./configure --prefix=/usr \
-		--sysconfdir=/etc \
-		--localstatedir=/var/lib \
-		--disable-nls \
-		--build=$(uname -m)-unknown-linux-gnu
-	make
-	make DESTDIR=$PKG install
+    ./configure --prefix=/usr \
+        --sysconfdir=/etc \
+        --localstatedir=/var/lib \
+        --disable-nls \
+        --build=$(uname -m)-unknown-linux-gnu
+    make
+    make DESTDIR=$PKG install
 
-	install -D -m 0755 $SRC/mlocate $PKG/etc/cron/daily/mlocate
-	install -m 0644 $SRC/updatedb.conf $PKG/etc
+    install -D -m 0755 $SRC/mlocate $PKG/etc/cron/daily/mlocate
+    install -m 0644 $SRC/updatedb.conf $PKG/etc
 }
