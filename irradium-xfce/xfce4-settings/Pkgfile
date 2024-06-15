@@ -4,7 +4,7 @@
 # Depends on: exo garcon libxfce4ui libcanberra libnotify libxklavier elementary-xfce gnome-icon-theme libinput
 
 name=xfce4-settings
-version=4.18.4
+version=4.18.6
 release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2
         xfce4-settings.theme.diff.gz  xfce4-settings.xft.defaults.diff.gz)
