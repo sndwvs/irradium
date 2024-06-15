@@ -20,7 +20,7 @@ f:d32239bcb673463ab874e80d47fae504:COPYING
 f:0e03bbc08af89db26c3e3a8d4a5fbfbf:mesa/.footprint.aarch64
 f:eb92295158de528d55d214530e6f40e5:mesa/.footprint.riscv64
 f:3e74caf47065954cac5d17fd457a0121:mesa/.signature.aarch64
-f:294ad801ab0d2fa7aa4074daedd22d02:mesa/.signature.riscv64
+f:097beb2b1af5e1bed3d241d953a925ef:mesa/.signature.riscv64
 f:b2c503bbc5778db308c6fbd554068546:mesa/Pkgfile
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
 f:c530d42f82a46a1a6812cbbc8e916d31:mesa/README.md
