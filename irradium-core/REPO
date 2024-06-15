@@ -95,7 +95,7 @@ f:5d096d3ee2c7c18818036b4335ad6e02:pkgconf/.signature
 f:6fec70b14f238ad94caf5dac367ee427:pkgconf/README
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
-f:a87725527d9e7c50cc3443145461cbf3:pkgconf/Pkgfile
+f:a3a740e7a410d823f65788a12a1d702e:pkgconf/Pkgfile
 f:80eb301c368ee4c7c0ce8d31da26bcb7:pkgutils/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
 f:f1927bc2ae6c00c3191265c4170b9be8:pkgutils/pkgmk.conf
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
