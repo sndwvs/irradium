@@ -5,59 +5,59 @@
 
 name=eudev
 version=3.2.14
-release=2
+release=1
 source=(https://github.com/eudev-project/eudev/releases/download/v$version/$name-$version.tar.gz
-	81-irradium.rules start_udev
-	eudev.ignore_bind_unbind_events.diff
-	eudev.no.renderD.diff
-	eudev.no.sgx.diff)
+    81-irradium.rules start_udev
+    eudev.ignore_bind_unbind_events.diff
+    eudev.no.renderD.diff
+    eudev.no.sgx.diff)
 
 build() {
-	cd $name-$version
+    cd $name-$version
 
-	# Ignore bind/unbind events. This was causing various (mostly rare) bugs, but
-	# was also breaking MTP support in KDE.
-	# See: https://bugs.kde.org/show_bug.cgi?id=387454
-	patch -p1 -i $SRC/eudev.ignore_bind_unbind_events.diff
+    # Ignore bind/unbind events. This was causing various (mostly rare) bugs, but
+    # was also breaking MTP support in KDE.
+    # See: https://bugs.kde.org/show_bug.cgi?id=387454
+    patch -p1 -i $SRC/eudev.ignore_bind_unbind_events.diff
 
-	# Don't require groups that we don't need:
-	patch -p1 -i $SRC/eudev.no.renderD.diff
-	patch -p1 -i $SRC/eudev.no.sgx.diff
+    # Don't require groups that we don't need:
+    patch -p1 -i $SRC/eudev.no.renderD.diff
+    patch -p1 -i $SRC/eudev.no.sgx.diff
 
-	# needed for static linking, e.g. dmsetup.static
-	sed -i '/^Libs:/s/-ludev/-ludev -lrt/' src/libudev/libudev.pc.in
+    # needed for static linking, e.g. dmsetup.static
+    sed -i '/^Libs:/s/-ludev/-ludev -lrt/' src/libudev/libudev.pc.in
 
-	if [ ! -r configure ]; then
-		if [ -x ./autogen.sh ]; then
-			NOCONFIGURE=1 ./autogen.sh
-		else
-			autoreconf -vif
-		fi
-	fi
+    if [ ! -r configure ]; then
+        if [ -x ./autogen.sh ]; then
+            NOCONFIGURE=1 ./autogen.sh
+        else
+            autoreconf -vif
+        fi
+    fi
 
-	./configure --prefix=/usr \
-		--sbindir=/sbin --bindir=/sbin \
-		--sysconfdir=/etc \
-		--with-rootprefix= \
-		--with-rootlibdir=/lib \
-		--libexecdir=/lib \
-		--disable-introspection \
-		--disable-manpages \
-		--enable-split-usr
+    ./configure --prefix=/usr \
+        --sbindir=/sbin --bindir=/sbin \
+        --sysconfdir=/etc \
+        --with-rootprefix= \
+        --with-rootlibdir=/lib \
+        --libexecdir=/lib \
+        --disable-introspection \
+        --disable-manpages \
+        --enable-split-usr
 
-	make CFLAGS="$CFLAGS -D_GNU_SOURCE"
-	make install DESTDIR=$PKG
-	make -C man install DESTDIR=$PKG
+    make CFLAGS="$CFLAGS -D_GNU_SOURCE"
+    make install DESTDIR=$PKG
+    make -C man install DESTDIR=$PKG
 
-	# create binary hwdb
-	LD_LIBRARY_PATH=$PKG/lib \
-		$PKG/sbin/udevadm hwdb --update --root=$PKG
+    # create binary hwdb
+    LD_LIBRARY_PATH=$PKG/lib \
+        $PKG/sbin/udevadm hwdb --update --root=$PKG
 
-	# Devices
-	install -d $PKG/lib/{firmware,udev/devices/{pts,shm}}
-	install -d $PKG/{lib,sbin,run}
+    # Devices
+    install -d $PKG/lib/{firmware,udev/devices/{pts,shm}}
+    install -d $PKG/{lib,sbin,run}
 
-	# Add irradium items
-	install -m 0755 $SRC/start_udev $PKG/sbin
-	install -m 0644 $SRC/81-irradium.rules $PKG/lib/udev/rules.d
+    # Add irradium items
+    install -m 0755 $SRC/start_udev $PKG/sbin
+    install -m 0644 $SRC/81-irradium.rules $PKG/lib/udev/rules.d
 }

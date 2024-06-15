@@ -1,7 +1,6 @@
 d:binutils
 d:cmake
 d:db
-d:dhcpcd
 d:filesystem
 d:flex
 d:gcc
@@ -32,11 +31,6 @@ f:b886af5bc256d3a56d9be8f998f641b4:db/db-5.3.21-mutex_leak.patch
 f:cbbbdecab1948c6255c091398b8393ed:db/db-5.3.28-lemon_hash.patch
 f:015f019e2731e18c4229ed5772707feb:db/db-5.3.28-mmap-high-cpu-usage.patch
 f:42de24f40ae2c7ea1b4c59352962029f:db/db-5.3.28_cve-2019-2708.patch
-f:131a7abf96b5cbd339cba03d9cd7e595:dhcpcd/.footprint
-f:60a6fe0f2709667d22bf34a37d083207:dhcpcd/.signature
-f:85091b274731b56d821cfa6e3fd9badd:dhcpcd/Pkgfile
-f:9b8f2bac610aad49e84ae7398c5735c1:dhcpcd/pre-install
-f:0b056dd3e5a3e1eacb7c9b38f0641e4d:dhcpcd/rc.dhcpcd
 f:19abef94eef9b8ced2a8337b8d395c8e:filesystem/.footprint
 f:92a173ccd4b488449fa8d3088b82acb3:filesystem/.signature
 f:b28a45b179424d0dec47807b57740de4:filesystem/Pkgfile
@@ -134,7 +128,7 @@ f:d32239bcb673463ab874e80d47fae504:COPYING
 f:26338d94b5be48dc340580565ae79488:eudev/.footprint
 f:3cc53377602343be0eb7d6bb6d077fcd:eudev/.signature
 f:663a7d91619261e70af876ad2b6b6716:eudev/81-irradium.rules
-f:64caf3ea15781fd5c8d599bb25eb4e63:eudev/Pkgfile
+f:c918c2fdcdd557a2dd57b74cab4d065a:eudev/Pkgfile
 f:f0d3315647dc5e85d9cc23726a168e01:eudev/eudev.ignore_bind_unbind_events.diff
 f:2161256901e1da8cfd6c47bb2b33d08f:eudev/eudev.no.renderD.diff
 f:e92d928d54f7a76b855deedc762fda14:eudev/eudev.no.sgx.diff
