@@ -48,7 +48,7 @@ f:2169b4b22e7139587cfb1172033fd1e9:flex/.signature
 f:9642c903509ab5a3cd28d897f14f887d:flex/Pkgfile
 f:66d6f11535cc0154751f7c567947c82e:gcc/.footprint
 f:1310599eb40f03791041a81ff4a62c60:gcc/.signature
-f:63092530b5d90d649e5c12d51146d045:gcc/Pkgfile
+f:59571e86d1642788e3bba2f6ee497f09:gcc/Pkgfile
 f:507c1780a370500cdb233be39cc2c772:gcc/fix-nested-generic-lambda.patch
 f:61a057afa31006764b957a483ba90b9d:gcc/gcc-4.7.3-multilib-dirs.patch
 f:032ba6ae0bd4d6e405d012084816e334:gcc/gcc-aarch64-disable-multilib-support.patch
