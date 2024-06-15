@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0fo8ws3VctE863ol8vWNl3lqRxDYN8yy8+zM8HRWGz39c0ymHNV9po5a6pgcr9oqG9gpHfrNSzfsWq42TWSLpAU=
-SHA256 (Pkgfile) = ada9578828d9fcd8e7692f24d77122f38d93f3cd6e03f0c7a51777c65156a884
-SHA256 (.footprint) = 16142cc73e83b14fd905faaa237bce67cee9336f943ce2f01489ae47d914bf2e
-SHA256 (xfce4-power-manager-4.18.2.tar.bz2) = e1608fd534b6b07529c0840ffc731cb93347ee6deb547a9933215b1816dcdf4d
+RWQ1yk7gkrBo0XptNhJNA2uC2dyEzupu0O+0fmCY61abbaKaPphvKzfdUHnKVLUBX+xKrI6Lls+F7l2wURSsVvZ3ZK7BgGLQbQM=
+SHA256 (Pkgfile) = 40357d933fa9bba3d3276e718cc03f970360392aa95096c03b8042d14c59c563
+SHA256 (.footprint) = c5f0397fcdd3e70ff4ec4a0c4178da145b1fb33171933d15a2e64945ec4a2e39
+SHA256 (xfce4-power-manager-4.18.4.tar.bz2) = 76918f7bdcd936dbbf20efd9221a33be0cd504c7d7ffce792bace3c720f3d874

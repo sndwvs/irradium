@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0ag40zlDBq7Feuqv+VEefu5kkzN8SCQ5LHFBSvdghPHwQBV0VdRWEr1ecV0dz8WgPeOAQX3ayS3ziUyPZbJWgg4=
-SHA256 (Pkgfile) = 7dc58c2a4aa8a35d76e58418dd409a58fb0b88751b833720dd1970b6213a2281
-SHA256 (.footprint) = b2742b03a0c4c2f7208475daffb134ebe4cd8856f9e66c3761c252a10b7436e7
-SHA256 (garcon-4.18.1.tar.bz2) = fe7a932a6dac95eb1438f3fbfd53096756ff2e1cb179d10d0fb796cefbb4c20b
+RWQ1yk7gkrBo0QMYTAkxWhjIMbu4AZBcAfiZIJv/+kzAnOZWyPw9O24Rz0jaA3cR9C5dU5i7xbyQ4BEcHs+OziLzDGWHE3MQTwM=
+SHA256 (Pkgfile) = 7513d4767e191284b71f0435e5dbf469e90a52abd5b42e7d35cc6bde37ed81f2
+SHA256 (.footprint) = 2235181bfffe13103fbb1829688926147134ec8fb7525f51d7ce88b33e1b9520
+SHA256 (garcon-4.18.2.tar.bz2) = 1b8c9292e131968fbfc8987bbc62c5ba47186dd45ef4e47c5d8c5088bb2d434d
