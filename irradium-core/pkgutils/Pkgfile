@@ -7,12 +7,12 @@ name=pkgutils
 version=5.40.10
 release=5
 source=(https://crux.nu/files/$name-$version.tar.xz
-	pkgmk.conf
-	pkgmk-add-support-with-footprint-riscv64-aarch64.patch)
+    pkgmk.conf
+    pkgmk-add-support-with-footprint-riscv64-aarch64.patch)
 
 build () {
-	cd $name-$version
-	patch -p1 -i $SRC/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
-	make DESTDIR=$PKG install
-	install -D -m 0644 $SRC/pkgmk.conf $PKG/etc/pkgmk.conf
+    cd $name-$version
+    patch -p1 -i $SRC/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
+    make DESTDIR=$PKG install
+    install -D -m 0644 $SRC/pkgmk.conf $PKG/etc/pkgmk.conf
 }
