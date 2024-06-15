@@ -8,14 +8,14 @@ release=1
 source=(https://gmplib.org/download/gmp/gmp-$version.tar.xz)
 
 build() {
-	cd gmp-$version
+    cd gmp-$version
 
-	./configure \
-		--prefix=/usr \
-		--enable-cxx \
-		--build=$(uname -m)-unknown-linux-gnu
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --enable-cxx \
+        --build=$(uname -m)-unknown-linux-gnu
+    make
+    make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/share
+    rm -r $PKG/usr/share
 }
