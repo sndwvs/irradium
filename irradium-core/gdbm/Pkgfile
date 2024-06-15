@@ -9,15 +9,15 @@ release=1
 source=(https://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.gz)
 
 build() {
-	cd $name-$version
+    cd $name-$version
 
-	./configure \
-		--prefix=/usr \
-                --build=$(uname -m)-unknown-linux-gnu \
-		--enable-libgdbm-compat \
-		--disable-nls
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --build=$(uname -m)-unknown-linux-gnu \
+        --enable-libgdbm-compat \
+        --disable-nls
+    make
+    make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/share/info
+    rm -r $PKG/usr/share/info
 }
