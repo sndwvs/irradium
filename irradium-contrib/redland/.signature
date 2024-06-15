@@ -1,10 +1,10 @@
-untrusted comment: verify with /etc/ports/contrib.pub
-RWSagIOpLGJF30Dr9lhAl5WuaD7bmr2o6Kb5qQ8BFrgPBnqA0OlTtOSj3sYJYTXcTMCzqvEz7qEJy0fsI22NPsogPYaJps4Anw4=
-SHA256 (Pkgfile) = dd2cc82783a155f4e219488b90e7935ca9ed3d04e92b6353427bf4deb66f261b
-SHA256 (.footprint) = 14c3f9144d999eaa81094c035c78312b7b59f3d96bd93fca842ae968c674eb58
-SHA256 (redland-1.0.17.tar.gz) = de1847f7b59021c16bdc72abb4d8e2d9187cd6124d69156f3326dd34ee043681
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7its65Yx1z7CA6bLe8qWUGqgz2OgD7Ejav3tyX0j7gtG61EtBRJPo0QU9dkLR7wzKz3yEZeHSd6HEaTUOJvp3Ao=
+SHA256 (Pkgfile) = febe3c0eac44f30807d12890ae2e73772ebbd9f56a7548937b2a7b4caa1ee9d5
+SHA256 (.footprint) = ec47b218f0058c44f9a9184ce0bf161f7a69d2c922dee3282324e3178f93e395
+SHA256 (rasqal-0.9.33.tar.gz) = 6924c9ac6570bd241a9669f83b467c728a322470bf34f4b2da4f69492ccfd97c
 SHA256 (libtool.patch) = 6234df68001f6b8df208f1c8604a5521515396dfc9da6a554e8bfacf8b4b002b
-SHA256 (redland-bundled-soname.patch.1) = 1751f7e0f4f681ef1d415e10ead71f3dab1ef69446cf180625ca4d7f7e7fcce6
-SHA256 (redland-format.patch.0) = 5be4597b4991124f831d77acabdf465258c626d8436d46bdc74b853295852ac2
-SHA256 (redland-xcompile.patch.1) = f5d2013abfaeb1207424443f5eb8385cd07ec3b6ef2826bb589199961c1e4322
-SHA256 (rpath.patch) = b9e04cf4f178f57c2ddf97912abf0deb02032235222688b5ad190e08e94f14e1
+SHA256 (rasqal-bundled-soname.patch.1) = cd0a1cb8c59c269aef4440c3a3dc9377aca42a96d641d1debdc08108d6b79452
+SHA256 (rasqal-pkgconfig.patch.1) = 32bec67772c9cfa157ae00491a04300a40f8ff98a8ac1624a312daa3373564fb
+SHA256 (rasqal-xcompile.patch.1) = 96efd4610d1a369a950bc84e0da7bb593466a838df1271082f143f0b951be5d3
+SHA256 (rpath.patch) = 6e65e8a2ef126bd5a1321164f28d02c0fe45464bc6ea8b66b7419206d66d2ce1

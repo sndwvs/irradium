@@ -319,8 +319,8 @@ f:536c8ab1bcfc4f13e33c77b61facb496:xcursor-justblue/justblue-0.21.patch.xz
 f:411f322dcc58e38d44687094c07c32a4:yt-dlp/.footprint
 f:9e0ccbbfa96489f1a54fea604c4c8b17:yt-dlp/.signature
 f:61692ab69cd3741affc3e42082b44867:yt-dlp/Pkgfile
-f:9a38c472262b43d142346e09bb0ddd48:redland/.footprint
-f:9e59f9d9bead213f2ceba7dcd164c640:redland/.signature
+f:f77b36b16bccd2c3b8d0f4ba8da31cf1:redland/.footprint
+f:656e6422caf40d6b57e863dcfff8a7ca:redland/.signature
 f:c7c80f0ba4c4fa7c25365a2379100ae9:redland/Pkgfile
 f:d13fe4d993ecc3bccb9b9fbcf0142933:redland/libtool.patch
 f:2aef15a3be345ec0a1a7592e270d7619:redland/redland-bundled-soname.patch.1
