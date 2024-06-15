@@ -4,37 +4,37 @@
 # Depends on: flex zlib
 
 name=binutils
-version=2.39
+version=2.42
 release=1
 source=(https://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.xz)
 
 build() {
-	mkdir build
-	cd build
+    mkdir build
+    cd build
 
-	../$name-$version/configure --prefix=/usr \
-		--enable-shared \
-		--enable-64-bit-bfd \
-		--enable-default-execstack=no \
-		--enable-ld=default \
-		--enable-gold=yes \
-		--enable-lto \
-		--enable-pgo-build=lto \
-		--enable-plugins \
-		--enable-install-libiberty \
-		--with-bugurl=https://irradium.org/bugs/ \
-		--with-pic \
-		--with-system-zlib \
-		--without-stage1-ldflags \
-		--disable-jansson \
-		--disable-nls \
-		--disable-werror
+    ../$name-$version/configure --prefix=/usr \
+        --enable-shared \
+        --enable-64-bit-bfd \
+        --enable-default-execstack=no \
+        --enable-ld=default \
+        --enable-gold=yes \
+        --enable-lto \
+        --enable-pgo-build=lto \
+        --enable-plugins \
+        --enable-install-libiberty \
+        --with-bugurl=https://irradium.org/bugs/ \
+        --with-pic \
+        --with-system-zlib \
+        --without-stage1-ldflags \
+        --disable-jansson \
+        --disable-nls \
+        --disable-werror
 
-	sed -i -e '/^MAKEINFO/s:=.*:= true:' Makefile
+    sed -i -e '/^MAKEINFO/s:=.*:= true:' Makefile
 
-	make tooldir=/usr
-	make tooldir=/usr DESTDIR=$PKG install
+    make tooldir=/usr
+    make tooldir=/usr DESTDIR=$PKG install
 
-	rm -r $PKG/usr/share/info
-	sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.la
+    rm -r $PKG/usr/share/info
+    sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.la
 }
