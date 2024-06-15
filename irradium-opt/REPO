@@ -125,7 +125,7 @@ f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targe
 f:db9ee8868422bc9bd50edcee90de8024:rust/.footprint.aarch64
 f:6a38f7a5fac338bac8a7655aac5ba9d4:rust/.footprint.riscv64
 f:026d63096799175b1f1f91f0a533d4cc:rust/.signature.aarch64
-f:34c2549da5b27a03c7e1e667430e329e:rust/.signature.riscv64
+f:d1eb240ed07fd7403122e175d87683a6:rust/.signature.riscv64
 f:3a302fda034a6cc7b1482250824b97f2:rust/0001-bootstrap-Change-libexec-dir.patch
 f:01956b9d425973216f86a808784d82a6:rust/0002-bootstrap-Change-bash-completion-dir.patch
 f:5b497725cb6d5b360d247f7127e358ac:rust/0003-compiler-Change-LLVM-targets.patch
