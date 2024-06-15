@@ -6,19 +6,19 @@ name=prt-get
 version=5.19.6
 release=2
 source=(http://crux.nu/files/prt-get-$version.tar.xz
-        prt-get.conf prt-get.aliases
-        fsearch-footprint-add-multi-arch-riscv64-aarch64.patch)
+    prt-get.conf prt-get.aliases
+    fsearch-footprint-add-multi-arch-riscv64-aarch64.patch)
 
 build() {
-	cd ${name}-${version}
+    cd ${name}-${version}
 
-	patch -p1 -i $SRC/fsearch-footprint-add-multi-arch-riscv64-aarch64.patch
+    patch -p1 -i $SRC/fsearch-footprint-add-multi-arch-riscv64-aarch64.patch
 
-	./configure --prefix=/usr
-	make
-	make DESTDIR=$PKG install
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG install
 
-	install -m 644 $SRC/prt-get.{conf,aliases} $PKG/etc/
-	install -d $PKG/var/lib/pkg
-	touch $PKG/var/lib/pkg/prt-get.locker
+    install -m 644 $SRC/prt-get.{conf,aliases} $PKG/etc/
+    install -d $PKG/var/lib/pkg
+    touch $PKG/var/lib/pkg/prt-get.locker
 }
