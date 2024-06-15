@@ -29,8 +29,8 @@ d:zip
 d:pkg-get
 d:dbus
 d:hyphen
-f:9fb2e0a0ce730c3da4bc8e3c4c63b482:cryptsetup/.footprint
-f:77ab1f5dfe58c1706dcbf46c53f0b581:cryptsetup/.signature
+f:0072413ad564c8a82da0058e41ddce6b:cryptsetup/.footprint
+f:03991bdde097ed37f1ad3502306abb4f:cryptsetup/.signature
 f:27a77b923be11c293103faabfe90269a:cryptsetup/Pkgfile
 f:dae0c10c99399580c929fc100e79faef:ffmpeg/ffmpeg-x264-10bit.sh
 f:d22c503b98f55c21f81c0b3a4fb457e1:ffmpeg/Pkgfile
