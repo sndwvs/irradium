@@ -157,7 +157,7 @@ f:8d60750c2f922cebbefd9de596518403:zip/zipnote.patch
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:7fbfaf55f8a1792a709a7914124bb168:pkg-get/.footprint
 f:77e2bf669ca4a0b2ffaf4231288dcf50:pkg-get/.signature
-f:5f5a218bbd6685e553802d67d187db93:pkg-get/Pkgfile
+f:5160f7a54b1ab309613d64a28c55b21a:pkg-get/Pkgfile
 f:75eaa36a2c8a27447308827ef0178aa1:dbus/.footprint
 f:d3a2dbaff9192a1260dc4821328d0f86:dbus/.signature
 f:23bc5ff22fe4f9a208d65fbbfd489ad9:dbus/30-dbus.launch
