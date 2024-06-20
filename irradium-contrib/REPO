@@ -147,7 +147,9 @@ f:3aabaeb8803479f3f0cc112b5a94fc24:firefox/.signature.riscv64
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:21a0da3ebc24d023dceaf01a0f4a8f0a:freerdp/.signature
-f:30411ebdac6139592d7398dc043739b6:freerdp/Pkgfile
+f:c380a2aa6edb2405425f236e86e23be9:freerdp/Pkgfile
+f:f27fa622f17d099ba1bc08c4061acda6:freerdp/1ef7b9e3.patch
+f:e9bd29fc1b535e3394165bcc8347d4e8:freerdp/d0c5b1ae.patch
 f:b12bf9ffeeb516dc7dd0f3c50dd1f3bc:geany/.footprint
 f:52f0c3f34ea09772683334b565b146b8:geany/.signature
 f:0b68eb63a6d2ffaf77ed0dd6279fa343:geany/Pkgfile

@@ -6,10 +6,16 @@
 name=freerdp
 version=2.11.6
 release=1
-source=(https://github.com/FreeRDP/FreeRDP/archive/$version.tar.gz)
+source=(https://github.com/FreeRDP/FreeRDP/archive/$version.tar.gz
+    d0c5b1ae.patch
+    1ef7b9e3.patch)
 
 build(){
   cd FreeRDP-$version
+
+  # Fix build with ffmpeg 7
+  patch -p1 -i $SRC/d0c5b1ae.patch
+  patch -p1 -i $SRC/1ef7b9e3.patch
 
   export CFLAGS="$CFLAGS -D_BSD_SOURCE -flto=auto"
   cmake -B build -G Ninja \
