@@ -29,6 +29,7 @@ d:zip
 d:pkg-get
 d:dbus
 d:hyphen
+d:shared-mime-info
 f:0072413ad564c8a82da0058e41ddce6b:cryptsetup/.footprint
 f:6b16490c7db4320dd4bb74c3ce9652ea:cryptsetup/.signature
 f:ac83de1f75acc880a6265a7a8735a18c:cryptsetup/Pkgfile
@@ -170,3 +171,7 @@ f:c51f2067699af541512233bbdd48dec4:dbus/rc.dbus
 f:761d01b09e41159c71636c6ce8e18f65:hyphen/.footprint
 f:f2a6bc2de0496063825791220cf24be6:hyphen/.signature
 f:e1dadd566a18049c0bdcfe2c7b4773a5:hyphen/Pkgfile
+f:f8d2f18e32451d2f7d516ef7fd446dc8:shared-mime-info/.footprint
+f:7f0fb81ba4f03faea3e01c2f9c842e24:shared-mime-info/.signature
+f:952b8f2b79db7944026a790578218e13:shared-mime-info/Pkgfile
+f:0beb828eca839c98ea8c5dd66b51ebd6:shared-mime-info/fix.patch
