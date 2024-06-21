@@ -54,8 +54,8 @@ f:032ba6ae0bd4d6e405d012084816e334:gcc/gcc-aarch64-disable-multilib-support.patc
 f:a58ff03983cf89e5e690c71f7eab6fff:gcc/gcc-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
 f:9652a27711fa9f7989483ebe21786c16:gcc/gcc-configure-fix-detection-of-atomic-builtins-in-libato.patch
 f:7c9128522053af79791bcfdd55834c2a:gcc/gcc-nocheck-fixincludes.patch
-f:59571e86d1642788e3bba2f6ee497f09:gcc/Pkgfile
-f:d484c8a2cd6591b2f44cf9b1126ec13b:gcc/gcc-riscv-disable-multilib-support.patch
+f:050de3f6705f6b78e36c06ed4ccdbf38:gcc/Pkgfile
+f:02107c7118e7fadf18d301f7ed22bd1a:gcc/gcc-riscv-disable-multilib-support.patch
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:8baa3be58d05ab68006811ca8cfb1239:gdbm/.signature
 f:3aca7218465949f29adba128e0b0c12a:gdbm/Pkgfile
@@ -112,13 +112,13 @@ f:c439515bdbd1e17d8a74c2a37d285718:ports/irradium-xfce.pub
 f:1ec983509e56966c5a7945a854c0f7bf:ports/irradium-xorg.pub
 f:0d1f1fde50a9bd743d9cac6b235f038c:ports/opt.pub
 f:69927e5d0ae5dc3455faeaac916c4db2:ports/xorg.pub
-f:c27f35d102fd8c4aa99608ffe07818d3:ports/Pkgfile
-f:ffcfbdbd1979f51825fa796a6296d1ab:ports/contrib.rsync.inactive
-f:9a7ec7bdf5155fbedb02b35e50420cfa:ports/core.rsync
 f:6fae15382775b3bd8121a25ce58cf70c:ports/irradium-contrib.httpup.inactive
 f:6a4987faf2ccaa3ba662b9ce48492c38:ports/irradium-xfce.httpup.inactive
 f:92891482d508900cd6208bdad41f549d:ports/opt.rsync
 f:939e6f38e938a2ba615e76f40b504c79:ports/xorg.rsync
+f:c27f35d102fd8c4aa99608ffe07818d3:ports/Pkgfile
+f:ffcfbdbd1979f51825fa796a6296d1ab:ports/contrib.rsync.inactive
+f:9a7ec7bdf5155fbedb02b35e50420cfa:ports/core.rsync
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:1e68ce5a010624ae6f5c305937163e62:prt-get/fsearch-footprint-add-multi-arch-riscv64-aarch64.patch
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases

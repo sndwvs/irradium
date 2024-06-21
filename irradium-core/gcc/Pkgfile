@@ -79,7 +79,7 @@ build() {
     rm -r $PKG/usr/bin/*-linux-gnu*
     rm -r $PKG/usr/lib/gcc/*/$version/{install-tools,include-fixed}
 
-    for D in lib{,32}; do
+    for D in lib; do
         install -d -m 0755 $PKG/usr/share/gdb/auto-load/usr/${D}
         mv $PKG/usr/${D}/libstdc++.so.*-gdb.py $PKG/usr/share/gdb/auto-load/usr/${D}
     done
