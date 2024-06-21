@@ -54,8 +54,8 @@ f:032ba6ae0bd4d6e405d012084816e334:gcc/gcc-aarch64-disable-multilib-support.patc
 f:a58ff03983cf89e5e690c71f7eab6fff:gcc/gcc-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
 f:9652a27711fa9f7989483ebe21786c16:gcc/gcc-configure-fix-detection-of-atomic-builtins-in-libato.patch
 f:7c9128522053af79791bcfdd55834c2a:gcc/gcc-nocheck-fixincludes.patch
+f:59571e86d1642788e3bba2f6ee497f09:gcc/Pkgfile
 f:d484c8a2cd6591b2f44cf9b1126ec13b:gcc/gcc-riscv-disable-multilib-support.patch
-f:64a0053605a413d200963fdc3382dd36:gcc/Pkgfile
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:8baa3be58d05ab68006811ca8cfb1239:gdbm/.signature
 f:3aca7218465949f29adba128e0b0c12a:gdbm/Pkgfile
