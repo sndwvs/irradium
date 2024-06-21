@@ -117,7 +117,7 @@ f:5818865f6d9ebde8f15510c13094cb59:qt5/.footprint.riscv64
 f:22c7cfe09487f66fd78ce884c42562d8:qt5/.signature.riscv64
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
-f:f537e5558cddfb4ccd07257609254a80:qt6-base/Pkgfile
+f:781d6177c172e90033d3438d2a6253e3:qt6-base/Pkgfile
 f:785cc49a40fe80fad9aea7722cbc6a6f:qt6-base/.footprint
 f:dfac315f634361d36d5635da32125dab:qt6-base/.signature
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
@@ -156,9 +156,9 @@ f:929f39071a6e4491a7b1858b8fd25a9d:zip/zip-3.0-exec-shield.patch
 f:e0418c610312fb6e417398f1a29b7d07:zip/zip-3.0-format-security.patch
 f:8d60750c2f922cebbefd9de596518403:zip/zipnote.patch
 f:d32239bcb673463ab874e80d47fae504:COPYING
+f:7fbfaf55f8a1792a709a7914124bb168:pkg-get/.footprint
 f:f44fc0a0542e3783877daadb72d954ca:pkg-get/.signature
 f:5160f7a54b1ab309613d64a28c55b21a:pkg-get/Pkgfile
-f:7fbfaf55f8a1792a709a7914124bb168:pkg-get/.footprint
 f:75eaa36a2c8a27447308827ef0178aa1:dbus/.footprint
 f:d3a2dbaff9192a1260dc4821328d0f86:dbus/.signature
 f:23bc5ff22fe4f9a208d65fbbfd489ad9:dbus/30-dbus.launch
