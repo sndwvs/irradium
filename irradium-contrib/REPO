@@ -137,7 +137,7 @@ f:ce8226895c981265c806fe855308406d:firefox/README
 f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
 f:022ca4e9eeac6d2090a0289ee01db9f4:firefox/icu-linebreak-classes.patch
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
-f:6d99f7507b7ebe194359a834ebde37da:firefox/Pkgfile
+f:b25af6722585ca9e3c1372c7c89f2388:firefox/Pkgfile
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:5ca9c4e85a9748363df2d571ecd7f884:firefox/.footprint.aarch64
@@ -147,8 +147,8 @@ f:3aabaeb8803479f3f0cc112b5a94fc24:firefox/.signature.riscv64
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
-f:03aebe246035b01bf83db7c1f645db48:freerdp/Pkgfile
 f:f27fa622f17d099ba1bc08c4061acda6:freerdp/1ef7b9e3.patch
+f:03aebe246035b01bf83db7c1f645db48:freerdp/Pkgfile
 f:e9bd29fc1b535e3394165bcc8347d4e8:freerdp/d0c5b1ae.patch
 f:b12bf9ffeeb516dc7dd0f3c50dd1f3bc:geany/.footprint
 f:52f0c3f34ea09772683334b565b146b8:geany/.signature
