@@ -88,8 +88,8 @@ f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
 f:8f4e08e4f5a9518d053824c8cf2ed5e0:llvm/Pkgfile
-f:29b1cd5111ee2684e2cc13ee064bdfac:llvm/.footprint
-f:8eb7b4b12e59a6a3ffea925a6ca00814:llvm/.signature
+f:7df33a3bc5d61bfbd2bc2e434399e134:llvm/.footprint
+f:d799680c7d437ade0076ee4ed8747f70:llvm/.signature
 f:00f0bded92066039015ff856aab86dcd:mc/Pkgfile
 f:13caa329106b87c04f476404898110a8:medit/.footprint
 f:1660f93d6be76a41334168f8156628ed:medit/.signature
