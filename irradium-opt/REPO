@@ -87,7 +87,7 @@ f:8588e227a9e80787b8c4ed61b123a03a:lightdm-gtk-greeter/post-install
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:b7a931c1bdd849882d3b1da696e2d14a:llvm/rust-feature-tables.patch
-f:926b8d97e2cea01e456f4d8ec2a1277f:llvm/Pkgfile
+f:8f4e08e4f5a9518d053824c8cf2ed5e0:llvm/Pkgfile
 f:29b1cd5111ee2684e2cc13ee064bdfac:llvm/.footprint
 f:8eb7b4b12e59a6a3ffea925a6ca00814:llvm/.signature
 f:00f0bded92066039015ff856aab86dcd:mc/Pkgfile
@@ -117,9 +117,9 @@ f:5818865f6d9ebde8f15510c13094cb59:qt5/.footprint.riscv64
 f:22c7cfe09487f66fd78ce884c42562d8:qt5/.signature.riscv64
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
-f:781d6177c172e90033d3438d2a6253e3:qt6-base/Pkgfile
 f:785cc49a40fe80fad9aea7722cbc6a6f:qt6-base/.footprint
 f:dfac315f634361d36d5635da32125dab:qt6-base/.signature
+f:781d6177c172e90033d3438d2a6253e3:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
