@@ -86,5 +86,5 @@ build() {
     ln -sfv ../../lib/gcc/$($PKG/usr/bin/gcc -dumpmachine)/14.1.0/liblto_plugin.so \
         $PKG/usr/lib/bfd-plugins/
 
-    sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib{,32}/{libstdc++.la,libsupc++.la}
+    sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/{libstdc++.la,libsupc++.la}
 }
