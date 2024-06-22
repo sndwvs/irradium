@@ -10,7 +10,6 @@ source=(https://sourceware.org/pub/gcc/releases/gcc-$version/$name-$version.tar.
 	$name-nocheck-fixincludes.patch $name-4.7.3-multilib-dirs.patch
 	$name-aarch64-disable-multilib-support.patch
 	$name-riscv-disable-multilib-support.patch
-	fix-nested-generic-lambda.patch
 	$name-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
 	$name-configure-fix-detection-of-atomic-builtins-in-libato.patch)
 
@@ -19,7 +18,6 @@ build() {
 	patch -d $name-$version -p1 -i $SRC/$name-4.7.3-multilib-dirs.patch
 	patch -d $name-$version -p1 -i $SRC/$name-aarch64-disable-multilib-support.patch
 	patch -d $name-$version -p1 -i $SRC/$name-riscv-disable-multilib-support.patch
-	patch -d $name-$version -p1 -i $SRC/fix-nested-generic-lambda.patch
 	patch -d $name-$version -p1 -i $SRC/$name-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
 	patch -d $name-$version -p1 -i $SRC/$name-configure-fix-detection-of-atomic-builtins-in-libato.patch
 
