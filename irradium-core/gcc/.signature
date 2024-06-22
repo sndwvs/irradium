@@ -1,10 +1,11 @@
 untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGOa41KsT7vQFu7GjKFN7q44YhLDJ/jd6ne5cQ9lYGkDwOWXPumTUoXGnZ5H2/XPueUeh5xnvPi4Bfd/0Tu6hhQs=
-SHA256 (Pkgfile) = fbf9277182f9291c744db2e78727460349e27c02ccfdcad2a95758b4431664fa
-SHA256 (.footprint) = 61944d5e38fd82bc3548ae45300a9beb600c8d56a3dc7eca4ed932ba430432d0
-SHA256 (gcc-12.3.0.tar.xz) = 949a5d4f99e786421a93b532b22ffab5578de7321369975b91aec97adfda8c3b
+RWQAwxvZoACtGCIU1Ourg/NZ/FNGigxRFPQYK9s+i8+cDKnnha64dvOIkDudsW58HPRPCzjgd1s2PS1m0ddvlqY82INGR4/4VAw=
+SHA256 (Pkgfile) = 312e8a48c4433be07a50d32bbee617b18a215a501fea4099ad6a1ec63b329727
+SHA256 (.footprint) = 693a9c623f297cc3b84d576b5cff575558279bb7b2482ef812908b862f16b908
+SHA256 (gcc-12.4.0.tar.xz) = 704f652604ccbccb14bdabf3478c9511c89788b12cb3bbffded37341916a9175
 SHA256 (gcc-nocheck-fixincludes.patch) = 850a71d2c64b9f2bec31821bd972bf89c2d57764faf64948100eaf474fd63bbb
 SHA256 (gcc-4.7.3-multilib-dirs.patch) = 149b151999d0afad909ca0d1eaf1f9a81c9cd6499e56989ec4fc574d108eeef6
 SHA256 (gcc-aarch64-disable-multilib-support.patch) = 9aa8cbb2c87e815526dfbf844b59a65abe84cb07d706d34d4dc43bdeaf2b7dd0
 SHA256 (gcc-riscv-disable-multilib-support.patch) = 7c5f024bbdaefb49f0dc6c780aafff3baf255e3437345994a5c96dc00a7e37b2
-SHA256 (fix-nested-generic-lambda.patch) = f28f71ea934097372907c322f991f7747cbcc3ec777f8dbd2286be1c49c2c81d
+SHA256 (gcc-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch) = 7753b1843137d6f2f8c9a750c18b6df48b966544f4aee05f2b55a8ec22e2623b
+SHA256 (gcc-configure-fix-detection-of-atomic-builtins-in-libato.patch) = 5c1c56db71278695f79d8944ecdc0f821340f9ef7d03a8915b3f0ce85a2ffde5

@@ -47,8 +47,8 @@ f:b2f414ce5064a36d8ae51b4b2dd2bd72:filesystem/Pkgfile
 f:9165347c2c736b0c48b1846004e650e9:flex/.footprint
 f:2169b4b22e7139587cfb1172033fd1e9:flex/.signature
 f:c37d29a3858944cc65d34b7cc33ca64f:flex/Pkgfile
-f:66d6f11535cc0154751f7c567947c82e:gcc/.footprint
-f:1310599eb40f03791041a81ff4a62c60:gcc/.signature
+f:3c13e89423eb43d8ee97675362d3725f:gcc/.footprint
+f:121344c2f1ced0c6da4d49033045d18d:gcc/.signature
 f:61a057afa31006764b957a483ba90b9d:gcc/gcc-4.7.3-multilib-dirs.patch
 f:032ba6ae0bd4d6e405d012084816e334:gcc/gcc-aarch64-disable-multilib-support.patch
 f:a58ff03983cf89e5e690c71f7eab6fff:gcc/gcc-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
