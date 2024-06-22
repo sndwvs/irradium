@@ -4,8 +4,8 @@
 # Depends on: libmpc zlib zstd
 
 name=gcc
-version=12.3.0
-release=3
+version=12.4.0
+release=1
 source=(https://sourceware.org/pub/gcc/releases/gcc-$version/$name-$version.tar.xz
 	$name-nocheck-fixincludes.patch $name-4.7.3-multilib-dirs.patch
 	$name-aarch64-disable-multilib-support.patch
@@ -43,12 +43,12 @@ build() {
 		--enable-shared \
 		--enable-lto \
 		--with-x=no \
+		--disable-multilib \
 		--enable-plugin \
 		--enable-default-pie \
 		--enable-default-ssp \
 		--with-pkgversion="irradium $(getconf LONG_BIT)b" \
 		--with-system-zlib \
-		--disable-multilib \
 		--disable-nls
 	make bootstrap
 	make -j4 DESTDIR=$PKG install
