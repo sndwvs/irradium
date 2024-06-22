@@ -7,10 +7,13 @@
 name=vlc
 version=3.0.20
 release=2
-source=(https://download.videolan.org/$name/$version/$name-$version.tar.xz)
+source=(https://download.videolan.org/$name/$version/$name-$version.tar.xz
+    5304.patch)
 
 build() {
   cd $name-$version
+
+  patch -p1 -i $SRC/5304.patch || exit 1
 
   prt-get isinst liba52 && PKGMK_VLC+=" --enable-a52" || PKGMK_VLC+=" --disable-a52"
   prt-get isinst wayland && PKGMK_VLC+=" --enable-wayland" || PKGMK_VLC+=" --disable-wayland"
