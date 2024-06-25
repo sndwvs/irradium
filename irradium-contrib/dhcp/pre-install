@@ -1,0 +1,6 @@
+#!/bin/sh
+
+getent group dhcp || /usr/sbin/groupadd -r dhcp
+getent passwd dhcp || /usr/sbin/useradd -r -d /var/lib/dhcp -s /bin/false -G dhcp -g dhcp dhcp
+/usr/bin/passwd -l dhcp
+

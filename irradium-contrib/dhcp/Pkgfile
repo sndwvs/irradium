@@ -1,0 +1,74 @@
+# Description: ISC Dynamic Host Configuration Protocol (DHCP)
+# URL: https://www.isc.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: krb5 openldap perl coreutils iproute2
+
+name=dhcp
+version=4.4.3_p1
+_srcversion=${version/_p/-P}
+release=1
+source=(https://downloads.isc.org/isc/dhcp/$_srcversion/$name-$_srcversion.tar.gz
+    dhclient-script.PATH.diff
+    rc.dhcpd)
+
+build() {
+  cd $name-$_srcversion
+
+  # Add PATH setting to /sbin/dhclient-script
+  patch -p1 -i $SRC/dhclient-script.PATH.diff || exit 1
+
+  # Fix paths in manual pages
+  sed -i \
+    -e "s,ETCDIR,/etc/dhcp,g" \
+    -e "s,DBDIR,/var/state/dhcp,g" \
+    -e "s,RUNDIR,/var/run,g" \
+    client/*.{5,8} \
+    server/*.{5,8} \
+    doc/*/*.{5,8}
+
+  # fix ipv6
+  export CFLAGS="$CFLAGS -D_GNU_SOURCE \
+      -D_PATH_DHCLIENT_CONF='\"/etc/dhcp/dhclient.conf\"'"
+
+  ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc/dhcp \
+        --localstatedir=/var \
+        --with-srv-conf-file=/etc/dhcp/dhcpd.conf \
+        --with-srv-lease-file=/var/state/dhcp/dhcpd.leases \
+        --with-srv6-lease-file=/var/state/dhcp/dhcpd6.leases \
+        --with-cli-lease-file=/var/state/dhcp/dhclient.leases \
+        --with-cli6-lease-file=/var/state/dhcp/dhclient6.leases \
+        --with-srv-pid-file=/run/dhcp/dhcpd.pid \
+        --with-srv6-pid-file=/run/dhcp/dhcpd6.pid \
+        --with-cli-pid-file=/run/dhcp/dhclient.pid \
+        --with-cli6-pid-file=/run/dhcp/dhclient6.pid \
+        --with-libbind=no \
+        --enable-dhcpv4o6 \
+        --enable-log-pid \
+
+  make
+  make DESTDIR=$PKG install
+
+  install -Dm644 server/dhcpd.conf.example $PKG/etc/dhcp/dhcpd.conf.example
+  install -Dm644 client/dhclient.conf.example $PKG/etc/dhcp/dhclient.conf.example
+
+  # DHCP libraries need not be included, yet.
+  rm -rf $PKG/usr/{include,lib}
+
+  # We need this in /sbin
+  mkdir -p $PKG/sbin
+  mv $PKG/usr/sbin/dhclient $PKG/sbin
+
+  # Install the dhclient-script for linux
+  install -m700 client/scripts/linux $PKG/sbin/dhclient-script
+
+  install -m755 -D $SRC/rc.${name}d $PKG/etc/rc.d/${name}d
+
+  # Create the initial *.leases files:
+  mkdir -p $PKG/var/state/dhcp
+  touch $PKG/var/state/dhcp/dhcpd.leases \
+        $PKG/var/state/dhcp/dhcpd6.leases \
+        $PKG/var/state/dhcp/dhclient.leases \
+        $PKG/var/state/dhcp/dhclient6.leases
+}

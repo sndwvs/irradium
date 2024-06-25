@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7qBh08SSrPlgcKZSaxdOsqaX2pU4b6Jrrmnd5DWHThJOt+47m8lfNLABJ4FBHCU2u4MtcYMgDR9VaOLP8nP08Q0=
+SHA256 (Pkgfile) = 5fc15fa49bb9354a3926c681a38e4e3ae6e5ae925923c9aad8b2a58fd31bfe9f
+SHA256 (.footprint) = 9a36bc80c5acda57fc2d734b359849675c932521e8d1319ab32fe8e2e2bc9f1f
+SHA256 (dhcp-4.4.3-P1.tar.gz) = 0ac416bb55997ca8632174fd10737fd61cdb8dba2752160a335775bc21dc73c7
+SHA256 (dhclient-script.PATH.diff) = 5357213112b78e8ec5ee2264ac9475842468d63b892f74ada026a57acd6c9545
+SHA256 (rc.dhcpd) = 8b0ebd1bf54ec1740061a34874e8f5c1d0fbeeaa42f67166f674044c591ddacd
