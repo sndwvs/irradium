@@ -1,0 +1,48 @@
+# Description: daemon for wireless software access points
+# URL: https://w1.fi/hostapd/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: openssl libnl3
+
+name=hostapd
+version=2.10
+release=1
+source=(https://w1.fi/releases/$name-$version.tar.gz
+    0001-hostapd-Add-the-missing-CONFIG_SAE-option-to-the-def.patch
+    config
+    rc.hostapd)
+
+build() {
+    cd $name-$version/$name
+
+    cp $SRC/config .config
+
+    sed -i -e "s:/etc/hostapd:/etc/hostapd/hostapd:g" \
+        hostapd.conf
+
+    # Configuration
+    export CFLAGS+=" $(pkg-config --cflags libnl-3.0)"
+
+    make all nt_password_hash
+
+    install -Dm644 hostapd.conf \
+        hostapd.accept \
+        hostapd.deny \
+        hostapd.eap_user \
+        hostapd.radius_clients \
+        hostapd.sim_db \
+        hostapd.wpa_psk \
+        -t $PKG/etc/hostapd/
+
+    install -Dm755 hostapd \
+        -t $PKG/usr/sbin/
+    install -Dm755 hostapd_cli nt_password_hash \
+        -t $PKG/usr/bin/
+
+    install -Dm755 $SRC/rc.hostapd \
+        $PKG/etc/rc.d/hostapd
+
+    install -Dm644 hostapd.8 \
+        -t $PKG/usr/share/man/man8/
+    install -Dm644 hostapd_cli.1 \
+        -t $PKG/usr/share/man/man1/
+}
