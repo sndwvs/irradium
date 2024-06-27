@@ -142,7 +142,7 @@ f:11a60b6c6658e9f5bc905c661f3e3672:firefox/Pkgfile
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:997d0c3564c57cd05bd24a86ce30fdaf:firefox/.footprint.aarch64
-f:ba43f3819511701a55cac78fc97dfaa4:firefox/.signature.aarch64
+f:cedeecf1d8338f0c29a782efda34465d:firefox/.signature.aarch64
 f:3532ee64b1594fa2d9854b5d71d87224:firefox/.footprint.riscv64
 f:3aabaeb8803479f3f0cc112b5a94fc24:firefox/.signature.riscv64
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
@@ -347,6 +347,7 @@ f:ac7c2c0be8702ab9659ccca6679487f2:mkinitramfs/mkinitramfs
 f:2b6514212e23bbade668dc74be1a178d:mkinitramfs/Pkgfile
 f:6fc9192870e3cd2924aceb60f46c974a:mkinitramfs/.footprint
 f:14abbb7b1cb6ced8d5de6e17d1a9ef95:mkinitramfs/.signature
+f:d41d8cd98f00b204e9800998ecf8427e:127.0.2
 f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
 f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
 f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
