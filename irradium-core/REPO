@@ -47,8 +47,6 @@ f:b2f414ce5064a36d8ae51b4b2dd2bd72:filesystem/Pkgfile
 f:9165347c2c736b0c48b1846004e650e9:flex/.footprint
 f:2169b4b22e7139587cfb1172033fd1e9:flex/.signature
 f:c37d29a3858944cc65d34b7cc33ca64f:flex/Pkgfile
-f:3c13e89423eb43d8ee97675362d3725f:gcc/.footprint
-f:121344c2f1ced0c6da4d49033045d18d:gcc/.signature
 f:61a057afa31006764b957a483ba90b9d:gcc/gcc-4.7.3-multilib-dirs.patch
 f:032ba6ae0bd4d6e405d012084816e334:gcc/gcc-aarch64-disable-multilib-support.patch
 f:a58ff03983cf89e5e690c71f7eab6fff:gcc/gcc-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
@@ -56,6 +54,10 @@ f:9652a27711fa9f7989483ebe21786c16:gcc/gcc-configure-fix-detection-of-atomic-bui
 f:7c9128522053af79791bcfdd55834c2a:gcc/gcc-nocheck-fixincludes.patch
 f:6c2efd51d958338dd0e11db1f6643a1f:gcc/Pkgfile
 f:d999afb2c8abba1591154b6e6717e6d8:gcc/gcc-riscv-disable-multilib-support.patch
+f:3c13e89423eb43d8ee97675362d3725f:gcc/.footprint.aarch64
+f:121344c2f1ced0c6da4d49033045d18d:gcc/.signature.aarch64
+f:830b8639e6590d013fa96c266244d36e:gcc/.footprint.riscv64
+f:f0f5f0b2e6e33d9ba1e454bbdeab7a98:gcc/.signature.riscv64
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:8baa3be58d05ab68006811ca8cfb1239:gdbm/.signature
 f:7b8e983ce515db7bebaa8bf62ed97b8a:gdbm/Pkgfile
