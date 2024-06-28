@@ -1,0 +1,51 @@
+#!/bin/sh
+#
+# /etc/rc.d/tincd: start/stop tincd daemon
+#
+
+NETWORKS=()
+SSD=/sbin/start-stop-daemon
+PROG=/usr/sbin/tincd
+PID=/run/tincd.pid
+OPTS="-d1"
+
+case $1 in
+start)
+    for NETNAME in ${NETWORKS[@]}; do
+        CONFIG="/etc/tinc/$NETNAME/tinc.conf"
+        PID="/run/tinc.$NETNAME.pid"
+        if [ ! -f "$CONFIG" ]; then
+            return 1
+        else
+           LOG="--logfile=/var/log/tinc.$NETNAME.log"
+           $SSD --start --pidfile $PID --exec $PROG -- $OPTS --net=$NETNAME $LOG --pidfile $PID
+        fi
+    done
+    ;;
+stop)
+    for NETNAME in ${NETWORKS[@]}; do
+        PID="/run/tinc.$NETNAME.pid"
+        if [ -f "$PID" ]; then
+            $SSD --stop --retry 10 --remove-pidfile $PID --exec $PROG --pidfile $PID
+        fi
+    done
+    ;;
+restart)
+    $0 stop
+    $0 start
+    ;;
+status)
+    $SSD --status --exec $PROG
+    case $? in
+    0) echo "$PROG is running with pid $(pidof $PROG)" ;;
+    1) echo "$PROG is not running but the pid file $PID exists" ;;
+    3) echo "$PROG is not running" ;;
+    4) echo "Unable to determine the program status" ;;
+    esac
+    ;;
+*)
+    echo "usage: $0 [start|stop|restart|status]"
+    ;;
+esac
+
+# End of file

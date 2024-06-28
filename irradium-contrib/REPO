@@ -93,6 +93,7 @@ d:libmwaw
 d:libpagemaker
 d:libvisio
 d:libfreehand
+d:tinc
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -467,3 +468,8 @@ f:7b85252bbb2263bfb6322d2496533ba8:libfreehand/.footprint
 f:f91d998156747fed18066aa8d45b9435:libfreehand/.signature
 f:83e97f4fb0e66fd10d10fcd75a3ab497:libfreehand/0001-Add-missing-semicolon-to-fix-build-with-icu-65.1.patch
 f:3bef73249ab3b892b1d4b5d7ef73fef4:libfreehand/Pkgfile
+f:1d5e59b7025726590a3e1c77f7e9e504:tinc/Pkgfile
+f:11b13d54557a505764cbc2ea0fdf7e4f:tinc/rc.tincd
+f:52efbe70be91510dd87fdd0af1eff59e:tinc/tincd.logrotate
+f:0900026ab290032ca3389054ad00a26e:tinc/.footprint
+f:3d3d3f4800ddbc4387b3503afdcac316:tinc/.signature
