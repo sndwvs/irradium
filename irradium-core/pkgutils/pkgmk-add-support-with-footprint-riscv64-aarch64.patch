@@ -1,5 +1,5 @@
---- a/pkgmk.in	2023-12-02 00:44:50.922529207 +0200
-+++ b/pkgmk.in	2024-06-11 20:37:13.229228265 +0300
+--- a/pkgmk.in	2023-02-03 18:32:32.000000000 +0200
++++ b/pkgmk.in	2024-06-28 20:41:10.095637025 +0300
 @@ -324,7 +324,11 @@ check_signature() {
  		srcind=$(( srcind+1 ))
  		done
@@ -31,10 +31,10 @@
  		exit $E_SIGNATURE
  	else
 -		mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
-+		if [ -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
-+		    mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}.${MULTI_ARCH}
++		if [ -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} -o ! -f ${PKGMK_SIGNATURE} ]; then
++			mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}.${MULTI_ARCH}
 +		else
-+		    mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
++			mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
 +		fi
  	fi
  }
@@ -44,10 +44,10 @@
  		exit $E_SIGNATURE
  	else
 -		mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
-+		if [ -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
-+		    mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}.${MULTI_ARCH}
++		if [ -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} -o ! -f ${PKGMK_SIGNATURE} ]; then
++			mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}.${MULTI_ARCH}
 +		else
-+		    mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
++			mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
 +		fi
  	fi
  }
