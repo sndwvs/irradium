@@ -1,0 +1,9 @@
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCSIwmJbMGnjWDw8+QatWxInsy+E39FOtyutTEMEARRdwGV00dElWBMdWAUCKeSs0/2UMP0xSyD9c8WSkzVQlSAQ=
+SHA256 (Pkgfile) = 8bec2b184f197062c2b506940398ec244c00712da732565586d91a6d0f4dc95f
+SHA256 (.footprint) = 7f6896902e59513d99c49022171547bbd24ae7e9d9100ab2a50c6693f0128a3b
+SHA256 (llvm-18.1.8.src.tar.xz) = f68cf90f369bc7d0158ba70d860b0cb34dbc163d6ff0ebc6cfa5e515b9b2e28d
+SHA256 (cmake-18.1.8.src.tar.xz) = 59badef592dd34893cd319d42b323aaa990b452d05c7180ff20f23ab1b41e837
+SHA256 (third-party-18.1.8.src.tar.xz) = b76b810f3d3dc5d08e83c4236cb6e395aa9bd5e3ea861e8c319b216d093db074
+SHA256 (install-prefix.patch) = 2649b61a459eb6d8a9aca38ab411aec27eeae57fe82e32d135db4ccb353c9dda
+SHA256 (rust-feature-tables.patch) = 88470afc557650112af05e9055d0010f07a888c34fcc61ed8b7cc165d8ecd9af
