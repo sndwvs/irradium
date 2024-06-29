@@ -4,7 +4,7 @@
 # Depends on: libgpg-error
 
 name=libgcrypt
-version=1.10.3
+version=1.11.0
 release=1
 source=(https://www.gnupg.org/ftp/gcrypt/libgcrypt/$name-$version.tar.bz2)
 
@@ -16,7 +16,6 @@ build() {
 		--disable-padlock-support \
 		--enable-static=yes \
 		--build=$(uname -m)-unknown-linux-gnu
-
 	make
 	make DESTDIR=$PKG install
 
