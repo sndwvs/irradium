@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/opt.pub
-RWSE3ohX2g5d/Vgfzvdn3z2Tmv4TZRKGbvt3UXAtpZUcNxUsK397t0E2n6yCy2yA9/7ebVywMwKsrpfru8dFrkzUIeVkm0w5uw8=
-SHA256 (Pkgfile) = 35162b3de19c6439e197472f1bc751dee9dbdd76a2129eadb1814745fc833909
-SHA256 (.footprint) = 3d2b072fce2453fd214aa2529e3b223fea70585c131e51c4efc8fe7a8275a878
-SHA256 (libgcrypt-1.10.3.tar.bz2) = 8b0870897ac5ac67ded568dcfadf45969cfa8a6beb0fd60af2a9eadc2a3272aa
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCS91svjRkVhcJbjoc0pKr1XIU7cE3wzANPTURya4lH3HRMUvjzz3nWTLlADswNdUxHJphXz9ZrPGbfJe7Q/rFQA=
+SHA256 (Pkgfile) = 8d5a7f7781aae96f19f7293ed35c74fb459d4af1c6e87e3be7a64c26fe778985
+SHA256 (.footprint) = 90e1755f1c943bdf9d01a0fc83cc53c1627bb84d8b52053198551211f8548c94
+SHA256 (libgcrypt-1.11.0.tar.bz2) = 09120c9867ce7f2081d6aaa1775386b98c2f2f246135761aae47d81f58685b9c
