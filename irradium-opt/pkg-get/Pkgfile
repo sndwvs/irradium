@@ -4,7 +4,7 @@
 # Depends on: pkgutils prt-get
 
 name=pkg-get
-version=0.1.3.4
+version=0.1.3.5
 release=1
 source=(https://gitlab.com/sndwvs/$name/-/archive/$version/$name-$version.tar.bz2)
 
