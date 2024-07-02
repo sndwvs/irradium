@@ -65,6 +65,8 @@ build() {
 
   install -m755 -D $SRC/rc.${name}d $PKG/etc/rc.d/${name}d
 
+  mkdir -p $PKG/run/dhcp
+
   # Create the initial *.leases files:
   mkdir -p $PKG/var/state/dhcp
   touch $PKG/var/state/dhcp/dhcpd.leases \

@@ -336,7 +336,7 @@ f:62f993e9827bb450366d6e1ce6cced90:redland/redland-format.patch.0
 f:5950616e33d65d96e8e00d88c884218d:redland/redland-xcompile.patch.1
 f:e890fb779dac0f855d41cc843329ddb8:redland/rpath.patch
 f:23ee3a45fcf220dbe8eacf5fa4946c84:dhcp/rc.dhcpd
-f:cd5346cd796d5d99669bb623bdf65a03:dhcp/Pkgfile
+f:f1f49f4844df4781898d53e15f2cf8fe:dhcp/Pkgfile
 f:2566e35b763ede563e361869b7ad6b42:dhcp/dhclient-script.PATH.diff
 f:35f7388d1085c3f798e40d56af31a3f8:dhcp/pre-install
 f:c63f25e4de1869b826bcc972476ac894:dhcp/.signature
