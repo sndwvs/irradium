@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGPTGzwCoJW+0VQCbTe6O99lOE90gcKKhyYOGOsW5uQYmM9eurzREONNbDw52Cegxlq7p9YTUSlyEUqaXlv+u4AQ=
-SHA256 (Pkgfile) = c03288e86d6fd5040cb3b12b183053c6f4ec4628baae407fdabc63047522a3f9
-SHA256 (.footprint) = cf4e85c2ce9c337ffd51137882030a7e373e613c478762f63910f63b4faae807
-SHA256 (cmake-3.29.6.tar.gz) = 1391313003b83d48e2ab115a8b525a557f78d8c1544618b48d1d90184a10f0af
+untrusted comment: verify with /etc/ports/core.pub
+RWRJc1FUaeVeqheBesMOy4S0YwxLooC3k9t8pnAZHgszbYLZ1fiPdiR1EXBjyyXHpBmglvzEmeJqxpEZLzq6CUiFkbpWgm6/PgM=
+SHA256 (Pkgfile) = fb41d3428a19b8ddeb26f02142e55230c614f360528803072f87cf5448783d6b
+SHA256 (.footprint) = d0d41d91b99717fed30c486625d73a3b7bdf0545f410cc7890c1f36c07cc378e
+SHA256 (cmake-3.30.0.tar.gz) = 157e5be6055c154c34f580795fe5832f260246506d32954a971300ed7899f579
