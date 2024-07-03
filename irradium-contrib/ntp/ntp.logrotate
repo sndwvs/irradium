@@ -1,0 +1,8 @@
+/var/log/ntp {
+    notifempty
+    missingok
+    rotate 4
+    postrotate
+    [ ! -x /etc/rc.d/ntpd ] || /etc/rc.d/ntpd restart
+    endscript
+}

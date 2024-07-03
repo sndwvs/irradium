@@ -1,0 +1,6 @@
+#!/bin/sh
+
+getent group ntp || /usr/sbin/groupadd -r ntp
+getent passwd ntp || /usr/sbin/useradd -r -d /var/lib/ntp -s /bin/false -G ntp -g ntp ntp
+/usr/bin/passwd -l ntp
+

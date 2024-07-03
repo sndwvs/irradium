@@ -1,0 +1,41 @@
+# Description: Network Time Protocol daemon
+# URL: https://www.ntp.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: openssl perl libcap libedit
+
+name=ntp
+version=4.2.8.p18
+_srcversion=${version/.p/p}
+release=1
+source=(https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/${name}-${_srcversion}.tar.gz
+    ntp.conf rc.ntpd
+    ntp.keys
+    ntp.logrotate)
+
+build() {
+  cd $name-$_srcversion
+
+  # GCC 14 "fix":
+  CFLAGS+=" -Wno-error=int-conversion"
+
+  ./configure \
+    --prefix=/usr \
+    --libexecdir=/usr/lib \
+    --localstatedir=/var \
+    --sysconfdir=/etc \
+    --bindir=/usr/sbin \
+    --sbindir=/usr/sbin \
+    --enable-ipv6 \
+    --with-crypto \
+    --enable-ntp-signd \
+    --build=$(uname -m)-unknown-linux-gnu
+
+  make
+  make DESTDIR=$PKG install
+
+  rm -rf $PKG/usr/share/doc
+  install -Dm644 $SRC/ntp.conf $PKG/etc/ntp.conf
+  install -Dm644 $SRC/ntp.keys $PKG/etc/ntp.keys
+  install -Dm644 $SRC/rc.ntpd $PKG/etc/rc.d/ntpd
+  install -Dm644 $SRC/ntp.logrotate $PKG/etc/logrotate.d/ntp
+}
