@@ -59,7 +59,7 @@ f:121344c2f1ced0c6da4d49033045d18d:gcc/.signature.aarch64
 f:830b8639e6590d013fa96c266244d36e:gcc/.footprint.riscv64
 f:f0f5f0b2e6e33d9ba1e454bbdeab7a98:gcc/.signature.riscv64
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
-f:23c6e85def4e03ab5df6d2f25c5be7b8:gdbm/.signature
+f:5ce6f14adda1042d0658e37e1c208c02:gdbm/.signature
 f:ff5b755e4eaade03360c4006cd35aca2:gdbm/Pkgfile
 f:5d37085c6a7714fcc5443f05a07a873d:glibc/.nostrip
 f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
