@@ -1,7 +1,7 @@
 # Description: PPP over Ethernet client (for xDSL support)
 # URL: https://dianne.skoll.ca/projects/rp-pppoe/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: ppp linux-headers
+# Depends on: ppp
 
 name=rp-pppoe
 version=4.0
