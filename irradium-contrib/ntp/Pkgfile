@@ -1,12 +1,12 @@
 # Description: Network Time Protocol daemon
 # URL: https://www.ntp.org/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: openssl perl libcap libedit
+# Depends on: openssl perl libcap libedit libmd
 
 name=ntp
 version=4.2.8.p18
 _srcversion=${version/.p/p}
-release=2
+release=3
 source=(https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/${name}-${_srcversion}.tar.gz
     ntp.conf rc.ntpd
     ntp.keys
