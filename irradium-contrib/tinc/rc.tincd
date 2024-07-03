@@ -3,7 +3,7 @@
 # /etc/rc.d/tincd: start/stop tincd daemon
 #
 
-NETWORKS=()
+NETWORKS=""
 SSD=/sbin/start-stop-daemon
 PROG=/usr/sbin/tincd
 PID=/run/tincd.pid
@@ -11,7 +11,7 @@ OPTS="-d1"
 
 case $1 in
 start)
-    for NETNAME in ${NETWORKS[@]}; do
+    for NETNAME in ${NETWORKS}; do
         CONFIG="/etc/tinc/$NETNAME/tinc.conf"
         PID="/run/tinc.$NETNAME.pid"
         if [ ! -f "$CONFIG" ]; then
@@ -23,7 +23,7 @@ start)
     done
     ;;
 stop)
-    for NETNAME in ${NETWORKS[@]}; do
+    for NETNAME in ${NETWORKS}; do
         PID="/run/tinc.$NETNAME.pid"
         if [ -f "$PID" ]; then
             $SSD --stop --retry 10 --remove-pidfile $PID --exec $PROG --pidfile $PID
