@@ -80,6 +80,7 @@ d:libzmf
 d:libmspub
 d:rasqal
 d:libe-book
+d:sshpass
 d:cpufrequtils
 d:mtd-utils
 d:rnnoise
@@ -410,6 +411,9 @@ f:bde1f59c3f8395dc6a97246029bd9370:libe-book/.footprint
 f:651a6cf09ffa8872accf1f568d0c0836:libe-book/libebook-0.1.3-icu-68.patch
 f:3b975d2e902e18fceeb62003de71c359:libe-book/.signature
 f:8cb876b3b2b92145587faa0ae17e5db4:libe-book/Pkgfile
+f:e878e7386df273a8d1e31f006a07bd77:sshpass/Pkgfile
+f:7b39087f8e19d9392beeb0b96386cdc2:sshpass/.footprint
+f:511ddf7ee3ccd5eb66cfe72503279319:sshpass/.signature
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch
