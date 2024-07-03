@@ -5,7 +5,7 @@
 
 name=rp-pppoe
 version=4.0
-release=1
+release=2
 source=(https://salsa.debian.org/dskoll/$name/-/archive/$version/$name-$version.tar.gz
         rc.rp-pppoe)
 

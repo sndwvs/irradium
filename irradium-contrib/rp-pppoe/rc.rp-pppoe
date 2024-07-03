@@ -6,13 +6,11 @@
 SSD=/sbin/start-stop-daemon
 PROG=/usr/sbin/pppoe-server
 PID=/run/pppoe-server.pid
-OPTS=""
+OPTS="-X $PID"
 
 case $1 in
 	start)
-		if [ -x $PROG ]; then
-			$SSD --start --pidfile=$PID --exec $PROG -- $OPTS
-		fi
+		$SSD --start --pidfile=$PID --exec $PROG -- $OPTS
 		;;
 
 	stop)
