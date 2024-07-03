@@ -361,8 +361,8 @@ f:544b10b0536b8a329e8e9deea702714f:ntp/ntp.logrotate
 f:1bba21fa121fd3e00f8ba272b6abda5a:ntp/rc.ntpd
 f:73b47515f8859872900eb97571ad0b64:ntp/Pkgfile
 f:6e43231687a41272a913911994909469:ntp/pre-install
-f:57f8e2cbc5dc69191cf9137df864e9a0:ntp/.footprint
-f:d41d8cd98f00b204e9800998ecf8427e:ntp/.signature
+f:9042db35fceccf7ab81f54adda970ab9:ntp/.footprint
+f:2787b0c0a7095e30de2e32a0ba0c2ffa:ntp/.signature
 f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
 f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
 f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop

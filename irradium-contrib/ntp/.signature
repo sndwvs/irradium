@@ -1,0 +1,9 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7luND+wFaX1WiBQsqoFnxyyd1AFbQMz+TzQ6fpczWNnRP6R/p4lcG/f35wK7tna9hfMDh5jTpjXggH/Bw+ERcwQ=
+SHA256 (Pkgfile) = b775d26930bc0f9fa9063d5aa05f297b55a9e39e2ae8fbc44b1050c1b5e5be34
+SHA256 (.footprint) = 562af30412e4115deed7e6c17201f145ee8e1ba53c9d7a8238cb338798209f00
+SHA256 (ntp-4.2.8p18.tar.gz) = cf84c5f3fb1a295284942624d823fffa634144e096cfc4f9969ac98ef5f468e5
+SHA256 (ntp.conf) = 90f502808d87b80c5699c4fca5545560fa2d364265cfb74cf1e87ec39e51d311
+SHA256 (rc.ntpd) = c8a23902c22659ea57064c1eb49010d6829a524587f603f6286aef8f1352da2f
+SHA256 (ntp.keys) = 0f1a98038f705076660a13658569a56d1fbf2d91e1cc85fdaa33930c11e18b29
+SHA256 (ntp.logrotate) = ba4a72a2a0770c7bf1df574fd163c46a52ba2f6d5a3c948c02b333a1e3e72fbf
