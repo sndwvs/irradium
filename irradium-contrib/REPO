@@ -361,8 +361,8 @@ f:544b10b0536b8a329e8e9deea702714f:ntp/ntp.logrotate
 f:1bba21fa121fd3e00f8ba272b6abda5a:ntp/rc.ntpd
 f:1e26f8af1cbfc212bc002de72bfb5eb0:ntp/Pkgfile
 f:6e43231687a41272a913911994909469:ntp/pre-install
-f:9042db35fceccf7ab81f54adda970ab9:ntp/.footprint
-f:2787b0c0a7095e30de2e32a0ba0c2ffa:ntp/.signature
+f:ba97a0c31770f41d479edfa20fe1dc58:ntp/.footprint
+f:7350bd89e14e08d99c13832e1ff93137:ntp/.signature
 f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
 f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
 f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
@@ -445,7 +445,7 @@ f:1e07e15b2817ac5de6c44677f9a18391:rnnoise/Pkgfile
 f:db48492eb8497862f8604d25400ee4cf:rp-pppoe/Pkgfile
 f:880cc0f0677a901c86208da43a72dbfc:rp-pppoe/rc.rp-pppoe
 f:60c1828da442671afa057a7b596356a8:rp-pppoe/.footprint
-f:fc72c4bc0c431f8943cea4f740c5cc46:rp-pppoe/.signature
+f:0edf760240bea269eeca03ab19a32106:rp-pppoe/.signature
 f:3f2373714975c956b5ef730517c4c2ce:shntool/.footprint
 f:760bb707ead1768ea250b5606dd61282:shntool/.signature
 f:566b803bc3e30fb29158baf4ab0a6884:shntool/Pkgfile
@@ -491,4 +491,4 @@ f:29448105c0ac304fb23351878636b267:tinc/Pkgfile
 f:43d5a35ffd5968ae8ada966053c1d438:tinc/rc.tincd
 f:52efbe70be91510dd87fdd0af1eff59e:tinc/tincd.logrotate
 f:0900026ab290032ca3389054ad00a26e:tinc/.footprint
-f:3d3d3f4800ddbc4387b3503afdcac316:tinc/.signature
+f:c0b7c4ef7f2a73d00b313ff141dcf8a1:tinc/.signature
