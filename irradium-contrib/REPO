@@ -359,7 +359,7 @@ f:e7cdc0f92b0ce136612839a7020980c3:ntp/ntp.conf
 f:32e69b89c80eeeb12516766bdc03a5f4:ntp/ntp.keys
 f:544b10b0536b8a329e8e9deea702714f:ntp/ntp.logrotate
 f:1bba21fa121fd3e00f8ba272b6abda5a:ntp/rc.ntpd
-f:73b47515f8859872900eb97571ad0b64:ntp/Pkgfile
+f:aa212bf2434fb916f4300d34f0f9b6af:ntp/Pkgfile
 f:6e43231687a41272a913911994909469:ntp/pre-install
 f:9042db35fceccf7ab81f54adda970ab9:ntp/.footprint
 f:2787b0c0a7095e30de2e32a0ba0c2ffa:ntp/.signature

@@ -6,7 +6,7 @@
 name=ntp
 version=4.2.8.p18
 _srcversion=${version/.p/p}
-release=1
+release=2
 source=(https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/${name}-${_srcversion}.tar.gz
     ntp.conf rc.ntpd
     ntp.keys
@@ -36,6 +36,6 @@ build() {
   rm -rf $PKG/usr/share/doc
   install -Dm644 $SRC/ntp.conf $PKG/etc/ntp.conf
   install -Dm644 $SRC/ntp.keys $PKG/etc/ntp.keys
-  install -Dm644 $SRC/rc.ntpd $PKG/etc/rc.d/ntpd
+  install -Dm755 $SRC/rc.ntpd $PKG/etc/rc.d/ntpd
   install -Dm644 $SRC/ntp.logrotate $PKG/etc/logrotate.d/ntp
 }
