@@ -20,9 +20,9 @@ d:dhcpcd
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
-f:4c5323c23658d86d52afb41adfe4bcd6:cmake/.footprint
-f:02f667114d11e41b5e20ec7ad6fff1ab:cmake/.signature
-f:7afa117974367573aeda6c43797d019e:cmake/Pkgfile
+f:b930876865b6f6e683daef8aebcc6511:cmake/.footprint
+f:8ba7baf6849ef3e467708bd40aa65108:cmake/.signature
+f:8df57644d9629628734d139fd1023834:cmake/Pkgfile
 f:034680aa69ee64596517784fe1161c1b:db/.footprint
 f:7e30d22cd875710b997e739c6202893f:db/.signature
 f:bf37166683ba4966059cda949d4f6dbd:db/0001-atomic-Rename-local-__atomic_compare_exchange-to-avo.patch
@@ -59,8 +59,8 @@ f:121344c2f1ced0c6da4d49033045d18d:gcc/.signature.aarch64
 f:830b8639e6590d013fa96c266244d36e:gcc/.footprint.riscv64
 f:f0f5f0b2e6e33d9ba1e454bbdeab7a98:gcc/.signature.riscv64
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
-f:8baa3be58d05ab68006811ca8cfb1239:gdbm/.signature
-f:7b8e983ce515db7bebaa8bf62ed97b8a:gdbm/Pkgfile
+f:23c6e85def4e03ab5df6d2f25c5be7b8:gdbm/.signature
+f:ff5b755e4eaade03360c4006cd35aca2:gdbm/Pkgfile
 f:5d37085c6a7714fcc5443f05a07a873d:glibc/.nostrip
 f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
 f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
