@@ -1,0 +1,25 @@
+# Description: acme shell script, an acme client alternative to certbot
+# URL: https://github.com/acmesh-official/acme.sh
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: curl socat openssl
+
+name=acme.sh
+version=3.0.7
+release=1
+source=(https://github.com/acmesh-official/acme.sh/archive/$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  install -dm755 $PKG/usr/share/acme.sh/deploy
+  install -dm755 $PKG/usr/share/acme.sh/dnsapi
+  install -dm755 $PKG/usr/share/acme.sh/notify
+  install -dm755 $PKG/usr/bin
+
+  install -m755 acme.sh $PKG/usr/share/acme.sh/
+  install -m755 deploy/*.sh $PKG/usr/share/acme.sh/deploy/
+  install -m755 dnsapi/*.sh $PKG/usr/share/acme.sh/dnsapi/
+  install -m755 notify/*.sh $PKG/usr/share/acme.sh/notify/
+
+  ln -s /usr/share/acme.sh/acme.sh $PKG/usr/bin/acme.sh
+}

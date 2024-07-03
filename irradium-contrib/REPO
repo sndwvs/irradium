@@ -67,6 +67,7 @@ d:xcursor-justblue
 d:yt-dlp
 d:redland
 d:dhcp
+d:acme.sh
 d:mkinitramfs
 d:rxvt-unicode
 d:rkdeveloptool
@@ -341,6 +342,9 @@ f:2566e35b763ede563e361869b7ad6b42:dhcp/dhclient-script.PATH.diff
 f:35f7388d1085c3f798e40d56af31a3f8:dhcp/pre-install
 f:c63f25e4de1869b826bcc972476ac894:dhcp/.signature
 f:a889387e85af8e646ff1db87dde1eaed:dhcp/.footprint
+f:05f1cabe4081da6f81dc1d3be53f62c3:acme.sh/Pkgfile
+f:c66c35af44b089c60683f1db8c768c3a:acme.sh/.footprint
+f:12c5451d0508619e75c4503cb0b36a5c:acme.sh/.signature
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4461500806eba45e6f7dd0f5805ea777:mkinitramfs/init.in.patch
 f:0ccf2c3bbe610cff21943fc21e9d8764:mkinitramfs/mkinitramfs.patch
