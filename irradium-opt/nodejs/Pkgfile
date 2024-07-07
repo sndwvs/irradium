@@ -15,7 +15,7 @@ build() {
   cd node-v$version
 
   # fix riscv64
-  patch -Rp1 -i $SRC/52888.patch || exit 1
+  patch -Np1 -i $SRC/52888.patch || exit 1
 
   prt-get isinst brotli && PKGMK_NODEJS+=' --shared-brotli'
   prt-get isinst c-ares && PKGMK_NODEJS+=' --shared-cares'
