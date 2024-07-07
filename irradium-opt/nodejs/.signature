@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/opt.pub
+RWSE3ohX2g5d/RAgpYu3TLBdwxUffwl+kFvqAsOmxduUV9Bs51hJiKtdgD8iwOtu845/4AJEPrf+6jygQZv3GbU/R/ayXIJuFwM=
+SHA256 (Pkgfile) = 482fc6f163ac7df35be4d2e694261a6db7915d4c7c6933a5be7ae46daa370e20
+SHA256 (.footprint) = 3150c1e8bc4bec5c9d351873b44bba9bf9f6c91e9e29b8871ee27e3bf18b3a70
+SHA256 (node-v22.4.0.tar.xz) = 292b430084f2f32913dc7da4eb2fbc8969252772a9d1bfe8ae6c4b4a98ca3ad3
+SHA256 (system-c-ares.patch) = 1ab0f849fe4fae2d295b6c60c12825d5f2c29f5b28b721916d1b550704b0f5f3
