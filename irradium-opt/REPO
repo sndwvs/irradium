@@ -180,6 +180,6 @@ f:952b8f2b79db7944026a790578218e13:shared-mime-info/Pkgfile
 f:0beb828eca839c98ea8c5dd66b51ebd6:shared-mime-info/fix.patch
 f:bc51d17e8c75abeff6f08e21f8086b9f:nodejs/.footprint
 f:1f8d81b7d7f75b75af3e33ebd97808bf:nodejs/system-c-ares.patch
-f:da41595e93cc6221bc39f6d578c6fb3a:nodejs/.signature
+f:2909c9259c0dac7b57c181c95973de46:nodejs/.signature
 f:4f6a3cfafa78a2c25dfd54051e34ad3b:nodejs/Pkgfile
 f:352bd14a9fd821f0841e15c9ff17013a:nodejs/52888.patch
