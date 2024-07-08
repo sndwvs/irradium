@@ -5,7 +5,7 @@
 # Optional: avahi coin-or-mp cups dconf gpgme kio lpsolve mariadb openldap postgresql python3-lxml qt5 sane valgrind
 
 name=libreoffice
-version=24.2.4.2
+version=24.2.5.1
 release=1
 pdfiumversion=6179
 source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-$version.tar.xz
@@ -154,6 +154,6 @@ build() {
   ln -vsrf $PKG/usr/etc/libreoffice/{bootstraprc,sofficerc} .
 
   # cleanup {{{
-  find $PKG -iname "*readme*" -exec rm -fr '{}' \+
+  find $PKG \( -iname "*readme*" -o -iname "gid_Module*" \) -exec rm -fr '{}' \+
   # }}}
 }
