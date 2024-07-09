@@ -128,7 +128,7 @@ f:a13e62be3f90588f8b825e7a76fbef42:prt-get/.signature
 f:6ae4e3bfe51145f6dafb3f1a66876290:prt-get/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:1746a2ef6fb54dc829082d5474ab1b21:eudev/.footprint
-f:4baeba1c95b3b73c45b0d7e305ef7e9e:eudev/.signature
+f:35f5b3a0c85e342fe66a0a59c9b46b2b:eudev/.signature
 f:2185fdd0c5c128e6a5d37eb4ad4f6791:eudev/81-irradium.rules
 f:f0d3315647dc5e85d9cc23726a168e01:eudev/eudev.ignore_bind_unbind_events.diff
 f:2161256901e1da8cfd6c47bb2b33d08f:eudev/eudev.no.renderD.diff
