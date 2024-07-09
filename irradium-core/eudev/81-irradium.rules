@@ -3,7 +3,7 @@
 #
 
 # Set rfkill device writable by netdev group
-KERNEL=="rfkill", GROUP:="netdev", MODE:="0664
+KERNEL=="rfkill", GROUP:="netdev", MODE:="0664"
 
 KERNEL=="fuse", ACTION=="add", RUN+="/bin/mount -t fusectl fusectl /sys/fs/fuse/connections"
 

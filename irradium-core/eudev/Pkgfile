@@ -5,7 +5,7 @@
 
 name=eudev
 version=3.2.14
-release=3
+release=4
 source=(https://github.com/eudev-project/eudev/releases/download/v$version/$name-$version.tar.gz
 	81-irradium.rules start_udev
 	eudev.ignore_bind_unbind_events.diff
