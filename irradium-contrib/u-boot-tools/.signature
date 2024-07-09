@@ -1,4 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7pVMeI2/34rs4N/zuMhueiQNYXzd0QIsNkjeL0rafsIMBUJOOqDqodZOZoRV0qVAqvwEXva9s0sQTy/Tewwq1g8=
-SHA256 (Pkgfile) = f56079ed537cf2de0c37d0247f6920c19d4363a5dc5cee695d94a2da1c39c367
-SHA256 (u-boot-2023.10.tar.bz2) = e00e6c6f014e046101739d08d06f328811cebcf5ae101348f409cbbd55ce6900
+RWTmT3d9kqan7r1KzHuJBRVaiDndv6owdtnNupqb25VDwxcLmC1BhKanQEHtrKwyLHoe16VQ5EVQhB0GHJzW5JO6RBcCyXCYTQw=
+SHA256 (Pkgfile) = d00f5f419604532b145003c50ba9bf0e01df31dae6baff1a760d17a6235be550
+SHA256 (.footprint) = 2ee795e32eb8ac132a917e774c6db4381fb2a80d8cfcc4a7c7e59a4dc0ac8c59
+SHA256 (u-boot-2024.07.tar.bz2) = f591da9ab90ef3d6b3d173766d0ddff90c4ed7330680897486117df390d83c8f
