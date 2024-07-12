@@ -64,6 +64,7 @@ lrwxrwxrwx	root/root	usr/lib/libreoffice/program/bootstraprc -> ../../../etc/lib
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libanimcorelo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libavmediagst.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libavmedialo.so
+-rwxr-xr-x	root/root	usr/lib/libreoffice/program/libavmediaqt6.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libbasctllo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libbasegfxlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libbasprovlo.so
@@ -79,7 +80,6 @@ lrwxrwxrwx	root/root	usr/lib/libreoffice/program/bootstraprc -> ../../../etc/lib
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libchartcorelo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libclewlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libcmdmaillo.so
--rwxr-xr-x	root/root	usr/lib/libreoffice/program/libcollator_data.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libcomphelper.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libconfigmgrlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libcppcanvaslo.so
@@ -97,10 +97,7 @@ lrwxrwxrwx	root/root	usr/lib/libreoffice/program/bootstraprc -> ../../../etc/lib
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libdeployment.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libdeploymentgui.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libdeploymentmisclo.so
--rwxr-xr-x	root/root	usr/lib/libreoffice/program/libdesktop_detectorlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libdesktopbe1lo.so
--rwxr-xr-x	root/root	usr/lib/libreoffice/program/libdict_ja.so
--rwxr-xr-x	root/root	usr/lib/libreoffice/program/libdict_zh.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libdlgprovlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libdocmodello.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libdrawinglayercorelo.so
@@ -130,7 +127,6 @@ lrwxrwxrwx	root/root	usr/lib/libreoffice/program/bootstraprc -> ../../../etc/lib
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libi18nsearchlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libi18nutil.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libicglo.so
--rwxr-xr-x	root/root	usr/lib/libreoffice/program/libindex_data.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libintrospectionlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libinvocadaptlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libinvocationlo.so
@@ -213,12 +209,12 @@ lrwxrwxrwx	root/root	usr/lib/libreoffice/program/bootstraprc -> ../../../etc/lib
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libsvtlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libsvxcorelo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libsvxlo.so
+-rwxr-xr-x	root/root	usr/lib/libreoffice/program/libsw_writerfilterlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libswdlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libswlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libswuilo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libsysshlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libt602filterlo.so
--rwxr-xr-x	root/root	usr/lib/libreoffice/program/libtextconv_dict.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libtextconversiondlgslo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libtextfdlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libtklo.so
@@ -262,7 +258,6 @@ lrwxrwxrwx	root/root	usr/lib/libreoffice/program/bootstraprc -> ../../../etc/lib
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwpftdrawlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwpftimpresslo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwpftwriterlo.so
--rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwriterfilterlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwriterlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libwriterperfectlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libxmlfalo.so
@@ -327,6 +322,7 @@ drwxr-xr-x	root/root	usr/lib/libreoffice/program/resource/common/fonts/
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/sbase
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/scalc
 -rw-r--r--	root/root	usr/lib/libreoffice/program/scriptforge.py
+-rw-r--r--	root/root	usr/lib/libreoffice/program/scriptforge.pyi
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/sdraw
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/senddoc
 -rw-r--r--	root/root	usr/lib/libreoffice/program/services.rdb
@@ -1112,6 +1108,7 @@ drwxr-xr-x	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/BasicI
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/BasicIDE/ui/basicmacrodialog.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/BasicIDE/ui/breakpointmenus.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/BasicIDE/ui/codecomplete.ui
+-rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/BasicIDE/ui/colorscheme.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/BasicIDE/ui/combobox.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/BasicIDE/ui/defaultlanguage.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/BasicIDE/ui/deletelangdialog.ui
@@ -1671,6 +1668,7 @@ drwxr-xr-x	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/sdraw/
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/sdraw/ui/notebookbar_single.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/sdraw/ui/paranumberingtab.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/sdraw/ui/queryunlinkimagedialog.ui
+-rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/sdraw/ui/selectlayerdialog.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/sdraw/ui/vectorize.ui
 drwxr-xr-x	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/sglobal/
 drwxr-xr-x	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/sglobal/menubar/
@@ -1864,6 +1862,8 @@ drwxr-xr-x	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/simpre
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/simpress/ui/notebookbar_groups.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/simpress/ui/notebookbar_online.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/simpress/ui/notebookbar_single.ui
+-rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/simpress/ui/noteschildwindow.ui
+-rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/simpress/ui/notespanelcontextmenu.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/simpress/ui/optimpressgeneralpage.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/simpress/ui/pagesfieldbox.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/simpress/ui/photoalbum.ui
@@ -2271,7 +2271,6 @@ drwxr-xr-x	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swrite
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/frmaddpage.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/frmtypepage.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/frmurlpage.ui
--rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/gotopagedialog.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/hfmenubutton.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/indentpage.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/indexentry.ui
@@ -2313,6 +2312,7 @@ drwxr-xr-x	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swrite
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/mmselectpage.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/mmsendmails.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/navigatorcontextmenu.ui
+-rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/navigatordraginsertmenu.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/navigatorpanel.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/newuserindexdialog.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/notebookbar.ui
@@ -2379,6 +2379,7 @@ drwxr-xr-x	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swrite
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/selectblockdialog.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/selectindexdialog.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/selecttabledialog.ui
+-rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/sidebarquickfind.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/sidebarstylepresets.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/sidebartableedit.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/modules/swriter/ui/sidebartheme.ui
@@ -2657,6 +2658,7 @@ drwxr-xr-x	root/root	usr/lib/libreoffice/share/config/soffice.cfg/svx/ui/
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/svx/ui/gallerymenu2.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/svx/ui/genericcheckdialog.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/svx/ui/genericcheckentry.ui
+-rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/svx/ui/gotopagedialog.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/svx/ui/grafctrlbox.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/svx/ui/grafmodebox.ui
 -rw-r--r--	root/root	usr/lib/libreoffice/share/config/soffice.cfg/svx/ui/headfootformatpage.ui
