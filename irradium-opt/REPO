@@ -181,7 +181,5 @@ f:0beb828eca839c98ea8c5dd66b51ebd6:shared-mime-info/fix.patch
 f:1f8d81b7d7f75b75af3e33ebd97808bf:nodejs/system-c-ares.patch
 f:e6cd45b0c05a7c97dd82d0d557ecb800:nodejs/Pkgfile
 f:352bd14a9fd821f0841e15c9ff17013a:nodejs/52888.patch
-f:bc51d17e8c75abeff6f08e21f8086b9f:nodejs/.footprint.aarch64
-f:6a577378b96d5c98be71c96d2be5364b:nodejs/.signature.aarch64
-f:bc51d17e8c75abeff6f08e21f8086b9f:nodejs/.footprint.riscv64
-f:861ebcd6c860541101ef0f65d0c5a80d:nodejs/.signature.riscv64
+f:bc51d17e8c75abeff6f08e21f8086b9f:nodejs/.footprint
+f:632d0f388435e19be496cc06cb1ae488:nodejs/.signature
