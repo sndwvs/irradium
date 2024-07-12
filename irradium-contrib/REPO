@@ -327,9 +327,9 @@ f:13432579f26cdf4d07e2e0d00bab5836:vlc/.footprint
 f:4e864806195b04521ef8b3f6fb84d442:vlc/.signature
 f:1697f3fadd7c76e45240c1b248a7f8fe:xcursor-justblue/Pkgfile
 f:536c8ab1bcfc4f13e33c77b61facb496:xcursor-justblue/justblue-0.21.patch.xz
-f:411f322dcc58e38d44687094c07c32a4:yt-dlp/.footprint
-f:9e0ccbbfa96489f1a54fea604c4c8b17:yt-dlp/.signature
-f:61692ab69cd3741affc3e42082b44867:yt-dlp/Pkgfile
+f:ef2e997c59e68eff70f4119f9bb566cf:yt-dlp/.footprint
+f:4b92f04b0f7322a596af980b5027438c:yt-dlp/.signature
+f:259983c0ad47a82d8ea1e3587304f03d:yt-dlp/Pkgfile
 f:f77b36b16bccd2c3b8d0f4ba8da31cf1:redland/.footprint
 f:656e6422caf40d6b57e863dcfff8a7ca:redland/.signature
 f:c7c80f0ba4c4fa7c25365a2379100ae9:redland/Pkgfile

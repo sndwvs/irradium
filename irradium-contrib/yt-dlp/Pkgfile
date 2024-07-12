@@ -4,7 +4,7 @@
 # Depends on: python3 python3-hatchling
 
 name=yt-dlp
-version=2024.04.09
+version=2024.07.09
 release=1
 source=(https://github.com/yt-dlp/yt-dlp/archive/$version/$name-$version.tar.gz)
 
