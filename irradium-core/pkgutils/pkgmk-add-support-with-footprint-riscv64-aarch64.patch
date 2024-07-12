@@ -1,80 +1,106 @@
 --- a/pkgmk.in	2023-02-03 18:32:32.000000000 +0200
-+++ b/pkgmk.in	2024-06-28 20:41:10.095637025 +0300
-@@ -324,7 +324,11 @@ check_signature() {
++++ b/pkgmk.in	2024-07-12 21:26:46.872713446 +0300
+@@ -324,7 +324,13 @@ check_signature() {
  		srcind=$(( srcind+1 ))
  		done
  
 -		for FILE in "$PKGMK_PKGFILE" "$PKGMK_FOOTPRINT" "${source[@]}"; do
-+		if [ ! -f $PKGMK_ROOT/$PKGMK_FOOTPRINT -a ! -z $MULTI_ARCH ]; then
-+		    PKGMK_FOOTPRINT=("${PKGMK_FOOTPRINT}.riscv64" "${PKGMK_FOOTPRINT}.aarch64")
++		if [ ! -z ${MULTI_ARCH} -a -f ${PKGMK_FOOTPRINT}.${MULTI_ARCH} -o -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
++			_PKGMK_FOOTPRINT=${PKGMK_FOOTPRINT}.${MULTI_ARCH}
++		else
++			_PKGMK_FOOTPRINT=${PKGMK_FOOTPRINT}
 +		fi
 +
-+		for FILE in "$PKGMK_PKGFILE" "${PKGMK_FOOTPRINT[@]}" "${source[@]}"; do
++		for FILE in "$PKGMK_PKGFILE" "${_PKGMK_FOOTPRINT}" "${source[@]}"; do
  			ln -s $(get_filename -a $FILE) .
  		done
  
-@@ -397,7 +401,11 @@ make_signature() {
+@@ -397,7 +403,13 @@ make_signature() {
  		srcind=$(( srcind+1 ))
  	done
  
 -	for FILE in "$PKGMK_PKGFILE" "$PKGMK_FOOTPRINT" "${source[@]}"; do
-+	if [ ! -f $PKGMK_ROOT/$PKGMK_FOOTPRINT -a ! -z $MULTI_ARCH ]; then
-+	    PKGMK_FOOTPRINT=("${PKGMK_FOOTPRINT}.riscv64" "${PKGMK_FOOTPRINT}.aarch64")
++	if [ ! -z ${MULTI_ARCH} -a -f ${PKGMK_FOOTPRINT}.${MULTI_ARCH} -o -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
++		_PKGMK_FOOTPRINT=${PKGMK_FOOTPRINT}.${MULTI_ARCH}
++	else
++		_PKGMK_FOOTPRINT=${PKGMK_FOOTPRINT}
 +	fi
 +
-+	for FILE in "$PKGMK_PKGFILE" "${PKGMK_FOOTPRINT[@]}" "${source[@]}"; do
++	for FILE in "$PKGMK_PKGFILE" "${_PKGMK_FOOTPRINT}" "${source[@]}"; do
  		LOCAL_FILENAMES="$LOCAL_FILENAMES `get_filename $FILE`"
  	done
  
-@@ -419,7 +427,11 @@ make_signature() {
+@@ -419,7 +431,17 @@ make_signature() {
  		error "Creating signature failed"
  		exit $E_SIGNATURE
  	else
 -		mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
-+		if [ -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} -o ! -f ${PKGMK_SIGNATURE} ]; then
++		if [ ! -z ${MULTI_ARCH} -a -f ${PKGMK_FOOTPRINT}.${MULTI_ARCH} -o -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
++			if [ -f ${PKGMK_SIGNATURE} ]; then
++				rm ${PKGMK_SIGNATURE}
++			fi
 +			mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}.${MULTI_ARCH}
 +		else
++			if [ -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
++				rm ${PKGMK_SIGNATURE}.${MULTI_ARCH}
++			fi
 +			mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
 +		fi
  	fi
  }
  
-@@ -442,7 +454,11 @@ refresh_signature() {
+@@ -442,7 +464,17 @@ refresh_signature() {
  		error "Refreshing signature failed"
  		exit $E_SIGNATURE
  	else
 -		mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
-+		if [ -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} -o ! -f ${PKGMK_SIGNATURE} ]; then
++		if [ ! -z ${MULTI_ARCH} -a -f ${PKGMK_FOOTPRINT}.${MULTI_ARCH} -o -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
++			if [ -f ${PKGMK_SIGNATURE} ]; then
++				rm ${PKGMK_SIGNATURE}
++			fi
 +			mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}.${MULTI_ARCH}
 +		else
++			if [ -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
++				rm ${PKGMK_SIGNATURE}.${MULTI_ARCH}
++			fi
 +			mv ${PKGMK_SIGNATURE}.tmp ${PKGMK_SIGNATURE}
 +		fi
  	fi
  }
  
-@@ -502,6 +518,10 @@ check_footprint() {
+@@ -502,6 +534,12 @@ check_footprint() {
  
  	cd $PKGMK_ROOT
  
-+	if [ ! -f $PKGMK_FOOTPRINT -a ! -z $MULTI_ARCH ]; then
-+	    PKGMK_FOOTPRINT+=".$MULTI_ARCH"
++	if [ ! -z ${MULTI_ARCH} -a -f ${PKGMK_FOOTPRINT}.${MULTI_ARCH} -o -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
++		PKGMK_FOOTPRINT=${PKGMK_FOOTPRINT}.${MULTI_ARCH}
++	else
++		PKGMK_FOOTPRINT=${PKGMK_FOOTPRINT}
 +	fi
 +
  	if [ -f $TARGET ]; then
  		make_footprint > $FILE.footprint
  		if [ -f $PKGMK_FOOTPRINT ]; then
-@@ -688,6 +708,10 @@ update_footprint() {
+@@ -688,6 +726,18 @@ update_footprint() {
  		exit 1
  	fi
  
-+	if [ ! -f $PKGMK_ROOT/$PKGMK_FOOTPRINT -a ! -z $MULTI_ARCH ]; then
-+	    PKGMK_FOOTPRINT+=".${MULTI_ARCH}"
++	if [ ! -z ${MULTI_ARCH} -a -f ${PKGMK_FOOTPRINT}.${MULTI_ARCH} -o -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
++		if [ -f $PKGMK_FOOTPRINT ]; then
++			rm $PKGMK_FOOTPRINT
++		fi
++		PKGMK_FOOTPRINT=${PKGMK_FOOTPRINT}.${MULTI_ARCH}
++	else
++		if [ -f $PKGMK_FOOTPRINT.${MULTI_ARCH} ]; then
++			rm $PKGMK_FOOTPRINT.${MULTI_ARCH}
++		fi
++		PKGMK_FOOTPRINT=${PKGMK_FOOTPRINT}
 +	fi
 +
  	check_file "$PKGMK_FOOTPRINT"
  	make_footprint > $PKGMK_FOOTPRINT
  	touch $TARGET
-@@ -961,6 +985,8 @@ trap "interrupted" SIGHUP SIGINT SIGQUIT
+@@ -961,6 +1011,8 @@ trap "interrupted" SIGHUP SIGINT SIGQUIT
  
  export LC_ALL=C.UTF-8
  
