@@ -109,6 +109,9 @@ lrwxrwxrwx	root/root	usr/lib/libgbm.so.1 -> libgbm.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libglapi.so -> libglapi.so.0
 lrwxrwxrwx	root/root	usr/lib/libglapi.so.0 -> libglapi.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libglapi.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/liblua.so -> liblua.so.5.4
+lrwxrwxrwx	root/root	usr/lib/liblua.so.5.4 -> liblua.so.5.4.6
+-rwxr-xr-x	root/root	usr/lib/liblua.so.5.4.6
 -rwxr-xr-x	root/root	usr/lib/libvulkan_broadcom.so
 -rwxr-xr-x	root/root	usr/lib/libvulkan_lvp.so
 -rwxr-xr-x	root/root	usr/lib/libvulkan_panfrost.so
