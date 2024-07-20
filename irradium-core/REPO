@@ -21,7 +21,7 @@ f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
 f:b930876865b6f6e683daef8aebcc6511:cmake/.footprint
-f:c6d93fb9f35c7854b0ea83267ce187a2:cmake/.signature
+f:1fbc213b2ceb4d277a44a39db0823d63:cmake/.signature
 f:264b86f5e7589c978b4978bb0dfb7b9f:cmake/Pkgfile
 f:034680aa69ee64596517784fe1161c1b:db/.footprint
 f:7e30d22cd875710b997e739c6202893f:db/.signature

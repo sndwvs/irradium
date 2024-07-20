@@ -18,9 +18,9 @@ f:80e849824bbe614b2a87b956bf7fa46a:xorg-xcb-util-xrm/.footprint
 f:c76ef6c956f03063e01c6fb62ce7bd2d:xorg-xcb-util-xrm/.signature
 f:f64c724c19b49611ec9303cb75e44672:xorg-xcb-util-xrm/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
-f:07e364f59f0f6666a118c8d3a348a204:mesa/.footprint.aarch64
+f:b5ce15b09c4cd80d92a572c1ed20a17f:mesa/.footprint.aarch64
 f:e79270515a3a8b8fa7e2c09dd1f17197:mesa/.footprint.riscv64
-f:fab795e477297ee6a516d3eef1097189:mesa/.signature.aarch64
+f:4c996b4efa60db30a3e2bc0ee013f817:mesa/.signature.aarch64
 f:2cea726f2a4d8ad17c216531576946ff:mesa/.signature.riscv64
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
 f:c530d42f82a46a1a6812cbbc8e916d31:mesa/README.md
