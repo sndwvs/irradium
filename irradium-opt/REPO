@@ -116,7 +116,7 @@ f:f7b7626783e3c5d0322d0e8df7ecc93a:qt5/Pkgfile
 f:7fae7cfa2df6f93453b49a303ef6c4f3:qt5/.footprint.aarch64
 f:f7f0c5ee2f58a19c76181f01ff962267:qt5/.signature.aarch64
 f:02c807908718f85c3dc56016cef0fe31:qt5/.footprint.riscv64
-f:587e5dbdb211082d35d748ce5ef9931a:qt5/.signature.riscv64
+f:c8d12b88da33aaecebcaf6c12deb2825:qt5/.signature.riscv64
 f:c897367a2e1ba01a68af10860cd64022:qt5/qt-everywhere-opensource-src-5.15.14-kf5-1.patch
 f:49ac4a67b7e65c884b09a6434878bd6c:qt5/0d9987b43e695f5202c5d69a5e42ab70a678b04f.patch
 f:2616e44a7b8a04ce7947efdc031dd6fb:qt5/35d566724c48180c9a372c2ed50a253871a51574.patch
