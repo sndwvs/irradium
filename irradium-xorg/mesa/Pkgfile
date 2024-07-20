@@ -68,7 +68,7 @@ build() {
 		-D glx=dri \
 		-D osmesa=true \
 		-D gallium-xa=enabled \
-		-D gallium-drivers=${PKGMK_MESA_GALLIUM}crocus,nouveau,r300,r600,radeonsi,svga,swrast,virgl,freedreno,etnaviv,kmsro,lima,panfrost,v3d,vc4 \
+		-D gallium-drivers=${PKGMK_MESA_GALLIUM}crocus,r300,r600,radeonsi,svga,swrast,virgl,freedreno,etnaviv,kmsro,lima,panfrost,v3d,vc4 \
 		-D platforms=${PKGMK_MESA_PLATFORMS#,} \
 		-D shared-glapi=enabled \
 		-D video-codecs=all \
