@@ -4,16 +4,12 @@
 # Depends on: cmake ninja libusb protobuf brotli zstd pcre2 go gtest
 
 name=mpp
-version=20231118
+version=1.0.6
 release=1
-_commit=3b2784384468f13fb7659a47058024d990048cfa
-source=(https://github.com/rockchip-linux/$name/archive/${_commit}.tar.gz
-        fix-hardware-limited-to-memory-less-than-4G.patch)
+source=(https://github.com/rockchip-linux/$name/archive/refs/tags/${version}.tar.gz)
 
 build() {
-    cd $name-${_commit}
-
-    patch -p1 --verbose -i $SRC/fix-hardware-limited-to-memory-less-than-4G.patch
+    cd $name-$version
 
     cmake \
         -DCMAKE_C_FLAGS="$CFLAGS" \
