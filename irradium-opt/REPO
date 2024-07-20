@@ -114,7 +114,7 @@ f:47201f77ae59fe0fc782e2b56ce59e08:qt5/qtbase-everywhere-src-5.15.2-libglvnd.pat
 f:fe7af17c56fd33a78bf3fc8f81066902:qt5/qtbase-use-wayland-on-gnome.patch
 f:f7b7626783e3c5d0322d0e8df7ecc93a:qt5/Pkgfile
 f:7fae7cfa2df6f93453b49a303ef6c4f3:qt5/.footprint.aarch64
-f:82046e702bca17ee1a80bd980f9fc9df:qt5/.signature.aarch64
+f:f7f0c5ee2f58a19c76181f01ff962267:qt5/.signature.aarch64
 f:02c807908718f85c3dc56016cef0fe31:qt5/.footprint.riscv64
 f:587e5dbdb211082d35d748ce5ef9931a:qt5/.signature.riscv64
 f:c897367a2e1ba01a68af10860cd64022:qt5/qt-everywhere-opensource-src-5.15.14-kf5-1.patch
