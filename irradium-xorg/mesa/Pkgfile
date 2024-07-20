@@ -29,7 +29,7 @@ build() {
 	prt-get isinst libvdpau && PKGMK_MESA+=' -D gallium-vdpau=enabled' || PKGMK_MESA+=' -D gallium-vdpau=disabled'
 	prt-get isinst lm_sensors && PKGMK_MESA+=' -D lmsensors=enabled'
 	if prt-get isinst vulkan-loader; then
-		prt-get isinst cbindgen rust-bindgen && PKGMK_MESA_VULKAN_DRIVERS+='nouveau,'
+		#prt-get isinst cbindgen rust-bindgen && PKGMK_MESA_VULKAN_DRIVERS+='nouveau,'
 		prt-get isinst directx-headers && PKGMK_MESA_VULKAN_DRIVERS+='microsoft-experimental,'
 		prt-get isinst glslang && PKGMK_MESA_VULKAN_DRIVERS+='amd,swrast,broadcom,panfrost,' PKGMK_MESA_VULKAN_LAYERS+='device-select,overlay,'
 		prt-get isinst glslang libclc python3-ply lua && PKGMK_MESA_VULKAN_DRIVERS+='intel,' PKGMK_MESA_VULKAN_LAYERS+='intel-nullhw,'
