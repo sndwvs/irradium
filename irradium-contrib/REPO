@@ -143,7 +143,7 @@ f:ce8226895c981265c806fe855308406d:firefox/README
 f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
 f:022ca4e9eeac6d2090a0289ee01db9f4:firefox/icu-linebreak-classes.patch
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
-f:11a60b6c6658e9f5bc905c661f3e3672:firefox/Pkgfile
+f:1a77fa4bf262009936deddfe4b43a73d:firefox/Pkgfile
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:997d0c3564c57cd05bd24a86ce30fdaf:firefox/.footprint.aarch64

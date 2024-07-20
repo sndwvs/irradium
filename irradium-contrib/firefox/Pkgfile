@@ -6,7 +6,7 @@
 
 name=firefox
 version=127.0.2
-release=1
+release=2
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   icu-linebreak-classes.patch
