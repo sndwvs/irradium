@@ -378,8 +378,8 @@ f:b9575beb4eac90837a56e37d33c6885a:rkdeveloptool/Pkgfile
 f:9fc18c8eab771033b956b4a6c881beb4:hostapd/0001-hostapd-Add-the-missing-CONFIG_SAE-option-to-the-def.patch
 f:d73888438d4e93bd83e085ee577892dc:hostapd/rc.hostapd
 f:5cdcc7dea3af935216e1a35ab5f6c4b2:hostapd/config
-f:a248db063404ff23912bd1e9dc542465:hostapd/Pkgfile
-f:e90e95a4492eb187e430d71e02894507:hostapd/.signature
+f:76e9d7fbd0a29a0d3519da4ecf871b09:hostapd/Pkgfile
+f:d96223c40e3fe0a5a45a12aa8190ca4a:hostapd/.signature
 f:672d52f4e522c3a5366b472f8b9bac34:hostapd/.footprint
 f:c3d31fc159c031b509e3b70466661896:pkgtools/.footprint
 f:c87e34bbbedfc0c6540be5f39e7179cd:pkgtools/.signature

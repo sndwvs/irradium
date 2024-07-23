@@ -4,7 +4,7 @@
 # Depends on: openssl libnl3
 
 name=hostapd
-version=2.10
+version=2.11
 release=1
 source=(https://w1.fi/releases/$name-$version.tar.gz
     0001-hostapd-Add-the-missing-CONFIG_SAE-option-to-the-def.patch
