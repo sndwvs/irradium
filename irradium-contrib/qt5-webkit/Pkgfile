@@ -27,6 +27,7 @@ build() {
     patch -p1 -i $SRC/qtwebkit-cstdint.patch # gcc 11.1
     patch -p1 -i $SRC/qtwebkit-fix-build-gcc14.patch # GCC 14.1
     patch -p1 -i $SRC/qt5-webkit-icu75.patch
+    patch -p1 -i $SRC/webkit-offlineasm-warnings-ruby27.patch
 
     export CFLAGS+=" -DU_DEFINE_FALSE_AND_TRUE=1"
     export CXXFLAGS+=" -fpermissive -fno-strict-aliasing -DU_DEFINE_FALSE_AND_TRUE=1"
