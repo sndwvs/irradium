@@ -6,22 +6,27 @@
 name=qt5-webkit
 _qtver=5.212.0-alpha4
 version=5.212.0alpha4
-release=2
+release=3
 source=(https://github.com/annulen/webkit/releases/download/qtwebkit-$_qtver/qtwebkit-$_qtver.tar.xz
-        qt5-webkit-bison-3.7.patch
-        qt5-webkit-python-3.9.patch
-        icu68.patch
         glib-2.68.patch
+        icu68.patch
+        qt5-webkit-bison-3.7.patch
+        qt5-webkit-icu75.patch
+        qt5-webkit-python-3.9.patch
+        qtwebkit-cstdint.patch
+        qtwebkit-fix-build-gcc14.patch
         webkit-offlineasm-warnings-ruby27.patch)
 
 build() {
     cd qtwebkit-$_qtver
 
-    patch -p0 -i $SRC/icu68.patch
-    patch -p1 -i $SRC/glib-2.68.patch
-    patch -p1 -i $SRC/qt5-webkit-bison-3.7.patch # Fix build with bison 3.7
+    patch -p0 -i $SRC/icu68.patch # Fix build with ICU 68.x
+    patch -p1 -i $SRC/glib-2.68.patch # https://github.com/qtwebkit/qtwebkit/issues/1057
     patch -p1 -i $SRC/qt5-webkit-python-3.9.patch # Fix build with python 3.9
-    patch -p1 -i $SRC/webkit-offlineasm-warnings-ruby27.patch
+    patch -p1 -i $SRC/qt5-webkit-bison-3.7.patch # Fix build with bison 3.7
+    patch -p1 -i $SRC/qtwebkit-cstdint.patch # gcc 11.1
+    patch -p1 -i $SRC/qtwebkit-fix-build-gcc14.patch # GCC 14.1
+    patch -p1 -i $SRC/qt5-webkit-icu75.patch
 
     export CFLAGS+=" -DU_DEFINE_FALSE_AND_TRUE=1"
     export CXXFLAGS+=" -fpermissive -fno-strict-aliasing -DU_DEFINE_FALSE_AND_TRUE=1"
