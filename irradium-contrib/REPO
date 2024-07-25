@@ -269,7 +269,7 @@ f:4770d6cb197b8134c2f905d5bd449575:qrencode/.footprint
 f:027818aee8a1a2151f420b1303c006e7:qrencode/.signature
 f:cf0e1c50638343010e0e391cff496e8e:qrencode/Pkgfile
 f:5724912981bf349f0a05ca9d6ae6fdb3:qt5-webkit/.footprint
-f:d5a39b45734cedd10b4f9a43e8ffa540:qt5-webkit/.signature
+f:aa5f7fbf4d04df6180ec2f7f3fe416c2:qt5-webkit/.signature
 f:f3eb9379339542f1a37767a83131ff64:qt5-webkit/webkit-offlineasm-warnings-ruby27.patch
 f:aec15c20d792575f72122967af1ee827:qt5-webkit/glib-2.68.patch
 f:3540b17b2229c92567aa6f57ae8f41e0:qt5-webkit/icu68.patch
