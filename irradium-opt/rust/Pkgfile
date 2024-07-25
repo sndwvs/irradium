@@ -5,9 +5,9 @@
 # Optional: ccache clang libgit2 lld polly sccache
 
 name=rust
-version=1.79.0
-_date=2024-05-02
-_rustc=1.78.0
+version=1.80.0
+_date=2024-06-13
+_rustc=1.79.0
 _cargo=$_rustc
 release=1
 
@@ -53,8 +53,8 @@ unpack_source() {
 
 _check_version() {
 	local ERROR
-	local DATE="$(awk '/^.*"date": / {gsub(/"|,/, "", $2); print $2 }' $SRC/${name}c-$version-src/src/stage0.json)"
-	local RUSTC="$(awk '/^.*"version": / {gsub(/"|,/, "", $2); print $2 }' $SRC/${name}c-$version-src/src/stage0.json)"
+	local DATE="$(awk -F'=' '/^compiler_date=/ {print $2}' $SRC/${name}c-$version-src/src/stage0)"
+	local RUSTC="$(awk -F'=' '/^compiler_version=/ {print $2}' $SRC/${name}c-$version-src/src/stage0)"
 
 	printf '\033[0;32m%s\033[0m\n' "Checking versions for bootstrap compiler.."
 	printf '\033[0;32m%s\033[0m\n' "Got _date = $_date && _rustc = $_rustc"
@@ -84,7 +84,7 @@ build() {
 	patch -p1 -i $SRC/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 
 cat <<- EOF > $SRC/config.toml
-	change-id = 123711
+	change-id = 125535
 
 	[llvm]
 	ninja = true
