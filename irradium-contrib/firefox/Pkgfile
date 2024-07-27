@@ -62,7 +62,6 @@ build() {
   ac_add_options --disable-vtune
   ac_add_options --disable-updater
   ac_add_options --disable-jemalloc
-  ac_add_options --disable-elf-hack
   ac_add_options --disable-callgrind
   ac_add_options --disable-profiling
   ac_add_options --disable-necko-wifi
@@ -74,11 +73,9 @@ build() {
   ac_add_options --disable-system-extension-dirs
 EOF
 
-#  if [ $(uname -m) != "riscv64" ]; then
-#    echo 'ac_add_options --enable-sandbox' >> .mozconfig
-#    echo 'ac_add_options --enable-lto=thin' >> .mozconfig
-#  else
-  if [ $(uname -m) == "riscv64" ]; then
+  if [ $(uname -m) != "riscv64" ]; then
+    echo 'ac_add_options --disable-elf-hack' >> .mozconfig
+  else
     echo 'ac_add_options --disable-sandbox' >> .mozconfig
 #    echo 'ac_add_options --disable-lto' >> .mozconfig
   fi
