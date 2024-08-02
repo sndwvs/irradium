@@ -17,8 +17,7 @@ source=(https://archive.mesa3d.org/$name-$version.tar.xz
 	patches/0006-mesa-buildsystem-improvements.patch
 	patches/0007-mesa-24.0-llvmspirvlib-version-check.patch
 	patches/0008-enable-vulkan-video-decode.patch
-	patches/0009-mesa-24.0-osmesa-fix-civ3.patch
-	patches/0001-Revert-frontends-va-Fix-AV1-slice_data_offset-with-m.patch)
+	patches/0009-mesa-24.0-osmesa-fix-civ3.patch)
 
 build() {
 	prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
