@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-xorg.pub
-RWT3zJzzKRcegnNVY2wDkr6gFupeGgTtvRNyev2ktc2BXaVY0xsjb6DFMXfrtb5aqv7XdGeV+4ozMvQ/Zw66FVlxpe3HulrwxgY=
-SHA256 (Pkgfile) = eaccf504a4503edfa4646db5b6fddfc76adbb1dfa5af9061cb922c44ff4cf092
+RWT3zJzzKRcegkJsjDHjx2oVhpIR0VEh1zuM2pBYUXrK5RAJ8qkvWhWI8T8HFNhRiWBX3J5+HQQ0LHu0LRMpwnslmKE2gXeudwA=
+SHA256 (Pkgfile) = fd6bed90bc52b91588b81b19e6eabff5b14a5320e7aa9e7ae058cf597637c563
 SHA256 (.footprint.aarch64) = 158e89a1587c7dfef086d3c977874005d1337d87a954ccc3fad82cc8c27f7eed
-SHA256 (mesa-24.1.4.tar.xz) = 7cf7c6f665263ad0122889c1d4b076654c1eedea7a2f38c69c8c51579937ade1
+SHA256 (mesa-24.1.5.tar.xz) = 02761ffd965dd64b95421ebfca1191d73724aba00f30034009237564f34cf976
 SHA256 (0000-mesa-20.1.1-fix-opencl.patch) = e4e6cb3a204485bcddfe4f715197704a7f73bc9d6282f7bdbd4c1e79a6641979
 SHA256 (0001-mesa-23.1-x86_32-llvm-detection.patch) = 79e2e290d8b1e89dbc92f7ad3e264ca17e881fdd1765102e9bf5ce19b0a2031d
 SHA256 (0002-mesa-24.1-find-opencl-c-base.h.patch) = a383cb83c7a793e7e0968ddbe7d0bb0eeec51a95edd2f6746d7066b8c4767837
@@ -13,4 +13,3 @@ SHA256 (0006-mesa-buildsystem-improvements.patch) = 4892237ae6cafb2daf89d2001f22
 SHA256 (0007-mesa-24.0-llvmspirvlib-version-check.patch) = 1b7ff4ea585d2100270ebf70682206bf7a0926031c10ef213342bee487bab685
 SHA256 (0008-enable-vulkan-video-decode.patch) = 6e2129a98e6fb7f96f7fe8de8670aef1ba4f0ccdf435ac1d03e6ab6bf462e098
 SHA256 (0009-mesa-24.0-osmesa-fix-civ3.patch) = 0b2ac1ea1526fac38e413f8e7512b23fa1ffab3068d7942acdad3a94dd176ec0
-SHA256 (0001-Revert-frontends-va-Fix-AV1-slice_data_offset-with-m.patch) = db209e829f8888396dc89f06cc650048170ab8a830247a8a243de206a8121937
