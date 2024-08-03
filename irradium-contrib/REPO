@@ -68,6 +68,7 @@ d:yt-dlp
 d:redland
 d:dhcp
 d:acme.sh
+d:glmark2
 d:mkinitramfs
 d:ntp
 d:rxvt-unicode
@@ -351,6 +352,10 @@ f:93cad7cd88158d1560ce394d33319b52:dhcp/.footprint
 f:05f1cabe4081da6f81dc1d3be53f62c3:acme.sh/Pkgfile
 f:c66c35af44b089c60683f1db8c768c3a:acme.sh/.footprint
 f:12c5451d0508619e75c4503cb0b36a5c:acme.sh/.signature
+f:8bd8739134ae4ae697171781781742a0:glmark2/fix-build.patch
+f:ecf4d7512d16e61c1d1566bc35b26148:glmark2/Pkgfile
+f:4a3b1c6d05147d5b141ade4b947f09d1:glmark2/.footprint
+f:1bca2a75f4b401372397cbc7ac84adbd:glmark2/.signature
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:4461500806eba45e6f7dd0f5805ea777:mkinitramfs/init.in.patch
 f:0ccf2c3bbe610cff21943fc21e9d8764:mkinitramfs/mkinitramfs.patch

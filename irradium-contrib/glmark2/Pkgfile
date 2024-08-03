@@ -1,0 +1,24 @@
+# Description: opengl 2.0 and es 2.0 benchmark
+# URL: https://github.com/glmark2/glmark2
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: python3 eudev libjpeg-turbo libpng mesa wayland wayland-protocols
+
+name=glmark2
+version=2023.01
+release=1
+source=(https://github.com/glmark2/glmark2/archive/$version.tar.gz
+        fix-build.patch)
+
+build() {
+    cd $name-$version
+
+    patch -p1 -i $SRC/fix-build.patch || exit 1
+
+    meson setup build \
+        --prefix=/usr \
+        -Dflavors=drm-gl,drm-glesv2,wayland-gl,wayland-glesv2,x11-gl
+
+    ninja -C build
+
+    DESTDIR=$PKG ninja -C build install
+}
