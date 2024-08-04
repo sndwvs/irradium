@@ -21,7 +21,7 @@ f:d32239bcb673463ab874e80d47fae504:COPYING
 f:b5ce15b09c4cd80d92a572c1ed20a17f:mesa/.footprint.aarch64
 f:6d34d64a50de43b726c21e2789d59d1c:mesa/.footprint.riscv64
 f:15d1cbedaf0d30d74325ab5488d577e2:mesa/.signature.aarch64
-f:1bc3f7412755608a69174075c98364e2:mesa/.signature.riscv64
+f:33223d9ae30356315d167ca1721a0249:mesa/.signature.riscv64
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
 f:c530d42f82a46a1a6812cbbc8e916d31:mesa/README.md
 f:8131f4692810118d4c7882634169f585:mesa/patches/0000-mesa-20.1.1-fix-opencl.patch
