@@ -90,8 +90,8 @@ f:6ff28f40999ecda935bbbd0f0d3da869:mlocate/.signature
 f:7d67badc004a8ade29648c8449b479e4:mlocate/mlocate
 f:f70c051ad1e30aa76820c6c6e7485eae:mlocate/updatedb.conf
 f:1d8f153e2d849b7f52571872248432e5:mlocate/Pkgfile
-f:626b74511e97a4562cf517ee7ae58234:pkgconf/.footprint
-f:5d096d3ee2c7c18818036b4335ad6e02:pkgconf/.signature
+f:ec1622bd328e82cce4d3b33eb1239f5c:pkgconf/.footprint
+f:198d926ba5de2a65944689edee323358:pkgconf/.signature
 f:6fec70b14f238ad94caf5dac367ee427:pkgconf/README
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
