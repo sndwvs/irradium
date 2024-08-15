@@ -373,7 +373,7 @@ f:1e26f8af1cbfc212bc002de72bfb5eb0:ntp/Pkgfile
 f:6e43231687a41272a913911994909469:ntp/pre-install
 f:ba97a0c31770f41d479edfa20fe1dc58:ntp/.footprint
 f:7350bd89e14e08d99c13832e1ff93137:ntp/.signature
-f:7b0cb370384e9945e5cec5afe59cfafe:ada/Pkgfile
+f:19b1de39f6d2bdc525ea29c07d687ede:ada/Pkgfile
 f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
 f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
 f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
