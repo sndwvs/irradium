@@ -1,7 +1,7 @@
 # Description: WebRTC library for Telegram-desktop
 # URL: https://github.com/desktop-app/tg_owt
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: cmake ninja pipewire pulseaudio libjpeg-turbo libxcomposite
+# Depends on: cmake ninja pipewire pulseaudio libjpeg-turbo libxcomposite openh264
 
 name=tg_owt
 version=20230730
