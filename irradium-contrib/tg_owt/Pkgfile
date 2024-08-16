@@ -41,7 +41,8 @@ build() {
         -DBUILD_SHARED_LIBS=OFF \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBDIR=lib \
-        -DCMAKE_BUILD_TYPE=MinSizeRel
+        -DCMAKE_BUILD_TYPE=MinSizeRel \
+        -DTG_OWT_ARCH_ARMV7_USE_NEON=OFF
     cmake --build build
     DESTDIR=$PKG cmake --install build
 }
