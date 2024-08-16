@@ -54,7 +54,6 @@ d:range-v3
 d:slang
 d:tcl
 d:telegram-desktop
-d:tg_owt
 d:tk
 d:u-boot-tools
 d:udisks2
@@ -71,6 +70,7 @@ d:ntp
 d:rxvt-unicode
 d:rkdeveloptool
 d:tinc
+d:tg_owt
 d:pkgtools
 d:acme.sh
 d:crosstool-ng
@@ -294,9 +294,7 @@ f:92bb7bb10f27c0d8e83962650036b2c6:tcl/.signature
 f:e4fc0be26b83b0c8b24bf609e1bdcd6e:tcl/Pkgfile
 f:5997c2bdb12022a80ed1a66da7198b30:telegram-desktop/.footprint
 f:6800ac54abfc9447a5ff0b76d173c939:telegram-desktop/.signature
-f:82cd67f2fd4803bcec56db84cb5df560:telegram-desktop/Pkgfile
-f:597426cb5a51cfa0b2d932fc02860843:tg_owt/gcc13.patch
-f:5ed5344a0b9afbd25355744046e3d37d:tg_owt/Pkgfile
+f:f844d80d496576b640e64f57222ba54e:telegram-desktop/Pkgfile
 f:5a6869436a680dbd4333d18cf5ed8c13:tk/.footprint
 f:670bb032fcbae800dbc522eaa88a4d68:tk/.signature
 f:031803e77e6d0d6fcc5d9245ff972be7:tk/Pkgfile
@@ -374,6 +372,8 @@ f:c0b7c4ef7f2a73d00b313ff141dcf8a1:tinc/.signature
 f:29448105c0ac304fb23351878636b267:tinc/Pkgfile
 f:43d5a35ffd5968ae8ada966053c1d438:tinc/rc.tincd
 f:52efbe70be91510dd87fdd0af1eff59e:tinc/tincd.logrotate
+f:9a947d675b43afb182983f8786a05ef6:tg_owt/ffmpeg7.patch
+f:df70081f06bae7dc915e12a2998a479a:tg_owt/Pkgfile
 f:c3d31fc159c031b509e3b70466661896:pkgtools/.footprint
 f:c87e34bbbedfc0c6540be5f39e7179cd:pkgtools/.signature
 f:3129b1af7f0f5fb986dfdafc3507dace:pkgtools/Pkgfile

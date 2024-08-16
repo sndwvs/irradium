@@ -4,11 +4,11 @@
 # Depends on: cmake ninja pipewire pulseaudio libjpeg-turbo libxcomposite
 
 name=tg_owt
-version=20230615
-release=2
-_commit=a45d8b8f0a99bd0e5118dda1dc4a8b7b3ad5dcfd
+version=20230730
+release=1
+_commit=e9d103e2480e0983bf464debc371b049cdd83648
 _libsrtp_commit="a566a9cfcd619e8327784aa7cff4a1276dc1e895"
-_libyuv_commit=00950840d1c9bcbb3eb6ebc5aac5793e71166c8b
+_libyuv_commit=4cd90347e78ff76755df2107009e900374aee9cd
 _libvpx_commit=03265cd42b3783532de72f2ded5436652e6f5ce3
 _abseil_commit=8c0b94e793a66495e0b1f34a5eb26bd7dc672db0
 _crc32c_commit=21fc8ef30415a635e7351ffa0e5d5367943d4a94
@@ -18,7 +18,7 @@ source=(https://github.com/desktop-app/tg_owt/archive/${_commit}.tar.gz
         https://github.com/google/crc32c/archive/${_crc32c_commit}.tar.gz
         https://github.com/abseil/abseil-cpp/archive/${_abseil_commit}.tar.gz
         https://github.com/cisco/libsrtp/archive/$_libsrtp_commit.tar.gz
-        gcc13.patch)
+        ffmpeg7.patch)
 
 build() {
     cd $name-${_commit}
