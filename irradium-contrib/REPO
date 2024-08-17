@@ -88,7 +88,6 @@ d:mtd-utils
 d:rnnoise
 d:rp-pppoe
 d:shntool
-d:ada
 d:glmark2
 d:libabw
 d:libepubgen
@@ -99,6 +98,7 @@ d:libvisio
 d:libwpd
 d:rasqal
 d:sshpass
+d:ada
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -373,7 +373,7 @@ f:29448105c0ac304fb23351878636b267:tinc/Pkgfile
 f:43d5a35ffd5968ae8ada966053c1d438:tinc/rc.tincd
 f:52efbe70be91510dd87fdd0af1eff59e:tinc/tincd.logrotate
 f:9a947d675b43afb182983f8786a05ef6:tg_owt/ffmpeg7.patch
-f:7cd904de97b737bcbea5d873b7b04262:tg_owt/Pkgfile
+f:dc3f374bc3541756e2ee45a048d32f83:tg_owt/Pkgfile
 f:c3d31fc159c031b509e3b70466661896:pkgtools/.footprint
 f:c87e34bbbedfc0c6540be5f39e7179cd:pkgtools/.signature
 f:3129b1af7f0f5fb986dfdafc3507dace:pkgtools/Pkgfile
@@ -455,7 +455,6 @@ f:a3aa5b817cedb4226fa32340609a5995:shntool/debian_patches_950803.patch
 f:596398b13e02b243078320ebde4743fb:shntool/debian_patches_no-cdquality-check.patch
 f:4265935ef1d684a4b49041278ffda7de:shntool/shntool-3.0.10-large-size.diff
 f:6f0d61ddbf8cbee5c0b51a99e987ddda:shntool/shntool-3.0.10-large-times.diff
-f:19b1de39f6d2bdc525ea29c07d687ede:ada/Pkgfile
 f:4a3b1c6d05147d5b141ade4b947f09d1:glmark2/.footprint
 f:1bca2a75f4b401372397cbc7ac84adbd:glmark2/.signature
 f:ecf4d7512d16e61c1d1566bc35b26148:glmark2/Pkgfile
@@ -503,3 +502,4 @@ f:ef94bfe34794f27e5ca43a053aa4c046:rasqal/rpath.patch
 f:7b39087f8e19d9392beeb0b96386cdc2:sshpass/.footprint
 f:511ddf7ee3ccd5eb66cfe72503279319:sshpass/.signature
 f:e878e7386df273a8d1e31f006a07bd77:sshpass/Pkgfile
+f:19b1de39f6d2bdc525ea29c07d687ede:ada/Pkgfile
