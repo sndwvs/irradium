@@ -18,10 +18,6 @@ f:80e849824bbe614b2a87b956bf7fa46a:xorg-xcb-util-xrm/.footprint
 f:c76ef6c956f03063e01c6fb62ce7bd2d:xorg-xcb-util-xrm/.signature
 f:f64c724c19b49611ec9303cb75e44672:xorg-xcb-util-xrm/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
-f:b5ce15b09c4cd80d92a572c1ed20a17f:mesa/.footprint.aarch64
-f:6d34d64a50de43b726c21e2789d59d1c:mesa/.footprint.riscv64
-f:15d1cbedaf0d30d74325ab5488d577e2:mesa/.signature.aarch64
-f:33223d9ae30356315d167ca1721a0249:mesa/.signature.riscv64
 f:1380f1a039d4b6ad201300923ceb7c57:mesa/README
 f:c530d42f82a46a1a6812cbbc8e916d31:mesa/README.md
 f:8131f4692810118d4c7882634169f585:mesa/patches/0000-mesa-20.1.1-fix-opencl.patch
@@ -34,6 +30,10 @@ f:1d4f7867070c209bf02d2e2b4bf1f119:mesa/patches/0006-mesa-buildsystem-improvemen
 f:d591605696dc1b6cc6ab85003c84b9f5:mesa/patches/0007-mesa-24.0-llvmspirvlib-version-check.patch
 f:8ee5ccb79038cb9a494cadacaf2f2f9e:mesa/patches/0008-enable-vulkan-video-decode.patch
 f:e5ca988223c90f2a22caf7539f4a512a:mesa/patches/0009-mesa-24.0-osmesa-fix-civ3.patch
+f:b5ce15b09c4cd80d92a572c1ed20a17f:mesa/.footprint.aarch64
+f:6d34d64a50de43b726c21e2789d59d1c:mesa/.footprint.riscv64
+f:83f49087b38cad1e36c0f55edf80ca2b:mesa/.signature.aarch64
+f:33223d9ae30356315d167ca1721a0249:mesa/.signature.riscv64
 f:17b20dfb28d337ed82919645c705e805:mesa/Pkgfile
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:641e8987ea32d0a1ad3e94ce3ae99c6b:xorg-xf86-video-fbdev/.signature
