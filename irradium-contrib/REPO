@@ -503,3 +503,5 @@ f:7b39087f8e19d9392beeb0b96386cdc2:sshpass/.footprint
 f:511ddf7ee3ccd5eb66cfe72503279319:sshpass/.signature
 f:e878e7386df273a8d1e31f006a07bd77:sshpass/Pkgfile
 f:19b1de39f6d2bdc525ea29c07d687ede:ada/Pkgfile
+f:a3e654a4020015c6f1e9e8add23968f8:ada/.footprint
+f:ce0ce140db86fbf116fb4170f91c48af:ada/.signature
