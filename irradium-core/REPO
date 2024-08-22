@@ -147,8 +147,8 @@ f:84045450ba3710bd4569508a82a6a9d3:rc/rc.multi
 f:a46c238c63564a289318b771f81e602d:rc/rc.shutdown
 f:cf1f0d9f6d467e2c2efa689a90413ef6:rc/rc.single
 f:3ef6941ffa1006e5aa49bacc1e59eebb:rc/Pkgfile
-f:131a7abf96b5cbd339cba03d9cd7e595:dhcpcd/.footprint
+f:22b0bf1f472a6db254456d58e484e7e0:dhcpcd/.footprint
 f:9b8f2bac610aad49e84ae7398c5735c1:dhcpcd/pre-install
 f:0b056dd3e5a3e1eacb7c9b38f0641e4d:dhcpcd/rc.dhcpcd
-f:60a6fe0f2709667d22bf34a37d083207:dhcpcd/.signature
+f:cb2af7070b61a392af1d66bf855f001f:dhcpcd/.signature
 f:5ccc3979b8c3e41565be1dd71c90df62:dhcpcd/Pkgfile
