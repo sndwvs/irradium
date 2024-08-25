@@ -11,6 +11,7 @@ source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$versio
   firefox.desktop
   icu-linebreak-classes.patch
   fix-target-detection.patch
+  fix-for-cbindgen-0.27.patch
   node-stdout-nonblocking-wrapper
   01-rust-lto-thin.patch
   02-riscv64-no-lto.patch)
