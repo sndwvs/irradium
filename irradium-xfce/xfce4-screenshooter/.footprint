@@ -2,6 +2,11 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/xfce4-screenshooter
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/xfce4-screenshooter/
+drwxr-xr-x	root/root	usr/lib/xfce4-screenshooter/xfce4/
+drwxr-xr-x	root/root	usr/lib/xfce4-screenshooter/xfce4/screenshooter/
+drwxr-xr-x	root/root	usr/lib/xfce4-screenshooter/xfce4/screenshooter/scripts/
+-rw-r--r--	root/root	usr/lib/xfce4-screenshooter/xfce4/screenshooter/scripts/imgur-upload.sh
 drwxr-xr-x	root/root	usr/lib/xfce4/
 drwxr-xr-x	root/root	usr/lib/xfce4/panel/
 drwxr-xr-x	root/root	usr/lib/xfce4/panel/plugins/
