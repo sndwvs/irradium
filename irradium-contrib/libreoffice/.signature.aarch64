@@ -1,16 +1,16 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7iTC9LzWujVkIlNMF2HPsq91SFdLcpxR31qfZ1aB9+4f5zutwGGAglLh3eFKxNO9otSS+AYsOXtJ1EHAlrYMVQA=
-SHA256 (Pkgfile) = 7f7ff9cf3f79ede85c7c4657b215f17789b3126bda8b2f572c64698db95ce7d5
-SHA256 (.footprint.aarch64) = 5ec6dc7425ab8bb5c6daeed911b40e44df9fb9be6e83e3f4fd045115b69be4d0
-SHA256 (libreoffice-24.8.0.3.tar.xz) = 5b11468cd1b68c05c33b151fcd7d044eea0c7e1dbf4bda028b490e18df7d78c1
-SHA256 (libreoffice-dictionaries-24.8.0.3.tar.xz) = b4e9a20e94b96179e46648dc565bde1b80511c15ad8f95287574058bbd97bb9a
-SHA256 (libreoffice-translations-24.8.0.3.tar.xz) = 5e2706a6b0339b3424a3fb75c83b73817603722baf8fa11a9b84dc9a65ece55c
-SHA256 (libreoffice-help-24.8.0.3.tar.xz) = 7653e34fa2139fa6818d644208a0fc9e4e43be18d669c020f38c8dab161671ed
+RWTmT3d9kqan7ryGTBnpHCIvk+oLu9iefzF5GiNafAN1wGD4nkRd4Z4VgND1oaEnvsRH2sWV3ek+i6+dTgrb7+99oV8Fumz3ZwU=
+SHA256 (Pkgfile) = cc905cb14cc2c35ff9ce2b0e39b83c809e03928cf89666b12c217e41f36c3741
+SHA256 (.footprint.aarch64) = 29d512727254a60c2071b69e4031af87a6fe1fa13fc87d4f4bbc544905bb279b
+SHA256 (libreoffice-24.8.1.1.tar.xz) = fa760332004575c54e960646b58eae200fee53f1db05abbf61e0f5c4ef485e6b
+SHA256 (libreoffice-dictionaries-24.8.1.1.tar.xz) = 919538c32482b8819426233a539cf0e7cd9996ec42f6df03c978f17c84d7b4c0
+SHA256 (libreoffice-translations-24.8.1.1.tar.xz) = 926b5b8cb71a8f1aac133259458db6e7168d9564de08e1ba9c8b8b8e119abbe5
+SHA256 (libreoffice-help-24.8.1.1.tar.xz) = 3753c2d490721f5e78065c851533b5359630594bb7edb60663cc57ab670fa2be
 SHA256 (185d60944ea767075d27247c3162b3bc-unowinreg.dll) = eafde646a7dbe46d20c291685b0beac2382174d78d66ee990e229a1bf6e6cec6
 SHA256 (0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz) = 983941d31ee8d366085cadf28db75eb1f5cb03ba1e5853b98f12f7f51c63b776
 SHA256 (dtoa-20180411.tgz) = 0082d0684f7db6f62361b76c4b7faba19e0c7ce5cb8e36c4b65fea8281e711b4
 SHA256 (pdfium-6425.tar.bz2) = fe0291b96d7352bac530d13ef2e5fd63ad9980e0128911f88b957b5992508f1c
 SHA256 (skia-m116-2ddcf183eb260f63698aa74d1bb380f247ad7ccd.tar.xz) = 2223ebce534458a37826e8fe4f24635b0712cde7ed1bd3208f089f6fdd796e01
-SHA256 (line.txt) = a6ab1c362e67d35bdede99e8dfd7778ec1747c970c88371a7fb83d5beaf1f20e
+SHA256 (line.txt) = 67682fde8e8061e6248d687b390dfe86c5c0bb36e0437cc7be3c9c1debdfdbcb
 SHA256 (libreoffice-7.6-qt6-wayland-egl.patch) = 420fdbc4188bec05e62625355af4aea1b3eefd8abea0bb2a31115d938f5a70c6
 SHA256 (makefile.in.patch) = b4889affa4d2f8dac4e3c16c0a142fd0d403ecbb7a1c00ed593128dd613b737a
