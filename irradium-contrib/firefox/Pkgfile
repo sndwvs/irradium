@@ -5,13 +5,12 @@
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wayland
 
 name=firefox
-version=129.0.2
+version=130.0
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   icu-linebreak-classes.patch
   fix-target-detection.patch
-  fix-for-cbindgen-0.27.patch
   node-stdout-nonblocking-wrapper
   01-rust-lto-thin.patch
   02-riscv64-no-lto.patch)
