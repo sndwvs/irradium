@@ -133,7 +133,7 @@ f:fd7a4e828ae1dd38b1a0826b6fefafb5:qt6-base/.signature
 f:781d6177c172e90033d3438d2a6253e3:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
-f:97f4e55ef525224dd98af424e52b2aca:rust/Pkgfile
+f:3efd2c3a9be180011cc1a347917bbbc8:rust/Pkgfile
 f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 f:3a302fda034a6cc7b1482250824b97f2:rust/0001-bootstrap-Change-libexec-dir.patch
 f:01956b9d425973216f86a808784d82a6:rust/0002-bootstrap-Change-bash-completion-dir.patch
