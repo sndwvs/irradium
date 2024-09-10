@@ -1,15 +1,17 @@
 untrusted comment: verify with /etc/ports/irradium-xorg.pub
-RWT3zJzzKRcegjYgf/oQJ+K5UTCv3Dt6v2//ELVNZi5+Bb0vJaCcAakhBPT4ifDG6cp1EsNeJvggHivfW8oanNZtuZIUidj+2Aw=
-SHA256 (Pkgfile) = 8354c6da5fc91d0ecb363f52e3707050691d0cef8b514412f51ab68230d8fe0e
-SHA256 (.footprint.riscv64) = 9678f9ecaf44fd1696e3bd2266563ab11e09b2d1277fdde7c9bda9c56d2e1a81
-SHA256 (mesa-24.1.6.tar.xz) = da94c0908d5662467369b69ed8236da1e1577141a6e7d25171a9bf56383b34e8
+RWT3zJzzKRcegnkErUcfMp7e5n66a+s8gBRRPCMvwJxBHisd3w0KhjvEEaTMlOg8ROwYwrLRM5faWFWCyw+CDPILcur2Qm+GMgE=
+SHA256 (Pkgfile) = ece668208fd3179e7bd82eb02386d6e0e3e0280fc5908c16f4ca3441311f8552
+SHA256 (.footprint.riscv64) = 2d6004c6c0c07e32ed66798d108f4b2e9e31713d7fb5444edd0ef6f8e0cc0764
+SHA256 (mesa-24.2.1.tar.xz) = fc9a495f3a9af906838be89367564e10ef335e058f88965ad49ccc3e9a3b420b
 SHA256 (0000-mesa-20.1.1-fix-opencl.patch) = e4e6cb3a204485bcddfe4f715197704a7f73bc9d6282f7bdbd4c1e79a6641979
 SHA256 (0001-mesa-23.1-x86_32-llvm-detection.patch) = 79e2e290d8b1e89dbc92f7ad3e264ca17e881fdd1765102e9bf5ce19b0a2031d
 SHA256 (0002-mesa-24.1-find-opencl-c-base.h.patch) = a383cb83c7a793e7e0968ddbe7d0bb0eeec51a95edd2f6746d7066b8c4767837
 SHA256 (0003-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch) = 42480a595b6289c0365ecc0cfce65d6c37f82e6bf3086a50669c926ff057a721
-SHA256 (0004-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch) = 32ba4e3b193dc979f9890712c2a68f7358a98f41e91af197dcb2f2f1738734a7
+SHA256 (0004-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch) = d56d3de56c9f9b0bc02cd77c7edfdf2897b3c9020dcdca2ac40a5ce2eb3d8484
 SHA256 (0005-mesa-rustdeps.patch) = 8a71ec4d98312c396a10f60408adbabef55032e2bb1c7be169480ef6cb42da0f
-SHA256 (0006-mesa-buildsystem-improvements.patch) = 4892237ae6cafb2daf89d2001f22e6a00d1bc910a32aaf60edd373e87b790feb
-SHA256 (0007-mesa-24.0-llvmspirvlib-version-check.patch) = 1b7ff4ea585d2100270ebf70682206bf7a0926031c10ef213342bee487bab685
-SHA256 (0008-enable-vulkan-video-decode.patch) = 6e2129a98e6fb7f96f7fe8de8670aef1ba4f0ccdf435ac1d03e6ab6bf462e098
-SHA256 (0009-mesa-24.0-osmesa-fix-civ3.patch) = 0b2ac1ea1526fac38e413f8e7512b23fa1ffab3068d7942acdad3a94dd176ec0
+SHA256 (0006-mesa-24-llvmspirv-detection.patch) = d4b5f71cefd43861907b6234973e58abaa8048fd6d4787886f2aaa5bd9ef2c75
+SHA256 (0007-mesa-buildsystem-improvements.patch) = 016ca979c460b03c3c1bc3547baa70c7a45cd38ec2a1687fc37d97683eadd80b
+SHA256 (0008-mesa-24.0-llvmspirvlib-version-check.patch) = 1b7ff4ea585d2100270ebf70682206bf7a0926031c10ef213342bee487bab685
+SHA256 (0009-mesa-24.2-llvm-19.0.patch) = a43249886a8bdd0604d61fd10bee6ca5766669f6a5dbb0ff7269c60b4b7ccd17
+SHA256 (0010-enable-vulkan-video-decode.patch) = 6e2129a98e6fb7f96f7fe8de8670aef1ba4f0ccdf435ac1d03e6ab6bf462e098
+SHA256 (0011-mesa-24.0-osmesa-fix-civ3.patch) = 0b2ac1ea1526fac38e413f8e7512b23fa1ffab3068d7942acdad3a94dd176ec0
