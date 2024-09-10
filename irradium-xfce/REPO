@@ -93,8 +93,8 @@ f:5cc7932453cfd926db87e7e4b8f664b5:xfce4-pulseaudio-plugin/Pkgfile
 f:8fabc09bdd7f5159310180929e95b872:xfce4-screensaver/.footprint
 f:0f321621fd4b314ac3de89b00fb4e7a5:xfce4-screensaver/.signature
 f:f0a72960cab659a2391625d51744ad95:xfce4-screensaver/Pkgfile
-f:f4e2d3e3e2ad269b9b175a451c834ded:xfce4-screenshooter/.footprint
-f:cbd67a807baa7a7e6039a6cc6c5d304e:xfce4-screenshooter/.signature
+f:c6f72a1d351ce2b0a773ef96f694c521:xfce4-screenshooter/.footprint
+f:978ea279e2e006e27d4e94b54660f6f5:xfce4-screenshooter/.signature
 f:2418e0aef7f8c28a8b1be075a833334b:xfce4-screenshooter/Pkgfile
 f:64f7cf5170d1e94ac6d51c259dc85c9f:xfce4-session/README
 f:8df6ba54956111688839e483afaff5e0:xfce4-session/use-xfss-by-default-in-xfce.patch.gz
