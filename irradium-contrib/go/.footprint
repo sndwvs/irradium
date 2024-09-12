@@ -7669,6 +7669,8 @@ drwxr-xr-x	root/root	usr/lib/go/src/internal/types/testdata/check/decls2/
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/check/go1_19_20.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/check/go1_20_19.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/check/go1_21_19.go
+-rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/check/go1_21_22.go
+-rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/check/go1_22_21.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/check/go1_8.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/check/go1_xx_19.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/check/gotos.go
@@ -7950,6 +7952,8 @@ drwxr-xr-x	root/root	usr/lib/go/src/internal/types/testdata/fixedbugs/
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/fixedbugs/issue67683.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/fixedbugs/issue67872.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/fixedbugs/issue67962.go
+-rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/fixedbugs/issue68903.go
+-rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/fixedbugs/issue68935.go
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/fixedbugs/issue6977.go
 drwxr-xr-x	root/root	usr/lib/go/src/internal/types/testdata/spec/
 -rw-r--r--	root/root	usr/lib/go/src/internal/types/testdata/spec/assignability.go
