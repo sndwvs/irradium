@@ -5,7 +5,7 @@
 # Optional: avahi coin-or-mp cups dconf gpgme kio lpsolve mariadb openldap postgresql python3-lxml qt5 sane valgrind
 
 name=libreoffice
-version=24.8.1.1
+version=24.8.1.2
 release=1
 pdfiumversion=6425
 source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-$version.tar.xz
