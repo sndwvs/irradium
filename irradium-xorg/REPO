@@ -32,9 +32,9 @@ f:d591605696dc1b6cc6ab85003c84b9f5:mesa/patches/0008-mesa-24.0-llvmspirvlib-vers
 f:2815de1ec5ed1194d59dc8eecc83397f:mesa/patches/0009-mesa-24.2-llvm-19.0.patch
 f:8ee5ccb79038cb9a494cadacaf2f2f9e:mesa/patches/0010-enable-vulkan-video-decode.patch
 f:e5ca988223c90f2a22caf7539f4a512a:mesa/patches/0011-mesa-24.0-osmesa-fix-civ3.patch
-f:b1cbce1bc1b9ee79da3b73a75f866113:mesa/.footprint.riscv64
+f:06179ec55086cad6ecfce11f6cb0c8c4:mesa/.footprint.riscv64
 f:4f2715f2f0c53acc98afd2189be517e7:mesa/.signature.aarch64
-f:888d0c78f2436e13cae7369928447f66:mesa/.signature.riscv64
+f:c069eadfe6d24fbeb0068c0330a3b660:mesa/.signature.riscv64
 f:40d31090ccc63d0a2466312e341bc75f:mesa/Pkgfile
 f:3e200a272c3b974704b3fcdb1d7cfabe:mesa/.footprint.aarch64
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
