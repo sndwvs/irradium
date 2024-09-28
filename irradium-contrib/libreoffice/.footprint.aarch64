@@ -20,8 +20,8 @@ drwxr-xr-x	root/root	usr/etc/libreoffice/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/libreoffice/
 -rw-r--r--	root/root	usr/lib/libreoffice/CREDITS.fodt
--rwxr-xr-x	root/root	usr/lib/libreoffice/LICENSE
--rwxr-xr-x	root/root	usr/lib/libreoffice/LICENSE.html
+-rw-r--r--	root/root	usr/lib/libreoffice/LICENSE
+-rw-r--r--	root/root	usr/lib/libreoffice/LICENSE.html
 -rw-r--r--	root/root	usr/lib/libreoffice/NOTICE
 drwxr-xr-x	root/root	usr/lib/libreoffice/presets/
 drwxr-xr-x	root/root	usr/lib/libreoffice/presets/autotext/
@@ -3143,7 +3143,7 @@ drwxr-xr-x	root/root	usr/lib/libreoffice/share/gallery/sounds/
 -rw-r--r--	root/root	usr/lib/libreoffice/share/gallery/symbolshapes.sdv
 -rw-r--r--	root/root	usr/lib/libreoffice/share/gallery/symbolshapes.thm
 drwxr-xr-x	root/root	usr/lib/libreoffice/share/glade/
--rwxr-xr-x	root/root	usr/lib/libreoffice/share/glade/libreoffice-catalog.xml
+-rw-r--r--	root/root	usr/lib/libreoffice/share/glade/libreoffice-catalog.xml
 drwxr-xr-x	root/root	usr/lib/libreoffice/share/labels/
 -rw-r--r--	root/root	usr/lib/libreoffice/share/labels/labels.xml
 drwxr-xr-x	root/root	usr/lib/libreoffice/share/libreofficekit/
