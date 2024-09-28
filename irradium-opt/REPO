@@ -128,8 +128,8 @@ f:e9f8ce96b05106e22dae0a9b9dbe6cef:qt5/qt5-quick3d-assimp-5.1.patch
 f:43e9305944754ded3c4c49f2d3eba447:qt5/qtlocation-fix-rapidjson-build.patch
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
-f:b8dcffef485a500f8c5872eb2fd7ee40:qt6-base/.footprint
-f:fd7a4e828ae1dd38b1a0826b6fefafb5:qt6-base/.signature
+f:a064fbd8bd3f943e0b9d5b802d05bd9c:qt6-base/.footprint
+f:929b553abc537e529949d6d9c21c1f96:qt6-base/.signature
 f:aabf9ca0c14050e3a90cac4b828753ff:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
