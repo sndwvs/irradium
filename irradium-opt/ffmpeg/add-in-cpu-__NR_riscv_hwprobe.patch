@@ -1,0 +1,11 @@
+--- a/libavutil/riscv/cpu.c	2024-10-02 20:27:36.778266305 +0000
++++ b/libavutil/riscv/cpu.c	2024-10-02 20:27:52.794266306 +0000
+@@ -36,6 +36,8 @@
+ #include <sys/syscall.h>
+ #include <unistd.h>
+ 
++#define __NR_riscv_hwprobe 258
++
+ static int __riscv_hwprobe(struct riscv_hwprobe *pairs, size_t pair_count,
+                            size_t cpu_count, unsigned long *cpus,
+                            unsigned int flags)

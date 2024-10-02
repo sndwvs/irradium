@@ -10,6 +10,7 @@ release=1
 source=(https://ffmpeg.org/releases/$name-$version.tar.bz2
   add-av_stream_get_first_dts-for-chromium.patch
   fef22c87ada4517441701e6e61e062c9f4399c8e.patch
+  add-in-cpu-__NR_riscv_hwprobe.patch
   ffmpeg-x264-10bit.sh)
 
 build() {
@@ -71,6 +72,7 @@ build() {
   prt-get isinst mpp && PKGMK_FFMPEG+=' --enable-rkmpp'
 
   patch -Np1 -i $SRC/add-av_stream_get_first_dts-for-chromium.patch
+  patch -Np1 -i $SRC/add-in-cpu-__NR_riscv_hwprobe.patch
 
   sed -i -e '/check_cflags -fdiagnostics-color=auto/d' configure
 
