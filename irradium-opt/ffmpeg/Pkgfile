@@ -5,7 +5,7 @@
 # Optional: alsa-lib amf-headers aom chromaprint cuda dav1d fdk-aac fontconfig freetype gnutls gsm jack jack-audio-connection-kit ladspa lame lcms2 lensfun libass libbs2b libcaca libcdio-paranoia libdrm libmodplug libplacebo librsvg libsdl2 libsoxr libssh libtheora libva libvdpau libvorbis libvpx libwebp libxml2 lv2 nv-codec-headers openal opencv openh264 openjpeg2 opus pulseaudio rav1e rtmpdump rubberband shaderc snappy speex svt-av1 v4l-utils x264 x265
 
 name=ffmpeg
-version=7.0.2
+version=7.1
 release=1
 source=(https://ffmpeg.org/releases/$name-$version.tar.bz2
   add-av_stream_get_first_dts-for-chromium.patch
