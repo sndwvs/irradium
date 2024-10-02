@@ -37,8 +37,8 @@ f:921069ba04b101174ab92b95734262e8:cryptsetup/Pkgfile
 f:dae0c10c99399580c929fc100e79faef:ffmpeg/ffmpeg-x264-10bit.sh
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg/add-av_stream_get_first_dts-for-chromium.patch
 f:89ad92073c2c3f61771204c4780a37bc:ffmpeg/fef22c87ada4517441701e6e61e062c9f4399c8e.patch
-f:3438aca528f53d4aa58fcb689b38f402:ffmpeg/.footprint
-f:5eef65b931fc567538bce9c0a88b7546:ffmpeg/.signature
+f:36ec5d43c9a042bf6aac34bbb1066085:ffmpeg/.footprint
+f:f6d23c1530de30f1d0ae25533050ed1c:ffmpeg/.signature
 f:58167695a698a16bdd38651fc447f1f6:ffmpeg/Pkgfile
 f:b2c9d9a5b28f0803f79c748833911236:ffmpeg-mpp/.footprint
 f:5206bedf65b28e2b5b31038304f9202f:ffmpeg-mpp/.signature
