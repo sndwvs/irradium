@@ -32,11 +32,11 @@ f:d591605696dc1b6cc6ab85003c84b9f5:mesa/patches/0008-mesa-24.0-llvmspirvlib-vers
 f:2815de1ec5ed1194d59dc8eecc83397f:mesa/patches/0009-mesa-24.2-llvm-19.0.patch
 f:8ee5ccb79038cb9a494cadacaf2f2f9e:mesa/patches/0010-enable-vulkan-video-decode.patch
 f:e5ca988223c90f2a22caf7539f4a512a:mesa/patches/0011-mesa-24.0-osmesa-fix-civ3.patch
-f:06179ec55086cad6ecfce11f6cb0c8c4:mesa/.footprint.riscv64
-f:4f2715f2f0c53acc98afd2189be517e7:mesa/.signature.aarch64
-f:c069eadfe6d24fbeb0068c0330a3b660:mesa/.signature.riscv64
+f:0e84179a3770dd295804107fd21b061d:mesa/.footprint.riscv64
+f:b1dd43552ac4e9039349497b5e6edf57:mesa/.signature.aarch64
+f:29b1e7f96d4dc3afa057498a9c44d0a6:mesa/.signature.riscv64
 f:4f082bd44fbc077a5f5d7a74adbb10a5:mesa/Pkgfile
-f:3e200a272c3b974704b3fcdb1d7cfabe:mesa/.footprint.aarch64
+f:75229f42874a8cfc0dc606474fb4d268:mesa/.footprint.aarch64
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:641e8987ea32d0a1ad3e94ce3ae99c6b:xorg-xf86-video-fbdev/.signature
 f:ca372c2bfd02663294b28615ccf0c41c:xorg-xf86-video-fbdev/Pkgfile
