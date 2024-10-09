@@ -301,7 +301,7 @@ f:5a6869436a680dbd4333d18cf5ed8c13:tk/.footprint
 f:670bb032fcbae800dbc522eaa88a4d68:tk/.signature
 f:031803e77e6d0d6fcc5d9245ff972be7:tk/Pkgfile
 f:3229c9662669deee076eb6efc7791f99:u-boot-tools/.footprint
-f:06e28378c9625e98d3645819c57968f1:u-boot-tools/.signature
+f:c129b68d4a6ecd4384065db6279cc955:u-boot-tools/.signature
 f:cc614850799c27acd8ce17f79c410a45:u-boot-tools/Pkgfile
 f:ba82b096e39695cdfe72b8a9d7f02748:udisks2/Pkgfile
 f:cca42a21584d2e7a49baa60bb486c5d2:ungoogled-chromium/post-install
