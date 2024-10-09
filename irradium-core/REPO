@@ -150,5 +150,5 @@ f:3ef6941ffa1006e5aa49bacc1e59eebb:rc/Pkgfile
 f:22b0bf1f472a6db254456d58e484e7e0:dhcpcd/.footprint
 f:9b8f2bac610aad49e84ae7398c5735c1:dhcpcd/pre-install
 f:0b056dd3e5a3e1eacb7c9b38f0641e4d:dhcpcd/rc.dhcpcd
-f:cb2af7070b61a392af1d66bf855f001f:dhcpcd/.signature
+f:7e5b78e93a4a691e0cd3285032c68ec5:dhcpcd/.signature
 f:ababf072bae5048c5af28a4c20da23a6:dhcpcd/Pkgfile

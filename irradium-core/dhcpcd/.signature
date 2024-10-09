@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGIBSawDbzKaKvb8zfeiXWdaQefTfeCeGhyGJZCG0RK3/8HfpNFLZHksj0ZPu7FRmA/oeudprP+vOgmqnVDTBfA8=
-SHA256 (Pkgfile) = c32fd3394f44c65a4fd780a4e9794177f88b0e10bfc2a93c6f343e90af9e26d3
+RWQAwxvZoACtGCl+usY+B44ZI7I88C85dc/yvKk5xOfK0ad0Pogj3ITholsbiPYViNX411O+IaE2Gjqoih1ZizRkQT+eyIK5kwI=
+SHA256 (Pkgfile) = c4cc918bff06e75d43ed6b4410b9e2710638e75e5723e6ab7f457b935105c812
 SHA256 (.footprint) = 615dd57ef73d6ae1733b117746ca68d4a43e30ba6241a5a96c76a9665c26462e
-SHA256 (dhcpcd-10.0.10.tar.xz) = d582012992efddd2442bb1213c518a37d90febbcf8b11f8e76448c710dacad27
+SHA256 (dhcpcd-10.1.0.tar.xz) = abc307c63853da3199baa5c1e15fd5ede9d68d068b2a59ca14c5a6768e9cc3b7
 SHA256 (rc.dhcpcd) = f35d0748daa2e20aab01462684513bac6673e833459ba5ac1093ed814a3cae15
