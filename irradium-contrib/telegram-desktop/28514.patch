@@ -1,0 +1,150 @@
+From fcef9fb3fc256eaf83f9c583342367f3535d0369 Mon Sep 17 00:00:00 2001
+From: K900 <me@0upti.me>
+Date: Thu, 10 Oct 2024 21:15:57 +0300
+Subject: [PATCH] Fix build without QT_IMPLICIT_QCHAR_CONSTRUCTION
+
+---
+ Telegram/SourceFiles/data/data_document.cpp      | 16 ++++++++--------
+ Telegram/SourceFiles/data/data_wall_paper.cpp    |  4 ++--
+ Telegram/SourceFiles/lang/lang_cloud_manager.cpp |  1 -
+ .../passport/ui/passport_details_row.cpp         |  4 ++--
+ .../settings/business/settings_quick_replies.cpp |  8 ++++----
+ .../storage/details/storage_file_utilities.cpp   |  2 +-
+ Telegram/SourceFiles/ui/widgets/color_editor.cpp |  4 ++--
+ .../window/themes/window_theme_editor_block.cpp  |  4 ++--
+ 8 files changed, 21 insertions(+), 22 deletions(-)
+
+diff --git a/Telegram/SourceFiles/data/data_document.cpp b/Telegram/SourceFiles/data/data_document.cpp
+index 9c25a78613fb2a..5456ef2807afa0 100644
+--- a/Telegram/SourceFiles/data/data_document.cpp
++++ b/Telegram/SourceFiles/data/data_document.cpp
+@@ -936,14 +936,14 @@ void DocumentData::setFileName(const QString &remoteFileName) {
+ 	// in filenames, because they introduce a security issue, when
+ 	// an executable "Fil[x]gepj.exe" may look like "Filexe.jpeg".
+ 	QChar controls[] = {
+-		0x200E, // LTR Mark
+-		0x200F, // RTL Mark
+-		0x202A, // LTR Embedding
+-		0x202B, // RTL Embedding
+-		0x202D, // LTR Override
+-		0x202E, // RTL Override
+-		0x2066, // LTR Isolate
+-		0x2067, // RTL Isolate
++		QChar(0x200E), // LTR Mark
++		QChar(0x200F), // RTL Mark
++		QChar(0x202A), // LTR Embedding
++		QChar(0x202B), // RTL Embedding
++		QChar(0x202D), // LTR Override
++		QChar(0x202E), // RTL Override
++		QChar(0x2066), // LTR Isolate
++		QChar(0x2067), // RTL Isolate
+ 	};
+ 	for (const auto &ch : controls) {
+ 		_filename = std::move(_filename).replace(ch, "_");
+diff --git a/Telegram/SourceFiles/data/data_wall_paper.cpp b/Telegram/SourceFiles/data/data_wall_paper.cpp
+index 1bfd653359919f..0234bdbb410d49 100644
+--- a/Telegram/SourceFiles/data/data_wall_paper.cpp
++++ b/Telegram/SourceFiles/data/data_wall_paper.cpp
+@@ -150,8 +150,8 @@ using Ui::MaybeColorFromSerialized;
+ 		const auto hex = [](int value) {
+ 			value = std::clamp(value, 0, 15);
+ 			return (value > 9)
+-				? ('a' + (value - 10))
+-				: ('0' + value);
++				? QChar('a' + (value - 10))
++				: QChar('0' + value);
+ 		};
+ 		return QString() + hex(value / 16) + hex(value % 16);
+ 	};
+diff --git a/Telegram/SourceFiles/lang/lang_cloud_manager.cpp b/Telegram/SourceFiles/lang/lang_cloud_manager.cpp
+index 8c98b96d13c2dc..d7692e0be41d96 100644
+--- a/Telegram/SourceFiles/lang/lang_cloud_manager.cpp
++++ b/Telegram/SourceFiles/lang/lang_cloud_manager.cpp
+@@ -434,7 +434,6 @@ void CloudManager::requestLanguageAndSwitch(
+ 
+ void CloudManager::sendSwitchingToLanguageRequest() {
+ 	if (!_api) {
+-		_switchingToLanguageId = -1;
+ 		return;
+ 	}
+ 	_api->request(_switchingToLanguageRequest).cancel();
+diff --git a/Telegram/SourceFiles/passport/ui/passport_details_row.cpp b/Telegram/SourceFiles/passport/ui/passport_details_row.cpp
+index b50ff5164b5c17..55739b7dbb6622 100644
+--- a/Telegram/SourceFiles/passport/ui/passport_details_row.cpp
++++ b/Telegram/SourceFiles/passport/ui/passport_details_row.cpp
+@@ -527,9 +527,9 @@ void DateInput::correctValue(
+ 	if (accumulated > _maxValue
+ 		|| (limit == _maxDigits && oldLength > _maxDigits)) {
+ 		if (oldCursor > limit) {
+-			_putNext.fire('0' + (accumulated % 10));
++			_putNext.fire(QChar('0' + (accumulated % 10)));
+ 		} else {
+-			_putNext.fire(0);
++			_putNext.fire(QChar(0));
+ 		}
+ 	}
+ }
+diff --git a/Telegram/SourceFiles/settings/business/settings_quick_replies.cpp b/Telegram/SourceFiles/settings/business/settings_quick_replies.cpp
+index 941409f98bafdb..e59ef7061d7020 100644
+--- a/Telegram/SourceFiles/settings/business/settings_quick_replies.cpp
++++ b/Telegram/SourceFiles/settings/business/settings_quick_replies.cpp
+@@ -171,10 +171,10 @@ void QuickReplies::setupContent(
+ 	}
+ 	for (const auto &ch : name) {
+ 		if (!ch.isLetterOrNumber()
+-			&& (ch != '_')
+-			&& (ch != 0x200c)
+-			&& (ch != 0x00b7)
+-			&& (ch < 0x0d80 || ch > 0x0dff)) {
++			&& (ch != QChar('_'))
++			&& (ch.unicode() != 0x200c)
++			&& (ch.unicode() != 0x00b7)
++			&& (ch.unicode() < 0x0d80 || ch.unicode() > 0x0dff)) {
+ 			return false;
+ 		}
+ 	}
+diff --git a/Telegram/SourceFiles/storage/details/storage_file_utilities.cpp b/Telegram/SourceFiles/storage/details/storage_file_utilities.cpp
+index 0ef6baa634735f..b4338484f8f52d 100644
+--- a/Telegram/SourceFiles/storage/details/storage_file_utilities.cpp
++++ b/Telegram/SourceFiles/storage/details/storage_file_utilities.cpp
+@@ -243,7 +243,7 @@ QString ToFilePart(FileKey val) {
+ 	result.reserve(0x10);
+ 	for (int32 i = 0; i < 0x10; ++i) {
+ 		uchar v = (val & 0x0F);
+-		result.push_back((v < 0x0A) ? ('0' + v) : ('A' + (v - 0x0A)));
++		result.push_back((v < 0x0A) ? QChar('0' + v) : QChar('A' + (v - 0x0A)));
+ 		val >>= 4;
+ 	}
+ 	return result;
+diff --git a/Telegram/SourceFiles/ui/widgets/color_editor.cpp b/Telegram/SourceFiles/ui/widgets/color_editor.cpp
+index bf2ba26fcfc1c9..c8fc937f8b37b1 100644
+--- a/Telegram/SourceFiles/ui/widgets/color_editor.cpp
++++ b/Telegram/SourceFiles/ui/widgets/color_editor.cpp
+@@ -997,9 +997,9 @@ void ColorEditor::updateResultField() {
+ 	auto text = QString();
+ 	const auto addHex = [&text](int value) {
+ 		if (value >= 0 && value <= 9) {
+-			text.append('0' + value);
++			text.append(QChar('0' + value));
+ 		} else if (value >= 10 && value <= 15) {
+-			text.append('a' + (value - 10));
++			text.append(QChar('a' + (value - 10)));
+ 		}
+ 	};
+ 	const auto addValue = [&](int value) {
+diff --git a/Telegram/SourceFiles/window/themes/window_theme_editor_block.cpp b/Telegram/SourceFiles/window/themes/window_theme_editor_block.cpp
+index 9c0c85cc346529..cd5b5d84e40fb6 100644
+--- a/Telegram/SourceFiles/window/themes/window_theme_editor_block.cpp
++++ b/Telegram/SourceFiles/window/themes/window_theme_editor_block.cpp
+@@ -134,9 +134,9 @@ void EditorBlock::Row::setValue(QColor value) {
+ void EditorBlock::Row::fillValueString() {
+ 	auto addHex = [=](int code) {
+ 		if (code >= 0 && code < 10) {
+-			_valueString.append('0' + code);
++			_valueString.append(QChar('0' + code));
+ 		} else if (code >= 10 && code < 16) {
+-			_valueString.append('a' + (code - 10));
++			_valueString.append(QChar('a' + (code - 10)));
+ 		}
+ 	};
+ 	auto addCode = [=](int code) {
