@@ -7,8 +7,7 @@ name=telegram-desktop
 version=5.6.1
 release=1
 source=(https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tdesktop-$version-full.tar.gz
-        https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.0.tar.xz
-        28514.patch)
+        https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.0.tar.xz)
 
 build() {
   meson -D maintainer-mode=true -Dbuild-documentation=false -Dbuild-examples=false --default-library static --prefix $SRC/glibmm glibmm-2.78.0 build
@@ -16,8 +15,6 @@ build() {
   meson install -C build
 
   cd tdesktop-$version-full
-
-  patch -p1 -i $SRC/28514.patch
 
   export PKG_CONFIG_PATH=$SRC/glibmm/usr/local/lib/pkgconfig
 
