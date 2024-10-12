@@ -130,7 +130,7 @@ f:43e9305944754ded3c4c49f2d3eba447:qt5/qtlocation-fix-rapidjson-build.patch
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
 f:ab06920524a4c3de75eb3d1e96972129:qt6-base/.footprint
-f:81166da279bcd99e941a19d4bec21b79:qt6-base/.signature
+f:7b457d845b592bd1446fc70dafefa415:qt6-base/.signature
 f:6abb68ccc7c60446b10d730ee66a738d:qt6-base/Pkgfile
 f:3786cb8569dfdc397763f3adcbb5af1a:qt6-base/0028-implicit-qchar-construction.patch
 f:42a695962c96c39e37eb5226a40bec48:qt6-base/0028-windows-fullscreen-with-mask.patch
