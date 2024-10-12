@@ -18,9 +18,9 @@ source=(https://download.qt.io/official_releases/qt/${version%.*}/$version/submo
 build() {
   patch -d qtbase-everywhere-src-$version -p1 -i $SRC/qt6-base-cflags.patch
   patch -d qtbase-everywhere-src-$version -p1 -i $SRC/qt6-base-nostrip.patch
-  patch -p1 -i $SRC/0028-implicit-qchar-construction.patch
-  patch -p1 -i $SRC/0028-windows-fullscreen-with-mask.patch
-  patch -p1 -i $SRC/0029-accept-only-cf_hdrop-as-uri-list.patch
+  patch -d qtbase-everywhere-src-$version -p1 -i $SRC/0028-implicit-qchar-construction.patch
+  patch -d qtbase-everywhere-src-$version -p1 -i $SRC/0028-windows-fullscreen-with-mask.patch
+  patch -d qtbase-everywhere-src-$version -p1 -i $SRC/0029-accept-only-cf_hdrop-as-uri-list.patch
 
   if prt-get isinst ccache; then
     PKGMK_QT6+=' -D QT_USE_CCACHE=ON'
