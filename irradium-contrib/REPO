@@ -114,10 +114,10 @@ f:e63cb7c0e107a6a07898e85d13e09f5f:chromium/patches/compiler-rt-adjust-paths.pat
 f:ed197885b10b7ecdbd550b1cd1933c51:chromium/patches/0001-widevine-support-for-arm.patch
 f:e9d339e4407e39dbef5432a23f1df32d:chromium/patches/0002-Run-blink-bindings-generation-single-threaded.patch
 f:648243bf0e58fa212b232c6ac7e29500:chromium/patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
-f:8a5bb31f36674261967aa4482416fcb9:chromium/patches/use-oauth2-client-switches-as-default.patch
-f:d82bc75b74328dceb34b591fbedc5aaf:chromium/patches/p010-Zero-Copy-for-VA-API-Decoding-for-Vulkan.patch
-f:8f6657577ad6609a22f2f7efe2fa237f:chromium/patches/increase-fortify-level.patch
 f:42c50e846b6df82333ed0df52171e9cd:chromium/patches/add-feature-to-allow-zero-copy-video-formats.patch
+f:8f6657577ad6609a22f2f7efe2fa237f:chromium/patches/increase-fortify-level.patch
+f:d82bc75b74328dceb34b591fbedc5aaf:chromium/patches/p010-Zero-Copy-for-VA-API-Decoding-for-Vulkan.patch
+f:8a5bb31f36674261967aa4482416fcb9:chromium/patches/use-oauth2-client-switches-as-default.patch
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.aarch64
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.aarch64
@@ -142,7 +142,7 @@ f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:ff1e4715e646416df4951ab5e9cf2b0d:firefox/.signature.aarch64
 f:2bd754a24fa34e6533f6fd9e257867c7:firefox/.signature.riscv64
-f:a83ae74309a6bab76a8a82b3600710cb:firefox/Pkgfile
+f:3bd7c4db2480ccc56759eb04723c4044:firefox/Pkgfile
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:07f0d054e2a216fa8eb962b0d52a09db:firefox/.footprint.riscv64
 f:997d0c3564c57cd05bd24a86ce30fdaf:firefox/.footprint.aarch64
