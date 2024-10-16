@@ -305,7 +305,10 @@ f:ed197885b10b7ecdbd550b1cd1933c51:ungoogled-chromium/patches/0001-widevine-supp
 f:e9d339e4407e39dbef5432a23f1df32d:ungoogled-chromium/patches/0002-Run-blink-bindings-generation-single-threaded.patch
 f:648243bf0e58fa212b232c6ac7e29500:ungoogled-chromium/patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
 f:8a5bb31f36674261967aa4482416fcb9:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
-f:143b925c37d16e356b7b11842e1df649:ungoogled-chromium/Pkgfile
+f:42c50e846b6df82333ed0df52171e9cd:ungoogled-chromium/patches/add-feature-to-allow-zero-copy-video-formats.patch
+f:8f6657577ad6609a22f2f7efe2fa237f:ungoogled-chromium/patches/increase-fortify-level.patch
+f:d82bc75b74328dceb34b591fbedc5aaf:ungoogled-chromium/patches/p010-Zero-Copy-for-VA-API-Decoding-for-Vulkan.patch
+f:58f9fe02678d0259d05d5f627df85fc8:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:6e3f456da8c441972ceec1d74e17cd26:viewnior/Pkgfile
 f:975eeae744a613e326b89b5dd4ef1fbe:viewnior/exiv2-0.28.patch
