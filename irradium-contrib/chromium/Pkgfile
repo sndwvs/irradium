@@ -107,7 +107,7 @@ build() {
     # Fixes for building with libstdc++ instead of libc++
 
     # Link to system tools required by the build
-    mkdir -p third_party/node/linux/node-linux-x64/bin
+    rm third_party/node/linux/node-linux-x64/bin/node
     ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
     #ln -s /usr/bin/java third_party/jdk/current/bin/
     ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
