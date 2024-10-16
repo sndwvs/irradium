@@ -122,7 +122,7 @@ f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.aarch64
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.aarch64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64
-f:fa6cb1b180e56fa2bbc82bfc00805cae:chromium/Pkgfile
+f:4a9c31b91f6693c292ec3301a487c720:chromium/Pkgfile
 f:5ef456813a7422caa454c5561a864aeb:deadbeef/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:8dcee42dffdce3de58873c0e149339c3:elogind/.footprint
@@ -305,7 +305,7 @@ f:ed197885b10b7ecdbd550b1cd1933c51:ungoogled-chromium/patches/0001-widevine-supp
 f:e9d339e4407e39dbef5432a23f1df32d:ungoogled-chromium/patches/0002-Run-blink-bindings-generation-single-threaded.patch
 f:648243bf0e58fa212b232c6ac7e29500:ungoogled-chromium/patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
 f:8a5bb31f36674261967aa4482416fcb9:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
-f:6f96d8b1880487a179bcf1aaf54ca480:ungoogled-chromium/Pkgfile
+f:143b925c37d16e356b7b11842e1df649:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:6e3f456da8c441972ceec1d74e17cd26:viewnior/Pkgfile
 f:975eeae744a613e326b89b5dd4ef1fbe:viewnior/exiv2-0.28.patch
