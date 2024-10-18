@@ -136,7 +136,7 @@ f:42a695962c96c39e37eb5226a40bec48:qt6-base/0028-windows-fullscreen-with-mask.pa
 f:26d7c059e5528d47ee0f77a8c33bf19a:qt6-base/0029-accept-only-cf_hdrop-as-uri-list.patch
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
-f:3efd2c3a9be180011cc1a347917bbbc8:rust/Pkgfile
+f:6135cef3d98581de5038b32507aedc21:rust/Pkgfile
 f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 f:3a302fda034a6cc7b1482250824b97f2:rust/0001-bootstrap-Change-libexec-dir.patch
 f:01956b9d425973216f86a808784d82a6:rust/0002-bootstrap-Change-bash-completion-dir.patch
