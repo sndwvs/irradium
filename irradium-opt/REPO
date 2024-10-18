@@ -188,7 +188,7 @@ f:e1dadd566a18049c0bdcfe2c7b4773a5:hyphen/Pkgfile
 f:bc51d17e8c75abeff6f08e21f8086b9f:nodejs/.footprint
 f:5fd08a0d1262524a17da3ec77511141f:nodejs/.signature
 f:352bd14a9fd821f0841e15c9ff17013a:nodejs/52888.patch
-f:78c7fac9e37ea207214de07b9ab2004c:nodejs/Pkgfile
+f:0e36ad72afb6bd9e1cb7b6ced0adb295:nodejs/Pkgfile
 f:1f8d81b7d7f75b75af3e33ebd97808bf:nodejs/system-c-ares.patch
 f:f8d2f18e32451d2f7d516ef7fd446dc8:shared-mime-info/.footprint
 f:ba273dc7e389002c9507f369fe299b59:shared-mime-info/.signature
