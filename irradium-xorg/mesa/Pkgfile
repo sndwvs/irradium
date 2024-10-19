@@ -6,7 +6,7 @@
 
 name=mesa
 version=24.2.5
-release=1
+release=2
 source=(https://archive.mesa3d.org/$name-$version.tar.xz
 	patches/0000-mesa-20.1.1-fix-opencl.patch
 	patches/0001-mesa-23.1-x86_32-llvm-detection.patch

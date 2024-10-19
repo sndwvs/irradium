@@ -35,7 +35,7 @@ f:e5ca988223c90f2a22caf7539f4a512a:mesa/patches/0011-mesa-24.0-osmesa-fix-civ3.p
 f:0e84179a3770dd295804107fd21b061d:mesa/.footprint.riscv64
 f:31e28db05a31b7119f06473b3b32d366:mesa/.signature.aarch64
 f:29b1e7f96d4dc3afa057498a9c44d0a6:mesa/.signature.riscv64
-f:4c2a5e915c9125b917952ddfa428c9e4:mesa/Pkgfile
+f:25f9938602d5fd01245e7756904dbcfc:mesa/Pkgfile
 f:e12f079720448021726cf3af4244d149:mesa/.footprint.aarch64
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:641e8987ea32d0a1ad3e94ce3ae99c6b:xorg-xf86-video-fbdev/.signature
