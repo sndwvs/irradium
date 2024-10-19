@@ -140,7 +140,7 @@ f:022ca4e9eeac6d2090a0289ee01db9f4:firefox/icu-linebreak-classes.patch
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
-f:ff1e4715e646416df4951ab5e9cf2b0d:firefox/.signature.aarch64
+f:3d64fc2af0b490d4319c277f607c5e3b:firefox/.signature.aarch64
 f:2bd754a24fa34e6533f6fd9e257867c7:firefox/.signature.riscv64
 f:3bd7c4db2480ccc56759eb04723c4044:firefox/Pkgfile
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
