@@ -4,9 +4,9 @@
 # Depends on: python3 zstd
 
 name=gn
-version=20231023
+version=20240405
 release=1
-source=(https://s3.sakamoto.pl/lnl-aports-snapshots/$name-e4702d7409069c4f12d45ea7b7f0890717ca3f4b.tar.zst)
+source=(https://s3.sakamoto.pl/lnl-aports-snapshots/$name-415b3b19e094cd4b6982147693485df65037f942.tar.zst)
 
 build() {
     tar xf $SRC/$name-*.tar.zst
