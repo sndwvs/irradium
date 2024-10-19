@@ -4,7 +4,7 @@
 # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
 
 name=ungoogled-chromium
-version=129.0.6668.100
+version=130.0.6723.58
 _uc_version=$version-1
 release=1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/${name#*-}-$version.tar.xz
@@ -14,8 +14,6 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/${nam
         patches/0002-Run-blink-bindings-generation-single-threaded.patch
         patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
         patches/use-oauth2-client-switches-as-default.patch
-        patches/p010-Zero-Copy-for-VA-API-Decoding-for-Vulkan.patch
-        patches/add-feature-to-allow-zero-copy-video-formats.patch
         patches/compiler-rt-adjust-paths.patch
         patches/increase-fortify-level.patch
 )
@@ -97,8 +95,6 @@ build() {
     patch -Np1 -i $SRC/use-oauth2-client-switches-as-default.patch || exit 1
 
     # Upstream fixes
-    patch -Np1 -i $SRC/p010-Zero-Copy-for-VA-API-Decoding-for-Vulkan.patch || exit 1
-    patch -Np1 -i $SRC/add-feature-to-allow-zero-copy-video-formats.patch || exit 1
 
     # Allow libclang_rt.builtins from compiler-rt >= 16 to be used
     patch -Np1 -i $SRC/compiler-rt-adjust-paths.patch || exit 1
