@@ -1,9 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCSIwmJbMGnjWDw8+QatWxInsy+E39FOtyutTEMEARRdwGV00dElWBMdWAUCKeSs0/2UMP0xSyD9c8WSkzVQlSAQ=
-SHA256 (Pkgfile) = 8bec2b184f197062c2b506940398ec244c00712da732565586d91a6d0f4dc95f
-SHA256 (.footprint) = 7f6896902e59513d99c49022171547bbd24ae7e9d9100ab2a50c6693f0128a3b
-SHA256 (llvm-18.1.8.src.tar.xz) = f68cf90f369bc7d0158ba70d860b0cb34dbc163d6ff0ebc6cfa5e515b9b2e28d
-SHA256 (cmake-18.1.8.src.tar.xz) = 59badef592dd34893cd319d42b323aaa990b452d05c7180ff20f23ab1b41e837
-SHA256 (third-party-18.1.8.src.tar.xz) = b76b810f3d3dc5d08e83c4236cb6e395aa9bd5e3ea861e8c319b216d093db074
+RWRxRnTWECCiCXd0HyDxzWoOvnw2wdbxP4XM4m8Z2Hqr1zyY+/wpLc7Shthyp9yu433kCPxK7BH5nwvenyz0S3yADVboYFl7JgE=
+SHA256 (Pkgfile) = ef6332f214ba7bf8a54a7d496782b318d13b99a6f1354c3d1f089f2f9b0dd389
+SHA256 (.footprint.aarch64) = b3c19179d695ae2384c20d664c06f4221766119adcc50f8e41cc83769211bd6e
+SHA256 (llvm-19.1.2.src.tar.xz) = 99a7b915dd67e02564567f07f1c93c4ab0f4d4119e02d80d450e76ae69cf36bd
+SHA256 (cmake-19.1.2.src.tar.xz) = 139209d798fbe4a84becfa605aee7fd8f4412c6591976f3e672211e3fbdcf65b
+SHA256 (third-party-19.1.2.src.tar.xz) = 190ca0b070ce9595200ad675c57f982e9e4ba1ce81b5c10ed5e31bdca8b1b42c
 SHA256 (install-prefix.patch) = 2649b61a459eb6d8a9aca38ab411aec27eeae57fe82e32d135db4ccb353c9dda
-SHA256 (rust-feature-tables.patch) = 88470afc557650112af05e9055d0010f07a888c34fcc61ed8b7cc165d8ecd9af
