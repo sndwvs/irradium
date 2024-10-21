@@ -82,6 +82,8 @@ build() {
 	patch -p1 -i $SRC/0002-bootstrap-Change-bash-completion-dir.patch
 	patch -p1 -i $SRC/0003-compiler-Change-LLVM-targets.patch
 	patch -p1 -i $SRC/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
+	#riscv64: disable f16 f128 once
+	patch -Np1 -i $SRC/disable-f16-f128.diff
 
 cat <<- EOF > $SRC/config.toml
 	change-id = 129295
