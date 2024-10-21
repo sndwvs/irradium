@@ -118,7 +118,7 @@ f:8f6657577ad6609a22f2f7efe2fa237f:chromium/patches/increase-fortify-level.patch
 f:8a5bb31f36674261967aa4482416fcb9:chromium/patches/use-oauth2-client-switches-as-default.patch
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.aarch64
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
-f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.aarch64
+f:6cb40932f599443c25c702ad7ba66474:chromium/.signature.aarch64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64
 f:1fbc6306a951200dc7a1c19ddbe0bbb3:chromium/Pkgfile
 f:5ef456813a7422caa454c5561a864aeb:deadbeef/Pkgfile
