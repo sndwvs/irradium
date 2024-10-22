@@ -1,7 +1,7 @@
 # Description: Backends for the gio framework in GLib
 # URL: https://wiki.gnome.org/Projects/gvfs
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: glib gcr4 libgudev libsecret libsoup3 udisks2 libcdio-paranoia openssh dbus meson libusb fuse3 elogind libimobiledevice
+# Depends on: glib gcr libgudev libsecret libsoup3 udisks2 libcdio-paranoia openssh dbus meson libusb fuse3 elogind libimobiledevice
 # Optional: libmtp samba libgphoto2
 
 name=gvfs
@@ -34,6 +34,7 @@ build() {
       -Ddnssd=false \
       -Dgoa=false \
       -Dgoogle=false \
+      -Donedrive=false \
       -Dlogind=true \
       -Dman=true \
       -Dnfs=false \
