@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0dZhrjkP5e6koHFNySvTiZ0xupRmjrItoIQh+6xTBdMfu5fLgS5zoCsTxU5AOSvKOr7qI09c9FshkP3o4etIqAI=
-SHA256 (Pkgfile) = e9fbcae771b911d560514174b794d0be5a42755f9ad2c96ac3ae817d1d354879
-SHA256 (.footprint) = d00d98388489ffd998456e49aed4a6318b7d11d19da68ed139357dbd066f8007
-SHA256 (mousepad-0.6.1.tar.bz2) = 560c5436c7bc7de33fbf3e9f6cc545280772ad898dfb73257d86533880ffff36
+RWQ1yk7gkrBo0TnaFy1DjPrqDL5Vnb+WrKoNBZmuWH1JGNTjTnsKXJewMOYOiSWklcKdMkXr457HibRkYoowEpaiTB3yYW34Cg0=
+SHA256 (Pkgfile) = 9897a3cfaed0ffa3b3c27cb356c6371a4d5c1c435e1b686ec4834bca51e514da
+SHA256 (.footprint) = cff1d1b5f412d5e0b677d00ab4b6663f62d752f68f8822e583c36bcec2038523
+SHA256 (mousepad-0.6.3.tar.bz2) = 2ff162c185f18014ab9c82c2ac2dfce4fba20eb0005e7690ee27f00b9cb929b9
