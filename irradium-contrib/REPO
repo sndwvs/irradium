@@ -85,6 +85,7 @@ d:libzmf
 d:redland
 d:unixodbc
 d:glmark2
+d:aspell
 d:cpufrequtils
 d:mtd-utils
 d:rnnoise
@@ -421,6 +422,9 @@ f:4a3b1c6d05147d5b141ade4b947f09d1:glmark2/.footprint
 f:1bca2a75f4b401372397cbc7ac84adbd:glmark2/.signature
 f:ecf4d7512d16e61c1d1566bc35b26148:glmark2/Pkgfile
 f:8bd8739134ae4ae697171781781742a0:glmark2/fix-build.patch
+f:c32d199bdb048fcdc8596761f82e6f8d:aspell/.footprint
+f:d6cdf6a2c4f571e0aa6d2ff55730577f:aspell/.signature
+f:dd9390f6f5ac214b2d42e9cdc6865f9f:aspell/Pkgfile
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch
