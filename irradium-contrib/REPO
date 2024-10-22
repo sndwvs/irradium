@@ -67,6 +67,7 @@ d:yt-dlp
 d:dhcp
 d:acme.sh
 d:hostapd
+d:gspell
 d:mkinitramfs
 d:ntp
 d:sshpass
@@ -338,6 +339,7 @@ f:76e9d7fbd0a29a0d3519da4ecf871b09:hostapd/Pkgfile
 f:5cdcc7dea3af935216e1a35ab5f6c4b2:hostapd/config
 f:d73888438d4e93bd83e085ee577892dc:hostapd/rc.hostapd
 f:d32239bcb673463ab874e80d47fae504:COPYING
+f:2e84b9019ababb8451c3663e652f3834:gspell/Pkgfile
 f:4461500806eba45e6f7dd0f5805ea777:mkinitramfs/init.in.patch
 f:0ccf2c3bbe610cff21943fc21e9d8764:mkinitramfs/mkinitramfs.patch
 f:1793b8523186ece9d46244e4c3b57fae:mkinitramfs/init.in
@@ -371,7 +373,6 @@ f:b2d5e1a6ce4327c3697c8aa3d0e5586f:tg_owt/.footprint
 f:85b284948e6e28f806097650eafee6e2:tg_owt/.signature
 f:dc3f374bc3541756e2ee45a048d32f83:tg_owt/Pkgfile
 f:9a947d675b43afb182983f8786a05ef6:tg_owt/ffmpeg7.patch
-f:d41d8cd98f00b204e9800998ecf8427e:install
 f:c3d31fc159c031b509e3b70466661896:pkgtools/.footprint
 f:c87e34bbbedfc0c6540be5f39e7179cd:pkgtools/.signature
 f:3129b1af7f0f5fb986dfdafc3507dace:pkgtools/Pkgfile

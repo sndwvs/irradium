@@ -1,0 +1,23 @@
+# Description: Flexible API to add spell checking to a GTK+ application
+# URL: https://wiki.gnome.org/Projects/gspell
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: gtk3 enchant glib intltool gobject-introspection iso-code vala
+
+name=gspell
+version=1.12.2
+release=1
+source=(https://downloads.gnome.org/gspell/${version%.*}/$name-$version.tar.xz)
+
+build() {
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --mandir=/usr/share/man \
+    --localstatedir=/var \
+    --disable-nls
+
+  make
+  make DESTDIR=$PKG install
+}
