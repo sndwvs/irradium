@@ -1,7 +1,7 @@
 # Description: Simple GTK+ 2 text editor for the Xfce desktop environment
 # URL: https://www.xfce.org/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: gtksourceview4 xfconf
+# Depends on: gspell gtk3 gtksourceview4 xfconf
 
 name=mousepad
 version=0.6.3
