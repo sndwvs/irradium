@@ -305,6 +305,8 @@ f:648243bf0e58fa212b232c6ac7e29500:ungoogled-chromium/patches/0003-Fix-eu-strip-
 f:8f6657577ad6609a22f2f7efe2fa237f:ungoogled-chromium/patches/increase-fortify-level.patch
 f:8a5bb31f36674261967aa4482416fcb9:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
 f:392973738760034a7e33c7035085661c:ungoogled-chromium/Pkgfile
+f:455ca37f56915d76c376c0ae18d311eb:ungoogled-chromium/.footprint
+f:a92cef2b85fa9297d7d233d34d8de4c7:ungoogled-chromium/.signature
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:6e3f456da8c441972ceec1d74e17cd26:viewnior/Pkgfile
 f:975eeae744a613e326b89b5dd4ef1fbe:viewnior/exiv2-0.28.patch
@@ -334,7 +336,6 @@ f:76e9d7fbd0a29a0d3519da4ecf871b09:hostapd/Pkgfile
 f:5cdcc7dea3af935216e1a35ab5f6c4b2:hostapd/config
 f:d73888438d4e93bd83e085ee577892dc:hostapd/rc.hostapd
 f:d32239bcb673463ab874e80d47fae504:COPYING
-f:2a6426ff17a7e49254687fcfd47b0bad:update
 f:4461500806eba45e6f7dd0f5805ea777:mkinitramfs/init.in.patch
 f:0ccf2c3bbe610cff21943fc21e9d8764:mkinitramfs/mkinitramfs.patch
 f:1793b8523186ece9d46244e4c3b57fae:mkinitramfs/init.in
