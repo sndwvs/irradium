@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7rafXl7q0cxe4BekMhJnZk5ngnAo9UZ6cVa0M9cAIQa7GOJQ+QX6LbK6mmK2zf5JM7aobqIcMyaqU2z6ybJ4bgg=
-SHA256 (Pkgfile) = b7b2d73789b7b7ec5211ef690ac4ae360c3f7247eb54e631c5367661a2cf9719
-SHA256 (.footprint) = e13f1879f10c08a937d39005070957ecad750fb8ea4ac435d1cc3f4c1062f2b1
-SHA256 (libvisio-0.1.7.tar.xz) = 8faf8df870cb27b09a787a1959d6c646faa44d0d8ab151883df408b7166bea4c
-SHA256 (ubsan.patch) = 8205a3c2157a1eaeb6bb17d813333142c84229e17efd006222a7be74a2d26aae
+RWTmT3d9kqan7qioEgWTb0/9YT/U5eHqEGq330PcvT047J3TWRja7JnRSVP4YysE4EaR5OoaCwjO3CXwlg9Aw5w8kcVRnA2h7A8=
+SHA256 (Pkgfile) = 6a4d6114a7e66ba43e549e77d38b74d3a45b437e46c8e988e7d96bf6c21e413f
+SHA256 (.footprint) = da565f9c7db0c0858541d69c0d6bd9d1831ff682214bebab461f29819f4ae504
+SHA256 (libvisio-0.1.8.tar.xz) = b4098ffbf4dcb9e71213fa0acddbd928f27bed30db2d80234813b15d53d0405b
