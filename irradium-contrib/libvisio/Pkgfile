@@ -4,15 +4,12 @@
 # Depends on: icu librevenge libxml2
 
 name=libvisio
-version=0.1.7
-release=4
-source=(https://dev-www.libreoffice.org/src/$name/$name-$version.tar.xz
-  ubsan.patch)
+version=0.1.8
+release=1
+source=(https://dev-www.libreoffice.org/src/$name/$name-$version.tar.xz)
 
 build() {
   cd $name-$version
-
-  patch -Np0 -i $SRC/ubsan.patch
 
   ./configure --prefix=/usr \
     --without-docs \

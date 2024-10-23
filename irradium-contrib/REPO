@@ -477,8 +477,7 @@ f:d5f2df786bbdaaef962762a25618a1cf:librevenge/Pkgfile
 f:d1cf564bc91f33d6cd5a49bfebfa4ea2:librevenge/librevenge-bundled-soname.patch.0
 f:01cac828226a1d01fae89db33e5a0a64:librevenge/rpath.patch
 f:991aefdd7a2e001c317517ae37a3c1c3:libvisio/.footprint
-f:5f0906f2b9a6b0490a58e6f4671eaac9:libvisio/Pkgfile
-f:eb6413e46f43a626a8e1e47ce3256e5c:libvisio/ubsan.patch
+f:11632028fbafbd3ffda17ff96e44fb95:libvisio/Pkgfile
 f:32b5cb85d61e24f2c6eb26f6bd09aba7:libvisio/.signature
 f:4db8b7c90cd5f8d488018b4c3493765f:libwpd/.footprint
 f:bac76af653fcaaf39f36c99832cc5649:libwpd/.signature
