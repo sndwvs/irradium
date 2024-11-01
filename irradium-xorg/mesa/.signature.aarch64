@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-xorg.pub
-RWT3zJzzKRcegkBGQgTwDYhoLW1bvMun4r+sl0bUnqZ20lEO4p1uQVVEvECWv7dhf29WZ/0HAk3fW5iNlVKbPLhqHgL+N7dKZgY=
-SHA256 (Pkgfile) = 81ae4157fb3095c5d157f7a7e5db3cb2aab30ec843b2f7683b8206d6d82b5248
-SHA256 (.footprint.aarch64) = 1effe3a177567c8c2da43b88892f6da210b41bce60dea042a397a15ca8e266c8
-SHA256 (mesa-24.2.5.tar.xz) = 733d0bea242ed6a5bb5c806fe836792ce7f092d45a2f115b7b7e15897c9dd96f
+RWT3zJzzKRcegpudgk/ozcTigSrwri/D7fOzt3G8rFewYjkT5zReXFwIMce15AWTrWtY5SV1jwBQQSQ5pTj7Jll5vkChwxIlWgA=
+SHA256 (Pkgfile) = ad92808ec745e7463b370798d364b25faec437b7dc47dc6412ff1711257dd88b
+SHA256 (.footprint.aarch64) = 9026e219b5599ec4231da9169c40323888757bd0f9fea21641d904c1cf5ee59a
+SHA256 (mesa-24.2.6.tar.xz) = 2b68c4a6f204c1999815a457299f81c41ba7bf48c4674b0b2d1d8864f41f3709
 SHA256 (0000-mesa-20.1.1-fix-opencl.patch) = e4e6cb3a204485bcddfe4f715197704a7f73bc9d6282f7bdbd4c1e79a6641979
 SHA256 (0001-mesa-23.1-x86_32-llvm-detection.patch) = 79e2e290d8b1e89dbc92f7ad3e264ca17e881fdd1765102e9bf5ce19b0a2031d
 SHA256 (0002-mesa-24.1-find-opencl-c-base.h.patch) = a383cb83c7a793e7e0968ddbe7d0bb0eeec51a95edd2f6746d7066b8c4767837
