@@ -310,7 +310,7 @@ f:8f6657577ad6609a22f2f7efe2fa237f:ungoogled-chromium/patches/increase-fortify-l
 f:8a5bb31f36674261967aa4482416fcb9:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
 f:0b5eb046d9b72b3c1153ed07b95c22a8:ungoogled-chromium/Pkgfile
 f:455ca37f56915d76c376c0ae18d311eb:ungoogled-chromium/.footprint
-f:a92cef2b85fa9297d7d233d34d8de4c7:ungoogled-chromium/.signature
+f:e570ec2f1c50b55594983a3a68a00f05:ungoogled-chromium/.signature
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:6e3f456da8c441972ceec1d74e17cd26:viewnior/Pkgfile
 f:975eeae744a613e326b89b5dd4ef1fbe:viewnior/exiv2-0.28.patch
