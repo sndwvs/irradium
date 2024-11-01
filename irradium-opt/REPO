@@ -31,6 +31,7 @@ d:dbus
 d:hyphen
 d:nodejs
 d:shared-mime-info
+d:aspell
 f:0072413ad564c8a82da0058e41ddce6b:cryptsetup/.footprint
 f:9874ea339796e7a32fe2f840e00b8481:cryptsetup/.signature
 f:921069ba04b101174ab92b95734262e8:cryptsetup/Pkgfile
@@ -88,9 +89,9 @@ f:6ebebc726135f1448067c1b553b0782c:lightdm-gtk-greeter/Pkgfile
 f:8588e227a9e80787b8c4ed61b123a03a:lightdm-gtk-greeter/post-install
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
-f:b4ff2ee8528f5567d89e5d7d6b2d2db1:llvm/.footprint.aarch64
+f:58d01c3062585131d4b87945b56c3bcf:llvm/.footprint.aarch64
 f:b4ff2ee8528f5567d89e5d7d6b2d2db1:llvm/.footprint.riscv64
-f:0569fc7fc22ba0bf028a71d0c88dfc28:llvm/.signature.aarch64
+f:5cd41296eb19f5235133612522fb2ba8:llvm/.signature.aarch64
 f:7250e5b41a45fa910b80d3eb3b190c71:llvm/.signature.riscv64
 f:37d76373fdba829c510e724573e39dfc:llvm/Pkgfile
 f:5795622d92584bf4df9ddcfd8927142b:mc/.footprint
@@ -195,3 +196,6 @@ f:f8d2f18e32451d2f7d516ef7fd446dc8:shared-mime-info/.footprint
 f:ba273dc7e389002c9507f369fe299b59:shared-mime-info/.signature
 f:952b8f2b79db7944026a790578218e13:shared-mime-info/Pkgfile
 f:0beb828eca839c98ea8c5dd66b51ebd6:shared-mime-info/fix.patch
+f:c32d199bdb048fcdc8596761f82e6f8d:aspell/.footprint
+f:9b6c9378cdeb1efa1d3e0fb679d37e82:aspell/.signature
+f:dd9390f6f5ac214b2d42e9cdc6865f9f:aspell/Pkgfile
