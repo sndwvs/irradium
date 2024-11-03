@@ -1,6 +1,7 @@
-untrusted comment: verify with /etc/ports/core.pub
-RWRJc1FUaeVeqp25hbPHMckuR6Um5k0cI8Si7xF8n7NfHDV8wdF6MLYjqqdrSNNQe5tHljldOUy1FmokDq3fRWtjAPtOQ2vFwgA=
-SHA256 (Pkgfile) = 77418dc8bd0858b544ff56acd62de6e165bd056e1bb50d68a67a377807077539
+untrusted comment: verify with /etc/ports/irradium-core.pub
+RWQAwxvZoACtGC1RkOXhSUn8CxlFkmOY+EQL1hVDZzUB83BkSPgIbUHyPf4ZCfNGvY+hgCDK+yW09yZJQobXwT3G2wkCfh500QY=
+SHA256 (Pkgfile) = 9c5186c5e73e1adf22ee05671aed52fbe89dc340eae099b9d2ae576df658be13
 SHA256 (.footprint) = af506c63962139e1c6756d429586193753c16f8626b0b3bb1243a1f557da9877
 SHA256 (openssl-3.4.0.tar.gz) = e15dda82fe2fe8139dc2ac21a36d4ca01d5313c75f99f46c4e8a27709b7294bf
 SHA256 (mksslcert.sh) = d01cfd061b792f4f7444429582c5c9e83aaa7fc63cafd05669fd3f2970dff779
+SHA256 (c08523e46f0416b37848c0030cbd5ee3c8e70296.patch) = 3cb69c032fc83c29b7b81378421716aef8daadd400f3910c6749a9f432ee97aa
