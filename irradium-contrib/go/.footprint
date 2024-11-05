@@ -13648,6 +13648,9 @@ drwxr-xr-x	root/root	usr/lib/go/test/fixedbugs/issue6789.dir/
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue6899.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue6899.out
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue6902.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue69110.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue69434.go
+-rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue69507.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue6964.go
 -rw-r--r--	root/root	usr/lib/go/test/fixedbugs/issue6977.go
 drwxr-xr-x	root/root	usr/lib/go/test/fixedbugs/issue7023.dir/
