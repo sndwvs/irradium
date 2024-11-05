@@ -1,6 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7gNrB1EkqKyu9TQ2vZJR6P0vMKqFYl1dU8q2BLu1qAsAjFPyI3B67fFD7oPA0CHm/8KkEYHlZufZ8FtnnZtc9gI=
-SHA256 (Pkgfile) = c7d17c4cbb999f5ade6275fd2937df6cf637b17697d9c99b7aa39d60eff1715e
+RWTmT3d9kqan7qfUb6xkrn2MsGJ0vVlIQsggQQCot0Rx45zhX5LBIWkA2LrQtJt8PXMpBTV7Z8ImGcqLbbC1fO5ejyIgwnzMSwI=
+SHA256 (Pkgfile) = 78c20c6f0cb9f5a530ad3c328630db6f0fe3aaa1d24211e8d0c73f7e371a9755
 SHA256 (.footprint) = 54860df793f48b9b0b556f7178c00d0cd6ad833b0ef0e92837791019cec73ad1
 SHA256 (tdesktop-5.7.1-full.tar.gz) = 180a46a5c7fce131e98f033245183634eaeed903a8d91d883e22cd39a3235aca
 SHA256 (glibmm-2.78.0.tar.xz) = 5d2e872564996f02a06d8bbac3677e7c394af8b00dd1526aebd47af842a3ef50
+SHA256 (28611.patch) = ef1109a2debeb0d80e2fc5a8ad6c84921392be632ec12e111bb43416769ace34
