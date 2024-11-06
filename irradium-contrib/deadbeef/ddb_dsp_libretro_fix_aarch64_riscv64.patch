@@ -1,0 +1,15 @@
+diff -Naurp deadbeef-1.9.6.1/external/ddb_dsp_libretro/Makefile.in deadbeef-1.9.6/external/ddb_dsp_libretro/Makefile.in
+--- deadbeef-1.9.6.1/external/ddb_dsp_libretro/Makefile.in	2023-11-07 18:16:13.000000000 +0000
++++ deadbeef-1.9.6/external/ddb_dsp_libretro/Makefile.in	2024-11-06 18:52:47.712390886 +0000
+@@ -490,7 +490,10 @@ top_srcdir = @top_srcdir@
+ @HAVE_LIBRETRO_TRUE@pkglib_LTLIBRARIES = ddb_dsp_libretro.la
+ @HAVE_LIBRETRO_TRUE@ddb_dsp_libretro_la_SOURCES = libretro.cpp ppsimd/ppsimd.h sinc_resampler.h
+ @HAVE_LIBRETRO_TRUE@ddb_dsp_libretro_la_LDFLAGS = -module -avoid-version
+-@HAVE_LIBRETRO_TRUE@ddb_dsp_libretro_la_CXXFLAGS = $(CFLAGS) -msse3 -std=c++11 -I@top_srcdir@/include
++@HAVE_LIBRETRO_TRUE@ifneq (,$(filter $(shell uname -p),aarch64 riscv64))
++@HAVE_LIBRETRO_TRUE@CFLAGS+=-msse3
++@HAVE_LIBRETRO_TRUE@endif
++@HAVE_LIBRETRO_TRUE@ddb_dsp_libretro_la_CXXFLAGS = $(CFLAGS) -std=c++11 -I@top_srcdir@/include
+ all: all-am
+ 
+ .SUFFIXES:

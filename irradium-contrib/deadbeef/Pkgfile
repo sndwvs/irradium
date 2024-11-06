@@ -14,6 +14,7 @@ build() {
 
   # fix ffmpeg 7x
   patch -p1 -i $SRC/d4cca5605447122cd080691f43e46047a6039359.patch
+  patch -p1 -i $SRC/ddb_dsp_libretro_fix_aarch64_riscv64.patch
 
   CFLAGS=${CFLAGS/-fstack-clash-protection/}
   export CC=clang CXX=clang++

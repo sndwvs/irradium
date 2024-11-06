@@ -122,9 +122,10 @@ f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:6cb40932f599443c25c702ad7ba66474:chromium/.signature.aarch64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64
 f:0b66789be25eceecd37d70e048a49546:chromium/Pkgfile
-f:58d965bad69008a25435312c5283a036:deadbeef/Pkgfile
+f:8e59d3f1d708eca676854cb4dccc7b26:deadbeef/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:7be71209efb6cb88b700164243b96ff6:deadbeef/d4cca5605447122cd080691f43e46047a6039359.patch
+f:2a3fe0bbe2b23a66764034bd56fc2411:deadbeef/ddb_dsp_libretro_fix_aarch64_riscv64.patch
 f:8dcee42dffdce3de58873c0e149339c3:elogind/.footprint
 f:4f7b29eb38aa1ade091f8478b4c8057b:elogind/11-prefer-deep-suspend.patch
 f:0a13ac50fadfb4d9dc20b3e8c81ebce1:elogind/12-default-deep-suspend.patch
