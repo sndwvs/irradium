@@ -126,6 +126,8 @@ f:a9b18443fb45d9bc251be23f102af838:deadbeef/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:7be71209efb6cb88b700164243b96ff6:deadbeef/d4cca5605447122cd080691f43e46047a6039359.patch
 f:2a3fe0bbe2b23a66764034bd56fc2411:deadbeef/ddb_dsp_libretro_fix_aarch64_riscv64.patch
+f:bfcf1f40013f72556bae0976d203cf05:deadbeef/.footprint
+f:60b14199bfeca23778277bd3aed8732a:deadbeef/.signature
 f:8dcee42dffdce3de58873c0e149339c3:elogind/.footprint
 f:4f7b29eb38aa1ade091f8478b4c8057b:elogind/11-prefer-deep-suspend.patch
 f:0a13ac50fadfb4d9dc20b3e8c81ebce1:elogind/12-default-deep-suspend.patch
