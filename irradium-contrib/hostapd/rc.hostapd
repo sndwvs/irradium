@@ -5,12 +5,13 @@
 
 SSD=/sbin/start-stop-daemon
 PROG=/usr/sbin/hostapd
+CONF=/etc/hostapd/hostapd.conf
 PID=/run/hostapd.pid
-OPTS=""
+OPTS=" -B "
 
 case $1 in
 start)
-    $SSD --start --pidfile $PID --exec $PROG -- $OPTS
+    $SSD --start --pidfile $PID --exec $PROG -- $OPTS $CONF
     ;;
 stop)
     $SSD --stop --retry 10 --remove-pidfile $PID --exec $PROG --pidfile $PID

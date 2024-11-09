@@ -340,9 +340,9 @@ f:05f1cabe4081da6f81dc1d3be53f62c3:acme.sh/Pkgfile
 f:672d52f4e522c3a5366b472f8b9bac34:hostapd/.footprint
 f:d96223c40e3fe0a5a45a12aa8190ca4a:hostapd/.signature
 f:9fc18c8eab771033b956b4a6c881beb4:hostapd/0001-hostapd-Add-the-missing-CONFIG_SAE-option-to-the-def.patch
-f:76e9d7fbd0a29a0d3519da4ecf871b09:hostapd/Pkgfile
+f:94a2900808c2507fe87e224217eebb8f:hostapd/Pkgfile
 f:5cdcc7dea3af935216e1a35ab5f6c4b2:hostapd/config
-f:d73888438d4e93bd83e085ee577892dc:hostapd/rc.hostapd
+f:dd8a03baafdac0efcf198f4f2528c6da:hostapd/rc.hostapd
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:850e7f7c9838c0071953e25b12d623c8:gspell/Pkgfile
 f:c8f811ef2dddfcb8c540a79eeb3094aa:gspell/.footprint
