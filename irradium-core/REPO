@@ -163,6 +163,6 @@ f:4b73ed1a9721ce0d390c28135bb8bd9b:openssl/c08523e46f0416b37848c0030cbd5ee3c8e70
 f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
 f:be5b8a1e3dd2272113e854ed0f155c47:bash/profile
 f:eb94327429ef6a0545df5b016c337a7c:bash/.signature
-f:995591c9fd8e6aaab6f4e6854a1859a1:bash/Pkgfile
+f:398340845644f2092188b28e1bbb44e0:bash/Pkgfile
 f:c0125a2b5a21efe404b4e4feb31b2287:bash/bash-5.2.37.patch.gz
 f:cf443b43826ea1ffb0abf92b5123297a:bash/profile.patch
