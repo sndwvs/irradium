@@ -5,9 +5,12 @@
 name=rc
 version=2.32
 release=4
-source=(inittab rc rc.modules rc.single rc.multi rc.local rc.fix rc.shutdown rc.conf)
+source=(inittab rc rc.modules rc.single rc.multi rc.local rc.fix rc.shutdown rc.conf
+	rc.fix.patch)
 
 build() {
+	patch -p1 -i $SRC/rc.fix.patch
+
 	install -d  $PKG/etc/rc.d
 	install -m 644 inittab $PKG/etc
 	install -m 755 rc $PKG/etc
