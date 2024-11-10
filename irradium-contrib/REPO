@@ -338,7 +338,7 @@ f:dfafcd7bdac69b1466f3e8c539a5c428:acme.sh/.footprint
 f:1cf33acd87f659a6a3c7d9b91aa8d708:acme.sh/.signature
 f:84a278304eaf2a5aa93755a7bab278ee:acme.sh/Pkgfile
 f:672d52f4e522c3a5366b472f8b9bac34:hostapd/.footprint
-f:d96223c40e3fe0a5a45a12aa8190ca4a:hostapd/.signature
+f:532af9dc58bfb887e923f87795cb3af8:hostapd/.signature
 f:9fc18c8eab771033b956b4a6c881beb4:hostapd/0001-hostapd-Add-the-missing-CONFIG_SAE-option-to-the-def.patch
 f:94a2900808c2507fe87e224217eebb8f:hostapd/Pkgfile
 f:5cdcc7dea3af935216e1a35ab5f6c4b2:hostapd/config

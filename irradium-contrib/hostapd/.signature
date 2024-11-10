@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7qvZql04upXelV5re4ESLRKPTQbhAYktKFZpaUDRxW3j0D++didmauQ8TxDWyWX0ML0r7rFc/23XzS5hJBkdWwQ=
-SHA256 (Pkgfile) = 2b6cfb21a423fa2b3bafb4d0ade9e4f2c6966ac1dff8364b40c85cabe9eb76a6
+RWTmT3d9kqan7p64FW3htGmDdp0XByMDwb6tdV/JpDvsLlEH5PzaKGlGF/HXlA8PqTOO7vc8QJ91CNyHBX+gsDXINO5REyUV1gk=
+SHA256 (Pkgfile) = 5d3176f5a4f9242a62a392ca36a68cf334515e13e161c8010da2bc34fd53e2f3
 SHA256 (.footprint) = 2d9519eb1d38a5fe2aaf55b9ded454e0066a2a71ef9d97fa07d1b5e409873ad0
 SHA256 (hostapd-2.11.tar.gz) = 2b3facb632fd4f65e32f4bf82a76b4b72c501f995a4f62e330219fe7aed1747a
 SHA256 (0001-hostapd-Add-the-missing-CONFIG_SAE-option-to-the-def.patch) = 84dbc5e8e87b016daf7db3ba3a0cec8afe9652601b12354864a23d740680191e
 SHA256 (config) = d0bbbfec38e338938910b09704ab986f3615b15ed2e0832d368ce3e9b94e3c51
-SHA256 (rc.hostapd) = ad53657faad52a475347ffc44ff990fc94b2c103c396441edf8292efcbdaa88a
+SHA256 (rc.hostapd) = 23884269db29393f54abf85cf44377a47d2dde0826ce439593cf0211c3bf23d8
