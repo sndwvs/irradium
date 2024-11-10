@@ -190,7 +190,7 @@ f:e1dadd566a18049c0bdcfe2c7b4773a5:hyphen/Pkgfile
 f:bc51d17e8c75abeff6f08e21f8086b9f:nodejs/.footprint
 f:d134b0648e4d75bba40dc40d1db3a58f:nodejs/.signature
 f:352bd14a9fd821f0841e15c9ff17013a:nodejs/52888.patch
-f:af1e11a0024a39a81617417941046cdb:nodejs/Pkgfile
+f:f8ade1d1e4cd71e62c5b77bc55274d73:nodejs/Pkgfile
 f:1f8d81b7d7f75b75af3e33ebd97808bf:nodejs/system-c-ares.patch
 f:f8d2f18e32451d2f7d516ef7fd446dc8:shared-mime-info/.footprint
 f:ba273dc7e389002c9507f369fe299b59:shared-mime-info/.signature
