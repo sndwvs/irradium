@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xorg.pub
-RWT3zJzzKRcegmwrsmt5XCUiPmBM/P5UDB0dymFQ+PsiEJP3D/n6szOU2TGTzv0L9Gy1wVpxlI4r5jaJsY94YYTK0b7vzBzDTgM=
-SHA256 (Pkgfile) = d33c8808c9155b6d3eec23a19cd260823cf9d89f32209272f0089adf8a04c2c4
+RWT3zJzzKRcegpfPCOoETOeYzoDRsLAidOi+tLriUVHkpPR9ooCT1uAnfxtNQyCC3mIpP09g0GVBrnmQcmTfIelc+DmAb+9pewo=
+SHA256 (Pkgfile) = 2ec22cd926a19aff4c051061ba32f64e01b2f8c553cdf017d91d7b29629b6cbb
 SHA256 (.footprint) = 5a0087d9690b1db6108912f9087a5fed8bcbdaba91cbaaf7bf28258dbd9b728a
-SHA256 (xf86-video-fbdev-0.5.0.tar.bz2) = dcc3d85f378022180e437a9ec00a59b6cb7680ff79c40394d695060af2374699
+SHA256 (xf86-video-fbdev-0.5.1.tar.xz) = 9c2bc0fb9af092804138e8d5cb5627cabf2919ef60f0d1544a95c4ac2047f387
