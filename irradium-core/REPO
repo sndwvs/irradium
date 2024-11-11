@@ -22,8 +22,8 @@ d:bash
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
-f:b930876865b6f6e683daef8aebcc6511:cmake/.footprint
-f:ac18c88eb9a90d10ee8726dde4165d74:cmake/.signature
+f:f76b866bb41da00088c41337dbd80ea5:cmake/.footprint
+f:149e4359e481a3cac814ad902e0de2a2:cmake/.signature
 f:629b0d37e2f926ffad15d05805116d5f:cmake/Pkgfile
 f:034680aa69ee64596517784fe1161c1b:db/.footprint
 f:7e30d22cd875710b997e739c6202893f:db/.signature
