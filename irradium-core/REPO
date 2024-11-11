@@ -162,7 +162,7 @@ f:c20d4922bca7dfc7a88985749e06fd52:openssl/Pkgfile
 f:4b73ed1a9721ce0d390c28135bb8bd9b:openssl/c08523e46f0416b37848c0030cbd5ee3c8e70296.patch
 f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
 f:be5b8a1e3dd2272113e854ed0f155c47:bash/profile
-f:eb94327429ef6a0545df5b016c337a7c:bash/.signature
+f:9be46e727d1f64e28e732c51ea6fe5c6:bash/.signature
 f:05eb7fc2e559f236ff825ec2e1c65861:bash/Pkgfile
 f:c0125a2b5a21efe404b4e4feb31b2287:bash/bash-5.2.37.patch.gz
 f:cf443b43826ea1ffb0abf92b5123297a:bash/profile.patch
