@@ -168,6 +168,6 @@ f:05eb7fc2e559f236ff825ec2e1c65861:bash/Pkgfile
 f:c0125a2b5a21efe404b4e4feb31b2287:bash/bash-5.2.37.patch.gz
 f:cf443b43826ea1ffb0abf92b5123297a:bash/profile.patch
 f:08ffcbda66b8f20d262d97a2e4739e1a:libcap/.footprint
-f:08f266dc4c6440f93be41b47cdb816a2:libcap/.signature
+f:9e58917d66781c2c0fdc4024c2381f41:libcap/.signature
 f:1109d8b8b1dac849a485a1faafeeadc9:libcap/Pkgfile
 f:5e9665180a03d425c58177893a659b38:libcap/psx-fix-SYS_getdents-as-SYS_getdents64.patch
