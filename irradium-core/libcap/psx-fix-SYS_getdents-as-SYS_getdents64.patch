@@ -1,0 +1,11 @@
+--- a/psx/psx.c	2024-11-12 18:04:35.316363962 +0000
++++ b/psx/psx.c	2024-11-12 18:05:13.312363966 +0000
+@@ -486,7 +486,7 @@ long int __psx_syscall(long int syscall_
+ 
+ 	for (;;) {
+ 	    char buf[BUF_SIZE];
+-	    size_t nread = syscall(SYS_getdents, fd, buf, BUF_SIZE);
++	    size_t nread = syscall(SYS_getdents64, fd, buf, BUF_SIZE);
+ 	    if (nread == 0) {
+ 		break;
+ 	    } else if (nread < 0) {
