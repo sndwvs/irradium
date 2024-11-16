@@ -46,6 +46,7 @@ build() {
         --with-libbind=no \
         --enable-dhcpv4o6 \
         --enable-log-pid \
+        --build=$(uname -m)-unknown-linux-gnu
 
   make
   make DESTDIR=$PKG install
