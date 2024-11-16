@@ -32,6 +32,7 @@ d:hyphen
 d:nodejs
 d:shared-mime-info
 d:aspell
+d:liburcu
 f:0072413ad564c8a82da0058e41ddce6b:cryptsetup/.footprint
 f:9874ea339796e7a32fe2f840e00b8481:cryptsetup/.signature
 f:921069ba04b101174ab92b95734262e8:cryptsetup/Pkgfile
@@ -199,3 +200,6 @@ f:0beb828eca839c98ea8c5dd66b51ebd6:shared-mime-info/fix.patch
 f:c32d199bdb048fcdc8596761f82e6f8d:aspell/.footprint
 f:9b6c9378cdeb1efa1d3e0fb679d37e82:aspell/.signature
 f:dd9390f6f5ac214b2d42e9cdc6865f9f:aspell/Pkgfile
+f:9555f7ac0de39e5a4c6189e30d2544aa:liburcu/.footprint
+f:5b222219dbf8a567d31961a54aba8873:liburcu/.signature
+f:351ce3d9e393470b0ee3f15ef47e32b8:liburcu/Pkgfile
