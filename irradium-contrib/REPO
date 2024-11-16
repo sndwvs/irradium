@@ -438,7 +438,7 @@ f:d88f47dbf8ed587cbc15f50b3d4de2a6:bind/named.conf
 f:f11f3366bc8c9b2d15d5989ed5cf28f6:bind/named.root
 f:e718f850c043a0352cf95cc8fa9a05d7:bind/pre-install
 f:5721b6f6094a08cba1aebf8a03632bbf:bind/.footprint
-f:f722869450b8003bf85d5b9371a5d3cb:bind/.signature
+f:efae17bd47a9d25d5d4c7f37867ee4a2:bind/.signature
 f:5e06a494cbe4a800b38aa115ee90b7c6:bind/Pkgfile
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
