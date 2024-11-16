@@ -356,7 +356,7 @@ f:6fc9192870e3cd2924aceb60f46c974a:mkinitramfs/.footprint
 f:14abbb7b1cb6ced8d5de6e17d1a9ef95:mkinitramfs/.signature
 f:ba97a0c31770f41d479edfa20fe1dc58:ntp/.footprint
 f:7350bd89e14e08d99c13832e1ff93137:ntp/.signature
-f:e96b8b98304db5012225286c2293e06b:ntp/Pkgfile
+f:c44f52a976a0628f077e9505bb1fa546:ntp/Pkgfile
 f:e7cdc0f92b0ce136612839a7020980c3:ntp/ntp.conf
 f:32e69b89c80eeeb12516766bdc03a5f4:ntp/ntp.keys
 f:544b10b0536b8a329e8e9deea702714f:ntp/ntp.logrotate

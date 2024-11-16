@@ -17,7 +17,7 @@ source=(https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/${name}-${_srcver
 build() {
   cd $name-$_srcversion
 
-  patch -p1 -i $SRC/fix_ipv6_locallink_regression.diff
+  patch -p2 -i $SRC/fix_ipv6_locallink_regression.diff
   patch -p1 -i $SRC/ntp.no.openssl.noise.patch
 
   # GCC 14 "fix":
