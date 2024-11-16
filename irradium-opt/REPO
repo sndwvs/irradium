@@ -206,5 +206,5 @@ f:f16b8480609f3c2f39d544d2b0dae486:liburcu/.signature
 f:351ce3d9e393470b0ee3f15ef47e32b8:liburcu/Pkgfile
 f:3dc09fe4bf975cc2c3460c94a51f4379:bindutils/utils.patch
 f:8f73ca979759b72b437390461b126962:bindutils/.footprint
-f:af40af22f183674e22de1513fd528690:bindutils/.signature
+f:2ba9912e6fdbcb3f4af292cc19421ab5:bindutils/.signature
 f:ef9ad59f6ae6218692192f7443f92339:bindutils/Pkgfile
