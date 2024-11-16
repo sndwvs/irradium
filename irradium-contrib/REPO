@@ -85,6 +85,7 @@ d:libzmf
 d:redland
 d:unixodbc
 d:glmark2
+d:bind
 d:cpufrequtils
 d:mtd-utils
 d:rnnoise
@@ -428,6 +429,17 @@ f:4a3b1c6d05147d5b141ade4b947f09d1:glmark2/.footprint
 f:1bca2a75f4b401372397cbc7ac84adbd:glmark2/.signature
 f:ecf4d7512d16e61c1d1566bc35b26148:glmark2/Pkgfile
 f:8bd8739134ae4ae697171781781742a0:glmark2/fix-build.patch
+f:aafb8f8ff4cddd87f3e257169554edd8:bind/README
+f:d5ef3bb5ce1020454a2c5996b73c8a5c:bind/db.0.0.127
+f:c1e9d24f8ca28d50b5d5ad1637ccf241:bind/db.ip6.arpa
+f:1041493a69a6a5c21d4a513323104a0f:bind/db.localhost
+f:607a961a7699d4a554c509ae76ccc943:bind/named
+f:d88f47dbf8ed587cbc15f50b3d4de2a6:bind/named.conf
+f:f11f3366bc8c9b2d15d5989ed5cf28f6:bind/named.root
+f:e718f850c043a0352cf95cc8fa9a05d7:bind/pre-install
+f:5721b6f6094a08cba1aebf8a03632bbf:bind/.footprint
+f:f722869450b8003bf85d5b9371a5d3cb:bind/.signature
+f:5e06a494cbe4a800b38aa115ee90b7c6:bind/Pkgfile
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch
