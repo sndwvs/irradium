@@ -1,0 +1,9 @@
+untrusted comment: verify with /etc/ports/irradium-core.pub
+RWQAwxvZoACtGIw6Dn8duJ8iGii1wyEBv+G6pVDrK2ASlw9kq0Sdudm/U4ABoOTxyEhmuxH+GJuWeP+xn0H20/ExrH+gYRfMgAo=
+SHA256 (Pkgfile) = 1ced3445c83a163a21cd2c113f4e9a7212bf7c26e143f4ec50bf237e2fdf868b
+SHA256 (.footprint) = db00a298e2b47ffcdebfee03a69cb61db7ce11907af11c9fb925d0d28428c947
+SHA256 (dcron-4.5.tar.gz) = 7c047194b9339b781971b000bf5512c11e856d20a14fe5323d5a1823f04c2a3f
+SHA256 (crontab) = 5341be13c6322cc70e0559ca5c888c5d90746ae50b7ee4bf28afdc1ef7408a1b
+SHA256 (runjobs) = c861105f2b04ad07cade83f3677fd261ae96ad2ef22a27e21e5490b97eecee4b
+SHA256 (crond) = fe7dffd61f24f24b2b32e05e0e5e9b6f0946ed156d228952d5a85755f65df051
+SHA256 (crontab.patch) = 264930b1c828c68c8688c83fa60812c74c408c415286d27901a9a85c889ce017

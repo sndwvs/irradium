@@ -20,6 +20,7 @@ d:dhcpcd
 d:openssl
 d:bash
 d:libcap
+d:dcron
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
@@ -172,3 +173,10 @@ f:08ffcbda66b8f20d262d97a2e4739e1a:libcap/.footprint
 f:9e58917d66781c2c0fdc4024c2381f41:libcap/.signature
 f:1109d8b8b1dac849a485a1faafeeadc9:libcap/Pkgfile
 f:5e9665180a03d425c58177893a659b38:libcap/psx-fix-SYS_getdents-as-SYS_getdents64.patch
+f:4e1e8a61db6c9a19f9398eb1073d41e2:dcron/.footprint
+f:3596a4fa9cf63bdf130fd533ca7703d4:dcron/crontab
+f:d80b27b1b9532890136c14d30e2a0d2b:dcron/runjobs
+f:ecececd4c028955518b02bf9f8f99c39:dcron/.signature
+f:bb6ae473731ad0960024b7b899d178ff:dcron/Pkgfile
+f:39a41f31b2ffff19b5bb936f490aa03c:dcron/crond
+f:0049730715f9841a1cd8f2721cb1bb1b:dcron/crontab.patch
