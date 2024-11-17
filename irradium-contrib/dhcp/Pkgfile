@@ -9,10 +9,15 @@ _srcversion=${version/_p/-P}
 release=1
 source=(https://downloads.isc.org/isc/dhcp/$_srcversion/$name-$_srcversion.tar.gz
     dhclient-script.PATH.diff
-    rc.dhcpd)
+    rc.dhcpd
+    config.guess config.sub)
 
 build() {
   cd $name-$_srcversion
+
+  cp $SRC/config.guess $SRC/config.sub .
+  tar -C bind/ -xzf bind/bind.tar.gz
+  cp $SRC/config.guess $SRC/config.sub bind/bind-*/
 
   # Add PATH setting to /sbin/dhclient-script
   patch -p1 -i $SRC/dhclient-script.PATH.diff || exit 1
@@ -46,7 +51,6 @@ build() {
         --with-libbind=no \
         --enable-dhcpv4o6 \
         --enable-log-pid \
-        --build=$(uname -m)-unknown-linux-gnu
 
   make
   make DESTDIR=$PKG install
