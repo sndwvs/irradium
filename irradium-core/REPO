@@ -21,6 +21,7 @@ d:openssl
 d:bash
 d:libcap
 d:dcron
+d:dcron/patches
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
@@ -176,7 +177,13 @@ f:5e9665180a03d425c58177893a659b38:libcap/psx-fix-SYS_getdents-as-SYS_getdents64
 f:4e1e8a61db6c9a19f9398eb1073d41e2:dcron/.footprint
 f:3596a4fa9cf63bdf130fd533ca7703d4:dcron/crontab
 f:d80b27b1b9532890136c14d30e2a0d2b:dcron/runjobs
-f:ecececd4c028955518b02bf9f8f99c39:dcron/.signature
-f:bb6ae473731ad0960024b7b899d178ff:dcron/Pkgfile
+f:03066668cfd578fa2d8c8b78f1fd82fd:dcron/.signature
+f:20f8bf1f52fbd40ea21cec1ea71bc3f7:dcron/Pkgfile
 f:39a41f31b2ffff19b5bb936f490aa03c:dcron/crond
 f:0049730715f9841a1cd8f2721cb1bb1b:dcron/crontab.patch
+f:3c2681714611f3550176187b958143fd:dcron/patches/0002-README-var-spool-cron-crontabs-root.patch
+f:06fb6ad99f798e3702e472d3949b51f8:dcron/patches/0003-CHANGELOG-tweak.patch
+f:c8cbb82349e7854c31f7a7e3bc5fd46d:dcron/patches/0006-Fixed-a-bug-whereby-syncs-killed-all-waiting-jobs.patch
+f:0c2dda016e37ae8b340b77601e99e8c2:dcron/patches/0007-Update-main.c.patch
+f:60ccc2d785edcbfaa0b5dcbda5b9ebea:dcron/patches/crontab.c.O_EXCL.diff
+f:be5b691209713c43c1218124b1433a5e:dcron/patches/defs.h.TMPDIR.diff
