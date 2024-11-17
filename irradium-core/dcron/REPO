@@ -1,0 +1,16 @@
+d:patches
+f:4e1e8a61db6c9a19f9398eb1073d41e2:.footprint
+f:3596a4fa9cf63bdf130fd533ca7703d4:crontab
+f:d80b27b1b9532890136c14d30e2a0d2b:runjobs
+f:03066668cfd578fa2d8c8b78f1fd82fd:.signature
+f:c8d392946b3eb9308810dbda5af190c4:Pkgfile
+f:39a41f31b2ffff19b5bb936f490aa03c:crond
+f:0049730715f9841a1cd8f2721cb1bb1b:crontab.patch
+f:3c2681714611f3550176187b958143fd:patches/0002-README-var-spool-cron-crontabs-root.patch
+f:06fb6ad99f798e3702e472d3949b51f8:patches/0003-CHANGELOG-tweak.patch
+f:c8cbb82349e7854c31f7a7e3bc5fd46d:patches/0006-Fixed-a-bug-whereby-syncs-killed-all-waiting-jobs.patch
+f:0c2dda016e37ae8b340b77601e99e8c2:patches/0007-Update-main.c.patch
+f:60ccc2d785edcbfaa0b5dcbda5b9ebea:patches/crontab.c.O_EXCL.diff
+f:be5b691209713c43c1218124b1433a5e:patches/defs.h.TMPDIR.diff
+f:63f1f88577acc0f924bd4d77b80cba53:dcron-4.5.tar.gz
+f:3e503f313be283328dfe2a608af8b069:crond.patch
