@@ -178,7 +178,7 @@ f:4e1e8a61db6c9a19f9398eb1073d41e2:dcron/.footprint
 f:3596a4fa9cf63bdf130fd533ca7703d4:dcron/crontab
 f:d80b27b1b9532890136c14d30e2a0d2b:dcron/runjobs
 f:03066668cfd578fa2d8c8b78f1fd82fd:dcron/.signature
-f:20f8bf1f52fbd40ea21cec1ea71bc3f7:dcron/Pkgfile
+f:c8d392946b3eb9308810dbda5af190c4:dcron/Pkgfile
 f:39a41f31b2ffff19b5bb936f490aa03c:dcron/crond
 f:0049730715f9841a1cd8f2721cb1bb1b:dcron/crontab.patch
 f:3c2681714611f3550176187b958143fd:dcron/patches/0002-README-var-spool-cron-crontabs-root.patch
@@ -187,3 +187,4 @@ f:c8cbb82349e7854c31f7a7e3bc5fd46d:dcron/patches/0006-Fixed-a-bug-whereby-syncs-
 f:0c2dda016e37ae8b340b77601e99e8c2:dcron/patches/0007-Update-main.c.patch
 f:60ccc2d785edcbfaa0b5dcbda5b9ebea:dcron/patches/crontab.c.O_EXCL.diff
 f:be5b691209713c43c1218124b1433a5e:dcron/patches/defs.h.TMPDIR.diff
+f:3e503f313be283328dfe2a608af8b069:dcron/crond.patch
