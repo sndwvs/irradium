@@ -361,6 +361,8 @@ f:94a2900808c2507fe87e224217eebb8f:hostapd/Pkgfile
 f:5cdcc7dea3af935216e1a35ab5f6c4b2:hostapd/config
 f:dd8a03baafdac0efcf198f4f2528c6da:hostapd/rc.hostapd
 f:359ce620548cf8b1adf8a5acf8d61485:libimobiledevice-glue/Pkgfile
+f:c9ce75d9708c32ad3dc82f353175143a:libimobiledevice-glue/.footprint
+f:6c6cfbd50451b6c166258c57e43cb6d4:libimobiledevice-glue/.signature
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:850e7f7c9838c0071953e25b12d623c8:gspell/Pkgfile
 f:c8f811ef2dddfcb8c540a79eeb3094aa:gspell/.footprint
