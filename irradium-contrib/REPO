@@ -360,7 +360,7 @@ f:9fc18c8eab771033b956b4a6c881beb4:hostapd/0001-hostapd-Add-the-missing-CONFIG_S
 f:94a2900808c2507fe87e224217eebb8f:hostapd/Pkgfile
 f:5cdcc7dea3af935216e1a35ab5f6c4b2:hostapd/config
 f:dd8a03baafdac0efcf198f4f2528c6da:hostapd/rc.hostapd
-f:54ada4682cd35a4354edff95798d352e:libimobiledevice-glue/Pkgfile
+f:be3366a4b57ecbcb901f6fccff7a48bc:libimobiledevice-glue/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:850e7f7c9838c0071953e25b12d623c8:gspell/Pkgfile
 f:c8f811ef2dddfcb8c540a79eeb3094aa:gspell/.footprint
