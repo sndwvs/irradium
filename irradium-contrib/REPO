@@ -254,7 +254,7 @@ f:b9de1a5cd217513a591c2e5399dcf346:openjdk20-jdk/.footprint
 f:f22546a659635eba23cb4561fd56cca5:openjdk20-jdk/.signature
 f:1f65962a27c3a47e72a9dc22180c2d81:openjdk20-jdk/Pkgfile
 f:d4dc701a1ed12696aec46fae3396c77e:openjdk20-jdk/openjdk20.sh
-f:588848e4d8c2e54685a04149928488d1:openvpn/Pkgfile
+f:aa4e2e500e8876dac308f913b2049b26:openvpn/Pkgfile
 f:6978f14ab88ed92240c18798e79102bd:openvpn/README
 f:2f135439cf6e9a6db466acf3d567b4c3:openvpn/rc.openvpn
 f:ddc8c17bfa1104a16754079f549f367c:p7zip/.footprint
