@@ -209,6 +209,8 @@ f:18c0d34abc89d5a6255c05279b4bd909:libgphoto2/Pkgfile
 f:13e543e3fac8536df124f7e61730a4e6:libgphoto2/pre-install
 f:4daf3dc2eab3245090300eda02c9ffd9:libimobiledevice/Pkgfile
 f:63e61c1376e1f20f7da0e01d1b873203:libimobiledevice/libplist-2.3.0.patch
+f:cb681475cb0703dfb59d925a2014b58d:libimobiledevice/.footprint
+f:2343cd39d8ae15c422794bcb2e58e468:libimobiledevice/.signature
 f:f2e879c27e067e80346f75fbffecde87:libmali-bifrost-g31-x11-gbm/.footprint
 f:8f1847ceed814828d4ac94e267d57351:libmali-bifrost-g31-x11-gbm/00-libmali.conf
 f:7c9619938a30fd84295d4103cdd90d77:libmali-bifrost-g31-x11-gbm/Pkgfile
