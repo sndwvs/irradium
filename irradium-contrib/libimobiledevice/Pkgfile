@@ -1,7 +1,7 @@
 # Description: Library that talks iPhone and iPod Touch protocols on Linux
 # URL: https://libimobiledevice.org
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: openssl libusbmuxd libplis python3 cython
+# Depends on: openssl libusbmuxd libplist python3 cython
 
 name=libimobiledevice
 version=1.3.0
