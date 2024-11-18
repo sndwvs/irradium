@@ -5,7 +5,7 @@
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wayland
 
 name=firefox
-version=132.0.1
+version=132.0.2
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -29,7 +29,7 @@ build() {
     exit 1
   fi
 
-  prt-get isinst sccache 2>/dev/null && export RUSTC_WRAPPER='/usr/bin/sccache'
+  prt-get isinst sccache >/dev/null && export RUSTC_WRAPPER='/usr/bin/sccache'
   mkdir -p "$PKGMK_SOURCE_DIR/rust"
   export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
 
@@ -80,7 +80,7 @@ EOF
   fi
 
   # unicode internationalization
-  prt-get isinst icu 2>/dev/null && \
+  prt-get isinst icu >/dev/null && \
     echo 'ac_add_options --with-system-icu' >> .mozconfig
 
   # audio
@@ -90,9 +90,9 @@ EOF
   [ -e /usr/lib/libsndio.so ] && PKGMK_FFAUDIO+=",sndio"
   echo "ac_add_options --enable-audio-backends=${PKGMK_FFAUDIO}" >> .mozconfig
 
-  if prt-get isinst wayland xorg-server 2>/dev/null ; then
+  if prt-get isinst wayland xorg-server >/dev/null ; then
     echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-x11-wayland' >> .mozconfig
-  elif prt-get isinst wayland 2>/dev/null ; then 
+  elif prt-get isinst wayland >/dev/null ; then 
     echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-wayland-only' >> .mozconfig
   else
     echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-x11-only' >> .mozconfig
@@ -111,7 +111,7 @@ EOF
   export CXXFLAGS="$CXXFLAGS -w"
   export LDFLAGS="$LDFLAGS -Wl,-rpath=/usr/lib/firefox,--enable-new-dtags"
 
-  if prt-get isinst lld 2>/dev/null; then
+  if prt-get isinst lld >/dev/null; then
       echo 'ac_add_options --enable-linker=lld' >> .mozconfig
       export LDFLAGS+=" -Wl,--thinlto-jobs=$((JOBS / 2))"
   else
