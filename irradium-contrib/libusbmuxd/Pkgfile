@@ -1,7 +1,7 @@
 # Description: USB Multiplex Daemon
 # URL: https://marcansoft.com/blog/iphonelinux/usbmuxd/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: libplist libusb automake autoconf libtool
+# Depends on: libplist libusb libimobiledevice-glue automake autoconf libtool
 
 name=libusbmuxd
 version=2.1.0
