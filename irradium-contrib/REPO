@@ -262,6 +262,8 @@ f:acb2317440847a4652ddb2db90874d11:p7zip/.signature
 f:2adec77d4711ef18507afebca3e7cbbf:p7zip/Pkgfile
 f:d044aacb1c513276ad985cd8ac10a563:pkcs11-helper/Pkgfile
 f:3106d55e7411563376abb99815096214:portmidi/Pkgfile
+f:85084bef258238667fc025e87f52277a:portmidi/.footprint
+f:b96b242bed13c7d2d90b5c9906cb5033:portmidi/.signature
 f:7205dcabd98f19367d77be3aae109b1a:portsmf/.footprint
 f:19d0cf83e777a98686074c86aaa66fb2:portsmf/.signature
 f:6cc4545a7d15bcdee1bed2f51fc95b3f:portsmf/Pkgfile
