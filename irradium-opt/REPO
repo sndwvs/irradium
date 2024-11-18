@@ -57,6 +57,8 @@ f:5db6190db9bd0114880d1295e86e5781:libart_lgpl/Pkgfile
 f:58263621cc2c46c26e4bb2aa56cde0c7:libart_lgpl/.footprint
 f:4a20a4462b31e81c055e8872e284e185:libart_lgpl/.signature
 f:61cd723d3066a3cad900b3d807e28ff6:libb2/Pkgfile
+f:7288769c14ee3209d4afa9ab8f0048a3:libb2/.footprint
+f:6fff0b1ec0df44eab04c437472fc2cb2:libb2/.signature
 f:d78ac2a48d7c1070195d16b22b4046bd:libgcrypt/.footprint
 f:6c57410cab9d14d6d9eb5f8f6a792462:libgcrypt/.signature
 f:bc3c270b504ff523915bb4e7f7487c4b:libgcrypt/Pkgfile
