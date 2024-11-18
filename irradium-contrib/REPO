@@ -182,6 +182,8 @@ f:c30faa2d7f1c7499fa37ee9add5f03c3:gvfs/Pkgfile
 f:f993576e16d96fa9e19dbcbf139d1b9b:gvfs/.footprint
 f:b143fe4050f01acff5bce9d49d5f8dd7:gvfs/.signature
 f:8d008c7ebc775f1823ba35c211c98e8c:jemalloc/Pkgfile
+f:101cfb4df1438f1dbd769025f2c83a3b:jemalloc/.footprint
+f:4d04130ae8400d629b507cb17223473a:jemalloc/.signature
 f:ada212fbb7e606e4f24c1800ee7c30de:libatasmart/Pkgfile
 f:b21ce0a849a6bf29fbea1787e9d15c24:libatasmart/.footprint
 f:c1c9a8f27fd554255f79eb5f77688908:libatasmart/.signature
