@@ -194,6 +194,8 @@ f:e360d5ec0c5b09c917b5cc7fe31c8214:libcdio/Pkgfile
 f:d45a467dbde7bf244c9777109a6afe52:libcdio/disable-broken-test.patch
 f:77a2a5bb7a9dca0bffee46eeca88e689:libcdio/format-security.patch
 f:5d7067b0661f91df5d4557c3a649fe51:libdispatch/Pkgfile
+f:9fe9d7ffb6b528962d781a93fa78c0ac:libdispatch/.footprint
+f:71e90b24015c908c30fc813f59702741:libdispatch/.signature
 f:af2722ef31645effea175dc173154d31:libglade/.footprint
 f:ed9083d1ddca59b2c0391a694868cf05:libglade/.signature
 f:b6da3affda799df3025fb4deacb31652:libglade/Pkgfile
