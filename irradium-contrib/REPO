@@ -193,6 +193,8 @@ f:bef48b648a86d17bad3adf0fbab8b238:libcddb/Pkgfile
 f:e360d5ec0c5b09c917b5cc7fe31c8214:libcdio/Pkgfile
 f:d45a467dbde7bf244c9777109a6afe52:libcdio/disable-broken-test.patch
 f:77a2a5bb7a9dca0bffee46eeca88e689:libcdio/format-security.patch
+f:61c939d69061b6fe72b6129432c6924f:libcdio/.footprint
+f:cb1747159c76bdb6dc44092be31ab7d4:libcdio/.signature
 f:5d7067b0661f91df5d4557c3a649fe51:libdispatch/Pkgfile
 f:9fe9d7ffb6b528962d781a93fa78c0ac:libdispatch/.footprint
 f:71e90b24015c908c30fc813f59702741:libdispatch/.signature
