@@ -54,6 +54,8 @@ f:1d0db30e954aa7f363e51341693201a6:harfbuzz/.footprint
 f:876ae2e6a9a72d608477de4da978ea75:harfbuzz/.signature
 f:02d5927e8f54fd9eba4ba213dbf5572e:harfbuzz/Pkgfile
 f:5db6190db9bd0114880d1295e86e5781:libart_lgpl/Pkgfile
+f:58263621cc2c46c26e4bb2aa56cde0c7:libart_lgpl/.footprint
+f:4a20a4462b31e81c055e8872e284e185:libart_lgpl/.signature
 f:61cd723d3066a3cad900b3d807e28ff6:libb2/Pkgfile
 f:d78ac2a48d7c1070195d16b22b4046bd:libgcrypt/.footprint
 f:6c57410cab9d14d6d9eb5f8f6a792462:libgcrypt/.signature

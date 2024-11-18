@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCTeGy9f7e63zKX8MG4i6O1EhYbL4xaWwzoTtqsNL2Vk0EcP2eCHWO2dTOlU2HC71GgonweTaDNZdcCXE9rH6tgU=
+SHA256 (Pkgfile) = ab139a6544e2d23b405a968896c4a63891587447d9e30931502b07ad5bc6a760
+SHA256 (.footprint) = cabf31be48dbc3972345dcd55a419e3265f64342464c8b9fd6e2b998bc371d35
+SHA256 (libart_lgpl-2.3.21.tar.bz2) = fdc11e74c10fc9ffe4188537e2b370c0abacca7d89021d4d303afdf7fd7476fa
