@@ -293,9 +293,9 @@ f:5ee1ede2ebe321245a17d2d2d75b5711:slang/Pkgfile
 f:52e302c05b583209854a61bfb6b0e62f:tcl/.footprint
 f:92bb7bb10f27c0d8e83962650036b2c6:tcl/.signature
 f:e4fc0be26b83b0c8b24bf609e1bdcd6e:tcl/Pkgfile
-f:5997c2bdb12022a80ed1a66da7198b30:telegram-desktop/.footprint
-f:284ae827faceb278cd53df23cbe499c0:telegram-desktop/.signature
+f:18e44e808be43db69e849bfc7bbc9fe2:telegram-desktop/.signature
 f:be1cf2f928cdf98f6fb1cd1eb6810aea:telegram-desktop/Pkgfile
+f:5997c2bdb12022a80ed1a66da7198b30:telegram-desktop/.footprint
 f:5a6869436a680dbd4333d18cf5ed8c13:tk/.footprint
 f:670bb032fcbae800dbc522eaa88a4d68:tk/.signature
 f:031803e77e6d0d6fcc5d9245ff972be7:tk/Pkgfile
