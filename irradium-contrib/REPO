@@ -207,6 +207,8 @@ f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:18c0d34abc89d5a6255c05279b4bd909:libgphoto2/Pkgfile
 f:13e543e3fac8536df124f7e61730a4e6:libgphoto2/pre-install
+f:9250d4b9bbf2400aed878505438379ea:libgphoto2/.footprint
+f:a27cc8a80aa33df35ba6f7652a5e9951:libgphoto2/.signature
 f:4daf3dc2eab3245090300eda02c9ffd9:libimobiledevice/Pkgfile
 f:63e61c1376e1f20f7da0e01d1b873203:libimobiledevice/libplist-2.3.0.patch
 f:cb681475cb0703dfb59d925a2014b58d:libimobiledevice/.footprint
