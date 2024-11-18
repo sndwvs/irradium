@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7hv1XBUc5KmjYOrSrEx296AQR06IE6VloyoEhRPlA+I7mBTt+77BpEVtmtAXWvd9jSAXp//w6GMH6DjpDgYE0Ao=
+SHA256 (Pkgfile) = eb8d8a0c3e0381e922b716303830507179521183b1555c33104f6e5f88bf8dd9
+SHA256 (.footprint) = 84e9356817de08feee0c4381148c581158c52eb45aa7cec51cb949186061f2ef
+SHA256 (libatasmart-0.19.tar.xz) = 61f0ea345f63d28ab2ff0dc352c22271661b66bf09642db3a4049ac9dbdb0f8d

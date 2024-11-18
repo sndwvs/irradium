@@ -183,6 +183,8 @@ f:f993576e16d96fa9e19dbcbf139d1b9b:gvfs/.footprint
 f:b143fe4050f01acff5bce9d49d5f8dd7:gvfs/.signature
 f:8d008c7ebc775f1823ba35c211c98e8c:jemalloc/Pkgfile
 f:ada212fbb7e606e4f24c1800ee7c30de:libatasmart/Pkgfile
+f:b21ce0a849a6bf29fbea1787e9d15c24:libatasmart/.footprint
+f:c1c9a8f27fd554255f79eb5f77688908:libatasmart/.signature
 f:f603e28d540c1c053f73b6d7a00e5bf6:libcanberra/.footprint
 f:0a78c70bbcd031f03495f19aa5f29fd1:libcanberra/.signature
 f:08babe5f17deae110d5fa163b55824bf:libcanberra/libcanberra-broadway-fix.patch
