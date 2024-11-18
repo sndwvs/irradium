@@ -261,6 +261,8 @@ f:ddc8c17bfa1104a16754079f549f367c:p7zip/.footprint
 f:acb2317440847a4652ddb2db90874d11:p7zip/.signature
 f:2adec77d4711ef18507afebca3e7cbbf:p7zip/Pkgfile
 f:d044aacb1c513276ad985cd8ac10a563:pkcs11-helper/Pkgfile
+f:761c48222384eb8b3431f73331a3e533:pkcs11-helper/.footprint
+f:cd5352dfa534bf431cb3d3ac2e413437:pkcs11-helper/.signature
 f:3106d55e7411563376abb99815096214:portmidi/Pkgfile
 f:85084bef258238667fc025e87f52277a:portmidi/.footprint
 f:b96b242bed13c7d2d90b5c9906cb5033:portmidi/.signature
