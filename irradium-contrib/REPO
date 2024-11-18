@@ -244,6 +244,8 @@ f:02f623c7e10ba79e8c9effe3bd3db890:librga/.signature
 f:7596de075e0ee7b81ce610dce48e4da3:librga/Pkgfile
 f:5c17cd23675c1df55aa910d451153ea1:libsbsms/Pkgfile
 f:e3a4548b0c2b27210a2b0f7a5ab74619:libusbmuxd/Pkgfile
+f:92c587bea002bb2ece8c3f97e1c092a0:libusbmuxd/.footprint
+f:b4f490e3cdfd914d7ecab8b0c061c542:libusbmuxd/.signature
 f:1b7e7d20633c75d507a5cf032a80544d:mpp/.footprint
 f:54dc9d28387671f56cc0c7b5a76d5bbd:mpp/.signature
 f:12d748765d32e8e3ea4505bff1f5421c:mpp/Pkgfile
