@@ -15,6 +15,9 @@ build() {
     NOCONFIGURE=1 ./autogen.sh
   fi
 
+  # autogen.sh does not generate PACKAGE_VERSION in configure, something seems wrong with git-version-gen
+  sed -i -e "s/PACKAGE_VERSION=''/PACKAGE_VERSION='$version'/" configure
+
   ./configure \
     --prefix=/usr \
     --disable-static \
