@@ -67,6 +67,7 @@ d:yt-dlp
 d:dhcp
 d:acme.sh
 d:hostapd
+d:libimobiledevice-glue
 d:gspell
 d:mkinitramfs
 d:ntp
@@ -206,7 +207,7 @@ f:1fd62a70a3b296c59be018c1e8d4b229:libglade-compat/config.guess-support-aarch64-
 f:4f879c0ce550004905aa0fb24f25c353:libglade-compat/libglade-2.0.1-nowarning.patch
 f:18c0d34abc89d5a6255c05279b4bd909:libgphoto2/Pkgfile
 f:13e543e3fac8536df124f7e61730a4e6:libgphoto2/pre-install
-f:b7a3f7e1bc27848af05071bb6b0ce52d:libimobiledevice/Pkgfile
+f:4daf3dc2eab3245090300eda02c9ffd9:libimobiledevice/Pkgfile
 f:63e61c1376e1f20f7da0e01d1b873203:libimobiledevice/libplist-2.3.0.patch
 f:f2e879c27e067e80346f75fbffecde87:libmali-bifrost-g31-x11-gbm/.footprint
 f:8f1847ceed814828d4ac94e267d57351:libmali-bifrost-g31-x11-gbm/00-libmali.conf
@@ -242,7 +243,7 @@ f:7b3ae4fbdd27165b5adb2956822eb63c:librga/.footprint
 f:02f623c7e10ba79e8c9effe3bd3db890:librga/.signature
 f:7596de075e0ee7b81ce610dce48e4da3:librga/Pkgfile
 f:5c17cd23675c1df55aa910d451153ea1:libsbsms/Pkgfile
-f:25ac1963c67f2ff35d03a065354e85c6:libusbmuxd/Pkgfile
+f:e3a4548b0c2b27210a2b0f7a5ab74619:libusbmuxd/Pkgfile
 f:1b7e7d20633c75d507a5cf032a80544d:mpp/.footprint
 f:54dc9d28387671f56cc0c7b5a76d5bbd:mpp/.signature
 f:12d748765d32e8e3ea4505bff1f5421c:mpp/Pkgfile
@@ -359,6 +360,7 @@ f:9fc18c8eab771033b956b4a6c881beb4:hostapd/0001-hostapd-Add-the-missing-CONFIG_S
 f:94a2900808c2507fe87e224217eebb8f:hostapd/Pkgfile
 f:5cdcc7dea3af935216e1a35ab5f6c4b2:hostapd/config
 f:dd8a03baafdac0efcf198f4f2528c6da:hostapd/rc.hostapd
+f:54ada4682cd35a4354edff95798d352e:libimobiledevice-glue/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:850e7f7c9838c0071953e25b12d623c8:gspell/Pkgfile
 f:c8f811ef2dddfcb8c540a79eeb3094aa:gspell/.footprint
