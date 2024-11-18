@@ -160,6 +160,8 @@ f:b12bf9ffeeb516dc7dd0f3c50dd1f3bc:geany/.footprint
 f:52f0c3f34ea09772683334b565b146b8:geany/.signature
 f:0b68eb63a6d2ffaf77ed0dd6279fa343:geany/Pkgfile
 f:6f13383fa77a7e9b5652ca213bf2eea1:geany-plugins/Pkgfile
+f:061e0dad6c80016187b1bd101ac5ee6f:geany-plugins/.footprint
+f:01ed2d541fb30ae333260b667cd26e22:geany-plugins/.signature
 f:026e4f0c29fb9a901487f616b02e850b:gn/.footprint
 f:f31063a7fa96119fe9ae603953705da2:gn/.signature
 f:f3a9f8d67bd216d7f56ed977c3394e54:gn/Pkgfile
