@@ -210,5 +210,5 @@ f:8f73ca979759b72b437390461b126962:bindutils/.footprint
 f:2ba9912e6fdbcb3f4af292cc19421ab5:bindutils/.signature
 f:ef9ad59f6ae6218692192f7443f92339:bindutils/Pkgfile
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
-f:77ca34b4ec403516a0dd2c923de2cb16:strace/.signature
+f:f46cf87908eddb2b00c56005b4839841:strace/.signature
 f:bfee23e70852d6608272e2b1e7e36a5f:strace/Pkgfile
