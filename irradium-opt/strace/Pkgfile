@@ -12,7 +12,8 @@ build() {
   cd $name-$version
 
   ./configure --prefix=/usr \
-  --build=$(uname -m)-unknown-linux-gnu
+    --enable-mpers=no \
+    --build=$(uname -m)-unknown-linux-gnu
   make -j ${JOBS:-1}
   make DESTDIR=$PKG install
 }
