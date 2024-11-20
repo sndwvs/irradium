@@ -177,7 +177,7 @@ f:5e9665180a03d425c58177893a659b38:libcap/psx-fix-SYS_getdents-as-SYS_getdents64
 f:4e1e8a61db6c9a19f9398eb1073d41e2:dcron/.footprint
 f:3596a4fa9cf63bdf130fd533ca7703d4:dcron/crontab
 f:d80b27b1b9532890136c14d30e2a0d2b:dcron/runjobs
-f:03066668cfd578fa2d8c8b78f1fd82fd:dcron/.signature
+f:4256e3496a9e8a11f6ebe47116dedba7:dcron/.signature
 f:c8d392946b3eb9308810dbda5af190c4:dcron/Pkgfile
 f:39a41f31b2ffff19b5bb936f490aa03c:dcron/crond
 f:0049730715f9841a1cd8f2721cb1bb1b:dcron/crontab.patch
