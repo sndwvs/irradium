@@ -96,9 +96,9 @@ f:8588e227a9e80787b8c4ed61b123a03a:lightdm-gtk-greeter/post-install
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:203950ca6860c9d7a478d61d9287de43:llvm/.footprint.aarch64
-f:58d01c3062585131d4b87945b56c3bcf:llvm/.footprint.riscv64
+f:203950ca6860c9d7a478d61d9287de43:llvm/.footprint.riscv64
 f:8cfe3b3055c61d3967d127e31f881856:llvm/.signature.aarch64
-f:eebb203869c05e23233b930a3337e212:llvm/.signature.riscv64
+f:92e13b1aebb61410cf5432742654b561:llvm/.signature.riscv64
 f:2ade5c34a782ffebf0537167dbd97c0f:llvm/Pkgfile
 f:5795622d92584bf4df9ddcfd8927142b:mc/.footprint
 f:c681bf1eecb69ee8bc410a147efba204:mc/.signature
