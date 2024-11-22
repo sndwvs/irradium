@@ -1,0 +1,93 @@
+--- a/net.iproute2	2024-11-22 23:08:11.979635930 +0200
++++ b/net.iproute2	2024-11-23 00:33:57.143486218 +0200
+@@ -1,42 +1,68 @@
+-#!/bin/sh
++#!/bin/bash
+ #
+ # /etc/rc.d/net: start/stop network interface
+ #
+ 
+-# Connection type: "DHCP" or "static"
+-TYPE="DHCP"
++DHCP_OPTS="-t 10"
+ 
+-# For "static" connections, specify your settings here:
+-# To see your available devices run "ip link".
+-DEV=enp11s0
+-ADDR=192.168.1.100
+-MASK=24
+-GW=192.168.1.1
++# If USE_DHCP[interface] is set to "yes", this overrides any other settings.
++# If you don't have an interface, leave the settings null ("").
+ 
+-# Optional settings:
+-DHCPOPTS="-t 10"
++# ----------------------------------------
++
++# ipv4 config options for eth0
++DEV[0]=""
++ADDR[0]=""
++MASK[0]=""
++USE_DHCP[0]=""
++
++# ipv4 config options for eth1
++DEV[1]=""
++ADDR[1]=""
++MASK[1]=""
++USE_DHCP[1]=""
++
++# ipv4 config options for eth2
++DEV[2]=""
++ADDR[2]=""
++MASK[2]=""
++USE_DHCP[2]=""
++
++# ipv4 default gateway ip address
++GW=""
++
++# ----------------------------------------
+ 
+ case $1 in
+ 	start)
+-		if [ "${TYPE}" = "DHCP" ]; then
+-			/sbin/dhcpcd ${DHCPOPTS}
+-		else
+-			/sbin/ip addr add ${ADDR}/${MASK} dev ${DEV} broadcast +
+-			/sbin/ip link set ${DEV} up
++		for i in ${!DEV[@]}; do
++			if [ "${USE_DHCP[$i]}" = "yes" ]; then
++				/sbin/dhcpcd ${DHCP_OPTS} ${DEV[$i]}
++			elif [ ! -z "${DEV[$i]}" ]; then
++				/sbin/ip addr add ${ADDR[$i]}/${MASK[$i]} dev ${DEV[$i]} broadcast +
++				/sbin/ip link set ${DEV[$i]} up
++			fi
++		done
++		if [ ! -z $GW ] ; then
+ 			/sbin/ip route add default via ${GW}
+ 		fi
+ 		;;
+ 	stop)
+-		if [ "${TYPE}" = "DHCP" ]; then
+-			/sbin/dhcpcd -x
+-		else
+-			/sbin/ip route del default
+-			/sbin/ip link set ${DEV} down
+-			/sbin/ip addr del ${ADDR}/${MASK} dev ${DEV}
++		if [ ! -z $GW ] ; then
++			echo /sbin/ip route del default
+ 		fi
++		for i in ${!DEV[@]}; do
++			if [ "${USE_DHCP[$i]}" = "yes" ]; then
++				/sbin/dhcpcd -k ${DEV[$i]}
++			elif [ ! -z "${DEV[$i]}" ]; then
++				/sbin/ip link set ${DEV[$i]} down
++				/sbin/ip addr del ${ADDR[$i]}/${MASK[$i]} dev ${DEV[$i]}
++			fi
++		done
+ 		;;
+ 	restart)
+ 		$0 stop
++		sleep 1
+ 		$0 start
+ 		;;
+ 	*)

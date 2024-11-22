@@ -22,6 +22,7 @@ d:bash
 d:libcap
 d:dcron
 d:dcron/patches
+d:iproute2
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
@@ -188,3 +189,9 @@ f:0c2dda016e37ae8b340b77601e99e8c2:dcron/patches/0007-Update-main.c.patch
 f:60ccc2d785edcbfaa0b5dcbda5b9ebea:dcron/patches/crontab.c.O_EXCL.diff
 f:be5b691209713c43c1218124b1433a5e:dcron/patches/defs.h.TMPDIR.diff
 f:3e503f313be283328dfe2a608af8b069:dcron/crond.patch
+f:0b2b126b869fe1ebb439c753920f48f6:iproute2/.footprint
+f:7b469125cfe2d9916ba03f7c65b9dcd5:iproute2/lo.iproute2
+f:efc59841720a25290b5ce7c597dd9f54:iproute2/net.iproute2
+f:8c3ae11e7a268037e34964e47e7b3e7d:iproute2/.signature
+f:7d37a9a447ea7afe8d2af04576361fa6:iproute2/Pkgfile
+f:e3e0328d21754f1b828a8ff83b448f9c:iproute2/irradium-net.iproute2.patch
