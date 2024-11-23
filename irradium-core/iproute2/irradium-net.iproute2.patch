@@ -57,7 +57,7 @@
 +		for i in ${!DEV[@]}; do
 +			if [ "${USE_DHCP[$i]}" = "yes" ]; then
 +				/sbin/dhcpcd ${DHCP_OPTS} ${DEV[$i]}
-+			elif [ ! -z "${DEV[$i]}" ]; then
++			elif [ ! -z "${DEV[$i]}" -a ! -z "${ADDR[$i]}" -a ! -z "${MASK[$i]}"]; then
 +				/sbin/ip addr add ${ADDR[$i]}/${MASK[$i]} dev ${DEV[$i]} broadcast +
 +				/sbin/ip link set ${DEV[$i]} up
 +			fi
@@ -79,7 +79,7 @@
 +		for i in ${!DEV[@]}; do
 +			if [ "${USE_DHCP[$i]}" = "yes" ]; then
 +				/sbin/dhcpcd -k ${DEV[$i]}
-+			elif [ ! -z "${DEV[$i]}" ]; then
++			elif [ ! -z "${DEV[$i]}" -a ! -z "${ADDR[$i]}" -a ! -z "${MASK[$i]}"]; then
 +				/sbin/ip link set ${DEV[$i]} down
 +				/sbin/ip addr del ${ADDR[$i]}/${MASK[$i]} dev ${DEV[$i]}
 +			fi
