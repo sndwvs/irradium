@@ -38,7 +38,7 @@
 +		for i in ${!DEV[@]}; do
 +			if [ "${USE_DHCP[$i]}" = "yes" ]; then
 +				/sbin/dhcpcd ${DHCP_OPTS} ${DEV[$i]}
-+			elif [ ! -z "${DEV[$i]}" -a ! -z "${ADDR[$i]}" -a ! -z "${MASK[$i]}"]; then
++			elif [ ! -z "${DEV[$i]}" -a ! -z "${ADDR[$i]}" -a ! -z "${MASK[$i]}" ]; then
 +				/sbin/ip addr add ${ADDR[$i]}/${MASK[$i]} dev ${DEV[$i]} broadcast +
 +				/sbin/ip link set ${DEV[$i]} up
 +			fi
@@ -55,7 +55,7 @@
 +		for i in ${!DEV[@]}; do
 +			if [ "${USE_DHCP[$i]}" = "yes" ]; then
 +				/sbin/dhcpcd -k ${DEV[$i]}
-+			elif [ ! -z "${DEV[$i]}" -a ! -z "${ADDR[$i]}" -a ! -z "${MASK[$i]}"]; then
++			elif [ ! -z "${DEV[$i]}" -a ! -z "${ADDR[$i]}" -a ! -z "${MASK[$i]}" ]; then
 +				/sbin/ip link set ${DEV[$i]} down
 +				/sbin/ip addr del ${ADDR[$i]}/${MASK[$i]} dev ${DEV[$i]}
 +			fi
@@ -73,7 +73,7 @@
  		/etc/rc.d/wpa_supplicant status
 -		/etc/rc.d/dhcpcd status
 +		for i in ${!DEV[@]}; do
-+			if [[ ! -z ${DEV[$i]} ]]; then
++			if [ ! -z ${DEV[$i]} ]; then
 +				PID=$(pgrep -a dhcpcd | grep ${DEV[$i]} | cut -d ' ' -f1)
 +				if [[ -z ${PID} ]]; then
 +					echo "dhcpcd is not running"
