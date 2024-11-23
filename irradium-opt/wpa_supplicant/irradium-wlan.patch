@@ -1,0 +1,61 @@
+--- a/wlan	2024-11-23 00:58:54.500303331 +0200
++++ b/wlan	2024-11-23 02:09:48.174064057 +0200
+@@ -1,24 +1,53 @@
+-#!/bin/sh
++#!/bin/bash
+ #
+ # /etc/rc.d/wlan: start/stop wireless interface
+ #
+ 
++DHCP_OPTS="-t 10"
++
++# If you don't have an interface, leave the settings null ("").
++
++# ----------------------------------------
++
++# ipv4 config options for wlan0
++DEV[0]=""
++
++# ipv4 config options for wlan1
++DEV[1]=""
++
++# ----------------------------------------
++
+ case $1 in
+ 	start)
+ 		/etc/rc.d/wpa_supplicant start
+-		/etc/rc.d/dhcpcd start
++		for i in ${!DEV[@]}; do
++			/sbin/dhcpcd ${DHCP_OPTS} ${DEV[$i]}
++		done
+ 		;;
+ 	stop)
+-		/etc/rc.d/dhcpcd stop
++		for i in ${!DEV[@]}; do
++			/sbin/dhcpcd -k ${DEV[$i]}
++		done
+ 		/etc/rc.d/wpa_supplicant stop
+ 		;;
+ 	restart)
+ 		/etc/rc.d/wpa_supplicant restart
+-		/etc/rc.d/dhcpcd restart
++		$0 stop
++		sleep 1
++		$0 start
+ 		;;
+ 	status)
+ 		/etc/rc.d/wpa_supplicant status
+-		/etc/rc.d/dhcpcd status
++		for i in ${!DEV[@]}; do
++			if [[ ! -z ${DEV[$i]} ]]; then
++				PID=$(pgrep -a dhcpcd | grep ${DEV[$i]} | cut -d ' ' -f1)
++				if [[ -z ${PID} ]]; then
++					echo "dhcpcd is not running"
++				else
++					echo "dhcpcd is running with pid $PID"
++				fi
++			fi
++		done
+ 		;;
+ 	*)
+ 		echo "Usage: $0 [start|stop|restart|status]"

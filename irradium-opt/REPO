@@ -34,6 +34,7 @@ d:aspell
 d:liburcu
 d:bindutils
 d:strace
+d:wpa_supplicant
 f:0072413ad564c8a82da0058e41ddce6b:cryptsetup/.footprint
 f:9874ea339796e7a32fe2f840e00b8481:cryptsetup/.signature
 f:921069ba04b101174ab92b95734262e8:cryptsetup/Pkgfile
@@ -212,3 +213,10 @@ f:ef9ad59f6ae6218692192f7443f92339:bindutils/Pkgfile
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
 f:f46cf87908eddb2b00c56005b4839841:strace/.signature
 f:bfee23e70852d6608272e2b1e7e36a5f:strace/Pkgfile
+f:f63c7f588bcc7afaf59e500464b7ccdb:wpa_supplicant/.footprint
+f:94eda9e510358f6fc9e6033048cc05de:wpa_supplicant/README
+f:a804f8c2828b929446a928d02be98018:wpa_supplicant/wlan
+f:5b505ff68474564b9eb44b04445ba730:wpa_supplicant/wpa_supplicant
+f:813c203e992e0285c00627c14f806851:wpa_supplicant/.signature
+f:d3dfd9ae40a4612a12014d4dbea349e3:wpa_supplicant/Pkgfile
+f:234b847b3232d5a553aa8c32765c0e2c:wpa_supplicant/irradium-wlan.patch
