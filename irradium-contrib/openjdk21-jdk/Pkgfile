@@ -27,8 +27,8 @@ build() {
   export JAVA_HOME=$SRC/jdk-${_boot_ver}
   export PATH=$JAVA_HOME/bin:$OLD_PATH
 
-  export EXTRA_CPP_FLAGS="$CXXFLAGS -fcommon"
-  export EXTRA_CFLAGS="$CFLAGS -fcommon"
+  export EXTRA_CPP_FLAGS="${CXXFLAGS/-fexceptions/} -fcommon"
+  export EXTRA_CFLAGS="${CFLAGS/-fexceptions/} -fcommon"
   unset CFLAGS
   unset CXXFLAGS
   unset LDFLAGS
