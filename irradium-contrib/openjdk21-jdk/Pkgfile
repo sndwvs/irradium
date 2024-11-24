@@ -24,7 +24,7 @@ build() {
   patch -p1 -d $SRC/jdk${version::2}u-jdk-${version/+/-} -i $SRC/system-public-suffix.patch
 
   OLD_PATH=$PATH
-  export JAVA_HOME=$SRC/openjdk-${_boot_ver}
+  export JAVA_HOME=$SRC/jdk-${_boot_ver}
   export PATH=$JAVA_HOME/bin:$OLD_PATH
 
   export EXTRA_CPP_FLAGS="$CXXFLAGS -fcommon"
