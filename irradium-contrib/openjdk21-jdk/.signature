@@ -1,0 +1,8 @@
+untrusted comment: verify with /etc/ports/contrib.pub
+RWSagIOpLGJF30uKw6zOf0kkMNeNOJYQO25lVTti4QP64+JL+pF3vzlQa6RZHm90cGRimx9asWsg5By94LZD/9b8u4/7C6McoQ8=
+SHA256 (Pkgfile) = a7e5d2144c7f296e9ea482d04d1511bf5f37d3c5c3b704d53963aa169ec82b2f
+SHA256 (.footprint) = c256043646f359346fdcff955ee541a86c4f42483be843bf45bd1c493199482d
+SHA256 (jdk-21.0.6+1.tar.gz) = 8b710ba4544f2b4fa0448ab2e913e96faafed15b0ab0b87f87de598341d3c41a
+SHA256 (openjdk20-boot-20.0.2+9-20241103.tar.xz) = b668a9be453b9d8f9912793eeda45b75fcd2c345904ef8ea3345fcb235293cae
+SHA256 (java_cacerts-20210916) = 983d71ae2fa404f102fbb7a02e48a56a96459f0d7473026daceef1219045f9de
+SHA256 (system-public-suffix.patch) = 8e09bd5d4df78080f1ea7f23e98e4aa6d639eab04d4357c70681b888055e43dd

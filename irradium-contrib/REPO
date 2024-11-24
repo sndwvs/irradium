@@ -41,7 +41,6 @@ d:libsbsms
 d:libusbmuxd
 d:mpp
 d:mpv
-d:openjdk20-jdk
 d:openvpn
 d:p7zip
 d:pkcs11-helper
@@ -75,6 +74,7 @@ d:sshpass
 d:rxvt-unicode
 d:rkdeveloptool
 d:tg_owt
+d:openjdk21-jdk
 d:pkgtools
 d:crosstool-ng
 d:libe-book
@@ -274,10 +274,6 @@ f:2afb336186c3466ee6604e8c9d55b635:mpv/README
 f:817c5b12c6eeb2155b0f0b24b2688448:mpv/.footprint
 f:ef48b475fe2fcca36e9f910c5ed86687:mpv/.signature
 f:50e7f4e9c06067bd3434ea1797f7fdbd:mpv/Pkgfile
-f:b9de1a5cd217513a591c2e5399dcf346:openjdk20-jdk/.footprint
-f:f22546a659635eba23cb4561fd56cca5:openjdk20-jdk/.signature
-f:1f65962a27c3a47e72a9dc22180c2d81:openjdk20-jdk/Pkgfile
-f:d4dc701a1ed12696aec46fae3396c77e:openjdk20-jdk/openjdk20.sh
 f:aa4e2e500e8876dac308f913b2049b26:openvpn/Pkgfile
 f:6978f14ab88ed92240c18798e79102bd:openvpn/README
 f:2f135439cf6e9a6db466acf3d567b4c3:openvpn/rc.openvpn
@@ -425,6 +421,11 @@ f:b2d5e1a6ce4327c3697c8aa3d0e5586f:tg_owt/.footprint
 f:85b284948e6e28f806097650eafee6e2:tg_owt/.signature
 f:dc3f374bc3541756e2ee45a048d32f83:tg_owt/Pkgfile
 f:9a947d675b43afb182983f8786a05ef6:tg_owt/ffmpeg7.patch
+f:c32dfa14c127c38df830997adc54c51d:openjdk21-jdk/.footprint
+f:b6854ab2ca6718286febb74521f6d3ef:openjdk21-jdk/.signature
+f:4ecedb1e8159127d8f23b423d0fe4322:openjdk21-jdk/Pkgfile
+f:e5c61962170617fc8e681ae0018acabb:openjdk21-jdk/system-public-suffix.patch
+f:f0cf6fc36c48e14c52f25e9b432e9a7e:openjdk21-jdk/openjdk21.sh
 f:c3d31fc159c031b509e3b70466661896:pkgtools/.footprint
 f:c87e34bbbedfc0c6540be5f39e7179cd:pkgtools/.signature
 f:3129b1af7f0f5fb986dfdafc3507dace:pkgtools/Pkgfile
