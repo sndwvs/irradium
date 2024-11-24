@@ -7,11 +7,10 @@
 name=openjdk21-jdk
 version=21.0.6+1
 release=1
-_boot_ver=20.0.2+9
-_boot_date=20241103
+_boot_ver=21.0.2
 _cert_ver=20210916
 source=(https://github.com/openjdk/jdk${version::2}u/archive/refs/tags/jdk-$version.tar.gz
-        https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-21.0.2_linux-aarch64_bin.tar.gz
+        https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-${_boot_ver}_linux-aarch64_bin.tar.gz
         https://git.crux.nu/tb/java-distfiles/media/branch/master/distfiles/java_cacerts-${_cert_ver}
         system-public-suffix.patch
         openjdk${version::2}.sh)
@@ -25,7 +24,7 @@ build() {
   patch -p1 -d $SRC/jdk${version::2}u-jdk-${version/+/-} -i $SRC/system-public-suffix.patch
 
   OLD_PATH=$PATH
-  export JAVA_HOME=$SRC/openjdk${_boot_ver::2}-boot
+  export JAVA_HOME=$SRC/openjdk${_boot_ver}
   export PATH=$JAVA_HOME/bin:$OLD_PATH
 
   export EXTRA_CPP_FLAGS="$CXXFLAGS -fcommon"
