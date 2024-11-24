@@ -423,9 +423,10 @@ f:dc3f374bc3541756e2ee45a048d32f83:tg_owt/Pkgfile
 f:9a947d675b43afb182983f8786a05ef6:tg_owt/ffmpeg7.patch
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint
 f:a98273dc7b4b2b2bdd7c2ad134cc1d4a:openjdk21-jdk/.signature
-f:b5ad99ff7ee9453e589374832b816e07:openjdk21-jdk/Pkgfile
+f:b17925d3395b0bc8842a4f3d7abf9d42:openjdk21-jdk/Pkgfile
 f:e5c61962170617fc8e681ae0018acabb:openjdk21-jdk/system-public-suffix.patch
 f:f0cf6fc36c48e14c52f25e9b432e9a7e:openjdk21-jdk/openjdk21.sh
+f:2a6ff80dd8d3fce7338894ed769747a6:openjdk21-jdk/riscv64.patch
 f:c3d31fc159c031b509e3b70466661896:pkgtools/.footprint
 f:c87e34bbbedfc0c6540be5f39e7179cd:pkgtools/.signature
 f:3129b1af7f0f5fb986dfdafc3507dace:pkgtools/Pkgfile
