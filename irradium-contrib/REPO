@@ -421,8 +421,8 @@ f:b2d5e1a6ce4327c3697c8aa3d0e5586f:tg_owt/.footprint
 f:85b284948e6e28f806097650eafee6e2:tg_owt/.signature
 f:dc3f374bc3541756e2ee45a048d32f83:tg_owt/Pkgfile
 f:9a947d675b43afb182983f8786a05ef6:tg_owt/ffmpeg7.patch
-f:c32dfa14c127c38df830997adc54c51d:openjdk21-jdk/.footprint
-f:b6854ab2ca6718286febb74521f6d3ef:openjdk21-jdk/.signature
+f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint
+f:a98273dc7b4b2b2bdd7c2ad134cc1d4a:openjdk21-jdk/.signature
 f:b5ad99ff7ee9453e589374832b816e07:openjdk21-jdk/Pkgfile
 f:e5c61962170617fc8e681ae0018acabb:openjdk21-jdk/system-public-suffix.patch
 f:f0cf6fc36c48e14c52f25e9b432e9a7e:openjdk21-jdk/openjdk21.sh

@@ -1,4 +1,6 @@
 drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/profile.d/
+-rwxr-xr-x	root/root	etc/profile.d/openjdk21.sh
 drwxr-xr-x	root/root	etc/revdep.d/
 -rw-r--r--	root/root	etc/revdep.d/openjdk21-jdk
 drwxr-xr-x	root/root	usr/
@@ -167,7 +169,6 @@ drwxr-xr-x	root/root	usr/lib/java/openjdk21-jdk/lib/jfr/
 -rw-r--r--	root/root	usr/lib/java/openjdk21-jdk/lib/libjli.so
 -rw-r--r--	root/root	usr/lib/java/openjdk21-jdk/lib/libjsig.so
 -rw-r--r--	root/root	usr/lib/java/openjdk21-jdk/lib/libjsound.so
--rw-r--r--	root/root	usr/lib/java/openjdk21-jdk/lib/libjsvml.so
 -rw-r--r--	root/root	usr/lib/java/openjdk21-jdk/lib/liblcms.so
 -rw-r--r--	root/root	usr/lib/java/openjdk21-jdk/lib/lible.so
 -rw-r--r--	root/root	usr/lib/java/openjdk21-jdk/lib/libmanagement.so
