@@ -5,7 +5,7 @@
 
 name=iproute2
 version=6.12.0
-release=4
+release=5
 source=(https://www.kernel.org/pub/linux/utils/net/$name/$name-$version.tar.xz
 	lo.iproute2 net.iproute2
 	irradium-net.iproute2.patch)

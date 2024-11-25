@@ -9,7 +9,7 @@
  
 -# Connection type: "DHCP" or "static"
 -TYPE="DHCP"
-+DHCP_OPTS="-t 10"
++DHCP_OPTS="-t 10 -b"
  
 -# For "static" connections, specify your settings here:
 -# To see your available devices run "ip link".
