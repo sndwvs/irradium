@@ -7,7 +7,7 @@
  # /etc/rc.d/wlan: start/stop wireless interface
  #
  
-+DHCP_OPTS="-t 10"
++DHCP_OPTS="-t 10 -b"
 +
 +# If USE_DHCP[interface] is set to "yes", this overrides any other settings.
 +# If you don't have an interface, leave the settings null ("").
