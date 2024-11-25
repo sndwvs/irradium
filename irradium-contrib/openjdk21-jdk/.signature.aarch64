@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7rCWqgqm9vUn6K2r3MDhEDHFFyDHoCvvmMU7Us5fDN/2mY0EEn/IJqnfxOW8LTG/8VV3Bu+DGghBt+J5GL2qTQo=
+RWTmT3d9kqan7iprIDN3kMMR23omFf75OW6DHbmV1SzevSzxla+PnjkromgweCqHeJja+sceMV0GmxBSsuPRXv8oc+X9mMDxaQY=
 SHA256 (Pkgfile) = 00a060c665ab70c63c5133d9b8632ee239e65636c1e8e2cb431e48ecb073781f
-SHA256 (.footprint) = 2b2bc4a95bb06a13d7d78aec1d81d2ae4c7235533911bfc6bb371f6c7628a21f
+SHA256 (.footprint.aarch64) = 2b2bc4a95bb06a13d7d78aec1d81d2ae4c7235533911bfc6bb371f6c7628a21f
 SHA256 (jdk-21.0.6+1.tar.gz) = 8b710ba4544f2b4fa0448ab2e913e96faafed15b0ab0b87f87de598341d3c41a
 SHA256 (OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.5_11.tar.gz) = 6482639ed9fd22aa2e704cc366848b1b3e1586d2bf1213869c43e80bca58fe5c
 SHA256 (java_cacerts-20210916) = 983d71ae2fa404f102fbb7a02e48a56a96459f0d7473026daceef1219045f9de

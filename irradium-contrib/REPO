@@ -426,9 +426,9 @@ f:e5c61962170617fc8e681ae0018acabb:openjdk21-jdk/system-public-suffix.patch
 f:f0cf6fc36c48e14c52f25e9b432e9a7e:openjdk21-jdk/openjdk21.sh
 f:2a6ff80dd8d3fce7338894ed769747a6:openjdk21-jdk/riscv64.patch
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.aarch64
-f:04dbea838ee9ca2173079a845ddb96f3:openjdk21-jdk/.signature.aarch64
+f:a3badf68bbbd5853d277fdd528da0369:openjdk21-jdk/.signature.aarch64
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.riscv64
-f:daa904f3ec8206cde3f0fdc8277d5758:openjdk21-jdk/.signature.riscv64
+f:8544b6a1634f3fb48e942187145662df:openjdk21-jdk/.signature.riscv64
 f:c3d31fc159c031b509e3b70466661896:pkgtools/.footprint
 f:c87e34bbbedfc0c6540be5f39e7179cd:pkgtools/.signature
 f:3129b1af7f0f5fb986dfdafc3507dace:pkgtools/Pkgfile
