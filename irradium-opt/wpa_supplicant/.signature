@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCXAqWAlUQ55Kifp2YNfPvJOYoVmUoEaSj2EkK8XjdSPVboqcOqSmM0WbMHFUAuXq4hBRge5SoKBxBRW53kg6JQQ=
-SHA256 (Pkgfile) = ae1fc777d188919061a86facc6b2e1fbfe22f212c113174a9c8bc4467f86e42d
+RWRxRnTWECCiCdknz+CUHk+qAen/MpCOSGV7EFwKrXC2fBMls/0XQ5gdBjIAZKkM9ft/Yfb6/UR5dZRX+h5Yhcahbt/OfdSieA0=
+SHA256 (Pkgfile) = 60012b8b21b0de4da896f40cdb15f7ffbeb180197294748756cfd9647d0a7ff3
 SHA256 (.footprint) = c601da7d8f0118f98fe747611466a530d48519832c8aba47db01df055d64f869
 SHA256 (wpa_supplicant-2.11.tar.gz) = 912ea06f74e30a8e36fbb68064d6cdff218d8d591db0fc5d75dee6c81ac7fc0a
 SHA256 (wpa_supplicant) = 5257d99555bb189f6e509c1779ffe85447de77f0bcd5f14495892cb53a0167f2
 SHA256 (wlan) = c025ad557806d86ef231770c8a77a02a0194d92d89b5fb16bec036eddbc5d308
-SHA256 (irradium-wlan.patch) = 92872ba589414cfc04088a55291dd9caa63d5891be898ce1250f07f04f4f85fa
+SHA256 (irradium-wlan.patch) = f437528057e787b8c9661f06bab47c4cce20ee14484d1e35c42e74bf1b1b9320
