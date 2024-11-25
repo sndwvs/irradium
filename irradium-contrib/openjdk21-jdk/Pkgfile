@@ -5,8 +5,8 @@
 # Optional: publicsuffix-list
 
 name=openjdk21-jdk
-version=21.0.6+1
-release=2
+version=21.0.6+4
+release=1
 _boot_ver=21.0.5_11
 _cert_ver=20210916
 source=(https://github.com/openjdk/jdk${version::2}u/archive/refs/tags/jdk-$version.tar.gz
