@@ -147,7 +147,7 @@ f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:882f7c59c3d02c797107f3b75eec4b11:rust/.footprint.aarch64
 f:d6c46f796526df3e7ea7100a486bf7b0:rust/.signature.aarch64
 f:e91af3c4d1548639022266a675947c98:rust/Pkgfile
-f:f10070cb079ca6d2b8a7804a09360929:rust/riscv64-disable-f16-f128.patch
+f:fea42592545ee5f4e5f0c7149f7a9a37:rust/riscv64-disable-f16-f128.patch
 f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 f:3a302fda034a6cc7b1482250824b97f2:rust/0001-bootstrap-Change-libexec-dir.patch
 f:01956b9d425973216f86a808784d82a6:rust/0002-bootstrap-Change-bash-completion-dir.patch
