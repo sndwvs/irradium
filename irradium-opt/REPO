@@ -144,8 +144,8 @@ f:26d7c059e5528d47ee0f77a8c33bf19a:qt6-base/0029-accept-only-cf_hdrop-as-uri-lis
 f:6abb68ccc7c60446b10d730ee66a738d:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
-f:882f7c59c3d02c797107f3b75eec4b11:rust/.footprint.aarch64
-f:d6c46f796526df3e7ea7100a486bf7b0:rust/.signature.aarch64
+f:da0e15fe04a39cee2e8b7cd36783820e:rust/.footprint.aarch64
+f:0d5142ef6ed7045ea5fa025e4dba8e26:rust/.signature.aarch64
 f:e91af3c4d1548639022266a675947c98:rust/Pkgfile
 f:fea42592545ee5f4e5f0c7149f7a9a37:rust/riscv64-disable-f16-f128.patch
 f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
