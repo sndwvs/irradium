@@ -5,9 +5,9 @@
 # Optional: ccache clang libgit2 lld polly sccache
 
 name=rust
-version=1.82.0
-_date=2024-09-05
-_rustc=1.81.0
+version=1.83.0
+_date=2024-10-17
+_rustc=1.82.0
 _cargo=$_rustc
 release=1
 
@@ -87,11 +87,13 @@ build() {
 	patch -Np1 -i $SRC/riscv64-disable-f16-f128.patch
 
 cat <<- EOF > $SRC/config.toml
-	change-id = 129295
+	profile = "dist"
+	change-id = 131075
 
 	[llvm]
 	ninja = true
 	link-shared = true
+	download-ci-llvm = false
 	@POLLY@
 	@CCACHE@
 
@@ -107,13 +109,12 @@ cat <<- EOF > $SRC/config.toml
 	debuginfo-level = 1
 	debuginfo-level-std = 2
 	codegen-tests = false
-	# backtrace-on-ice = true
-	# remap-debuginfo = true
-	# jemalloc = false
+	backtrace-on-ice = true
+	jemalloc = true
+	remap-debuginfo = false
 
 	description = "irradium"
-	channel = "stable"
-	parallel-compiler = true
+	parallel-compiler = false
 	rpath = false
 	frame-pointers = true
 	deny-warnings = false
