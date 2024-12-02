@@ -2,7 +2,7 @@
 
 GIT_URL_CRUX="https://git.crux.nu/ports"
 GIT_URL_IRRADIUM="https://gitlab.com/sndwvs"
-DISTR_VERSIONS=("3.7")
+DISTR_VERSIONS=("3.7" "3.8")
 
 #CRUX_UPDATE_GIT_REPO=${CRUX_UPDATE_GIT_REPO:-"yes"}
 WORK_DIR=$(mktemp -d)
@@ -41,6 +41,9 @@ get_package_release() {
 git_download() {
     local url="$1"
     local port="$2"
+    if [[ -d ${WORK_DIR}/${port} ]]; then
+        rm -rf ${WORK_DIR}/${port}
+    fi
     echo "download port: $port"
     git clone -q ${url}/${port}.git ${WORK_DIR}/${port}
 }
@@ -66,6 +69,8 @@ cleaning() {
 
 check_repos() {
     local distr_version="$1"
+
+    echo "distribution version: $distr_version"
 
     # get irradium repository
     git_download ${GIT_URL_IRRADIUM} "irradium"
