@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGMIXWn8tfach7kCnNUbaehdi9N+h5g5DH8ks4LjnHK3fTndnSrmmxFZqwKD1Txwf5Jwv/2JaRoio74hT3grBBQY=
-SHA256 (Pkgfile) = 0fc2ffd72dad29b278938472e58a5a7d76ec08421b3daeef1552331f98b018e9
-SHA256 (.footprint) = 4766337154c20857b53b317aec2785c958b3aeeacc9e3693405418414e72212a
-SHA256 (libcap-2.72.tar.xz) = 0274f5a15a5205f656d8f0169eef711dd29158ba8ad3b240618b342b2460175b
-SHA256 (psx-fix-SYS_getdents-as-SYS_getdents64.patch) = 487f90f8b1a4cc420611cadf6ebf8fef477ace0ec10085a8f22f8916a0fc8e20
