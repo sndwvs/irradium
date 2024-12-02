@@ -1,16 +1,16 @@
---- a/crond	2024-11-17 14:11:31.861823364 +0200
-+++ b/crond	2024-11-17 14:13:46.285394831 +0200
-@@ -5,10 +5,12 @@
- 
+--- a/crond	2024-12-02 17:36:53.122212965 +0200
++++ b/crond	2024-12-02 17:37:43.699430049 +0200
+@@ -6,10 +6,12 @@
  SSD=/sbin/start-stop-daemon
  PROG=/usr/sbin/crond
--OPTS="-S -l info"
-+OPTS="-S -l notice"
+ PIDFILE=/run/crond.pid
+-OPTS="-S -l info -p ${PIDFILE}"
++OPTS="-S -l notice -p ${PIDFILE}"
  
  case $1 in
  start)
-+	mkdir -p /run/cron
-+	chmod 1777 /run/cron
- 	$SSD --start --exec $PROG -- $OPTS
- 	;;
++    mkdir -p /run/cron
++    chmod 1777 /run/cron
+     $SSD --start --exec $PROG -- $OPTS
+     ;;
  stop)

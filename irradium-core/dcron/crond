@@ -5,31 +5,32 @@
 
 SSD=/sbin/start-stop-daemon
 PROG=/usr/sbin/crond
-OPTS="-S -l info"
+PIDFILE=/run/crond.pid
+OPTS="-S -l info -p ${PIDFILE}"
 
 case $1 in
 start)
-	$SSD --start --exec $PROG -- $OPTS
-	;;
+    $SSD --start --exec $PROG -- $OPTS
+    ;;
 stop)
-	$SSD --stop --retry 10 --exec $PROG
-	;;
+    $SSD --stop --retry 10 --exec $PROG
+    ;;
 restart)
-	$0 stop
-	$0 start
-	;;
+    $0 stop
+    $0 start
+    ;;
 status)
-	$SSD --status --exec $PROG
-	case $? in
-	0) echo "$PROG is running with pid $(pidof $PROG)" ;;
-	1) echo "$PROG is not running but the pid file $PID exists" ;;
-	3) echo "$PROG is not running" ;;
-	4) echo "Unable to determine the program status" ;;
-	esac
-	;;
+    $SSD --status --exec $PROG
+    case $? in
+    0) echo "$PROG is running with pid $(cat ${PIDFILE})" ;;
+    1) echo "$PROG is not running but the pid file $PID exists" ;;
+    3) echo "$PROG is not running" ;;
+    4) echo "Unable to determine the program status" ;;
+    esac
+    ;;
 *)
-	echo "usage: $0 [start|stop|restart|status]"
-	;;
+    echo "usage: $0 [start|stop|restart|status]"
+    ;;
 esac
 
 # End of file
