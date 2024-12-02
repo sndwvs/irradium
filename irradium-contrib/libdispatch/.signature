@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7hUXzUSxYT67k0g3vzCSuG7lxn6jsAOfkSTEOUSJtaysJDR1H4vieZ+B5ktuQ9LzpjxYprtmQlFOKEVNNXCQKgo=
+SHA256 (Pkgfile) = a640d111f408d9d477713238bc961f1c4e6da06227618b8e36c9a46a206b6cc0
+SHA256 (.footprint) = b71c22b91f41313aa5e8ced9cd9573d368694f99e7c76b9cdb0f921694b7d8b5
+SHA256 (swift-5.5-RELEASE.tar.gz) = 5efdfa1d2897c598acea42fc00776477bb3713645686774f5ff0818b26649e62

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7o4kmgf57GRPgPLPMN55xHyUfPZ0fdeTeKbnLU4+F1CFwoPdUHjV9RWqCoiLhL/BfFrUKJmvYhPBKMjqOMe/CQo=
+SHA256 (Pkgfile) = b4334e596f07b45214fe00dbd485128b5cee56a3e283fff4e301fa7f2ad9f15b
+SHA256 (.footprint) = a30bf913764065eaf99296d1fbd6c7ccb81e0f8adfb08f215ab063aac2491c9d
+SHA256 (gvfs-1.56.1.tar.xz) = 86731ccec679648f8734e237b1de190ebdee6e4c8c0f56f454c31588e509aa10

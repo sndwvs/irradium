@@ -1,0 +1,87 @@
+--- a/wlan	2024-11-23 03:30:35.175666515 +0200
++++ b/wlan	2024-11-23 03:34:30.253898874 +0200
+@@ -1,24 +1,79 @@
+-#!/bin/sh
++#!/bin/bash
+ #
+ # /etc/rc.d/wlan: start/stop wireless interface
+ #
+ 
++DHCP_OPTS="-t 10 -b"
++
++# If USE_DHCP[interface] is set to "yes", this overrides any other settings.
++# If you don't have an interface, leave the settings null ("").
++
++# ----------------------------------------
++
++# ipv4 config options for wlan0
++DEV[0]=""
++ADDR[0]=""
++MASK[0]=""
++USE_DHCP[0]=""
++
++# ipv4 config options for wlan1
++DEV[1]=""
++ADDR[1]=""
++MASK[1]=""
++USE_DHCP[1]=""
++
++# ipv4 default gateway ip address
++GW=""
++
++# ----------------------------------------
++
+ case $1 in
+ 	start)
+ 		/etc/rc.d/wpa_supplicant start
+-		/etc/rc.d/dhcpcd start
++		for i in ${!DEV[@]}; do
++			if [ "${USE_DHCP[$i]}" = "yes" ]; then
++				/sbin/dhcpcd ${DHCP_OPTS} ${DEV[$i]}
++			elif [ ! -z "${DEV[$i]}" -a ! -z "${ADDR[$i]}" -a ! -z "${MASK[$i]}" ]; then
++				/sbin/ip addr add ${ADDR[$i]}/${MASK[$i]} dev ${DEV[$i]} broadcast +
++				/sbin/ip link set ${DEV[$i]} up
++			fi
++		done
++		if [ ! -z $GW ] ; then
++			/sbin/ip route add default via ${GW}
++		fi
+ 		;;
+ 	stop)
+-		/etc/rc.d/dhcpcd stop
++		if [ ! -z $GW ] ; then
++			echo /sbin/ip route del default
++		fi
++		for i in ${!DEV[@]}; do
++			if [ "${USE_DHCP[$i]}" = "yes" ]; then
++				/sbin/dhcpcd -k ${DEV[$i]}
++			elif [ ! -z "${DEV[$i]}" -a ! -z "${ADDR[$i]}" -a ! -z "${MASK[$i]}" ]; then
++				/sbin/ip link set ${DEV[$i]} down
++				/sbin/ip addr del ${ADDR[$i]}/${MASK[$i]} dev ${DEV[$i]}
++			fi
++		done
+ 		/etc/rc.d/wpa_supplicant stop
+ 		;;
+ 	restart)
+ 		/etc/rc.d/wpa_supplicant restart
+-		/etc/rc.d/dhcpcd restart
++		$0 stop
++		sleep 1
++		$0 start
+ 		;;
+ 	status)
+ 		/etc/rc.d/wpa_supplicant status
+-		/etc/rc.d/dhcpcd status
++		for i in ${!DEV[@]}; do
++			if [ ! -z ${DEV[$i]} ]; then
++				PID=$(pgrep -a dhcpcd | grep ${DEV[$i]} | cut -d ' ' -f1)
++				if [[ -z ${PID} ]]; then
++					echo "dhcpcd is not running"
++				else
++					echo "dhcpcd is running with pid $PID"
++				fi
++			fi
++		done
+ 		;;
+ 	*)
+ 		echo "Usage: $0 [start|stop|restart|status]"

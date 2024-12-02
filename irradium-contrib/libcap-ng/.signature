@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7sHLulVYIpLefyoK50UUZoaKhYv8CArtlwQDvkngTjjrm58lPJ7h8K+JTElfRbtUbSLi7WmAd5fyMmCBMXhV1QU=
+SHA256 (Pkgfile) = 57d5f797661b6271bb705107db5004770e5bd1aaca4d4ae94e6d4d7475a4c5fe
+SHA256 (.footprint) = af883c9985a58bef2d272019a39d8cf86a54b4b0269258a854e3b7fefe040cab
+SHA256 (libcap-ng-0.8.3.tar.gz) = e542e9139961f0915ab5878427890cdc7762949fbe216bd0cb4ceedb309bb854

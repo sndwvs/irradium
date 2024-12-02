@@ -1,0 +1,22 @@
+# Description: tool for non-interactive password authentication
+# URL: https://sourceforge.net/projects/sshpass/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: openssh
+
+name=sshpass
+version=1.10
+release=1
+source=(https://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    ./configure \
+        --prefix=/usr \
+        --build=$(uname -m)-unknown-linux-gnu \
+        --disable-static \
+        --disable-man
+
+    make
+    make DESTDIR=$PKG install
+}

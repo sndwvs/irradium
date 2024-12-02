@@ -1,0 +1,46 @@
+# Description: Core database of common types
+# URL: https://freedesktop.org/Software/shared-mime-info
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: glib itstool
+
+name=shared-mime-info
+version=2.4
+release=2
+
+# https://gitlab.freedesktop.org/xdg/shared-mime-info/-/blob/master/xdgmime
+_xdgmimever=e861d3eb3d522a9c22c5a870526728e2a3d9fc04
+
+source=(https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/$version/$name-$version.tar.bz2
+  https://gitlab.freedesktop.org/xdg/xdgmime/-/archive/$_xdgmimever/xdgmime-$_xdgmimever.tar.bz2
+  fix.patch)
+
+build() {
+
+  patch -p1 -i $SRC/fix.patch -d xdgmime-$_xdgmimever
+
+  # Build mime database
+  meson setup xdgmime-$_xdgmimever xdgmime-build \
+    --prefix=/usr \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    -D b_pie=true
+  meson compile -C xdgmime-build
+
+  meson setup $name-$version build \
+    --prefix=/usr \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    -D b_lto=true \
+    -D b_pie=true \
+    -D update-mimedb=false \
+    -D xdgmime-path=$SRC/xdgmime-build
+  meson compile -C build
+  DESTDIR=$PKG meson install -C build
+
+  # Builds the initial database
+  /usr/bin/env PKGSYSTEM_ENABLE_FSYNC=0 $PKG/usr/bin/update-mime-database $PKG/usr/share/mime
+
+  rm -r $PKG/usr/share/locale
+
+  find $PKG/usr/share/mime -type f -exec chmod 644 {} ';'
+}

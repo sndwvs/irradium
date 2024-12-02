@@ -1,12 +1,18 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCVB7z8DtpjrYvbw2OzIo+ZmZeizJNHk5/4tcm669XRW7Xdmax9K69jjQ+eCJSGuu80I7/5IwFwrENcEqhfTtWwQ=
-SHA256 (Pkgfile) = 40b484c52a6cc864bc337f6c801a81f484953e6c66d2a267e2c3bf824edd5a7d
-SHA256 (.footprint) = 611aaa4cccabaa5f2ec2e10fd93688f8679906675f65b4d06e0fbcce3b527cb4
-SHA256 (qt-everywhere-opensource-src-5.15.13.tar.xz) = 9550ec8fc758d3d8d9090e261329700ddcd712e2dda97e5fcfeabfac22bea2ca
-SHA256 (qt-everywhere-opensource-src-5.15.13-kf5-1.patch) = 4b3e79176ae712afe4092c7080c98f456fbdc1b82e54790d87a108e6f9602e9c
+RWRxRnTWECCiCeSYed4AzsemTJvaN6TTxDQsZThvf2jBOhi4jRycMvUis/Og1pjxdVrBQj8PSM0WxJe1LoMA4PZ5S8jXI/2B2wE=
+SHA256 (Pkgfile) = 398b04d751a893b0ef7c6f156b9b7682d25ae24f551ef92c16246ab8acaf6c5a
+SHA256 (.footprint.riscv64) = 7fa1b8f35500f3adac89c66b9297e2e88df7c0789d7f7ba49d30d66446f87a1d
+SHA256 (qt-everywhere-opensource-src-5.15.16.tar.xz) = efa99827027782974356aceff8a52bd3d2a8a93a54dd0db4cca41b5e35f1041c
+SHA256 (qt-everywhere-opensource-src-5.15.16-kf5-1.patch) = aea9b80aeec370726cfe63c8fdd9e99faf2db8c77346fa9b143345694a1b9248
 SHA256 (qtbase-5.15.8-fix-missing-qtsan-include.patch) = 65b435d09220fc66584f9613cdf7518367185af4e166c5b670301be6af98e8b1
 SHA256 (qt5-cflags.patch) = cf707cd970650f8b60f8897692b36708ded9ba116723ec8fcd885576783fe85c
 SHA256 (qt5-logo.png) = ae1335ecd1cd2d17032184895ab298a636cdfa8121b0ed71307c4f2b23ec928e
+SHA256 (qt5-quick3d-assimp-5.1.patch) = 57a3ac54c46f86d1f99ce20653bb34215cbd65fbd36f7ee802360336e88f268e
+SHA256 (d8054f1efa0b97b291a6f8c7fff9090b0fd4328e.patch) = 9647d0a0fc4a1983a824bcb66643e14b8e3cf433542820b75d1654f33a4d78aa
+SHA256 (5a07e1967dcc925d9def47accadae991436b9686.patch) = ef9c6e5f5f7b2426406a4ac582eca84669bc5cc7283cfd884f1f6f9f2206fd03
+SHA256 (0d9987b43e695f5202c5d69a5e42ab70a678b04f.patch) = c9888e8b981c1869efa689e7ec7a7310da1ffc66643e2ff33067bcb9741917fa
+SHA256 (35d566724c48180c9a372c2ed50a253871a51574.patch) = 2f293914133b326ee180d100dfe769c66e594ff8d6d6f354b052a0f0e45352e5
+SHA256 (qtlocation-fix-rapidjson-build.patch) = 12d435c05527923b6455a2e18ad109bf66e6b9faaa71bf64459a2eab2cb45c22
 SHA256 (qtbase-everywhere-src-5.14.2-no_relocatable.patch) = 1fed8b9e4eb5749e70d85d7678f08a5abc881e2a2ecab85fb21f59cb124500e5
 SHA256 (qtbase-everywhere-src-5.15.2-libglvnd.patch) = 6dd54f841127f20c27300874833636105f15e7481f549c007504bb82cf26c177
 SHA256 (qtbase-use-wayland-on-gnome.patch) = d62367c679e655a472f2777b9a7a97e17bd1340c0f0b2d40d1621217743122b8

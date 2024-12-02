@@ -1,0 +1,8 @@
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCfM17NQY9e+bRWjyEnmiuE3mekQzlz2FRJl+SOzhOboLEgoI2zepU+fmUbpgYoEEIeI5kfrL7YJ7Htlqy/1ZowY=
+SHA256 (Pkgfile) = 7b2bd3830d72880e053b4a39e3ac86beb32a431d7ea2710d4cfe0eeda948799d
+SHA256 (.footprint.aarch64) = d292d9bc4197573c54a3f502e8adf57b48ebf0c2d7dc60f0ce7d1d3f84a1123d
+SHA256 (llvm-19.1.4.src.tar.xz) = 4fe1bc197ff13f33af6179f836ce1cf2ae9886b822974a736f3a20c8aed0c1b2
+SHA256 (cmake-19.1.4.src.tar.xz) = dd13ce8eba6ece85cad567f028b8e16d72f3e142cdcbbd693ac23a88b4013803
+SHA256 (third-party-19.1.4.src.tar.xz) = 97292083d9718d3a6bedbafddf2fa1740c2d9cba8c72ee8ea391a63f12c0a472
+SHA256 (install-prefix.patch) = 2649b61a459eb6d8a9aca38ab411aec27eeae57fe82e32d135db4ccb353c9dda

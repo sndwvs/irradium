@@ -1,0 +1,23 @@
+# Description: a LGPLv2.1 userspace RCU (read-copy-update) library
+# URL: https://liburcu.org/
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+
+name=liburcu
+version=0.14.1
+release=1
+source=(https://lttng.org/files/urcu/userspace-rcu-$version.tar.bz2)
+
+build() {
+	cd userspace-rcu-$version
+
+	if [[ $(uname -m) == riscv64 ]]; then
+		export CC="clang"
+		export CXX="clang++"
+	fi
+
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share
+}

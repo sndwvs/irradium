@@ -1,6 +1,6 @@
-untrusted comment: verify with /etc/ports/contrib.pub
-RWSagIOpLGJF39OtGIeTV+eAVEtcR5n6zreO1bEtYfOVO0UvXGi6tApOQEZGMjo09s4ubJtLteK7dzW5pyH39IBCeSTbFjtm3Ao=
-SHA256 (Pkgfile) = 34b515bce77f424c003607f093159cc3231461e51466f6d8e192dcaa55f6b87a
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7its65Yx1z7CA6bLe8qWUGqgz2OgD7Ejav3tyX0j7gtG61EtBRJPo0QU9dkLR7wzKz3yEZeHSd6HEaTUOJvp3Ao=
+SHA256 (Pkgfile) = febe3c0eac44f30807d12890ae2e73772ebbd9f56a7548937b2a7b4caa1ee9d5
 SHA256 (.footprint) = ec47b218f0058c44f9a9184ce0bf161f7a69d2c922dee3282324e3178f93e395
 SHA256 (rasqal-0.9.33.tar.gz) = 6924c9ac6570bd241a9669f83b467c728a322470bf34f4b2da4f69492ccfd97c
 SHA256 (libtool.patch) = 6234df68001f6b8df208f1c8604a5521515396dfc9da6a554e8bfacf8b4b002b

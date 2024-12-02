@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7mCMA3gCvhe4UrI9yGMXaLOVW+DduBVYqdA7Wb//SGJHGMyV576DDvKxXOYaSEtaVT7dqpOHTNpXTS8G/aJt8wE=
+SHA256 (Pkgfile) = b2b1163fe881c966a3fe0dce6d20605f478cfa147148c143ce0b66eb21392731
+SHA256 (.footprint) = 6ca789fb0c0ec6fcbe1b9a1c66323a2195758a80f21a3e616615240cbbcb606d
+SHA256 (justblue-0.21.patch.xz) = ddac42cdc9feda52697655a9e5332271a1e99985961da5adb767cf6d5e71e6e2

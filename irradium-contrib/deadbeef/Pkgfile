@@ -5,11 +5,17 @@
 
 name=deadbeef
 version=1.9.6
-release=1
-source=(https://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
+release=2
+source=(https://downloads.sourceforge.net/$name/$name-$version.tar.bz2
+        d4cca5605447122cd080691f43e46047a6039359.patch
+        ddb_dsp_libretro_fix_aarch64_riscv64.patch)
 
 build() {
   cd $name-$version
+
+  # fix ffmpeg 7x
+  patch -p1 -i $SRC/d4cca5605447122cd080691f43e46047a6039359.patch
+  patch -p1 -i $SRC/ddb_dsp_libretro_fix_aarch64_riscv64.patch
 
   CFLAGS=${CFLAGS/-fstack-clash-protection/}
   export CC=clang CXX=clang++

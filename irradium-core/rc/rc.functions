@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# /etc/rc.functions: functions to be used by the system boot script
+#
+
+RED() {
+  case $USE_COLOR in
+    true) printf '\033[31m%s\033[0m' "$1";;
+    false) printf '%s' "$1";;
+    *) printf '%s' "$1";;
+  esac
+}
+
+GREEN() {
+  case $USE_COLOR in
+    true) printf '\033[32m%s\033[0m' "$1";;
+    false) printf '%s' "$1";;
+    *) printf '%s' "$1";;
+  esac
+}
+
+BOLD() {
+  printf '\033[1m%s\033[0m' "$1"
+}
+
+printinfo() {
+  if [ "$VERBOSE" = true ]; then
+    printf '%b' "$1"
+  fi
+}

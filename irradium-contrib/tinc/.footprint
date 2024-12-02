@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/logrotate.d/
+-rw-r--r--	root/root	etc/logrotate.d/tincd
+drwxr-xr-x	root/root	etc/rc.d/
+-rwxr-xr-x	root/root	etc/rc.d/tincd
+drwxr-xr-x	root/root	etc/tinc/
+-rw-r--r--	root/root	etc/tinc/tinc.conf
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/tincd
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man5/
+-rw-r--r--	root/root	usr/share/man/man5/tinc.conf.5.gz
+drwxr-xr-x	root/root	usr/share/man/man8/
+-rw-r--r--	root/root	usr/share/man/man8/tincd.8.gz

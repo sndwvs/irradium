@@ -1,0 +1,11 @@
+untrusted comment: verify with /etc/ports/irradium-core.pub
+RWQAwxvZoACtGOyn0TfP7JSfdbVffpIGHh6cWef0OMka7BYfKNJNqPOKoGsaqK3SCXNjtXz8O+BQnypdcQZIxcItxg1hDfdPYgc=
+SHA256 (Pkgfile) = 312e8a48c4433be07a50d32bbee617b18a215a501fea4099ad6a1ec63b329727
+SHA256 (.footprint) = c76531420275f1027c6702e600fd424394caac84c5b06322a51f5c6f109f83b9
+SHA256 (gcc-12.4.0.tar.xz) = 704f652604ccbccb14bdabf3478c9511c89788b12cb3bbffded37341916a9175
+SHA256 (gcc-nocheck-fixincludes.patch) = 850a71d2c64b9f2bec31821bd972bf89c2d57764faf64948100eaf474fd63bbb
+SHA256 (gcc-4.7.3-multilib-dirs.patch) = 149b151999d0afad909ca0d1eaf1f9a81c9cd6499e56989ec4fc574d108eeef6
+SHA256 (gcc-aarch64-disable-multilib-support.patch) = 9aa8cbb2c87e815526dfbf844b59a65abe84cb07d706d34d4dc43bdeaf2b7dd0
+SHA256 (gcc-riscv-disable-multilib-support.patch) = 7c5f024bbdaefb49f0dc6c780aafff3baf255e3437345994a5c96dc00a7e37b2
+SHA256 (gcc-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch) = 7753b1843137d6f2f8c9a750c18b6df48b966544f4aee05f2b55a8ec22e2623b
+SHA256 (gcc-configure-fix-detection-of-atomic-builtins-in-libato.patch) = 5c1c56db71278695f79d8944ecdc0f821340f9ef7d03a8915b3f0ce85a2ffde5

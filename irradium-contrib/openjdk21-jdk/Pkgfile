@@ -1,0 +1,92 @@
+# Description: OpenJDK 21 Java Development Kit
+# URL: https://openjdk.java.net/
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: alsa-lib cups giflib harfbuzz lcms2 libxslt nss unzip xorg-libxrandr xorg-libxt xorg-libxtst zip
+# Optional: publicsuffix-list
+
+name=openjdk21-jdk
+version=21.0.6+4
+release=1
+_boot_ver=21.0.5_11
+_cert_ver=20210916
+source=(https://github.com/openjdk/jdk${version::2}u/archive/refs/tags/jdk-$version.tar.gz
+        https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jdk_$(uname -m)_linux_hotspot_${_boot_ver}.tar.gz
+        https://git.crux.nu/tb/java-distfiles/media/branch/master/distfiles/java_cacerts-${_cert_ver}
+        system-public-suffix.patch
+        riscv64.patch
+        openjdk${version::2}.sh)
+
+build() {
+  if command -v ccache >/dev/null 2>&1; then
+    export PATH=$(echo $PATH | tr ':' '\n' | grep -E '/(s?bin)$' | tr '\n' ':')
+    PKGMK_JDK21+=' --enable-ccache'
+  fi
+
+  patch -p1 -d $SRC/jdk${version::2}u-jdk-${version/+/-} -i $SRC/riscv64.patch
+  patch -p1 -d $SRC/jdk${version::2}u-jdk-${version/+/-} -i $SRC/system-public-suffix.patch
+
+  OLD_PATH=$PATH
+  export JAVA_HOME=$SRC/jdk-${_boot_ver/_/+}
+  export PATH=$JAVA_HOME/bin:$OLD_PATH
+
+  export EXTRA_CPP_FLAGS="${CXXFLAGS/-fexceptions/} -fcommon"
+  export EXTRA_CFLAGS="${CFLAGS/-fexceptions/} -fcommon"
+  unset CFLAGS
+  unset CXXFLAGS
+  unset LDFLAGS
+  unset MAKEFLAGS
+
+  [ -z $JOBS ] && JOBS=$(nproc)
+
+  mkdir $SRC/build
+  cd $SRC/build
+
+  LC_ALL=C
+  /bin/bash ../jdk21u-jdk-${version/+/-}/configure $PKGMK_JDK21 \
+    --prefix=/usr/lib/java/$name \
+    --disable-precompiled-headers \
+    --disable-warnings-as-errors \
+    --enable-dtrace=no \
+    --enable-unlimited-crypto \
+    --with-native-debug-symbols=internal \
+    --with-debug-level=release \
+    --with-stdc++lib=dynamic \
+    --with-jvm-variants=server \
+    --with-jvm-features=zgc,shenandoahgc,link-time-opt \
+    --with-cacerts-file=$SRC/java_cacerts-$_cert_ver \
+    --with-jtreg=no \
+    --with-boot-jdk=$JAVA_HOME \
+    --with-version-opt="irradium-r$release" \
+    --with-version-build="${version#*+}" \
+    --with-vendor-name="irradium" \
+    --with-jobs=$JOBS \
+    --with-libjpeg=system \
+    --with-giflib=system \
+    --with-libpng=system \
+    --with-zlib=system \
+    --with-lcms=system \
+    --with-freetype=system \
+    --with-harfbuzz=system \
+    --with-extra-cflags="$EXTRA_C_FLAGS" \
+    --with-extra-cxxflags="$EXTRA_CPP_FLAGS"
+
+  # NOTE: for debugging build issues: set LOG to debug, JOBS to 1.
+  LC_ALL=C \
+  make LOG=warn JOBS=$JOBS jdk-image
+
+  rm -r images/jdk/demo
+  rm -r images/jdk/lib/src.zip
+  rm -r images/jdk/lib/*.ja
+  rm -r images/jdk/legal
+  rm images/jdk/conf/security/policy/README.txt
+
+  install -d -m 0755 $PKG/usr/lib/java/$name
+  cp -r images/jdk/* $PKG/usr/lib/java/$name/
+
+  install -d -m 0755 $PKG/etc/revdep.d
+  echo "/usr/lib/java/$name/lib" > $PKG/etc/revdep.d/$name
+  echo "/usr/lib/java/$name/lib/jli" >> $PKG/etc/revdep.d/$name
+  echo "/usr/lib/java/$name/lib/server" >> $PKG/etc/revdep.d/$name
+
+  install -Dm 0755 $SRC/openjdk21.sh $PKG/etc/profile.d/openjdk21.sh
+}

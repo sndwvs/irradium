@@ -3,45 +3,90 @@
 # /etc/rc: system boot script
 #
 
-echo "The system is coming up.  Please wait."
+printf "%s\n" "The system is coming up. Please wait."
 
 # Load configuration
 . /etc/rc.conf
+# Load functions
+. /etc/rc.functions
 
-# Start udev
-/bin/mount -t proc none /proc
-/bin/mount -t sysfs none /sys
-/sbin/start_udev
+# Setup a working environment with eudev
+# - if /dev is not mounted - mount as a devtmpfs (CONFIG_DEVTMPFS=y)
+# - if /dev is mounted (e.g. due to handover from initramfs or
+#   CONFIG_DEVTMPFS_MOUNT=y), remount with specific options
+# - some video drivers require exec access in /dev, thus it's set here
+# - for completness, we add few sanity limits (2k non-empty files, 16k inodes)
+
+printinfo "\nMounting /proc.."
+if ! /bin/mountpoint -q /proc; then
+	/bin/mount -t proc none /proc || { printf "$(BOLD "$(RED)")" "[ERROR]"; exit 1; }
+fi
+
+printinfo "\nMounting /sys.."
+if ! /bin/mountpoint -q /sys; then
+	/bin/mount -t sysfs none /sys || { printf "$(BOLD "$(RED)")" "[ERROR]"; exit 1; }
+fi
+
+printinfo "\nMounting /run.."
+if ! /bin/mountpoint -q /run ; then
+	/bin/mount -n -t tmpfs -o mode="0755,nosuid,nodev,exec" tmpfs /run || { printf "$(BOLD "$(RED)")" "[ERROR]"; exit 1; }
+fi
+
+printinfo "\nMounting /dev.."
+UDEVOPTS="exec,nosuid,noatime,mode=0755,nr_blocks=2048,nr_inodes=16384"
+if ! /bin/mountpoint -q /dev; then
+	/bin/mount -n -t devtmpfs -o ${UDEVOPTS} dev /dev || { printf "$(BOLD "$(RED)")" "[ERROR]"; exit 1; }
+else
+	/bin/mount -n -o remount,${UDEVOPTS} dev /dev || { printf "$(BOLD "$(RED)")" "[ERROR]"; exit 1; }
+fi
+
+printinfo "\nMounting /dev/pts.."
+if ! /bin/mountpoint -q /dev/pts; then
+	/bin/mkdir -m 755 /dev/pts
+	/bin/mount -t devpts -o noexec,nosuid,gid=tty,mode=0620 devpts /dev/pts || { printf "$(BOLD "$(RED)")" "[ERROR]"; exit 1; }
+fi
+
+printinfo "\nMounting /dev/shm.."
+if ! /bin/mountpoint -q /dev/shm; then
+	/bin/mkdir -m 1777 /dev/shm
+	/bin/mount shm -t tmpfs -o defaults,exec,rw /dev/shm || { printf "$(BOLD "$(RED)")" "[ERROR]"; exit 1; }
+fi
+
+printinfo "\nStarting udev.."
+/sbin/start_udev || { printf "$(BOLD "$(RED)")" "[ERROR]"; exit 1; }
 
 # Create device-mapper device nodes and scan for LVM volume groups
 if [ -x /sbin/lvm ]; then
-	/sbin/vgscan --mknodes --ignorelockingfailure
-	/sbin/vgchange --sysinit -a y
+	printinfo "Found lvm, creating device nodes and lvm volumes"
+	/sbin/vgscan --mknodes --ignorelockingfailure || printf "$(BOLD "$(RED)")" "[ERROR]"
+	/sbin/vgchange --sysinit -a y || printf "$(BOLD "$(RED)")" "[ERROR]"
 fi
 
 # Mount root read-only
-/bin/mount -o remount,ro /
+printinfo "\nMounting / in read-only mode.."
+/bin/mount -o remount,ro / || { printf "$(BOLD "$(RED)")" "[ERROR]"; exit 1; }
 
 if [ -f /forcefsck ]; then
-FORCEFSCK="-f"
+	printinfo "\n/forcefsck detected, setting force flag to fsck"
+	FORCEFSCK="-f"
 fi
 
 # Check filesystems
+printinfo "\nChecking filesystems.."
 /sbin/fsck $FORCEFSCK -A -T -C -a
 if [ $? -gt 1 ]; then
-	echo
-	echo "***************  FILESYSTEM CHECK FAILED  ******************"
-	echo "*                                                          *"
-	echo "*  Please repair manually and reboot. Note that the root   *"
-	echo "*  file system is currently mounted read-only. To remount  *"
-	echo "*  it read-write type: mount -n -o remount,rw /            *"
-	echo "*  When you exit the maintainance shell the system will    *"
-	echo "*  reboot automatically.                                   *"
-	echo "*                                                          *"
-	echo "************************************************************"
-	echo
+	printf "\n%s$(BOLD "$(RED)")%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n" \
+		"***************" "  FILESYSTEM CHECK FAILED  " "******************" \
+		"*                                                          *" \
+		"*  Please repair manually and reboot. Note that the root   *" \
+		"*  file system is currently mounted read-only. To remount  *" \
+		"*  it read-write type: mount -n -o remount,rw /            *" \
+		"*  When you exit the maintenance shell the system will     *" \
+		"*  reboot automatically.                                   *" \
+		"*                                                          *" \
+		"************************************************************"
 	/sbin/sulogin -p
-	echo "Automatic reboot in progress..."
+	printf "%s\n" "Automatic reboot in progress..."
 	/bin/umount -a -r
 	/bin/mount -o remount,ro /
 	/sbin/reboot -f
@@ -49,31 +94,39 @@ if [ $? -gt 1 ]; then
 fi
 
 # Mount local filesystems
-/bin/mount -o remount,rw /
-/bin/mount -a -O no_netdev
+printinfo "\nMounting / in read-write mode.."
+/bin/mount -o remount,rw / || printf "$(BOLD "$(RED)")" "[ERROR]"
+
+printinfo "\nMounting other filesystems (excl. network devices)..\t"
+/bin/mount -a -O no_netdev || printf "$(BOLD "$(RED)")" "[ERROR]"
 
 # Create user dir in /run
-/bin/mkdir -m 0755 /run/user
+printinfo "\nCreating /run/user.."
+/bin/mkdir -m 0755 /run/user || printf "$(BOLD "$(RED)")" "[ERROR]"
 
 # Activate swap
-/sbin/swapon -a
+printinfo "\nMounting swap.."
+/sbin/swapon -a || printf "$(BOLD "$(RED)")" "[ERROR]"
 
 # Clean up misc files
-: > /run/utmp
-/bin/rm -rf /forcefsck /fastboot /etc/nologin /etc/shutdownpid
-(cd /var/lock && /usr/bin/find . ! -type d -delete)
-(cd /tmp && /usr/bin/find . ! -name . -delete)
-/bin/mkdir -m 1777 /tmp/.ICE-unix /tmp/.X11-unix
+printinfo "\nDeleting temporary files.."
+: > /run/utmp || printf "$(BOLD "$(RED)")" "[ERROR]"
+/bin/rm -rf /forcefsck /fastboot /etc/nologin /etc/shutdownpid || printf "$(BOLD "$(RED)")" "[ERROR]"
+(cd /var/lock && /usr/bin/find . ! -type d -delete) || printf "$(BOLD "$(RED)")" "[ERROR]"
+(cd /tmp && /usr/bin/find . ! -name . -delete) || printf "$(BOLD "$(RED)")" "[ERROR]"
+/bin/mkdir -m 1777 /tmp/.ICE-unix /tmp/.X11-unix || printf "$(BOLD "$(RED)")" "[ERROR]"
 
 # Set kernel variables
-/sbin/sysctl -p > /dev/null
+printinfo "\nSetting kernel variables.."
+/sbin/sysctl -p > /dev/null || printf "$(BOLD "$(RED)")" "[ERROR]"
 
 # Update shared library links
-/sbin/ldconfig
+printinfo "\nUpdating shared library links.."
+/sbin/ldconfig || printf "$(BOLD "$(RED)")" "[ERROR]"
 
 # Configure host name
 if [ "$HOSTNAME" ]; then
-	echo "hostname: $HOSTNAME"
+	printf "\n$(BOLD "%s") %s\n" "Hostname:" "$HOSTNAME"
 	/bin/hostname "$HOSTNAME"
 fi
 
@@ -86,20 +139,25 @@ if [ "$TIMEZONE" ]; then
 fi
 /sbin/hwclock --hctosys
 
+# Default language
+printf "$(BOLD "%s") %s\n" "LANG:" "${LANG:-C.UTF-8}"
+export LANG
+
 # Load console font
 if [ "$FONT" ]; then
-	echo "font: $FONT"
+	printf "$(BOLD "%s") %s\n" "Font:" "$FONT"
 	/usr/bin/setfont "$FONT"
 fi
 
 # Load console keymap
 if [ "$KEYMAP" ]; then
-	echo "keyboard: $KEYMAP"
+	printf "$(BOLD "%s") %s\n" "Keyboard:" "$KEYMAP"
 	/usr/bin/loadkeys -q "$KEYMAP"
 fi
 
-# Screen blanks after 15 minutes idle time
-/usr/bin/setterm -blank 15
+# Screen timeout, defaults to 15m
+printf "$(BOLD "%s") %s\n" "Screen Timeout:" "${BLANKTIME:-15}"
+/usr/bin/setterm -blank "${BLANKTIME:-15}"
 
 # Run module initialization script
 if [ -x /etc/rc.modules ]; then

@@ -1,0 +1,19 @@
+# Description: WHATWG-compliant and fast URL parser written in modern C++
+# URL: https://ada-url.github.io/ada
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: cmake
+
+name=ada
+version=2.9.0
+release=1
+source=(https://github.com/ada-url/ada/archive/refs/tags/v$version.tar.gz)
+
+build() {
+    cmake -S $name-$version -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+        -DCMAKE_C_FLAGS="$CFLAGS"
+    cmake --build build
+    DESTDIR=$PKG cmake --install build
+}

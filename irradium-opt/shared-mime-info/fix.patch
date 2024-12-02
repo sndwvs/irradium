@@ -1,0 +1,11 @@
+--- a/fuzzing/setup.c	2024-06-20 18:52:55.284716918 +0000
++++ b/fuzzing/setup.c	2024-06-20 19:06:09.951463430 +0000
+@@ -97,7 +97,7 @@ fuzz_setup (const unsigned char *data,
+           data_len -= file_data_len + blob_separator_len;
+         }
+ 
+-      fd = TEMP_FAILURE_RETRY (openat (dirfd, mime_dir_filenames[i], O_CREAT | O_WRONLY | O_CLOEXEC));
++      fd = TEMP_FAILURE_RETRY (openat (dirfd, mime_dir_filenames[i], O_CREAT | O_WRONLY | O_CLOEXEC, 0600));
+       if (fd < 0)
+         {
+           fuzz_teardown (dirfd);

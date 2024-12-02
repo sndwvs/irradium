@@ -5,9 +5,9 @@
 # Optional: ccache clang libgit2 lld polly sccache
 
 name=rust
-version=1.79.0
-_date=2024-05-02
-_rustc=1.78.0
+version=1.83.0
+_date=2024-10-17
+_rustc=1.82.0
 _cargo=$_rustc
 release=1
 
@@ -33,7 +33,8 @@ source=(https://static.rust-lang.org/dist/${name}c-$version-src.tar.xz
 	0001-bootstrap-Change-libexec-dir.patch
 	0002-bootstrap-Change-bash-completion-dir.patch
 	0003-compiler-Change-LLVM-targets.patch
-	0004-compiler-Use-wasm-ld-for-wasm-targets.patch)
+	0004-compiler-Use-wasm-ld-for-wasm-targets.patch
+	riscv64-disable-f16-f128.patch)
 
 unpack_source() {
 	for file in ${source[@]}; do
@@ -53,8 +54,8 @@ unpack_source() {
 
 _check_version() {
 	local ERROR
-	local DATE="$(awk '/^.*"date": / {gsub(/"|,/, "", $2); print $2 }' $SRC/${name}c-$version-src/src/stage0.json)"
-	local RUSTC="$(awk '/^.*"version": / {gsub(/"|,/, "", $2); print $2 }' $SRC/${name}c-$version-src/src/stage0.json)"
+	local DATE="$(awk -F'=' '/^compiler_date=/ {print $2}' $SRC/${name}c-$version-src/src/stage0)"
+	local RUSTC="$(awk -F'=' '/^compiler_version=/ {print $2}' $SRC/${name}c-$version-src/src/stage0)"
 
 	printf '\033[0;32m%s\033[0m\n' "Checking versions for bootstrap compiler.."
 	printf '\033[0;32m%s\033[0m\n' "Got _date = $_date && _rustc = $_rustc"
@@ -82,13 +83,17 @@ build() {
 	patch -p1 -i $SRC/0002-bootstrap-Change-bash-completion-dir.patch
 	patch -p1 -i $SRC/0003-compiler-Change-LLVM-targets.patch
 	patch -p1 -i $SRC/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
+	#riscv64: disable f16 f128 once
+	patch -Np1 -i $SRC/riscv64-disable-f16-f128.patch
 
 cat <<- EOF > $SRC/config.toml
-	change-id = 123711
+	profile = "dist"
+	change-id = 131075
 
 	[llvm]
 	ninja = true
 	link-shared = true
+	download-ci-llvm = false
 	@POLLY@
 	@CCACHE@
 
@@ -104,13 +109,12 @@ cat <<- EOF > $SRC/config.toml
 	debuginfo-level = 1
 	debuginfo-level-std = 2
 	codegen-tests = false
-	# backtrace-on-ice = true
-	# remap-debuginfo = true
-	# jemalloc = false
+	backtrace-on-ice = true
+	jemalloc = true
+	remap-debuginfo = false
 
 	description = "irradium"
-	channel = "stable"
-	parallel-compiler = true
+	parallel-compiler = false
 	rpath = false
 	frame-pointers = true
 	deny-warnings = false

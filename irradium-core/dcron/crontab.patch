@@ -1,0 +1,23 @@
+--- a/crontab	2024-11-17 15:15:28.191606096 +0200
++++ b/crontab	2024-11-17 15:20:23.921635810 +0200
+@@ -2,9 +2,16 @@
+ # /etc/crontab: crond(8) configuration
+ #
+ 
+-@hourly   ID=sys.hourly   /usr/sbin/runjobs /etc/cron/hourly
+-@daily    ID=sys.daily    /usr/sbin/runjobs /etc/cron/daily
+-@weekly   ID=sys.weekly   /usr/sbin/runjobs /etc/cron/weekly
+-@monthly  ID=sys.monthly  /usr/sbin/runjobs /etc/cron/monthly
++# Run hourly cron jobs at 47 minutes after the hour:
++47 * * * *   ID=sys.hourly   /usr/sbin/runjobs /etc/cron/hourly
++
++# Run daily cron jobs at 4:40 every day:
++40 4 * * *   ID=sys.daily    /usr/sbin/runjobs /etc/cron/daily
++
++# Run weekly cron jobs at 4:30 on the first day of the week:
++30 4 * * 0   ID=sys.weekly   /usr/sbin/runjobs /etc/cron/weekly
++
++# Run monthly cron jobs at 4:20 on the first day of the month:
++20 4 1 * *   ID=sys.monthly  /usr/sbin/runjobs /etc/cron/monthly
+ 
+ # End of file

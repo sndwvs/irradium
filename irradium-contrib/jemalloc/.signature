@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7mPJsANQ2ThHyQzuVNiCp33U3s2GU1urIiZpOzY0wlLMZXlxyg3FdMLpdTfj6XdLorxWlk1A2SslnZZnbuNC2g4=
+SHA256 (Pkgfile) = 7f72600a68229c780322cbe888257ff5b9bf1173eb8cce250e4fc82f52f44b9b
+SHA256 (.footprint) = d25b97c74c3dea810e7dc6098a2004d5c8060e6032bcf35890abce534a7525b7
+SHA256 (jemalloc-5.3.0.tar.bz2) = 2db82d1e7119df3e71b7640219b6dfe84789bc0537983c3b7ac4f7189aecfeaa

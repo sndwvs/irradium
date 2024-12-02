@@ -4,7 +4,7 @@
 # Depends on: libgmp libmpc libmpfr zlib zstd
 
 name=gcc
-version=14.1.0
+version=14.2.0
 release=1
 source=(https://sourceware.org/pub/gcc/releases/gcc-$version/$name-$version.tar.xz
     $name-nocheck-fixincludes.patch $name-4.7.3-multilib-dirs.patch
@@ -83,7 +83,7 @@ build() {
     done
 
     mkdir $PKG/usr/lib/bfd-plugins
-    ln -sfv ../../lib/gcc/$($PKG/usr/bin/gcc -dumpmachine)/14.1.0/liblto_plugin.so \
+    ln -sfv ../../lib/gcc/$($PKG/usr/bin/gcc -dumpmachine)/14.2.0/liblto_plugin.so \
         $PKG/usr/lib/bfd-plugins/
 
     sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/{libstdc++.la,libsupc++.la}

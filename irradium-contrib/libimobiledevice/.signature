@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7nsHJ76jTeAaHNFCGtFXzI/I99b1mzB3RAvNKyuedA8yEWg4yCzLVKoXH5JbHkq6nfD7j9+FcIlLQj5oIlZ8TAM=
+SHA256 (Pkgfile) = f7dbdeb4091837a7daf3721996b8ce8ab89a8c26471d740d0c5a77bc66efecdb
+SHA256 (.footprint) = c4fd653ca1fa6b8bff9c54eaa8fd48a3f3d62b846e5e760710abea35336e7d49
+SHA256 (libimobiledevice-1.3.0.tar.bz2) = 53f2640c6365cd9f302a6248f531822dc94a6cced3f17128d4479a77bd75b0f6
+SHA256 (libplist-2.3.0.patch) = 87919d425b1b56b36d765512a0ee1e986c62f79bbf325210a3d9fb478f0ce674

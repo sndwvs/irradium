@@ -5,24 +5,29 @@
 
 # Load configuration
 . /etc/rc.conf
+# Load functions
+. /etc/rc.functions
 
 # Set linefeed mode to avoid staircase effect
 /bin/stty onlcr
 
-echo "The system is coming down.  Please wait."
+printf "\n%s\n" "The system is coming down. Please wait."
 
 if [ "$PREVLEVEL" = "2" ]; then
 	# Shutdown services
+	printf "$(BOLD "Stopping services:")"
 	if [ "${SERVICES[*]}" ]; then
 		for service in "${SERVICES[@]}"; do
-			R_SERVICES=($service ${R_SERVICES[@]})
+			R_SERVICES=("$service" "${R_SERVICES[@]}")
 		done
 		for service in "${R_SERVICES[@]}"; do
-			/etc/rc.d/$service stop &> /tmp/rc.$$
+			printf " %s" "$service"
+			/etc/rc.d/$service stop &> /tmp/rc.$$ || printf "$(BOLD "$(RED "[ERROR]")")"
 			/usr/bin/logger -t $service -f /tmp/rc.$$
 			/bin/rm -f /tmp/rc.$$
 		done
 	fi
+	printf '\n'
 fi
 
 # Terminate all processes

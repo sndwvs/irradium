@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCUL7NKMho2o2PQ4Foy0pxE+5PWj/Re9nJFna0hmjCkuxxIFLqFQLnpXEAKV4TFgPiqAyNVIOeEkoJQ56OjgxPwU=
-SHA256 (Pkgfile) = 429c779223769fa89439bfb5fd8fd86fc9b85b6816c5dfe29f34adecc7816f1f
+RWRxRnTWECCiCcEF5L0bO+xlwZAvuW+5TgxXVMTez1eSXd8gDMqsZygexhzP48pnecaQ3fpEwsvGLliNVIM5d7jNC80EldTHrAQ=
+SHA256 (Pkgfile) = f0f779d440b1cfc9e37f7073644f73c3d5077404d63ef4b9069544fa00b50812
 SHA256 (.footprint) = e14e788dcb9ecc1d6032e5f936c71f5e7a4fe3e64d07d728d811a7b0444c416e
-SHA256 (strace-6.9.tar.xz) = da189e990a82e3ca3a5a4631012f7ecfd489dab459854d82d8caf6a865c1356a
+SHA256 (strace-6.12.tar.xz) = c47da93be45b6055f4dc741d7f20efaf50ca10160a5b100c109b294fd9c0bdfe

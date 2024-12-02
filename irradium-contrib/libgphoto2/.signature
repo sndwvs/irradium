@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7t2oOR9DPDbJAsa8YTvdmF0GghMBnuE0gub000FgoYA4F/5zDIWivyvtinIZK5cLV9BBT8D8+segBEXBLsmWTQw=
+SHA256 (Pkgfile) = 23b3797e0d4151217193b42cd3bbd94b37560615a910fba11a999f43e35f2bef
+SHA256 (.footprint) = 297f0d7e429d90842ddd14a5e86a238f1fc4829c264a8ccd370d0f300acaa425
+SHA256 (libgphoto2-2.5.31.tar.bz2) = 4f81c34c0b812bee67afd5f144940fbcbe01a2055586a6a1fa2d0626024a545b

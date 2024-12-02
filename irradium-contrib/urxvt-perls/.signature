@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7oIxtcQef0tSxfvQduh4pja4p+QtcMmp6qrQPtJsXvzy0RGbWhN+xXTjDiFGKOj1FhOqFZnAy571GzO2JjZnSAY=
+SHA256 (Pkgfile) = 06c9ac9e394e2752c65b4d4cfa607ad904640d006ba4198c632ce736695a87ec
+SHA256 (.footprint) = da6f1fbdfd9a1e80fb1d3bca31f2a76b8aaa3edde9ead9056b6bf7a86672bff9
+SHA256 (urxvt-perls-2.3.tar.gz) = a632e4867fe285eef3f2cd6db3fff18153eb1053b95c9218bc9963d7f9927442

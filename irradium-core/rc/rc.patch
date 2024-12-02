@@ -1,0 +1,11 @@
+--- a/rc	2024-11-16 17:47:29.666555602 +0200
++++ b/rc	2024-11-16 17:49:01.208987771 +0200
+@@ -66,7 +66,7 @@ fi
+ /bin/mkdir -m 1777 /tmp/.ICE-unix /tmp/.X11-unix
+ 
+ # Set kernel variables
+-/sbin/sysctl -p > /dev/null
++/sbin/sysctl -e --system > /dev/null
+ 
+ # Update shared library links
+ /sbin/ldconfig

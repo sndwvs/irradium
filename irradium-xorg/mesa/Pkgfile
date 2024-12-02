@@ -1,72 +1,62 @@
 # Description: Mesa 3D Graphics Library
 # URL: https://www.mesa3d.org/
 # Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
-# Depends on: elfutils libdrm libglvnd llvm python3-mako xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm
-# Optional: directx-headers glslang libclc libunwind libva libvdpau lm_sensors rust-bindgen spirv-llvm-translator vulkan-loader wayland-protocols
+# Depends on: elfutils libdrm libglvnd llvm python3-mako python3-pyyaml xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm
+# Optional: cbindgen directx-headers glslang libclc libunwind libva libvdpau lm_sensors lua python3-ply rust-bindgen spirv-llvm-translator vulkan-loader wayland-protocols
 
 name=mesa
-version=24.0.9
+version=24.2.8
 release=1
-source=(https://archive.mesa3d.org/$name-$version.tar.xz
-    patches/0000-mesa-20.1.1-fix-opencl.patch
-    patches/0001-mesa-23.1-x86_32-llvm-detection.patch
-    patches/0002-mesa-23.1-intel-vk-compile.patch
-    patches/0003-26165.patch
-    patches/0004-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch
-    patches/0005-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch
-    patches/0006-mesa-rustdeps.patch
-    patches/0007-mesa-24-llvmspirv-detection.patch
-    patches/0008-mesa-buildsystem-improvements.patch
-    patches/0009-mesa-24.0-llvmspirvlib-version-check.patch
-    patches/0010-mesa-24.0.2-buildfix32.patch
-    patches/0011-mesa-24.0-osmesa-fix-civ3.patch
-    patches/0012-0011-drm-uapi-Add-panthor-uAPI.patch
-    patches/0013-0012-pan-kmod-Add-a-backend-for-panthor.patch
-    patches/0014-0013-panfrost-Patch-panfrost_max_thread_count-for-v10.patch
-    patches/0015-0014-panfrost-Add-v10-support-to-libpanfrost.patch
-    patches/0016-0015-panfrost-genxml-Add-missing-Progress-increment-field.patch
-    patches/0017-0016-pandecode-csf-Introduce-the-concept-of-usermode-queu.patch
-    patches/0018-0017-panfrost-Don-t-allocate-a-tiler-heap-buffer-on-v10.patch
-    patches/0019-0018-panfrost-Add-a-library-to-build-CSF-command-streams.patch
-    patches/0020-0019-panfrost-Relax-position-result-alignment-constraint-.patch
-    patches/0021-0020-panfrost-Add-arch-specific-context-init-cleanup-hook.patch
-    patches/0022-0021-panfrost-Add-a-panfrost_context_reinit-helper.patch
-    patches/0023-0022-panfrost-Add-a-cleanup_batch-method-to-panfrost_vtab.patch
-    patches/0024-0023-panfrost-Add-support-for-the-CSF-job-frontend.patch
-    patches/0025-0024-panfrost-Enable-v10-in-the-gallium-driver.patch
-    patches/0026-0025-panfrost-Add-a-panfrost_model-entry-for-G610.patch
-    patches/0027-0026-panfrost-Add-G310-to-the-list-of-supported-GPUs.patch
-    patches/0028-0027-panfrost-Add-an-entry-for-panthor-in-the-renderonly_.patch
-    patches/0029-0028-panfrost-Add-the-gallium-glue-to-get-panfrost-loaded.patch
-    patches/0030-panthor-fix-panthor_kmod_bo_export-return.patch)
+source=(https://mesa.freedesktop.org/archive/$name-$version.tar.xz
+	patches/0000-mesa-20.1.1-fix-opencl.patch
+	patches/0001-mesa-23.1-x86_32-llvm-detection.patch
+	patches/0002-mesa-24.1-find-opencl-c-base.h.patch
+	patches/0003-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch
+	patches/0004-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch
+	patches/0005-mesa-rustdeps.patch
+	patches/0006-mesa-24-llvmspirv-detection.patch
+	patches/0007-mesa-buildsystem-improvements.patch
+	patches/0008-mesa-24.0-llvmspirvlib-version-check.patch
+	patches/0009-mesa-24.2-llvm-19.0.patch
+	patches/0010-enable-vulkan-video-decode.patch
+	patches/0011-mesa-24.0-osmesa-fix-civ3.patch)
 
 build() {
 	prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
-	prt-get isinst libclc spirv-llvm-translator && PKGMK_MESA+=' -D gallium-opencl=icd'
-	prt-get isinst libclc rust-bindgen spirv-llvm-translator && PKGMK_MESA+=' -D gallium-rusticl=true'
-	prt-get isinst glslang && PKGMK_MESA+=' -D vulkan-drivers=amd,swrast,broadcom,panfrost -D vulkan-layers=device-select,overlay' || PKGMK_MESA+=' -D vulkan-drivers='
+	prt-get isinst libclc && PKGMK_MESA+=' -D gallium-opencl=icd' PKGMK_MESA_GALLIUM+='iris,'
+	prt-get isinst libclc rust-bindgen && PKGMK_MESA+=' -D gallium-rusticl=true'
 	prt-get isinst libunwind && PKGMK_MESA+=' -D libunwind=enabled'
 	prt-get isinst libva && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
 	prt-get isinst libvdpau && PKGMK_MESA+=' -D gallium-vdpau=enabled' || PKGMK_MESA+=' -D gallium-vdpau=disabled'
 	prt-get isinst lm_sensors && PKGMK_MESA+=' -D lmsensors=enabled'
-	prt-get isinst vulkan-loader && PKGMK_MESA_GALLIUM+='zink,'
+	if prt-get isinst vulkan-loader; then
+		#prt-get isinst cbindgen rust-bindgen && PKGMK_MESA_VULKAN_DRIVERS+='nouveau,'
+		prt-get isinst directx-headers && PKGMK_MESA_VULKAN_DRIVERS+='microsoft-experimental,'
+		prt-get isinst glslang && PKGMK_MESA_VULKAN_DRIVERS+='amd,swrast,broadcom,panfrost,' PKGMK_MESA_VULKAN_LAYERS+='device-select,overlay,'
+		prt-get isinst glslang libclc python3-ply lua && PKGMK_MESA_VULKAN_DRIVERS+='intel,' PKGMK_MESA_VULKAN_LAYERS+='intel-nullhw,'
+		VULKAN_DRIVERS=${PKGMK_MESA_VULKAN_DRIVERS#,}intel_hasvk,swrast,virtio
+		PKGMK_MESA_GALLIUM+='zink,'
+	else
+		VULKAN_DRIVERS=""
+		VULKAN_LAYERS=""
+	fi
 	prt-get isinst wayland-protocols && PKGMK_MESA_PLATFORMS+='wayland'
 	## for future references
 	#prt-get isinst xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm && PKGMK_MESA_PLATFORMS+=',x11'
 	PKGMK_MESA_PLATFORMS+=',x11'
 
-	# add panfrost
+	# add patches
 	if /bin/ls $SRC/*.patch 1> /dev/null 2> /dev/null ; then
 		for patch in $SRC/*.patch ; do
 			patch -d $name-$version -p1 -i $patch || exit 1 ;
 		done
 	fi
+	printf '%s' "$version-$release" > $name-$version/VERSION
 
 	meson setup build $name-$version $PKGMK_MESA \
 		--prefix=/usr \
 		--sysconfdir=/etc \
 		--buildtype=plain \
-		--wrap-mode nodownload \
 		-D b_lto=false \
 		-D b_pie=true \
 		-D dri3=enabled \
@@ -79,11 +69,13 @@ build() {
 		-D glx=dri \
 		-D osmesa=true \
 		-D gallium-xa=enabled \
-		-D gallium-drivers=${PKGMK_MESA_GALLIUM}nouveau,r300,r600,radeonsi,swrast,virgl,freedreno,etnaviv,kmsro,lima,panfrost,v3d,vc4 \
+		-D gallium-drivers=${PKGMK_MESA_GALLIUM}crocus,r300,r600,radeonsi,svga,swrast,virgl,freedreno,etnaviv,lima,panfrost,v3d,vc4 \
 		-D platforms=${PKGMK_MESA_PLATFORMS#,} \
 		-D shared-glapi=enabled \
-		-D video-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
-		-D glvnd=true
+		-D video-codecs=all \
+		-D glvnd=enabled \
+		-D vulkan-drivers=$VULKAN_DRIVERS \
+		-D vulkan-layers=$VULKAN_LAYERS
 
 	meson compile -C build -j ${JOBS:-1}
 	DESTDIR=$PKG meson install -C build

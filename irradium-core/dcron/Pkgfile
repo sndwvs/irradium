@@ -1,0 +1,51 @@
+# Description: Multi-user cron daemon
+# URL: http://www.jimpryor.net/linux/dcron.html
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+
+name=dcron
+version=4.5
+release=6
+#source=(http://www.jimpryor.net/linux/releases/$name-$version.tar.gz
+source=(https://github.com/ptchinster/dcron/archive/refs/tags/v$version/$name-$version.tar.gz
+	crontab runjobs crond
+	crond.patch crontab.patch
+	patches/0002-README-var-spool-cron-crontabs-root.patch
+	patches/0003-CHANGELOG-tweak.patch
+	patches/0006-Fixed-a-bug-whereby-syncs-killed-all-waiting-jobs.patch
+	patches/0007-Update-main.c.patch
+	patches/defs.h.TMPDIR.diff
+	patches/crontab.c.O_EXCL.diff)
+
+build() {
+	patch -p1 --verbose -i $SRC/crond.patch
+	patch -p1 --verbose -i $SRC/crontab.patch
+
+	cd $name-$version
+
+	# Apply patches from git:
+	patch -p1 --verbose -i $SRC/0002-README-var-spool-cron-crontabs-root.patch
+	patch -p1 --verbose -i $SRC/0003-CHANGELOG-tweak.patch
+	patch -p1 --verbose -i $SRC/0006-Fixed-a-bug-whereby-syncs-killed-all-waiting-jobs.patch
+	patch -p1 --verbose -i $SRC/0007-Update-main.c.patch
+
+	# Define TMPDIR as /run/cron instead of /tmp:
+	# This eliminates possibility of stale $TMPDIR/cron.??????/ dirs as
+	# they won't survive a reboot when they're in a subdir of /run
+	patch -p1 --verbose -i $SRC/defs.h.TMPDIR.diff
+
+	# Fix problem where user creates /var/spool/cron/crontabs/<user>.new
+	# using 'crontab -', exits with control-c, and then crontab refuses to
+	# overwrite the junk file. It would be better if dcron would wipe
+	# the junk file in the event it were not closed correctly, but oh well.
+	patch -p1 --verbose -i $SRC/crontab.c.O_EXCL.diff
+
+	make PREFIX=/usr
+	make DESTDIR=$PKG CRONTAB_GROUP=users install
+
+	install -m 600 $SRC/crontab $PKG/var/spool/cron/crontabs/root
+	ln -s ../var/spool/cron/crontabs/root $PKG/etc/crontab
+	install -D -m 755 $SRC/crond $PKG/etc/rc.d/crond
+	install -D -m 755 $SRC/runjobs $PKG/usr/sbin/runjobs
+
+	install -d $PKG/etc/cron/{hourly,daily,weekly,monthly}
+}

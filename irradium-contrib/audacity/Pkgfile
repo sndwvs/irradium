@@ -5,8 +5,8 @@
 # Optional: libsndfile mpg123 wavpack opusfile opus vamp-plugin-sdk vst3sdk suil lilv twolame sratom lv2 soundtouch
 
 name=audacity
-version=3.5.1
-release=2
+version=3.6.1
+release=1
 source=(https://github.com/$name/$name/archive/refs/tags/Audacity-$version.tar.gz)
 
 build() {
