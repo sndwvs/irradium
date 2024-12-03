@@ -136,8 +136,8 @@ f:e9f8ce96b05106e22dae0a9b9dbe6cef:qt5/qt5-quick3d-assimp-5.1.patch
 f:43e9305944754ded3c4c49f2d3eba447:qt5/qtlocation-fix-rapidjson-build.patch
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
-f:ab06920524a4c3de75eb3d1e96972129:qt6-base/.footprint
-f:7b457d845b592bd1446fc70dafefa415:qt6-base/.signature
+f:624334aa64730a7437e6e90ccca2121c:qt6-base/.footprint
+f:5de06f453e97aaadfca31d5fcf39b604:qt6-base/.signature
 f:3786cb8569dfdc397763f3adcbb5af1a:qt6-base/0028-implicit-qchar-construction.patch
 f:42a695962c96c39e37eb5226a40bec48:qt6-base/0028-windows-fullscreen-with-mask.patch
 f:26d7c059e5528d47ee0f77a8c33bf19a:qt6-base/0029-accept-only-cf_hdrop-as-uri-list.patch
