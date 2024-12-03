@@ -117,13 +117,13 @@ f:c439515bdbd1e17d8a74c2a37d285718:ports/irradium-xfce.pub
 f:1ec983509e56966c5a7945a854c0f7bf:ports/irradium-xorg.pub
 f:0d1f1fde50a9bd743d9cac6b235f038c:ports/opt.pub
 f:69927e5d0ae5dc3455faeaac916c4db2:ports/xorg.pub
+f:6a4987faf2ccaa3ba662b9ce48492c38:ports/irradium-xfce.httpup.inactive
+f:92891482d508900cd6208bdad41f549d:ports/opt.rsync
+f:939e6f38e938a2ba615e76f40b504c79:ports/xorg.rsync
 f:c27f35d102fd8c4aa99608ffe07818d3:ports/Pkgfile
 f:ffcfbdbd1979f51825fa796a6296d1ab:ports/contrib.rsync.inactive
 f:9a7ec7bdf5155fbedb02b35e50420cfa:ports/core.rsync
 f:6fae15382775b3bd8121a25ce58cf70c:ports/irradium-contrib.httpup.inactive
-f:6a4987faf2ccaa3ba662b9ce48492c38:ports/irradium-xfce.httpup.inactive
-f:92891482d508900cd6208bdad41f549d:ports/opt.rsync
-f:939e6f38e938a2ba615e76f40b504c79:ports/xorg.rsync
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:1e68ce5a010624ae6f5c305937163e62:prt-get/fsearch-footprint-add-multi-arch-riscv64-aarch64.patch
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
@@ -174,6 +174,8 @@ f:e48dd7b789f3071f38e322e3f4ed2a91:dcron/crond.patch
 f:22b0bf1f472a6db254456d58e484e7e0:dhcpcd/.footprint
 f:7e5b78e93a4a691e0cd3285032c68ec5:dhcpcd/.signature
 f:ababf072bae5048c5af28a4c20da23a6:dhcpcd/Pkgfile
+f:9b8f2bac610aad49e84ae7398c5735c1:dhcpcd/pre-install
+f:0b056dd3e5a3e1eacb7c9b38f0641e4d:dhcpcd/rc.dhcpcd
 f:0b2b126b869fe1ebb439c753920f48f6:iproute2/.footprint
 f:38f46b47366a3543f32fb28b03c20c92:iproute2/.signature
 f:3ddf05aa30309de4bca4aaa73e195c93:iproute2/Pkgfile
