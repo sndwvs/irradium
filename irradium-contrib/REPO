@@ -387,8 +387,8 @@ f:ac7c2c0be8702ab9659ccca6679487f2:mkinitramfs/mkinitramfs
 f:2b6514212e23bbade668dc74be1a178d:mkinitramfs/Pkgfile
 f:6fc9192870e3cd2924aceb60f46c974a:mkinitramfs/.footprint
 f:14abbb7b1cb6ced8d5de6e17d1a9ef95:mkinitramfs/.signature
-f:ba97a0c31770f41d479edfa20fe1dc58:ntp/.footprint
-f:722399537b522c506e0375ab6b5d03fe:ntp/.signature
+f:fd64f41fafb19d59be764f2a4c8d6495:ntp/.footprint
+f:3b34e9879f1cebea4487cb7c17d1c287:ntp/.signature
 f:a578838873b24e26f76faad323fa9f83:ntp/Pkgfile
 f:5fa007503fb84bee9b6bd748d3a357f3:ntp/fix_ipv6_locallink_regression.diff
 f:e7cdc0f92b0ce136612839a7020980c3:ntp/ntp.conf
