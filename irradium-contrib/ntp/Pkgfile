@@ -6,7 +6,7 @@
 name=ntp
 version=4.2.8.p18
 _srcversion=${version/.p/p}
-release=7
+release=8
 source=(https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/${name}-${_srcversion}.tar.gz
     ntp.conf rc.ntpd
     ntp.keys
@@ -45,5 +45,5 @@ build() {
   install -Dm644 $SRC/ntp.logrotate $PKG/etc/syslog.d/ntp
 
   # Location for the drift and stats files:
-  install -dm775 -g ntp -o ntp $SRC/var/lib/ntp
+  install -dm775 -g ntp -o ntp $PKG/var/lib/ntp
 }
