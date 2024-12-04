@@ -403,7 +403,7 @@ f:ecf4d7512d16e61c1d1566bc35b26148:glmark2/Pkgfile
 f:8bd8739134ae4ae697171781781742a0:glmark2/fix-build.patch
 f:0900026ab290032ca3389054ad00a26e:tinc/.footprint
 f:c0b7c4ef7f2a73d00b313ff141dcf8a1:tinc/.signature
-f:29448105c0ac304fb23351878636b267:tinc/Pkgfile
+f:cffb59d5560d275c734a74bc24032255:tinc/Pkgfile
 f:43d5a35ffd5968ae8ada966053c1d438:tinc/rc.tincd
 f:52efbe70be91510dd87fdd0af1eff59e:tinc/tincd.logrotate
 f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
