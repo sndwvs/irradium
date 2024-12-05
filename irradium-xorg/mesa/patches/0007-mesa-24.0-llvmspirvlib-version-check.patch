@@ -1,0 +1,12 @@
+diff -up mesa-24.3.0-rc1/meson.build.omv~ mesa-24.3.0-rc1/meson.build
+--- mesa-24.3.0-rc1/meson.build.omv~	2024-11-10 17:24:02.589758678 +0100
++++ mesa-24.3.0-rc1/meson.build	2024-11-10 17:24:30.870073527 +0100
+@@ -1858,7 +1858,7 @@ if with_clover_spirv or with_clc
+   _llvmspirvlib_version = [
+     _llvmspirvlib_min_version,
+     '>= @0@.@1@'.format(chosen_llvm_version_major, chosen_llvm_version_minor),
+-    '< @0@.@1@'.format(chosen_llvm_version_major, chosen_llvm_version_minor + 1) ]
++    '< @0@.@1@'.format(chosen_llvm_version_major + 1, chosen_llvm_version_minor + 1) ]
+ 
+   # LLVMSPIRVLib is available at https://github.com/KhronosGroup/SPIRV-LLVM-Translator
+   dep_llvmspirvlib = dependency('LLVMSPIRVLib', required : true, version : _llvmspirvlib_version)
