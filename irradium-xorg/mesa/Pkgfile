@@ -57,7 +57,6 @@ build() {
 		--buildtype=plain \
 		-D b_lto=false \
 		-D b_pie=true \
-		-D dri3=enabled \
 		-D egl=enabled \
 		-D llvm=enabled \
 		-D shared-llvm=enabled \
