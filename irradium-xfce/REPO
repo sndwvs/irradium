@@ -33,10 +33,10 @@ d:xfwm4
 f:e724b7b74aed05552d1761a440de4678:Greybird/.footprint
 f:f1c4da9290d9f5f3eecbec2926e51c15:Greybird/.signature
 f:50d6b94df8dbf9db2c1ca0ef8e7112a8:Greybird/Pkgfile
+f:dbb70a525c7eeefce742d506fcb03652:elementary-xfce/post-install
 f:5270f253408b10a19aaf81e62bd9e345:elementary-xfce/.footprint
 f:a523aa6e6be13c7eb611d7b555ab99a1:elementary-xfce/.signature
 f:6dadcab16727d63ea7babce2d8ee519d:elementary-xfce/Pkgfile
-f:dbb70a525c7eeefce742d506fcb03652:elementary-xfce/post-install
 f:55568f06ada2ea19e905a71840097955:exo/.footprint
 f:50b023ef32ae2f8c28ace58f8b53e55d:exo/.signature
 f:f092e0d12a83566043361450c12ba7a3:exo/Pkgfile
@@ -49,9 +49,9 @@ f:e179c4e5744bfd22c7874ed4bd67f213:libxfce4ui/.signature
 f:96708099166aeac04f89731b870a2a89:libxfce4util/.footprint
 f:b844c6d73fdf73fd730fd8489b1d0495:libxfce4util/.signature
 f:df37649fb6b9302b9b1fe1b8aa5ac8e5:libxfce4util/Pkgfile
+f:0806d0afa08aec01b9699e7d52096fac:mousepad/post-install
 f:9ddfba6efa6bbd2b13b6aa60c7f1552e:mousepad/.footprint
 f:18ad5a66b9c536b4d93749780b764300:mousepad/.signature
-f:0806d0afa08aec01b9699e7d52096fac:mousepad/post-install
 f:506e2486210acad303666a7c9310828e:mousepad/Pkgfile
 f:fdc28c151b88be47a6c52035893bf50a:thunar/.footprint
 f:aa08bbfc2ece4e5bf589945e64d9fa6d:thunar/.signature
@@ -88,8 +88,8 @@ f:6a9348b27438dc45da63336a53aa438d:xfce4-power-manager/.footprint
 f:0b6f49704ff77dc3cf58ae3296c52fc6:xfce4-power-manager/.signature
 f:0b91c310da59b2ac00e06bebd41812d8:xfce4-power-manager/Pkgfile
 f:576c61af73b3837854e19cde9d57d2b2:xfce4-pulseaudio-plugin/.footprint
-f:69ede1d06bd52a36fc989445d8feef95:xfce4-pulseaudio-plugin/.signature
-f:5cc7932453cfd926db87e7e4b8f664b5:xfce4-pulseaudio-plugin/Pkgfile
+f:7d1de7089920458dd43dce784339c9d0:xfce4-pulseaudio-plugin/.signature
+f:3e8cd1d15304d2d7b2a39be985241695:xfce4-pulseaudio-plugin/Pkgfile
 f:8fabc09bdd7f5159310180929e95b872:xfce4-screensaver/.footprint
 f:0f321621fd4b314ac3de89b00fb4e7a5:xfce4-screensaver/.signature
 f:f0a72960cab659a2391625d51744ad95:xfce4-screensaver/Pkgfile

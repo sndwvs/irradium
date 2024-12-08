@@ -5,12 +5,19 @@
 
 name=dhcpcd
 version=10.1.0
-release=1
+release=2
 source=(https://github.com/NetworkConfiguration/dhcpcd/releases/download/v$version/$name-$version.tar.xz
-	rc.dhcpcd)
+	rc.dhcpcd
+	dhcpcd.conf-Don-t-invoke-wpa_supplicant-by-default.patch
+	dhcpcd.conf-request_ntp_server_by_default.patch
+	use-hostname_short-in-dhcpcd.conf.patch)
 
 build() {
 	cd $name-$version
+
+	patch -p1 -i $SRC/dhcpcd.conf-Don-t-invoke-wpa_supplicant-by-default.patch
+	patch -p1 -i $SRC/dhcpcd.conf-request_ntp_server_by_default.patch
+	patch -p1 -i $SRC/use-hostname_short-in-dhcpcd.conf.patch
 
 	./configure \
 		--prefix= \
