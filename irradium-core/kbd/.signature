@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGCMCcaWCpZdEgqf1eAVWst5g/0XXTTuUz9qTZKMqhg4vyLY7raSma0E14rFB3awrsZ5efJy8dUsA1A2HjEkevQ8=
-SHA256 (Pkgfile) = 4265b368fae9ed08353592fb4a253a4514286ef1c179a6af6b96ca0388d50cbe
-SHA256 (.footprint) = daed78f795dd8b6a185093584c9784821bf535ea7a1a05c5bd458f57e7316223
-SHA256 (kbd-2.6.3.tar.xz) = 04996c08d7d1c460966fb244a3d3883352c2674b7ad522003d9f4ecb8ab48deb
+RWQAwxvZoACtGKqwFPCKerru6JUSetCcW6EuDhaV3V8lgoi4Lq0+GXjwhrp1k/LwiM6q3W3sDUsrcphnXj8czDSf6uXYb/Bf2wo=
+SHA256 (Pkgfile) = 6483153b96f4e3ac9d424751e574be313a3f737ee6e1594a7d851edfd286fd59
+SHA256 (.footprint) = 849241b43e786912adf3ffda60f80e83f97cea2d28c94d4f56a6ae6ed9c2010a
+SHA256 (kbd-2.7.tar.xz) = 9add0c3647dc133dd8787a9b1253c772ec65f403d70d82db8e09ac4c580cfa11
