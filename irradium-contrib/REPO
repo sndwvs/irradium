@@ -557,7 +557,7 @@ f:f11f3366bc8c9b2d15d5989ed5cf28f6:bind/named.root
 f:e718f850c043a0352cf95cc8fa9a05d7:bind/pre-install
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.aarch64
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.riscv64
-f:a0c06eb7414ab9aa7994d5ba3321e0f8:openjdk21-jdk/.signature.aarch64
+f:ce8a1a739f69b79486bf6bfc1c110bc7:openjdk21-jdk/.signature.aarch64
 f:13bae7d808ebc45aa83627a87dcc67d7:openjdk21-jdk/.signature.riscv64
 f:7bc2f693fe75ff82382d76167a3e3196:openjdk21-jdk/Pkgfile
 f:f0cf6fc36c48e14c52f25e9b432e9a7e:openjdk21-jdk/openjdk21.sh
