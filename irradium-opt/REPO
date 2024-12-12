@@ -177,8 +177,8 @@ f:e0418c610312fb6e417398f1a29b7d07:zip/zip-3.0-format-security.patch
 f:8d60750c2f922cebbefd9de596518403:zip/zipnote.patch
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:7fbfaf55f8a1792a709a7914124bb168:pkg-get/.footprint
-f:d9f00069311e4386e8e3c011a7c95c76:pkg-get/.signature
-f:dc3aaa0bfbf5ba5208415aee27641b25:pkg-get/Pkgfile
+f:be94b9adfbdca1b9d224fefdc33e6611:pkg-get/.signature
+f:66e64130b18bf1510013c4a4321d4fbb:pkg-get/Pkgfile
 f:75eaa36a2c8a27447308827ef0178aa1:dbus/.footprint
 f:d3a2dbaff9192a1260dc4821328d0f86:dbus/.signature
 f:23bc5ff22fe4f9a208d65fbbfd489ad9:dbus/30-dbus.launch
