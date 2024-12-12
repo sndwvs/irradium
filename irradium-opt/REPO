@@ -199,7 +199,7 @@ f:9b6c9378cdeb1efa1d3e0fb679d37e82:aspell/.signature
 f:dd9390f6f5ac214b2d42e9cdc6865f9f:aspell/Pkgfile
 f:8f73ca979759b72b437390461b126962:bindutils/.footprint
 f:2ba9912e6fdbcb3f4af292cc19421ab5:bindutils/.signature
-f:ef9ad59f6ae6218692192f7443f92339:bindutils/Pkgfile
+f:8220e8c3376af662b31d40e45a42addd:bindutils/Pkgfile
 f:3dc09fe4bf975cc2c3460c94a51f4379:bindutils/utils.patch
 f:9555f7ac0de39e5a4c6189e30d2544aa:liburcu/.footprint
 f:f16b8480609f3c2f39d544d2b0dae486:liburcu/.signature
