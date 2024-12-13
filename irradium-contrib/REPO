@@ -544,8 +544,8 @@ f:cc021a91f559f6537d559733119cab92:rasqal/rasqal-pkgconfig.patch.1
 f:f5f8c571b32b868be4a3ff127dd6896a:rasqal/rasqal-xcompile.patch.1
 f:ef94bfe34794f27e5ca43a053aa4c046:rasqal/rpath.patch
 f:656e6422caf40d6b57e863dcfff8a7ca:rasqal/.signature
-f:5721b6f6094a08cba1aebf8a03632bbf:bind/.footprint
-f:efae17bd47a9d25d5d4c7f37867ee4a2:bind/.signature
+f:31d33dbbb24bbb6fc71f22db0ca85ab0:bind/.footprint
+f:e1ab8c010dbc49ca4308a4a7fc016a10:bind/.signature
 f:ef3670fcfe9ed2f9b77b3a252bebec0b:bind/Pkgfile
 f:aafb8f8ff4cddd87f3e257169554edd8:bind/README
 f:d5ef3bb5ce1020454a2c5996b73c8a5c:bind/db.0.0.127
