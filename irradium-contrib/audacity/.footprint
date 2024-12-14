@@ -3,10 +3,12 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/audacity
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/audacity/
+-rwxr-xr-x	root/root	usr/lib/audacity/lib-audacity-application-logic.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-audio-devices.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-audio-graph.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-audio-io.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-basic-ui.so
+-rwxr-xr-x	root/root	usr/lib/audacity/lib-builtin-effects.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-channel.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-command-parameters.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-components.so
@@ -23,6 +25,7 @@ drwxr-xr-x	root/root	usr/lib/audacity/
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-graphics.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-import-export.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-ipc.so
+-rwxr-xr-x	root/root	usr/lib/audacity/lib-label-track.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-ladspa.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-lv2.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-math.so
@@ -32,6 +35,7 @@ drwxr-xr-x	root/root	usr/lib/audacity/
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-music-information-retrieval.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-note-track.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-numeric-formats.so
+-rwxr-xr-x	root/root	usr/lib/audacity/lib-nyquist-effects.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-playable-track.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-preference-pages.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-preferences.so
@@ -62,7 +66,9 @@ drwxr-xr-x	root/root	usr/lib/audacity/
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-uuid.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-viewport.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-vst.so
+-rwxr-xr-x	root/root	usr/lib/audacity/lib-wave-track-fft.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-wave-track-paint.so
+-rwxr-xr-x	root/root	usr/lib/audacity/lib-wave-track-settings.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-wave-track.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-wx-init.so
 -rwxr-xr-x	root/root	usr/lib/audacity/lib-wx-wrappers.so
@@ -151,7 +157,7 @@ drwxr-xr-x	root/root	usr/share/audacity/plug-ins/
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/equalabel.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/highpass.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/label-sounds.ny
--rw-r--r--	root/root	usr/share/audacity/plug-ins/limiter.ny
+-rw-r--r--	root/root	usr/share/audacity/plug-ins/legacy-limiter.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/lowpass.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/noisegate.ny
 -rw-r--r--	root/root	usr/share/audacity/plug-ins/notch.ny
