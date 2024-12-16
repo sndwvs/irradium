@@ -259,7 +259,7 @@ f:4dc2dde745e13c19c31ede71b4525718:libreoffice/.footprint.aarch64
 f:d6469741e1841ced5f921a11f7143948:libreoffice/.footprint.riscv64
 f:f5a600b7092e09aa5cccc7d21ff36f8c:libreoffice/.signature.aarch64
 f:0dadf4f6236ab6ed2bc53bc6ce6848ac:libreoffice/.signature.riscv64
-f:82f7351e70f864697766d4faab1b08f1:libreoffice/Pkgfile
+f:346a321ac1d880d3c2c8e55611d8d99b:libreoffice/Pkgfile
 f:7b3ae4fbdd27165b5adb2956822eb63c:librga/.footprint
 f:02f623c7e10ba79e8c9effe3bd3db890:librga/.signature
 f:7596de075e0ee7b81ce610dce48e4da3:librga/Pkgfile
