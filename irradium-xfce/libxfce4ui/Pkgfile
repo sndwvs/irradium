@@ -4,7 +4,7 @@
 # Depends on: gtk3 libxfce4util startup-notification xfconf
 
 name=libxfce4ui
-version=4.18.6
+version=4.20.0
 release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
@@ -18,6 +18,8 @@ build(){
     --localstatedir=/var \
     --disable-debug \
     --enable-gtk-doc=no \
+    --with-vendor-info='irradium' \
+    --enable-maintainer-mode \
     --disable-nls
 
   make

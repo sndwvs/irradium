@@ -4,8 +4,8 @@
 # Depends on: libwnck-gtk3 libepoxy libxfce4ui libxfce4util startup-notification xorg-xrandr xorg-libxpresent xorg-libxcomposite
 
 name=xfwm4
-version=4.18.0
-release=2
+version=4.20.0
+release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2 \
         xinitrc.xfce)
 

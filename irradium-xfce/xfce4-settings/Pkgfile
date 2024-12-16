@@ -4,7 +4,7 @@
 # Depends on: exo garcon libxfce4ui libcanberra libnotify libxklavier elementary-xfce gnome-icon-theme libinput
 
 name=xfce4-settings
-version=4.18.6
+version=4.20.0
 release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2
         xfce4-settings.theme.diff.gz  xfce4-settings.xft.defaults.diff.gz)
@@ -22,6 +22,7 @@ build(){
     --sysconfdir=/etc \
     --libexecdir=/usr/lib \
     --localstatedir=/var \
+    --enable-colord \
     --enable-pluggable-dialogs \
     --enable-sound-settings \
     --disable-debug \
