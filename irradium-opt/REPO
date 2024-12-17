@@ -98,7 +98,7 @@ f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:c5cdc3e7c43e4b5b6072109d288a9826:llvm/.footprint.aarch64
 f:2650e3997fc8dba2058c6ec9988af211:llvm/.signature.aarch64
-f:c9804e1f075aef5b32229f6ab42f4db1:llvm/Pkgfile
+f:f527c6e1081d63e1c56bc151003d1dab:llvm/Pkgfile
 f:c5cdc3e7c43e4b5b6072109d288a9826:llvm/.footprint.riscv64
 f:2d3dee4f34f0c48c1faffa945f001cd8:llvm/.signature.riscv64
 f:5795622d92584bf4df9ddcfd8927142b:mc/.footprint
