@@ -1,7 +1,7 @@
 # Description: Panel for the Xfce desktop environment
 # URL: https://docs.xfce.org/xfce/xfce4-panel/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: exo garcon libxfce4ui libwnck-gtk3 xfconf
+# Depends on: exo garcon libxfce4ui libwnck-gtk3 xfconf libxfce4windowing
 
 name=xfce4-panel
 version=4.20.0
