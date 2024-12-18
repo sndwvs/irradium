@@ -4,7 +4,7 @@
 # Depends on: xfce4-panel intltool qrencode
 
 name=xfce4-clipman-plugin
-version=1.6.5
+version=1.6.6
 release=1
 source=(https://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.bz2)
 
@@ -16,6 +16,8 @@ build(){
     --sysconfdir=/etc \
     --localstatedir=/var \
     --disable-debug \
+    --enable-x11 \
+    --enable-wayland \
     --disable-nls
 
   make

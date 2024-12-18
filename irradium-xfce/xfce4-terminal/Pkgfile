@@ -5,7 +5,7 @@
 
 name=xfce4-terminal
 version=1.1.3
-release=2
+release=3
 source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2)
 
 build(){
@@ -17,6 +17,8 @@ build(){
     --libexecdir=/usr/lib/$name \
     --localstatedir=/var \
     --disable-debug \
+    --enable-x11 \
+    --enable-wayland \
     --disable-nls
 
   make

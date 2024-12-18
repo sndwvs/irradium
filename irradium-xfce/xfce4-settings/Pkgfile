@@ -5,7 +5,7 @@
 
 name=xfce4-settings
 version=4.20.0
-release=1
+release=2
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2
         xfce4-settings.theme.diff.gz  xfce4-settings.xft.defaults.diff.gz)
 
@@ -26,6 +26,8 @@ build(){
     --enable-pluggable-dialogs \
     --enable-sound-settings \
     --disable-debug \
+    --enable-x11 \
+    --enable-wayland \
     --disable-nls
 
   make

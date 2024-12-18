@@ -5,7 +5,7 @@
 
 name=xfce4-power-manager
 version=4.20.0
-release=1
+release=2
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
 build(){
@@ -19,6 +19,8 @@ build(){
     --disable-systemd \
     --enable-xfce4panel \
     --disable-debug \
+    --enable-x11 \
+    --enable-wayland \
     --disable-nls \
     --disable-gtk-doc \
     --disable-gtk-doc-html \
