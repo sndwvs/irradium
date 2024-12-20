@@ -23,9 +23,6 @@ f:90ff24f8710a92bbd158d50e46cb448d:mesa/patches/0001-mesa-23.1-x86_32-llvm-detec
 f:7df0cf321ae0ec250157349ee0534c44:mesa/patches/0002-mesa-24.1-find-opencl-c-base.h.patch
 f:82dc157b55e14887e89f05b8ccba3f47:mesa/patches/0003-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch
 f:ac6ba287fba16bb152286e58b46e9b24:mesa/patches/0004-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch
-f:c9e9413519fc1715942c928ec8b19460:mesa/patches/0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch
-f:7e1080546c514670fc44bf6998185490:mesa/patches/0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch
-f:cf566dbb30c12b56c27e3b4ea3513037:mesa/patches/0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch
 f:557e06085a6430a23bdad43905e0b1e2:mesa/patches/0005-mesa-24-llvmspirv-detection.patch
 f:29786f7d54c57f1e83e955a60f24fced:mesa/patches/0006-mesa-buildsystem-improvements.patch
 f:8d38d25663ff46d55d7de46cc1add618:mesa/patches/0007-mesa-24.0-llvmspirvlib-version-check.patch
@@ -35,7 +32,7 @@ f:e7b4a2a4f4c59029dc2f9c5d0a46ecdb:mesa/.footprint.aarch64
 f:3cc6941af10f254f351dba9095d82c54:mesa/.footprint.riscv64
 f:6380c5ade898d38d19528f74cad077c9:mesa/.signature.aarch64
 f:0dcf8b5a43e95c5f5a9e2ff7872ff0bc:mesa/.signature.riscv64
-f:1d618d28c318f9bb702009dc5f49f028:mesa/Pkgfile
+f:46e699e4ad4c60b49974236328aa67c6:mesa/Pkgfile
 f:b4f8779303542471e8a279f27721e9b4:mesa/README.md
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:96f400c2e676aa9c2da5aed08bdba7f3:xorg-xf86-video-fbdev/.signature
