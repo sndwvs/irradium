@@ -4,7 +4,7 @@
 # Depends on: liburcu libuv openssl zlib
 
 name=bindutils
-version=9.20.3
+version=9.20.4
 release=1
 source=(https://ftp.isc.org/isc/bind9/$version/bind-$version.tar.xz
 	utils.patch)
@@ -12,10 +12,10 @@ source=(https://ftp.isc.org/isc/bind9/$version/bind-$version.tar.xz
 build() {
 	cd bind-$version
 
-        if [[ $(uname -m) == riscv64 ]]; then
-                export CC="clang"
-                export CXX="clang++"
-        fi
+	if [[ $(uname -m) == riscv64 ]]; then
+		export CC="clang"
+		export CXX="clang++"
+	fi
 
 	patch -Np1 -i $SRC/utils.patch
 

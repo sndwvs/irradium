@@ -1,11 +1,11 @@
 # Description: Panel for the Xfce desktop environment
 # URL: https://docs.xfce.org/xfce/xfce4-panel/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: exo garcon libxfce4ui libwnck-gtk3 xfconf
+# Depends on: exo garcon libxfce4ui libwnck-gtk3 xfconf libxfce4windowing
 
 name=xfce4-panel
-version=4.18.6
-release=1
+version=4.20.0
+release=2
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
 build(){
@@ -18,6 +18,8 @@ build(){
     --localstatedir=/var \
     --disable-debug \
     --enable-gtk-doc=no \
+    --enable-x11 \
+    --enable-wayland \
     --disable-nls
 
   make

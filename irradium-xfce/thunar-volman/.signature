@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0SsQxUFObNUsoR9dxxj/2kQPCJH5b1/sGJYtep88vGLrlQlvBu9AGM+2vaIMeVSur7ZEEM0Yc5rX59r+rFz2YQY=
-SHA256 (Pkgfile) = 0f14adfe1ca8c30441d1c5553a2f5609d5fd386c5f31d0d7027e004cc8a8b509
-SHA256 (.footprint) = 071feb6d00af4f794f4a10363357444cbae00b1de1e59a6aa3338e760ac69cce
-SHA256 (thunar-volman-4.18.0.tar.bz2) = 93b75c7ffbe246a21f4190295acc148e184be8df397e431b258d0d676e87fc65
+RWQ1yk7gkrBo0X3soEscnNK0BqXhyVtoRMLznKk+hNOgyXLdANzCgMZtlO5R4YeWcWyggLJ5npsdM/YZcvhow7vyrvjThuvzVwA=
+SHA256 (Pkgfile) = 8b668e27d25391ceed7f67d6de7120148b66354ad15f4b1b387cea8d78446fec
+SHA256 (.footprint) = a7a4fdc546b24b8de08267943e9d57e30290280f8221bffe7e8a763ed630cd07
+SHA256 (thunar-volman-4.20.0.tar.bz2) = b0dad852959b515b8fbfd1ed552e362340347d26d5246e7f1b973027131eb1da

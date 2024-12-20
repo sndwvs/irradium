@@ -1,11 +1,11 @@
 # Description: Xfce's desktop manager
 # URL: https://docs.xfce.org/xfce/xfdesktop/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: exo libwnck-gtk3 libxfce4ui libnotify startup-notification thunar
+# Depends on: exo libwnck-gtk3 libxfce4ui libxfce4windowing libnotify startup-notification thunar
 
 name=xfdesktop
-version=4.18.1
-release=1
+version=4.20.0
+release=2
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
 build(){
@@ -18,6 +18,8 @@ build(){
     --enable-notifications \
     --disable-debug \
     --enable-gtk-doc=no \
+    --enable-x11 \
+    --enable-wayland \
     --disable-nls
 
   make

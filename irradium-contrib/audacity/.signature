@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7sQ3vw2GgxEdqUbuRi3jq8XZ0nfthSj8wHhjgCqWU0a4iPuWvPWHcORH2eAUGZUF+NEKNul907l26RuSb/jvaAw=
-SHA256 (Pkgfile) = 27cdc0b741d23e4d67f98b444b97d211dc6d0b15b01d1af91ed49f0a9e8cbb82
-SHA256 (.footprint) = 5871ff60c6ff0ced649d777c81dff948eeb6ba748642beb7e2edab93ab0fb41e
-SHA256 (Audacity-3.6.1.tar.gz) = d3af8c8068cdc3072fb583d5062aa75f4b25846da342bd30df40bfb5ede83cc5
+RWTmT3d9kqan7sZHpHXZYvEunLgJ92/BB3hXbL0u4C8r3hM9fW46ATmcKUJYudLJvLnoHC77DPzpQxwQFeMHmSVkDCSjX3EcKAc=
+SHA256 (Pkgfile) = b42f3ccbda666c18fabd96abe4b6afb704bba15f0b2073ef2b29b80198ffa15f
+SHA256 (.footprint) = c80860180234a574308f0ea474a8a0f5d8bc6a634646a6f506415730f127e507
+SHA256 (Audacity-3.7.1.tar.gz) = 02457fe0ae1dab3a9a50ce54836cdd78a2d3ab51650d42696cab417210f03906

@@ -4,8 +4,8 @@
 # Depends on: libxfce4ui libxfce4util p5-uri
 
 name=exo
-version=4.18.0
-release=1
+version=4.20.0
+release=2
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
 build(){
@@ -16,6 +16,8 @@ build(){
     --sysconfdir=/etc \
     --disable-debug \
     --enable-gtk-doc=no \
+    --enable-x11 \
+    --enable-wayland \
     --disable-nls
 
   make

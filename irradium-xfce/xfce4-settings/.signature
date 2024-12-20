@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0WlTvyoroTSZy8WTgb6GFZiudRPFwPiCaC0e8N3nZq1tdDuSv7ddSEl5bWhh7O8HDmWkfgUq/3mh5AuQ8pgnCQ4=
-SHA256 (Pkgfile) = 97b0731dcd7df8dc449095cb06ae8a2a1db2b7b6f2dd7d20d322dfb947df0ddd
-SHA256 (.footprint) = 3c81cfc58af6187b3eeddc0cb1160496d208fcdc8aa419b2fc0597a27222dde7
-SHA256 (xfce4-settings-4.18.6.tar.bz2) = d9a9051b6026edd6766c64bb403b51e9167e4d31e7f1c7f843d3aed19f667bfe
-SHA256 (xfce4-settings.theme.diff.gz) = 5f13139aeec75b8c5163a25e37bb8fc56a399695947eb64093d2045fcc10887b
-SHA256 (xfce4-settings.xft.defaults.diff.gz) = 521988c0011f7c87f4b411fc2e89c970527d34bb9496b8f8b147a6d4cd575549
+RWQ1yk7gkrBo0RVPkyHFXb05bhHtAZ4CwHyCgFIynxvDtgnEraj8hVgATiXz9KKTFQNd1h+YdYFg1ucf63sCIy1l+rua1IiAXQo=
+SHA256 (Pkgfile) = 6078e8e8e35c7ed4725df23f62c9273f3017a365d862230f51bea95023117fe6
+SHA256 (.footprint) = 506fd6f02a1eb93abdef0b45c3e699e04f2c792e55ab390487a55f4268db84c9
+SHA256 (xfce4-settings-4.20.0.tar.bz2) = 23548da3429a296501fbfdbc98a861ee241b9fdd47e8d5de1781f57c6bbce5a9
+SHA256 (xfce4-settings.theme.diff.gz) = f19392c8f3cf73d20402ef5f0d4c351355e04450a6fbf72dccb025b9296b3130
+SHA256 (xfce4-settings.xft.defaults.diff.gz) = 651a6a05da64d94b4e0f09cbcc9e86ac22da2c8dafcce6615ebd605184e03769

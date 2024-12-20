@@ -5,8 +5,8 @@
 # Optional: cbindgen directx-headers glslang libclc libunwind libva libvdpau lm_sensors lua python3-ply rust-bindgen spirv-llvm-translator vulkan-loader wayland-protocols
 
 name=mesa
-version=24.3.1
-release=2
+version=24.3.2
+release=1
 source=(https://archive.mesa3d.org/$name-$version.tar.xz
 	patches/0000-mesa-20.1.1-fix-opencl.patch
 	patches/0001-mesa-23.1-x86_32-llvm-detection.patch
@@ -17,10 +17,7 @@ source=(https://archive.mesa3d.org/$name-$version.tar.xz
 	patches/0006-mesa-buildsystem-improvements.patch
 	patches/0007-mesa-24.0-llvmspirvlib-version-check.patch
 	patches/0008-mesa-24.2-llvm-19.0.patch
-	patches/0009-mesa-24.0-osmesa-fix-civ3.patch
-	patches/0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch
-	patches/0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch
-	patches/0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch)
+	patches/0009-mesa-24.0-osmesa-fix-civ3.patch)
 
 
 build() {
