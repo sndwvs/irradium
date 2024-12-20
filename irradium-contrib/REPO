@@ -149,8 +149,8 @@ f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:997d0c3564c57cd05bd24a86ce30fdaf:firefox/.footprint.aarch64
 f:07f0d054e2a216fa8eb962b0d52a09db:firefox/.footprint.riscv64
+f:4cc2349690b02dbed73bb769ebbe21ba:firefox/.signature.riscv64
 f:3271479ae407efc37aa31b0825b9c22a:firefox/.signature.aarch64
-f:8a26fd56f136dea33e1c85629c0d8b92:firefox/.signature.riscv64
 f:87184e38c6d8d03ec6e1d0e5aa738199:firefox/Pkgfile
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
@@ -544,9 +544,6 @@ f:cc021a91f559f6537d559733119cab92:rasqal/rasqal-pkgconfig.patch.1
 f:f5f8c571b32b868be4a3ff127dd6896a:rasqal/rasqal-xcompile.patch.1
 f:ef94bfe34794f27e5ca43a053aa4c046:rasqal/rpath.patch
 f:656e6422caf40d6b57e863dcfff8a7ca:rasqal/.signature
-f:31d33dbbb24bbb6fc71f22db0ca85ab0:bind/.footprint
-f:e1ab8c010dbc49ca4308a4a7fc016a10:bind/.signature
-f:ef3670fcfe9ed2f9b77b3a252bebec0b:bind/Pkgfile
 f:aafb8f8ff4cddd87f3e257169554edd8:bind/README
 f:d5ef3bb5ce1020454a2c5996b73c8a5c:bind/db.0.0.127
 f:c1e9d24f8ca28d50b5d5ad1637ccf241:bind/db.ip6.arpa
@@ -555,11 +552,14 @@ f:607a961a7699d4a554c509ae76ccc943:bind/named
 f:d88f47dbf8ed587cbc15f50b3d4de2a6:bind/named.conf
 f:f11f3366bc8c9b2d15d5989ed5cf28f6:bind/named.root
 f:e718f850c043a0352cf95cc8fa9a05d7:bind/pre-install
+f:31d33dbbb24bbb6fc71f22db0ca85ab0:bind/.footprint
+f:e1ab8c010dbc49ca4308a4a7fc016a10:bind/.signature
+f:ef3670fcfe9ed2f9b77b3a252bebec0b:bind/Pkgfile
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.aarch64
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.riscv64
-f:ce8a1a739f69b79486bf6bfc1c110bc7:openjdk21-jdk/.signature.aarch64
-f:359f03a59005632bd0706cf92de488b1:openjdk21-jdk/.signature.riscv64
-f:7bc2f693fe75ff82382d76167a3e3196:openjdk21-jdk/Pkgfile
 f:f0cf6fc36c48e14c52f25e9b432e9a7e:openjdk21-jdk/openjdk21.sh
 f:2a6ff80dd8d3fce7338894ed769747a6:openjdk21-jdk/riscv64.patch
 f:e5c61962170617fc8e681ae0018acabb:openjdk21-jdk/system-public-suffix.patch
+f:ce8a1a739f69b79486bf6bfc1c110bc7:openjdk21-jdk/.signature.aarch64
+f:359f03a59005632bd0706cf92de488b1:openjdk21-jdk/.signature.riscv64
+f:7bc2f693fe75ff82382d76167a3e3196:openjdk21-jdk/Pkgfile
