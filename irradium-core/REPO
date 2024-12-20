@@ -27,7 +27,7 @@ f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
 f:92f8fc88d56fca532f6d1488c76e4a5b:cmake/.footprint
 f:2353a5ef45f301ab1d002f190ac9c1ab:cmake/.signature
-f:a1980285876266fb468699024135cb79:cmake/Pkgfile
+f:40cfd98f8aecbc817b37ce545d3396d5:cmake/Pkgfile
 f:034680aa69ee64596517784fe1161c1b:db/.footprint
 f:7e30d22cd875710b997e739c6202893f:db/.signature
 f:bf37166683ba4966059cda949d4f6dbd:db/0001-atomic-Rename-local-__atomic_compare_exchange-to-avo.patch
