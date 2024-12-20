@@ -26,7 +26,7 @@ f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
 f:92f8fc88d56fca532f6d1488c76e4a5b:cmake/.footprint
-f:2353a5ef45f301ab1d002f190ac9c1ab:cmake/.signature
+f:a16cdaae4f91805af61a7b4734a066a2:cmake/.signature
 f:40cfd98f8aecbc817b37ce545d3396d5:cmake/Pkgfile
 f:034680aa69ee64596517784fe1161c1b:db/.footprint
 f:7e30d22cd875710b997e739c6202893f:db/.signature
@@ -117,13 +117,13 @@ f:c439515bdbd1e17d8a74c2a37d285718:ports/irradium-xfce.pub
 f:1ec983509e56966c5a7945a854c0f7bf:ports/irradium-xorg.pub
 f:0d1f1fde50a9bd743d9cac6b235f038c:ports/opt.pub
 f:69927e5d0ae5dc3455faeaac916c4db2:ports/xorg.pub
-f:441330fe7eb6970873d287b0d38f83f6:ports/opt.rsync
-f:d57279f5bd8b1b705b7be4f6866c9ced:ports/xorg.rsync
 f:dda7a4deaf5a68da6ddcc460f2afe649:ports/Pkgfile
 f:d39f6279b5e125edb9f402b0e4d1865b:ports/contrib.rsync.inactive
 f:bceca3aa28a0ee00f14e5634251a8322:ports/core.rsync
 f:1473ddce72b0475daa6760b804da537c:ports/irradium-contrib.httpup.inactive
 f:6da446b0cd83ab5484911a2e76ada068:ports/irradium-xfce.httpup.inactive
+f:441330fe7eb6970873d287b0d38f83f6:ports/opt.rsync
+f:d57279f5bd8b1b705b7be4f6866c9ced:ports/xorg.rsync
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:1e68ce5a010624ae6f5c305937163e62:prt-get/fsearch-footprint-add-multi-arch-riscv64-aarch64.patch
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
