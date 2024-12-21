@@ -6,14 +6,10 @@
 name=Greybird
 version=3.23.4
 release=1
-source=(https://github.com/shimmerproject/$name/archive/v$version.tar.gz
-        0001-Fix-label-styles-for-xfdesktop-4.19-338.patch)
+source=(https://github.com/shimmerproject/$name/archive/v$version.tar.gz)
 
 build(){
   cd $name-$version
-
-  # Fix https://github.com/shimmerproject/Greybird/issues/336
-  patch -p1 --verbose -i $SRC/0001-Fix-label-styles-for-xfdesktop-4.19-338.patch
 
   mkdir meson-build
   cd meson-build

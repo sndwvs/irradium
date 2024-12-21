@@ -33,8 +33,7 @@ d:xfwm4
 d:libxfce4windowing
 f:e724b7b74aed05552d1761a440de4678:Greybird/.footprint
 f:14521637eea478df3665a62221a657fc:Greybird/.signature
-f:632afd8e14122f2786307aa189e5d254:Greybird/0001-Fix-label-styles-for-xfdesktop-4.19-338.patch
-f:9dc0c56caa5b85756777e3900ce1a645:Greybird/Pkgfile
+f:ec3c2a0ed821bddc90a695c553ee307d:Greybird/Pkgfile
 f:dbb70a525c7eeefce742d506fcb03652:elementary-xfce/post-install
 f:5270f253408b10a19aaf81e62bd9e345:elementary-xfce/.footprint
 f:a523aa6e6be13c7eb611d7b555ab99a1:elementary-xfce/.signature
