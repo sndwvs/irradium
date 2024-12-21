@@ -207,7 +207,7 @@ f:351ce3d9e393470b0ee3f15ef47e32b8:liburcu/Pkgfile
 f:56a7f08af14b4f937e8185ea0cf9453a:nodejs/.footprint
 f:352bd14a9fd821f0841e15c9ff17013a:nodejs/52888.patch
 f:1f8d81b7d7f75b75af3e33ebd97808bf:nodejs/system-c-ares.patch
-f:9978c06325ab59480840cc6ddfdb2d96:nodejs/.signature
+f:c001ed37508100618125a191f7b072ac:nodejs/.signature
 f:a1969c0d896d1611e8afbe48d9a304c3:nodejs/Pkgfile
 f:f8d2f18e32451d2f7d516ef7fd446dc8:shared-mime-info/.footprint
 f:ba273dc7e389002c9507f369fe299b59:shared-mime-info/.signature
