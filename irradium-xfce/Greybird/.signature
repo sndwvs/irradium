@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0bGJdylv+dYJ0nBzy632PGPlgSXA0eyRZqJBSLtINtwqYaUgDZZyJLkMVD9w2zcq5OSxqeO3E/0VTIXeyEMezAM=
-SHA256 (Pkgfile) = 85ac1445be137c58b8d691cb0c74f167505c8832e5bb51f2597036c24039e470
+RWQ1yk7gkrBo0S1rieiLVQyYsSErMzMbQDu8cMyVM9OgY+TMzeNK3W1HYy2FNCllyuRPdHg04W9QwuUX4H4WPeIN9cAGvYupWQw=
+SHA256 (Pkgfile) = 522977fc57fd1ac0273822a0bc8ff2081fbc1a09b3e99bb01a60a996649d636d
 SHA256 (.footprint) = dc863db72ea66354978e4b83476cbdaa01cf4b1cac341f631cb03bcc5f333405
-SHA256 (v3.23.3.tar.gz) = 2c97d3a7281c80f5752294f196bff22a814aef8da7ca3b7545f50bbb9ed16d64
-SHA256 (0001-Fix-label-styles-for-xfdesktop-4.19-338.patch) = dec56b74aa35ec16397e4e7c5ca67103df18580597f809c9a5fcdbfe8792c6d6
+SHA256 (v3.23.4.tar.gz) = 74dcec9b9bcf6c869941b661c50ce0d752b4eb4e193747db536ffd7e97d32453
