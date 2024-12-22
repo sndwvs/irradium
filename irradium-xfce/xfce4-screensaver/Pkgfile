@@ -4,18 +4,25 @@
 # Depends on: dbus-glib garcon libwnck-gtk3 libxklavier xorg-libxscrnsaver python3-gobject
 
 name=xfce4-screensaver
-version=4.18.3
+version=4.18.4
 release=1
-source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2)
+source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2
+        clarify-desc-in-xfce-settings.patch)
 
 build(){
   cd $name-$version
+
+  # Clarify description in Xfce Settings menu
+  patch -p1 --verbose -i $SRC/clarify-desc-in-xfce-settings.patch
 
   ./configure \
     --prefix=/usr \
     --sysconfdir=/etc \
     --libexecdir=/usr/lib/$name \
     --localstatedir=/var \
+    --enable-pam \
+    --with-mit-ext \
+    --enable-locking \
     --disable-debug \
     --enable-gtk-doc=no \
     --disable-nls
