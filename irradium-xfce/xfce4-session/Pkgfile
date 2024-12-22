@@ -34,8 +34,6 @@ build(){
 
   # Don't ship the xscreensaver autostart file:
   rm -f $PKG/etc/xdg/autostart/xscreensaver.desktop
-  rmdir --parent $PKG/etc/xdg/autostart/
-
   install -d $PKG/etc/xdg/autostart
 
 }
