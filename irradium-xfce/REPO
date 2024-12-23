@@ -102,7 +102,7 @@ f:64f7cf5170d1e94ac6d51c259dc85c9f:xfce4-session/README
 f:8df6ba54956111688839e483afaff5e0:xfce4-session/use-xfss-by-default-in-xfce.patch.gz
 f:75c841916ceec32c21b4f3e51da15d33:xfce4-session/.footprint
 f:18143dc0a54332bad2976fd210ca6abd:xfce4-session/.signature
-f:688182e06dae2904d917b17d111c94fe:xfce4-session/Pkgfile
+f:24ab9f11578cbd70fb3fc28772ce647f:xfce4-session/Pkgfile
 f:f54fa9c750bcf97196c96287bc2e90f6:xfce4-session/xfce4-session.labwc.session.diff
 f:7cbb93454a600fe09638d690954c9da3:xfce4-settings/.footprint
 f:9e690c51ce32e6b656f123a53fbc22c9:xfce4-settings/.signature
