@@ -5,9 +5,9 @@
 # Optional: avahi coin-or-mp cups dconf gpgme kio lpsolve mariadb openldap postgresql python3-lxml qt5 sane valgrind
 
 name=libreoffice
-version=24.8.4.2
+version=25.2.0.1
 release=1
-pdfiumversion=6425
+pdfiumversion=6764
 source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-$version.tar.xz
   https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-dictionaries-$version.tar.xz
   https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-translations-$version.tar.xz
@@ -16,7 +16,7 @@ source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/
   https://dev-www.libreoffice.org/src/0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz
   https://dev-www.libreoffice.org/src/dtoa-20180411.tgz
   https://dev-www.libreoffice.org/src/pdfium-$pdfiumversion.tar.bz2
-  https://dev-www.libreoffice.org/src/skia-m116-2ddcf183eb260f63698aa74d1bb380f247ad7ccd.tar.xz
+  https://dev-www.libreoffice.org/src/skia-m130-3c64459d5df2fa9794b277f0959ed8a92552bf4c.tar.xz
   https://raw.githubusercontent.com/unicode-org/icu/main/icu4c/source/data/brkitr/rules/line.txt
   libreoffice-7.6-qt6-wayland-egl.patch
   makefile.in.patch)
@@ -36,7 +36,7 @@ unpack_source() {
     185d60944ea767075d27247c3162b3bc-unowinreg.dll | \
       pdfium-$pdfiumversion.tar.bz2 | \
       dtoa-20180411.tgz | \
-      skia-m116-2ddcf183eb260f63698aa74d1bb380f247ad7ccd.tar.xz | \
+      skia-m130-3c64459d5df2fa9794b277f0959ed8a92552bf4c.tar.xz | \
       0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz)
       echo "Moving $(get_filename $file) to $SRC/tarballs"
       cp $(get_filename $file) $SRC/tarballs
