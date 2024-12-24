@@ -4,52 +4,52 @@
 # Depends on: expat
 
 name=dbus
-version=1.14.10
-release=2
+version=1.16.0
+release=1
 source=(https://dbus.freedesktop.org/releases/dbus/$name-$version.tar.xz
-	rc.dbus 30-dbus.launch
-	dbus-1.12.x-allow_root_globally.diff
-	dbus-enable-elogind.patch
-	configure.ac.patch)
+    fix-daemon-location.patch
+    rc.dbus 30-dbus.launch
+    dbus-1.12.x-allow_root_globally.diff
+    dbus-1.15.8-enable-elogind.patch)
 
 build() {
-	cd $name-$version
+    cd $name-$version
 
-	patch -p1 -i $SRC/configure.ac.patch
-	patch -p1 -i $SRC/dbus-1.12.x-allow_root_globally.diff
-	patch -p1 -i $SRC/dbus-enable-elogind.patch
+    patch -Np1 --verbose -i $SRC/dbus-1.12.x-allow_root_globally.diff
+    # gentoo patch (https://bugs.gentoo.org/599494):
+    patch -Np1 --verbose -i $SRC/dbus-1.15.8-enable-elogind.patch
+    patch -Np1 --verbose -i $SRC/fix-daemon-location.patch
 
-	NOCONFIGURE=1 ./autogen.sh
+    meson setup build \
+        --prefix=/usr \
+        --localstatedir=/var \
+        --sysconfdir=/etc \
+        --libexecdir=lib/dbus \
+        --buildtype=plain \
+        --wrap-mode nodownload \
+        -D b_lto=true \
+        -D b_pie=true \
+        -D dbus_daemondir=/usr/sbin \
+        -D dbus_user=messagebus \
+        -D runtime_dir=/run \
+        -D system_pid_file=/run/dbus/pid \
+        -D system_socket=/run/dbus/system_bus_socket \
+        -D doxygen_docs=disabled \
+        -D apparmor=disabled \
+        -D selinux=disabled \
+        -D inotify=enabled \
+        -D user_session=true \
+        -D x11_autolaunch=enabled \
+        -D systemd=disabled \
+        -D elogind=enabled
 
-	./configure \
-		--prefix=/usr \
-		--with-dbus-daemondir=/usr/sbin \
-		--localstatedir=/var \
-		--runstatedir=/run \
-		--sysconfdir=/etc \
-		--libexecdir=/usr/lib/dbus \
-		--with-dbus-user=messagebus \
-		--disable-apparmor \
-		--disable-selinux \
-		--enable-shared=yes \
-		--enable-static=no \
-		--enable-inotify \
-		--enable-user-session \
-		--enable-x11-autolaunch \
-		--enable-elogind \
-		--disable-systemd \
-		--without-systemdsystemunitdir \
-		--with-system-pid-file=/run/dbus/pid \
-		--with-system-socket=/run/dbus/system_bus_socket \
-		--with-console-auth-dir=/var/run/console
+    meson compile -C build
+    DESTDIR=$PKG meson install -C build
 
-	make
-	make DESTDIR=$PKG install
+    install -D -m 0755 $SRC/rc.dbus $PKG/etc/rc.d/dbus
+    install -D -m 0755 $SRC/30-dbus.launch \
+        $PKG/etc/X11/xinit/xinitrc.d/30-dbus.launch.sh
 
-	install -D -m 0755 $SRC/rc.dbus $PKG/etc/rc.d/dbus
-	install -D -m 0755 $SRC/30-dbus.launch \
-		$PKG/etc/X11/xinit/xinitrc.d/30-dbus.launch.sh
-
-	rm -r $PKG/usr/share/doc $PKG/var/run
-	rm -rf $PKG/usr/share/xml
+    rm -r $PKG/usr/share/doc $PKG/run
+    rm -rf $PKG/usr/share/xml
 }
