@@ -256,10 +256,10 @@ f:73e7b99b3c8ae2ce230a665abc9ed5e1:libptytty/Pkgfile
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
 f:330406e43a76603e3c86156ea1e0a779:libreoffice/makefile.in.patch
 f:faf069d19324a53f32cceaa8e7cc0ab2:libreoffice/libreoffice-7.6-qt6-wayland-egl.patch
-f:4dc2dde745e13c19c31ede71b4525718:libreoffice/.footprint.aarch64
-f:d6469741e1841ced5f921a11f7143948:libreoffice/.footprint.riscv64
-f:be01d0860719ebf89b7cf4cfc27a591c:libreoffice/.signature.aarch64
-f:92103f7e8cd35bd5426bde17267b3e00:libreoffice/.signature.riscv64
+f:2061ce9dc17cbc1b0e15c66bbfbd014c:libreoffice/.footprint.aarch64
+f:8cc6572603fb8ee59af94bbaa8a53127:libreoffice/.footprint.riscv64
+f:0b8edb23200d79caba659af83768b420:libreoffice/.signature.aarch64
+f:ca5dc4780b204fcea87d250d3ea7ebd5:libreoffice/.signature.riscv64
 f:72d49b7473dc1e6fe9491feb8d72af7b:libreoffice/Pkgfile
 f:7b3ae4fbdd27165b5adb2956822eb63c:librga/.footprint
 f:02f623c7e10ba79e8c9effe3bd3db890:librga/.signature
