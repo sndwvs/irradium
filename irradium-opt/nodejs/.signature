@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCcjp9JxGt7JWDc/HY/2L78GeTaBlQ+qPLGgD8NMlco4zS3Ma0wilYlHnvA+T3AKp38/iiUtVvnNPUyWl4DQ06wg=
-SHA256 (Pkgfile) = df175ae5593b974942e2feac468796c354d5e3b343bd5ba6fd07b7db4c25ad50
+RWRxRnTWECCiCb42h0g5sj/WvWmYShqseGaHRpUbKYsulvaAu1YrO+bmhGBedU88rEJFEqzxyBatZH+9npNGpqAfG2O5AIjPGAc=
+SHA256 (Pkgfile) = cb174b542fe272374479c67995d7fe0a64d50152e544e9f183b952f2f5087df1
 SHA256 (.footprint) = def23a3729301dfd00b0facca8cd0509d93d42520eef6f841a018cfb874da59f
-SHA256 (node-v23.4.0.tar.xz) = 4bb14bf3faf790bb122a537b05d7bf4006fc51e78761b157ce453b63fa7e3371
+SHA256 (node-v23.5.0.tar.xz) = 32e77b36c0774c68baab41bc7c2acc58663ca0a2b7c4d3e9bec6f761c15fdac0
 SHA256 (system-c-ares.patch) = 1ab0f849fe4fae2d295b6c60c12825d5f2c29f5b28b721916d1b550704b0f5f3
 SHA256 (52888.patch) = 0f8f2561597868a96eea0b8cbb80f7c3d3a735a7bfd67b9392a4774662e8b414

@@ -4,7 +4,7 @@
 # Depends on: xfce4-panel intltool qrencode
 
 name=xfce4-clipman-plugin
-version=1.6.6
+version=1.6.7
 release=1
 source=(https://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$version.tar.bz2)
 

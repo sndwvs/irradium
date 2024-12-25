@@ -4,13 +4,13 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.10/
 drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.8.1.dist-info/
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.8.1.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.8.1.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.8.1.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.8.1.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.8.1.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.8.1.dist-info/licenses/LICENSE
+drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.12.13.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.12.13.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.12.13.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.12.13.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.12.13.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.12.13.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2024.12.13.dist-info/licenses/LICENSE
 drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/__init__.py
@@ -65,8 +65,6 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/__pycache__/_legacy.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/__pycache__/compat_utils.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/__pycache__/compat_utils.cpython-310.pyc
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/__pycache__/functools.cpython-310.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/__pycache__/functools.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/__pycache__/imghdr.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/__pycache__/imghdr.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/__pycache__/shutil.cpython-310.opt-1.pyc
@@ -76,7 +74,6 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/_deprecated.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/_legacy.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/compat_utils.py
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/functools.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/imghdr.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/shutil.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/compat/types.py
@@ -290,10 +287,14 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bandaichannel.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bandcamp.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bandcamp.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bandlab.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bandlab.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bannedvideo.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bannedvideo.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bbc.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bbc.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/beacon.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/beacon.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/beatbump.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/beatbump.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/beatport.cpython-310.opt-1.pyc
@@ -336,6 +337,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/blogger.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bloomberg.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bloomberg.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bluesky.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bluesky.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bokecc.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bokecc.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/bongacams.cpython-310.opt-1.pyc
@@ -724,6 +727,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/gab.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/gaia.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/gaia.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/gamedevtv.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/gamedevtv.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/gamejolt.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/gamejolt.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/gamespot.cpython-310.opt-1.pyc
@@ -746,6 +751,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/genericembeds.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/genius.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/genius.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/germanupa.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/germanupa.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/getcourseru.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/getcourseru.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/gettr.cpython-310.opt-1.pyc
@@ -938,6 +945,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/karaoketv.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kelbyone.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kelbyone.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kenh14.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kenh14.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/khanacademy.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/khanacademy.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kick.cpython-310.opt-1.pyc
@@ -946,6 +955,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kicker.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kickstarter.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kickstarter.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kika.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kika.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kinja.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kinja.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/kinopoisk.cpython-310.opt-1.pyc
@@ -1020,8 +1031,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/livestream.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/livestreamfails.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/livestreamfails.cpython-310.pyc
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/lnkgo.cpython-310.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/lnkgo.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/lnk.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/lnk.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/loom.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/loom.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/lovehomeporn.cpython-310.opt-1.pyc
@@ -1098,8 +1109,6 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/microsoftembed.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/microsoftstream.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/microsoftstream.cpython-310.pyc
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/mildom.cpython-310.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/mildom.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/minds.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/minds.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/minoto.cpython-310.opt-1.pyc
@@ -1122,6 +1131,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/mlssoccer.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/mocha.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/mocha.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/mojevideo.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/mojevideo.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/mojvideo.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/mojvideo.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/monstercat.cpython-310.opt-1.pyc
@@ -1364,10 +1375,10 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/phoenix.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/photobucket.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/photobucket.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/pialive.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/pialive.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/piapro.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/piapro.cpython-310.pyc
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/piaulizaportal.cpython-310.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/piaulizaportal.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/picarto.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/picarto.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/piksel.cpython-310.opt-1.pyc
@@ -1402,8 +1413,6 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/podchaser.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/podomatic.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/podomatic.cpython-310.pyc
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/pokemon.cpython-310.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/pokemon.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/pokergo.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/pokergo.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/polsatgo.cpython-310.opt-1.pyc
@@ -1468,6 +1477,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/radiojavan.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/radiokapital.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/radiokapital.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/radioradicale.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/radioradicale.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/radiozet.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/radiozet.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/radlive.cpython-310.opt-1.pyc
@@ -1580,6 +1591,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/screencastify.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/screencastomatic.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/screencastomatic.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/screenrec.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/screenrec.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/scrippsnetworks.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/scrippsnetworks.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/scrolller.cpython-310.opt-1.pyc
@@ -1588,6 +1601,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/scte.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/sejmpl.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/sejmpl.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/sen.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/sen.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/senalcolombia.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/senalcolombia.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/senategov.cpython-310.opt-1.pyc
@@ -1640,6 +1655,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/slutload.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/smotrim.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/smotrim.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/snapchat.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/snapchat.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/snotr.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/snotr.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/sohu.cpython-310.opt-1.pyc
@@ -1920,6 +1937,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/ukcolumn.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/uktvplay.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/uktvplay.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/uliza.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/uliza.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/umg.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/umg.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/unistra.cpython-310.opt-1.pyc
@@ -1952,8 +1971,6 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/vbox7.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/veo.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/veo.cpython-310.pyc
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/veoh.cpython-310.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/veoh.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/vesti.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/vesti.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/vevo.cpython-310.opt-1.pyc
@@ -1980,6 +1997,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/videomore.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/videopress.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/videopress.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/vidflex.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/vidflex.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/vidio.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/vidio.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/vidlii.cpython-310.opt-1.pyc
@@ -2219,8 +2238,10 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/banbye.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/bandaichannel.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/bandcamp.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/bandlab.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/bannedvideo.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/bbc.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/beacon.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/beatbump.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/beatport.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/beeg.py
@@ -2242,6 +2263,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/blerp.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/blogger.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/bloomberg.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/bluesky.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/bokecc.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/bongacams.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/boosty.py
@@ -2436,6 +2458,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/fuyintv.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/gab.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/gaia.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/gamedevtv.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/gamejolt.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/gamespot.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/gamestar.py
@@ -2447,6 +2470,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/generic.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/genericembeds.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/genius.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/germanupa.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/getcourseru.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/gettr.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/giantbomb.py
@@ -2543,10 +2567,12 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/kankanews.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/karaoketv.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/kelbyone.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/kenh14.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/khanacademy.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/kick.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/kicker.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/kickstarter.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/kika.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/kinja.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/kinopoisk.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/kommunetv.py
@@ -2584,7 +2610,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/livejournal.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/livestream.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/livestreamfails.py
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/lnkgo.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/lnk.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/loom.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/lovehomeporn.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/lrt.py
@@ -2623,7 +2649,6 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/mgtv.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/microsoftembed.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/microsoftstream.py
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/mildom.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/minds.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/minoto.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/mirrativ.py
@@ -2635,6 +2660,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/mlb.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/mlssoccer.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/mocha.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/mojevideo.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/mojvideo.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/monstercat.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/motherless.py
@@ -2756,8 +2782,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/philharmoniedeparis.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/phoenix.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/photobucket.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/pialive.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/piapro.py
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/piaulizaportal.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/picarto.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/piksel.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/pinkbike.py
@@ -2775,7 +2801,6 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/podbayfm.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/podchaser.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/podomatic.py
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/pokemon.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/pokergo.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/polsatgo.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/polskieradio.py
@@ -2808,6 +2833,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/radiofrance.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/radiojavan.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/radiokapital.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/radioradicale.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/radiozet.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/radlive.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/rai.py
@@ -2864,10 +2890,12 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/screencast.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/screencastify.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/screencastomatic.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/screenrec.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/scrippsnetworks.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/scrolller.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/scte.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/sejmpl.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/sen.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/senalcolombia.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/senategov.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/sendtonews.py
@@ -2894,6 +2922,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/slideslive.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/slutload.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/smotrim.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/snapchat.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/snotr.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/sohu.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/sonyliv.py
@@ -3034,6 +3063,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/ufctv.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/ukcolumn.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/uktvplay.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/uliza.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/umg.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/unistra.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/unity.py
@@ -3050,7 +3080,6 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/varzesh3.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/vbox7.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/veo.py
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/veoh.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/vesti.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/vevo.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/vgtv.py
@@ -3064,6 +3093,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/videoken.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/videomore.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/videopress.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/vidflex.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/vidio.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/vidlii.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/vidly.py
