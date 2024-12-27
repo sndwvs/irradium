@@ -201,8 +201,8 @@ f:3dc09fe4bf975cc2c3460c94a51f4379:bindutils/utils.patch
 f:f3fb83559b3f51d7f0db57897efc8de5:bindutils/.footprint
 f:b7622fe5a4438d0082c3bf71ec0294f8:bindutils/.signature
 f:8220e8c3376af662b31d40e45a42addd:bindutils/Pkgfile
-f:9555f7ac0de39e5a4c6189e30d2544aa:liburcu/.footprint
-f:f16b8480609f3c2f39d544d2b0dae486:liburcu/.signature
+f:1aede60653850132b69cd3d64728fae3:liburcu/.footprint
+f:964bbe843101bb88c2db17e81e8bfe37:liburcu/.signature
 f:aa2a81bfc674791a7a23018a0e458a80:liburcu/Pkgfile
 f:56a7f08af14b4f937e8185ea0cf9453a:nodejs/.footprint
 f:352bd14a9fd821f0841e15c9ff17013a:nodejs/52888.patch
