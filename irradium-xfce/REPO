@@ -131,8 +131,9 @@ f:0f5c35ebfe940321c525b191b18a83f0:xfconf/.footprint
 f:14147f1ad86578e8dfb6a89bf874410f:xfconf/.signature
 f:b62beb3944df7920b1af7b3d995686fb:xfconf/Pkgfile
 f:bda2334318febcc10a038982af18fdd0:xfdesktop/.footprint
-f:2e4dc5263c17951339a56cf9f24ff853:xfdesktop/.signature
-f:d0d1082a35aa444f1cc54eeefcf23e6b:xfdesktop/Pkgfile
+f:b8f89cc5c7b70a3efff9350d0621c9c0:xfdesktop/.signature
+f:6abc7158e488231b900c36f8ad04ae14:xfdesktop/Pkgfile
+f:76677c112e02423e6c8def59e3dacaf2:xfdesktop/xfdesktop-monitor-chooser-resource-fix.diff
 f:f41488fea2601c2f47a491f0a42aa4dc:xfwm4/.footprint
 f:1d04f43063ccb7f69e522a328edc0e9b:xfwm4/xinitrc.xfce
 f:364fa23fa38d602049e53272823e16d5:xfwm4/.signature

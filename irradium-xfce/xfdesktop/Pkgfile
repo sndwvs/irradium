@@ -5,11 +5,15 @@
 
 name=xfdesktop
 version=4.20.0
-release=2
-source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
+release=3
+source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2
+        xfdesktop-monitor-chooser-resource-fix.diff)
 
 build(){
   cd $name-$version
+
+  # Fix broken resource file:
+  patch -p1 --verbose -i $SRC/xfdesktop-monitor-chooser-resource-fix.diff
 
   ./configure \
     --prefix=/usr \
@@ -17,7 +21,6 @@ build(){
     --enable-thunarx \
     --enable-notifications \
     --disable-debug \
-    --enable-gtk-doc=no \
     --enable-x11 \
     --enable-wayland \
     --disable-nls
