@@ -5,11 +5,15 @@
 
 name=thunar
 version=4.20.0
-release=1
-source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
+release=2
+source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2
+        0001-Prevent-crash-when-loading-mount-point-emblem-1511.patch)
 
 build(){
   cd $name-$version
+
+  # Subject: [PATCH] Prevent crash when loading mount point emblem (#1511):
+  patch -p1 --verbose -i $SRC/0001-Prevent-crash-when-loading-mount-point-emblem-1511.patch
 
   ./configure \
     --prefix=/usr \

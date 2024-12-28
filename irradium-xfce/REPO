@@ -56,8 +56,9 @@ f:9ddfba6efa6bbd2b13b6aa60c7f1552e:mousepad/.footprint
 f:18ad5a66b9c536b4d93749780b764300:mousepad/.signature
 f:506e2486210acad303666a7c9310828e:mousepad/Pkgfile
 f:fdc28c151b88be47a6c52035893bf50a:thunar/.footprint
-f:89f14cfdf1dfc7f13fa3d3e4e2227fcb:thunar/.signature
-f:127aaad9388b05d9acad2a8ac1f8782c:thunar/Pkgfile
+f:eb84ecf1c21a9cadf139662be2b72636:thunar/.signature
+f:8468233ad0acb91bf23a53a1b0ea49a9:thunar/Pkgfile
+f:9bdd6d8437dc0ff5c8372a722e149b8a:thunar/0001-Prevent-crash-when-loading-mount-point-emblem-1511.patch
 f:f115a73ca3aca7e750aff1df1056ff9b:thunar-volman/.footprint
 f:69c7e85d8b5401a297df9e260bfa3f4b:thunar-volman/.signature
 f:b11494c531e04064116c2f81fcf96be8:thunar-volman/Pkgfile
