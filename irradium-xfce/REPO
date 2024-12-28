@@ -31,6 +31,7 @@ d:xfconf
 d:xfdesktop
 d:xfwm4
 d:libxfce4windowing
+d:xfce4-mixer
 f:e724b7b74aed05552d1761a440de4678:Greybird/.footprint
 f:f143d56ec54f4dcbed423433bde9ee86:Greybird/.signature
 f:ec3c2a0ed821bddc90a695c553ee307d:Greybird/Pkgfile
@@ -142,3 +143,6 @@ f:d32239bcb673463ab874e80d47fae504:COPYING
 f:786281391b8c06be6353a11ee2725c1c:libxfce4windowing/.footprint
 f:e85db4c37ecb25322afbc8d5fbeb65e7:libxfce4windowing/.signature
 f:93415de0fbac3ecd0d8d1f13ceb6801c:libxfce4windowing/Pkgfile
+f:a144900c536cf74e05a1f4b5f7026889:xfce4-mixer/.signature
+f:226969244de636a486908ff8de9a675a:xfce4-mixer/Pkgfile
+f:c63616d7afc51eea1dfc22e65a408701:xfce4-mixer/.footprint

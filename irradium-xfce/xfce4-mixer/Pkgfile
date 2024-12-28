@@ -1,0 +1,25 @@
+# Description: A volume control application based on GStreamer
+# URL: https://docs.xfce.org/apps/xfce4-mixer/start
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: xfce4-panel alsa-utils gstreamer
+
+name=xfce4-mixer
+version=4.18.2
+release=1
+source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2)
+
+build(){
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --libexecdir=/usr/lib/$name \
+    --localstatedir=/var \
+    --disable-debug \
+    --disable-nls
+
+  make
+  make DESTDIR=$PKG install || exit 1
+
+}
