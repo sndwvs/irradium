@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0UNUcOV8eli/Qhc5grWMRBqUX5PN94T08UqaRivlelikZFtwUsDwBTmvskCrybK3tuUSZufSsaZH6AHpzVf/yQU=
-SHA256 (Pkgfile) = 7626040a5d545e7c7a354e0fe9d1ebc299f62b13ffa592b07e9ca4e4ce8e9da5
+RWQ1yk7gkrBo0WMBe1x0G9RgK7doriirHXpJNmcXmkfU3ab35QIw1S5Nnl3fc4l09ipW1xS44YDM1vA0O3lxnE/p0cneupDVBQM=
+SHA256 (Pkgfile) = 66be4e26ec0dc78ca79ed513ba505f0257c0bc99dab1046b65d550f480a8485e
 SHA256 (.footprint) = 5a1286a3fc348e573f2217d9b165a66f80b96259f5cb9845b706a1a15d175536
-SHA256 (0.3.0.tar.gz) = e7c6aa6e65ce70764f2b8815445dd4be16f2c8aeee4971e9d7e1c66a44db7bbe
+SHA256 (0.4.0.tar.gz) = 16971c3c7d6324238db98c210da17755f27bc5baa080feae22f11005164ac3e2
