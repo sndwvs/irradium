@@ -5,7 +5,7 @@
 
 name=libxklavier
 version=5.4
-release=1
+release=2
 source=(https://people.freedesktop.org/~svu/$name-$version.tar.bz2)
 
 build() {
@@ -17,4 +17,7 @@ build() {
     --build=$(uname -m)-unknown-linux-gnu
   make
   make DESTDIR=$PKG install
+
+  # Don't ship .la files:
+  rm -f $PKG/{,usr/}{lib,lib64,lib32}/*.la
 }
