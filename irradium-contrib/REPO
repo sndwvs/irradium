@@ -395,8 +395,8 @@ f:544b10b0536b8a329e8e9deea702714f:ntp/ntp.logrotate
 f:4a9598f50ab4ac9b693a37b2750c1c26:ntp/ntp.no.openssl.noise.patch
 f:6e43231687a41272a913911994909469:ntp/pre-install
 f:1bba21fa121fd3e00f8ba272b6abda5a:ntp/rc.ntpd
-f:fd64f41fafb19d59be764f2a4c8d6495:ntp/.footprint
-f:3b34e9879f1cebea4487cb7c17d1c287:ntp/.signature
+f:2920829f92b76faddfbb41367c960505:ntp/.footprint
+f:ecb28f264ef837ed295775523aad04a6:ntp/.signature
 f:9b7d9aad6fe6567a52a66140e685abec:ntp/Pkgfile
 f:4a3b1c6d05147d5b141ade4b947f09d1:glmark2/.footprint
 f:1bca2a75f4b401372397cbc7ac84adbd:glmark2/.signature
@@ -404,8 +404,8 @@ f:ecf4d7512d16e61c1d1566bc35b26148:glmark2/Pkgfile
 f:8bd8739134ae4ae697171781781742a0:glmark2/fix-build.patch
 f:43d5a35ffd5968ae8ada966053c1d438:tinc/rc.tincd
 f:52efbe70be91510dd87fdd0af1eff59e:tinc/tincd.logrotate
-f:c21502cda6ea33b48eb68180eb9853f1:tinc/.footprint
-f:671574eb9ace5f06a8e48c85a0b20bdf:tinc/.signature
+f:8d1be2674263bac0259d290d9b7fd4b8:tinc/.footprint
+f:cf528071f5e935c9b77ba38ec0ed4411:tinc/.signature
 f:9f513bff849cdb6408eadeed3a59c0d1:tinc/Pkgfile
 f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
 f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
