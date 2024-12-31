@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0ZykVbMxzp7o75SiQLDDxPxtCSNAsBhYUFJuYNhghv6nXGviM6jmmaK0FwQ8jlQs3POV291MeteDXMZCdKJBdgA=
-SHA256 (Pkgfile) = 41e83e4f8a37b4b582ef2b642fc7cce47b1ee37f124455888366e1990b92702f
+RWQ1yk7gkrBo0SGHt25tP1MNR6bnkZbW6qqWZrBizASkNouPAzhdh/X7lypMIpMtTP9jlzQ/BIAwTeBVqO570rz7sbawhaQRZAo=
+SHA256 (Pkgfile) = e59108da587d05743a028fd482383a31efdb3b5f90b3073635f28951c1b58281
 SHA256 (.footprint) = 8afaa6551ea949fc4a5c33a705916ab817c2a458dac5676d06b61523f906bd50
-SHA256 (thunar-4.20.0.tar.bz2) = 27731a76f3aecf3752b1ca35afad89e264c52244f70083d933507dd4a17548b0
-SHA256 (0001-Prevent-crash-when-loading-mount-point-emblem-1511.patch) = 50b43f24e384883bab26611cc968599bed1cf3cbffa98dee8433fa3a7f038ad2
+SHA256 (thunar-4.20.1.tar.bz2) = e5a83ccd2992b4c4e5ada3563ce92ebcbc222e13bb53d45ec350923ce1a51b6a
