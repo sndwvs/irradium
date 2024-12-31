@@ -150,9 +150,9 @@ f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:997d0c3564c57cd05bd24a86ce30fdaf:firefox/.footprint.aarch64
 f:07f0d054e2a216fa8eb962b0d52a09db:firefox/.footprint.riscv64
-f:4cc2349690b02dbed73bb769ebbe21ba:firefox/.signature.riscv64
 f:3271479ae407efc37aa31b0825b9c22a:firefox/.signature.aarch64
 f:87184e38c6d8d03ec6e1d0e5aa738199:firefox/Pkgfile
+f:4cc2349690b02dbed73bb769ebbe21ba:firefox/.signature.riscv64
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
 f:f27fa622f17d099ba1bc08c4061acda6:freerdp/1ef7b9e3.patch
@@ -406,7 +406,7 @@ f:43d5a35ffd5968ae8ada966053c1d438:tinc/rc.tincd
 f:52efbe70be91510dd87fdd0af1eff59e:tinc/tincd.logrotate
 f:c21502cda6ea33b48eb68180eb9853f1:tinc/.footprint
 f:671574eb9ace5f06a8e48c85a0b20bdf:tinc/.signature
-f:cffb59d5560d275c734a74bc24032255:tinc/Pkgfile
+f:9f513bff849cdb6408eadeed3a59c0d1:tinc/Pkgfile
 f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
 f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
 f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
