@@ -6,6 +6,6 @@
   delaycompress
   sharedscripts
   postrotate
-    /etc/rc.d/rc.tinc restart
+    /etc/rc.d/tincd restart
   endscript
 }
