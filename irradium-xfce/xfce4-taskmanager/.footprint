@@ -10,13 +10,9 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/128x128/apps/org.xfce.taskmanager.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
-drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/actions/
--rw-r--r--	root/root	usr/share/icons/hicolor/16x16/actions/xc_crosshair.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/org.xfce.taskmanager.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/24x24/
-drwxr-xr-x	root/root	usr/share/icons/hicolor/24x24/actions/
--rw-r--r--	root/root	usr/share/icons/hicolor/24x24/actions/xc_crosshair.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/24x24/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/24x24/apps/org.xfce.taskmanager.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/
@@ -33,6 +29,6 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/96x96/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/96x96/apps/org.xfce.taskmanager.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/actions/
--rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xc_crosshair.svg
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xc_crosshair-symbolic.svg
 drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/org.xfce.taskmanager.svg

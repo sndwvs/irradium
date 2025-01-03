@@ -4,7 +4,7 @@
 # Depends on: alsa-lib xfce4-panel
 
 name=xfce4-alsa-plugin
-version=0.3.0
+version=0.4.0
 release=1
 source=(https://github.com/equeim/$name/archive/$version.tar.gz)
 
