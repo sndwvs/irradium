@@ -106,7 +106,7 @@ d:openjdk21-jdk
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
-f:58c9841c1e8752ad00dbd08162c7b678:android-tools/Pkgfile
+f:814d2824bcc528de1abf965a55ae3ef0:android-tools/Pkgfile
 f:1e4e2a6c45db6bf9d4283a5daff8b65e:android-tools/.footprint
 f:2ce72cfbfc875bf1325b6e6c782375e9:android-tools/.signature
 f:95d427053c3f2589d3eb98e419eac127:audacity/.footprint
