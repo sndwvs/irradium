@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0QhA/pcLHeUfLA0HXev2DiUBmp4dxeegN7YWjZkVxixvhkva+T5D6ICDRuNPHxQdnBJUQWhuIFeAUr2mXYfrRgA=
-SHA256 (Pkgfile) = 03cb11214d6ad7d363e0f5412b6d87bee85553e40560e4f6b1017479ff73f826
+RWQ1yk7gkrBo0T23+IpkU4YWLuvSJMFEFr0iX92iFoFiD6DF+jgM8geTNTmAwEYlUb6iR1psGMDOR3/y7caGfczdss5pEadR9wU=
+SHA256 (Pkgfile) = 11bb9b8d88df44cd469750141faeda30cd0c0e4ed1fe9f919050e76bc7442334
 SHA256 (.footprint) = 58e45197d2bad922bec2f1f77b7c673223ccdc8ca9a86f0754eb5eb75fe6a85a
-SHA256 (xfce4-whiskermenu-plugin-2.8.3.tar.bz2) = e776c287658f98d0739447279522fe78766088438242cf2365a49c8973fc9cd0
+SHA256 (xfce4-whiskermenu-plugin-2.8.4.tar.bz2) = ed918950e01dc97fe831e01c698b44247f1537992999b1262ab61c799272b3b7
