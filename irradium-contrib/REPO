@@ -322,7 +322,7 @@ f:92bb7bb10f27c0d8e83962650036b2c6:tcl/.signature
 f:e4fc0be26b83b0c8b24bf609e1bdcd6e:tcl/Pkgfile
 f:5997c2bdb12022a80ed1a66da7198b30:telegram-desktop/.footprint
 f:e040168f73d31c0e5c53331d30b3d880:telegram-desktop/.signature
-f:ab593cbd9ae87a690ba51e258047bd40:telegram-desktop/Pkgfile
+f:0e2593c702d0c6dc7ce90d682e80cda2:telegram-desktop/Pkgfile
 f:5a6869436a680dbd4333d18cf5ed8c13:tk/.footprint
 f:670bb032fcbae800dbc522eaa88a4d68:tk/.signature
 f:031803e77e6d0d6fcc5d9245ff972be7:tk/Pkgfile
@@ -403,10 +403,10 @@ f:1bca2a75f4b401372397cbc7ac84adbd:glmark2/.signature
 f:ecf4d7512d16e61c1d1566bc35b26148:glmark2/Pkgfile
 f:8bd8739134ae4ae697171781781742a0:glmark2/fix-build.patch
 f:43d5a35ffd5968ae8ada966053c1d438:tinc/rc.tincd
-f:3b249fbf7d8145dae0a347b37bb1d86c:tinc/tincd.logrotate
 f:8d1be2674263bac0259d290d9b7fd4b8:tinc/.footprint
 f:cf528071f5e935c9b77ba38ec0ed4411:tinc/.signature
 f:9f513bff849cdb6408eadeed3a59c0d1:tinc/Pkgfile
+f:3b249fbf7d8145dae0a347b37bb1d86c:tinc/tincd.logrotate
 f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
 f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
 f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
