@@ -41,7 +41,6 @@ d:libsbsms
 d:libusbmuxd
 d:mpp
 d:mpv
-d:libplacebo
 d:openvpn
 d:p7zip
 d:pkcs11-helper
@@ -276,10 +275,6 @@ f:2afb336186c3466ee6604e8c9d55b635:mpv/README
 f:817c5b12c6eeb2155b0f0b24b2688448:mpv/.footprint
 f:ef48b475fe2fcca36e9f910c5ed86687:mpv/.signature
 f:50e7f4e9c06067bd3434ea1797f7fdbd:mpv/Pkgfile
-f:6168b4dbde86de3deae54548b97497e5:libplacebo/.footprint
-f:e6a097ac09366ae9762d6652ee77883c:libplacebo/.signature
-f:5a8800f633c01ac0e4268ae9d679f628:libplacebo/Pkgfile
-f:fd4a128739d33590bab4c721a11935de:libplacebo/glslang-deps.patch
 f:6978f14ab88ed92240c18798e79102bd:openvpn/README
 f:2f135439cf6e9a6db466acf3d567b4c3:openvpn/rc.openvpn
 f:d517b8db7625fda04d58867ba6f81efa:openvpn/.footprint

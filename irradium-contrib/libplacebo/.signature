@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7mcpKpKad3aYi7+e3/abxvcfA8C4x3FJXdw61wwB/bti5kOx4+am+BzP4VOCpfjpqdll3/LLT7glMgCE1xWpdQI=
-SHA256 (Pkgfile) = ed4bd553956c5519858c973b73079461493e23bb453aede2adce0070ccec7ff4
-SHA256 (.footprint) = cfe2a54e31153ce36fcf97cf3f62c9a04c5068b50bf3851b2c83095d18b4cf17
-SHA256 (libplacebo-7.349.0.tar.gz) = 627e32439a0b3d2b90368ead7e919f470ee7446c87cc0f7841bbe319b23aa8b1
-SHA256 (glslang-deps.patch) = e4f5069a445a8c2695feb2c298717828e795c86daf82e62433ad7ed5fd33ab84
