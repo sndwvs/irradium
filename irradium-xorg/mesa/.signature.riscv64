@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-xorg.pub
-RWT3zJzzKRcegka2SoEkLslxFoGSi/gXstTP7+jVFy3kTd4gzcTOScaKNTDIikI+FaTUbj6Ssktju4dO5AgC1zY7izyg9ykhhwg=
-SHA256 (Pkgfile) = fe1728ac8e18ea881e369b121dbe8622e5f4c285c9453e2e130bc00d6c3253f3
-SHA256 (.footprint.riscv64) = f5f289001a1fe14f1f095f43963d21bb3f386921ffc7f181c387d8513d376148
-SHA256 (mesa-24.3.1.tar.xz) = 9c795900449ce5bc7c526ba0ab3532a22c3c951cab7e0dd9de5fcac41b0843af
+RWT3zJzzKRcegklmIfbkFeLsxVuY34u6z0wkJ94f2cc8qINqISkK9owrn0df2EeCYLRv49RKU/THrY4v+V8LZW5IKXZrrmeLqwo=
+SHA256 (Pkgfile) = 3513b7852853e03fd9dca2205df55a03d12d3ba4d98d88ab3a9582975935a49c
+SHA256 (.footprint.riscv64) = 38cd054c9de421f66751ab77a59bccad672917ebe0e544bf268cce5e0c045c2b
+SHA256 (mesa-24.3.3.tar.xz) = 105afc00a4496fa4d29da74e227085544919ec7c86bd92b0b6e7fcc32c7125f4
 SHA256 (0000-mesa-20.1.1-fix-opencl.patch) = e4e6cb3a204485bcddfe4f715197704a7f73bc9d6282f7bdbd4c1e79a6641979
 SHA256 (0001-mesa-23.1-x86_32-llvm-detection.patch) = 79e2e290d8b1e89dbc92f7ad3e264ca17e881fdd1765102e9bf5ce19b0a2031d
 SHA256 (0002-mesa-24.1-find-opencl-c-base.h.patch) = a383cb83c7a793e7e0968ddbe7d0bb0eeec51a95edd2f6746d7066b8c4767837
@@ -13,6 +13,3 @@ SHA256 (0006-mesa-buildsystem-improvements.patch) = 016ca979c460b03c3c1bc3547baa
 SHA256 (0007-mesa-24.0-llvmspirvlib-version-check.patch) = c4913d20c5a83e9675206276e4b0eb0704cfb87d7483f1a767e3f82a73cbf0c5
 SHA256 (0008-mesa-24.2-llvm-19.0.patch) = a43249886a8bdd0604d61fd10bee6ca5766669f6a5dbb0ff7269c60b4b7ccd17
 SHA256 (0009-mesa-24.0-osmesa-fix-civ3.patch) = 0b2ac1ea1526fac38e413f8e7512b23fa1ffab3068d7942acdad3a94dd176ec0
-SHA256 (0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch) = 2c20fee505be9a1f08546b63457b8378b0f1fcff58e60c03378b7de0a87a1e81
-SHA256 (0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch) = a58e6d0631da6dd077530136bb44f0233cd279fc75e3b65b495ec90be16db91a
-SHA256 (0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch) = 606acb4073f46c7ca7edec96b6af06619642f3bbcd6afab2c57bff26266b917f

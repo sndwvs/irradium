@@ -28,8 +28,8 @@ f:29786f7d54c57f1e83e955a60f24fced:mesa/patches/0006-mesa-buildsystem-improvemen
 f:8d38d25663ff46d55d7de46cc1add618:mesa/patches/0007-mesa-24.0-llvmspirvlib-version-check.patch
 f:2815de1ec5ed1194d59dc8eecc83397f:mesa/patches/0008-mesa-24.2-llvm-19.0.patch
 f:e5ca988223c90f2a22caf7539f4a512a:mesa/patches/0009-mesa-24.0-osmesa-fix-civ3.patch
-f:3cc6941af10f254f351dba9095d82c54:mesa/.footprint.riscv64
-f:0dcf8b5a43e95c5f5a9e2ff7872ff0bc:mesa/.signature.riscv64
+f:f6a7c14a9e24ef4773161c3fc10bd390:mesa/.footprint.riscv64
+f:823ebdfe97c9a642ca6bd4d34bda76df:mesa/.signature.riscv64
 f:b4f8779303542471e8a279f27721e9b4:mesa/README.md
 f:e23758247f6981c486b5d2aec05c684e:mesa/Pkgfile
 f:df803150ac02374eb90f96e58fd5f4e4:mesa/.footprint.aarch64
