@@ -54,7 +54,6 @@ d:slang
 d:tcl
 d:telegram-desktop
 d:tk
-d:u-boot-tools
 d:udisks2
 d:ungoogled-chromium
 d:ungoogled-chromium/patches
@@ -326,9 +325,6 @@ f:0e2593c702d0c6dc7ce90d682e80cda2:telegram-desktop/Pkgfile
 f:5a6869436a680dbd4333d18cf5ed8c13:tk/.footprint
 f:670bb032fcbae800dbc522eaa88a4d68:tk/.signature
 f:031803e77e6d0d6fcc5d9245ff972be7:tk/Pkgfile
-f:3229c9662669deee076eb6efc7791f99:u-boot-tools/.footprint
-f:c129b68d4a6ecd4384065db6279cc955:u-boot-tools/.signature
-f:cc614850799c27acd8ce17f79c410a45:u-boot-tools/Pkgfile
 f:ba82b096e39695cdfe72b8a9d7f02748:udisks2/Pkgfile
 f:02c393dcfd184cae94092af8dafbf19c:udisks2/.footprint
 f:413d5ef1602f805f3be1b56651b8b978:udisks2/.signature
