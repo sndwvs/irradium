@@ -142,7 +142,6 @@ f:7aba887960fb7f2b489c6e5a7c96ede4:elogind/10-enable-elogind-power.rules
 f:cdbbe1f913307ad60cea4f0e9130205d:elogind/Pkgfile
 f:ce8226895c981265c806fe855308406d:firefox/README
 f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
-f:022ca4e9eeac6d2090a0289ee01db9f4:firefox/icu-linebreak-classes.patch
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
@@ -150,7 +149,7 @@ f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:997d0c3564c57cd05bd24a86ce30fdaf:firefox/.footprint.aarch64
 f:07f0d054e2a216fa8eb962b0d52a09db:firefox/.footprint.riscv64
 f:3271479ae407efc37aa31b0825b9c22a:firefox/.signature.aarch64
-f:4b10585f0ee56075c4c8390ce763cf54:firefox/Pkgfile
+f:dcc9efaae9b2fff0234b0c45725b7a50:firefox/Pkgfile
 f:4cc2349690b02dbed73bb769ebbe21ba:firefox/.signature.riscv64
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
