@@ -144,7 +144,7 @@ f:5de06f453e97aaadfca31d5fcf39b604:qt6-base/.signature
 f:11d87acd28fe12d33eff9e4eba91d621:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
-f:fea42592545ee5f4e5f0c7149f7a9a37:rust/riscv64-disable-f16-f128.patch
+f:75fd98b86ef1db50d1578550685679d2:rust/riscv64-disable-f16-f128.patch
 f:29f87f8f216acadbf1186c4bb1933d66:rust/Pkgfile
 f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 f:3a302fda034a6cc7b1482250824b97f2:rust/0001-bootstrap-Change-libexec-dir.patch
