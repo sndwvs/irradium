@@ -205,10 +205,11 @@ f:1aede60653850132b69cd3d64728fae3:liburcu/.footprint
 f:964bbe843101bb88c2db17e81e8bfe37:liburcu/.signature
 f:aa2a81bfc674791a7a23018a0e458a80:liburcu/Pkgfile
 f:56a7f08af14b4f937e8185ea0cf9453a:nodejs/.footprint
-f:352bd14a9fd821f0841e15c9ff17013a:nodejs/52888.patch
 f:1f8d81b7d7f75b75af3e33ebd97808bf:nodejs/system-c-ares.patch
 f:5ec520201526b56fe3c5535da3a7d61a:nodejs/.signature
-f:7885927f5b288bed3796ca75c83009f5:nodejs/Pkgfile
+f:f041ca509827b034d039dff496ae2365:nodejs/Pkgfile
+f:dad529d8d9ae5649b6e7c056b0ad2b8d:nodejs/riscv-trap-handler.patch
+f:ec273c79fbeea3e385bfeff73953e03f:nodejs/v8-disable-trap-handler-on-riscv-sv39.patch
 f:f8d2f18e32451d2f7d516ef7fd446dc8:shared-mime-info/.footprint
 f:ba273dc7e389002c9507f369fe299b59:shared-mime-info/.signature
 f:952b8f2b79db7944026a790578218e13:shared-mime-info/Pkgfile

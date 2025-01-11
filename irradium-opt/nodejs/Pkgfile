@@ -9,13 +9,15 @@ version=23.6.0
 release=1
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
   system-c-ares.patch
-  52888.patch)
+  riscv-trap-handler.patch
+  v8-disable-trap-handler-on-riscv-sv39.patch)
 
 build() {
   cd node-v$version
 
   # fix riscv64
-  patch -Np1 -i $SRC/52888.patch || exit 1
+  patch -Np1 -i $SRC/riscv-trap-handler.patch
+  patch -Np1 -i $SRC/v8-disable-trap-handler-on-riscv-sv39.patch
 
   prt-get isinst brotli && PKGMK_NODEJS+=' --shared-brotli'
   prt-get isinst c-ares && PKGMK_NODEJS+=' --shared-cares'
