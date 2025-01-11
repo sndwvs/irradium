@@ -130,7 +130,7 @@ f:1e68ce5a010624ae6f5c305937163e62:prt-get/fsearch-footprint-add-multi-arch-risc
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
 f:a54c659c287b66d8d0b5e17fdd9246b9:prt-get/prt-get.conf
 f:077fea960d8a490412eed744ce9bcc40:prt-get/.footprint
-f:a13e62be3f90588f8b825e7a76fbef42:prt-get/.signature
+f:128b426c7a81ebc4d3a3ecd9f8ecb694:prt-get/.signature
 f:6ae4e3bfe51145f6dafb3f1a66876290:prt-get/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:f0d3315647dc5e85d9cc23726a168e01:eudev/eudev.ignore_bind_unbind_events.diff
