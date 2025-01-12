@@ -21,10 +21,12 @@ drwxr-xr-x	root/root	usr/include/rockchip/
 -rw-r--r--	root/root	usr/include/rockchip/mpp_packet.h
 -rw-r--r--	root/root	usr/include/rockchip/mpp_rc_api.h
 -rw-r--r--	root/root	usr/include/rockchip/mpp_rc_defs.h
+-rw-r--r--	root/root	usr/include/rockchip/mpp_sys_cfg.h
 -rw-r--r--	root/root	usr/include/rockchip/mpp_task.h
 -rw-r--r--	root/root	usr/include/rockchip/rk_hdr_meta_com.h
 -rw-r--r--	root/root	usr/include/rockchip/rk_mpi.h
 -rw-r--r--	root/root	usr/include/rockchip/rk_mpi_cmd.h
+-rw-r--r--	root/root	usr/include/rockchip/rk_mpp_cfg.h
 -rw-r--r--	root/root	usr/include/rockchip/rk_type.h
 -rw-r--r--	root/root	usr/include/rockchip/rk_vdec_cfg.h
 -rw-r--r--	root/root	usr/include/rockchip/rk_vdec_cmd.h
@@ -35,6 +37,7 @@ drwxr-xr-x	root/root	usr/include/rockchip/
 -rw-r--r--	root/root	usr/include/rockchip/vpu.h
 -rw-r--r--	root/root	usr/include/rockchip/vpu_api.h
 drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/librockchip_mpp.a
 lrwxrwxrwx	root/root	usr/lib/librockchip_mpp.so -> librockchip_mpp.so.1
 -rwxr-xr-x	root/root	usr/lib/librockchip_mpp.so.0
 lrwxrwxrwx	root/root	usr/lib/librockchip_mpp.so.1 -> librockchip_mpp.so.0
