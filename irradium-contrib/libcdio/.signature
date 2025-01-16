@@ -1,7 +1,0 @@
-untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7jz9d388F2W44G2MZLvb3IOriHoY7tColTBCZKrp1i9wi6bAE3nyYF83puYUhmd1hK6vg1CLL4Snze4PjGp9NAY=
-SHA256 (Pkgfile) = d29fa110a63194b4a44fb30d36a2a1bbacd691c29076ccdf097ecee06c1c349d
-SHA256 (.footprint) = e2ac89105bb41495d62e2b8104bf2162c0c60340f545c8752cb031f2ed7a9027
-SHA256 (libcdio-2.1.0.tar.bz2) = 8550e9589dbd594bfac93b81ecf129b1dc9d0d51e90f9696f1b2f9b2af32712b
-SHA256 (disable-broken-test.patch) = cf628203f9a544d1ef38a0b577d898c86e48938a0579cf25b9341cbc51b7aa53
-SHA256 (format-security.patch) = f9f50f7516c7194070cc903652549dec41194337a7501159efe9e0e6d3248d84
