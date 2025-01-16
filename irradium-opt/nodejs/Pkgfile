@@ -2,25 +2,30 @@
 # URL: https://nodejs.org/
 # Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on: libnghttp2 libuv openssl zlib
-# Optional: brotli c-ares icu
+# Optional: brotli c-ares icu libnghttp3 libngtcp2 simdjson simdutf
 
 name=nodejs
-version=23.5.0
+version=23.6.0
 release=1
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
   system-c-ares.patch
-  52888.patch)
+  riscv-trap-handler.patch
+  v8-disable-trap-handler-on-riscv-sv39.patch)
 
 build() {
   cd node-v$version
 
   # fix riscv64
-  patch -Np1 -i $SRC/52888.patch || exit 1
+  patch -Np1 -i $SRC/riscv-trap-handler.patch
+  patch -Np1 -i $SRC/v8-disable-trap-handler-on-riscv-sv39.patch
 
   prt-get isinst brotli && PKGMK_NODEJS+=' --shared-brotli'
   prt-get isinst c-ares && PKGMK_NODEJS+=' --shared-cares'
-  prt-get isinst c-ares && patch -Rp1 -i $SRC/system-c-ares.patch
   prt-get isinst icu && PKGMK_NODEJS+=' --with-intl=system-icu'
+  prt-get isinst libnghttp3 && PKGMK_NODEJS+=' --shared-nghttp3'
+  prt-get isinst libngtcp2 && PKGMK_NODEJS+=' --shared-ngtcp2'
+  prt-get isinst simdjson && PKGMK_NODEJS+=' --shared-simdjson'
+  prt-get isinst simdutf && PKGMK_NODEJS+=' --shared-simdutf'
 
   ./configure ${PKGMK_NODEJS} \
     --prefix=/usr \

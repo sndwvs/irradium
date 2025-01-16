@@ -12,11 +12,13 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/lpflash
 -rwxr-xr-x	root/root	usr/bin/lpmake
 -rwxr-xr-x	root/root	usr/bin/lpunpack
-lrwxrwxrwx	root/root	usr/bin/mkbootimg -> /usr/share/android-tools/mkbootimg/mkbootimg.py
+-rwxr-xr-x	root/root	usr/bin/make_f2fs
+lrwxrwxrwx	root/root	usr/bin/mkbootimg -> ../share/android-tools/mkbootimg/mkbootimg.py
 -rwxr-xr-x	root/root	usr/bin/mkdtboimg
 -rwxr-xr-x	root/root	usr/bin/mke2fs.android
 -rwxr-xr-x	root/root	usr/bin/repack_bootimg
 -rwxr-xr-x	root/root	usr/bin/simg2img
+-rwxr-xr-x	root/root	usr/bin/sload_f2fs
 -rwxr-xr-x	root/root	usr/bin/unpack_bootimg
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/android-tools/
@@ -31,3 +33,6 @@ drwxr-xr-x	root/root	usr/share/bash-completion/
 drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/adb
 -rw-r--r--	root/root	usr/share/bash-completion/completions/fastboot
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/adb.1.gz

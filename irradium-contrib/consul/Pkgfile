@@ -1,0 +1,33 @@
+# Description: A tool for service discovery, monitoring and configuration
+# URL: https://www.consul.io
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: git go
+
+name=consul
+version=1.20.2
+release=1
+source=(https://github.com/hashicorp/consul/archive/refs/tags/v$version.tar.gz
+        rc.consul
+        example.json)
+
+build() {
+  cd $name-$version
+
+  mkdir -p build
+
+  export GOFLAGS="-trimpath -mod=readonly -modcacherw"
+  export GOLDFLAGS="-X github.com/hashicorp/consul/version.BuildDate=$(date +%Y-%m-%dT%H:%M:%SZ)"
+  go build -o build -ldflags "$GOLDFLAGS"
+
+  install -D -d -m750 -o 208 -g 208 $PKG/var/lib/consul
+  install -D -d -m750 -o   0 -g 208 $PKG/etc/consul.d
+
+  sed "s:^\(data_dir =\).*:\1 \"/var/lib/consul\":g" -i .release/linux/package/etc/consul.d/consul.hcl
+  install -D -m644 -o 0 -g 208 .release/linux/package/etc/consul.d/{consul.env,consul.hcl} $PKG/etc/consul.d
+  install -D -m644 -o 0 -g   0 $SRC/example.json $PKG/etc/consul.d/config.example.json
+
+  install -Dm755 build/consul $PKG/usr/bin/consul
+
+  install -Dm755 $SRC/rc.consul $PKG/etc/rc.d/consul
+
+}

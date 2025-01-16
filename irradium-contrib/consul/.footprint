@@ -1,0 +1,13 @@
+drwxr-xr-x	root/root	etc/
+drwxr-x---	root/208	etc/consul.d/
+-rw-r--r--	root/root	etc/consul.d/config.example.json
+-rw-r--r--	root/208	etc/consul.d/consul.env (EMPTY)
+-rw-r--r--	root/208	etc/consul.d/consul.hcl
+drwxr-xr-x	root/root	etc/rc.d/
+-rwxr-xr-x	root/root	etc/rc.d/consul
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/consul
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/lib/
+drwxr-x---	208/208	var/lib/consul/

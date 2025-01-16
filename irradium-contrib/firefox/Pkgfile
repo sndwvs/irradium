@@ -5,11 +5,10 @@
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wayland
 
 name=firefox
-version=133.0.3
+version=134.0
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
-  icu-linebreak-classes.patch
   fix-target-detection.patch
   node-stdout-nonblocking-wrapper
   01-rust-lto-thin.patch
@@ -54,7 +53,7 @@ build() {
   ac_add_options --with-system-nspr
   ac_add_options --with-system-nss
   ac_add_options --with-system-pixman
-  ac_add_options --with-system-png
+  ac_add_options --without-system-png
   ac_add_options --with-system-webp
   ac_add_options --with-system-zlib
   ac_add_options --without-wasm-sandboxed-libraries
