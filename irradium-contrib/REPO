@@ -150,8 +150,8 @@ f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:997d0c3564c57cd05bd24a86ce30fdaf:firefox/.footprint.aarch64
 f:07f0d054e2a216fa8eb962b0d52a09db:firefox/.footprint.riscv64
 f:c80dfe2af0798d86e39057fff23dd48c:firefox/.signature.aarch64
-f:24839d5664ea02004d0bcb27f292d11b:firefox/Pkgfile
 f:8aaeb6febaaccf26c8b9de0c13aa710f:firefox/.signature.riscv64
+f:ee3725ca64835604edf694657cc67b85:firefox/Pkgfile
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
 f:f27fa622f17d099ba1bc08c4061acda6:freerdp/1ef7b9e3.patch
@@ -274,12 +274,12 @@ f:2afb336186c3466ee6604e8c9d55b635:mpv/README
 f:817c5b12c6eeb2155b0f0b24b2688448:mpv/.footprint
 f:ef48b475fe2fcca36e9f910c5ed86687:mpv/.signature
 f:50e7f4e9c06067bd3434ea1797f7fdbd:mpv/Pkgfile
-f:9532948eccf0609d7560395177194e85:consul/example.json
-f:d699fea2a6bc9a5fce1e6ef3fed020ca:consul/Pkgfile
-f:672b071ab60798058c03ca8cbcb5fb2b:consul/pre-install
-f:307f1103573f13155eb3a4e0171b0ff6:consul/rc.consul
 f:6e6ac1e73de5134e19b0690307670a56:consul/.footprint
 f:d83bc0a6f5462cc636ba805ec4de8dce:consul/.signature
+f:d699fea2a6bc9a5fce1e6ef3fed020ca:consul/Pkgfile
+f:9532948eccf0609d7560395177194e85:consul/example.json
+f:672b071ab60798058c03ca8cbcb5fb2b:consul/pre-install
+f:307f1103573f13155eb3a4e0171b0ff6:consul/rc.consul
 f:6978f14ab88ed92240c18798e79102bd:openvpn/README
 f:2f135439cf6e9a6db466acf3d567b4c3:openvpn/rc.openvpn
 f:d517b8db7625fda04d58867ba6f81efa:openvpn/.footprint
@@ -325,9 +325,9 @@ f:5ee1ede2ebe321245a17d2d2d75b5711:slang/Pkgfile
 f:52e302c05b583209854a61bfb6b0e62f:tcl/.footprint
 f:92bb7bb10f27c0d8e83962650036b2c6:tcl/.signature
 f:e4fc0be26b83b0c8b24bf609e1bdcd6e:tcl/Pkgfile
+f:5997c2bdb12022a80ed1a66da7198b30:telegram-desktop/.footprint
 f:2f0771e51659f4229209c42ebf440f18:telegram-desktop/.signature
 f:e730698ea7f98d42095b07c5541589a2:telegram-desktop/Pkgfile
-f:5997c2bdb12022a80ed1a66da7198b30:telegram-desktop/.footprint
 f:5a6869436a680dbd4333d18cf5ed8c13:tk/.footprint
 f:670bb032fcbae800dbc522eaa88a4d68:tk/.signature
 f:031803e77e6d0d6fcc5d9245ff972be7:tk/Pkgfile
