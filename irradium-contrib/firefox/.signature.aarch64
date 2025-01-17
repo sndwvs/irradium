@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7tp1BcqVj1C1em0dK8UWwfQYNf43jEZtKddZLAB8lglNRprvlVkc1LxkPAVvEpsshXgIS99bcTZ0j+oRlDgwVww=
-SHA256 (Pkgfile) = 5aa7076235e17935f6e7cb925f371c3b09d7c8ceb71dbf77f803c10deba4cae2
+RWTmT3d9kqan7mmyHAnmZaMbaOAoqmXBaoHy3Ee2ZT9FAQ9S3K4rDmHrTyU4DYElQ5xu0+sgzug2EVjJCitC8ySeVnCvUqe6Lwg=
+SHA256 (Pkgfile) = 0c2655715908cf2383db67c4a1b09c509ab2e638954c3934b6e5bdf7504fc669
 SHA256 (.footprint.aarch64) = 9988ce22d09979ad86de23385bb9423090063e52886dcd28b37d32e0c9852922
-SHA256 (firefox-134.0.source.tar.xz) = ca88068bd72784c10de16df62359b2dc354672a1a427b4fd6a5fcdb34c06457e
+SHA256 (firefox-134.0.1.source.tar.xz) = e3a1853ce70f0fc0007a40a5000d8c9ca7ddd42a4de7d1eb52b0b22fcc2265e5
 SHA256 (firefox.desktop) = 05bd1a4e283bc68f525f87cabf35ad0a59e5e63e107ce3901a4ac73e3d16ef33
 SHA256 (fix-target-detection.patch) = 33199c6d64a2a775b4ede35aae84b95cef8476e8995a1d1b99eb65efb59008f4
 SHA256 (node-stdout-nonblocking-wrapper) = bb8c503015e49ed1b152225bdc56cf502cd831f35962d113dcbb9121967f3523
