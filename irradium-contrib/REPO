@@ -102,6 +102,7 @@ d:libwpd
 d:rasqal
 d:bind
 d:openjdk21-jdk
+d:directx-shader-compiler
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -563,3 +564,6 @@ f:e5c61962170617fc8e681ae0018acabb:openjdk21-jdk/system-public-suffix.patch
 f:ce8a1a739f69b79486bf6bfc1c110bc7:openjdk21-jdk/.signature.aarch64
 f:359f03a59005632bd0706cf92de488b1:openjdk21-jdk/.signature.riscv64
 f:7bc2f693fe75ff82382d76167a3e3196:openjdk21-jdk/Pkgfile
+f:c0038ae8d629c12f28efe3a725487fbc:directx-shader-compiler/Pkgfile
+f:f41f5f0f90f201bc8f03b920cebb1692:directx-shader-compiler/.footprint
+f:e25bb6aba075a242e2083a9105ecb42c:directx-shader-compiler/.signature
