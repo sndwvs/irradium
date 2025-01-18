@@ -4,13 +4,14 @@
 # Depends on: meson ninja python3-jinja2 intltool libseccomp linux-pam glib acl libcap eudev gettext
 
 name=elogind
-version=255.5
+version=255.17
 release=1
 source=(https://github.com/$name/$name/archive/v${version}/$name-$version.tar.gz
 	10-enable-elogind-power.rules
 	11-prefer-deep-suspend.patch
 	12-default-deep-suspend.patch
 	elogind.nobody.nogroup.99.99.diff
+	login-10-elogind.conf.manpage.fix.patch
 	rc.elogind)
 
 build() {
@@ -47,6 +48,10 @@ build() {
 	# Don't prefer s2idle, as it doesn't seem to work:
 	cat $SRC/11-prefer-deep-suspend.patch | patch -p1 -d $name-$version --verbose || exit 1
 	cat $SRC/12-default-deep-suspend.patch | patch -p1 -d $name-$version --verbose || exit 1
+
+	# Looks like "See sleep.conf(5) for details." was copied from the other config
+	# file when it should have referred to logind.conf(5):
+	cat $SRC/login-10-elogind.conf.manpage.fix.patch | patch -p1 -d $name-$version --verbose || exit 1
 
 	meson setup $name-$version build \
 		--buildtype=release \

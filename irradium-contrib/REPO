@@ -141,7 +141,8 @@ f:5009a303246ecef5ea0aaa49952c52af:elogind/pre-install
 f:a9e7ccb4cc486e1967f58572f8a2060b:elogind/rc.elogind
 f:5667c121bae88125888ff567fc52e544:elogind/.signature
 f:7aba887960fb7f2b489c6e5a7c96ede4:elogind/10-enable-elogind-power.rules
-f:cdbbe1f913307ad60cea4f0e9130205d:elogind/Pkgfile
+f:3b878e7774200e9aa4031a7e24c6be4e:elogind/Pkgfile
+f:c5716166dc3207c34e27d55c6907991a:elogind/login-10-elogind.conf.manpage.fix.patch
 f:ce8226895c981265c806fe855308406d:firefox/README
 f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
