@@ -1,10 +1,10 @@
 # Description: GUI toolkit for the Tcl scripting language
 # URL: http://tcl.sourceforge.net/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: zlib tcl
+# Depends on: zlib tcl zip
 
 name=tk
-version=8.6.13
+version=9.0.1
 release=1
 source=(https://downloads.sourceforge.net/tcl/$name$version-src.tar.gz)
 
@@ -12,15 +12,18 @@ build() {
   cd $name$version/unix
 
   ./configure \
+    ZIP_PROG=zip \
     --prefix=/usr \
     --mandir=/usr/share/man \
-    --enable-threads
+    --enable-threads \
+    --disable-rpath \
+    --enable-64bit
 
   make
   make INSTALL_ROOT=$PKG install install-private-headers
 
   ln -sf wish${version%.*} $PKG/usr/bin/wish
-  ln -sf libtk${version%.*}.so $PKG/usr/lib/libtk.so
+  ln -sf libtcl${version%%.*}tk${version%.*}.so $PKG/usr/lib/libtk.so
 
   # install private headers (FS#14388, FS#47616)
   cd ..
@@ -30,10 +33,10 @@ build() {
   done
 
   # remove buildroot traces
-  sed -e "s#${SRC}/tk${version}/unix#/usr/lib#" \
-      -e "s#${SRC}/tk${version}#/usr/include#" \
+  sed -e "s#${SRC}/${name}${version}/unix#/usr/lib#" \
+      -e "s#${SRC}/${name}${version}#/usr/include#" \
       -i "${PKG}/usr/lib/tkConfig.sh"
 
   # remove unrequired execute permissions (FS#75042)
-  chmod -x $PKG/usr/lib/libtkstub8.6.a
+  chmod -x $PKG/usr/lib/libtkstub.a
 }
