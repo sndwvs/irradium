@@ -4,11 +4,14 @@
 # Depends on: zlib tcl zip
 
 name=tk
-version=9.0.1
+version=8.6.16
 release=1
-source=(https://downloads.sourceforge.net/tcl/$name$version-src.tar.gz)
+source=(https://downloads.sourceforge.net/tcl/$name$version-src.tar.gz
+        font-sizes.diff)
 
 build() {
+  patch -p1 -i $SRC/font-sizes.diff
+
   cd $name$version/unix
 
   ./configure \
@@ -23,7 +26,7 @@ build() {
   make INSTALL_ROOT=$PKG install install-private-headers
 
   ln -sf wish${version%.*} $PKG/usr/bin/wish
-  ln -sf libtcl${version%%.*}tk${version%.*}.so $PKG/usr/lib/libtk.so
+  ln -sf libtk${version%.*}.so $PKG/usr/lib/libtk.so
 
   # install private headers (FS#14388, FS#47616)
   cd ..
@@ -38,5 +41,6 @@ build() {
       -i "${PKG}/usr/lib/tkConfig.sh"
 
   # remove unrequired execute permissions (FS#75042)
-  chmod -x $PKG/usr/lib/libtkstub.a
+  chmod -x $PKG/usr/lib/libtkstub${version%.*}.a
 }
+]
