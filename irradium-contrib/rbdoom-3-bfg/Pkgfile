@@ -56,7 +56,7 @@ build() {
 
   install -dm755 $PKG/usr/share/games/doom3bfg
   cp -r base $PKG/usr/share/games/doom3bfg/
-  install -Dm755 build/RBDoom3BFG $PKG/usr/bin/
-  install -Dm644 $SRC/rbdoom-3-bfg.desktop $PKG/usr/share/applications/
-  install -Dm644 $SRC/rbdoom-3-bfg.png $PKG/usr/share/pixmaps/
+  install -Dm755 build/RBDoom3BFG -t $PKG/usr/bin/
+  install -Dm644 $SRC/rbdoom-3-bfg.desktop -t $PKG/usr/share/applications/
+  install -Dm644 $SRC/rbdoom-3-bfg.png -t $PKG/usr/share/pixmaps/
 }

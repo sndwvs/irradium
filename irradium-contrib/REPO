@@ -569,7 +569,9 @@ f:7bc2f693fe75ff82382d76167a3e3196:openjdk21-jdk/Pkgfile
 f:c0038ae8d629c12f28efe3a725487fbc:directx-shader-compiler/Pkgfile
 f:f41f5f0f90f201bc8f03b920cebb1692:directx-shader-compiler/.footprint
 f:e25bb6aba075a242e2083a9105ecb42c:directx-shader-compiler/.signature
-f:ba7a95de293e643f4cb25a5581d0e354:rbdoom-3-bfg/Pkgfile
+f:3b199af0298c733edac9238fade1f1b5:rbdoom-3-bfg/Pkgfile
 f:2bf4e994d8df1899b21b0028fb7018ef:rbdoom-3-bfg/feffa4a4dd9a2a5f3c608f720cde41bea37797d3.patch
 f:4bc031ea2e4564054f678ece5e7078ae:rbdoom-3-bfg/rbdoom-3-bfg.desktop
 f:86455bb86d4267b447bd882dbde35231:rbdoom-3-bfg/rbdoom-3-bfg.png
+f:4d3bef55b6a1fee4b61a69a29922db48:rbdoom-3-bfg/.footprint
+f:7c13a45c454b0b7e0f6103c138bd6264:rbdoom-3-bfg/.signature
