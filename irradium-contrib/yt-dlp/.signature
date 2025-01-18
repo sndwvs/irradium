@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7ngim6BvZYq3pYEYxEZEA1gHBDNH7juxXajBZaHlD/YlC2iHieFwM4zy+ExKDDHatjzRxgO6bi8StsCyJidxXgY=
-SHA256 (Pkgfile) = 43f5f3c31505df26910fbead94a6901b4d9a39cec1bda5ee8e4f626f253f2adf
-SHA256 (.footprint) = 27ba67be3de0c466c275b9a1731ade9282ab84bc9a2f90be5b352c8a6c88190d
-SHA256 (yt-dlp-2024.12.23.tar.gz) = 9da52370ed212c85cf37bf40911143eb68c7218d974a3254fb1d2e0f745f0260
+RWTmT3d9kqan7kayVeca9BbKFTYCbEUa+0bpXjLtdhkk5n2EqIGblGT4RklWeJTs4ZeNJoSbY4laG4xFYo3wdvzu7mEdO60ktgQ=
+SHA256 (Pkgfile) = 2c5aba5788f9b6095fcdf5025f390cf21c5ea80ec8c7d0084ad31a4878b4b0cc
+SHA256 (.footprint) = ae68cf25498b0a6d455403eae18db1cc53da19487aef757aada15dd10047639b
+SHA256 (yt-dlp-2025.01.15.tar.gz) = 031b571dcce248997215f1fa6fa0e8a53ee7f3c59610ab5ac1eac9fdc6bef82e
