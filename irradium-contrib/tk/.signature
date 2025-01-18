@@ -1,5 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7rCpb8OY/nEtbQGYuQBYAqgYW8hzdOYugWEvV3uFsvz0wiR/MszFdnw9Vbw9SZCaXOxbHMwCYirYbcobk4LAmgI=
-SHA256 (Pkgfile) = e664aeadcb2f823b32abccb3a37304388663bb98f72c8d1a1ce3e1b201bfbc86
-SHA256 (.footprint) = 86a127db64eb5041851b6acc7236ebbd67dd0f4761db1a53530156bc691aabca
-SHA256 (tk9.0.1-src.tar.gz) = d6f01a4d598bfc6398be9584e1bab828c907b0758db4bbb351a1429106aec527
+RWTmT3d9kqan7ueZyranFVLfaw0ZFwkjUCqz8F/VmXGXFZngWhrHPgUU8dWWKnJjtvKkncKigsxzKQPvcPeGzQPYf7tVSWyUQws=
+SHA256 (Pkgfile) = 31daa8ed69f07c8cb5db01cbe629b0c952e0961edabea1794a9add77d1054ac1
+SHA256 (.footprint) = f2fbd8430b18ffa531f2ea018690a11ead1fbf53a6669d3a2ef08dbd53d98332
+SHA256 (tk8.6.16-src.tar.gz) = be9f94d3575d4b3099d84bc3c10de8994df2d7aa405208173c709cc404a7e5fe
+SHA256 (font-sizes.diff) = 80a64f81a002ca83475ac2e53b8c9836e1a376049989733b61687c88df8c68e5
