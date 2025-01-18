@@ -12,7 +12,7 @@ source=(https://downloads.sourceforge.net/tcl/$name$version-src.tar.gz
 build() {
   cd $name$version/unix
 
-  patch -p1 -d $name$version -i $SRC/font-sizes.diff
+  patch -p1 -d $SRC/$name$version -i $SRC/font-sizes.diff
 
   ./configure \
     ZIP_PROG=zip \
