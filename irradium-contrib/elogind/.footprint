@@ -5,6 +5,7 @@ drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/elogind/
 -rw-r--r--	root/root	etc/elogind/logind.conf
 drwxr-xr-x	root/root	etc/elogind/logind.conf.d/
+-rw-r--r--	root/root	etc/elogind/logind.conf.d/10-elogind.conf
 -rw-r--r--	root/root	etc/elogind/sleep.conf
 drwxr-xr-x	root/root	etc/elogind/sleep.conf.d/
 -rw-r--r--	root/root	etc/elogind/sleep.conf.d/10-elogind.conf
