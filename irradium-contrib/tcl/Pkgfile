@@ -4,7 +4,7 @@
 # Depends on: zlib
 
 name=tcl
-version=9.0.1
+version=8.6.16
 release=1
 source=(https://downloads.sourceforge.net/tcl/$name$version-src.tar.gz)
 
@@ -23,7 +23,7 @@ build() {
   ln -sf tclsh${version%.*} $PKG/usr/bin/tclsh
   ln -sf libtcl${version%.*}.so $PKG/usr/lib/libtcl.so
   install -Dm644 tcl.m4 -t $PKG/usr/share/aclocal
-  chmod 644 $PKG/usr/lib/libtclstub.a
+  chmod 644 $PKG/usr/lib/libtclstub${version%.*}.a
 
   # remove buildroot traces
   tclver=8.6
