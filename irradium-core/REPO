@@ -62,8 +62,10 @@ f:3c13e89423eb43d8ee97675362d3725f:gcc/.footprint.aarch64
 f:830b8639e6590d013fa96c266244d36e:gcc/.footprint.riscv64
 f:121344c2f1ced0c6da4d49033045d18d:gcc/.signature.aarch64
 f:f0f5f0b2e6e33d9ba1e454bbdeab7a98:gcc/.signature.riscv64
-f:42a1db824e30d2a1b75f426bd3309b97:gcc/Pkgfile
-f:02107c7118e7fadf18d301f7ed22bd1a:gcc/gcc-riscv-disable-multilib-support.patch
+f:306ed9d67ee02ce1065653303e9d4f6a:gcc/gcc-fix-arm64.patch
+f:b25cb26fc444ca93e3b47c1091f4817b:gcc/Pkgfile
+f:7d16b76a4309eadedc9b1fe720cc58e9:gcc/gcc-riscv-disable-multilib-support.patch
+f:9e14cbd9ccc21b6f7f00383b30419167:gcc/gcc-riscv64-improve-build-time.patch
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:5ce6f14adda1042d0658e37e1c208c02:gdbm/.signature
 f:58b77f69207a6b1825d6f7833796fcf5:gdbm/Pkgfile
@@ -130,8 +132,8 @@ f:1e68ce5a010624ae6f5c305937163e62:prt-get/fsearch-footprint-add-multi-arch-risc
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
 f:a54c659c287b66d8d0b5e17fdd9246b9:prt-get/prt-get.conf
 f:077fea960d8a490412eed744ce9bcc40:prt-get/.footprint
-f:acecd3462acd7796e16127c48660b36a:prt-get/Pkgfile
 f:128b426c7a81ebc4d3a3ecd9f8ecb694:prt-get/.signature
+f:acecd3462acd7796e16127c48660b36a:prt-get/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:f0d3315647dc5e85d9cc23726a168e01:eudev/eudev.ignore_bind_unbind_events.diff
 f:2161256901e1da8cfd6c47bb2b33d08f:eudev/eudev.no.renderD.diff

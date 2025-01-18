@@ -46,7 +46,7 @@ diff --git a/gcc/config/riscv/linux.h b/gcc/config/riscv/linux.h
 index f8c2c351e5a..8d9881eadeb 100644
 --- a/gcc/config/riscv/linux.h
 +++ b/gcc/config/riscv/linux.h
-@@ -59,11 +59,3 @@ along with GCC; see the file COPYING3.
+@@ -60,11 +60,3 @@ along with GCC; see the file COPYING3.  If not see
  	%{rdynamic:-export-dynamic} \
  	-dynamic-linker " GNU_USER_DYNAMIC_LINKER "}} \
      %{static:-static} %{static-pie:-static -pie --no-dynamic-linker -z text}}"
