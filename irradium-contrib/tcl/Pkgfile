@@ -4,7 +4,7 @@
 # Depends on: zlib
 
 name=tcl
-version=8.6.13
+version=8.6.16
 release=1
 source=(https://downloads.sourceforge.net/tcl/$name$version-src.tar.gz)
 
@@ -14,7 +14,8 @@ build() {
   ./configure \
     --prefix=/usr \
     --mandir=/usr/share/man \
-    --enable-threads
+    --enable-threads \
+    --enable-64bit
 
   make
   make INSTALL_ROOT=$PKG install install-private-headers
@@ -25,21 +26,22 @@ build() {
   chmod 644 $PKG/usr/lib/libtclstub${version%.*}.a
 
   # remove buildroot traces
-  sed -e "s#${SRC}/tk${version}/unix#/usr/lib#" \
-      -e "s#${SRC}/tk${version}#/usr/include#" \
-      -e "s#'{/usr/lib} '#'/usr/lib/tcl${version%.*}'#" \
+  tclver=8.6
+  sed -e "s#${SRC}/${name}${version}/unix#/usr/lib#" \
+      -e "s#${SRC}/${name}${version}#/usr/include#" \
+      -e "s#'{/usr/lib} '#'/usr/lib/tcl${tclver}'#" \
       -i "${PKG}/usr/lib/tclConfig.sh"
 
-  tdbcver=tdbc1.1.5
-  sed -e "s#${SRC}/tcl${version}/unix/pkgs/$tdbcver#/usr/lib/$tdbcver#" \
-      -e "s#${SRC}/tcl${version}/pkgs/$tdbcver/generic#/usr/include#" \
-      -e "s#${SRC}/tcl${version}/pkgs/$tdbcver/library#/usr/lib/tcl${version%.*}#" \
-      -e "s#${SRC}/tcl${version}/pkgs/$tdbcver#/usr/include#" \
+  tdbcver=tdbc1.1.10
+  sed -e "s#${SRC}/${name}${version}/unix/pkgs/$tdbcver#/usr/lib/$tdbcver#" \
+      -e "s#${SRC}/${name}${version}/pkgs/$tdbcver/generic#/usr/include#" \
+      -e "s#${SRC}/${name}${version}/pkgs/$tdbcver/library#/usr/lib/tcl${version%.*}#" \
+      -e "s#${SRC}/${name}${version}/pkgs/$tdbcver#/usr/include#" \
       -i "${PKG}/usr/lib/$tdbcver/tdbcConfig.sh"
 
-  itclver=itcl4.2.3
-  sed -e "s#${SRC}/tcl${version}/unix/pkgs/$itclver#/usr/lib/$itclver#" \
-      -e "s#${SRC}/tcl${version}/pkgs/$itclver/generic#/usr/include#" \
-      -e "s#${SRC}/tcl${version}/pkgs/$itclver#/usr/include#" \
+  itclver=itcl4.3.2
+  sed -e "s#${SRC}/${name}${version}/unix/pkgs/$itclver#/usr/lib/$itclver#" \
+      -e "s#${SRC}/${name}${version}/pkgs/$itclver/generic#/usr/include#" \
+      -e "s#${SRC}/${name}${version}/pkgs/$itclver#/usr/include#" \
       -i "${PKG}/usr/lib/$itclver/itclConfig.sh"
 }

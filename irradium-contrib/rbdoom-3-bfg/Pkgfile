@@ -1,0 +1,62 @@
+# Description: Doom 3 BFG Edition with modern engine
+# URL: https://github.com/RobertBeckebans/RBDOOM-3-BFG
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: libsdl2 openal cmake directx-shader-compiler
+
+name=rbdoom-3-bfg
+version=1.5.1
+release=1
+nvrhi_commit=1cbc9e9d16f997948c429739b1a1886fb4d0c796
+shader_make_commit=13867771f6142f35690a5e2103c1e1efdd90cb0e
+vulkan_headers_commit=b955ae0edb4f02074bfbf134ccc1980e83122d30
+rtxmu_commit=63d9fcf0d0eccc61f9a629780a46b150ccbbae1c
+cxxopts_commit=302302b30839505703d37fb82f536c53cf9172fa
+source=(https://github.com/RobertBeckebans/RBDOOM-3-BFG/archive/refs/tags/v${version}.tar.gz
+        https://github.com/RobertBeckebans/nvrhi/archive/${nvrhi_commit}.tar.gz
+        https://github.com/RobertBeckebans/ShaderMake/archive/${shader_make_commit}.tar.gz
+        https://github.com/KhronosGroup/Vulkan-Headers/archive/${vulkan_headers_commit}.tar.gz
+        https://github.com/NVIDIAGameWorks/RTXMU/archive/${rtxmu_commit}.tar.gz
+        https://github.com/jarro2783/cxxopts/archive/${cxxopts_commit}.tar.gz
+        feffa4a4dd9a2a5f3c608f720cde41bea37797d3.patch
+        rbdoom-3-bfg.desktop
+        rbdoom-3-bfg.png)
+
+
+build() {
+  cd ${name^^}-${version}
+
+  cp -r $SRC/nvrhi-$nvrhi_commit -T neo/extern/nvrhi
+  cp -r $SRC/ShaderMake-$shader_make_commit -T neo/extern/ShaderMake
+  cp -r $SRC/Vulkan-Headers-$vulkan_headers_commit -T neo/extern/nvrhi/thirdparty/Vulkan-Headers
+  cp -r $SRC/RTXMU-$rtxmu_commit -T neo/extern/nvrhi/rtxmu
+  cp -r $SRC/cxxopts-$cxxopts_commit -T neo/extern/nvrhi/thirdparty/cxxopts
+
+  patch -p1 --verbose -i $SRC/feffa4a4dd9a2a5f3c608f720cde41bea37797d3.patch
+
+  export CC=clang
+  export CXX=clang++
+
+  cmake \
+    -S neo \
+    -B build \
+    -DCMAKE_BUILD_TYPE="None" \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DWINDOWS10=OFF \
+    -DUSE_DX12=OFF \
+    -DUSE_VULKAN=ON \
+    -DUSE_SYSTEM_LIBJPEG=OFF \
+    -DUSE_SYSTEM_LIBPNG=OFF \
+    -DUSE_SYSTEM_RAPIDJSON=OFF \
+    -DUSE_SYSTEM_ZLIB=OFF \
+    -DUSE_PRECOMPILED_HEADERS=OFF \
+    -GNinja \
+    -Wno-dev
+
+  cmake --build build
+
+  install -dm755 $PKG/usr/share/games/doom3bfg
+  cp -r base $PKG/usr/share/games/doom3bfg/
+  install -Dm755 build/RBDoom3BFG -t $PKG/usr/bin/
+  install -Dm644 $SRC/rbdoom-3-bfg.desktop -t $PKG/usr/share/applications/
+  install -Dm644 $SRC/rbdoom-3-bfg.png -t $PKG/usr/share/pixmaps/
+}

@@ -1,0 +1,44 @@
+# Description: A compiler for HLSL to DXIL (DirectX Intermediate Language).
+# URL: https://github.com/microsoft/DirectXShaderCompiler
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: git cmake ninja python
+
+name=directx-shader-compiler
+version=1.8.2407
+_commit=e4636f06383f3ccb8aefc49aa9b83a0f63676036
+release=1
+directx_headers_commit=980971e835876dc0cde415e8f9bc646e64667bf7
+spirv_headers_commit=3f17b2af6784bfa2c5aa5dbb8e0e74a607dd8b3b
+spirv_tools_commit=4d2f0b40bfe290dea6c6904dafdf7fd8328ba346
+source=(https://github.com/microsoft/DirectXShaderCompiler/archive/${_commit}.tar.gz
+        https://github.com/KhronosGroup/SPIRV-Headers/archive/${spirv_headers_commit}.tar.gz
+        https://github.com/microsoft/DirectX-Headers/archive/${directx_headers_commit}.tar.gz
+        https://github.com/KhronosGroup/SPIRV-Tools/archive/${spirv_tools_commit}.tar.gz
+        )
+
+
+build() {
+  cd DirectXShaderCompiler-${_commit}
+
+  rm -rf external/{DirectX-Headers,SPIRV-Headers,SPIRV-Tools}
+  cp -r $SRC/SPIRV-Headers-$spirv_headers_commit -T external/SPIRV-Headers
+  cp -r $SRC/DirectX-Headers-$directx_headers_commit -T external/DirectX-Headers
+  cp -r $SRC/SPIRV-Tools-$spirv_tools_commit -T external/SPIRV-Tools
+
+  unset CFLAGS CXXFLAGS
+
+  cmake -B build -S . -G Ninja \
+    -C cmake/caches/PredefinedParams.cmake \
+    -DCMAKE_BUILD_TYPE=Debug \
+    -DLLVM_ENABLE_LTO=False
+
+  cmake --build build
+
+  install -m755 -d $PKG/usr/bin
+  install -m755 -d $PKG/usr/lib
+  install -m755 -d $PKG/usr/include
+
+  install build/bin/dxc $PKG/usr/bin/
+  cp build/lib/libdxcompiler.so* $PKG/usr/lib/
+  cp -r include/dxc $PKG/usr/include/
+}

@@ -155,6 +155,7 @@ drwxr-xr-x	root/root	usr/lib/tk8.6/demos/images/
 -rw-r--r--	root/root	usr/lib/tk8.6/demos/ttkpane.tcl
 -rw-r--r--	root/root	usr/lib/tk8.6/demos/ttkprogress.tcl
 -rw-r--r--	root/root	usr/lib/tk8.6/demos/ttkscale.tcl
+-rw-r--r--	root/root	usr/lib/tk8.6/demos/ttkspin.tcl
 -rw-r--r--	root/root	usr/lib/tk8.6/demos/twind.tcl
 -rw-r--r--	root/root	usr/lib/tk8.6/demos/unicodeout.tcl
 -rw-r--r--	root/root	usr/lib/tk8.6/demos/vscale.tcl

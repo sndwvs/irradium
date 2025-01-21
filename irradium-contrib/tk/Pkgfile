@@ -1,20 +1,26 @@
 # Description: GUI toolkit for the Tcl scripting language
 # URL: http://tcl.sourceforge.net/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: zlib tcl
+# Depends on: zlib tcl zip
 
 name=tk
-version=8.6.13
+version=8.6.16
 release=1
-source=(https://downloads.sourceforge.net/tcl/$name$version-src.tar.gz)
+source=(https://downloads.sourceforge.net/tcl/$name$version-src.tar.gz
+        font-sizes.diff)
 
 build() {
   cd $name$version/unix
 
+  patch -p1 -d $SRC/$name$version -i $SRC/font-sizes.diff
+
   ./configure \
+    ZIP_PROG=zip \
     --prefix=/usr \
     --mandir=/usr/share/man \
-    --enable-threads
+    --enable-threads \
+    --disable-rpath \
+    --enable-64bit
 
   make
   make INSTALL_ROOT=$PKG install install-private-headers
@@ -30,10 +36,10 @@ build() {
   done
 
   # remove buildroot traces
-  sed -e "s#${SRC}/tk${version}/unix#/usr/lib#" \
-      -e "s#${SRC}/tk${version}#/usr/include#" \
+  sed -e "s#${SRC}/${name}${version}/unix#/usr/lib#" \
+      -e "s#${SRC}/${name}${version}#/usr/include#" \
       -i "${PKG}/usr/lib/tkConfig.sh"
 
   # remove unrequired execute permissions (FS#75042)
-  chmod -x $PKG/usr/lib/libtkstub8.6.a
+  chmod -x $PKG/usr/lib/libtkstub${version%.*}.a
 }
