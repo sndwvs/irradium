@@ -126,7 +126,7 @@ f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.aarch64
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64
 f:6cb40932f599443c25c702ad7ba66474:chromium/.signature.aarch64
-f:0b66789be25eceecd37d70e048a49546:chromium/Pkgfile
+f:c761b7ff8059f612af0e09f3fff6decf:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:bfcf1f40013f72556bae0976d203cf05:deadbeef/.footprint
 f:60b14199bfeca23778277bd3aed8732a:deadbeef/.signature
@@ -343,7 +343,7 @@ f:8f6657577ad6609a22f2f7efe2fa237f:ungoogled-chromium/patches/increase-fortify-l
 f:8a5bb31f36674261967aa4482416fcb9:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
 f:455ca37f56915d76c376c0ae18d311eb:ungoogled-chromium/.footprint
 f:e570ec2f1c50b55594983a3a68a00f05:ungoogled-chromium/.signature
-f:0b5eb046d9b72b3c1153ed07b95c22a8:ungoogled-chromium/Pkgfile
+f:e8cedfa54b9d0cfc3bf383d317b336e8:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
 f:0cb29db19dda2ae4817b0380de127c8b:urxvt-perls/.signature
