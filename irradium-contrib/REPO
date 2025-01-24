@@ -432,8 +432,8 @@ f:c3d31fc159c031b509e3b70466661896:pkgtools/.footprint
 f:c87e34bbbedfc0c6540be5f39e7179cd:pkgtools/.signature
 f:3129b1af7f0f5fb986dfdafc3507dace:pkgtools/Pkgfile
 f:ea29b259b6fda2cfaaae1e8ab1239cf0:pkgtools/post-install
-f:3ff067b92571568863f959eda7003ff9:crosstool-ng/.footprint
-f:996508e98fec4acff8e2921c7a909b68:crosstool-ng/.signature
+f:9b8467cae8f45cf7d901163acff398fb:crosstool-ng/.footprint
+f:450047199898362275bd12d6b448a288:crosstool-ng/.signature
 f:36663982cb2dd06e86a2afb7493af5a4:crosstool-ng/0001-sunrpc.diff
 f:dc5493e8cdee8f529867dc56cca6af1a:crosstool-ng/Pkgfile
 f:bde1f59c3f8395dc6a97246029bd9370:libe-book/.footprint

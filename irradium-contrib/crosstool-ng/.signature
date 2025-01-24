@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7lh9C34W0MPLdjWny2OGoqSCcjk6BlNtBFAkvZgdm/d6jBHaJUJAoh/oC9Qbhs9YtKb5gyDuOmI35GsU5Vf0Iw0=
-SHA256 (Pkgfile) = ec1b7b04a74fdc97605369da4e1f6b10e5f31594773ac48fc312ad8070e90828
-SHA256 (.footprint) = 59834bd2bc11c15c1eea19bf9fcf3ef704657461d6d0c97d6d51c2cb1f505ab1
-SHA256 (crosstool-ng-1.25.0.tar.xz) = 68162f342243cd4189ed7c1f4e3bb1302caa3f2cbbf8331879bd01fe06c60cd3
+RWTmT3d9kqan7uAGsKzUl68i1oSGDBm5Y+X4UUj/RlFeYj81ZnzIpp1nqbEH/ysyZiYTtld0c0Giu76uPKDduq6eroc4W4uX9AM=
+SHA256 (Pkgfile) = b27ccbb0743b59e967b98d9aa232fcfc1307a57eaf1dedd70aef0f641faa6b43
+SHA256 (.footprint) = ae7c02e09eff5a83bd7fb566a2658f483e8e460f0641d1e877bdfa35b585350e
+SHA256 (crosstool-ng-1.26.0.tar.xz) = e8ce69c5c8ca8d904e6923ccf86c53576761b9cf219e2e69235b139c8e1b74fc
 SHA256 (0001-sunrpc.diff) = a90925096e9cc5eae20e8734df09619691fc2c06d58f3d0f7d6a0a7a2dd3d602
