@@ -4,7 +4,7 @@
 # Depends on: autoconf automake bash bison file gcc flex gawk gperf libtool patch make sed wget xz texinfo ncurses gettext
 
 name=crosstool-ng
-version=1.25.0
+version=1.26.0
 release=1
 source=(http://crosstool-ng.org/download/crosstool-ng/$name-$version.tar.xz
     0001-sunrpc.diff)

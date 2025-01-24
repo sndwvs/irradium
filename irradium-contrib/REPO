@@ -435,7 +435,7 @@ f:ea29b259b6fda2cfaaae1e8ab1239cf0:pkgtools/post-install
 f:3ff067b92571568863f959eda7003ff9:crosstool-ng/.footprint
 f:996508e98fec4acff8e2921c7a909b68:crosstool-ng/.signature
 f:36663982cb2dd06e86a2afb7493af5a4:crosstool-ng/0001-sunrpc.diff
-f:08a0605474b5f91faaaafd0725f98117:crosstool-ng/Pkgfile
+f:dc5493e8cdee8f529867dc56cca6af1a:crosstool-ng/Pkgfile
 f:bde1f59c3f8395dc6a97246029bd9370:libe-book/.footprint
 f:8cb876b3b2b92145587faa0ae17e5db4:libe-book/Pkgfile
 f:651a6cf09ffa8872accf1f568d0c0836:libe-book/libebook-0.1.3-icu-68.patch
