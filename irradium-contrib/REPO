@@ -341,8 +341,8 @@ f:3eb7a7bbf663a4c9b242ef833073f709:ungoogled-chromium/patches/0002-Run-blink-bin
 f:f39af46a37b6b3dfebfb11bd27ffeeb2:ungoogled-chromium/patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
 f:8f6657577ad6609a22f2f7efe2fa237f:ungoogled-chromium/patches/increase-fortify-level.patch
 f:dd9200ca6694738ee52b011857ca310e:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
-f:455ca37f56915d76c376c0ae18d311eb:ungoogled-chromium/.footprint
-f:e570ec2f1c50b55594983a3a68a00f05:ungoogled-chromium/.signature
+f:bc63f54185ba6efab2fbb70e87ad9742:ungoogled-chromium/.footprint
+f:8def3bd42f94073fb8834b6b4d0fbc2c:ungoogled-chromium/.signature
 f:e8cedfa54b9d0cfc3bf383d317b336e8:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
