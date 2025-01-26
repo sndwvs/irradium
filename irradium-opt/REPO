@@ -101,8 +101,8 @@ f:7121ab2aade21e0decc01ff896b12194:llvm/.footprint.riscv64
 f:3c873dc6c7cd831780843740c7b84c1a:llvm/.signature.aarch64
 f:e11a6490637d20a5cca2b9ff1f127172:llvm/.signature.riscv64
 f:187b3f1917ecc05595280dbf25985535:llvm/Pkgfile
-f:5795622d92584bf4df9ddcfd8927142b:mc/.footprint
-f:c681bf1eecb69ee8bc410a147efba204:mc/.signature
+f:97d2901b0c7929f1469fed61587d3c59:mc/.footprint
+f:b4841f1b6a92ca8dd65a602c6350250b:mc/.signature
 f:c2c78b2fadd98eba66ec14213a9631a2:mc/Pkgfile
 f:13caa329106b87c04f476404898110a8:medit/.footprint
 f:1660f93d6be76a41334168f8156628ed:medit/.signature
