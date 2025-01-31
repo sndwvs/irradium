@@ -200,14 +200,14 @@ f:dd9390f6f5ac214b2d42e9cdc6865f9f:aspell/Pkgfile
 f:3dc09fe4bf975cc2c3460c94a51f4379:bindutils/utils.patch
 f:f3fb83559b3f51d7f0db57897efc8de5:bindutils/.footprint
 f:b7622fe5a4438d0082c3bf71ec0294f8:bindutils/.signature
-f:8220e8c3376af662b31d40e45a42addd:bindutils/Pkgfile
+f:9e221a01822ec213a00dec9d2a001e26:bindutils/Pkgfile
 f:1aede60653850132b69cd3d64728fae3:liburcu/.footprint
 f:964bbe843101bb88c2db17e81e8bfe37:liburcu/.signature
 f:aa2a81bfc674791a7a23018a0e458a80:liburcu/Pkgfile
 f:56a7f08af14b4f937e8185ea0cf9453a:nodejs/.footprint
 f:1f8d81b7d7f75b75af3e33ebd97808bf:nodejs/system-c-ares.patch
 f:3707520ad451dc865f7dfcfb82d65fbf:nodejs/.signature
-f:1b3a0f14ef9de94d87cd70aad5e82569:nodejs/Pkgfile
+f:d68b22d4e20c2a7e041f32b32f754b94:nodejs/Pkgfile
 f:dad529d8d9ae5649b6e7c056b0ad2b8d:nodejs/riscv-trap-handler.patch
 f:ec273c79fbeea3e385bfeff73953e03f:nodejs/v8-disable-trap-handler-on-riscv-sv39.patch
 f:f8d2f18e32451d2f7d516ef7fd446dc8:shared-mime-info/.footprint
