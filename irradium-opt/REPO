@@ -139,8 +139,8 @@ f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
 f:3786cb8569dfdc397763f3adcbb5af1a:qt6-base/0028-implicit-qchar-construction.patch
 f:42a695962c96c39e37eb5226a40bec48:qt6-base/0028-windows-fullscreen-with-mask.patch
 f:26d7c059e5528d47ee0f77a8c33bf19a:qt6-base/0029-accept-only-cf_hdrop-as-uri-list.patch
-f:624334aa64730a7437e6e90ccca2121c:qt6-base/.footprint
-f:5de06f453e97aaadfca31d5fcf39b604:qt6-base/.signature
+f:bfeeadc767731d581b37d5bb6a0f4828:qt6-base/.footprint
+f:24bc45c19822bc4144727a5c0fa2b1eb:qt6-base/.signature
 f:554b23c5b322651a1044f18397d9a6d7:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
