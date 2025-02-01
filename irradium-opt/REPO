@@ -206,7 +206,7 @@ f:964bbe843101bb88c2db17e81e8bfe37:liburcu/.signature
 f:aa2a81bfc674791a7a23018a0e458a80:liburcu/Pkgfile
 f:56a7f08af14b4f937e8185ea0cf9453a:nodejs/.footprint
 f:1f8d81b7d7f75b75af3e33ebd97808bf:nodejs/system-c-ares.patch
-f:3707520ad451dc865f7dfcfb82d65fbf:nodejs/.signature
+f:eedeb4132c4f5ff79c095834c4c439a0:nodejs/.signature
 f:d68b22d4e20c2a7e041f32b32f754b94:nodejs/Pkgfile
 f:dad529d8d9ae5649b6e7c056b0ad2b8d:nodejs/riscv-trap-handler.patch
 f:ec273c79fbeea3e385bfeff73953e03f:nodejs/v8-disable-trap-handler-on-riscv-sv39.patch
