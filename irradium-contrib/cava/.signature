@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7qVC3ovVr6T9mExVtu5vg7trlZJMeyT0/s7ffmM5HChoeRPX88ySWmPh/xz+q/X33yY8vc5laYZVtzQbnJCDuQE=
+SHA256 (Pkgfile) = 4f5ccf243b9e906f051c0de41822c848b7314f3dd19ef81424d4c88ad07a799d
+SHA256 (.footprint) = 5d74bd4749cfc1189f9f2ff914ba0e11897170f4f89454da728cd9ad129852a6
+SHA256 (cava-0.10.3.tar.gz) = bd198b6a0d0a24c0732b3c825b20e948976b1a5d38212f8d9419733aebac7c89
