@@ -104,6 +104,7 @@ d:bind
 d:openjdk21-jdk
 d:directx-shader-compiler
 d:rbdoom-3-bfg
+d:gcc-fortran
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -576,3 +577,12 @@ f:3b199af0298c733edac9238fade1f1b5:rbdoom-3-bfg/Pkgfile
 f:2bf4e994d8df1899b21b0028fb7018ef:rbdoom-3-bfg/feffa4a4dd9a2a5f3c608f720cde41bea37797d3.patch
 f:4bc031ea2e4564054f678ece5e7078ae:rbdoom-3-bfg/rbdoom-3-bfg.desktop
 f:86455bb86d4267b447bd882dbde35231:rbdoom-3-bfg/rbdoom-3-bfg.png
+f:7f48c44ba6b828c5668c375978d1a0b4:gcc-fortran/Pkgfile
+f:61a057afa31006764b957a483ba90b9d:gcc-fortran/gcc-4.7.3-multilib-dirs.patch
+f:7c9128522053af79791bcfdd55834c2a:gcc-fortran/gcc-nocheck-fixincludes.patch
+f:032ba6ae0bd4d6e405d012084816e334:gcc-fortran/gcc-aarch64-disable-multilib-support.patch
+f:a58ff03983cf89e5e690c71f7eab6fff:gcc-fortran/gcc-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
+f:9652a27711fa9f7989483ebe21786c16:gcc-fortran/gcc-configure-fix-detection-of-atomic-builtins-in-libato.patch
+f:d999afb2c8abba1591154b6e6717e6d8:gcc-fortran/gcc-riscv-disable-multilib-support.patch
+f:8f4e26836f7b950970df2cb085a7b3cd:gcc-fortran/.footprint.aarch64
+f:872e09584109dc7e2319a8df85f92ae4:gcc-fortran/.signature.aarch64

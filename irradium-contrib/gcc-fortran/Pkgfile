@@ -1,0 +1,93 @@
+# URL: http://gcc.gnu.org/fortran
+# Description: Fortran (f95) add-on for GNU GCC compiler.
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: libmpfr
+
+name=gcc-fortran
+version=12.4.0
+release=1
+source=(ftp://gcc.gnu.org/pub/gcc/releases/gcc-$version/gcc-$version.tar.xz
+  gcc-nocheck-fixincludes.patch gcc-4.7.3-multilib-dirs.patch
+  gcc-aarch64-disable-multilib-support.patch
+  gcc-riscv-disable-multilib-support.patch
+  gcc-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
+  gcc-configure-fix-detection-of-atomic-builtins-in-libato.patch)
+
+build() {
+
+  patch -d gcc-$version -p1 -i $SRC/gcc-nocheck-fixincludes.patch
+  patch -d gcc-$version -p1 -i $SRC/gcc-4.7.3-multilib-dirs.patch
+  patch -d gcc-$version -p1 -i $SRC/gcc-aarch64-disable-multilib-support.patch
+  patch -d gcc-$version -p1 -i $SRC/gcc-riscv-disable-multilib-support.patch
+  patch -d gcc-$version -p1 -i $SRC/gcc-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
+  patch -d gcc-$version -p1 -i $SRC/gcc-configure-fix-detection-of-atomic-builtins-in-libato.patch
+
+  [[ $(uname -m) == "riscv64" ]] && PKGMK_GCC+=' --enable-autolink-libatomic'
+
+  # Credits @allanmcrae
+  # https://github.com/allanmcrae/toolchain/blob/f18604d70c5933c31b51a320978711e4e6791cf1/gcc/PKGBUILD
+  # TODO: properly deal with the build issues resulting from this
+  CFLAGS=${CFLAGS/-Werror=format-security/}
+  CXXFLAGS=${CXXFLAGS/-Werror=format-security/}
+
+  # Do not run fixincludes
+  sed -i -e 's|\./fixinc\.sh|-c true|' gcc-$version/gcc/Makefile.in
+
+  install -d build
+  cd build
+
+  ../gcc-$version/configure \
+    --prefix=/usr \
+    --libexecdir=/usr/lib \
+    --enable-languages=fortran \
+    --enable-threads=posix \
+    --enable-__cxa_atexit \
+    --enable-clocale=gnu \
+    --enable-shared \
+    --disable-nls \
+    --with-x=no \
+    --with-system-zlib \
+    --enable-multilib \
+    --disable-sjlj-exceptions \
+    --with-pkgversion="irradium $(getconf LONG_BIT)b" \
+
+  if [ -n "$(pkginfo -i | grep '^ccache ')" ]; then
+    make STAGE_CC_WRAPPER='/usr/bin/ccache' BOOT_CFLAGS="$CFLAGS" bootstrap
+  else
+    make BOOT_CFLAGS="$CFLAGS" bootstrap
+  fi
+
+  make -j 1 DESTDIR=$PKG install
+
+  ln -fs gfortran $PKG/usr/bin/f90
+  ln -fs gfortran $PKG/usr/bin/f95
+  ln -fs gfortran $PKG/usr/bin/g77
+
+  for D in lib; do
+    install -d -m 0755 $PKG/usr/share/gdb/auto-load/usr/${D}
+    mv $PKG/usr/${D}/libstdc++.so.*-gdb.py $PKG/usr/share/gdb/auto-load/usr/${D}
+  done
+
+  # remove files already on the system out of the port
+  for i in $(pkginfo -l gcc | sed -e "s|^|/|") $(pkginfo -l binutils | sed -e "s|^|/|"); do
+    if [ -e "$i" ] && [ ! -d "$i" ]; then
+      if [ -e "$PKG$i" ]; then
+        rm "$PKG$i"
+      fi
+      # check for compressed manpages
+      if [ -e "$PKG${i%%.gz}" ]; then
+        rm "$PKG${i%%.gz}"
+      fi
+    fi
+  done
+
+  rm -r $PKG/usr/bin/*-linux-gnu*
+  rm -r $PKG/usr/share/{info,gcc-$version}
+  rm -r $PKG/usr/lib/gcc/*/$version/{install-tools,include-fixed}
+
+  # Remove empty directories
+  find $PKG -depth -empty -exec rm -r {} \;
+
+  # remove build paths from *.la files
+  sed -i -e "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/libgfortran.la
+}
