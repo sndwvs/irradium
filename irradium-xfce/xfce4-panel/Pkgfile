@@ -4,7 +4,7 @@
 # Depends on: exo garcon libxfce4ui libwnck-gtk3 xfconf libxfce4windowing
 
 name=xfce4-panel
-version=4.20.2
+version=4.20.3
 release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
