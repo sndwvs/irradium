@@ -28,6 +28,6 @@ build() {
 
   rm -rf $PKG/usr/share/info
   install -Dm644 doc/sample-config/$name.conf $PKG/etc/$name/$name.conf
-  install -Dm644 $SRC/tincd.logrotate $PKG/etc/syslog.d/tincd.conf
+  install -Dm666 $SRC/tincd.logrotate $PKG/etc/syslog.d/tincd.conf
   install -m755 -D $SRC/rc.tincd $PKG/etc/rc.d/tincd
 }
