@@ -1,0 +1,30 @@
+# Description: nigel's performance monitor for linux
+# URL: https://nmon.sourceforge.net/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: ncurses
+
+name=nmon
+version=16q
+release=1
+source=(https://sourceforge.net/projects/$name/files/lmon$version.c
+        glibc.patch)
+
+build() {
+  cp lmon$version.c lmon.c
+
+  patch -p1 -i $SRC/glibc.patch
+
+  case $(uname -m) in
+    ppc64le)        _BUILD_ARCH="POWER" ;;
+    s390x)          _BUILD_ARCH="MAINFRAME" ;;
+    arm*|aarch64)   _BUILD_ARCH="ARM" ;;
+    riscv*)         _BUILD_ARCH="RISCV" ;;
+    *)              _BUILD_ARCH="X86" ;;
+  esac
+
+  echo "Building for $_BUILD_ARCH"
+  cc -o nmon lmon.c -g -O3 -Wall -lncurses -lm \
+    -D $_BUILD_ARCH -D JFS -D GETUSER -D LARGEMEM
+
+  install -Dm0755 nmon $PKG/usr/bin/nmon
+}
