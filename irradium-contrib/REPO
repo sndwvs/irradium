@@ -400,7 +400,7 @@ f:6e43231687a41272a913911994909469:ntp/pre-install
 f:1bba21fa121fd3e00f8ba272b6abda5a:ntp/rc.ntpd
 f:2920829f92b76faddfbb41367c960505:ntp/.footprint
 f:ecb28f264ef837ed295775523aad04a6:ntp/.signature
-f:9b7d9aad6fe6567a52a66140e685abec:ntp/Pkgfile
+f:fd664ba4a8517942a7574bb1ae9f9e77:ntp/Pkgfile
 f:4a3b1c6d05147d5b141ade4b947f09d1:glmark2/.footprint
 f:1bca2a75f4b401372397cbc7ac84adbd:glmark2/.signature
 f:ecf4d7512d16e61c1d1566bc35b26148:glmark2/Pkgfile
