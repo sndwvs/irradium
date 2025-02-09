@@ -36,9 +36,9 @@ f:e724b7b74aed05552d1761a440de4678:Greybird/.footprint
 f:f143d56ec54f4dcbed423433bde9ee86:Greybird/.signature
 f:ec3c2a0ed821bddc90a695c553ee307d:Greybird/Pkgfile
 f:dbb70a525c7eeefce742d506fcb03652:elementary-xfce/post-install
-f:5270f253408b10a19aaf81e62bd9e345:elementary-xfce/.footprint
-f:a523aa6e6be13c7eb611d7b555ab99a1:elementary-xfce/.signature
-f:6dadcab16727d63ea7babce2d8ee519d:elementary-xfce/Pkgfile
+f:5e18d362951cf70c392bcf8310ff4782:elementary-xfce/.footprint
+f:2df0b8883fecc6d6c844fe3649943b29:elementary-xfce/.signature
+f:e27b80763a9b79c32f8c138d8ff6c8ee:elementary-xfce/Pkgfile
 f:55568f06ada2ea19e905a71840097955:exo/.footprint
 f:64e2170aab8d3db7bdcb37efab3a188a:exo/.signature
 f:4e34be6b73a28e4971daf436efb05d98:exo/Pkgfile
@@ -80,8 +80,8 @@ f:43713631776faf11fb0f7df881d7e6bd:xfce4-notifyd/.footprint
 f:ed3eb6f1b07a67981122e40c6643101f:xfce4-notifyd/.signature
 f:2323c8212ae2ecde3d3e02ecfc0aa1ac:xfce4-notifyd/Pkgfile
 f:d387192f8e61b6da9ec20b997c972abf:xfce4-panel/.footprint
-f:e71af6de94de36db6ba2a9322512e915:xfce4-panel/.signature
-f:4c245ae35296b3c217efd54be106dee7:xfce4-panel/Pkgfile
+f:9fce96762c796f318a55490ef6b70eef:xfce4-panel/.signature
+f:37d28d37f259c1148993c4349be12173:xfce4-panel/Pkgfile
 f:b9bd948bc3340fe5cdf5daf3dc6a0105:xfce4-panel-profiles/.footprint
 f:2381d113ab0679748d6c6828c075c1e0:xfce4-panel-profiles/.signature
 f:7aa87bbec47b429efcca86b62928dbd7:xfce4-panel-profiles/Pkgfile
@@ -141,8 +141,8 @@ f:364fa23fa38d602049e53272823e16d5:xfwm4/.signature
 f:dec88d3b113e71c7f4667b128be9fa10:xfwm4/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:786281391b8c06be6353a11ee2725c1c:libxfce4windowing/.footprint
-f:e85db4c37ecb25322afbc8d5fbeb65e7:libxfce4windowing/.signature
-f:93415de0fbac3ecd0d8d1f13ceb6801c:libxfce4windowing/Pkgfile
+f:dae354d4ad3b45480517010333663792:libxfce4windowing/.signature
+f:27fd9c7bfd7d328e14f884af96202cbe:libxfce4windowing/Pkgfile
 f:c63616d7afc51eea1dfc22e65a408701:xfce4-mixer/.footprint
 f:a144900c536cf74e05a1f4b5f7026889:xfce4-mixer/.signature
 f:226969244de636a486908ff8de9a675a:xfce4-mixer/Pkgfile

@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCbWxbmuOZYOjSW+b06ezhhgBIFkRJT+dmb5yFlfQz4e+EAE9F/8jSStwxXJpEYY3XMqyZh8G6ihe8PEk5EniRgY=
-SHA256 (Pkgfile) = a87708a599a834ef41576ac434580d21da5db03e205e01ead2dde0a732745cf3
-SHA256 (.footprint) = fa4bf8c5c440495793c1b515f2ad10b1aa101aae2f231850f6297a60a314ef6f
-SHA256 (bind-9.20.4.tar.xz) = 3a8e1a05e00e3e9bc02bdffded7862faf7726ba76ba997f42ab487777bd8210b
+RWRxRnTWECCiCej0+oCAFj9kIy3Mny+j+2YXkUZRM7v7hKCTH6R2rcRP94VhNzHh7S8hYxWCXFA6ECkR8/iYyJUfDFAFqHkdXAo=
+SHA256 (Pkgfile) = 58d917701288bf017ef9e695ffee717feca1138bc61089beab7eeb29968eaedb
+SHA256 (.footprint) = 1cf98548a8d2b5e8e15a4d591ffaec4dc968f59aaefd07e158a032a4b2b47440
+SHA256 (bind-9.20.5.tar.xz) = 19274fd739c023772b4212a0b6c201cf4364855fa7e6a7d3db49693f55db1ab8
 SHA256 (utils.patch) = 0aa2f4ce4aa69ebbe8f2ea3e7172bf8e486c40c7dce531921314da0b92198ea7

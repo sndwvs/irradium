@@ -1,0 +1,22 @@
+# Description: console-based audio visualizer
+# URL: https://github.com/karlstav/cava
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: alsa-lib libtool fftw libsdl2
+
+name=cava
+version=0.10.3
+release=1
+source=(https://github.com/karlstav/cava/releases/download/$version/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --mandir=/usr/share/man \
+    --localstatedir=/var
+
+    make
+    make DESTDIR=$PKG install
+}
