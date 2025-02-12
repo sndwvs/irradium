@@ -5,7 +5,7 @@
 # Optional: avahi coin-or-mp cups dconf gpgme kio lpsolve mariadb openldap postgresql python3-lxml qt5 sane valgrind
 
 name=libreoffice
-version=25.2.0.3
+version=25.2.1.1
 release=1
 pdfiumversion=6764
 source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-$version.tar.xz
@@ -17,7 +17,6 @@ source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/
   https://dev-www.libreoffice.org/src/dtoa-20180411.tgz
   https://dev-www.libreoffice.org/src/pdfium-$pdfiumversion.tar.bz2
   https://dev-www.libreoffice.org/src/skia-m130-3c64459d5df2fa9794b277f0959ed8a92552bf4c.tar.xz
-  https://raw.githubusercontent.com/unicode-org/icu/main/icu4c/source/data/brkitr/rules/line.txt
   libreoffice-7.6-qt6-wayland-egl.patch
   makefile.in.patch)
 
@@ -77,7 +76,6 @@ build() {
   sed -e "/distro-install-file-lists/d" -i Makefile.in
 
   patch -Np1 -i $SRC/libreoffice-7.6-qt6-wayland-egl.patch
-  cp $SRC/line.txt i18npool/source/breakiterator/data/line.txt
 
   export LC_ALL=en_US.UTF-8
   export LANG=en_US
