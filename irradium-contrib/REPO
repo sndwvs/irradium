@@ -107,6 +107,7 @@ d:rbdoom-3-bfg
 d:cava
 d:gcc-fortran
 d:nmon
+d:aom
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -595,3 +596,6 @@ f:adaee3d78879d7ea3b8875ce5b929d39:nmon/.footprint
 f:879a0be4a751104f6157069cbf3f11d0:nmon/.signature
 f:01fa573c86a3862e0e2f999e4b6c685c:nmon/Pkgfile
 f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
+f:a7471d477ccf22fa434889ab62901140:aom/.footprint
+f:ff16a7277980537a97c6dd3cb238d892:aom/.signature
+f:ce86c4ad510d1c7dce5c23747e1fcff6:aom/Pkgfile
