@@ -15,8 +15,8 @@ build() {
   CXXFLAGS=${CXXFLAGS/_FORTIFY_SOURCE=2/_FORTIFY_SOURCE=0}
 
   # fix build riscv64
-  CC="clang"
-  CXX="clang++"
+  export CC="clang"
+  export CXX="clang++"
 
   cmake -S libaom-$version -B build -G Ninja \
     -D CMAKE_INSTALL_PREFIX=/usr \
