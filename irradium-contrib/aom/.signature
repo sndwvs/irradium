@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/contrib.pub
-RWSagIOpLGJF31MJ1ylBdeedKKoUq11r7U0nwINB11ScwVGltp296N5qELOiDqZdrQ5RS1s6ZKlVUme7A7JHriZZp/2+Q3+EzQM=
-SHA256 (Pkgfile) = 2eceb7dacc10165360e0af92342a67d60f69b82c2ea36aed586085183122f5c1
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7uyPyhTC1NkASmz9CdRGlXQP7DYcxH4/wVpr8brMJE2hlaROnKGuEmyPqiiEzFaK+CNvyzCGTwHQ6gMoUdncOws=
+SHA256 (Pkgfile) = c27f3521f2fa6cf310c2dcdd10469f7da1b4f16f3b6671adf5ce9fbdf4e34aa5
 SHA256 (.footprint) = c4bb956d838a1d56860de4ce5efbf356473e079e8fc05f73d9ae1f22b12a0815
 SHA256 (libaom-3.12.0.tar.gz) = d89daa160a0ea1409c4193be5b17c9591024c4f5a0e545dcb9d197535c66836e
