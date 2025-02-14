@@ -189,6 +189,8 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/access/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libaccess_concat_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libaccess_imem_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libaccess_imem_plugin.so
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libaccess_jack_plugin.la
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libaccess_jack_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libaccess_mms_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libaccess_mms_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libaccess_mtp_plugin.la
@@ -313,6 +315,8 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_output/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_output/libalsa_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_output/libamem_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_output/libamem_plugin.so
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_output/libjack_plugin.la
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_output/libjack_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_output/libpulse_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_output/libpulse_plugin.so
 drwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/

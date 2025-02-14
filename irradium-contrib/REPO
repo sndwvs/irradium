@@ -356,8 +356,8 @@ f:8dc3f6c286ee83a7c4d99372a75aa483:viewnior/.footprint
 f:b6e55d20ea5e44f8688f1c161c00e20b:viewnior/.signature
 f:882729d5e9e07bb8baadd54ef498fef6:viewnior/Pkgfile
 f:362e3fa06abefde433f18c586fa2248b:vlc/post-install
-f:13432579f26cdf4d07e2e0d00bab5836:vlc/.footprint
-f:4e864806195b04521ef8b3f6fb84d442:vlc/.signature
+f:169cf81e7b6b12eb0510d931fbc153f0:vlc/.footprint
+f:ebea87f5dfb19e84976d6de75c04a4f8:vlc/.signature
 f:85df7c3f4dda0cf86cacd0f79a6f21e5:vlc/Pkgfile
 f:549d595cc709152e5b827997e64cfa0f:vlc/vlc-3.0.20-ffmpeg7.patch
 f:1697f3fadd7c76e45240c1b248a7f8fe:xcursor-justblue/Pkgfile
