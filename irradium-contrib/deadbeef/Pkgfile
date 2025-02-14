@@ -5,7 +5,7 @@
 
 name=deadbeef
 version=1.9.6
-release=2
+release=3
 source=(https://downloads.sourceforge.net/$name/$name-$version.tar.bz2
         d4cca5605447122cd080691f43e46047a6039359.patch
         ddb_dsp_libretro_fix_aarch64_riscv64.patch)
