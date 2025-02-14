@@ -115,7 +115,7 @@ f:c35f78590d60146abc6f593e113ef6ba:android-tools/.footprint
 f:b38740cd7b5b0256ef3b6a0f833fdfb8:android-tools/.signature
 f:35067e022867af8aecf6bd5488f85837:android-tools/Pkgfile
 f:95d427053c3f2589d3eb98e419eac127:audacity/.footprint
-f:c88c3335e8809716c815f12f9b1d717a:audacity/.signature
+f:caafe7384c6b627d1aa44f2ae003d9e3:audacity/.signature
 f:79f8dbe19564cccf97ca4b71026e8c99:audacity/Pkgfile
 f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
