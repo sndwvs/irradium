@@ -130,7 +130,7 @@ f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.aarch64
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64
 f:6cb40932f599443c25c702ad7ba66474:chromium/.signature.aarch64
-f:c761b7ff8059f612af0e09f3fff6decf:chromium/Pkgfile
+f:13d95956ab8f90f7914f30a6d5e4f97d:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:bfcf1f40013f72556bae0976d203cf05:deadbeef/.footprint
 f:60b14199bfeca23778277bd3aed8732a:deadbeef/.signature
