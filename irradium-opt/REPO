@@ -35,8 +35,6 @@ d:liburcu
 d:nodejs
 d:shared-mime-info
 d:wpa_supplicant
-d:iptraf-ng
-d:iozone
 f:0072413ad564c8a82da0058e41ddce6b:cryptsetup/.footprint
 f:9874ea339796e7a32fe2f840e00b8481:cryptsetup/.signature
 f:921069ba04b101174ab92b95734262e8:cryptsetup/Pkgfile
@@ -223,9 +221,3 @@ f:94eda9e510358f6fc9e6033048cc05de:wpa_supplicant/README
 f:0be43cac70d6109c16ece5462a3eb3dd:wpa_supplicant/irradium-wlan.patch
 f:a804f8c2828b929446a928d02be98018:wpa_supplicant/wlan
 f:5b505ff68474564b9eb44b04445ba730:wpa_supplicant/wpa_supplicant
-f:2190317ade7c835d7f8ec924360c7439:iptraf-ng/Pkgfile
-f:6af1adf0df27f4a4024633a823c2f45c:iptraf-ng/.footprint
-f:3b39d000c9a3bc753625396f2540419d:iptraf-ng/.signature
-f:140883be494b876db58f18e30acaadf2:iozone/Pkgfile
-f:ba68ad580154c5bd1a46b1aed3305be0:iozone/.footprint
-f:d181fa509b2ead734fcf265547e1687d:iozone/.signature
