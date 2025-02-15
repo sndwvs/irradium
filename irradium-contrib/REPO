@@ -109,6 +109,8 @@ d:gcc-fortran
 d:nmon
 d:aom
 d:iperf3
+d:iozone
+d:iptraf-ng
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -603,3 +605,9 @@ f:a94de3a7115bce87dbeca742aa9d6905:aom/Pkgfile
 f:7c6fe9e91bb38131674eccef87ea2623:iperf3/Pkgfile
 f:f9bc7137b9698dff9d7655a9ea09e124:iperf3/.footprint
 f:6eaef1398cba601216dbedfd2fffdfef:iperf3/.signature
+f:140883be494b876db58f18e30acaadf2:iozone/Pkgfile
+f:ba68ad580154c5bd1a46b1aed3305be0:iozone/.footprint
+f:d181fa509b2ead734fcf265547e1687d:iozone/.signature
+f:2190317ade7c835d7f8ec924360c7439:iptraf-ng/Pkgfile
+f:6af1adf0df27f4a4024633a823c2f45c:iptraf-ng/.footprint
+f:3b39d000c9a3bc753625396f2540419d:iptraf-ng/.signature
