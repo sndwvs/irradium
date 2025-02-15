@@ -5,15 +5,18 @@
 # Optional: brotli c-ares icu libnghttp3 libngtcp2 simdjson simdutf
 
 name=nodejs
-version=23.7.0
+version=23.8.0
 release=1
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
-  system-c-ares.patch
+  unbundle-uv.patch
   riscv-trap-handler.patch
   v8-disable-trap-handler-on-riscv-sv39.patch)
 
 build() {
   cd node-v$version
+
+  patch -Np1 -i $SRC/unbundle-uv.patch
+  rm deps/uv/uv.gyp deps/zlib/zlib.gyp
 
   # fix riscv64
   patch -Np1 -i $SRC/riscv-trap-handler.patch
@@ -27,6 +30,8 @@ build() {
   prt-get isinst simdjson && PKGMK_NODEJS+=' --shared-simdjson'
   prt-get isinst simdutf && PKGMK_NODEJS+=' --shared-simdutf'
 
+  CFLAGS="$CFLAGS -g0 -Wl,--no-keep-memory -fuse-ld=gold -Wl,--no-map-whole-files -Wl,--no-keep-files-mapped" \
+  CXXFLAGS="$CFLAGS" \
   ./configure ${PKGMK_NODEJS} \
     --prefix=/usr \
     --ninja \
