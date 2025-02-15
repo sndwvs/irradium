@@ -100,6 +100,12 @@ build() {
 
     # Fixes for building with libstdc++ instead of libc++
 
+    # Link to system tools required by the build
+    rm third_party/node/linux/node-linux-x64/bin/node
+    ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
+    #ln -s /usr/bin/java third_party/jdk/current/bin/
+    ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
+
     if (( !_system_clang )); then
         # Use prebuilt rust as system rust cannot be used due to the error:
         #   error: the option `Z` is only accepted on the nightly compiler
@@ -108,12 +114,6 @@ build() {
         # To link to rust libraries we need to compile with prebuilt clang
         ./tools/clang/scripts/update.py
     fi
-
-    # Link to system tools required by the build
-    rm third_party/node/linux/node-linux-x64/bin/node
-    ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
-    #ln -s /usr/bin/java third_party/jdk/current/bin/
-    ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
 
     # Remove bundled libraries for which we will use the system copies; this
     # *should* do what the remove_bundled_libraries.py script does, with the
@@ -179,9 +179,6 @@ build() {
     if [[ -n ${_system_libs[icu]+set} ]]; then
       _flags+=('icu_use_data_file=false')
     fi
-
-    # Append ungoogled chromium flags to _flags array
-    readarray -t -O ${#_flags[@]} _flags < "${UNGOOGLED_REPO}/flags.gn"
 
     if (( _system_clang )); then
         local _clang_version=$(
