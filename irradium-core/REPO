@@ -166,12 +166,12 @@ f:6c93d785c723fcf91873fc5eb5693726:dcron/crond
 f:e48dd7b789f3071f38e322e3f4ed2a91:dcron/crond.patch
 f:9b8f2bac610aad49e84ae7398c5735c1:dhcpcd/pre-install
 f:0b056dd3e5a3e1eacb7c9b38f0641e4d:dhcpcd/rc.dhcpcd
-f:131a7abf96b5cbd339cba03d9cd7e595:dhcpcd/.footprint
-f:940697183c953da644ba4f247db5302a:dhcpcd/.signature
-f:b04cc9a12b700e802574502b5dd11a6c:dhcpcd/Pkgfile
-f:5a1cf3e66d492a1433ac84eaffd939d3:dhcpcd/dhcpcd.conf-Don-t-invoke-wpa_supplicant-by-default.patch
 f:b234015b73634def7fa8cbd2c8bac075:dhcpcd/dhcpcd.conf-request_ntp_server_by_default.patch
 f:1be1c29d9376024d75725b8de4905d38:dhcpcd/use-hostname_short-in-dhcpcd.conf.patch
+f:5a1cf3e66d492a1433ac84eaffd939d3:dhcpcd/dhcpcd.conf-Don-t-invoke-wpa_supplicant-by-default.patch
+f:22b0bf1f472a6db254456d58e484e7e0:dhcpcd/.footprint
+f:f4b21a344e3497c6093fc2db171022d2:dhcpcd/.signature
+f:1493f91108d29df499e42b84cf22171a:dhcpcd/Pkgfile
 f:f13ecf368970a7561b95c77fcfff5fae:iproute2/irradium-net.iproute2.patch
 f:7b469125cfe2d9916ba03f7c65b9dcd5:iproute2/lo.iproute2
 f:efc59841720a25290b5ce7c597dd9f54:iproute2/net.iproute2

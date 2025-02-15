@@ -4,8 +4,8 @@
 # Depends on: eudev
 
 name=dhcpcd
-version=10.1.0
-release=2
+version=10.2.0
+release=1
 source=(https://github.com/NetworkConfiguration/dhcpcd/releases/download/v$version/$name-$version.tar.xz
 	rc.dhcpcd
 	dhcpcd.conf-Don-t-invoke-wpa_supplicant-by-default.patch

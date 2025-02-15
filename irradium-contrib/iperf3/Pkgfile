@@ -1,0 +1,23 @@
+# Description: tool to measure ip bandwidth using udp or tcp
+# URL: https://github.com/esnet/iperf
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: openssl
+
+name=iperf3
+version=3.18
+release=1
+source=(https://github.com/esnet/iperf/archive/$version.tar.gz)
+
+build() {
+  cd iperf-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --mandir=/usr/share/man \
+    --localstatedir=/var \
+    --disable-static
+
+    make
+    make DESTDIR=$PKG install
+}
