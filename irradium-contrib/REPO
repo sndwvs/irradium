@@ -108,6 +108,7 @@ d:cava
 d:gcc-fortran
 d:nmon
 d:aom
+d:iperf3
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -599,3 +600,6 @@ f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
 f:a7471d477ccf22fa434889ab62901140:aom/.footprint
 f:80d5e42742c6a585edd18e23f425ea04:aom/.signature
 f:a94de3a7115bce87dbeca742aa9d6905:aom/Pkgfile
+f:7c6fe9e91bb38131674eccef87ea2623:iperf3/Pkgfile
+f:f9bc7137b9698dff9d7655a9ea09e124:iperf3/.footprint
+f:6eaef1398cba601216dbedfd2fffdfef:iperf3/.signature
