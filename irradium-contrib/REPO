@@ -120,8 +120,6 @@ f:35067e022867af8aecf6bd5488f85837:android-tools/Pkgfile
 f:95d427053c3f2589d3eb98e419eac127:audacity/.footprint
 f:caafe7384c6b627d1aa44f2ae003d9e3:audacity/.signature
 f:79f8dbe19564cccf97ca4b71026e8c99:audacity/Pkgfile
-f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
-f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
 f:cca42a21584d2e7a49baa60bb486c5d2:chromium/post-install
 f:e63cb7c0e107a6a07898e85d13e09f5f:chromium/patches/compiler-rt-adjust-paths.patch
 f:8f6657577ad6609a22f2f7efe2fa237f:chromium/patches/increase-fortify-level.patch
@@ -133,7 +131,7 @@ f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.aarch64
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64
 f:6cb40932f599443c25c702ad7ba66474:chromium/.signature.aarch64
-f:13d95956ab8f90f7914f30a6d5e4f97d:chromium/Pkgfile
+f:f6d9595d797f960656c5c7760c97561d:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:bfcf1f40013f72556bae0976d203cf05:deadbeef/.footprint
 f:7be71209efb6cb88b700164243b96ff6:deadbeef/d4cca5605447122cd080691f43e46047a6039359.patch
