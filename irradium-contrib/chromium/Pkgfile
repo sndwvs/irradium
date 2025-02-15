@@ -7,7 +7,6 @@ name=chromium
 version=133.0.6943.98
 release=1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz
-        chromium.default chromium.sh
         patches/0001-widevine-support-for-arm.patch
         patches/0002-Run-blink-bindings-generation-single-threaded.patch
         patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
