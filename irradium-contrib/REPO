@@ -127,10 +127,10 @@ f:253856444af1433e94c378a481d685ae:chromium/patches/0001-widevine-support-for-ar
 f:3eb7a7bbf663a4c9b242ef833073f709:chromium/patches/0002-Run-blink-bindings-generation-single-threaded.patch
 f:f39af46a37b6b3dfebfb11bd27ffeeb2:chromium/patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
 f:dd9200ca6694738ee52b011857ca310e:chromium/patches/use-oauth2-client-switches-as-default.patch
-f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.aarch64
+f:9304e167df6a66f62e62093b3047b811:chromium/.footprint.aarch64
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64
-f:6cb40932f599443c25c702ad7ba66474:chromium/.signature.aarch64
+f:612cba2d17ee175ee33e9c9c3c2b559b:chromium/.signature.aarch64
 f:8f2760101e35bad78b855521f4efb28b:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:bfcf1f40013f72556bae0976d203cf05:deadbeef/.footprint

@@ -1,13 +1,11 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7pI4SeOEn6VW1na/PRtb9DT27/Cq0osgYT/mr8UddhqCLD6AbiLF8pzIkS4d5NWeio8hGIGNH5ejOY+b5rlRcgk=
-SHA256 (Pkgfile) = ce71775bcaf68b63699a987edb9959e1ef3d6a9e44a684239e0fb8590306a5e8
-SHA256 (.footprint.aarch64) = 1b7f29b3d2d743708bcfe00c7c882a3cb6a23f6e98562e1da0076a645961d162
-SHA256 (chromium-130.0.6723.58.tar.xz) = aa296edec7275d19feade5ef32cbe7dfdd41594d4c0c1afd94bbf4d310c38c4e
-SHA256 (chromium.default) = f94677036f4d820c8361241bac84594ae6f2ae22839d906c66b2005bdde8ad78
-SHA256 (chromium.sh) = 0cfc11faeaf9a1e8775a248876d86cb798c17077618cbe4ccf9797d7c71386d5
-SHA256 (0001-widevine-support-for-arm.patch) = 6775b8d6b0662d61ba9f925bbb00c51eb06e871c7bf9308d608db7a131fdeb63
-SHA256 (0002-Run-blink-bindings-generation-single-threaded.patch) = f0cba56bf1625ac18836a8b71cfc5359ac6e4b33dbbd0da4a67ae6dda70d3e5e
-SHA256 (0003-Fix-eu-strip-build-for-newer-GCC.patch) = 38d3b2375c2d36b04ec9486044a466cd08701f428471e64707f241d3ac300b82
-SHA256 (use-oauth2-client-switches-as-default.patch) = a9b417b96daec33c9059065e15b3a92ae1bf4b59f89d353659b335d9e0379db6
+RWTmT3d9kqan7iSdPCbYzYEQ33tqdVBJBAebVUkBRt6Mg7/IEICkUQx/nPmB/WmiTxxVcDeq3AQ7pB6rK0vEIaDiK8z0IKDOsgY=
+SHA256 (Pkgfile) = 9fd71791aa16922af8950a85c14466694d041030559bcd2a8a7503b2991b18b3
+SHA256 (.footprint.aarch64) = dba1d6a55f61a096d7f74928464a15be48b90e8c594086de4164f2b9f02c8824
+SHA256 (chromium-133.0.6943.98.tar.xz) = 3d442e6fb581aa55e93fc2727ceea24cae23969f294d9becf6f6712dec702be9
+SHA256 (0001-widevine-support-for-arm.patch) = 5a45799258abde6836bef7209c10935ccf4c09bdd487a008b4d37a96f9b7af58
+SHA256 (0002-Run-blink-bindings-generation-single-threaded.patch) = 1721a7355822fa045698f613a9cda28f42cad58bfe2074e7044691f0b518c5a6
+SHA256 (0003-Fix-eu-strip-build-for-newer-GCC.patch) = 835ff938f21633abf7d5ec43be09014c8be060a919c8651dadbb2015dfef8216
+SHA256 (use-oauth2-client-switches-as-default.patch) = 6de648d449159dd579e42db304aca0a36243f2ac1538f8d030473afbbc8ff475
 SHA256 (compiler-rt-adjust-paths.patch) = b3de01b7df227478687d7517f61a777450dca765756002c80c4915f271e2d961
 SHA256 (increase-fortify-level.patch) = d634d2ce1fc63da7ac41f432b1e84c59b7cceabf19d510848a7cff40c8025342
