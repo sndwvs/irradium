@@ -1,8 +1,10 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7iSdPCbYzYEQ33tqdVBJBAebVUkBRt6Mg7/IEICkUQx/nPmB/WmiTxxVcDeq3AQ7pB6rK0vEIaDiK8z0IKDOsgY=
-SHA256 (Pkgfile) = 9fd71791aa16922af8950a85c14466694d041030559bcd2a8a7503b2991b18b3
-SHA256 (.footprint.aarch64) = dba1d6a55f61a096d7f74928464a15be48b90e8c594086de4164f2b9f02c8824
+RWTmT3d9kqan7lWYqI+uLi3jm1FreG8AImyr8tgYQ/lf1n+ZDbVRAGH6DqKQxcROhvYMBkEKAUcXh+xcac7gM4CSYh87lMupkA0=
+SHA256 (Pkgfile) = e42417429d8125137598058c520e624b354c196687e85679c791d3267325dab6
+SHA256 (.footprint.aarch64) = 40d9429f1e95735b927a576f2dc0772aeaf0c18a7aa217dd9e1ee5ed6e40fc5d
 SHA256 (chromium-133.0.6943.98.tar.xz) = 3d442e6fb581aa55e93fc2727ceea24cae23969f294d9becf6f6712dec702be9
+SHA256 (chromium.default) = f94677036f4d820c8361241bac84594ae6f2ae22839d906c66b2005bdde8ad78
+SHA256 (chromium.sh) = 0cfc11faeaf9a1e8775a248876d86cb798c17077618cbe4ccf9797d7c71386d5
 SHA256 (0001-widevine-support-for-arm.patch) = 5a45799258abde6836bef7209c10935ccf4c09bdd487a008b4d37a96f9b7af58
 SHA256 (0002-Run-blink-bindings-generation-single-threaded.patch) = 1721a7355822fa045698f613a9cda28f42cad58bfe2074e7044691f0b518c5a6
 SHA256 (0003-Fix-eu-strip-build-for-newer-GCC.patch) = 835ff938f21633abf7d5ec43be09014c8be060a919c8651dadbb2015dfef8216
