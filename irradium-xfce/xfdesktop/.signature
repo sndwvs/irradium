@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0ZgsqKmG1YC0oZG0wJ/TWn7tjptnv7KGDq2oeLMM1IQKH7jLFtw8at+J2t8GcDGhXqPWEnoDoTprt6NqSs3wbwY=
-SHA256 (Pkgfile) = ce36ad2d5adf0e8e22deb195dd56e5dd67593d61dfa56d103aaa44e785142359
+RWQ1yk7gkrBo0ZcWM205UPuVNwuDjxgaW7hovIVfvgv8ccDngEBJrcji0GKJSUKXWDkNkveEa+22RlP6znGJslajjZT/DspK1wY=
+SHA256 (Pkgfile) = 4df37a7780e1778797d292ed9a8e6ee83607e5ad50b447c510d11f8a29c65866
 SHA256 (.footprint) = 3ca503927e58d32e781081a0512477737e5780c0a25648dcb06f06ff48d7754a
-SHA256 (xfdesktop-4.20.0.tar.bz2) = 227041ba80c7f3eb9c99dec817f1132b35d8aec7a4335703f61ba1735cd65632
-SHA256 (xfdesktop-monitor-chooser-resource-fix.diff) = fca179f32890199e4c003e66b3593b43a44552003a0420d25aaefebb2c1a09bd
+SHA256 (xfdesktop-4.20.1.tar.bz2) = acccde849265bbf4093925ba847977b7abf70bb2977e4f78216570e887c157b8
