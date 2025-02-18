@@ -131,7 +131,9 @@ f:9304e167df6a66f62e62093b3047b811:chromium/.footprint.aarch64
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64
 f:612cba2d17ee175ee33e9c9c3c2b559b:chromium/.signature.aarch64
-f:8f2760101e35bad78b855521f4efb28b:chromium/Pkgfile
+f:96c75bc688dda0d36fa854c30ad84285:chromium/Pkgfile
+f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
+f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:bfcf1f40013f72556bae0976d203cf05:deadbeef/.footprint
 f:7be71209efb6cb88b700164243b96ff6:deadbeef/d4cca5605447122cd080691f43e46047a6039359.patch
@@ -346,7 +348,9 @@ f:f39af46a37b6b3dfebfb11bd27ffeeb2:ungoogled-chromium/patches/0003-Fix-eu-strip-
 f:dd9200ca6694738ee52b011857ca310e:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
 f:bc63f54185ba6efab2fbb70e87ad9742:ungoogled-chromium/.footprint
 f:8def3bd42f94073fb8834b6b4d0fbc2c:ungoogled-chromium/.signature
-f:6a2e84b944461cb053d59fa54dd8d2c2:ungoogled-chromium/Pkgfile
+f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
+f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
+f:e4e03377d54607c99e33932eccc30f12:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
 f:0cb29db19dda2ae4817b0380de127c8b:urxvt-perls/.signature

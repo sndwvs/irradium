@@ -9,6 +9,7 @@ _uc_version=$version-1
 release=1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/${name#*-}-$version.tar.xz
         https://github.com/ungoogled-software/$name/archive/$_uc_version.tar.gz
+        chromium.default chromium.sh
         patches/0001-widevine-support-for-arm.patch
         patches/0002-Run-blink-bindings-generation-single-threaded.patch
         patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
@@ -309,4 +310,23 @@ build() {
       install -Dm644 "chrome/app/theme/default_100_percent/chromium/product_logo_$size.png" \
         "$PKG/usr/share/icons/hicolor/${size}x${size}/apps/chromium.png"
     done
+
+    # Install a wrapper script:
+    install -D -m0755 $SRC/${name}.sh $PKG/usr/bin/${name}
+    sed \
+        -e "s/@NAME@/${name}/g" \
+        -e "s/@LIBDIRSUFFIX@//g" \
+        -e "s/@CRFLAGS@/${CRFLAGS}/g" \
+        -e "s/@CRUSERFLAGS@/${CRUSERFLAGS}/g" \
+        -i $PKG/usr/bin/${name}
+    # Move the 'default' file into place.
+    # This allows users to override command-line options:
+    mkdir -p $PKG/etc/${name}
+    cat $SRC/${name}.default | sed \
+      -e "s/@NAME@/${name}/g" \
+      -e "s/@CRFLAGS@/${CRFLAGS}/g" \
+      -e "s/@CRUSERFLAGS@/${CRUSERFLAGS}/g" \
+      -e "s/@LIBDIRSUFFIX@//g" \
+      > $PKG/etc/${name}/00-default.conf
+
 }
