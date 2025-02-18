@@ -6,7 +6,7 @@
 name=ungoogled-chromium
 version=133.0.6943.98
 _uc_version=$version-1
-release=1
+release=2
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/${name#*-}-$version.tar.xz
         https://github.com/ungoogled-software/$name/archive/$_uc_version.tar.gz
         chromium.default chromium.sh
