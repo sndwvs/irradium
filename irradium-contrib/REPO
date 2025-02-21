@@ -563,8 +563,8 @@ f:607a961a7699d4a554c509ae76ccc943:bind/named
 f:d88f47dbf8ed587cbc15f50b3d4de2a6:bind/named.conf
 f:f11f3366bc8c9b2d15d5989ed5cf28f6:bind/named.root
 f:e718f850c043a0352cf95cc8fa9a05d7:bind/pre-install
-f:2631e333c0978db126dbd28cf8d60bfe:bind/.footprint
-f:5ceb8f64a49e967f5fd810066e516a72:bind/.signature
+f:faf198a20f42f1e7c1a39c42741c8963:bind/.footprint
+f:27d19a64469b1eeb8af9e0860ddaf372:bind/.signature
 f:8e1b133cf96497db70aa3caaed15a4a9:bind/Pkgfile
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.aarch64
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.riscv64
