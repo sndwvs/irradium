@@ -146,7 +146,7 @@ f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:f3311f845a841118140572898b0f53be:rust/.footprint.aarch64
 f:2fc93ad30f2ecc73aed461eb322f4a4e:rust/.footprint.riscv64
-f:75fd98b86ef1db50d1578550685679d2:rust/riscv64-disable-f16-f128.patch
+f:e3ae062dccc17ddd3ccb723f5f70d11f:rust/riscv64-disable-f16-f128.patch
 f:5c57bbc77f5f19b62ec8c24f38e3ae0a:rust/.signature.aarch64
 f:069ea74c87df089823ce1e91c7d4a456:rust/Pkgfile
 f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
