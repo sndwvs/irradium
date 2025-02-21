@@ -87,7 +87,7 @@ build() {
 	patch -Np1 -i $SRC/riscv64-disable-f16-f128.patch
 
 cat <<- EOF > $SRC/config.toml
-	profile = "stable"
+	profile = "dist"
 	change-id = 134650
 
 	[llvm]
@@ -105,6 +105,7 @@ cat <<- EOF > $SRC/config.toml
 	# when using rust code in cross-language LTO if libstd was built using ThinLTO.
 	# http://blog.llvm.org/2019/09/closing-gap-cross-language-lto-between.html
 	# https://github.com/rust-lang/rust/issues/54872
+	channel = "stable"
 	codegen-units-std = 1
 	debuginfo-level = 1
 	debuginfo-level-std = 2
@@ -114,7 +115,6 @@ cat <<- EOF > $SRC/config.toml
 	remap-debuginfo = false
 
 	description = "irradium"
-	parallel-compiler = false
 	rpath = false
 	frame-pointers = true
 	deny-warnings = false
