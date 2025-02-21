@@ -6491,7 +6491,6 @@ drwxr-xr-x	root/root	usr/lib/go/src/debug/elf/testdata/
 -rw-r--r--	root/root	usr/lib/go/src/debug/elf/testdata/go-relocation-test-gcc930-ranges-with-rela-x86-64
 -rw-r--r--	root/root	usr/lib/go/src/debug/elf/testdata/hello-world-core.gz
 -rw-r--r--	root/root	usr/lib/go/src/debug/elf/testdata/hello.c
--rw-r--r--	root/root	usr/lib/go/src/debug/elf/testdata/libtiffxx.so_
 -rw-r--r--	root/root	usr/lib/go/src/debug/elf/testdata/multiple-code-sections.c
 -rw-r--r--	root/root	usr/lib/go/src/debug/elf/testdata/zdebug-test-gcc484-x86-64.obj
 drwxr-xr-x	root/root	usr/lib/go/src/debug/gosym/
