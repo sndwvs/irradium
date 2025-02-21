@@ -144,10 +144,10 @@ f:24bc45c19822bc4144727a5c0fa2b1eb:qt6-base/.signature
 f:554b23c5b322651a1044f18397d9a6d7:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
-f:f3311f845a841118140572898b0f53be:rust/.footprint.aarch64
+f:18f4c2d0f2f98f35ab1fd6ed6a3d0405:rust/.footprint.aarch64
 f:2fc93ad30f2ecc73aed461eb322f4a4e:rust/.footprint.riscv64
 f:e3ae062dccc17ddd3ccb723f5f70d11f:rust/riscv64-disable-f16-f128.patch
-f:5c57bbc77f5f19b62ec8c24f38e3ae0a:rust/.signature.aarch64
+f:785c91f8f7bbc1a37d6920f4ca15ef68:rust/.signature.aarch64
 f:9d433a93803c14f1383e7c04ea86875b:rust/Pkgfile
 f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 f:3a302fda034a6cc7b1482250824b97f2:rust/0001-bootstrap-Change-libexec-dir.patch
