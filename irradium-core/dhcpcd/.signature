@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGPzvxpwFOxrE50W8SQRp4SU4XLLwgvSvHamdWukFoR/8vsWqwhKZQLjI8g/NlXUIPjWwU/YX6h7mC2ZPbzWycAE=
-SHA256 (Pkgfile) = 107019e9dbc4cacf96f88e5e0f62fa00ece090db21c814e459e9f198f626b9ce
+RWQAwxvZoACtGLhxvDpmoMn6JEAEMhRWi2ptfCqFZNJMsw1F6SaNdKB84JNIeyur4wko2TMMeiBS1myQTd/SvqPwWhfPKzwGlQU=
+SHA256 (Pkgfile) = 3b913c362f74b8ae9895cb5ff51fe8f1249927ba466c50b2ad3aa239a1c0146b
 SHA256 (.footprint) = 615dd57ef73d6ae1733b117746ca68d4a43e30ba6241a5a96c76a9665c26462e
-SHA256 (dhcpcd-10.2.0.tar.xz) = 7916fed1560835b5b9d70d27604c3858e501c5a177eef027f96eb7ab0f711399
+SHA256 (dhcpcd-10.2.1.tar.xz) = fe9c92833373366708cb80570fb5de6713af9912cf21a99abb0368d8aa8dbc22
 SHA256 (rc.dhcpcd) = f35d0748daa2e20aab01462684513bac6673e833459ba5ac1093ed814a3cae15
 SHA256 (dhcpcd.conf-Don-t-invoke-wpa_supplicant-by-default.patch) = 0540ae543495382f96a77bddb9320c0fedaad47743aa7a737f09d69107902722
 SHA256 (dhcpcd.conf-request_ntp_server_by_default.patch) = 26b8c8972ef267af76ae30bc8e76da017b4fa2e07116d3933a2a8f7d548b75fe
