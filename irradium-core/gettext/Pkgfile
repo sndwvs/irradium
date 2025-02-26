@@ -4,7 +4,7 @@
 # Depends on: acl ncurses
 
 name=gettext
-version=0.23.1
+version=0.24
 release=1
 source=(https://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.xz)
 
@@ -18,7 +18,7 @@ build() {
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--enable-{shared,static} \
-		--disable-{csharp,mono,java,nls} \
+		--disable-{csharp,java,nls} \
 		--without-{emacs,git} \
 		--with-included-{glib,libcroco,libxml,libunistring}
 	make
