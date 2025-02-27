@@ -25,8 +25,8 @@ d:gettext
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
-f:92f8fc88d56fca532f6d1488c76e4a5b:cmake/.footprint
-f:e098aa8ce6fbb94779dbf24405b3c756:cmake/.signature
+f:5987c01917023368f02cd1d93da2b166:cmake/.footprint
+f:d27ce912e4a2e56d854aa1b71c3e721c:cmake/.signature
 f:58b5700e28afb0ab09500045d587b39c:cmake/Pkgfile
 f:034680aa69ee64596517784fe1161c1b:db/.footprint
 f:7e30d22cd875710b997e739c6202893f:db/.signature
