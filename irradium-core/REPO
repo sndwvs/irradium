@@ -188,6 +188,6 @@ f:efc59841720a25290b5ce7c597dd9f54:iproute2/net.iproute2
 f:33efddcd70591b6f0b65bb9caf9f7ee3:iproute2/.footprint
 f:324135bb2e13c9890d340737b77ade9b:iproute2/.signature
 f:ae84bed8c014497aff8e96047485ea41:iproute2/Pkgfile
-f:83eb0b2ba9b30a5077ed781e44ef7864:gettext/.footprint
-f:37a6e3711ecaf41d0522f6b0ff22497c:gettext/.signature
+f:a546c97b48488de8a4634f20169cdc7c:gettext/.footprint
+f:6d9ec668a1d76a31014112a01aa6d135:gettext/.signature
 f:c0b5598d543472f577d92ea0de984c0d:gettext/Pkgfile
