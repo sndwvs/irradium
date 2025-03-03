@@ -43,8 +43,10 @@ f:8d01f9dc6e07549a5006967efd3622be:ffmpeg/add-av_stream_get_first_dts-for-chromi
 f:89ad92073c2c3f61771204c4780a37bc:ffmpeg/fef22c87ada4517441701e6e61e062c9f4399c8e.patch
 f:36ec5d43c9a042bf6aac34bbb1066085:ffmpeg/.footprint
 f:531e5dcd92f3974fb580323be3c8d9a8:ffmpeg/.signature
-f:33a655243b0f49c6c11cbb082be55ecf:ffmpeg/Pkgfile
+f:43df9102815983cdd944753286e0f302:ffmpeg/Pkgfile
 f:fdc0328c4e5c341ed1d623ba1c16480e:ffmpeg/add-in-cpu-__NR_riscv_hwprobe.patch
+f:e8918185d4575fa99b897159b9ec91c9:ffmpeg/bcfbf2bac8f9eeeedc407b40596f5c7aaa0d5b47.patch
+f:023286e7b9148b593ca6f05b0ed19eb8:ffmpeg/d0facac679faf45d3356dff2e2cb382580d7a521.patch
 f:b2c9d9a5b28f0803f79c748833911236:ffmpeg-mpp/.footprint
 f:5206bedf65b28e2b5b31038304f9202f:ffmpeg-mpp/.signature
 f:9b7540a197371561b62b9de0e67617af:ffmpeg-mpp/Pkgfile
