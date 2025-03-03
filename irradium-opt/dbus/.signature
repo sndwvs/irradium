@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCT8C2DBSThn5YrhAZKvIvUO9b0e/8sdydAm2Th5P9fHiC678aNr5xhh7zNLawBUBQPufpr5pfJpIFSvk8ZIDowc=
-SHA256 (Pkgfile) = 8fe19f955ff5d243da373297e34ca8dc56790a7f2f116a7d7f38d1cbfc526638
+RWRxRnTWECCiCXCpXgWcJgoFuhqQu0WBErDD520/+AcQe2dcoBvF+pFNQWj9489iIth2hBq5NiOuiPZRgMsXjBTCAXCtY1uBlg8=
+SHA256 (Pkgfile) = 950bb223d9c8a3d23e3e397115c212d5243e8dcc5b8df7ecf6d31fe1815d0ac1
 SHA256 (.footprint) = e0ac449400608d18dc626752deba455e7066ffa4ca6dfce3106f624993c8ccb6
-SHA256 (dbus-1.16.0.tar.xz) = 9f8ca5eb51cbe09951aec8624b86c292990ae2428b41b856e2bed17ec65c8849
+SHA256 (dbus-1.16.2.tar.xz) = 0ba2a1a4b16afe7bceb2c07e9ce99a8c2c3508e5dec290dbb643384bd6beb7e2
 SHA256 (fix-daemon-location.patch) = 32862e56777619a479ebefc45589cb76207c836de24a8bca14aecb4552e42528
 SHA256 (rc.dbus) = 6d67e387a8b3296f7c5b88cbe5e5c4ec113ce9b36abc8da4b733aae624a6a6d6
 SHA256 (30-dbus.launch) = 18ea1e79698bb876f7f5fb298daae5ff6cd17c56764b087f8da2e1d5809af37a

@@ -186,7 +186,7 @@ f:95412978f8aa3c9fc667543107086479:dbus/post-install
 f:c51f2067699af541512233bbdd48dec4:dbus/rc.dbus
 f:32c26cdf1e3062bebc1e015a6bbfce12:dbus/dbus-1.12.x-allow_root_globally.diff
 f:326bdc6965e46ecae7b99bffc6696864:dbus/.footprint
-f:049196e717f30b3b90de07f0b1aa539f:dbus/.signature
+f:8c5d824b2a09c5706e3d8f8c700e9ff3:dbus/.signature
 f:1ffa747b5a17d9e0f3a19ca41bee81d7:dbus/Pkgfile
 f:ced1a4cd68fdf77a19fc55668489ead0:dbus/dbus-1.15.8-enable-elogind.patch
 f:51a52d31f257ce19b1a4f8bd71a7de68:dbus/fix-daemon-location.patch
