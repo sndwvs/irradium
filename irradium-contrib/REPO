@@ -394,7 +394,7 @@ f:6c481b2d034259d4dfb0177cedc81f8c:mkinitramfs/mkinitramfs.patch
 f:1793b8523186ece9d46244e4c3b57fae:mkinitramfs/init.in
 f:8a374c1a8946907d3fccf4d8fdaf06db:mkinitramfs/Pkgfile
 f:6fc9192870e3cd2924aceb60f46c974a:mkinitramfs/.footprint
-f:14abbb7b1cb6ced8d5de6e17d1a9ef95:mkinitramfs/.signature
+f:21ec54b94159db8958e4dc1f8f8e8f89:mkinitramfs/.signature
 f:ac7c2c0be8702ab9659ccca6679487f2:mkinitramfs/mkinitramfs
 f:5fa007503fb84bee9b6bd748d3a357f3:ntp/fix_ipv6_locallink_regression.diff
 f:e7cdc0f92b0ce136612839a7020980c3:ntp/ntp.conf
