@@ -1,5 +1,5 @@
---- a/mkinitramfs	2023-11-21 07:06:43.345453426 +0200
-+++ b/mkinitramfs	2023-11-21 07:07:24.491536996 +0200
+--- a/mkinitramfs	2025-03-05 18:53:21.618509513 +0200
++++ b/mkinitramfs	2025-03-05 19:25:09.171340713 +0200
 @@ -1,19 +1,82 @@
  #!/bin/bash
  # This file based in part on the mkinitramfs script for the LFS LiveCD
@@ -164,7 +164,7 @@
  # Copy the RAID configuration file if present
  if [ -f /etc/mdadm.conf ] ; then
    cp /etc/mdadm.conf $WDIR/etc
-@@ -94,9 +153,9 @@ fi
+@@ -94,60 +153,71 @@ fi
  # Install the init file
  install -m0755 $DATADIR/$INITIN $WDIR/init
  
@@ -175,9 +175,15 @@
 +  if [ -x /sbin/kmod ] ; then
 +    sbinfiles="$sbinfiles kmod"
    else
-     binfiles="$binfiles lsmod"
+-    binfiles="$binfiles lsmod"
++    if [ -x /sbin/lsmod ] ; then
++        sbinfiles="$sbinfiles lsmod"
++    else
++        binfiles="$binfiles lsmod"
++    fi
      sbinfiles="$sbinfiles insmod"
-@@ -105,49 +164,56 @@ fi
+   fi
+ fi
  
  # Install basic binaries
  for f in $binfiles ; do
@@ -264,7 +270,7 @@
    # Conf file(s)
    cp -a /etc/lvm $WDIR/etc
  fi
-@@ -166,40 +232,69 @@ sort $unsorted | uniq | while read libra
+@@ -166,40 +236,69 @@ sort $unsorted | uniq | while read libra
    copy $library lib
  done
  
@@ -355,7 +361,7 @@
  
  # first empty WDIR to reuse it
    rm -r $WDIR/*
-@@ -207,18 +302,18 @@ if ls /usr/lib/firmware/intel-ucode/* >/
+@@ -207,18 +306,18 @@ if ls /usr/lib/firmware/intel-ucode/* >/
    DSTDIR=$WDIR/kernel/x86/microcode
    mkdir -p $DSTDIR
  
