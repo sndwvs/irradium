@@ -5,7 +5,7 @@
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wayland
 
 name=firefox
-version=135.0.1
+version=136.0
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -78,9 +78,11 @@ EOF
     echo 'ac_add_options --disable-sandbox' >> .mozconfig
   fi
 
-  # unicode internationalization
-  prt-get isinst icu >/dev/null && \
+  # use system icu only if new enough
+  local ICU_VER=$(prt-get printf "%v" --filter=icu)
+  if (( ${ICU_VER%.*} >= 76 )); then
     echo 'ac_add_options --with-system-icu' >> .mozconfig
+  fi
 
   # audio
   PKGMK_FFAUDIO="alsa"
