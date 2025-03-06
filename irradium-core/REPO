@@ -100,7 +100,7 @@ f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
 f:ec1622bd328e82cce4d3b33eb1239f5c:pkgconf/.footprint
 f:198d926ba5de2a65944689edee323358:pkgconf/.signature
-f:aaea6b55ad327ef9244008d2e2c01334:pkgconf/Pkgfile
+f:863922257270e36a1db448d31c5b6d23:pkgconf/Pkgfile
 f:f1927bc2ae6c00c3191265c4170b9be8:pkgutils/pkgmk.conf
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:2972b806e5aa714a5869ac2b5e2479dc:pkgutils/.signature
