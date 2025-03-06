@@ -29,9 +29,9 @@ f:8d38d25663ff46d55d7de46cc1add618:mesa/patches/0007-mesa-24.0-llvmspirvlib-vers
 f:e5ca988223c90f2a22caf7539f4a512a:mesa/patches/0008-mesa-24.0-osmesa-fix-civ3.patch
 f:b4f8779303542471e8a279f27721e9b4:mesa/README.md
 f:b1d83aab8f0aa5170947d6e5778fbc17:mesa/.footprint.aarch64
-f:705fc9b6566f4317b1fdc707c45f2cd4:mesa/.footprint.riscv64
+f:0a8bbda9dcc3462a99fc51d7ba92f8c2:mesa/.footprint.riscv64
 f:9c3f0b565dec9198550745e2b258bd7d:mesa/.signature.aarch64
-f:50e30206c91855574a70780b6fa583d8:mesa/.signature.riscv64
+f:63f18401e8098f680505f78d6464b8f5:mesa/.signature.riscv64
 f:7c430a647935674cc44b79ba799f73b2:mesa/Pkgfile
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:96f400c2e676aa9c2da5aed08bdba7f3:xorg-xf86-video-fbdev/.signature
