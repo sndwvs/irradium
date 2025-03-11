@@ -5,11 +5,13 @@
 # Optional: alsa-lib amf-headers aom chromaprint cuda dav1d fdk-aac fontconfig freetype gnutls gsm jack jack-audio-connection-kit ladspa lame lcms2 lensfun libass libbs2b libcaca libcdio-paranoia libdrm libmodplug libplacebo librsvg libsdl2 libsoxr libssh libtheora libva libvdpau libvorbis libvpx libwebp libxml2 lv2 nv-codec-headers openal opencv openh264 openjpeg2 opus pulseaudio rav1e rtmpdump rubberband shaderc snappy speex svt-av1 v4l-utils x264 x265
 
 name=ffmpeg
-version=7.1
+version=7.1.1
 release=1
 source=(https://ffmpeg.org/releases/$name-$version.tar.bz2
   add-av_stream_get_first_dts-for-chromium.patch
   fef22c87ada4517441701e6e61e062c9f4399c8e.patch
+  bcfbf2bac8f9eeeedc407b40596f5c7aaa0d5b47.patch
+  d0facac679faf45d3356dff2e2cb382580d7a521.patch
   add-in-cpu-__NR_riscv_hwprobe.patch
   ffmpeg-x264-10bit.sh)
 
@@ -34,7 +36,7 @@ build() {
   prt-get isinst ladspa && PKGMK_FFMPEG+=' --enable-ladspa'
   prt-get isinst lame && PKGMK_FFMPEG+=' --enable-libmp3lame'
   prt-get isinst lcms2 && PKGMK_FFMPEG+=' --enable-lcms2'
-  prt-get isinst lensfun && PKGMK_FFMPEG+=' --enable-liblensfun'
+  #prt-get isinst lensfun && PKGMK_FFMPEG+=' --enable-liblensfun'
   prt-get isinst libass && PKGMK_FFMPEG+=' --enable-libass'
   prt-get isinst libbs2b && PKGMK_FFMPEG+=' --enable-libbs2b'
   prt-get isinst libcaca && PKGMK_FFMPEG+=' --enable-libcaca'
@@ -65,13 +67,15 @@ build() {
   prt-get isinst shaderc && PKGMK_FFMPEG+=' --enable-libshaderc'
   prt-get isinst snappy && PKGMK_FFMPEG+=' --enable-libsnappy'
   prt-get isinst speex && PKGMK_FFMPEG+=' --enable-libspeex'
-  prt-get isinst svt-av1 && PKGMK_FFMPEG+=' --enable-libsvtav1'
+  #prt-get isinst svt-av1 && PKGMK_FFMPEG+=' --enable-libsvtav1'
   prt-get isinst v4l-utils && PKGMK_FFMPEG+=' --enable-libv4l2'
   prt-get isinst x264 && PKGMK_FFMPEG+=' --enable-libx264'
   prt-get isinst x265 && PKGMK_FFMPEG+=' --enable-libx265'
   prt-get isinst mpp && PKGMK_FFMPEG+=' --enable-rkmpp'
 
   patch -Np1 -i $SRC/add-av_stream_get_first_dts-for-chromium.patch
+  patch -Np1 -i $SRC/bcfbf2bac8f9eeeedc407b40596f5c7aaa0d5b47.patch
+  patch -Np1 -i $SRC/d0facac679faf45d3356dff2e2cb382580d7a521.patch
   patch -Np1 -i $SRC/add-in-cpu-__NR_riscv_hwprobe.patch
 
   sed -i -e '/check_cflags -fdiagnostics-color=auto/d' configure

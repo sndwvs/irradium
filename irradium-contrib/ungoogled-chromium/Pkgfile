@@ -6,7 +6,7 @@
 name=ungoogled-chromium
 version=133.0.6943.98
 _uc_version=$version-1
-release=1
+release=2
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/${name#*-}-$version.tar.xz
         https://github.com/ungoogled-software/$name/archive/$_uc_version.tar.gz
         chromium.default chromium.sh
@@ -36,24 +36,23 @@ build() {
       #[ffmpeg]=ffmpeg
       [flac]=flac
       [fontconfig]=fontconfig
-      #[freetype]=freetype2
+      [freetype]=freetype2
       #[harfbuzz-ng]=harfbuzz
       #[icu]=icu
       #[jsoncpp]=jsoncpp  # needs libstdc++
       #[libaom]=aom
-      #[libavif]=libavif  # needs https://github.com/AOMediaCodec/libavif/commit/5410b23f76
-      [libdrm]=
-      [libjpeg]=libjpeg
+      #[libavif]=libavif  # needs -DAVIF_ENABLE_EXPERIMENTAL_GAIN_MAP=ON
+      [libjpeg]=libjpeg-turbo
       [libpng]=libpng
       #[libvpx]=libvpx
-      #[libwebp]=libwebp  # //third_party/libavif:libavif_enc needs //third_party/libwebp:libwebp_sharpyuv
+      [libwebp]=libwebp
       [libxml]=libxml2
       [libxslt]=libxslt
       [opus]=opus
       #[re2]=re2          # needs libstdc++
       #[snappy]=snappy    # needs libstdc++
       #[woff2]=woff2      # needs libstdc++
-      #[zlib]=minizip
+      [zlib]=minizip
     )
     _unwanted_bundled_libs=(
       $(printf "%s\n" ${!_system_libs[@]} | sed 's/^libjpeg$/&_turbo/')
@@ -104,6 +103,15 @@ build() {
 
     # Fixes for building with libstdc++ instead of libc++
 
+    if (( !_system_clang )); then
+        # Use prebuilt rust as system rust cannot be used due to the error:
+        #   error: the option `Z` is only accepted on the nightly compiler
+        ./tools/rust/update_rust.py
+
+        # To link to rust libraries we need to compile with prebuilt clang
+        ./tools/clang/scripts/update.py
+    fi
+
     # Ungoogled Chromium changes
     UNGOOGLED_REPO="$SRC/$name-$_uc_version"
     UTILS="${UNGOOGLED_REPO}/utils"
@@ -120,20 +128,6 @@ build() {
     ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
     #ln -s /usr/bin/java third_party/jdk/current/bin/
     ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
-
-    # test deps are broken for ui/lens with system ICU
-    # "//third_party/icu:icuuc_public" (taken from Gentoo ebuild)
-    sed -i '/source_set("unit_tests") {/,/}/d' chrome/browser/ui/lens/BUILD.gn
-    sed -i '/lens:unit_tests/d' chrome/test/BUILD.gn components/BUILD.gn
-
-    if (( !_system_clang )); then
-        # Use prebuilt rust as system rust cannot be used due to the error:
-        #   error: the option `Z` is only accepted on the nightly compiler
-        ./tools/rust/update_rust.py
-
-        # To link to rust libraries we need to compile with prebuilt clang
-        ./tools/clang/scripts/update.py
-    fi
 
     # Remove bundled libraries for which we will use the system copies; this
     # *should* do what the remove_bundled_libraries.py script does, with the
@@ -200,6 +194,9 @@ build() {
       _flags+=('icu_use_data_file=false')
     fi
 
+    # Append ungoogled chromium flags to _flags array
+    readarray -t -O ${#_flags[@]} _flags < "${UNGOOGLED_REPO}/flags.gn"
+
     if (( _system_clang )); then
         local _clang_version=$(
           clang --version | grep -m1 version | sed 's/.* \([0-9]\+\).*/\1/')
@@ -208,7 +205,7 @@ build() {
         'clang_base_path="/usr"'
         'clang_use_chrome_plugins=false'
         "clang_version=\"$_clang_version\""
-        'chrome_pgo_phase=0' # needs newer clang to read the bundled PGO profile
+        #'chrome_pgo_phase=0' # needs newer clang to read the bundled PGO profile
       )
 
       # Allow the use of nightly features with stable Rust compiler
@@ -225,9 +222,6 @@ build() {
     if [[  $(uname -m) == "armv7h" ]]; then
       _flags+=('use_thin_lto=false')
     fi
-
-    # Append ungoogled chromium flags to _flags array
-    readarray -t -O ${#_flags[@]} _flags < "${UNGOOGLED_REPO}/flags.gn"
 
     # Facilitate deterministic builds (taken from build/config/compiler/BUILD.gn)
     CFLAGS+='   -Wno-builtin-macro-redefined'
@@ -273,14 +267,15 @@ build() {
       "$PKG/usr/share/applications/chromium.desktop" \
       "$PKG/usr/share/man/man1/chromium.1"
 
-    install -Dm644 chrome/installer/linux/common/chromium-browser/chromium-browser.appdata.xml \
-      "$PKG/usr/share/metainfo/chromium.appdata.xml"
-    sed -ni \
-      -e 's/chromium-browser\.desktop/chromium.desktop/' \
-      -e '/<update_contact>/d' \
-      -e '/<p>/N;/<p>\n.*\(We invite\|Chromium supports Vorbis\)/,/<\/p>/d' \
-      -e '/^<?xml/,$p' \
-      "$PKG/usr/share/metainfo/chromium.appdata.xml"
+    # Fill in common Chrome/Chromium AppData template with Chromium info
+    (
+        tmpl_file=chrome/installer/linux/common/appdata.xml.template
+        info_file=chrome/installer/linux/common/chromium-browser.info
+        . $info_file; PACKAGE=chromium
+        export $(grep -o '^[A-Z_]*' $info_file)
+        sed -E -e 's/@@([A-Z_]*)@@/\${\1}/g' -e '/<update_contact>/d' $tmpl_file | envsubst
+    ) \
+    | install -Dm644 /dev/stdin "$PKG/usr/share/metainfo/chromium.appdata.xml"
 
     toplevel_files=(
       chrome_100_percent.pak
@@ -317,22 +312,21 @@ build() {
     done
 
     # Install a wrapper script:
-    install -D -m0755 $SRC/${name#*-}.sh $PKG/usr/bin/${name#*-}
+    install -D -m0755 $SRC/${name}.sh $PKG/usr/bin/${name}
     sed \
-        -e "s/@NAME@/${name#*-}/g" \
+        -e "s/@NAME@/${name}/g" \
         -e "s/@LIBDIRSUFFIX@//g" \
         -e "s/@CRFLAGS@/${CRFLAGS}/g" \
         -e "s/@CRUSERFLAGS@/${CRUSERFLAGS}/g" \
-        -i $PKG/usr/bin/${name#*-}
-
+        -i $PKG/usr/bin/${name}
     # Move the 'default' file into place.
     # This allows users to override command-line options:
-    mkdir -p $PKG/etc/${name#*-}
-    cat $SRC/${name#*-}.default | sed \
-      -e "s/@NAME@/${name#*-}/g" \
+    mkdir -p $PKG/etc/${name}
+    cat $SRC/${name}.default | sed \
+      -e "s/@NAME@/${name}/g" \
       -e "s/@CRFLAGS@/${CRFLAGS}/g" \
       -e "s/@CRUSERFLAGS@/${CRUSERFLAGS}/g" \
       -e "s/@LIBDIRSUFFIX@//g" \
-      > $PKG/etc/${name#*-}/00-default.conf
+      > $PKG/etc/${name}/00-default.conf
 
 }

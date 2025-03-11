@@ -5,7 +5,7 @@
 
 name=mkinitramfs
 version=r11.3_314
-release=2
+release=3
 source=(init.in init.in.patch mkinitramfs mkinitramfs.patch)
 
 build() {

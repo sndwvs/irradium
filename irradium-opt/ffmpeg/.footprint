@@ -1,6 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ffmpeg
+-rwxr-xr-x	root/root	usr/bin/ffplay
 -rwxr-xr-x	root/root	usr/bin/ffprobe
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/libavcodec/
@@ -154,9 +155,9 @@ drwxr-xr-x	root/root	usr/include/libswscale/
 -rw-r--r--	root/root	usr/include/libswscale/version_major.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libavcodec.a
-lrwxrwxrwx	root/root	usr/lib/libavcodec.so -> libavcodec.so.61.19.100
-lrwxrwxrwx	root/root	usr/lib/libavcodec.so.61 -> libavcodec.so.61.19.100
--rwxr-xr-x	root/root	usr/lib/libavcodec.so.61.19.100
+lrwxrwxrwx	root/root	usr/lib/libavcodec.so -> libavcodec.so.61.19.101
+lrwxrwxrwx	root/root	usr/lib/libavcodec.so.61 -> libavcodec.so.61.19.101
+-rwxr-xr-x	root/root	usr/lib/libavcodec.so.61.19.101
 -rw-r--r--	root/root	usr/lib/libavdevice.a
 lrwxrwxrwx	root/root	usr/lib/libavdevice.so -> libavdevice.so.61.3.100
 lrwxrwxrwx	root/root	usr/lib/libavdevice.so.61 -> libavdevice.so.61.3.100
@@ -215,6 +216,8 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/ffmpeg-scaler.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ffmpeg-utils.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ffmpeg.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/ffplay-all.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/ffplay.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ffprobe-all.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ffprobe.1.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
