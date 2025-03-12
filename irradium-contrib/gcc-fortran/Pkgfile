@@ -4,7 +4,7 @@
 # Depends on: libmpfr
 
 name=gcc-fortran
-version=12.4.0
+version=14.2.0
 release=1
 source=(ftp://gcc.gnu.org/pub/gcc/releases/gcc-$version/gcc-$version.tar.xz
   gcc-nocheck-fixincludes.patch gcc-4.7.3-multilib-dirs.patch
