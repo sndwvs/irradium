@@ -109,7 +109,7 @@ f:85773ddb6595cc96b6776168a93a8ed9:pkgutils/pkgmk-add-support-with-footprint-ris
 f:2972b806e5aa714a5869ac2b5e2479dc:pkgutils/.signature
 f:c5d0c04e1e7bb1e5af3f4343135535f2:pkgutils/Pkgfile
 f:d4c72854441fa2a9cbd0085ad891f05a:ports/.footprint
-f:08129077eff4408c25662db7af25e9ae:ports/.signature
+f:71ea9279e879c225c26a87e64a98d2d2:ports/.signature
 f:804bb419e539a70ad80e4c03df3c3411:ports/contrib.pub
 f:b8dd0aad383810cad920d6548cd1cb56:ports/core.pub
 f:ad54e3fef1fd4a4d0178d9f15df4ad0a:ports/irradium-contrib.pub
@@ -119,7 +119,7 @@ f:c439515bdbd1e17d8a74c2a37d285718:ports/irradium-xfce.pub
 f:1ec983509e56966c5a7945a854c0f7bf:ports/irradium-xorg.pub
 f:0d1f1fde50a9bd743d9cac6b235f038c:ports/opt.pub
 f:69927e5d0ae5dc3455faeaac916c4db2:ports/xorg.pub
-f:c27f35d102fd8c4aa99608ffe07818d3:ports/Pkgfile
+f:c0cbe8c3ef7b75046fd0eaf8cb9fa301:ports/Pkgfile
 f:ffcfbdbd1979f51825fa796a6296d1ab:ports/contrib.rsync.inactive
 f:9a7ec7bdf5155fbedb02b35e50420cfa:ports/core.rsync
 f:6fae15382775b3bd8121a25ce58cf70c:ports/irradium-contrib.httpup.inactive
@@ -142,11 +142,11 @@ f:1746a2ef6fb54dc829082d5474ab1b21:eudev/.footprint
 f:35f5b3a0c85e342fe66a0a59c9b46b2b:eudev/.signature
 f:2185fdd0c5c128e6a5d37eb4ad4f6791:eudev/81-irradium.rules
 f:d684735bb45b287225d3ae1f9c36a916:eudev/Pkgfile
-f:0544125fa2eccfa325af5ccd40a1c1ac:rc/rc.fix.patch
-f:5d1af5d06f33ef70cb7f40133e927194:rc/.footprint
 f:fa28941540c3e1b9eee96cca90d0a103:rc/.signature
 f:1b7c5455261a0096fda55c93f52713a2:rc/Pkgfile
 f:9dc8eb36acdf27c9c35480d19af8be13:rc/rc.patch
+f:0544125fa2eccfa325af5ccd40a1c1ac:rc/rc.fix.patch
+f:5d1af5d06f33ef70cb7f40133e927194:rc/.footprint
 f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
 f:9be46e727d1f64e28e732c51ea6fe5c6:bash/.signature
 f:05eb7fc2e559f236ff825ec2e1c65861:bash/Pkgfile
