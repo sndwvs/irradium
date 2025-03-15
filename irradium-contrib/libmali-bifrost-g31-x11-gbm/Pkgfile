@@ -5,8 +5,8 @@
 
 name=libmali-bifrost-g31-x11-gbm
 version=g13p0
-release=1
-_commit=1d173f39b51a31212d9ec346044fa81587df34f4
+release=2
+_commit=da4d6040166cc3d4f0b5c9bfff82e0ef6b6e3a17
 source=(https://github.com/JeffyCN/mirrors/archive/${_commit}.tar.gz
         00-libmali.conf)
 
