@@ -146,13 +146,13 @@ f:24bc45c19822bc4144727a5c0fa2b1eb:qt6-base/.signature
 f:554b23c5b322651a1044f18397d9a6d7:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
-f:785c91f8f7bbc1a37d6920f4ca15ef68:rust/.signature.aarch64
+f:c95bfa768d8ca782c2f94563a48e9967:rust/.signature.aarch64
 f:d0ef8bb3fa39a97cff3c35f32767b2e5:rust/Pkgfile
 f:d5936e9857a824d276b0a45279879ddc:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 f:3a302fda034a6cc7b1482250824b97f2:rust/0001-bootstrap-Change-libexec-dir.patch
 f:01956b9d425973216f86a808784d82a6:rust/0002-bootstrap-Change-bash-completion-dir.patch
 f:7ea8ecabcce4bcdf6a1a96e5a7a621e9:rust/0003-compiler-Change-LLVM-targets.patch
-f:18f4c2d0f2f98f35ab1fd6ed6a3d0405:rust/.footprint.aarch64
+f:8a756ba984c4e8958df988b5ba3d4be2:rust/.footprint.aarch64
 f:9b46928650bf05ee4e8f3c5086a307ed:rust/.footprint.riscv64
 f:7fc97dca950ef6e2f33f125c605a7374:rust/.signature.riscv64
 f:e3ae062dccc17ddd3ccb723f5f70d11f:rust/riscv64-disable-f16-f128.patch
