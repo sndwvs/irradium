@@ -153,8 +153,8 @@ f:3a302fda034a6cc7b1482250824b97f2:rust/0001-bootstrap-Change-libexec-dir.patch
 f:01956b9d425973216f86a808784d82a6:rust/0002-bootstrap-Change-bash-completion-dir.patch
 f:7ea8ecabcce4bcdf6a1a96e5a7a621e9:rust/0003-compiler-Change-LLVM-targets.patch
 f:8a756ba984c4e8958df988b5ba3d4be2:rust/.footprint.aarch64
-f:9b46928650bf05ee4e8f3c5086a307ed:rust/.footprint.riscv64
-f:7fc97dca950ef6e2f33f125c605a7374:rust/.signature.riscv64
+f:5a638f73bfe0708de7b7b6727a5aa64d:rust/.footprint.riscv64
+f:d67cf11337f849fcda046e2ab7900463:rust/.signature.riscv64
 f:e3ae062dccc17ddd3ccb723f5f70d11f:rust/riscv64-disable-f16-f128.patch
 f:a23a8aac5a57faa325cbaf32d2f261c8:slim/.footprint
 f:9654119211dec3b51f819b7cc34380ac:slim/.signature
