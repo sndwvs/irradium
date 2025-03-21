@@ -5,7 +5,7 @@
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wayland
 
 name=firefox
-version=136.0.1
+version=136.0.2
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -41,6 +41,7 @@ build() {
   unset MOZ_TELEMETRY_REPORTING
   ac_add_options --prefix=/usr
   ac_add_options --libdir=/usr/lib
+  ac_add_options --with-libclang-path=/usr/lib
   ac_add_options --enable-strip
   ac_add_options --enable-release
   ac_add_options --enable-install-strip
@@ -49,6 +50,7 @@ build() {
   ac_add_options --enable-optimize
   ac_add_options --with-system-ffi
   ac_add_options --with-system-jpeg
+  ac_add_options --with-system-libevent
   ac_add_options --with-system-libvpx
   ac_add_options --with-system-nspr
   ac_add_options --with-system-nss
@@ -114,7 +116,7 @@ EOF
 
   if prt-get isinst lld >/dev/null; then
       echo 'ac_add_options --enable-linker=lld' >> .mozconfig
-      export LDFLAGS+=" -Wl,--thinlto-jobs=$((JOBS / 2))"
+      export LDFLAGS+=",--thinlto-jobs=$((JOBS / 2))"
   else
       echo 'ac_add_options --enable-linker=bfd' >> .mozconfig
   fi
