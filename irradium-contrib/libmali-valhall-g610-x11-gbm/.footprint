@@ -4,6 +4,8 @@ drwxr-xr-x	root/root	etc/OpenCL/vendors/
 -rw-r--r--	root/root	etc/OpenCL/vendors/mali.icd
 drwxr-xr-x	root/root	etc/ld.so.conf.d/
 -rw-r--r--	root/root	etc/ld.so.conf.d/00-libmali.conf
+drwxr-xr-x	root/root	etc/revdep.d/
+-rw-r--r--	root/root	etc/revdep.d/libmali-valhall-g610-x11-gbm
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
 -rw-r--r--	root/root	lib/firmware/mali_csffw.bin

@@ -246,9 +246,10 @@ f:2dd87990899f3dfd0503896c86e09777:libmali-midgard-t86x-x11-gbm/Pkgfile
 f:80e08f38077d4e1b2cf1017fd9797d87:libmali-utgard-450-x11-gbm/.footprint
 f:8f1847ceed814828d4ac94e267d57351:libmali-utgard-450-x11-gbm/00-libmali.conf
 f:9a7adb2d621e316027b6b31b848ac585:libmali-utgard-450-x11-gbm/Pkgfile
-f:6c2117e05786a8b9ef448e59208eb5eb:libmali-valhall-g610-x11-gbm/.footprint
+f:b77934c0ec2437b20bf58a702cf85889:libmali-valhall-g610-x11-gbm/.footprint
 f:8f1847ceed814828d4ac94e267d57351:libmali-valhall-g610-x11-gbm/00-libmali.conf
 f:dbdd3e02d9d995a7943c80f6f20a9bac:libmali-valhall-g610-x11-gbm/Pkgfile
+f:b281ec3c8484fb056916f5b06b1cd57a:libmali-valhall-g610-x11-gbm/.signature
 f:e4022aa0a783af978cff08b1bf15ee10:libmtp/.footprint
 f:fd5643cabf024477e219e3e18e511e2a:libmtp/.signature
 f:b2be48c8ac7fa778b7ec273d03542c27:libmtp/Pkgfile
