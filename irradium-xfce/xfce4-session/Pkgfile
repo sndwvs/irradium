@@ -7,16 +7,12 @@ name=xfce4-session
 version=4.20.1
 release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2 \
-        use-xfss-by-default-in-xfce.patch.gz
-        xfce4-session.labwc.session.diff)
+        use-xfss-by-default-in-xfce.patch.gz)
 
 build(){
   cd $name-$version
 
   zcat $SRC/use-xfss-by-default-in-xfce.patch.gz | patch -p1 --verbose || exit 1
-
-  # labwc should be called with --session, not --startup:
-  patch -p1 --verbose -i $SRC/xfce4-session.labwc.session.diff
 
   ./configure \
     --prefix=/usr \
