@@ -65,7 +65,7 @@ f:6c2efd51d958338dd0e11db1f6643a1f:gcc/Pkgfile
 f:d999afb2c8abba1591154b6e6717e6d8:gcc/gcc-riscv-disable-multilib-support.patch
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:5ce6f14adda1042d0658e37e1c208c02:gdbm/.signature
-f:ff5b755e4eaade03360c4006cd35aca2:gdbm/Pkgfile
+f:5bc01143ed80933774dd840766e14ae8:gdbm/Pkgfile
 f:5d37085c6a7714fcc5443f05a07a873d:glibc/.nostrip
 f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
 f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
