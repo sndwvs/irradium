@@ -4,8 +4,8 @@
 # Depends on: libwnck-gtk3 libxfce4ui libxfce4windowing consolekit desktop-file-utils shared-mime-info polkit xfdesktop xorg-libsm xorg-iceauth xorg-xinit xorg-xrdb
 
 name=xfce4-session
-version=4.20.0
-release=4
+version=4.20.1
+release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2 \
         use-xfss-by-default-in-xfce.patch.gz
         xfce4-session.labwc.session.diff)
