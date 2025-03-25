@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7jeqnKu18RFxgNde+x0ISeflrkXSiNVKkkuyzrij6q8Ahl0T4onFG/ZA1emNbXa5vRsYMBPiVRaYKovBZBwjCQQ=
+SHA256 (Pkgfile) = ec771998e4f674ade7dc86b2c486647866eafd4ae0337ed60aa5f4e490cba370
+SHA256 (.footprint) = 97051e1cf0072113ac39330780a6eb4417402bc6d1307290c457bdfa98f5af57
+SHA256 (da4d6040166cc3d4f0b5c9bfff82e0ef6b6e3a17.tar.gz) = e4f63337c639f484125545f5f57434312dbee6f19b8d363785eba10ffdbc7cf9
+SHA256 (00-libmali.conf) = cb87778b447db6ec48b2c97234c16bb0e055e0799f82b48f02e76834b0a94237

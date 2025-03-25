@@ -1,11 +1,11 @@
 # Description: The Mozilla Firefox browser with Alsa support
 # URL: https://www.mozilla.com/firefox/
 # Maintainer: John McQuah, jmcquah at disroot dot org
-# Depends on: alsa-lib aom autoconf-2.13 brotli cbindgen dav1d dbus-glib ffmpeg graphite2 libevent libnotify libvpx libwebp libxkbcommon nodejs nss unzip xorg-libxcomposite xorg-libxcursor xorg-libxinerama xorg-libxt zip
+# Depends on: alsa-lib aom autoconf-2.13 brotli cbindgen clang dav1d dbus-glib ffmpeg graphite2 libevent libnotify libvpx libwebp libxkbcommon nodejs nss python3-pip unzip xorg-libxcomposite xorg-libxcursor xorg-libxinerama xorg-libxt zip
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wayland
 
 name=firefox
-version=136.0
+version=136.0.2
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -41,6 +41,7 @@ build() {
   unset MOZ_TELEMETRY_REPORTING
   ac_add_options --prefix=/usr
   ac_add_options --libdir=/usr/lib
+  ac_add_options --with-libclang-path=/usr/lib
   ac_add_options --enable-strip
   ac_add_options --enable-release
   ac_add_options --enable-install-strip
@@ -49,6 +50,7 @@ build() {
   ac_add_options --enable-optimize
   ac_add_options --with-system-ffi
   ac_add_options --with-system-jpeg
+  ac_add_options --with-system-libevent
   ac_add_options --with-system-libvpx
   ac_add_options --with-system-nspr
   ac_add_options --with-system-nss
@@ -93,7 +95,7 @@ EOF
 
   if prt-get isinst wayland xorg-server >/dev/null ; then
     echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-x11-wayland' >> .mozconfig
-  elif prt-get isinst wayland >/dev/null ; then 
+  elif prt-get isinst wayland >/dev/null ; then
     echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-wayland-only' >> .mozconfig
   else
     echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-x11-only' >> .mozconfig
@@ -114,7 +116,7 @@ EOF
 
   if prt-get isinst lld >/dev/null; then
       echo 'ac_add_options --enable-linker=lld' >> .mozconfig
-      export LDFLAGS+=" -Wl,--thinlto-jobs=$((JOBS / 2))"
+      export LDFLAGS+=",--thinlto-jobs=$((JOBS / 2))"
   else
       echo 'ac_add_options --enable-linker=bfd' >> .mozconfig
   fi
@@ -130,8 +132,8 @@ EOF
   export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=pip
   export PIP_NETWORK_INSTALL_RESTRICTED_VIRTUALENVS=mach
   mkdir -p $SRC/bin
-  ln -s /usr/bin/pip3 $SRC/bin/pip
-  ln -s /usr/bin/python3 $SRC/bin/python
+  ln -sf /usr/bin/pip3 $SRC/bin/pip
+  ln -sf /usr/bin/python3 $SRC/bin/python
   export PATH="$SRC/bin:$PATH"
 
   # python/mach/mach/mixin/process.py fails to detect SHELL
