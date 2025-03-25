@@ -102,7 +102,7 @@ f:8d3dfe8878ce3452054376efc9ef2943:xfce4-screenshooter/Pkgfile
 f:64f7cf5170d1e94ac6d51c259dc85c9f:xfce4-session/README
 f:8df6ba54956111688839e483afaff5e0:xfce4-session/use-xfss-by-default-in-xfce.patch.gz
 f:bb046297012caa8f78d741444c17d29e:xfce4-session/.footprint
-f:5d1e76c59cecdfac30851d307caab96a:xfce4-session/.signature
+f:4814bae1217f79d8e7ae0f3858191091:xfce4-session/.signature
 f:d0dbcc8dfd5b5400d4248331cdef8ed1:xfce4-session/Pkgfile
 f:26d64077a145b7de655d347bd003a6ea:xfce4-settings/xfce4-settings.theme.diff.gz
 f:1a023681dc13637f1a87c6fb1d296700:xfce4-settings/xfce4-settings.xft.defaults.diff.gz
