@@ -11,17 +11,21 @@ source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar
 build(){
   cd $name-$version
 
-  ./configure \
+  mkdir meson-build
+  cd meson-build
+  meson setup \
     --prefix=/usr \
-    --sysconfdir=/etc \
+    --libdir=lib \
     --libexecdir=/usr/lib/$name \
-    --sbindir=/usr/bin \
+    --bindir=/usr/bin \
+    --sbindir=/usr/sbin \
+    --includedir=/usr/include \
+    --datadir=/usr/share \
+    --sysconfdir=/etc \
     --localstatedir=/var \
-    --disable-debug \
-    --enable-gtk-doc=no \
-    --disable-nls
-
-  make
-  make DESTDIR=$PKG install || exit 1
+    --buildtype=release
+  "${NINJA:=ninja}"
+  DESTDIR=$PKG $NINJA install
+  cd ..
 
 }
