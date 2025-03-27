@@ -113,6 +113,10 @@ EOF
     PATH=$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')
   fi
 
+  # Breaks compilation since https://bugzilla.mozilla.org/show_bug.cgi?id=1896066
+  CFLAGS="${CFLAGS/-fexceptions/}"
+  CXXFLAGS="${CXXFLAGS/-fexceptions/}"
+
   export CFLAGS="$CFLAGS -w"
   export CXXFLAGS="$CXXFLAGS -w"
   export LDFLAGS="$LDFLAGS -Wl,-rpath=/usr/lib/firefox,--enable-new-dtags"
