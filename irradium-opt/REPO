@@ -138,12 +138,9 @@ f:e9f8ce96b05106e22dae0a9b9dbe6cef:qt5/qt5-quick3d-assimp-5.1.patch
 f:43e9305944754ded3c4c49f2d3eba447:qt5/qtlocation-fix-rapidjson-build.patch
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
-f:3786cb8569dfdc397763f3adcbb5af1a:qt6-base/0028-implicit-qchar-construction.patch
-f:42a695962c96c39e37eb5226a40bec48:qt6-base/0028-windows-fullscreen-with-mask.patch
-f:26d7c059e5528d47ee0f77a8c33bf19a:qt6-base/0029-accept-only-cf_hdrop-as-uri-list.patch
 f:bfeeadc767731d581b37d5bb6a0f4828:qt6-base/.footprint
 f:24bc45c19822bc4144727a5c0fa2b1eb:qt6-base/.signature
-f:554b23c5b322651a1044f18397d9a6d7:qt6-base/Pkgfile
+f:b7ced31c6b7f8bedfd3232cdf0b31e9b:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:8a756ba984c4e8958df988b5ba3d4be2:rust/.footprint.aarch64
