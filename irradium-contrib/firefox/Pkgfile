@@ -5,7 +5,7 @@
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wayland
 
 name=firefox
-version=136.0.2
+version=136.0.3
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -62,7 +62,6 @@ build() {
   ac_add_options --disable-tests
   ac_add_options --disable-vtune
   ac_add_options --disable-updater
-  ac_add_options --disable-jemalloc
   ac_add_options --disable-callgrind
   ac_add_options --disable-profiling
   ac_add_options --disable-necko-wifi
@@ -86,6 +85,14 @@ EOF
     echo 'ac_add_options --with-system-icu' >> .mozconfig
   fi
 
+  # disable jemalloc on systems without glibc 
+  local LIBC=$(</var/lib/pkg/db awk -v RS="" -v FS="\n" '/\nusr\/lib\/libc.so\n/ { print $1 }')
+  if [ "$LIBC" = glibc ]; then
+     echo "ac_add_options --enable-jemalloc" >> .mozconfig
+  else
+     echo "ac_add_options --disable-jemalloc" >> .mozconfig
+  fi
+
   # audio
   PKGMK_FFAUDIO="alsa"
   [ -e /usr/lib/libpulse.so -o -e /usr/lib/apulse/libpulse.so ] && PKGMK_FFAUDIO+=",pulseaudio"
@@ -105,10 +112,6 @@ EOF
     echo 'ac_add_options --enable-ccache' >> .mozconfig
     PATH=$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')
   fi
-
-  # Breaks compilation since https://bugzilla.mozilla.org/show_bug.cgi?id=1896066
-  CFLAGS="${CFLAGS/-fexceptions/}"
-  CXXFLAGS="${CXXFLAGS/-fexceptions/}"
 
   export CFLAGS="$CFLAGS -w"
   export CXXFLAGS="$CXXFLAGS -w"
@@ -152,6 +155,6 @@ EOF
   echo "/usr/lib/firefox" > $PKG/etc/revdep.d/firefox
 
   mkdir -p $PKG/usr/share/pixmaps
-  ln -s /usr/lib/firefox/browser/chrome/icons/default/default128.png \
+  ln -sf /usr/lib/firefox/browser/chrome/icons/default/default128.png \
           $PKG/usr/share/pixmaps/firefox.png
 }
