@@ -111,6 +111,7 @@ d:aom
 d:iozone
 d:iperf3
 d:iptraf-ng
+d:libutempter
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -613,3 +614,7 @@ f:7c6fe9e91bb38131674eccef87ea2623:iperf3/Pkgfile
 f:6af1adf0df27f4a4024633a823c2f45c:iptraf-ng/.footprint
 f:3b39d000c9a3bc753625396f2540419d:iptraf-ng/.signature
 f:2190317ade7c835d7f8ec924360c7439:iptraf-ng/Pkgfile
+f:9bd0087bcc6d655a972b1a666d8d486b:libutempter/Pkgfile
+f:2cd71fbf60a3a1953ecaa995db45583f:libutempter/pre-install
+f:25c5b1dad8516f04ff73044f5d76aac5:libutempter/.signature
+f:727845b8b33e9d115ffded2fb54c4e53:libutempter/.footprint
