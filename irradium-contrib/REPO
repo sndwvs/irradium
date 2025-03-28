@@ -151,7 +151,7 @@ f:ed0e9172864f40da32f26a1ef4a8c7cf:elogind/.footprint
 f:745479007a0c6c824aa1fc0d4c219bae:elogind/.signature
 f:2dbc22ef73a13d7a384aa1fdb61878bb:elogind/Pkgfile
 f:c5716166dc3207c34e27d55c6907991a:elogind/login-10-elogind.conf.manpage.fix.patch
-f:d3f9b61b9d7e7be37108a4174767def3:firefox/.signature.aarch64
+f:0f3f0bcce62a750d9aac97679ef16c2b:firefox/.signature.aarch64
 f:ce8226895c981265c806fe855308406d:firefox/README
 f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
