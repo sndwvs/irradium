@@ -140,7 +140,7 @@ f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
 f:ef81502049aa9215e5deabc58aed9bb4:qt6-base/.footprint
 f:72e0726469dd6e8e93b61481227c0f4d:qt6-base/.signature
-f:1f8c9a87be69593e76e0f62874b68693:qt6-base/Pkgfile
+f:add9470a340fedbf53e37aa2855f939c:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:8a756ba984c4e8958df988b5ba3d4be2:rust/.footprint.aarch64
