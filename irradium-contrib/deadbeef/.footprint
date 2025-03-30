@@ -7,6 +7,7 @@ drwxr-xr-x	root/root	usr/include/deadbeef/
 -rw-r--r--	root/root	usr/include/deadbeef/converter.h
 -rw-r--r--	root/root	usr/include/deadbeef/deadbeef.h
 -rw-r--r--	root/root	usr/include/deadbeef/gtkui_api.h
+-rw-r--r--	root/root	usr/include/deadbeef/medialib.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/deadbeef/
 -rwxr-xr-x	root/root	usr/lib/deadbeef/alsa.la
@@ -153,6 +154,8 @@ drwxr-xr-x	root/root	usr/lib/deadbeef/data68/Replay/
 -rwxr-xr-x	root/root	usr/lib/deadbeef/in_sc68.so
 -rwxr-xr-x	root/root	usr/lib/deadbeef/m3u.la
 -rwxr-xr-x	root/root	usr/lib/deadbeef/m3u.so
+-rwxr-xr-x	root/root	usr/lib/deadbeef/medialib.la
+-rwxr-xr-x	root/root	usr/lib/deadbeef/medialib.so
 -rwxr-xr-x	root/root	usr/lib/deadbeef/mp3.la
 -rwxr-xr-x	root/root	usr/lib/deadbeef/mp3.so
 -rwxr-xr-x	root/root	usr/lib/deadbeef/musepack.la
@@ -177,6 +180,8 @@ drwxr-xr-x	root/root	usr/lib/deadbeef/data68/Replay/
 -rwxr-xr-x	root/root	usr/lib/deadbeef/vfs_curl.so
 -rwxr-xr-x	root/root	usr/lib/deadbeef/vorbis.la
 -rwxr-xr-x	root/root	usr/lib/deadbeef/vorbis.so
+-rwxr-xr-x	root/root	usr/lib/deadbeef/wavpack.la
+-rwxr-xr-x	root/root	usr/lib/deadbeef/wavpack.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/deadbeef.desktop

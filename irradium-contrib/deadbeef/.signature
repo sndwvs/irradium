@@ -1,7 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7qbZ4QllW0tv7KHK6iNuAaDcuLPb/dtoOm5CIaCeFD82pX1GGHkpUfk+PGynblvNb2FhVT0cJlROkhxCMlv8cgo=
-SHA256 (Pkgfile) = 8b7244ac9f2762ae3ef2c902dd28123ff631b705187c9dbbb0ff6d923fb70b5a
-SHA256 (.footprint) = 2174c30792de72dedfc95128a34faa7a9f6fb6a8f0b0272b32df292710aeec93
-SHA256 (deadbeef-1.9.6.tar.bz2) = 9d77b3d8afdeab5027d24bd18e9cfc04ce7d6ab3ddc043cc8e84c82b41b79c04
-SHA256 (d4cca5605447122cd080691f43e46047a6039359.patch) = 1a2a984af011fe393b6fc4c11a73e9035f23ab070bf6937b28948f130b6a73c8
+RWTmT3d9kqan7pNRTt66EtR27hszlSegKc1pwI/GLPNisjVm2zT9PEbBlq5MzrI7YdlKZxarw9J2Ng1Lm+q+4ZzJTfqWwLnIvgI=
+SHA256 (Pkgfile) = aa0011dfc610e7b5ef59aac7d8875662c7580482b4d32c22a46cc3430d8962fb
+SHA256 (.footprint) = ebbd58f5126036ecf78ff38ae62bac54b7fc78abfa5f85bbaa6fae4790b24d9c
 SHA256 (ddb_dsp_libretro_fix_aarch64_riscv64.patch) = ff31200725ffceda4d17fed3940959a64a919cd019af99e985c7101c73b59b31

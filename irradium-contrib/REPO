@@ -139,11 +139,10 @@ f:90d951170ad129272195336eedbad0fa:chromium/.footprint.aarch64
 f:6d883cdb7a7de1fb1a2c28f9daa3ac5b:chromium/.signature.aarch64
 f:1c2dc2f6c8c39ad801a2a3b1532d1eca:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
-f:bfcf1f40013f72556bae0976d203cf05:deadbeef/.footprint
-f:7be71209efb6cb88b700164243b96ff6:deadbeef/d4cca5605447122cd080691f43e46047a6039359.patch
+f:56a2ee704d2bb8275f70d226c78df704:deadbeef/.footprint
 f:2a3fe0bbe2b23a66764034bd56fc2411:deadbeef/ddb_dsp_libretro_fix_aarch64_riscv64.patch
-f:cff0a9d686f58650fbebd6be434c1d31:deadbeef/.signature
-f:cf8acbc919a1ee6e4c8e8b36462fc6da:deadbeef/Pkgfile
+f:9851d62edc181ebd41eef3ac4259c789:deadbeef/.signature
+f:871c1c3a57bb1945fe6aa32eb11a44b5:deadbeef/Pkgfile
 f:4f7b29eb38aa1ade091f8478b4c8057b:elogind/11-prefer-deep-suspend.patch
 f:0a13ac50fadfb4d9dc20b3e8c81ebce1:elogind/12-default-deep-suspend.patch
 f:d79228bd03926d682b692726315bb97b:elogind/elogind.nobody.nogroup.99.99.diff
