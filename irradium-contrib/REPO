@@ -625,8 +625,8 @@ f:7c5b830feb3b669da458bada3349bff5:audacious/Pkgfile
 f:cca42a21584d2e7a49baa60bb486c5d2:audacious/post-install
 f:8dfa1cc62e495510c542a6b3b8751c83:audacious/.footprint
 f:046b01377139c4ec6717e6763a7f198d:audacious/.signature
-f:42935118349d259727a2bb91c8009b0b:audacious-plugins/.footprint
-f:635192e67759de248220e9c7eafdc815:audacious-plugins/.signature
+f:2eeb580caa364fb204a4160daaded475:audacious-plugins/.footprint
+f:df32e1bb992a7b26f6abafbb96433c8a:audacious-plugins/.signature
 f:713313ca8b508b4e2aa7d89023144699:audacious-plugins/Pkgfile
 f:1e74b0fc686f2c1a344bc81042334367:libcue/Pkgfile
 f:6d0e91bdc8991b5e8272da3b3e977808:libcue/.footprint

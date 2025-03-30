@@ -5,6 +5,7 @@ drwxr-xr-x	root/root	usr/lib/audacious/Container/
 -rwxr-xr-x	root/root	usr/lib/audacious/Container/asx.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Container/asx3.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Container/audpl.so
+-rwxr-xr-x	root/root	usr/lib/audacious/Container/cue.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Container/m3u.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Container/pls.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Container/xspf.so
@@ -51,6 +52,7 @@ drwxr-xr-x	root/root	usr/lib/audacious/Input/
 -rwxr-xr-x	root/root	usr/lib/audacious/Input/tonegen.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Input/vorbis.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Input/vtx.so
+-rwxr-xr-x	root/root	usr/lib/audacious/Input/wavpack.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Input/xsf.so
 drwxr-xr-x	root/root	usr/lib/audacious/Output/
 -rwxr-xr-x	root/root	usr/lib/audacious/Output/alsa.so
