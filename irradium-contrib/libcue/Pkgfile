@@ -1,0 +1,21 @@
+# Description: library for parsing cue sheet files
+# URL: https://github.com/lipnitsk/libcue
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: cmake bison flex
+
+name=libcue
+version=2.3.0
+release=1
+source=(https://github.com/lipnitsk/$name/archive/v$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  cmake -B build . \
+    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DBUILD_SHARED_LIBS=true
+  make -C build
+  make -C build DESTDIR=$PKG install
+}

@@ -114,6 +114,7 @@ d:iptraf-ng
 d:libutempter
 d:audacious
 d:audacious-plugins
+d:libcue
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -624,6 +625,9 @@ f:7c5b830feb3b669da458bada3349bff5:audacious/Pkgfile
 f:cca42a21584d2e7a49baa60bb486c5d2:audacious/post-install
 f:8dfa1cc62e495510c542a6b3b8751c83:audacious/.footprint
 f:046b01377139c4ec6717e6763a7f198d:audacious/.signature
-f:86e7a6e4c15114de3a28fc73ccac4dc7:audacious-plugins/Pkgfile
 f:42935118349d259727a2bb91c8009b0b:audacious-plugins/.footprint
 f:635192e67759de248220e9c7eafdc815:audacious-plugins/.signature
+f:713313ca8b508b4e2aa7d89023144699:audacious-plugins/Pkgfile
+f:1e74b0fc686f2c1a344bc81042334367:libcue/Pkgfile
+f:6d0e91bdc8991b5e8272da3b3e977808:libcue/.footprint
+f:d0b60ca189cf86c0bf632aa06f4e3112:libcue/.signature
