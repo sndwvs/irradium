@@ -112,6 +112,8 @@ d:iozone
 d:iperf3
 d:iptraf-ng
 d:libutempter
+d:audacious
+d:audacious-plugins
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -618,3 +620,10 @@ f:9bd0087bcc6d655a972b1a666d8d486b:libutempter/Pkgfile
 f:2cd71fbf60a3a1953ecaa995db45583f:libutempter/pre-install
 f:25c5b1dad8516f04ff73044f5d76aac5:libutempter/.signature
 f:727845b8b33e9d115ffded2fb54c4e53:libutempter/.footprint
+f:7c5b830feb3b669da458bada3349bff5:audacious/Pkgfile
+f:cca42a21584d2e7a49baa60bb486c5d2:audacious/post-install
+f:8dfa1cc62e495510c542a6b3b8751c83:audacious/.footprint
+f:046b01377139c4ec6717e6763a7f198d:audacious/.signature
+f:ec86bcc3ad47147b716942f70472c381:audacious-plugins/Pkgfile
+f:42935118349d259727a2bb91c8009b0b:audacious-plugins/.footprint
+f:635192e67759de248220e9c7eafdc815:audacious-plugins/.signature
