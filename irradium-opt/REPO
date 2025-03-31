@@ -79,7 +79,7 @@ f:9d94caa7f2eef5163f11339cf59e5ed2:libsdl/libsdl-1.2.15-bs.patch
 f:ebff7a0aef0b79a0199e394ff9b212ab:libsdl/libsdl-1.2.x-libx11.patch
 f:4591619096a713a263fd7e57df3bbb49:libtheora/.footprint
 f:7f787ad4d591696b987daf3424515843:libtheora/.signature
-f:26b65479c14e8ff3fad493216daa083e:libtheora/Pkgfile
+f:34c81ab059dcc3ab2dda3e72e4092cbf:libtheora/Pkgfile
 f:e73e19e2f4a68ff361f2da00bfba31f8:libxklavier/.footprint
 f:639acd24df62574bad5b93fa6d6e73fa:libxklavier/.signature
 f:55bc92b0020e989402c5470bd106c1e0:libxklavier/Pkgfile
@@ -191,8 +191,8 @@ f:761d01b09e41159c71636c6ce8e18f65:hyphen/.footprint
 f:f2a6bc2de0496063825791220cf24be6:hyphen/.signature
 f:e1dadd566a18049c0bdcfe2c7b4773a5:hyphen/Pkgfile
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
-f:b8429604694c918dcda6fcfad4e58b0e:strace/.signature
 f:d9717afd416b71106be1ad5d9e707a03:strace/Pkgfile
+f:b8429604694c918dcda6fcfad4e58b0e:strace/.signature
 f:c32d199bdb048fcdc8596761f82e6f8d:aspell/.footprint
 f:9b6c9378cdeb1efa1d3e0fb679d37e82:aspell/.signature
 f:dd9390f6f5ac214b2d42e9cdc6865f9f:aspell/Pkgfile
