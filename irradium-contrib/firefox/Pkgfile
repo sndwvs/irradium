@@ -5,7 +5,7 @@
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wayland
 
 name=firefox
-version=136.0.2
+version=136.0.3
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -62,7 +62,6 @@ build() {
   ac_add_options --disable-tests
   ac_add_options --disable-vtune
   ac_add_options --disable-updater
-  ac_add_options --disable-jemalloc
   ac_add_options --disable-callgrind
   ac_add_options --disable-profiling
   ac_add_options --disable-necko-wifi
@@ -84,6 +83,14 @@ EOF
   local ICU_VER=$(prt-get printf "%v" --filter=icu)
   if (( ${ICU_VER%.*} >= 76 )); then
     echo 'ac_add_options --with-system-icu' >> .mozconfig
+  fi
+
+  # disable jemalloc on systems without glibc 
+  local LIBC=$(</var/lib/pkg/db awk -v RS="" -v FS="\n" '/\nusr\/lib\/libc.so\n/ { print $1 }')
+  if [ "$LIBC" = glibc ]; then
+     echo "ac_add_options --enable-jemalloc" >> .mozconfig
+  else
+     echo "ac_add_options --disable-jemalloc" >> .mozconfig
   fi
 
   # audio
@@ -152,6 +159,6 @@ EOF
   echo "/usr/lib/firefox" > $PKG/etc/revdep.d/firefox
 
   mkdir -p $PKG/usr/share/pixmaps
-  ln -s /usr/lib/firefox/browser/chrome/icons/default/default128.png \
+  ln -sf /usr/lib/firefox/browser/chrome/icons/default/default128.png \
           $PKG/usr/share/pixmaps/firefox.png
 }

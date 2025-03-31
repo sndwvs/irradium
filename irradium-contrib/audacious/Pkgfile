@@ -1,0 +1,32 @@
+# Description: a playlist-oriented media player with multiple interfaces
+# URL: https://audacious-media-player.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: libxml2 meson
+
+name=audacious
+version=4.4.2
+release=1
+source=(http://distfiles.audacious-media-player.org/$name-$version.tar.bz2)
+
+build() {
+  cd $name-$version
+
+  meson setup build \
+    --prefix=/usr \
+    --libdir=lib \
+    --libexecdir=/usr/lib/$name \
+    --bindir=/usr/bin \
+    --sbindir=/usr/sbin \
+    --includedir=/usr/include \
+    --datadir=/usr/share \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --buildtype=release \
+    -Db_lto=true \
+    -Dgtk=true \
+    -Dqt=false \
+    -Dbuildstamp="irradium"
+
+  meson compile -C build
+  DESTDIR=$PKG meson install --no-rebuild -C build
+}

@@ -52,9 +52,9 @@ f:eb5081b795690f9e39643dccbd0aa3c1:libxfce4util/.footprint
 f:d290deb806da1ec98bc13486571718f4:libxfce4util/.signature
 f:64c9e24a2b7aa7c1086a1bf251750f2c:libxfce4util/Pkgfile
 f:0806d0afa08aec01b9699e7d52096fac:mousepad/post-install
-f:9ddfba6efa6bbd2b13b6aa60c7f1552e:mousepad/.footprint
-f:18ad5a66b9c536b4d93749780b764300:mousepad/.signature
-f:506e2486210acad303666a7c9310828e:mousepad/Pkgfile
+f:0b805f8327a298ec2c64f132151442d3:mousepad/.footprint
+f:84eda290a6669cb469f377b1a9fe312a:mousepad/.signature
+f:99f42a0b889c2302386823177e6c03b4:mousepad/Pkgfile
 f:fdc28c151b88be47a6c52035893bf50a:thunar/.footprint
 f:6767c89fdc5d565ea5e3dfefe2414472:thunar/.signature
 f:4c1317ceca56a40f6d7a4ec2e09a5beb:thunar/Pkgfile
@@ -115,9 +115,9 @@ f:b6f152bb0415fce52fa4e50bce196e95:xfce4-systemload-plugin/Pkgfile
 f:7ccfa61267b42943ecb35e6304c51e47:xfce4-taskmanager/.footprint
 f:2cbe40daf205c8dee04e2ad5846306a2:xfce4-taskmanager/.signature
 f:998551fe8d3cee491a798745d5709f29:xfce4-taskmanager/Pkgfile
-f:eff8da202cf91b8346f12d87d87c2281:xfce4-terminal/.footprint
-f:e57a3a15b6d5c1422b06f7d16bf6a27a:xfce4-terminal/.signature
-f:559057b5ab570a3ef193f19a49ab6250:xfce4-terminal/Pkgfile
+f:9750b0c6db2ab1db11c527f786222bda:xfce4-terminal/.footprint
+f:188880a709d5e5515fae5e8a8734b90b:xfce4-terminal/.signature
+f:2f66333b6a58ad0efce72e260eb01490:xfce4-terminal/Pkgfile
 f:3abf6c825e6358eae5f4edd8a9d45c91:xfce4-weather-plugin/.footprint
 f:1a3ff0d30bc12ccd5d1742cf92fd4a5d:xfce4-weather-plugin/Pkgfile
 f:459c8c72b031dce298fa8f16cace725e:xfce4-weather-plugin/.signature

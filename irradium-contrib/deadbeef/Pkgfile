@@ -4,17 +4,21 @@
 # Depends on: alsa-lib curl desktop-file-utils jansson gtk3 clang libdispatch libmad libtool libsamplerate yasm intltool gettext pkgconf ffmpeg
 
 name=deadbeef
-version=1.9.6
-release=3
-source=(https://downloads.sourceforge.net/$name/$name-$version.tar.bz2
-        d4cca5605447122cd080691f43e46047a6039359.patch
-        ddb_dsp_libretro_fix_aarch64_riscv64.patch)
+version=1.10.0
+release=1
+source=(ddb_dsp_libretro_fix_aarch64_riscv64.patch)
 
 build() {
+  mkdir $name-$version
   cd $name-$version
 
-  # fix ffmpeg 7x
-  patch -p1 -i $SRC/d4cca5605447122cd080691f43e46047a6039359.patch
+  git init .
+  git remote add origin https://github.com/DeaDBeeF-Player/deadbeef.git
+  git fetch
+  git checkout $version
+  git submodule update --init
+  ./autogen.sh
+
   patch -p1 -i $SRC/ddb_dsp_libretro_fix_aarch64_riscv64.patch
 
   CFLAGS=${CFLAGS/-fstack-clash-protection/}
