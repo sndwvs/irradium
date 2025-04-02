@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7rB00vg3qtwbT49ay9pshbAyrSUT0u+ZqyeGiaQz7dNAhgUVuZunVATIlfEO+iGu4FgXvz8yOGJJ0O/Pn/50ugA=
-SHA256 (Pkgfile) = 8c1988c3e6a8b43b8a0a14c5166ce2572df41502ecf27045a5707abba04b8997
+RWTmT3d9kqan7qvoSyIIyYhRgFSLx9oOFV6g5xzwofpv0YPvCFeZoYV0XOHlE6fKm5zSfd/dOGKmJHU6SmdYnIDsdbFam6f69QQ=
+SHA256 (Pkgfile) = 9f6131095cc12f784a1dbc2141948f02acc7db435fb338c95a2548c32e254a96
 SHA256 (.footprint) = bf7d05ac5de70be32bc9fad57ea450b5c1e0f1582174ec4dd8336564f3d1854f
 SHA256 (android-tools-35.0.2.tar.xz) = d2c3222280315f36d8bfa5c02d7632b47e365bfe2e77e99a3564fb6576f04097
