@@ -6,7 +6,7 @@
 
 name=ffmpeg
 version=7.1.1
-release=1
+release=2
 source=(https://ffmpeg.org/releases/$name-$version.tar.bz2
   add-av_stream_get_first_dts-for-chromium.patch
   fef22c87ada4517441701e6e61e062c9f4399c8e.patch

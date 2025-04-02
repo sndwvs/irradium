@@ -43,7 +43,7 @@ f:89ad92073c2c3f61771204c4780a37bc:ffmpeg/fef22c87ada4517441701e6e61e062c9f4399c
 f:fdc0328c4e5c341ed1d623ba1c16480e:ffmpeg/add-in-cpu-__NR_riscv_hwprobe.patch
 f:364fd748c8d27344a7bf5fb0cdf07307:ffmpeg/.footprint
 f:a10de1338906961107bdc44f5647395f:ffmpeg/.signature
-f:43df9102815983cdd944753286e0f302:ffmpeg/Pkgfile
+f:d8504d8c728df73f84f6bb14a21be2b6:ffmpeg/Pkgfile
 f:e8918185d4575fa99b897159b9ec91c9:ffmpeg/bcfbf2bac8f9eeeedc407b40596f5c7aaa0d5b47.patch
 f:023286e7b9148b593ca6f05b0ed19eb8:ffmpeg/d0facac679faf45d3356dff2e2cb382580d7a521.patch
 f:b2c9d9a5b28f0803f79c748833911236:ffmpeg-mpp/.footprint
