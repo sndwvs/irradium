@@ -1,13 +1,13 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCVkbg0Hb60OhVyLnsElXAJtzI/axmzCet7lXPUuhJUBazfxkFJSnj7G/2LeMjfY783bA/j7F7UPB591K2tufoQU=
-SHA256 (Pkgfile) = debe5518adfd8e470285d2d7e3260d88b0fd0605b420fe09a634839935b8d0e9
-SHA256 (.footprint.riscv64) = 1c8c36ef3e13da2e33a3c15d03057d80b5b596937ba503e1d22bb79296a63200
-SHA256 (rustc-1.85.1-src.tar.xz) = b1fbf809efe9f036939401e142631c201a53bcf43ec1696bd9f5290ba236a266
-SHA256 (rust-std-1.84.0-riscv64gc-unknown-linux-gnu.tar.xz) = 451580f9cdc47eef4efb0986b1960a8f9c4fb0959f81b77eb6292e6bcff9fc64
-SHA256 (rustc-1.84.0-riscv64gc-unknown-linux-gnu.tar.xz) = c0eaf824c7789c94901f895792333595fe131e43f097bcf5987301cc1b14c3f0
-SHA256 (cargo-1.84.0-riscv64gc-unknown-linux-gnu.tar.xz) = 3a850b74bdf2c3a5912e9f1ea32aaf1c9ac7c5f89c1c0bcf421b961195833992
+RWRxRnTWECCiCUExoLvdjoez01IjGz2Co3kHbzpvcUVq4oSJ6y1e/TbUZfbVBC/2KwOWIDtXUFDTx7I21EjjeSMD2+03v7zjZwo=
+SHA256 (Pkgfile) = fe9f70dc4918ed2739fed560fbd41d166fd06736672c4eb0ad3463174cff54d6
+SHA256 (.footprint.riscv64) = bdeb84d18e16485ce03a12ac368ccb1d8c60d7fcd92706892e13b4b05d4ea231
+SHA256 (rustc-1.86.0-src.tar.xz) = d939eada065dc827a9d4dbb55bd48533ad14c16e7f0a42e70147029c82a7707b
+SHA256 (rust-std-1.85.0-riscv64gc-unknown-linux-gnu.tar.xz) = 0f5ecfe54859bbe715821f982b1a5396784fdf55605d00ece05d3e57a965ed16
+SHA256 (rustc-1.85.0-riscv64gc-unknown-linux-gnu.tar.xz) = 2da33044f17a8bc49a1478dc1eb2536df491a44d6e6bb0ec7c86f46877d44e98
+SHA256 (cargo-1.85.0-riscv64gc-unknown-linux-gnu.tar.xz) = c9f28b519799fc2d8089865e30fad04bb5339604d13725365fcd7ad7ee6c1489
 SHA256 (0001-bootstrap-Change-libexec-dir.patch) = 3127ef3346430bd82dde03bfc3c8875cdfc00c62d98f27b3f798099df719dbb9
 SHA256 (0002-bootstrap-Change-bash-completion-dir.patch) = 49c8799720cae67e44d24c0dab484ecc596a2d74c8560504f4053f77864ce849
 SHA256 (0003-compiler-Change-LLVM-targets.patch) = 9ed7a6b1f8981988eb5b254fc199e47503399f106444c0b96459c811d1004d55
 SHA256 (0004-compiler-Use-wasm-ld-for-wasm-targets.patch) = b5a6ee8942fff48a2165289a24039662945e89a65863d726469cb3bab88d3fb7
-SHA256 (riscv64-disable-f16-f128.patch) = a44810e130e62f1ebc25607ba6ef20e6b4f611bd08d07ac2affafcc26fcbc0e0
+SHA256 (riscv64-disable-f16-f128.patch) = 6de4e3f247ec15038b11d50211988fbd298556f0ff7b1d3edc36ca2819a5081d

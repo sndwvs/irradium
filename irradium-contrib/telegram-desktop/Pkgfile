@@ -5,14 +5,17 @@
 
 name=telegram-desktop
 version=5.13.1
-release=1
+release=2
 source=(https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tdesktop-$version-full.tar.gz
-        https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.0.tar.xz)
+        https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.0.tar.xz
+        qt-6.9.patch)
 
 build() {
   meson -D maintainer-mode=true -Dbuild-documentation=false -Dbuild-examples=false --default-library static --prefix $SRC/glibmm glibmm-2.78.0 build
   meson compile -C build
   meson install -C build
+
+  patch -d tdesktop-$version-full/Telegram/lib_base -p1 < $SRC/qt-6.9.patch
 
   cd tdesktop-$version-full
 

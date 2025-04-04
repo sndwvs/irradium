@@ -119,8 +119,8 @@ f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
 f:c35f78590d60146abc6f593e113ef6ba:android-tools/.footprint
-f:b38740cd7b5b0256ef3b6a0f833fdfb8:android-tools/.signature
-f:35067e022867af8aecf6bd5488f85837:android-tools/Pkgfile
+f:46a1f05324771aa19279183b0d677d48:android-tools/.signature
+f:970fe0999a88e794eb13f6ed9cab9605:android-tools/Pkgfile
 f:95d427053c3f2589d3eb98e419eac127:audacity/.footprint
 f:caafe7384c6b627d1aa44f2ae003d9e3:audacity/.signature
 f:79f8dbe19564cccf97ca4b71026e8c99:audacity/Pkgfile
@@ -161,9 +161,9 @@ f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:997d0c3564c57cd05bd24a86ce30fdaf:firefox/.footprint.aarch64
 f:07f0d054e2a216fa8eb962b0d52a09db:firefox/.footprint.riscv64
-f:0f3f0bcce62a750d9aac97679ef16c2b:firefox/.signature.aarch64
-f:74ade6bbb94ae60600aaa6949c205e61:firefox/.signature.riscv64
-f:50f60397d686e1815149110bf276198b:firefox/Pkgfile
+f:c0aea0b3d62f41b6decf5b1e1734bf20:firefox/.signature.aarch64
+f:4de037ada0f63084faba6417655db00c:firefox/.signature.riscv64
+f:79d4f7a19ac9dd81d37b02180cceed5f:firefox/Pkgfile
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
 f:f27fa622f17d099ba1bc08c4061acda6:freerdp/1ef7b9e3.patch
@@ -281,8 +281,8 @@ f:3027944a9bd124f2b893ca13e7c73766:mpp/.signature
 f:d8ec33a1ed4eda02714d23033e33b2d0:mpp/Pkgfile
 f:2afb336186c3466ee6604e8c9d55b635:mpv/README
 f:284168cfcd33260ec8bac900098c7417:mpv/.footprint
-f:ddb9bbb7f55884ce1b017a90d6336578:mpv/.signature
-f:82954dad86bf01c5e521602efa0cb876:mpv/Pkgfile
+f:7803d6bd0dd1f038b77965c326fbebdb:mpv/.signature
+f:44176164195625122f5ffdc5f85919d9:mpv/Pkgfile
 f:6e6ac1e73de5134e19b0690307670a56:consul/.footprint
 f:d83bc0a6f5462cc636ba805ec4de8dce:consul/.signature
 f:d699fea2a6bc9a5fce1e6ef3fed020ca:consul/Pkgfile
@@ -335,8 +335,9 @@ f:5154211a88534e7dcae26e95f0b7fcb0:tcl/.footprint
 f:5f433fbd0ac6f3524bc585a8f6038cce:tcl/.signature
 f:0628dcc755f986173fb3f7c834f25ceb:tcl/Pkgfile
 f:a0d5afb9ca92709336fb1b2e9fbf969e:telegram-desktop/.footprint
-f:99cf50036a3ab225f7a8d9d32d8ce4a0:telegram-desktop/.signature
-f:ae9812712e59ae05f42d3596266708e2:telegram-desktop/Pkgfile
+f:4eef1dc2881550e4563c79eb7124c6e5:telegram-desktop/.signature
+f:6e7fa344aaee03f4ee7705a7e1dd2bea:telegram-desktop/Pkgfile
+f:d6e2a784213cfcd6022d5ede87ad990a:telegram-desktop/qt-6.9.patch
 f:5fd9540530092495051bc72484027d38:tk/.footprint
 f:4a0cf636d10c64ff0a5c12fcec684a78:tk/.signature
 f:94c44128030f929514210cd358bcd567:tk/Pkgfile
