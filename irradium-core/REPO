@@ -27,7 +27,8 @@ f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:8dfd72a6cc386857c3decfce85b11006:binutils/Pkgfile
 f:5987c01917023368f02cd1d93da2b166:cmake/.footprint
 f:d27ce912e4a2e56d854aa1b71c3e721c:cmake/.signature
-f:58b5700e28afb0ab09500045d587b39c:cmake/Pkgfile
+f:419668bd2678ec473fcd4ce3ee64a050:cmake/Pkgfile
+f:f8a0277b3a8aa2dff2afdb3364f12a60:cmake/cmake-3.31.6-curl-8.13.0.patch
 f:034680aa69ee64596517784fe1161c1b:db/.footprint
 f:7e30d22cd875710b997e739c6202893f:db/.signature
 f:bf37166683ba4966059cda949d4f6dbd:db/0001-atomic-Rename-local-__atomic_compare_exchange-to-avo.patch
@@ -116,14 +117,14 @@ f:c439515bdbd1e17d8a74c2a37d285718:ports/irradium-xfce.pub
 f:1ec983509e56966c5a7945a854c0f7bf:ports/irradium-xorg.pub
 f:0d1f1fde50a9bd743d9cac6b235f038c:ports/opt.pub
 f:69927e5d0ae5dc3455faeaac916c4db2:ports/xorg.pub
+f:08129077eff4408c25662db7af25e9ae:ports/.signature
+f:dda7a4deaf5a68da6ddcc460f2afe649:ports/Pkgfile
+f:d39f6279b5e125edb9f402b0e4d1865b:ports/contrib.rsync.inactive
 f:bceca3aa28a0ee00f14e5634251a8322:ports/core.rsync
 f:1473ddce72b0475daa6760b804da537c:ports/irradium-contrib.httpup.inactive
 f:6da446b0cd83ab5484911a2e76ada068:ports/irradium-xfce.httpup.inactive
 f:441330fe7eb6970873d287b0d38f83f6:ports/opt.rsync
 f:d57279f5bd8b1b705b7be4f6866c9ced:ports/xorg.rsync
-f:08129077eff4408c25662db7af25e9ae:ports/.signature
-f:dda7a4deaf5a68da6ddcc460f2afe649:ports/Pkgfile
-f:d39f6279b5e125edb9f402b0e4d1865b:ports/contrib.rsync.inactive
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:1e68ce5a010624ae6f5c305937163e62:prt-get/fsearch-footprint-add-multi-arch-riscv64-aarch64.patch
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
@@ -161,6 +162,9 @@ f:c0125a2b5a21efe404b4e4feb31b2287:bash/bash-5.2.37.patch.gz
 f:be5b8a1e3dd2272113e854ed0f155c47:bash/profile
 f:cf443b43826ea1ffb0abf92b5123297a:bash/profile.patch
 f:4e1e8a61db6c9a19f9398eb1073d41e2:dcron/.footprint
+f:c8d392946b3eb9308810dbda5af190c4:dcron/Pkgfile
+f:39a41f31b2ffff19b5bb936f490aa03c:dcron/crond
+f:3e503f313be283328dfe2a608af8b069:dcron/crond.patch
 f:3596a4fa9cf63bdf130fd533ca7703d4:dcron/crontab
 f:0049730715f9841a1cd8f2721cb1bb1b:dcron/crontab.patch
 f:60ccc2d785edcbfaa0b5dcbda5b9ebea:dcron/patches/crontab.c.O_EXCL.diff
@@ -171,9 +175,6 @@ f:c8cbb82349e7854c31f7a7e3bc5fd46d:dcron/patches/0006-Fixed-a-bug-whereby-syncs-
 f:0c2dda016e37ae8b340b77601e99e8c2:dcron/patches/0007-Update-main.c.patch
 f:d80b27b1b9532890136c14d30e2a0d2b:dcron/runjobs
 f:4256e3496a9e8a11f6ebe47116dedba7:dcron/.signature
-f:c8d392946b3eb9308810dbda5af190c4:dcron/Pkgfile
-f:39a41f31b2ffff19b5bb936f490aa03c:dcron/crond
-f:3e503f313be283328dfe2a608af8b069:dcron/crond.patch
 f:9b8f2bac610aad49e84ae7398c5735c1:dhcpcd/pre-install
 f:0b056dd3e5a3e1eacb7c9b38f0641e4d:dhcpcd/rc.dhcpcd
 f:b234015b73634def7fa8cbd2c8bac075:dhcpcd/dhcpcd.conf-request_ntp_server_by_default.patch

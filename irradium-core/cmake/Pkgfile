@@ -6,8 +6,9 @@
 
 name=cmake
 version=3.31.6
-release=1
-source=(https://cmake.org/files/v${version%.*}/$name-$version.tar.gz)
+release=2
+source=(https://cmake.org/files/v${version%.*}/$name-$version.tar.gz
+	cmake-3.31.6-curl-8.13.0.patch)
 
 build() {
 	cd $name-$version
@@ -21,7 +22,9 @@ build() {
 	    export LDFLAGS="-latomic"
 	fi
 
-	./bootstrap --generator=Ninja $PKGMK_CMAKE \
+	patch -Np1 -i $SRC/cmake-3.31.6-curl-8.13.0.patch
+
+	CONFIG_SHELL=/bin/bash ./bootstrap --generator=Ninja $PKGMK_CMAKE \
 		--prefix=/usr \
 		--datadir=/share/cmake \
 		--bootstrap-system-libuv \
