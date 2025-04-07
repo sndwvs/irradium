@@ -4,13 +4,13 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.10/
 drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.26.dist-info/
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.26.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.26.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.26.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.26.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.26.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.26.dist-info/licenses/LICENSE
+drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.31.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.31.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.31.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.31.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.31.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.31.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp-2025.3.31.dist-info/licenses/LICENSE
 drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/__init__.py
@@ -712,6 +712,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/foxsports.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/fptplay.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/fptplay.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/francaisfacile.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/francaisfacile.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/franceinter.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/franceinter.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache__/francetv.cpython-310.opt-1.pyc
@@ -2467,6 +2469,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/foxnews.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/foxsports.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/fptplay.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/francaisfacile.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/franceinter.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/francetv.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/yt_dlp/extractor/freesound.py
