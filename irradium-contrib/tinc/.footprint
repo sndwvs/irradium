@@ -2,7 +2,7 @@ drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/rc.d/
 -rwxr-xr-x	root/root	etc/rc.d/tincd
 drwxr-xr-x	root/root	etc/syslog.d/
--rw-r--r--	root/root	etc/syslog.d/tincd.conf
+-rw-rw-rw-	root/root	etc/syslog.d/tincd.conf
 drwxr-xr-x	root/root	etc/tinc/
 -rw-r--r--	root/root	etc/tinc/tinc.conf
 drwxr-xr-x	root/root	usr/
