@@ -2,10 +2,10 @@
 # URL: https://www.libreoffice.org/
 # Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on: abseil-cpp argon2 box2d clucene dragonbox fakeroot fontforge frozen graphite2 gst-plugins-base gtk4 hyphen libabw libcdr libcmis libcuckoo libe-book libepubgen libetonyek libexttextcat libfixmath libfreehand libmspub libmwaw libmythes libnumbertext libodfgen liborcus libpagemaker libqrcodegen libqxp libstaroffice libtommath libvisio libwpg libwps libzmf neon nss openjpeg2 paper redland xmlsec xorg-libxcomposite zip zxcvbn-c
-# Optional: avahi coin-or-mp cups dconf gpgme kio lpsolve mariadb openldap postgresql python3-lxml qt5 sane valgrind
+# Optional: avahi coin-or-mp cups dconf gpgme kio lpsolve mariadb openldap postgresql python3-lxml qt6-multimedia sane valgrind
 
 name=libreoffice
-version=25.2.2.2
+version=25.2.3.1
 release=1
 pdfiumversion=6764
 source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-$version.tar.xz
@@ -104,7 +104,7 @@ build() {
   prt-get isinst openldap || PKGMK_LIBREOFFICE+=' --disable-ldap'
   prt-get isinst postgresql || PKGMK_LIBREOFFICE+=' --disable-postgresql-sdbc'
   prt-get isinst python3-lxml || PKGMK_LIBREOFFICE+=' --without-lxml'
-  prt-get isinst qt6-base && PKGMK_LIBREOFFICE+=' --enable-qt6' || PKGMK_LIBREOFFICE+=' --disable-qt6'
+  prt-get isinst qt6-multimedia && PKGMK_LIBREOFFICE+=' --enable-qt6' ; export QT6DIR=/usr/lib/qt6 || PKGMK_LIBREOFFICE+=' --disable-qt6'
   prt-get isinst sane && PKGMK_LIBREOFFICE+=' --with-system-sane' || PKGMK_LIBREOFFICE+=' --without-system-sane'
   prt-get isinst valgrind && PKGMK_LIBREOFFICE+=' --with-valgrind'
   # }}}
