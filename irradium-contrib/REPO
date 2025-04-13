@@ -115,6 +115,7 @@ d:audacious-plugins
 d:audacious
 d:libcue
 d:libutempter
+d:luajit
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -631,3 +632,7 @@ f:727845b8b33e9d115ffded2fb54c4e53:libutempter/.footprint
 f:25c5b1dad8516f04ff73044f5d76aac5:libutempter/.signature
 f:9bd0087bcc6d655a972b1a666d8d486b:libutempter/Pkgfile
 f:2cd71fbf60a3a1953ecaa995db45583f:libutempter/pre-install
+f:8e0d2bb838b18f5ea6ccabe3c561aed5:luajit/.footprint
+f:7a2948e9b78196a16188e6c01972b246:luajit/.signature
+f:2d7bc228faa417e8db6d6d8acaeb7c9c:luajit/Pkgfile
+f:d211eebf95667cb4bb046737817278c2:luajit/1267.patch

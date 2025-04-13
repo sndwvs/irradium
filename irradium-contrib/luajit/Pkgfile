@@ -1,0 +1,28 @@
+# Description: Just-In-Time Compiler for the Lua programming language
+# URL: https://luajit.org
+# Maintainer: Tim Biermann, tbier at posteo dot de
+
+name=luajit
+# https://github.com/LuaJIT/LuaJIT/issues/665#issuecomment-784452583
+_commit=a4f56a459a588ae768801074b46ba0adcfb49eb1
+version=2.1.1736781742
+release=1
+source=(https://github.com/LuaJIT/LuaJIT/archive/$_commit/$name-$_commit.tar.gz
+        1267.patch)
+
+build() {
+  cd LuaJIT-$_commit
+
+  patch -p1 -i $SRC/1267.patch
+
+  sed -i 's/%{_libexecdir}/%{_libdir}/' etc/luajit.pc
+
+  make PREFIX="/usr" \
+    MULTILIB="lib" \
+    BUILDMODE=dynamic \
+    TARGET_STRIP=" @:" \
+    amalg
+  make PREFIX=/usr DESTDIR=$PKG install
+
+  find $PKG -type f -name *.a -delete -print
+}
