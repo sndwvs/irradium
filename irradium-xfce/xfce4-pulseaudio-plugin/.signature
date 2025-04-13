@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0QKYBueK8/AEnU3NMFhmhkkivvDZKhmljgBuTYbBYnM2o1HiN4UrnfkeG85wlzWlinx19wWinwlOmndPwNJDgQ8=
-SHA256 (Pkgfile) = 0b9aecf71f117fe8e053844a7f896b0cc3040ccba4911a6cad86fb7a68a9cd59
-SHA256 (.footprint) = de08ebed378273bf12beba56b6a05c14a8bfca5437678a1efbb5b34074277b54
-SHA256 (xfce4-pulseaudio-plugin-0.4.9.tar.bz2) = a0807615fb2848d0361b7e4568a44f26d189fda48011c7ba074986c8bfddc99a
+RWQ1yk7gkrBo0a6o+AfjDn6gj6BydFMbi7qGQDZEw91Kq4MP1+qpqGcJPTjyVPrd0Ypb6jTK2Ahq7+tgE9Me+XQi3PmDxVhzJgM=
+SHA256 (Pkgfile) = f2a995ded66d24d8156bda55de652758debcef10ff943859a30c07ad3a42770a
+SHA256 (.footprint) = 92aac06aaaa7d2fd520122ee77123460ff8dc4434909be10e8143185e74d3725
+SHA256 (xfce4-pulseaudio-plugin-0.5.0.tar.xz) = 3fe69bc6f9c0dd68bd317c0a7813975cf162ba1dd64e23c2ffef372d4b4f808a

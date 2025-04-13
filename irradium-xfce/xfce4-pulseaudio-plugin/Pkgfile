@@ -11,16 +11,21 @@ source=(https://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$ve
 build(){
   cd $name-$version
 
-  ./configure \
+  mkdir meson-build
+  cd meson-build
+  meson setup \
     --prefix=/usr \
-    --sysconfdir=/etc \
+    --libdir=lib \
     --libexecdir=/usr/lib/$name \
+    --bindir=/usr/bin \
+    --sbindir=/usr/sbin \
+    --includedir=/usr/include \
+    --datadir=/usr/share \
+    --sysconfdir=/etc \
     --localstatedir=/var \
-    --disable-static \
-    --disable-debug \
-    --disable-nls
-
-  make
-  make DESTDIR=$PKG install || exit 1
+    --buildtype=release
+  "${NINJA:=ninja}"
+  DESTDIR=$PKG $NINJA install
+  cd ..
 
 }
