@@ -1,7 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
-lrwxrwxrwx	root/root	usr/bin/luajit -> luajit-2.1.1736781742
--rwxr-xr-x	root/root	usr/bin/luajit-2.1.1736781742
+lrwxrwxrwx	root/root	usr/bin/luajit -> luajit-2.1.1744318430
+-rwxr-xr-x	root/root	usr/bin/luajit-2.1.1744318430
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/luajit-2.1/
 -rw-r--r--	root/root	usr/include/luajit-2.1/lauxlib.h
@@ -11,9 +11,9 @@ drwxr-xr-x	root/root	usr/include/luajit-2.1/
 -rw-r--r--	root/root	usr/include/luajit-2.1/luajit.h
 -rw-r--r--	root/root	usr/include/luajit-2.1/lualib.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libluajit-5.1.so -> libluajit-5.1.so.2.1.1736781742
-lrwxrwxrwx	root/root	usr/lib/libluajit-5.1.so.2 -> libluajit-5.1.so.2.1.1736781742
--rwxr-xr-x	root/root	usr/lib/libluajit-5.1.so.2.1.1736781742
+lrwxrwxrwx	root/root	usr/lib/libluajit-5.1.so -> libluajit-5.1.so.2.1.1744318430
+lrwxrwxrwx	root/root	usr/lib/libluajit-5.1.so.2 -> libluajit-5.1.so.2.1.1744318430
+-rwxr-xr-x	root/root	usr/lib/libluajit-5.1.so.2.1.1744318430
 drwxr-xr-x	root/root	usr/lib/lua/
 drwxr-xr-x	root/root	usr/lib/lua/5.1/
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
@@ -35,8 +35,6 @@ drwxr-xr-x	root/root	usr/share/luajit-2.1/jit/
 -rw-r--r--	root/root	usr/share/luajit-2.1/jit/dis_mips64r6el.lua
 -rw-r--r--	root/root	usr/share/luajit-2.1/jit/dis_mipsel.lua
 -rw-r--r--	root/root	usr/share/luajit-2.1/jit/dis_ppc.lua
--rw-r--r--	root/root	usr/share/luajit-2.1/jit/dis_riscv.lua
--rw-r--r--	root/root	usr/share/luajit-2.1/jit/dis_riscv64.lua
 -rw-r--r--	root/root	usr/share/luajit-2.1/jit/dis_x64.lua
 -rw-r--r--	root/root	usr/share/luajit-2.1/jit/dis_x86.lua
 -rw-r--r--	root/root	usr/share/luajit-2.1/jit/dump.lua
