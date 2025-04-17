@@ -28,9 +28,9 @@ f:1ef90513ba02dea4aa433947d2d99d6c:mesa/patches/0004-mesa-20.3.0-meson-radeon-ar
 f:f08a4cf6921ea89bbe973a4509cde998:mesa/patches/0005-mesa-24-llvmspirv-detection.patch
 f:e5ca988223c90f2a22caf7539f4a512a:mesa/patches/0008-mesa-24.0-osmesa-fix-civ3.patch
 f:b4f8779303542471e8a279f27721e9b4:mesa/README.md
-f:51e478f4ace2b9777f2eaf0646bf2a9d:mesa/.footprint.aarch64
+f:28192c7e2418a2105fde2871dd5f6983:mesa/.footprint.aarch64
 f:7ba2de6cb7fecd3796a680f90dc9954d:mesa/.footprint.riscv64
-f:d03a70025a2f78269e786b9dce8965cf:mesa/.signature.aarch64
+f:f74a9e59ff71d8ddc2dc2756397c38a2:mesa/.signature.aarch64
 f:0bd90a6936543423f5d0f901046d0eab:mesa/.signature.riscv64
 f:c86f2959a593a37725558278b0cbebd5:mesa/Pkgfile
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
