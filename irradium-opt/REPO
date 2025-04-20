@@ -193,8 +193,8 @@ f:c32d199bdb048fcdc8596761f82e6f8d:aspell/.footprint
 f:9b6c9378cdeb1efa1d3e0fb679d37e82:aspell/.signature
 f:dd9390f6f5ac214b2d42e9cdc6865f9f:aspell/Pkgfile
 f:3dc09fe4bf975cc2c3460c94a51f4379:bindutils/utils.patch
-f:882783927e0a41bbd961b4115b00784a:bindutils/.footprint
-f:6b09c493401436d6861fdf887325fb1f:bindutils/.signature
+f:172879933031e783a9107eb38121028c:bindutils/.footprint
+f:849fb09042c8bab289237929198e97db:bindutils/.signature
 f:485b5fb93433d14fbb3592db754ec22e:bindutils/Pkgfile
 f:1d895ed35c46268c893ef9dd77dfab78:liburcu/.footprint
 f:0205530ff0d95bc462a23424cc32d8d1:liburcu/.signature
