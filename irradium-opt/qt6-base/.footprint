@@ -1,6 +1,6 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
-lrwxrwxrwx	root/root	usr/bin/qmake6 -> ../../lib/qt6/bin/qmake
+lrwxrwxrwx	root/root	usr/bin/qmake6 -> ../lib/qt6/bin/qmake
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/qt6/
 drwxr-xr-x	root/root	usr/include/qt6/QtConcurrent/
