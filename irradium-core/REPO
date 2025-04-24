@@ -22,6 +22,7 @@ d:dcron/patches
 d:dhcpcd
 d:iproute2
 d:gettext
+d:python3-setuptools
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:6dac3988756d2be3bf51fd270d3981c2:binutils/Pkgfile
@@ -62,9 +63,9 @@ f:3c13e89423eb43d8ee97675362d3725f:gcc/.footprint.aarch64
 f:830b8639e6590d013fa96c266244d36e:gcc/.footprint.riscv64
 f:121344c2f1ced0c6da4d49033045d18d:gcc/.signature.aarch64
 f:f0f5f0b2e6e33d9ba1e454bbdeab7a98:gcc/.signature.riscv64
+f:7d16b76a4309eadedc9b1fe720cc58e9:gcc/gcc-riscv-disable-multilib-support.patch
 f:b25cb26fc444ca93e3b47c1091f4817b:gcc/Pkgfile
 f:306ed9d67ee02ce1065653303e9d4f6a:gcc/gcc-fix-arm64.patch
-f:7d16b76a4309eadedc9b1fe720cc58e9:gcc/gcc-riscv-disable-multilib-support.patch
 f:9e14cbd9ccc21b6f7f00383b30419167:gcc/gcc-riscv64-improve-build-time.patch
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:cc7bfdd526782e44ab589016ba953d02:gdbm/.signature
@@ -181,3 +182,6 @@ f:34a1893cf0b805b204ca6ed82fc08ab3:iproute2/Pkgfile
 f:a546c97b48488de8a4634f20169cdc7c:gettext/.footprint
 f:6d9ec668a1d76a31014112a01aa6d135:gettext/.signature
 f:c0b5598d543472f577d92ea0de984c0d:gettext/Pkgfile
+f:24cef8c76749c037b37ffa7f73d6cb36:python3-setuptools/.footprint
+f:1d584503bb841f733598ca1c59632a68:python3-setuptools/.signature
+f:d914f708e133d10f420ba921a68c7b5b:python3-setuptools/Pkgfile
