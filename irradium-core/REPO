@@ -60,9 +60,9 @@ f:a58ff03983cf89e5e690c71f7eab6fff:gcc/gcc-configure-Add-enable-autolink-libatom
 f:9652a27711fa9f7989483ebe21786c16:gcc/gcc-configure-fix-detection-of-atomic-builtins-in-libato.patch
 f:7c9128522053af79791bcfdd55834c2a:gcc/gcc-nocheck-fixincludes.patch
 f:3c13e89423eb43d8ee97675362d3725f:gcc/.footprint.aarch64
-f:830b8639e6590d013fa96c266244d36e:gcc/.footprint.riscv64
+f:ea0e2c6876ce06e05770a7af77018158:gcc/.footprint.riscv64
 f:121344c2f1ced0c6da4d49033045d18d:gcc/.signature.aarch64
-f:f0f5f0b2e6e33d9ba1e454bbdeab7a98:gcc/.signature.riscv64
+f:42833f51c5ae23e9c34359ad86609c42:gcc/.signature.riscv64
 f:e01a1edd6b5cfa9be0160fbc9a6bb3fa:gcc/Pkgfile
 f:306ed9d67ee02ce1065653303e9d4f6a:gcc/gcc-fix-arm64.patch
 f:7d16b76a4309eadedc9b1fe720cc58e9:gcc/gcc-riscv-disable-multilib-support.patch
