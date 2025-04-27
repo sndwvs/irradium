@@ -26,10 +26,9 @@ d:python3-setuptools
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:6dac3988756d2be3bf51fd270d3981c2:binutils/Pkgfile
-f:5987c01917023368f02cd1d93da2b166:cmake/.footprint
-f:9247c0984e7e893aa56d37d75ee61590:cmake/.signature
-f:2dff8ba50efb210611b857551772d396:cmake/Pkgfile
-f:f8a0277b3a8aa2dff2afdb3364f12a60:cmake/cmake-3.31.6-curl-8.13.0.patch
+f:c4d70d6fd7f8194d136c1e0e2ccd148a:cmake/.footprint
+f:a2ef8007479fff5f6c74ec4d95654ec8:cmake/.signature
+f:a8029a64915027d7663db5612e51fcc5:cmake/Pkgfile
 f:034680aa69ee64596517784fe1161c1b:db/.footprint
 f:7e30d22cd875710b997e739c6202893f:db/.signature
 f:bf37166683ba4966059cda949d4f6dbd:db/0001-atomic-Rename-local-__atomic_compare_exchange-to-avo.patch
@@ -40,7 +39,6 @@ f:015f019e2731e18c4229ed5772707feb:db/db-5.3.28-mmap-high-cpu-usage.patch
 f:42de24f40ae2c7ea1b4c59352962029f:db/db-5.3.28_cve-2019-2708.patch
 f:94eeb1e9f01ca977fc657baa832ec06e:db/Pkgfile
 f:19abef94eef9b8ced2a8337b8d395c8e:filesystem/.footprint
-f:92a173ccd4b488449fa8d3088b82acb3:filesystem/.signature
 f:915cf64e2ab613887db6ce2e2c41eeb4:filesystem/fstab
 f:f05649d0184df6b4550efa3c513dde0e:filesystem/group
 f:5b18f7334387c8f5a4b213ac4264ff2b:filesystem/issue
@@ -50,6 +48,7 @@ f:93464384634f815bf46a995f74823c5e:filesystem/passwd
 f:4faaa4e1ba24038f8638a0cae5046cfb:filesystem/securetty
 f:a79aae150aa240b06d52cc22d41bd3b6:filesystem/shadow
 f:dc4ff0c96d8dcd2141febc8b766e9a6b:filesystem/shells
+f:92a173ccd4b488449fa8d3088b82acb3:filesystem/.signature
 f:b28a45b179424d0dec47807b57740de4:filesystem/Pkgfile
 f:9165347c2c736b0c48b1846004e650e9:flex/.footprint
 f:2169b4b22e7139587cfb1172033fd1e9:flex/.signature

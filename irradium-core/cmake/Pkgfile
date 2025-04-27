@@ -5,10 +5,9 @@
 # Optional: python3-sphinx
 
 name=cmake
-version=3.31.6
-release=2
-source=(https://cmake.org/files/v${version%.*}/$name-$version.tar.gz
-	cmake-3.31.6-curl-8.13.0.patch)
+version=3.31.7
+release=1
+source=(https://cmake.org/files/v${version%.*}/$name-$version.tar.gz)
 
 build() {
     cd $name-$version
@@ -22,20 +21,18 @@ build() {
         export LDFLAGS="-latomic"
     fi
 
-	patch -Np1 -i $SRC/cmake-3.31.6-curl-8.13.0.patch
-
-	CONFIG_SHELL=/bin/bash ./bootstrap --generator=Ninja $PKGMK_CMAKE \
-		--prefix=/usr \
-		--datadir=/share/cmake \
-		--bootstrap-system-libuv \
-		--bootstrap-system-jsoncpp \
-		--bootstrap-system-librhash \
-		--no-system-cppdap \
-		--system-libs \
-		--parallel=${JOBS:-1} \
-		$(prt-get isinst python3-sphinx >/dev/null && echo --sphinx-man) \
-		-- -D CMake_BUILD_LTO=ON \
-		-D BUILD_TESTING=OFF
+    CONFIG_SHELL=/bin/bash ./bootstrap --generator=Ninja $PKGMK_CMAKE \
+        --prefix=/usr \
+        --datadir=/share/cmake \
+        --bootstrap-system-libuv \
+        --bootstrap-system-jsoncpp \
+        --bootstrap-system-librhash \
+        --no-system-cppdap \
+        --system-libs \
+        --parallel=${JOBS:-1} \
+        $(prt-get isinst python3-sphinx >/dev/null && echo --sphinx-man) \
+        -- -D CMake_BUILD_LTO=ON \
+        -D BUILD_TESTING=OFF
 
     ninja -j ${JOBS:-1}
     DESTDIR=$PKG ninja install
