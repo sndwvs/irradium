@@ -161,9 +161,9 @@ f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:6a5dfdeb1c9e57d7277c147d6d09bb1e:firefox/.footprint.aarch64
-f:24687a021a51974f81b71495f6a43ff3:firefox/.signature.riscv64
 f:5d88799932a7ad958e779057651a4cb9:firefox/.footprint.riscv64
 f:7d9fa6aec49e64dcd8043decd6fd0f30:firefox/.signature.aarch64
+f:24687a021a51974f81b71495f6a43ff3:firefox/.signature.riscv64
 f:aa66d9fe66d1b050d7216e8e9af558cc:firefox/Pkgfile
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
@@ -336,9 +336,9 @@ f:5154211a88534e7dcae26e95f0b7fcb0:tcl/.footprint
 f:5f433fbd0ac6f3524bc585a8f6038cce:tcl/.signature
 f:0628dcc755f986173fb3f7c834f25ceb:tcl/Pkgfile
 f:a0d5afb9ca92709336fb1b2e9fbf969e:telegram-desktop/.footprint
+f:d6e2a784213cfcd6022d5ede87ad990a:telegram-desktop/qt-6.9.patch
 f:2aef011ad6b70683c0975e5f78770f77:telegram-desktop/.signature
 f:a49283c39bf0ef56c605b540e7c2d31b:telegram-desktop/Pkgfile
-f:d6e2a784213cfcd6022d5ede87ad990a:telegram-desktop/qt-6.9.patch
 f:5fd9540530092495051bc72484027d38:tk/.footprint
 f:4a0cf636d10c64ff0a5c12fcec684a78:tk/.signature
 f:94c44128030f929514210cd358bcd567:tk/Pkgfile

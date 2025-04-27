@@ -58,11 +58,11 @@ f:a58ff03983cf89e5e690c71f7eab6fff:gcc/gcc-configure-Add-enable-autolink-libatom
 f:9652a27711fa9f7989483ebe21786c16:gcc/gcc-configure-fix-detection-of-atomic-builtins-in-libato.patch
 f:7c9128522053af79791bcfdd55834c2a:gcc/gcc-nocheck-fixincludes.patch
 f:3c13e89423eb43d8ee97675362d3725f:gcc/.footprint.aarch64
-f:830b8639e6590d013fa96c266244d36e:gcc/.footprint.riscv64
 f:121344c2f1ced0c6da4d49033045d18d:gcc/.signature.aarch64
 f:f0f5f0b2e6e33d9ba1e454bbdeab7a98:gcc/.signature.riscv64
 f:6c2efd51d958338dd0e11db1f6643a1f:gcc/Pkgfile
 f:d999afb2c8abba1591154b6e6717e6d8:gcc/gcc-riscv-disable-multilib-support.patch
+f:830b8639e6590d013fa96c266244d36e:gcc/.footprint.riscv64
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:cc7bfdd526782e44ab589016ba953d02:gdbm/.signature
 f:5bc01143ed80933774dd840766e14ae8:gdbm/Pkgfile
@@ -75,8 +75,8 @@ f:518de5e52f9166e58ed613a0d636e774:glibc/locale.gen.in
 f:75931315bf9bc9be15a5e25e4ddd5f0d:glibc/nsswitch.conf
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
 f:3729c5303163f2968af373d64f493107:glibc/.footprint.aarch64
-f:35c94e9d3046899ac9997321b8eb6395:glibc/.footprint.riscv64
 f:6639bce1c8ed019d26bc0d5a01434210:glibc/.signature.aarch64
+f:35c94e9d3046899ac9997321b8eb6395:glibc/.footprint.riscv64
 f:cdb0ec9cc984b891c4a0118154335f98:glibc/.signature.riscv64
 f:6f3ee851ec5e6d034b07904c7e88b296:glibc/Pkgfile
 f:d0716a8f4d12804bb0ada5826c89b2c4:glibc/glibc-2.36-10.patch
@@ -121,7 +121,10 @@ f:dda7a4deaf5a68da6ddcc460f2afe649:ports/Pkgfile
 f:d39f6279b5e125edb9f402b0e4d1865b:ports/contrib.rsync.inactive
 f:bceca3aa28a0ee00f14e5634251a8322:ports/core.rsync
 f:1473ddce72b0475daa6760b804da537c:ports/irradium-contrib.httpup.inactive
+f:229c6985f1d42f31dfb5e0d89ba06ddc:ports/irradium-core.httpup
+f:873157df69a9752589e520f38c1c534a:ports/irradium-opt.httpup
 f:6da446b0cd83ab5484911a2e76ada068:ports/irradium-xfce.httpup.inactive
+f:3ed201b86c93a06f23b7c602269a9423:ports/irradium-xorg.httpup
 f:441330fe7eb6970873d287b0d38f83f6:ports/opt.rsync
 f:d57279f5bd8b1b705b7be4f6866c9ced:ports/xorg.rsync
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
@@ -140,7 +143,6 @@ f:1746a2ef6fb54dc829082d5474ab1b21:eudev/.footprint
 f:35f5b3a0c85e342fe66a0a59c9b46b2b:eudev/.signature
 f:2185fdd0c5c128e6a5d37eb4ad4f6791:eudev/81-irradium.rules
 f:3077f79e6c75bbef53d4bf8ebfa2a374:eudev/Pkgfile
-f:cf1f0d9f6d467e2c2efa689a90413ef6:rc/rc.single
 f:0544125fa2eccfa325af5ccd40a1c1ac:rc/rc.fix.patch
 f:db05a461d6e76ee8d865d1aaa7ef75d3:rc/.footprint
 f:348538cf3d4689808e9608c37f0bf67f:rc/.signature
@@ -154,6 +156,7 @@ f:394d5cff98ab59fd1a0ec64fe79292cb:rc/rc.modules
 f:84045450ba3710bd4569508a82a6a9d3:rc/rc.multi
 f:371358c575530ebe293622909f88b3ad:rc/rc.patch
 f:a46c238c63564a289318b771f81e602d:rc/rc.shutdown
+f:cf1f0d9f6d467e2c2efa689a90413ef6:rc/rc.single
 f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
 f:9be46e727d1f64e28e732c51ea6fe5c6:bash/.signature
 f:05eb7fc2e559f236ff825ec2e1c65861:bash/Pkgfile
