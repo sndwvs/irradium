@@ -40,6 +40,7 @@ f:015f019e2731e18c4229ed5772707feb:db/db-5.3.28-mmap-high-cpu-usage.patch
 f:42de24f40ae2c7ea1b4c59352962029f:db/db-5.3.28_cve-2019-2708.patch
 f:94eeb1e9f01ca977fc657baa832ec06e:db/Pkgfile
 f:19abef94eef9b8ced2a8337b8d395c8e:filesystem/.footprint
+f:92a173ccd4b488449fa8d3088b82acb3:filesystem/.signature
 f:915cf64e2ab613887db6ce2e2c41eeb4:filesystem/fstab
 f:f05649d0184df6b4550efa3c513dde0e:filesystem/group
 f:5b18f7334387c8f5a4b213ac4264ff2b:filesystem/issue
@@ -49,7 +50,6 @@ f:93464384634f815bf46a995f74823c5e:filesystem/passwd
 f:4faaa4e1ba24038f8638a0cae5046cfb:filesystem/securetty
 f:a79aae150aa240b06d52cc22d41bd3b6:filesystem/shadow
 f:dc4ff0c96d8dcd2141febc8b766e9a6b:filesystem/shells
-f:92a173ccd4b488449fa8d3088b82acb3:filesystem/.signature
 f:b28a45b179424d0dec47807b57740de4:filesystem/Pkgfile
 f:9165347c2c736b0c48b1846004e650e9:flex/.footprint
 f:2169b4b22e7139587cfb1172033fd1e9:flex/.signature
@@ -60,8 +60,8 @@ f:a58ff03983cf89e5e690c71f7eab6fff:gcc/gcc-configure-Add-enable-autolink-libatom
 f:9652a27711fa9f7989483ebe21786c16:gcc/gcc-configure-fix-detection-of-atomic-builtins-in-libato.patch
 f:7c9128522053af79791bcfdd55834c2a:gcc/gcc-nocheck-fixincludes.patch
 f:3c13e89423eb43d8ee97675362d3725f:gcc/.footprint.aarch64
-f:ea0e2c6876ce06e05770a7af77018158:gcc/.footprint.riscv64
 f:121344c2f1ced0c6da4d49033045d18d:gcc/.signature.aarch64
+f:ea0e2c6876ce06e05770a7af77018158:gcc/.footprint.riscv64
 f:42833f51c5ae23e9c34359ad86609c42:gcc/.signature.riscv64
 f:e01a1edd6b5cfa9be0160fbc9a6bb3fa:gcc/Pkgfile
 f:306ed9d67ee02ce1065653303e9d4f6a:gcc/gcc-fix-arm64.patch
@@ -79,8 +79,8 @@ f:518de5e52f9166e58ed613a0d636e774:glibc/locale.gen.in
 f:75931315bf9bc9be15a5e25e4ddd5f0d:glibc/nsswitch.conf
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
 f:3729c5303163f2968af373d64f493107:glibc/.footprint.aarch64
-f:192c935d18a97c6d4467528f656efdec:glibc/.footprint.riscv64
 f:6639bce1c8ed019d26bc0d5a01434210:glibc/.signature.aarch64
+f:192c935d18a97c6d4467528f656efdec:glibc/.footprint.riscv64
 f:f672c537225f908bf70f8f9128274500:glibc/.signature.riscv64
 f:6528baf4c90d9ba0d0363431b3157daf:glibc/Pkgfile
 f:ffd59b0f7c8b5d66cdc3a5f33fa50e57:glibc/glibc-2.39-fhs-1.patch
@@ -125,7 +125,10 @@ f:c0cbe8c3ef7b75046fd0eaf8cb9fa301:ports/Pkgfile
 f:ffcfbdbd1979f51825fa796a6296d1ab:ports/contrib.rsync.inactive
 f:9a7ec7bdf5155fbedb02b35e50420cfa:ports/core.rsync
 f:6fae15382775b3bd8121a25ce58cf70c:ports/irradium-contrib.httpup.inactive
+f:775c289306bce523da4973e8d3a3a965:ports/irradium-core.httpup
+f:a8eb4f4073e4cf4d9be7fe498cf07c86:ports/irradium-opt.httpup
 f:6a4987faf2ccaa3ba662b9ce48492c38:ports/irradium-xfce.httpup.inactive
+f:afb1747cb2cf9c9e4abbf49d8b8bb5cf:ports/irradium-xorg.httpup
 f:92891482d508900cd6208bdad41f549d:ports/opt.rsync
 f:939e6f38e938a2ba615e76f40b504c79:ports/xorg.rsync
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
