@@ -6,7 +6,7 @@
 
 name=geany-plugins
 version=2.0
-release=1
+release=2
 source=(https://plugins.geany.org/geany-plugins/$name-$version.tar.bz2)
 
 build() {
@@ -14,7 +14,7 @@ build() {
 
   autoreconf -fi
 
-  export CFLAGS+=' -w' PYTHON=/usr/bin/python
+  export CFLAGS+=' -Wno-incompatible-pointer-types -w' PYTHON=/usr/bin/python
 
   ./configure \
     --prefix=/usr \
