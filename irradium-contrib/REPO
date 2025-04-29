@@ -121,7 +121,8 @@ f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
 f:c35f78590d60146abc6f593e113ef6ba:android-tools/.footprint
 f:46a1f05324771aa19279183b0d677d48:android-tools/.signature
-f:970fe0999a88e794eb13f6ed9cab9605:android-tools/Pkgfile
+f:5a7c243a452747190e6fbde07cc10c34:android-tools/Pkgfile
+f:993eed7af08a51a8f8155769e900cbe9:android-tools/android-tools-35.0.2-fix-protobuf-30.0-compilation.patch
 f:95d427053c3f2589d3eb98e419eac127:audacity/.footprint
 f:caafe7384c6b627d1aa44f2ae003d9e3:audacity/.signature
 f:79f8dbe19564cccf97ca4b71026e8c99:audacity/Pkgfile
@@ -173,9 +174,9 @@ f:e9bd29fc1b535e3394165bcc8347d4e8:freerdp/d0c5b1ae.patch
 f:b12bf9ffeeb516dc7dd0f3c50dd1f3bc:geany/.footprint
 f:52f0c3f34ea09772683334b565b146b8:geany/.signature
 f:0b68eb63a6d2ffaf77ed0dd6279fa343:geany/Pkgfile
-f:a0aef08e2b7fb14a9b1db3c12536a94d:geany-plugins/Pkgfile
 f:061e0dad6c80016187b1bd101ac5ee6f:geany-plugins/.footprint
 f:01ed2d541fb30ae333260b667cd26e22:geany-plugins/.signature
+f:a0aef08e2b7fb14a9b1db3c12536a94d:geany-plugins/Pkgfile
 f:026e4f0c29fb9a901487f616b02e850b:gn/.footprint
 f:f31063a7fa96119fe9ae603953705da2:gn/.signature
 f:f3a9f8d67bd216d7f56ed977c3394e54:gn/Pkgfile

@@ -6,9 +6,12 @@
 name=android-tools
 version=35.0.2
 release=2
-source=(https://github.com/nmeum/$name/releases/download/$version/$name-$version.tar.xz)
+source=(https://github.com/nmeum/$name/releases/download/$version/$name-$version.tar.xz
+        android-tools-35.0.2-fix-protobuf-30.0-compilation.patch)
 
 build() {
+
+    patch -Np 1 -d "$name-$version/vendor/extras" < $SRC/android-tools-35.0.2-fix-protobuf-30.0-compilation.patch
 
     export LDFLAGS="$LDFLAGS -Wl,--copy-dt-needed-entries"
 
