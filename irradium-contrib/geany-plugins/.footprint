@@ -37,6 +37,8 @@ drwxr-xr-x	root/root	usr/lib/geany/
 -rwxr-xr-x	root/root	usr/lib/geany/geanyvc.so
 -rwxr-xr-x	root/root	usr/lib/geany/geniuspaste.la
 -rwxr-xr-x	root/root	usr/lib/geany/geniuspaste.so
+-rwxr-xr-x	root/root	usr/lib/geany/git-changebar.la
+-rwxr-xr-x	root/root	usr/lib/geany/git-changebar.so
 -rwxr-xr-x	root/root	usr/lib/geany/keyrecord.la
 -rwxr-xr-x	root/root	usr/lib/geany/keyrecord.so
 -rwxr-xr-x	root/root	usr/lib/geany/latex.la
@@ -71,6 +73,8 @@ drwxr-xr-x	root/root	usr/lib/geany/
 -rwxr-xr-x	root/root	usr/lib/geany/updatechecker.so
 -rwxr-xr-x	root/root	usr/lib/geany/vimode.la
 -rwxr-xr-x	root/root	usr/lib/geany/vimode.so
+-rwxr-xr-x	root/root	usr/lib/geany/workbench.la
+-rwxr-xr-x	root/root	usr/lib/geany/workbench.so
 -rwxr-xr-x	root/root	usr/lib/geany/xmlsnippets.la
 -rwxr-xr-x	root/root	usr/lib/geany/xmlsnippets.so
 -rwxr-xr-x	root/root	usr/lib/libgeanypluginutils.la
@@ -193,6 +197,12 @@ drwxr-xr-x	root/root	usr/share/doc/geany-plugins/geniuspaste/
 -rw-r--r--	root/root	usr/share/doc/geany-plugins/geniuspaste/ChangeLog (EMPTY)
 -rw-r--r--	root/root	usr/share/doc/geany-plugins/geniuspaste/NEWS (EMPTY)
 -rw-r--r--	root/root	usr/share/doc/geany-plugins/geniuspaste/README
+drwxr-xr-x	root/root	usr/share/doc/geany-plugins/git-changebar/
+-rw-r--r--	root/root	usr/share/doc/geany-plugins/git-changebar/AUTHORS
+-rw-r--r--	root/root	usr/share/doc/geany-plugins/git-changebar/COPYING
+-rw-r--r--	root/root	usr/share/doc/geany-plugins/git-changebar/ChangeLog (EMPTY)
+-rw-r--r--	root/root	usr/share/doc/geany-plugins/git-changebar/NEWS (EMPTY)
+-rw-r--r--	root/root	usr/share/doc/geany-plugins/git-changebar/README
 drwxr-xr-x	root/root	usr/share/doc/geany-plugins/keyrecord/
 -rw-r--r--	root/root	usr/share/doc/geany-plugins/keyrecord/AUTHORS
 -rw-r--r--	root/root	usr/share/doc/geany-plugins/keyrecord/COPYING
@@ -307,6 +317,12 @@ drwxr-xr-x	root/root	usr/share/doc/geany-plugins/vimode/
 -rw-r--r--	root/root	usr/share/doc/geany-plugins/vimode/ChangeLog (EMPTY)
 -rw-r--r--	root/root	usr/share/doc/geany-plugins/vimode/NEWS (EMPTY)
 -rw-r--r--	root/root	usr/share/doc/geany-plugins/vimode/README
+drwxr-xr-x	root/root	usr/share/doc/geany-plugins/workbench/
+-rw-r--r--	root/root	usr/share/doc/geany-plugins/workbench/AUTHORS
+-rw-r--r--	root/root	usr/share/doc/geany-plugins/workbench/COPYING
+-rw-r--r--	root/root	usr/share/doc/geany-plugins/workbench/ChangeLog (EMPTY)
+-rw-r--r--	root/root	usr/share/doc/geany-plugins/workbench/NEWS
+-rw-r--r--	root/root	usr/share/doc/geany-plugins/workbench/README
 drwxr-xr-x	root/root	usr/share/doc/geany-plugins/xmlsnippets/
 -rw-r--r--	root/root	usr/share/doc/geany-plugins/xmlsnippets/AUTHORS
 -rw-r--r--	root/root	usr/share/doc/geany-plugins/xmlsnippets/COPYING
@@ -332,6 +348,8 @@ drwxr-xr-x	root/root	usr/share/geany-plugins/geniuspaste/pastebins/
 -rw-r--r--	root/root	usr/share/geany-plugins/geniuspaste/pastebins/paste.debian.net.conf
 -rw-r--r--	root/root	usr/share/geany-plugins/geniuspaste/pastebins/pastebin.geany.org.conf
 -rw-r--r--	root/root	usr/share/geany-plugins/geniuspaste/pastebins/sprunge.us.conf
+drwxr-xr-x	root/root	usr/share/geany-plugins/git-changebar/
+-rw-r--r--	root/root	usr/share/geany-plugins/git-changebar/prefs.ui
 drwxr-xr-x	root/root	usr/share/geany-plugins/overview/
 -rw-r--r--	root/root	usr/share/geany-plugins/overview/prefs.ui
 drwxr-xr-x	root/root	usr/share/geany-plugins/pohelper/
