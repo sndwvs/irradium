@@ -433,10 +433,13 @@ f:f5ab33ea05c3c026384dd1bda255438c:rxvt-unicode/rxvt.tmux.patch
 f:52ea3ad1a4c24a7663a3c6ed8aa98095:rkdeveloptool/.footprint
 f:338efa5286ab44dd604cb39fdce56c74:rkdeveloptool/.signature
 f:b9575beb4eac90837a56e37d33c6885a:rkdeveloptool/Pkgfile
-f:b2d5e1a6ce4327c3697c8aa3d0e5586f:tg_owt/.footprint
-f:85b284948e6e28f806097650eafee6e2:tg_owt/.signature
-f:dc3f374bc3541756e2ee45a048d32f83:tg_owt/Pkgfile
-f:9a947d675b43afb182983f8786a05ef6:tg_owt/ffmpeg7.patch
+f:357dfaa20af521331d9771a5f7218ab9:tg_owt/.footprint
+f:e96cfbcdad4477060d1dcc9feeb54656:tg_owt/.signature
+f:94ddcf519555588da8a612409100ac2c:tg_owt/Pkgfile
+f:cec977ebe8590aa485f1036aee5fbc7b:tg_owt/cstdint.patch
+f:815c0e4b2d7baaf455a38c728f1ee7f8:tg_owt/gcc12.patch
+f:f267b2d6e4135cb3e24b5a26892bf731:tg_owt/gcc13.patch
+f:19156eb38cbbd3019a6c27aef157761e:tg_owt/pipewire.patch
 f:672d52f4e522c3a5366b472f8b9bac34:hostapd/.footprint
 f:532af9dc58bfb887e923f87795cb3af8:hostapd/.signature
 f:9fc18c8eab771033b956b4a6c881beb4:hostapd/0001-hostapd-Add-the-missing-CONFIG_SAE-option-to-the-def.patch
