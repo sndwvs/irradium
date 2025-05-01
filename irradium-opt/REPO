@@ -15,7 +15,6 @@ d:llvm
 d:mc
 d:medit
 d:pango-compat
-d:python
 d:qt5
 d:qt6-base
 d:rust
@@ -52,9 +51,9 @@ f:9b7540a197371561b62b9de0e67617af:ffmpeg-mpp/Pkgfile
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg-mpp/add-av_stream_get_first_dts-for-chromium.patch
 f:dae0c10c99399580c929fc100e79faef:ffmpeg-mpp/ffmpeg-x264-10bit.sh
 f:df409f613c10ae0b7e19e37e66717714:ffmpeg-mpp/rkmpp-6.patch
+f:3f81f14e70dd2807c44a9feacfef4d7a:harfbuzz/Pkgfile
 f:a019738a494c57dc81622c6f0995e723:harfbuzz/.footprint
 f:b9f68d02910ababb6b6127f3aeaa11b2:harfbuzz/.signature
-f:3f81f14e70dd2807c44a9feacfef4d7a:harfbuzz/Pkgfile
 f:5db6190db9bd0114880d1295e86e5781:libart_lgpl/Pkgfile
 f:58263621cc2c46c26e4bb2aa56cde0c7:libart_lgpl/.footprint
 f:4a20a4462b31e81c055e8872e284e185:libart_lgpl/.signature
@@ -108,12 +107,6 @@ f:4058919da1d2dae7a7dfe61d74d38643:medit/Pkgfile
 f:c0a17c722f85320e7d1e7cf73fcd25ee:pango-compat/.footprint
 f:43a55a25d68fb0dff362b168aa2eadee:pango-compat/.signature
 f:1f9176f6c67b5d36707ba4f94a4e8281:pango-compat/Pkgfile
-f:5b7e8a119e09a1cbe747695617f6bc97:python/.footprint
-f:8d6089dbaf418afde5785bded444c6b6:python/.signature
-f:ebbe2c197d4cf6fbce10a17e09d2a609:python/CVE-2019-20907.patch
-f:59562d92ee153e7501f73be4ebd9e636:python/CVE-2020-26116.patch
-f:08323c8fe8a3c55d4609ebd6cd0b41ee:python/CVE-2021-3177.patch
-f:d51721f0feb9a204875af41db0e9a3de:python/Pkgfile
 f:67165bacd3231b57d7b7db1e6bcb7d89:qt5/qt5-logo.png
 f:bfc114bfc210c5b5996941f7e186f8b3:qt5/qt5-cflags.patch
 f:1eb31303f498bd070c0954effcdeaee1:qt5/qtbase-5.15.8-fix-missing-qtsan-include.patch
