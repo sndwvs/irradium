@@ -18,9 +18,9 @@ f:80e849824bbe614b2a87b956bf7fa46a:xorg-xcb-util-xrm/.footprint
 f:c76ef6c956f03063e01c6fb62ce7bd2d:xorg-xcb-util-xrm/.signature
 f:f64c724c19b49611ec9303cb75e44672:xorg-xcb-util-xrm/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
-f:d39e033321d98185d873746167d60c36:mesa/.footprint.riscv64
-f:f74a9e59ff71d8ddc2dc2756397c38a2:mesa/.signature.aarch64
-f:348d688ed2dcc040dedbbef57760b816:mesa/.signature.riscv64
+f:bfa7adab6e09015aa7e0e71975b54ef3:mesa/.footprint.riscv64
+f:a1139d205d0b5da00801aba411b00280:mesa/.signature.aarch64
+f:29ccbbac77f31fc61877d9f802540e57:mesa/.signature.riscv64
 f:fc4fe639a304ef662b1c95c289800d78:mesa/Pkgfile
 f:8131f4692810118d4c7882634169f585:mesa/patches/0000-mesa-20.1.1-fix-opencl.patch
 f:90ff24f8710a92bbd158d50e46cb448d:mesa/patches/0001-mesa-23.1-x86_32-llvm-detection.patch
@@ -32,7 +32,7 @@ f:1ef90513ba02dea4aa433947d2d99d6c:mesa/patches/0004-mesa-20.3.0-meson-radeon-ar
 f:f08a4cf6921ea89bbe973a4509cde998:mesa/patches/0005-mesa-24-llvmspirv-detection.patch
 f:e5ca988223c90f2a22caf7539f4a512a:mesa/patches/0008-mesa-24.0-osmesa-fix-civ3.patch
 f:b4f8779303542471e8a279f27721e9b4:mesa/README.md
-f:28192c7e2418a2105fde2871dd5f6983:mesa/.footprint.aarch64
+f:a2847607a6262959317b7cdc8bde5a1e:mesa/.footprint.aarch64
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:96f400c2e676aa9c2da5aed08bdba7f3:xorg-xf86-video-fbdev/.signature
 f:6e705c0e55a603a473afd94710d12d56:xorg-xf86-video-fbdev/Pkgfile
