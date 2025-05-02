@@ -21,7 +21,7 @@ f:d32239bcb673463ab874e80d47fae504:COPYING
 f:d39e033321d98185d873746167d60c36:mesa/.footprint.riscv64
 f:f74a9e59ff71d8ddc2dc2756397c38a2:mesa/.signature.aarch64
 f:348d688ed2dcc040dedbbef57760b816:mesa/.signature.riscv64
-f:c86f2959a593a37725558278b0cbebd5:mesa/Pkgfile
+f:fc4fe639a304ef662b1c95c289800d78:mesa/Pkgfile
 f:8131f4692810118d4c7882634169f585:mesa/patches/0000-mesa-20.1.1-fix-opencl.patch
 f:90ff24f8710a92bbd158d50e46cb448d:mesa/patches/0001-mesa-23.1-x86_32-llvm-detection.patch
 f:29786f7d54c57f1e83e955a60f24fced:mesa/patches/0006-mesa-buildsystem-improvements.patch
