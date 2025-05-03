@@ -211,5 +211,5 @@ f:0be43cac70d6109c16ece5462a3eb3dd:wpa_supplicant/irradium-wlan.patch
 f:a804f8c2828b929446a928d02be98018:wpa_supplicant/wlan
 f:5b505ff68474564b9eb44b04445ba730:wpa_supplicant/wpa_supplicant
 f:1cc2701f7267dad2c907ca304d22cc6c:lame/.footprint
-f:7df8145710ab368e7b9f4fd11cc7b3be:lame/.signature
+f:cce38c543bd5d52167e4fb7ec30daebc:lame/.signature
 f:52814a23ddd928be2c0d0632cc8bf84f:lame/Pkgfile
