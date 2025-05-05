@@ -174,9 +174,9 @@ f:e9bd29fc1b535e3394165bcc8347d4e8:freerdp/d0c5b1ae.patch
 f:b12bf9ffeeb516dc7dd0f3c50dd1f3bc:geany/.footprint
 f:52f0c3f34ea09772683334b565b146b8:geany/.signature
 f:0b68eb63a6d2ffaf77ed0dd6279fa343:geany/Pkgfile
+f:a0aef08e2b7fb14a9b1db3c12536a94d:geany-plugins/Pkgfile
 f:061e0dad6c80016187b1bd101ac5ee6f:geany-plugins/.footprint
 f:01ed2d541fb30ae333260b667cd26e22:geany-plugins/.signature
-f:a0aef08e2b7fb14a9b1db3c12536a94d:geany-plugins/Pkgfile
 f:026e4f0c29fb9a901487f616b02e850b:gn/.footprint
 f:f31063a7fa96119fe9ae603953705da2:gn/.signature
 f:f3a9f8d67bd216d7f56ed977c3394e54:gn/Pkgfile
@@ -266,7 +266,7 @@ f:22f915e02e330220075b895672faf62d:libreoffice/.footprint.riscv64
 f:946e531ab12fd1f52243f925464fe770:libreoffice/.signature.aarch64
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
 f:1194096f6e450fea9fe6a63c7eda31ce:libreoffice/.signature.riscv64
-f:3b4257fa668d44877f719390588e2e6e:libreoffice/Pkgfile
+f:e8c9b7f1f3e455d4fb4cdb8facb2c57c:libreoffice/Pkgfile
 f:330406e43a76603e3c86156ea1e0a779:libreoffice/makefile.in.patch
 f:faf069d19324a53f32cceaa8e7cc0ab2:libreoffice/libreoffice-7.6-qt6-wayland-egl.patch
 f:369cab52bd225255130b91b1862982f6:libreoffice/mdds.patch
