@@ -1,11 +1,11 @@
 # Description: The Mozilla Firefox browser with Alsa support
 # URL: https://www.mozilla.com/firefox/
 # Maintainer: John McQuah, jmcquah at disroot dot org
-# Depends on: alsa-lib aom autoconf-2.13 brotli cbindgen clang dav1d dbus-glib ffmpeg graphite2 libevent libnotify libvpx libwebp libxkbcommon nodejs nss python3-pip unzip xorg-libxcomposite xorg-libxcursor xorg-libxinerama xorg-libxt zip
+# Depends on: alsa-lib aom autoconf-2.13 brotli cbindgen dav1d dbus-glib ffmpeg graphite2 libevent libnotify libvpx libwebp libxkbcommon nodejs nss unzip xorg-libxcomposite xorg-libxcursor xorg-libxinerama xorg-libxt zip
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wayland
 
 name=firefox
-version=137.0.2
+version=138.0.1
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -32,7 +32,7 @@ build() {
   mkdir -p "$PKGMK_SOURCE_DIR/rust"
   export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
 
-  export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=system
+  export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none
   export MOZBUILD_STATE_PATH=${PWD}/mozbuild
 
   cat > .mozconfig << EOF
@@ -41,7 +41,6 @@ build() {
   unset MOZ_TELEMETRY_REPORTING
   ac_add_options --prefix=/usr
   ac_add_options --libdir=/usr/lib
-  ac_add_options --with-libclang-path=/usr/lib
   ac_add_options --enable-strip
   ac_add_options --enable-release
   ac_add_options --enable-install-strip
@@ -59,6 +58,7 @@ build() {
   ac_add_options --with-system-webp
   ac_add_options --with-system-zlib
   ac_add_options --without-wasm-sandboxed-libraries
+  ac_add_options --disable-eme
   ac_add_options --disable-tests
   ac_add_options --disable-vtune
   ac_add_options --disable-updater
@@ -134,15 +134,6 @@ EOF
   # Disable notification when build system has finished
   export MOZ_NOSPAM=1
 
-  # Specify the Python environment to use
-  #export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=system
-  export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=pip
-  export PIP_NETWORK_INSTALL_RESTRICTED_VIRTUALENVS=mach
-  mkdir -p $SRC/bin
-  ln -sf /usr/bin/pip3 $SRC/bin/pip
-  ln -sf /usr/bin/python3 $SRC/bin/python
-  export PATH="$SRC/bin:$PATH"
-
   # python/mach/mach/mixin/process.py fails to detect SHELL
   export SHELL='/bin/bash'
 
@@ -150,8 +141,8 @@ EOF
   DESTDIR=$PKG ./mach install
 
   # Remove crap
-  rm -r $PKG/usr/lib/firefox/browser/features
-  rm $PKG/usr/lib/firefox/removed-files
+  rm -rf $PKG/usr/lib/firefox/browser/features
+  rm -f $PKG/usr/lib/firefox/removed-files
 
   install -D -m 0644 $SRC/firefox.desktop $PKG/usr/share/applications/firefox.desktop
 
