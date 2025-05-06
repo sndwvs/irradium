@@ -165,7 +165,7 @@ f:6a5dfdeb1c9e57d7277c147d6d09bb1e:firefox/.footprint.aarch64
 f:5d88799932a7ad958e779057651a4cb9:firefox/.footprint.riscv64
 f:7d9fa6aec49e64dcd8043decd6fd0f30:firefox/.signature.aarch64
 f:24687a021a51974f81b71495f6a43ff3:firefox/.signature.riscv64
-f:ca557b05de778e678d2e909f7b69d3cb:firefox/Pkgfile
+f:7cd3365012f44aaf0df5c90c70787a9b:firefox/Pkgfile
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
 f:f27fa622f17d099ba1bc08c4061acda6:freerdp/1ef7b9e3.patch
