@@ -155,6 +155,7 @@ f:ed0e9172864f40da32f26a1ef4a8c7cf:elogind/.footprint
 f:745479007a0c6c824aa1fc0d4c219bae:elogind/.signature
 f:2dbc22ef73a13d7a384aa1fdb61878bb:elogind/Pkgfile
 f:c5716166dc3207c34e27d55c6907991a:elogind/login-10-elogind.conf.manpage.fix.patch
+f:7d9fa6aec49e64dcd8043decd6fd0f30:firefox/.signature.aarch64
 f:ce8226895c981265c806fe855308406d:firefox/README
 f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
@@ -164,7 +165,6 @@ f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:6a5dfdeb1c9e57d7277c147d6d09bb1e:firefox/.footprint.aarch64
 f:5d88799932a7ad958e779057651a4cb9:firefox/.footprint.riscv64
 f:24687a021a51974f81b71495f6a43ff3:firefox/.signature.riscv64
-f:7d9fa6aec49e64dcd8043decd6fd0f30:firefox/.signature.aarch64
 f:aa66d9fe66d1b050d7216e8e9af558cc:firefox/Pkgfile
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
@@ -181,8 +181,8 @@ f:026e4f0c29fb9a901487f616b02e850b:gn/.footprint
 f:f31063a7fa96119fe9ae603953705da2:gn/.signature
 f:f3a9f8d67bd216d7f56ed977c3394e54:gn/Pkgfile
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
-f:634f510f04c6e7ddbd0645ca597665ea:go/.footprint
-f:af5e2b970f23140ab352021658f776eb:go/.signature
+f:6d142930033682de505f807f11702f3c:go/.footprint
+f:7724f1b534e40a14d83bb81286c026fe:go/.signature
 f:97834b9b3bc78edb72fb9f45ff88399f:go/Pkgfile
 f:10ca5085e0dfb78c27e12b84d010c9ae:gtest/.footprint
 f:32eb7c972f06f9cb5409a0e5094a69af:gtest/.signature
