@@ -4,8 +4,8 @@
 # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
 
 name=chromium
-version=133.0.6943.98
-release=2
+version=136.0.7103.59
+release=1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz
         chromium.default chromium.sh
         patches/0001-widevine-support-for-arm.patch
@@ -14,6 +14,8 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
         patches/use-oauth2-client-switches-as-default.patch
         patches/compiler-rt-adjust-paths.patch
         patches/increase-fortify-level.patch
+        patches/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
+        patches/chromium-136-drop-nodejs-ver-check.patch
 )
 
 build() {
@@ -92,6 +94,10 @@ build() {
     patch -Np1 -i $SRC/use-oauth2-client-switches-as-default.patch || exit 1
 
     # Upstream fixes
+    patch -Np1 -i $SRC/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
+
+    # Fixes from Gentoo
+    patch -Np1 -i $SRC/chromium-136-drop-nodejs-ver-check.patch
 
     # Allow libclang_rt.builtins from compiler-rt >= 16 to be used
     patch -Np1 -i $SRC/compiler-rt-adjust-paths.patch || exit 1
@@ -166,7 +172,8 @@ build() {
       'link_pulseaudio=true'
       'use_custom_libcxx=true' # https://github.com/llvm/llvm-project/issues/61705
       'use_gnome_keyring=false'
-      'use_qt=false' # look into enabling this
+      'use_qt5=false'
+      'use_qt6=false'
       'use_gold=false'
       'use_sysroot=false'
       'use_system_libffi=true'
