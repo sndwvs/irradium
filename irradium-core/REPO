@@ -119,6 +119,9 @@ f:c439515bdbd1e17d8a74c2a37d285718:ports/irradium-xfce.pub
 f:1ec983509e56966c5a7945a854c0f7bf:ports/irradium-xorg.pub
 f:0d1f1fde50a9bd743d9cac6b235f038c:ports/opt.pub
 f:69927e5d0ae5dc3455faeaac916c4db2:ports/xorg.pub
+f:71ea9279e879c225c26a87e64a98d2d2:ports/.signature
+f:c0cbe8c3ef7b75046fd0eaf8cb9fa301:ports/Pkgfile
+f:ffcfbdbd1979f51825fa796a6296d1ab:ports/contrib.rsync.inactive
 f:9a7ec7bdf5155fbedb02b35e50420cfa:ports/core.rsync
 f:6fae15382775b3bd8121a25ce58cf70c:ports/irradium-contrib.httpup.inactive
 f:775c289306bce523da4973e8d3a3a965:ports/irradium-core.httpup
@@ -127,9 +130,6 @@ f:6a4987faf2ccaa3ba662b9ce48492c38:ports/irradium-xfce.httpup.inactive
 f:afb1747cb2cf9c9e4abbf49d8b8bb5cf:ports/irradium-xorg.httpup
 f:92891482d508900cd6208bdad41f549d:ports/opt.rsync
 f:939e6f38e938a2ba615e76f40b504c79:ports/xorg.rsync
-f:71ea9279e879c225c26a87e64a98d2d2:ports/.signature
-f:c0cbe8c3ef7b75046fd0eaf8cb9fa301:ports/Pkgfile
-f:ffcfbdbd1979f51825fa796a6296d1ab:ports/contrib.rsync.inactive
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:1e68ce5a010624ae6f5c305937163e62:prt-get/fsearch-footprint-add-multi-arch-riscv64-aarch64.patch
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
@@ -181,8 +181,8 @@ f:efc59841720a25290b5ce7c597dd9f54:iproute2/net.iproute2
 f:33efddcd70591b6f0b65bb9caf9f7ee3:iproute2/.footprint
 f:16ab7b934b86bd2bd7c7850101cc4246:iproute2/.signature
 f:34a1893cf0b805b204ca6ed82fc08ab3:iproute2/Pkgfile
-f:536f3ee0bab1ed90602ff5dbddb189a2:gettext/.footprint
-f:a70f95c70c19a591904b5e8b9a3560c1:gettext/.signature
+f:a546c97b48488de8a4634f20169cdc7c:gettext/.footprint
+f:6d9ec668a1d76a31014112a01aa6d135:gettext/.signature
 f:faec4e8cde36a4bb422951fef882eed1:gettext/Pkgfile
 f:24cef8c76749c037b37ffa7f73d6cb36:python3-setuptools/.footprint
 f:1d584503bb841f733598ca1c59632a68:python3-setuptools/.signature
