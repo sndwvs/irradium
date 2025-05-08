@@ -16,6 +16,7 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
         patches/increase-fortify-level.patch
         patches/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
         patches/chromium-136-drop-nodejs-ver-check.patch
+        patches/disable-clang-warning-suppression-flag.patch
 )
 
 build() {
@@ -104,6 +105,9 @@ build() {
 
     # Increase _FORTIFY_SOURCE level to match Arch's default flags
     patch -Np1 -i $SRC/increase-fortify-level.patch || exit 1
+
+    # Disable usage of --warning-suppression-mappings flag which needs clang 20
+    patch -Np1 -i $SRC/disable-clang-warning-suppression-flag.patch
 
     # Fixes for building with libstdc++ instead of libc++
 

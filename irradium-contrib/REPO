@@ -130,6 +130,7 @@ f:cca42a21584d2e7a49baa60bb486c5d2:chromium/post-install
 f:3ab2e8fdace83afc1f7ed48d53394a31:chromium/patches/compiler-rt-adjust-paths.patch
 f:3d33f8598a13d0b25834578b73d7e6db:chromium/patches/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
 f:4b73c5caa891c0ca3c170b3688ec15c2:chromium/patches/chromium-136-drop-nodejs-ver-check.patch
+f:5ef922c9b8b5af86d71e045d5b3721b5:chromium/patches/disable-clang-warning-suppression-flag.patch
 f:8f6657577ad6609a22f2f7efe2fa237f:chromium/patches/increase-fortify-level.patch
 f:253856444af1433e94c378a481d685ae:chromium/patches/0001-widevine-support-for-arm.patch
 f:3eb7a7bbf663a4c9b242ef833073f709:chromium/patches/0002-Run-blink-bindings-generation-single-threaded.patch
@@ -141,7 +142,7 @@ f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
 f:90d951170ad129272195336eedbad0fa:chromium/.footprint.aarch64
 f:6d883cdb7a7de1fb1a2c28f9daa3ac5b:chromium/.signature.aarch64
-f:5e83a138fae78479acc7b52a1fcdb8e3:chromium/Pkgfile
+f:44c0e59c4bc06d704678d2a319ce4c57:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:2a3fe0bbe2b23a66764034bd56fc2411:deadbeef/ddb_dsp_libretro_fix_aarch64_riscv64.patch
 f:56a2ee704d2bb8275f70d226c78df704:deadbeef/.footprint
@@ -356,6 +357,9 @@ f:253856444af1433e94c378a481d685ae:ungoogled-chromium/patches/0001-widevine-supp
 f:3eb7a7bbf663a4c9b242ef833073f709:ungoogled-chromium/patches/0002-Run-blink-bindings-generation-single-threaded.patch
 f:f39af46a37b6b3dfebfb11bd27ffeeb2:ungoogled-chromium/patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
 f:3554002a9bb2c060784e47032d4bedf1:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
+f:5ef922c9b8b5af86d71e045d5b3721b5:ungoogled-chromium/patches/disable-clang-warning-suppression-flag.patch
+f:3d33f8598a13d0b25834578b73d7e6db:ungoogled-chromium/patches/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
+f:4b73c5caa891c0ca3c170b3688ec15c2:ungoogled-chromium/patches/chromium-136-drop-nodejs-ver-check.patch
 f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:90d951170ad129272195336eedbad0fa:ungoogled-chromium/.footprint
