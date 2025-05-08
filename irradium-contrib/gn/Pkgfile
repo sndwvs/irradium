@@ -4,12 +4,11 @@
 # Depends on: python3 zstd
 
 name=gn
-version=20240405
+version=20250320
 release=1
-source=(https://s3.sakamoto.pl/lnl-aports-snapshots/$name-415b3b19e094cd4b6982147693485df65037f942.tar.zst)
+source=(https://s3.sakamoto.pl/lnl-aports-snapshots/$name-18602f6cf1168cf78302024043edc02e8bad2ffb.tar.zst)
 
 build() {
-    tar xf $SRC/$name-*.tar.zst
     cd $name
 
     python3 ./build/gen.py \
