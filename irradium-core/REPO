@@ -70,6 +70,7 @@ f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:cc7bfdd526782e44ab589016ba953d02:gdbm/.signature
 f:4b8cd5b1617cce9f20f464ef2b24a0d0:gdbm/Pkgfile
 f:5d37085c6a7714fcc5443f05a07a873d:glibc/.nostrip
+f:ffd59b0f7c8b5d66cdc3a5f33fa50e57:glibc/glibc-2.39-fhs-1.patch
 f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
 f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
 f:f7fefce570a3c776e26e778c5e401490:glibc/ld.so.conf
@@ -82,7 +83,6 @@ f:6639bce1c8ed019d26bc0d5a01434210:glibc/.signature.aarch64
 f:192c935d18a97c6d4467528f656efdec:glibc/.footprint.riscv64
 f:f672c537225f908bf70f8f9128274500:glibc/.signature.riscv64
 f:6528baf4c90d9ba0d0363431b3157daf:glibc/Pkgfile
-f:ffd59b0f7c8b5d66cdc3a5f33fa50e57:glibc/glibc-2.39-fhs-1.patch
 f:8ade3a1b3e11426f6c070daa3906c6f7:glibc/post-install
 f:cedc5025aefdb42a0f4713fce634831d:kbd/.footprint
 f:43af1d6335b8683cdfc28fce3d3d4351:kbd/.signature
@@ -183,7 +183,7 @@ f:16ab7b934b86bd2bd7c7850101cc4246:iproute2/.signature
 f:34a1893cf0b805b204ca6ed82fc08ab3:iproute2/Pkgfile
 f:a546c97b48488de8a4634f20169cdc7c:gettext/.footprint
 f:6d9ec668a1d76a31014112a01aa6d135:gettext/.signature
-f:faec4e8cde36a4bb422951fef882eed1:gettext/Pkgfile
+f:e28aa1f9dae0e5c71c0f8ed9753ef41c:gettext/Pkgfile
 f:24cef8c76749c037b37ffa7f73d6cb36:python3-setuptools/.footprint
 f:1d584503bb841f733598ca1c59632a68:python3-setuptools/.signature
 f:d914f708e133d10f420ba921a68c7b5b:python3-setuptools/Pkgfile
