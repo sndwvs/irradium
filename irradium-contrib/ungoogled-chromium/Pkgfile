@@ -4,7 +4,7 @@
 # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
 
 name=ungoogled-chromium
-version=136.0.7103.59
+version=136.0.7103.92
 release=1
 _uc_version=$version-1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/${name#*-}-$version.tar.xz
@@ -19,6 +19,7 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/${nam
         patches/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
         patches/chromium-136-drop-nodejs-ver-check.patch
         patches/disable-clang-warning-suppression-flag.patch
+        patches/gperf.patch
 )
 
 build() {
@@ -110,6 +111,9 @@ build() {
 
     # Disable usage of --warning-suppression-mappings flag which needs clang 20
     patch -Np1 -i $SRC/disable-clang-warning-suppression-flag.patch
+
+    # fix fallthrough annotation does not directly precede
+    patch -Np1 -i $SRC/gperf.patch
 
     # Fixes for building with libstdc++ instead of libc++
 

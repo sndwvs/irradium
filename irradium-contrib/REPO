@@ -361,11 +361,12 @@ f:3554002a9bb2c060784e47032d4bedf1:ungoogled-chromium/patches/use-oauth2-client-
 f:5ef922c9b8b5af86d71e045d5b3721b5:ungoogled-chromium/patches/disable-clang-warning-suppression-flag.patch
 f:3d33f8598a13d0b25834578b73d7e6db:ungoogled-chromium/patches/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
 f:4b73c5caa891c0ca3c170b3688ec15c2:ungoogled-chromium/patches/chromium-136-drop-nodejs-ver-check.patch
+f:3effa10a0c417fcba9953671b542c129:ungoogled-chromium/patches/gperf.patch
 f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:90d951170ad129272195336eedbad0fa:ungoogled-chromium/.footprint
 f:ef15ef7579ba29dfc6b5cbd33cb406f4:ungoogled-chromium/.signature
-f:a542cd468bd664f39c9606a6a6a5be0e:ungoogled-chromium/Pkgfile
+f:38b7a14f6a5f4e827dda881944c79713:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
 f:0cb29db19dda2ae4817b0380de127c8b:urxvt-perls/.signature
