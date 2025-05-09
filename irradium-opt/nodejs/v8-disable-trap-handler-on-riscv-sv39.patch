@@ -13,12 +13,12 @@ memory for new instance` errors
 
 --- a/deps/v8/src/trap-handler/trap-handler.h
 +++ b/deps/v8/src/trap-handler/trap-handler.h
-@@ -46,7 +46,7 @@
- #define V8_TRAP_HANDLER_SUPPORTED true
- // RISCV64 (non-simulator) on Linux.
- #elif V8_TARGET_ARCH_RISCV64 && V8_HOST_ARCH_RISCV64 && V8_OS_LINUX
+@@ -23,7 +23,7 @@ namespace v8::internal::trap_handler {
+ // Arm64 (non-simulator) on Linux, Windows, MacOS.
+ #elif V8_TARGET_ARCH_ARM64 && V8_HOST_ARCH_ARM64 && \
+     ((V8_OS_LINUX && !V8_OS_ANDROID) || V8_OS_WIN || V8_OS_DARWIN)
 -#define V8_TRAP_HANDLER_SUPPORTED true
 +#define V8_TRAP_HANDLER_SUPPORTED false
- // RISCV64 simulator on x64 on Linux
- #elif V8_TARGET_ARCH_RISCV64 && V8_HOST_ARCH_X64 && V8_OS_LINUX
- #define V8_TRAP_HANDLER_VIA_SIMULATOR
+ // Arm64 simulator on x64 on Linux, Mac, or Windows.
+ //
+ // The simulator case uses some inline assembly code, which cannot be
