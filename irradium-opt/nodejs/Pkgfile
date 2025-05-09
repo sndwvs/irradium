@@ -9,7 +9,7 @@ version=24.0.1
 release=1
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
   unbundle-uv.patch
-  riscv-trap-handler.patch
+  v8-riscv-trap-handler.patch
   v8-disable-trap-handler-on-riscv-sv39.patch)
 
 build() {
@@ -19,7 +19,7 @@ build() {
   rm deps/uv/uv.gyp deps/zlib/zlib.gyp
 
   # fix riscv64
-  patch -Np1 -i $SRC/riscv-trap-handler.patch
+  patch -Np1 -i $SRC/v8-riscv-trap-handler.patch
   patch -Np1 -i $SRC/v8-disable-trap-handler-on-riscv-sv39.patch
 
   prt-get isinst brotli && PKGMK_NODEJS+=' --shared-brotli'
