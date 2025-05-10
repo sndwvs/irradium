@@ -30,6 +30,8 @@ build() {
   prt-get isinst simdjson && PKGMK_NODEJS+=' --shared-simdjson'
   prt-get isinst simdutf && PKGMK_NODEJS+=' --shared-simdutf'
 
+  CC="clang" \
+  CXX="clang++" \
   CFLAGS="$CFLAGS -g0 -Wl,--no-keep-memory -fuse-ld=gold -Wl,--no-map-whole-files -Wl,--no-keep-files-mapped" \
   CXXFLAGS="$CFLAGS" \
   ./configure ${PKGMK_NODEJS} \

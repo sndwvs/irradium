@@ -194,11 +194,11 @@ f:1d895ed35c46268c893ef9dd77dfab78:liburcu/.footprint
 f:0205530ff0d95bc462a23424cc32d8d1:liburcu/.signature
 f:3d375a70adf9ea9c18ac2784d5e8265e:liburcu/Pkgfile
 f:56a7f08af14b4f937e8185ea0cf9453a:nodejs/.footprint
-f:1a9c6b5bbab91c86bebd9fa47b146d1f:nodejs/v8-disable-trap-handler-on-riscv-sv39.patch
 f:6f35bea030879f18394b1de2c469f449:nodejs/unbundle-uv.patch
 f:26238865a36daf69d72ede1158c4cd5a:nodejs/.signature
-f:9e726a9049a4ea9627fae32b89f0d9b3:nodejs/Pkgfile
+f:12a1ad2d118dab970a0ad1b119f1c3b7:nodejs/Pkgfile
 f:a94415d6a47d2a13bdd7db3287589033:nodejs/v8-riscv-trap-handler.patch
+f:1a9c6b5bbab91c86bebd9fa47b146d1f:nodejs/v8-disable-trap-handler-on-riscv-sv39.patch
 f:f8d2f18e32451d2f7d516ef7fd446dc8:shared-mime-info/.footprint
 f:ba273dc7e389002c9507f369fe299b59:shared-mime-info/.signature
 f:952b8f2b79db7944026a790578218e13:shared-mime-info/Pkgfile
