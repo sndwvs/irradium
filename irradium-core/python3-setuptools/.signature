@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core.pub
-RWRJc1FUaeVequNKrB/1DcV6/PpBlDWVnkeEfPNj5d24JCbGfl93oEOwOlpINLUjW75cFvN8RRCgUjlhQzy7WvTXenvDeXxfGQo=
-SHA256 (Pkgfile) = c38b4a1c65bd06f82467d81b4a5c3156fd2d8a9d7f4933cbdef6ee7529a2fcd9
-SHA256 (.footprint) = e9759243b1feb7aae6771905983303a605a176f21f7d0884bafa4fe77adead8a
-SHA256 (setuptools-78.1.1.tar.gz) = fcc17fd9cd898242f6b4adfaca46137a9edef687f43e6f78469692a5e70d851d
+untrusted comment: verify with /etc/ports/irradium-core.pub
+RWQAwxvZoACtGBu0LsCCKKli1WKOIzf0UNXY/xBPny30g8A3U25sy5LL1QXtE7yYHpbRToVtWwvNOxB663uL9uAJTsLf7AKWtgE=
+SHA256 (Pkgfile) = 020a5bd556013719b6e59ac1154e29adc8ffb1b2c3385b3f4e7a2aaedf90a65a
+SHA256 (.footprint) = 658458c8c39259761d8403603306389db5534ab895e8b93747dea5453f2fa3da
+SHA256 (setuptools-79.0.1.tar.gz) = 128ce7b8f33c3079fd1b067ecbb4051a66e8526e7b65f6cec075dfc650ddfa88
