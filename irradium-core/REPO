@@ -23,6 +23,7 @@ d:dhcpcd
 d:iproute2
 d:gettext
 d:python3-setuptools
+d:m4
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:6dac3988756d2be3bf51fd270d3981c2:binutils/Pkgfile
@@ -60,11 +61,11 @@ f:9652a27711fa9f7989483ebe21786c16:gcc/gcc-configure-fix-detection-of-atomic-bui
 f:7c9128522053af79791bcfdd55834c2a:gcc/gcc-nocheck-fixincludes.patch
 f:3c13e89423eb43d8ee97675362d3725f:gcc/.footprint.aarch64
 f:121344c2f1ced0c6da4d49033045d18d:gcc/.signature.aarch64
+f:ea0e2c6876ce06e05770a7af77018158:gcc/.footprint.riscv64
 f:42833f51c5ae23e9c34359ad86609c42:gcc/.signature.riscv64
 f:e01a1edd6b5cfa9be0160fbc9a6bb3fa:gcc/Pkgfile
 f:306ed9d67ee02ce1065653303e9d4f6a:gcc/gcc-fix-arm64.patch
 f:7d16b76a4309eadedc9b1fe720cc58e9:gcc/gcc-riscv-disable-multilib-support.patch
-f:ea0e2c6876ce06e05770a7af77018158:gcc/.footprint.riscv64
 f:9e14cbd9ccc21b6f7f00383b30419167:gcc/gcc-riscv64-improve-build-time.patch
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:cc7bfdd526782e44ab589016ba953d02:gdbm/.signature
@@ -104,11 +105,11 @@ f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
 f:3111e8e5893f27a69499808413911008:pkgconf/.footprint
 f:43492fd406acc422b95a1b09a25c38a2:pkgconf/.signature
 f:c997ffc58d2430a56db7d4ae28c1354f:pkgconf/Pkgfile
-f:ddd624554de06deb74530cf84f0ffa80:pkgutils/pkgmk.conf
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:85773ddb6595cc96b6776168a93a8ed9:pkgutils/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
 f:e429beab3a74a36b7eacf9ca2c2aa3fb:pkgutils/.signature
 f:570a371d48e9bc13feed463e0642dab8:pkgutils/Pkgfile
+f:ddd624554de06deb74530cf84f0ffa80:pkgutils/pkgmk.conf
 f:d4c72854441fa2a9cbd0085ad891f05a:ports/.footprint
 f:804bb419e539a70ad80e4c03df3c3411:ports/contrib.pub
 f:b8dd0aad383810cad920d6548cd1cb56:ports/core.pub
@@ -187,3 +188,6 @@ f:e28aa1f9dae0e5c71c0f8ed9753ef41c:gettext/Pkgfile
 f:97716894a7875eb91d393f05b8306bf7:python3-setuptools/.footprint
 f:f6a8696bddff11700152a34d36bf3b86:python3-setuptools/.signature
 f:0a2bc27e430cab8ca16f1daf7aff90aa:python3-setuptools/Pkgfile
+f:9efb1a1a6ed7e229ed67b2784f819edd:m4/.signature
+f:3648e7b648d148e8607277ea8d3971a8:m4/Pkgfile
+f:c479565d921098228dc5f2edaae01515:m4/.footprint

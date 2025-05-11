@@ -1,0 +1,20 @@
+# Description: A standard Unix macro processor with extensions
+# URL: https://rene.seindal.dk/
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+
+name=m4
+version=1.4.20
+release=1
+source=(https://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.xz)
+
+build() {
+    cd $name-$version
+
+    CFLAGS=${CFLAGS/-Werror=format-security/}
+
+    ./configure --prefix=/usr --disable-nls
+    make
+    make DESTDIR=$PKG install
+
+    rm -r $PKG/usr/share/info
+}
