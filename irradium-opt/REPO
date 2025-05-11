@@ -63,7 +63,7 @@ f:7288769c14ee3209d4afa9ab8f0048a3:libb2/.footprint
 f:6fff0b1ec0df44eab04c437472fc2cb2:libb2/.signature
 f:d78ac2a48d7c1070195d16b22b4046bd:libgcrypt/.footprint
 f:6c57410cab9d14d6d9eb5f8f6a792462:libgcrypt/.signature
-f:bc3c270b504ff523915bb4e7f7487c4b:libgcrypt/Pkgfile
+f:e9cbf1526ca90193a6c5eaaa47b988cd:libgcrypt/Pkgfile
 f:c1c2f6ab8e82a88fc25c05d7656f60a5:libkeybinder3/.footprint
 f:9de6627e9086b99b60a2d30e8881ff01:libkeybinder3/.signature
 f:f3afe96ae4c323a7fffa8dbeabb3eda2:libkeybinder3/Pkgfile
@@ -193,12 +193,12 @@ f:485b5fb93433d14fbb3592db754ec22e:bindutils/Pkgfile
 f:1d895ed35c46268c893ef9dd77dfab78:liburcu/.footprint
 f:0205530ff0d95bc462a23424cc32d8d1:liburcu/.signature
 f:3d375a70adf9ea9c18ac2784d5e8265e:liburcu/Pkgfile
-f:f7748bfe653ff6a7a0719981cebbac97:nodejs/.footprint
 f:6f35bea030879f18394b1de2c469f449:nodejs/unbundle-uv.patch
-f:f8e63392856645ac329135e2199096c6:nodejs/.signature
-f:12a1ad2d118dab970a0ad1b119f1c3b7:nodejs/Pkgfile
 f:a94415d6a47d2a13bdd7db3287589033:nodejs/v8-riscv-trap-handler.patch
 f:1a9c6b5bbab91c86bebd9fa47b146d1f:nodejs/v8-disable-trap-handler-on-riscv-sv39.patch
+f:f7748bfe653ff6a7a0719981cebbac97:nodejs/.footprint
+f:f8e63392856645ac329135e2199096c6:nodejs/.signature
+f:12a1ad2d118dab970a0ad1b119f1c3b7:nodejs/Pkgfile
 f:f8d2f18e32451d2f7d516ef7fd446dc8:shared-mime-info/.footprint
 f:ba273dc7e389002c9507f369fe299b59:shared-mime-info/.signature
 f:952b8f2b79db7944026a790578218e13:shared-mime-info/Pkgfile

@@ -4,20 +4,20 @@
 # Depends on: libgpg-error
 
 name=libgcrypt
-version=1.11.0
+version=1.11.1
 release=1
 source=(https://www.gnupg.org/ftp/gcrypt/libgcrypt/$name-$version.tar.bz2)
 
 build() {
-	cd $name-$version
+    cd $name-$version
 
-	./configure \
-		--prefix=/usr \
-		--disable-padlock-support \
-		--enable-static=yes \
-		--build=$(uname -m)-unknown-linux-gnu
-	make
-	make DESTDIR=$PKG install
+    ./configure \
+        --prefix=/usr \
+        --disable-padlock-support \
+        --enable-static=yes \
+        --build=$(uname -m)-unknown-linux-gnu
+    make
+    make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/share/info
+    rm -r $PKG/usr/share/info
 }
