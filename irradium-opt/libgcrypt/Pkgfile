@@ -11,11 +11,16 @@ source=(https://www.gnupg.org/ftp/gcrypt/libgcrypt/$name-$version.tar.bz2)
 build() {
     cd $name-$version
 
+    if [[ $(uname -m) == "riscv64" ]]; then
+        PKGMK_LIBGCRYPT+=' --disable-asm'
+    fi
+
     ./configure \
         --prefix=/usr \
         --disable-padlock-support \
         --enable-static=yes \
-        --build=$(uname -m)-unknown-linux-gnu
+        --build=$(uname -m)-unknown-linux-gnu \
+        $PKGMK_LIBGCRYPT
     make
     make DESTDIR=$PKG install
 

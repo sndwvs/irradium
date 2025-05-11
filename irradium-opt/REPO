@@ -52,9 +52,9 @@ f:9b7540a197371561b62b9de0e67617af:ffmpeg-mpp/Pkgfile
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg-mpp/add-av_stream_get_first_dts-for-chromium.patch
 f:dae0c10c99399580c929fc100e79faef:ffmpeg-mpp/ffmpeg-x264-10bit.sh
 f:df409f613c10ae0b7e19e37e66717714:ffmpeg-mpp/rkmpp-6.patch
+f:1e6b7d1a150ccdbef359ae366190b8de:harfbuzz/.signature
 f:3f81f14e70dd2807c44a9feacfef4d7a:harfbuzz/Pkgfile
 f:b29a83ee76c18cd86bfc7b1ca6affa6f:harfbuzz/.footprint
-f:1e6b7d1a150ccdbef359ae366190b8de:harfbuzz/.signature
 f:5db6190db9bd0114880d1295e86e5781:libart_lgpl/Pkgfile
 f:58263621cc2c46c26e4bb2aa56cde0c7:libart_lgpl/.footprint
 f:4a20a4462b31e81c055e8872e284e185:libart_lgpl/.signature
@@ -63,7 +63,7 @@ f:7288769c14ee3209d4afa9ab8f0048a3:libb2/.footprint
 f:6fff0b1ec0df44eab04c437472fc2cb2:libb2/.signature
 f:d78ac2a48d7c1070195d16b22b4046bd:libgcrypt/.footprint
 f:6c57410cab9d14d6d9eb5f8f6a792462:libgcrypt/.signature
-f:e9cbf1526ca90193a6c5eaaa47b988cd:libgcrypt/Pkgfile
+f:398bc6b8827f8d2c5e120557e052bc32:libgcrypt/Pkgfile
 f:c1c2f6ab8e82a88fc25c05d7656f60a5:libkeybinder3/.footprint
 f:9de6627e9086b99b60a2d30e8881ff01:libkeybinder3/.signature
 f:f3afe96ae4c323a7fffa8dbeabb3eda2:libkeybinder3/Pkgfile
