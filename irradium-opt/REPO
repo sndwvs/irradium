@@ -53,7 +53,7 @@ f:8d01f9dc6e07549a5006967efd3622be:ffmpeg-mpp/add-av_stream_get_first_dts-for-ch
 f:dae0c10c99399580c929fc100e79faef:ffmpeg-mpp/ffmpeg-x264-10bit.sh
 f:df409f613c10ae0b7e19e37e66717714:ffmpeg-mpp/rkmpp-6.patch
 f:1e6b7d1a150ccdbef359ae366190b8de:harfbuzz/.signature
-f:3f81f14e70dd2807c44a9feacfef4d7a:harfbuzz/Pkgfile
+f:a1d65d4b36300ed4a42f45cc0407f4c3:harfbuzz/Pkgfile
 f:b29a83ee76c18cd86bfc7b1ca6affa6f:harfbuzz/.footprint
 f:5db6190db9bd0114880d1295e86e5781:libart_lgpl/Pkgfile
 f:58263621cc2c46c26e4bb2aa56cde0c7:libart_lgpl/.footprint
