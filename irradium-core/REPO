@@ -22,8 +22,8 @@ d:dcron/patches
 d:dhcpcd
 d:iproute2
 d:gettext
-d:python3-setuptools
 d:m4
+d:python3-setuptools
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:6dac3988756d2be3bf51fd270d3981c2:binutils/Pkgfile
@@ -185,9 +185,9 @@ f:34a1893cf0b805b204ca6ed82fc08ab3:iproute2/Pkgfile
 f:a546c97b48488de8a4634f20169cdc7c:gettext/.footprint
 f:6d9ec668a1d76a31014112a01aa6d135:gettext/.signature
 f:e28aa1f9dae0e5c71c0f8ed9753ef41c:gettext/Pkgfile
+f:c479565d921098228dc5f2edaae01515:m4/.footprint
+f:e07f5a018c18851c1661d70fddd76c78:m4/.signature
+f:3648e7b648d148e8607277ea8d3971a8:m4/Pkgfile
 f:97716894a7875eb91d393f05b8306bf7:python3-setuptools/.footprint
 f:f6a8696bddff11700152a34d36bf3b86:python3-setuptools/.signature
 f:0a2bc27e430cab8ca16f1daf7aff90aa:python3-setuptools/Pkgfile
-f:9efb1a1a6ed7e229ed67b2784f819edd:m4/.signature
-f:3648e7b648d148e8607277ea8d3971a8:m4/Pkgfile
-f:c479565d921098228dc5f2edaae01515:m4/.footprint
