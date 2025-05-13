@@ -327,21 +327,22 @@ build() {
     done
 
     # Install a wrapper script:
-    install -D -m0755 $SRC/${name}.sh $PKG/usr/bin/${name}
+    install -D -m0755 $SRC/${name#*-}.sh $PKG/usr/bin/${name#*-}
     sed \
-        -e "s/@NAME@/${name}/g" \
+        -e "s/@NAME@/${name#*-}/g" \
         -e "s/@LIBDIRSUFFIX@//g" \
         -e "s/@CRFLAGS@/${CRFLAGS}/g" \
         -e "s/@CRUSERFLAGS@/${CRUSERFLAGS}/g" \
-        -i $PKG/usr/bin/${name}
+        -i $PKG/usr/bin/${name#*-}
+
     # Move the 'default' file into place.
     # This allows users to override command-line options:
-    mkdir -p $PKG/etc/${name}
-    cat $SRC/${name}.default | sed \
-      -e "s/@NAME@/${name}/g" \
+    mkdir -p $PKG/etc/${name#*-}
+    cat $SRC/${name#*-}.default | sed \
+      -e "s/@NAME@/${name#*-}/g" \
       -e "s/@CRFLAGS@/${CRFLAGS}/g" \
       -e "s/@CRUSERFLAGS@/${CRUSERFLAGS}/g" \
       -e "s/@LIBDIRSUFFIX@//g" \
-      > $PKG/etc/${name}/00-default.conf
+      > $PKG/etc/${name#*-}/00-default.conf
 
 }
