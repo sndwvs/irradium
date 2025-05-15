@@ -1,14 +1,18 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7u0RtQoy/1xvA+7sR86nSMUVAdNlz8JOYsKhRbS4c3KdeLydn6/g9G7INYVQCk9tV+8BEA2IDlwh5wKYfFoK1Q8=
-SHA256 (Pkgfile) = 062d063bf39714f55d7c23be6f54dda0ef2de2ab4cce745e3252c1ea3af84adc
-SHA256 (.footprint) = 40d9429f1e95735b927a576f2dc0772aeaf0c18a7aa217dd9e1ee5ed6e40fc5d
-SHA256 (chromium-133.0.6943.98.tar.xz) = 3d442e6fb581aa55e93fc2727ceea24cae23969f294d9becf6f6712dec702be9
-SHA256 (133.0.6943.98-1.tar.gz) = 649dcb1b63387a123d94abc44d4af312314e64f55a6d682f7b6aca52123ae8b6
+RWTmT3d9kqan7r9vhYsigJ+jrMQzWti6A7I4EL3+vP0wTXLnL30q27ImHkhHDkWNvCNgUYyhLqowQ/ki88vcg9zaxOqXmUTgKgo=
+SHA256 (Pkgfile) = cde8a85649f09d2d5e96f267d1d01cf7d19e553c70e9d011a21d1bebb528409d
+SHA256 (.footprint) = 8022ba2c739049d24d01e483c24287e6c0fd76641c6ba2e4d54d915e7cfcfd4f
+SHA256 (chromium-136.0.7103.92.tar.xz) = 3fa7f88ef186566948367bf1e9a9f0612e753fc69285c1654728f6a015cd4cf2
+SHA256 (136.0.7103.92-1.tar.gz) = d256643a26d536a5079441e63fd4c8cda0e073702665605b40c5ce1d5b18bcbe
 SHA256 (chromium.default) = f94677036f4d820c8361241bac84594ae6f2ae22839d906c66b2005bdde8ad78
 SHA256 (chromium.sh) = 0cfc11faeaf9a1e8775a248876d86cb798c17077618cbe4ccf9797d7c71386d5
 SHA256 (0001-widevine-support-for-arm.patch) = 5a45799258abde6836bef7209c10935ccf4c09bdd487a008b4d37a96f9b7af58
 SHA256 (0002-Run-blink-bindings-generation-single-threaded.patch) = 1721a7355822fa045698f613a9cda28f42cad58bfe2074e7044691f0b518c5a6
 SHA256 (0003-Fix-eu-strip-build-for-newer-GCC.patch) = 835ff938f21633abf7d5ec43be09014c8be060a919c8651dadbb2015dfef8216
-SHA256 (use-oauth2-client-switches-as-default.patch) = 6de648d449159dd579e42db304aca0a36243f2ac1538f8d030473afbbc8ff475
-SHA256 (compiler-rt-adjust-paths.patch) = b3de01b7df227478687d7517f61a777450dca765756002c80c4915f271e2d961
+SHA256 (use-oauth2-client-switches-as-default.patch) = e6da901e4d0860058dc2f90c6bbcdc38a0cf4b0a69122000f62204f24fa7e374
+SHA256 (compiler-rt-adjust-paths.patch) = cc8a71a312e9314743c289b7b8fddcc80350a31445d335f726bb2e68edf916d1
 SHA256 (increase-fortify-level.patch) = d634d2ce1fc63da7ac41f432b1e84c59b7cceabf19d510848a7cff40c8025342
+SHA256 (add-more-CFI-suppressions-for-inline-PipeWire-functions.patch) = d3dd9b4132c9748b824f3dcf730ec998c0087438db902bc358b3c391658bebf5
+SHA256 (chromium-136-drop-nodejs-ver-check.patch) = 32f0080282fc0b2795a342bf17fcb3db4028c5d02619c7e304222230ba99d5fe
+SHA256 (disable-clang-warning-suppression-flag.patch) = d6f3914c6adadaf061e7e2b1430c96d32b0cad05244b5cfaf58cf5344006a169
+SHA256 (gperf.patch) = 623832b483c98efc0adb38596950ea4b0563f954a98efffa112685d3ffc8f24f
