@@ -116,6 +116,7 @@ d:gcc-fortran
 d:iperf3
 d:libcue
 d:luajit
+d:logrotate
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -647,3 +648,8 @@ f:1e74b0fc686f2c1a344bc81042334367:libcue/Pkgfile
 f:91fa8d3c9ae80101f92735b149c41105:luajit/.footprint
 f:999f345070144a3d024bc3dd56058134:luajit/.signature
 f:623e88a9aa18ce12933fbe56f01d71ee:luajit/Pkgfile
+f:cc3d57d34842d57ad038bfef0d2f39a0:logrotate/Pkgfile
+f:7bea0663634285e39b7f71be60ea0e84:logrotate/logrotate.conf
+f:91d8cf0598961982365ca010d375c42f:logrotate/logrotate.cron
+f:e1a5569bb7e8a9a4c08d6303034a1b2e:logrotate/.footprint
+f:2f22737488cdc80d357811197d7c4c36:logrotate/.signature
