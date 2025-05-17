@@ -426,8 +426,8 @@ f:1bca2a75f4b401372397cbc7ac84adbd:glmark2/.signature
 f:ecf4d7512d16e61c1d1566bc35b26148:glmark2/Pkgfile
 f:8bd8739134ae4ae697171781781742a0:glmark2/fix-build.patch
 f:43d5a35ffd5968ae8ada966053c1d438:tinc/rc.tincd
-f:4ff824b01cd82b3359076bd76d6ca1c2:tinc/.footprint
-f:9888444e6f8db0e7f6798db4fdd20916:tinc/.signature
+f:d414206d1533f78f00f29d43acb5626a:tinc/.footprint
+f:9300bebee5f341331d6e0202e0b16663:tinc/.signature
 f:e3c90dd87a64034bf9b380b864b8f487:tinc/Pkgfile
 f:f8bc94d205b4ec78c8915b74688a74f5:tinc/tincd.logrotate
 f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
