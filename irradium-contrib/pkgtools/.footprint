@@ -1,3 +1,5 @@
+drwxr-xr-x	root/root	boot/
+-rwxr-xr-x	root/root	boot/make-kernel-backup
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/explodepkg
 -rwxr-xr-x	root/root	sbin/installpkg
@@ -8,6 +10,8 @@ lrwxrwxrwx	root/root	sbin/makebootstick -> ../var/lib/pkgtools/setup/setup.80.ma
 -rwxr-xr-x	root/root	sbin/removepkg
 -rwxr-xr-x	root/root	sbin/upgradepkg
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/sbin/
+lrwxrwxrwx	root/root	usr/sbin/make-kernel-backup -> /boot/make-kernel-backup
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/de/

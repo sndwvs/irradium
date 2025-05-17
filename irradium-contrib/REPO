@@ -418,10 +418,10 @@ f:1bca2a75f4b401372397cbc7ac84adbd:glmark2/.signature
 f:ecf4d7512d16e61c1d1566bc35b26148:glmark2/Pkgfile
 f:8bd8739134ae4ae697171781781742a0:glmark2/fix-build.patch
 f:43d5a35ffd5968ae8ada966053c1d438:tinc/rc.tincd
+f:f8bc94d205b4ec78c8915b74688a74f5:tinc/tincd.logrotate
 f:4ff824b01cd82b3359076bd76d6ca1c2:tinc/.footprint
 f:9888444e6f8db0e7f6798db4fdd20916:tinc/.signature
 f:e90ebf670ac5d1464762cee3ff488354:tinc/Pkgfile
-f:f8bc94d205b4ec78c8915b74688a74f5:tinc/tincd.logrotate
 f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
 f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
 f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
@@ -446,10 +446,10 @@ f:9fc18c8eab771033b956b4a6c881beb4:hostapd/0001-hostapd-Add-the-missing-CONFIG_S
 f:94a2900808c2507fe87e224217eebb8f:hostapd/Pkgfile
 f:5cdcc7dea3af935216e1a35ab5f6c4b2:hostapd/config
 f:dd8a03baafdac0efcf198f4f2528c6da:hostapd/rc.hostapd
-f:c3d31fc159c031b509e3b70466661896:pkgtools/.footprint
-f:c87e34bbbedfc0c6540be5f39e7179cd:pkgtools/.signature
-f:3129b1af7f0f5fb986dfdafc3507dace:pkgtools/Pkgfile
 f:ea29b259b6fda2cfaaae1e8ab1239cf0:pkgtools/post-install
+f:b24a86d34e0f72b6d2507fa891360b1f:pkgtools/.footprint
+f:c3428327906d45790be03a31c6bc46a3:pkgtools/.signature
+f:89dc3291148ba8ca76e6ebcdac565bcc:pkgtools/Pkgfile
 f:36663982cb2dd06e86a2afb7493af5a4:crosstool-ng/0001-sunrpc.diff
 f:9b8467cae8f45cf7d901163acff398fb:crosstool-ng/.footprint
 f:450047199898362275bd12d6b448a288:crosstool-ng/.signature
