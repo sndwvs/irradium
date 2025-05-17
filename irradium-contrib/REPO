@@ -111,6 +111,7 @@ d:iozone
 d:iptraf-ng
 d:libutempter
 d:nmon
+d:python3-pyelftools
 d:audacious-plugins
 d:gcc-fortran
 d:iperf3
@@ -627,6 +628,9 @@ f:adaee3d78879d7ea3b8875ce5b929d39:nmon/.footprint
 f:879a0be4a751104f6157069cbf3f11d0:nmon/.signature
 f:01fa573c86a3862e0e2f999e4b6c685c:nmon/Pkgfile
 f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
+f:ba60765494299d5fc275df5fdd2c9888:python3-pyelftools/.footprint
+f:68121d34227bd00a94502e39d53a0159:python3-pyelftools/.signature
+f:9044efa6d0c35c5411dc49600d17b407:python3-pyelftools/Pkgfile
 f:2eeb580caa364fb204a4160daaded475:audacious-plugins/.footprint
 f:df32e1bb992a7b26f6abafbb96433c8a:audacious-plugins/.signature
 f:713313ca8b508b4e2aa7d89023144699:audacious-plugins/Pkgfile
