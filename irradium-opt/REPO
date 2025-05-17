@@ -133,8 +133,8 @@ f:d7ad440e004114b3c01eb400abfff18f:qt6-base/.signature
 f:fdfa2a6e412d379bcf1bf49710346988:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
-f:3f2c123f3c7064161a7b400f8dcf6694:rust/.footprint.aarch64
-f:544b5d51d8c43bec336885cab7be412b:rust/.signature.aarch64
+f:7b94db9a29ef3f10ae8d02427138d8ba:rust/.footprint.aarch64
+f:0e39a5f403c4100cf479ae80ad3e6387:rust/.signature.aarch64
 f:c98813e99d9adeecc1708f78df8041da:rust/0002-bootstrap-Change-bash-completion-dir.patch
 f:0a8059e5ee18b984894944da3adefcb4:rust/0003-compiler-Change-LLVM-targets.patch
 f:bdd37e1645359e0a29eaefdb3cb08126:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
