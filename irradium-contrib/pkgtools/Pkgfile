@@ -4,7 +4,7 @@
 # Depends on: bash
 
 name=pkgtools
-version=15.1
+version=15.1.29
 release=1
 source=(https://gitlab.com/sndwvs/$name/-/archive/$version/$name-$version.tar.bz2)
 
@@ -48,6 +48,14 @@ build() {
       chmod 755 $PKG/var/lib/pkgtools/setup/setup.*
       # Add a link for makebootstick:
       ( cd $PKG/sbin ; ln -sf ../var/lib/pkgtools/setup/setup.80.make-bootdisk makebootstick )
+      # Add the make-kernel backup script:
+      mkdir -p $PKG/boot
+      cp -a make-kernel-backup $PKG/boot
+      chown root:root $PKG/boot/make-kernel-backup
+      chmod 755 $PKG/boot/make-kernel-backup
+      # Symlink it into the $PATH:
+      mkdir -p $PKG/usr/sbin
+      ( cd $PKG/usr/sbin ; ln -sf /boot/make-kernel-backup . )
     )
 
     # Create the base directories (not really necessary, but doesn't hurt):
