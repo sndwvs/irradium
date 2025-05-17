@@ -5,7 +5,7 @@
 
 name=tinc
 version=1.0.36
-release=4
+release=5
 source=(https://www.tinc-vpn.org/packages/$name-$version.tar.gz
     rc.tincd
     tincd.logrotate)
@@ -28,6 +28,6 @@ build() {
 
   rm -rf $PKG/usr/share/info
   install -Dm644 doc/sample-config/$name.conf $PKG/etc/$name/$name.conf
-  install -Dm666 $SRC/tincd.logrotate $PKG/etc/syslog.d/tincd.conf
+  install -Dm666 $SRC/tincd.logrotate $PKG/etc/logrotate.d/tincd.conf
   install -m755 -D $SRC/rc.tincd $PKG/etc/rc.d/tincd
 }
