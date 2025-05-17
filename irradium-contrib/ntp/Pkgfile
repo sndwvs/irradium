@@ -42,7 +42,7 @@ build() {
   install -Dm644 $SRC/ntp.conf $PKG/etc/ntp.conf
   install -Dm644 $SRC/ntp.keys $PKG/etc/ntp.keys
   install -Dm755 $SRC/rc.ntpd $PKG/etc/rc.d/ntpd
-  install -Dm666 $SRC/ntp.logrotate $PKG/etc/logrotate.d/ntp.conf
+  install -Dm644 $SRC/ntp.logrotate $PKG/etc/logrotate.d/ntp.conf
 
   # Location for the drift and stats files:
   install -dm775 -g ntp -o ntp $PKG/var/lib/ntp
