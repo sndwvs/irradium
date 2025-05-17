@@ -6,7 +6,7 @@
 name=ntp
 version=4.2.8.p18
 _srcversion=${version/.p/p}
-release=9
+release=10
 source=(https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/${name}-${_srcversion}.tar.gz
     ntp.conf rc.ntpd
     ntp.keys
@@ -21,7 +21,7 @@ build() {
   patch -p1 -i $SRC/ntp.no.openssl.noise.patch
 
   # GCC 14 "fix":
-  CFLAGS+=" -Wno-error=int-conversion"
+  CFLAGS+=" -Wno-error=int-conversion -Wno-error=incompatible-pointer-types"
 
   ./configure \
     --prefix=/usr \
@@ -42,7 +42,7 @@ build() {
   install -Dm644 $SRC/ntp.conf $PKG/etc/ntp.conf
   install -Dm644 $SRC/ntp.keys $PKG/etc/ntp.keys
   install -Dm755 $SRC/rc.ntpd $PKG/etc/rc.d/ntpd
-  install -Dm666 $SRC/ntp.logrotate $PKG/etc/syslog.d/ntp.conf
+  install -Dm666 $SRC/ntp.logrotate $PKG/etc/logrotate.d/ntp.conf
 
   # Location for the drift and stats files:
   install -dm775 -g ntp -o ntp $PKG/var/lib/ntp
