@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7k0OKPuphnWOskSIlMM9tQOPLDH+VcuRaVt78+1KxQc/UHXUuCuA/o1Xpg6tDSrNB8UQJ89GAlndSTHg6SP02Qc=
+SHA256 (Pkgfile) = 55dc8b9da772578887734b3a245548a59958fe28c2ef7bfa49568f3b105a9fe2
+SHA256 (.footprint) = 659a5a0cb94c072e1d3fba0cd6c416751bbd148abe4b04936b3ad083b27215fd
+SHA256 (logrotate-3.22.0.tar.xz) = 42b4080ee99c9fb6a7d12d8e787637d057a635194e25971997eebbe8d5e57618
+SHA256 (logrotate.conf) = 5b7a602d9d47cbf2c692914d844200772b9c6e3c2896e9684293e9a6c8e5d6b6
+SHA256 (logrotate.cron) = e08fc1520e2ea60f9b51a68ba52f6d58180a3a902721dc88a5cffe6757c44639

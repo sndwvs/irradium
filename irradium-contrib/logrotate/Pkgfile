@@ -1,0 +1,33 @@
+# Description: rotates system logs automatically
+# URL: https://github.com/logrotate/logrotate
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: popt gzip acl
+
+name=logrotate
+version=3.22.0
+release=1
+source=(https://github.com/logrotate/logrotate/releases/download/$version/$name-$version.tar.xz
+        logrotate.conf
+        logrotate.cron)
+
+build() {
+    cd $name-$version
+
+    ./configure \
+        --prefix=/usr \
+        --libdir=/usr/lib \
+        --sysconfdir=/etc \
+        --localstatedir=/var \
+        --mandir=/usr/share/man \
+        --build=$(uname -m)-unknown-linux-gnu
+
+    make
+    make DESTDIR=$PKG install
+
+    # Create the logrotate.d directory and install the config file
+    install -dm755 $PKG/etc/logrotate.d
+    install -Dm644 $SRC/logrotate.conf $PKG/etc/logrotate.conf
+
+    # Make logrotate run from cron every day
+    install -Dm755 $SRC/logrotate.cron $PKG/etc/cron/daily/logrotate
+}
