@@ -421,7 +421,7 @@ f:6e43231687a41272a913911994909469:ntp/pre-install
 f:1bba21fa121fd3e00f8ba272b6abda5a:ntp/rc.ntpd
 f:56a954370c460dfec3a079e1a98241e1:ntp/.footprint
 f:169aceeeadaf6a61967bec6848211860:ntp/.signature
-f:b41794c07a7dfaf8d8f9a6bf292100eb:ntp/Pkgfile
+f:2d4a2a1abfe904327848e5443d30a8a9:ntp/Pkgfile
 f:4a3b1c6d05147d5b141ade4b947f09d1:glmark2/.footprint
 f:1bca2a75f4b401372397cbc7ac84adbd:glmark2/.signature
 f:ecf4d7512d16e61c1d1566bc35b26148:glmark2/Pkgfile
