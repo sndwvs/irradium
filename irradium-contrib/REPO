@@ -422,7 +422,7 @@ f:43d5a35ffd5968ae8ada966053c1d438:tinc/rc.tincd
 f:f8bc94d205b4ec78c8915b74688a74f5:tinc/tincd.logrotate
 f:d414206d1533f78f00f29d43acb5626a:tinc/.footprint
 f:9300bebee5f341331d6e0202e0b16663:tinc/.signature
-f:e3c90dd87a64034bf9b380b864b8f487:tinc/Pkgfile
+f:5b8cbd84843d20a340cc119d502e404f:tinc/Pkgfile
 f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
 f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
 f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
@@ -452,9 +452,9 @@ f:b24a86d34e0f72b6d2507fa891360b1f:pkgtools/.footprint
 f:c3428327906d45790be03a31c6bc46a3:pkgtools/.signature
 f:89dc3291148ba8ca76e6ebcdac565bcc:pkgtools/Pkgfile
 f:36663982cb2dd06e86a2afb7493af5a4:crosstool-ng/0001-sunrpc.diff
-f:9b8467cae8f45cf7d901163acff398fb:crosstool-ng/.footprint
-f:450047199898362275bd12d6b448a288:crosstool-ng/.signature
-f:dc5493e8cdee8f529867dc56cca6af1a:crosstool-ng/Pkgfile
+f:a00b028d74df5eb04bf0072dcdf5d959:crosstool-ng/.footprint
+f:34c0b0bcbbb5c60221cafdb50c9e7407:crosstool-ng/.signature
+f:7019da86f6ec37ce8511c6432494ac9b:crosstool-ng/Pkgfile
 f:bde1f59c3f8395dc6a97246029bd9370:libe-book/.footprint
 f:8cb876b3b2b92145587faa0ae17e5db4:libe-book/Pkgfile
 f:651a6cf09ffa8872accf1f568d0c0836:libe-book/libebook-0.1.3-icu-68.patch
