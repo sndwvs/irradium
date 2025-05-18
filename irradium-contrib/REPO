@@ -461,8 +461,8 @@ f:b24a86d34e0f72b6d2507fa891360b1f:pkgtools/.footprint
 f:c3428327906d45790be03a31c6bc46a3:pkgtools/.signature
 f:89dc3291148ba8ca76e6ebcdac565bcc:pkgtools/Pkgfile
 f:36663982cb2dd06e86a2afb7493af5a4:crosstool-ng/0001-sunrpc.diff
-f:9b8467cae8f45cf7d901163acff398fb:crosstool-ng/.footprint
-f:450047199898362275bd12d6b448a288:crosstool-ng/.signature
+f:a00b028d74df5eb04bf0072dcdf5d959:crosstool-ng/.footprint
+f:34c0b0bcbbb5c60221cafdb50c9e7407:crosstool-ng/.signature
 f:7019da86f6ec37ce8511c6432494ac9b:crosstool-ng/Pkgfile
 f:bde1f59c3f8395dc6a97246029bd9370:libe-book/.footprint
 f:8cb876b3b2b92145587faa0ae17e5db4:libe-book/Pkgfile
