@@ -111,13 +111,13 @@ d:iozone
 d:iptraf-ng
 d:libutempter
 d:nmon
-d:python3-pyelftools
 d:audacious-plugins
 d:gcc-fortran
 d:iperf3
 d:libcue
 d:luajit
 d:logrotate
+d:python3-pyelftools
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -171,7 +171,7 @@ f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:5d88799932a7ad958e779057651a4cb9:firefox/.footprint.riscv64
 f:24687a021a51974f81b71495f6a43ff3:firefox/.signature.riscv64
 f:cfc9644e7d1be861de107b985f08b38a:firefox/.signature.aarch64
-f:7cd3365012f44aaf0df5c90c70787a9b:firefox/Pkgfile
+f:6b614b6ec460ed7f42897a1c22207a29:firefox/Pkgfile
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
 f:f27fa622f17d099ba1bc08c4061acda6:freerdp/1ef7b9e3.patch
@@ -628,9 +628,6 @@ f:adaee3d78879d7ea3b8875ce5b929d39:nmon/.footprint
 f:879a0be4a751104f6157069cbf3f11d0:nmon/.signature
 f:01fa573c86a3862e0e2f999e4b6c685c:nmon/Pkgfile
 f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
-f:ba60765494299d5fc275df5fdd2c9888:python3-pyelftools/.footprint
-f:68121d34227bd00a94502e39d53a0159:python3-pyelftools/.signature
-f:9044efa6d0c35c5411dc49600d17b407:python3-pyelftools/Pkgfile
 f:2eeb580caa364fb204a4160daaded475:audacious-plugins/.footprint
 f:df32e1bb992a7b26f6abafbb96433c8a:audacious-plugins/.signature
 f:713313ca8b508b4e2aa7d89023144699:audacious-plugins/Pkgfile
@@ -657,3 +654,6 @@ f:2f22737488cdc80d357811197d7c4c36:logrotate/.signature
 f:cc3d57d34842d57ad038bfef0d2f39a0:logrotate/Pkgfile
 f:7bea0663634285e39b7f71be60ea0e84:logrotate/logrotate.conf
 f:91d8cf0598961982365ca010d375c42f:logrotate/logrotate.cron
+f:ba60765494299d5fc275df5fdd2c9888:python3-pyelftools/.footprint
+f:68121d34227bd00a94502e39d53a0159:python3-pyelftools/.signature
+f:9044efa6d0c35c5411dc49600d17b407:python3-pyelftools/Pkgfile
