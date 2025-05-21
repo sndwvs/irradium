@@ -192,7 +192,7 @@ f:849fb09042c8bab289237929198e97db:bindutils/.signature
 f:6f12c0aa4b5f9be1e1bdd10931861942:bindutils/Pkgfile
 f:1d895ed35c46268c893ef9dd77dfab78:liburcu/.footprint
 f:0205530ff0d95bc462a23424cc32d8d1:liburcu/.signature
-f:3d375a70adf9ea9c18ac2784d5e8265e:liburcu/Pkgfile
+f:536f41f619eef8868225217295ababd3:liburcu/Pkgfile
 f:f7748bfe653ff6a7a0719981cebbac97:nodejs/.footprint
 f:6f35bea030879f18394b1de2c469f449:nodejs/unbundle-uv.patch
 f:1a9c6b5bbab91c86bebd9fa47b146d1f:nodejs/v8-disable-trap-handler-on-riscv-sv39.patch
