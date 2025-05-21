@@ -92,12 +92,12 @@ f:4aa5b87a94f3507f16f9ac3838a4a54e:lightdm-gtk-greeter/.footprint
 f:bb233b17996d10bd9c3c282e05b95467:lightdm-gtk-greeter/.signature
 f:6ebebc726135f1448067c1b553b0782c:lightdm-gtk-greeter/Pkgfile
 f:8588e227a9e80787b8c4ed61b123a03a:lightdm-gtk-greeter/post-install
+f:7121ab2aade21e0decc01ff896b12194:llvm/.footprint.riscv64
+f:1d14d1b9c27bcf26fa2a484677f22e0e:llvm/.signature.aarch64
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
-f:7121ab2aade21e0decc01ff896b12194:llvm/.footprint.riscv64
 f:e11a6490637d20a5cca2b9ff1f127172:llvm/.signature.riscv64
 f:335d0c1504f8578983ad66f56f1844db:llvm/.footprint.aarch64
-f:1d14d1b9c27bcf26fa2a484677f22e0e:llvm/.signature.aarch64
 f:2e9e8efe70980185d99b8e0b7a5526bc:llvm/Pkgfile
 f:97d2901b0c7929f1469fed61587d3c59:mc/.footprint
 f:b4841f1b6a92ca8dd65a602c6350250b:mc/.signature
