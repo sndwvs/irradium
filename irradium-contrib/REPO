@@ -269,9 +269,9 @@ f:faf069d19324a53f32cceaa8e7cc0ab2:libreoffice/libreoffice-7.6-qt6-wayland-egl.p
 f:a853c1b2129f23706ca9af8cba3d8a52:libreoffice/.footprint.aarch64
 f:22f915e02e330220075b895672faf62d:libreoffice/.footprint.riscv64
 f:12ac42de11f3a399341abbfacb04d52e:libreoffice/.signature.aarch64
-f:e8c9b7f1f3e455d4fb4cdb8facb2c57c:libreoffice/Pkgfile
 f:369cab52bd225255130b91b1862982f6:libreoffice/mdds.patch
 f:3d78e1ae9afb83c72e5baef7e8b530db:libreoffice/.signature.riscv64
+f:e8c9b7f1f3e455d4fb4cdb8facb2c57c:libreoffice/Pkgfile
 f:7b3ae4fbdd27165b5adb2956822eb63c:librga/.footprint
 f:02f623c7e10ba79e8c9effe3bd3db890:librga/.signature
 f:7596de075e0ee7b81ce610dce48e4da3:librga/Pkgfile
@@ -577,7 +577,7 @@ f:f11f3366bc8c9b2d15d5989ed5cf28f6:bind/named.root
 f:e718f850c043a0352cf95cc8fa9a05d7:bind/pre-install
 f:c9ce9b22b8525ef24e3e1a4f7c372b88:bind/.footprint
 f:323e4d1f4558fafb0e3c34ee8701a703:bind/.signature
-f:da4c06396b6ac523549f0029ce605531:bind/Pkgfile
+f:8ff6e04b544c32248910b9f4428f56c9:bind/Pkgfile
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.aarch64
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.riscv64
 f:f0cf6fc36c48e14c52f25e9b432e9a7e:openjdk21-jdk/openjdk21.sh
