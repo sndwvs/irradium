@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCbtO9gn06E+jQHq7oF++sxeVARKF2tep6heLXgYpZyqqcZqoK6Sl5NT1xyA33+Bk5CYo2LTh7gu1WN9G7pZdQAE=
-SHA256 (Pkgfile) = 011fcbc2d9bbde25dcd38770c86d43991dc8830b81f862872df515afbd252b81
+RWRxRnTWECCiCXAsiZM1Qu+/UtPnm9LipUWAlzKn2R/SOUPkQUg2uISsSvr4EI3QFWba5bChk3p7zoo3aS2dzzPdinvNKE0rvAQ=
+SHA256 (Pkgfile) = da1792f67cb56f99f7b81c042cb755b20ce46f1642ffc1fc4867497068f363ae
 SHA256 (.footprint) = 21ee07ed14d5516f90295e440990f66d0b526ae500ad49144758b551b39a9582
-SHA256 (userspace-rcu-0.15.2.tar.bz2) = 59f36f2b8bda1b7620a7eced2634f26c549444818a8313025a3bb09c0766a61d
+SHA256 (userspace-rcu-0.15.3.tar.bz2) = 26687ec84e3e114759454c884a08abeaf79dec09b041895ddf4c45ec150acb6d
