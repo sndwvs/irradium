@@ -269,7 +269,7 @@ f:a8f10ebe2f26f5568b711dfd72065754:libptytty/.footprint
 f:5b27dcac763479364cdaa0c9d6ab32ed:libptytty/.signature
 f:73e7b99b3c8ae2ce230a665abc9ed5e1:libptytty/Pkgfile
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
-f:330406e43a76603e3c86156ea1e0a779:libreoffice/makefile.in.patch
+f:d77c93fcb0a8aa12f2490c5a6808246a:libreoffice/makefile.in.patch
 f:faf069d19324a53f32cceaa8e7cc0ab2:libreoffice/libreoffice-7.6-qt6-wayland-egl.patch
 f:a853c1b2129f23706ca9af8cba3d8a52:libreoffice/.footprint.aarch64
 f:22f915e02e330220075b895672faf62d:libreoffice/.footprint.riscv64
