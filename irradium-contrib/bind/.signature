@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7lsLi/bnK4XWqdvOg0EZ0Y5bFthIyFAuAB7AQDa5cCenj9cRB97LPpRhSYsLWzx+OrMNgQA8XRChupcmTBKUaAI=
-SHA256 (Pkgfile) = 9b86b5424f7ff1a2630ac20eb15df346fe819b5698ffe0187b07cdca5c6d5a40
-SHA256 (.footprint) = 06279634c4134da06d0d608060c5cf57309c881bdd774bdd2cafc63e5a8a3836
-SHA256 (bind-9.20.8.tar.xz) = 3004d99c476beab49a986c2d49f902e2cd7766c9ab18b261e8b353cabf3a04b5
+RWTmT3d9kqan7raKyCM1PkLganrLbmXldQx+9DG4aYgVH74df9n66rE/k2xLdM8xC3kjXTmdtObeXhOeozJV91+m6KzCoR880Q0=
+SHA256 (Pkgfile) = fe1dd1ee8de6fbd60e6bdc2d8aea1fb5057d2eeb6659c6dfb95e3a2e4c183eaa
+SHA256 (.footprint) = 8018b316fded0ec452cabd4faef372467688b59daca2fa381dfa4d02112d1aaa
+SHA256 (bind-9.20.9.tar.xz) = 3d26900ed9c9a859073ffea9b97e292c1248dad18279b17b05fcb23c3091f86d
 SHA256 (named.root) = 9fe5d2aa2e0537e30d370ca76c62982acfeb13c292d52e40e6e70a486b373d25
 SHA256 (db.0.0.127) = 6c82640080a1c311005e7a264a2abbaabb7198f39430389b3ddf37cf22f42ff5
 SHA256 (db.localhost) = 1a61cc85da0581a784c06535b2462f027bc850270ac7287c1152b8479dc7a053
