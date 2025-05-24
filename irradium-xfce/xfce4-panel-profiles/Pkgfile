@@ -1,7 +1,7 @@
 # Description: A simple application to manage Xfce panel layouts
 # URL: https://docs.xfce.org/apps/xfce4-panel-profiles/start
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: python3-gobject xfce4-panel intltool gtk3
+# Depends on: python3-gobject xfce4-panel intltool gtk3 python3-psutil
 
 name=xfce4-panel-profiles
 version=1.1.1
@@ -11,13 +11,10 @@ source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar
 build(){
   cd $name-$version
 
-  ./configure \
-    --prefix=/usr \
-    --python=python3
+  meson build \
+    --prefix=/usr
 
-  make
-  make DESTDIR=$PKG install || exit 1
-
-  rm -r $PKG/usr/share/locale
+  meson compile -C build
+  meson install -C build --destdir $PKG
 
 }
