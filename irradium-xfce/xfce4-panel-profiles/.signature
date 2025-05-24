@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0fcn09Hjqw3+L4JnKfv0u/x+Md2YtPycyig45xy/PgcAvepJctXGljwYs74ueUnAV/7A4dloxzf57AWkRbaC0g8=
-SHA256 (Pkgfile) = ae21e29620b7ccfb5455d02bdd1ee965a4705c275a1a04dd00ac4aa062ff1e52
-SHA256 (.footprint) = 59518a0a52cf7259f8b8c8253ee87a06210472af9c7cbf1ab5684954f9798460
-SHA256 (xfce4-panel-profiles-1.0.15.tar.bz2) = 56cce1a27e88a18a282d568cbc601547a5dd704f0449a75bc284f0171aebaf3b
+RWQ1yk7gkrBo0QRXAhLyaKS7B8IcLwL+GJXEelNPOnfcwGCODWIapXpjkzsifcmQrOZatidZiDvtvbjSWnfI+D1vart/GMLOygE=
+SHA256 (Pkgfile) = d42912b1b968babd7f6fa9dfce8fe761ece35da0ae9216887a8ef8a55528835e
+SHA256 (.footprint) = 0d957a8c6d6c5dd91ffdc8f8eb4da66d7c124ec503bb0ad2121e7d64e1f163fb
+SHA256 (xfce4-panel-profiles-1.1.1.tar.xz) = 0126373a03778bb4894afa151de28d36bfc563ddab96d3bd7c63962350d34ba2
