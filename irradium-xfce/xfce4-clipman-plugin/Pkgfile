@@ -11,16 +11,14 @@ source=(https://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$ve
 build(){
   cd $name-$version
 
-  ./configure \
+  meson build \
     --prefix=/usr \
     --sysconfdir=/etc \
     --localstatedir=/var \
-    --disable-debug \
-    --enable-x11 \
-    --enable-wayland \
-    --disable-nls
+    -D x11=enabled \
+    -D wayland=enabled
 
-  make
-  make DESTDIR=$PKG install || exit 1
+  meson compile -C build
+  meson install -C build --destdir $PKG
 
 }
