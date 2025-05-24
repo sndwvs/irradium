@@ -96,9 +96,9 @@ f:ae28ee1dd6ad9d514079c3bbd3b5fdc0:xfce4-screensaver/.footprint
 f:468c0c03c3812525592df5b62728c9f2:xfce4-screensaver/.signature
 f:80bcffc15054b3dcc8a6d8fc4bd6136b:xfce4-screensaver/Pkgfile
 f:2c68bc2fe2c343bcbaa9be0db91c3b0d:xfce4-screensaver/clarify-desc-in-xfce-settings.patch
-f:c6f72a1d351ce2b0a773ef96f694c521:xfce4-screenshooter/.footprint
-f:871a649b44819122089490f513ef1362:xfce4-screenshooter/.signature
-f:a9b33118242b13b5bfa168b7d1ee8d7a:xfce4-screenshooter/Pkgfile
+f:ad95d3006c61a0c8dd3079d391071894:xfce4-screenshooter/.footprint
+f:c755dd7b930d58e39e8ededa63692fb9:xfce4-screenshooter/.signature
+f:decaf33d3300a983d3a73f50abef5baf:xfce4-screenshooter/Pkgfile
 f:64f7cf5170d1e94ac6d51c259dc85c9f:xfce4-session/README
 f:8df6ba54956111688839e483afaff5e0:xfce4-session/use-xfss-by-default-in-xfce.patch.gz
 f:bb046297012caa8f78d741444c17d29e:xfce4-session/.footprint
