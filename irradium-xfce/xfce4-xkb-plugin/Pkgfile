@@ -11,16 +11,11 @@ source=(https://archive.xfce.org/src/panel-plugins/$name/${version%.*}/$name-$ve
 build(){
   cd $name-$version
 
-  ./configure \
+  meson build \
     --prefix=/usr \
     --sysconfdir=/etc \
-    --libexecdir=/usr/lib/$name \
-    --localstatedir=/var \
-    --disable-static \
-    --disable-debug \
-    --disable-nls
+    --localstatedir=/var
 
-  make
-  make DESTDIR=$PKG install || exit 1
-
+  meson compile -C build
+  meson install -C build --destdir $PKG
 }
