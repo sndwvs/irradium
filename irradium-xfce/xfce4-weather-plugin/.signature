@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0Q49j1/VhoR7oaQy/3OASWoukBiqtio2cMQ1S3/MGMIPKHUSht7hrE8pzY9eB0/AO/BGIz5UgLUf+lM+JlfmFA8=
-SHA256 (Pkgfile) = 5042cb66df34f8ce2acdb326c3dfc558cb1cae6221c676e71ae268e219e36bbb
-SHA256 (.footprint) = f9760105708524677a66d2875113917b6331de67e78052dec071caa2bd3d319c
-SHA256 (xfce4-weather-plugin-0.11.2.tar.bz2) = 65d40aff7863550858a9f9d2b6054f27c69a3e7e712991785987f9a73bba876b
+RWQ1yk7gkrBo0XLUwWkIcvmqgeXIZjk2PfUDTX9nkR2CQ6ZovpEoCjOg1bRgs52iIuMIzBpWWb9CSIuX2XIJbQYe55hYOMglWQY=
+SHA256 (Pkgfile) = dbc764616cfd971de37e24e8a8fe91bc152714e6582571f4b1970f992e6bf796
+SHA256 (.footprint) = 73734ca4d1550082f8fb0cda66ccbb625764e592534142ead1b9d548a01ea8c4
+SHA256 (xfce4-weather-plugin-0.12.0.tar.xz) = 5dd90b032c06ef4b64b818023154ef9463a2c694a0290e57f3412296c7545ff6
