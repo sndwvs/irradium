@@ -11,14 +11,11 @@ source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar
 build(){
   cd $name-$version
 
-  ./configure \
+  meson build \
     --prefix=/usr \
     --sysconfdir=/etc \
-    --localstatedir=/var \
-    --disable-debug \
-    --disable-nls
+    --localstatedir=/var
 
-  make
-  make DESTDIR=$PKG install || exit 1
-
+  meson compile -C build
+  meson install -C build --destdir $PKG
 }
