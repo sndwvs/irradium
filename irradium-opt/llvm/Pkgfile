@@ -24,9 +24,14 @@ build() {
 
     patch -Np2 -d $name-$version.src -i $SRC/install-prefix.patch
 
+    export CFLAGS="-O2 -fPIC"
+    export CXXFLAGS=$CFLAGS
+
     cmake -S $name-$version.src -B build -G Ninja $PKGMK_LLVM \
         -D CMAKE_INSTALL_PREFIX=/usr \
         -D CMAKE_BUILD_TYPE=Release \
+        -DCMAKE_C_COMPILER="clang" \
+        -DCMAKE_CXX_COMPILER="clang++" \
         -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
         -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
         -D LLVM_BINUTILS_INCDIR=/usr/include \
