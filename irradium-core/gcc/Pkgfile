@@ -12,7 +12,6 @@ source=(https://sourceware.org/pub/gcc/releases/gcc-$version/$name-$version.tar.
     $name-riscv-disable-multilib-support.patch
     $name-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
     $name-configure-fix-detection-of-atomic-builtins-in-libato.patch
-    $name-fix-arm64.patch
     $name-riscv64-improve-build-time.patch)
 
 build() {
@@ -22,7 +21,6 @@ build() {
     patch -d $name-$version -p1 -i $SRC/$name-riscv-disable-multilib-support.patch
     patch -d $name-$version -p1 -i $SRC/$name-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
     patch -d $name-$version -p1 -i $SRC/$name-configure-fix-detection-of-atomic-builtins-in-libato.patch
-    patch -d $name-$version -p1 -i $SRC/$name-fix-arm64.patch
     patch -d $name-$version -p1 -i $SRC/$name-riscv64-improve-build-time.patch
 
     [[ $(uname -m) == "riscv64" ]] && PKGMK_GCC+=' --enable-autolink-libatomic'
