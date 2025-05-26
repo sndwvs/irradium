@@ -1,10 +1,10 @@
+# Description: Fortran (f95) add-on for GNU GCC compiler
 # URL: http://gcc.gnu.org/fortran
-# Description: Fortran (f95) add-on for GNU GCC compiler.
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: libmpfr
+# Depends on: gcc libmpfr
 
 name=gcc-fortran
-version=14.2.0
+version=14.3.0
 release=1
 source=(ftp://gcc.gnu.org/pub/gcc/releases/gcc-$version/gcc-$version.tar.xz
   gcc-nocheck-fixincludes.patch gcc-4.7.3-multilib-dirs.patch

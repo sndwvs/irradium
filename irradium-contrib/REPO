@@ -111,13 +111,13 @@ d:iozone
 d:iptraf-ng
 d:libutempter
 d:nmon
+d:python3-pyelftools
 d:audacious-plugins
 d:gcc-fortran
 d:iperf3
 d:libcue
 d:luajit
 d:logrotate
-d:python3-pyelftools
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -269,7 +269,6 @@ f:a8f10ebe2f26f5568b711dfd72065754:libptytty/.footprint
 f:5b27dcac763479364cdaa0c9d6ab32ed:libptytty/.signature
 f:73e7b99b3c8ae2ce230a665abc9ed5e1:libptytty/Pkgfile
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
-f:d77c93fcb0a8aa12f2490c5a6808246a:libreoffice/makefile.in.patch
 f:faf069d19324a53f32cceaa8e7cc0ab2:libreoffice/libreoffice-7.6-qt6-wayland-egl.patch
 f:a853c1b2129f23706ca9af8cba3d8a52:libreoffice/.footprint.aarch64
 f:22f915e02e330220075b895672faf62d:libreoffice/.footprint.riscv64
@@ -277,6 +276,7 @@ f:12ac42de11f3a399341abbfacb04d52e:libreoffice/.signature.aarch64
 f:369cab52bd225255130b91b1862982f6:libreoffice/mdds.patch
 f:1194096f6e450fea9fe6a63c7eda31ce:libreoffice/.signature.riscv64
 f:4b16285db78a06fc5f25bc03f61ba24f:libreoffice/Pkgfile
+f:d77c93fcb0a8aa12f2490c5a6808246a:libreoffice/makefile.in.patch
 f:7b3ae4fbdd27165b5adb2956822eb63c:librga/.footprint
 f:02f623c7e10ba79e8c9effe3bd3db890:librga/.signature
 f:7596de075e0ee7b81ce610dce48e4da3:librga/Pkgfile
@@ -628,6 +628,9 @@ f:adaee3d78879d7ea3b8875ce5b929d39:nmon/.footprint
 f:879a0be4a751104f6157069cbf3f11d0:nmon/.signature
 f:01fa573c86a3862e0e2f999e4b6c685c:nmon/Pkgfile
 f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
+f:ba60765494299d5fc275df5fdd2c9888:python3-pyelftools/.footprint
+f:68121d34227bd00a94502e39d53a0159:python3-pyelftools/.signature
+f:9044efa6d0c35c5411dc49600d17b407:python3-pyelftools/Pkgfile
 f:2eeb580caa364fb204a4160daaded475:audacious-plugins/.footprint
 f:df32e1bb992a7b26f6abafbb96433c8a:audacious-plugins/.signature
 f:713313ca8b508b4e2aa7d89023144699:audacious-plugins/Pkgfile
@@ -639,7 +642,7 @@ f:a58ff03983cf89e5e690c71f7eab6fff:gcc-fortran/gcc-configure-Add-enable-autolink
 f:9652a27711fa9f7989483ebe21786c16:gcc-fortran/gcc-configure-fix-detection-of-atomic-builtins-in-libato.patch
 f:7c9128522053af79791bcfdd55834c2a:gcc-fortran/gcc-nocheck-fixincludes.patch
 f:d999afb2c8abba1591154b6e6717e6d8:gcc-fortran/gcc-riscv-disable-multilib-support.patch
-f:a25c14dbc39d1e5a4a114dcb15dc0476:gcc-fortran/Pkgfile
+f:74c19f45168bec431eef8ca72f028ad6:gcc-fortran/Pkgfile
 f:f9bc7137b9698dff9d7655a9ea09e124:iperf3/.footprint
 f:6eaef1398cba601216dbedfd2fffdfef:iperf3/.signature
 f:7c6fe9e91bb38131674eccef87ea2623:iperf3/Pkgfile
@@ -654,6 +657,3 @@ f:2f22737488cdc80d357811197d7c4c36:logrotate/.signature
 f:cc3d57d34842d57ad038bfef0d2f39a0:logrotate/Pkgfile
 f:7bea0663634285e39b7f71be60ea0e84:logrotate/logrotate.conf
 f:91d8cf0598961982365ca010d375c42f:logrotate/logrotate.cron
-f:ba60765494299d5fc275df5fdd2c9888:python3-pyelftools/.footprint
-f:68121d34227bd00a94502e39d53a0159:python3-pyelftools/.signature
-f:9044efa6d0c35c5411dc49600d17b407:python3-pyelftools/Pkgfile
