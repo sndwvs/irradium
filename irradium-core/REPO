@@ -62,9 +62,8 @@ f:3c13e89423eb43d8ee97675362d3725f:gcc/.footprint.aarch64
 f:121344c2f1ced0c6da4d49033045d18d:gcc/.signature.aarch64
 f:ea0e2c6876ce06e05770a7af77018158:gcc/.footprint.riscv64
 f:42833f51c5ae23e9c34359ad86609c42:gcc/.signature.riscv64
-f:20b3d9a999e3e7da78251bef62a9d121:gcc/Pkgfile
+f:91141a370d29705090c5d45ccc8d3b87:gcc/Pkgfile
 f:7d16b76a4309eadedc9b1fe720cc58e9:gcc/gcc-riscv-disable-multilib-support.patch
-f:9e14cbd9ccc21b6f7f00383b30419167:gcc/gcc-riscv64-improve-build-time.patch
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:cc7bfdd526782e44ab589016ba953d02:gdbm/.signature
 f:4b8cd5b1617cce9f20f464ef2b24a0d0:gdbm/Pkgfile
