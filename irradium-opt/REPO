@@ -138,10 +138,10 @@ f:0a8059e5ee18b984894944da3adefcb4:rust/0003-compiler-Change-LLVM-targets.patch
 f:bdd37e1645359e0a29eaefdb3cb08126:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 f:72aef1b1e633bbfdeb9f6e1133167ab2:rust/riscv64-disable-f16-f128.patch
 f:7b94db9a29ef3f10ae8d02427138d8ba:rust/.footprint.aarch64
-f:d94749ef0d7364e35267067deb423356:rust/.signature.aarch64
-f:122b1568e1a5676133a9d08f5d20ef88:rust/Pkgfile
 f:0ebe1fa6449bf6a3b63dba35e168fff3:rust/.footprint.riscv64
+f:d94749ef0d7364e35267067deb423356:rust/.signature.aarch64
 f:e86ff57038218de537f79d8cc3c823ea:rust/.signature.riscv64
+f:122b1568e1a5676133a9d08f5d20ef88:rust/Pkgfile
 f:258ab9a01a7c755ed2cd7c84489fd2f0:rust/0001-bootstrap-Change-libexec-dir.patch
 f:a23a8aac5a57faa325cbaf32d2f261c8:slim/.footprint
 f:9654119211dec3b51f819b7cc34380ac:slim/.signature
@@ -181,7 +181,7 @@ f:761d01b09e41159c71636c6ce8e18f65:hyphen/.footprint
 f:f2a6bc2de0496063825791220cf24be6:hyphen/.signature
 f:e1dadd566a18049c0bdcfe2c7b4773a5:hyphen/Pkgfile
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
-f:b8429604694c918dcda6fcfad4e58b0e:strace/.signature
+f:ee39e5ac37ee660d759733a49a1c1818:strace/.signature
 f:ffd2ca4eaa46b6cf9a4a3f86eee44e16:strace/Pkgfile
 f:c32d199bdb048fcdc8596761f82e6f8d:aspell/.footprint
 f:9b6c9378cdeb1efa1d3e0fb679d37e82:aspell/.signature
