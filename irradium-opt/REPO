@@ -94,10 +94,10 @@ f:6ebebc726135f1448067c1b553b0782c:lightdm-gtk-greeter/Pkgfile
 f:8588e227a9e80787b8c4ed61b123a03a:lightdm-gtk-greeter/post-install
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
-f:0719892e308e0071d60c4de12047c38f:llvm/.footprint.riscv64
-f:7474fec629d94f24c11b9aa9f4c3912d:llvm/.signature.riscv64
 f:0719892e308e0071d60c4de12047c38f:llvm/.footprint.aarch64
+f:0719892e308e0071d60c4de12047c38f:llvm/.footprint.riscv64
 f:6d4210d5967d22ed1ade4ee5c40425ce:llvm/.signature.aarch64
+f:7474fec629d94f24c11b9aa9f4c3912d:llvm/.signature.riscv64
 f:9cd24582ade53cd7295504ff2ee9108a:llvm/Pkgfile
 f:97d2901b0c7929f1469fed61587d3c59:mc/.footprint
 f:b4841f1b6a92ca8dd65a602c6350250b:mc/.signature
@@ -140,8 +140,8 @@ f:72aef1b1e633bbfdeb9f6e1133167ab2:rust/riscv64-disable-f16-f128.patch
 f:7b94db9a29ef3f10ae8d02427138d8ba:rust/.footprint.aarch64
 f:0e39a5f403c4100cf479ae80ad3e6387:rust/.signature.aarch64
 f:5b60e76be46f253539e13f47cfea70ca:rust/Pkgfile
-f:0ebe1fa6449bf6a3b63dba35e168fff3:rust/.footprint.riscv64
-f:e86ff57038218de537f79d8cc3c823ea:rust/.signature.riscv64
+f:ea20a04a38d807eb78f44175eb4379c2:rust/.footprint.riscv64
+f:a7e42d3f8c762f971b315c91d2ecc518:rust/.signature.riscv64
 f:258ab9a01a7c755ed2cd7c84489fd2f0:rust/0001-bootstrap-Change-libexec-dir.patch
 f:a23a8aac5a57faa325cbaf32d2f261c8:slim/.footprint
 f:9654119211dec3b51f819b7cc34380ac:slim/.signature
@@ -197,8 +197,8 @@ f:f7748bfe653ff6a7a0719981cebbac97:nodejs/.footprint
 f:6f35bea030879f18394b1de2c469f449:nodejs/unbundle-uv.patch
 f:1a9c6b5bbab91c86bebd9fa47b146d1f:nodejs/v8-disable-trap-handler-on-riscv-sv39.patch
 f:a94415d6a47d2a13bdd7db3287589033:nodejs/v8-riscv-trap-handler.patch
-f:a97fefc19e201cb9dbdef07b9b0b5dec:nodejs/Pkgfile
 f:2975a573fbb2d9a35338c3bed25edad3:nodejs/.signature
+f:a97fefc19e201cb9dbdef07b9b0b5dec:nodejs/Pkgfile
 f:f8d2f18e32451d2f7d516ef7fd446dc8:shared-mime-info/.footprint
 f:ba273dc7e389002c9507f369fe299b59:shared-mime-info/.signature
 f:952b8f2b79db7944026a790578218e13:shared-mime-info/Pkgfile
