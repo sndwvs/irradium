@@ -19,7 +19,8 @@ source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/
   https://dev-www.libreoffice.org/src/skia-m130-3c64459d5df2fa9794b277f0959ed8a92552bf4c.tar.xz
   libreoffice-7.6-qt6-wayland-egl.patch
   mdds.patch
-  makefile.in.patch)
+  makefile.in.patch
+  libreoffice-25.2.4.1-upstream-consolidate-toOUString.patch)
 
 # unpack_source() {{{
 unpack_source() {
@@ -78,6 +79,7 @@ build() {
 
   patch -Np1 -i $SRC/libreoffice-7.6-qt6-wayland-egl.patch
   patch -Np1 -i $SRC/mdds.patch
+  patch -Np1 -i $SRC/libreoffice-25.2.4.1-upstream-consolidate-toOUString.patch
 
   export LC_ALL=en_US.UTF-8
   export LANG=en_US
