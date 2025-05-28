@@ -270,11 +270,10 @@ f:5b27dcac763479364cdaa0c9d6ab32ed:libptytty/.signature
 f:73e7b99b3c8ae2ce230a665abc9ed5e1:libptytty/Pkgfile
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
 f:faf069d19324a53f32cceaa8e7cc0ab2:libreoffice/libreoffice-7.6-qt6-wayland-egl.patch
-f:a853c1b2129f23706ca9af8cba3d8a52:libreoffice/.footprint.aarch64
 f:22f915e02e330220075b895672faf62d:libreoffice/.footprint.riscv64
-f:12ac42de11f3a399341abbfacb04d52e:libreoffice/.signature.aarch64
 f:369cab52bd225255130b91b1862982f6:libreoffice/mdds.patch
-f:1194096f6e450fea9fe6a63c7eda31ce:libreoffice/.signature.riscv64
+f:185d60944ea767075d27247c3162b3bc:libreoffice/185d60944ea767075d27247c3162b3bc-unowinreg.dll
+f:d9f72914c76becc36f03c3aa1fd0c057:libreoffice/.signature.riscv64
 f:8f0543c7e3e16390273cd862eb8e3b6b:libreoffice/Pkgfile
 f:d77c93fcb0a8aa12f2490c5a6808246a:libreoffice/makefile.in.patch
 f:b18de1bed3c8f79141b9fb82ad9a3355:libreoffice/libreoffice-25.2.4.1-upstream-consolidate-toOUString.patch

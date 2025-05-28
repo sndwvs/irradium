@@ -82,9 +82,9 @@ f:44592779aa1b028d927913cb36bbe831:xfce4-notifyd/Pkgfile
 f:d387192f8e61b6da9ec20b997c972abf:xfce4-panel/.footprint
 f:15562910dfebd3386b0ff6dbeaf4e1a5:xfce4-panel/.signature
 f:461e25daffa8d23a8241bf4535f2e351:xfce4-panel/Pkgfile
+f:7ceb4d75fc1c74d5a714c4bd67e8f2f7:xfce4-panel-profiles/Pkgfile
 f:b9bd948bc3340fe5cdf5daf3dc6a0105:xfce4-panel-profiles/.footprint
 f:7c3754571f031471d19ab1aceaea72c2:xfce4-panel-profiles/.signature
-f:7ceb4d75fc1c74d5a714c4bd67e8f2f7:xfce4-panel-profiles/Pkgfile
 f:feabb7500e1a111b11b0360c7d68ed98:xfce4-power-manager/post-install
 f:6a9348b27438dc45da63336a53aa438d:xfce4-power-manager/.footprint
 f:84897d58f87ce71673b96b9ec401f61b:xfce4-power-manager/.signature
@@ -122,14 +122,14 @@ f:5445d6797b3f2325a442569f01e5961b:xfce4-weather-plugin/.footprint
 f:a63dbb6f77278ae0f99e0f42ce0b8432:xfce4-weather-plugin/.signature
 f:d44d9c717e5cf771efe596facbd4d76d:xfce4-weather-plugin/Pkgfile
 f:239c1acfee7ea10a5d347781aab28d64:xfce4-whiskermenu-plugin/.footprint
-f:1148c0b0cc9cae9583296ec51f189499:xfce4-whiskermenu-plugin/.signature
 f:b98df6aed4e85b4a77f69d161f19ca0f:xfce4-whiskermenu-plugin/Pkgfile
+f:1148c0b0cc9cae9583296ec51f189499:xfce4-whiskermenu-plugin/.signature
 f:833a7877604d05653cde313e8bfb8cda:xfce4-xkb-plugin/.footprint
 f:121ee6c785e28b61dc8c2217105c7dc5:xfce4-xkb-plugin/.signature
 f:59bbc1eae35aa0da2b569ed66d0aac50:xfce4-xkb-plugin/Pkgfile
+f:b62beb3944df7920b1af7b3d995686fb:xfconf/Pkgfile
 f:0f5c35ebfe940321c525b191b18a83f0:xfconf/.footprint
 f:14147f1ad86578e8dfb6a89bf874410f:xfconf/.signature
-f:b62beb3944df7920b1af7b3d995686fb:xfconf/Pkgfile
 f:bda2334318febcc10a038982af18fdd0:xfdesktop/.footprint
 f:7b575dc96dc84df51ea395d14c371c78:xfdesktop/.signature
 f:417a9613a522bef0f0302bdc37d6bacb:xfdesktop/Pkgfile
