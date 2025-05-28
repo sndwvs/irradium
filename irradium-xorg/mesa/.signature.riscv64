@@ -1,14 +1,13 @@
 untrusted comment: verify with /etc/ports/irradium-xorg.pub
-RWT3zJzzKRcegteJvWR9ub79fSzCzB1GuZ2FnJ5pasXRrtk+db0KXzyF978TMJN5FE+NX0sbxsIrGZBbP7fcLDWV+4JuGEKnqgs=
-SHA256 (Pkgfile) = 8978bb45bd42eb24f7d606aef3a95d64150632cac2391ff561ba7aad0d180145
-SHA256 (.footprint.riscv64) = e3becb4da30060accffd2505d9bedd258909f112f75f1ab97c746d5ace24a808
-SHA256 (mesa-25.0.6.tar.xz) = 0d179e019e3441f5d957330d7abb3b0ef38e6782cc85a382608cd1a4a77fa2e1
+RWT3zJzzKRcegm8DgESNbgwcQ7TdfWcxGgajWDC3O6FxjSICW+SD0/2IILKVguTNaMAKGmnD/13xtc6VmCGPFSeH+vxTle3Cpw0=
+SHA256 (Pkgfile) = 0298ab42f1316abb604b737dc0b41ba070b7b370867ac9e2962c1510516d279e
+SHA256 (.footprint.riscv64) = 3671952c6ea8a40a29348419d401f55372f51f7abc105469278f343bbb402285
+SHA256 (mesa-25.1.1.tar.xz) = cf942a18b7b9e9b88524dcbf0b31fed3cde18e6d52b3375b0ab6587a14415bce
 SHA256 (0000-mesa-20.1.1-fix-opencl.patch) = e4e6cb3a204485bcddfe4f715197704a7f73bc9d6282f7bdbd4c1e79a6641979
 SHA256 (0001-mesa-23.1-x86_32-llvm-detection.patch) = 79e2e290d8b1e89dbc92f7ad3e264ca17e881fdd1765102e9bf5ce19b0a2031d
-SHA256 (0002-mesa-24.1-find-opencl-c-base.h.patch) = 3f3500fa7ba6798e8db8d1c71c85f6f9210436f787d4660ac9c58c002042f9bf
+SHA256 (0002-mesa-24.1-find-opencl-c-base.h.patch) = cff85cbbc693faed44f21b3acecdfc204920b8ec84410166799b4eb12bd4439c
 SHA256 (0003-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch) = 6ed5aa69d9356682f9df41a5e7af466b8494c4c23c97a176f887266e091af229
-SHA256 (0004-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch) = e9484bec006658cde9da31d5d56d26517ea7b6cc8ca760bfb9de5e9d3be0d75f
+SHA256 (0004-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch) = 39fe2027f38dd4e93956ba594f5846ffdcfb56434c64a31748609c73e24be1cb
 SHA256 (0005-mesa-24-llvmspirv-detection.patch) = 1a7876583850fa75ba35d98eeeaeb363ccf05c514ad34d7db0ba83587b6646e4
-SHA256 (0006-mesa-buildsystem-improvements.patch) = 016ca979c460b03c3c1bc3547baa70c7a45cd38ec2a1687fc37d97683eadd80b
+SHA256 (0006-mesa-buildsystem-improvements.patch) = 2cf4b199d24bc6a6bbcc07942beb5fa5cbe4e191c944816a1bf02fff9f6bf739
 SHA256 (0007-mesa-24.0-llvmspirvlib-version-check.patch) = c4913d20c5a83e9675206276e4b0eb0704cfb87d7483f1a767e3f82a73cbf0c5
-SHA256 (0008-mesa-24.0-osmesa-fix-civ3.patch) = 0b2ac1ea1526fac38e413f8e7512b23fa1ffab3068d7942acdad3a94dd176ec0
