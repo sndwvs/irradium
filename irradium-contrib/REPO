@@ -345,8 +345,7 @@ f:5f433fbd0ac6f3524bc585a8f6038cce:tcl/.signature
 f:0628dcc755f986173fb3f7c834f25ceb:tcl/Pkgfile
 f:a0d5afb9ca92709336fb1b2e9fbf969e:telegram-desktop/.footprint
 f:2aef011ad6b70683c0975e5f78770f77:telegram-desktop/.signature
-f:e4af257431c152cbe538cd8232aef9de:telegram-desktop/Pkgfile
-f:d6e2a784213cfcd6022d5ede87ad990a:telegram-desktop/qt-6.9.patch
+f:404cde723060328c0c3691723287e9cf:telegram-desktop/Pkgfile
 f:5fd9540530092495051bc72484027d38:tk/.footprint
 f:4a0cf636d10c64ff0a5c12fcec684a78:tk/.signature
 f:94c44128030f929514210cd358bcd567:tk/Pkgfile
