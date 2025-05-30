@@ -5,7 +5,7 @@
 # Optional: lld
 
 name=llvm
-version=20.1.5
+version=20.1.6
 release=1
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-$version.src.tar.xz
     https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/cmake-$version.src.tar.xz
@@ -13,8 +13,7 @@ source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/
     install-prefix.patch)
 
 build() {
-    prt-get isinst ccache && PKGMK_LLVM+=' -D LLVM_CCACHE_BUILD=ON' && \
-        export PATH="$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
+    prt-get isinst ccache && export PATH="$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
 
     cp -r $SRC/cmake-$version.src/Modules/* $name-$version.src/cmake/modules/.
     mv $SRC/cmake-$version.src/ $SRC/cmake
