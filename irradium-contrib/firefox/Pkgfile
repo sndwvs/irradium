@@ -5,7 +5,7 @@
 # Optional: apulse jack pulseaudio pipewire sndio sccache lld wayland
 
 name=firefox
-version=138.0.4
+version=139.0
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -97,9 +97,8 @@ EOF
 
   # audio
   PKGMK_FFAUDIO="alsa"
-  [ -e /usr/lib/libpulse.so -o -e /usr/lib/apulse/libpulse.so ] && PKGMK_FFAUDIO+=",pulseaudio"
-  [ -e /usr/lib/libjack.so ] && PKGMK_FFAUDIO+=",jack"
-  [ -e /usr/lib/libsndio.so ] && PKGMK_FFAUDIO+=",sndio"
+  [ -e /usr/lib/pkgconfig/libpulse.pc ] && PKGMK_FFAUDIO+=",pulseaudio"
+  [ -e /usr/lib/pkgconfig/sndio.pc ] && PKGMK_FFAUDIO+=",sndio"
   echo "ac_add_options --enable-audio-backends=${PKGMK_FFAUDIO}" >> .mozconfig
 
   if prt-get isinst wayland xorg-server >/dev/null ; then
@@ -123,14 +122,16 @@ EOF
   export CXXFLAGS="$CXXFLAGS -w"
   export LDFLAGS="$LDFLAGS -Wl,-rpath=/usr/lib/firefox,--enable-new-dtags"
 
-  if prt-get isinst lld >/dev/null; then
+  if prt-get isinst clang lld >/dev/null; then
       echo 'ac_add_options --enable-linker=lld' >> .mozconfig
       export LDFLAGS+=",--thinlto-jobs=$((JOBS / 2))"
+      export CC=clang CXX=clang++
   else
       echo 'ac_add_options --enable-linker=bfd' >> .mozconfig
+      export CC=gcc CXX=g++
   fi
 
-  export CC=clang CXX=clang++ AR=llvm-ar NM=llvm-nm RANLIB=llvm-ranlib RUSTFLAGS="-C opt-level=2 $RUSTFLAGS"
+  export AR=llvm-ar NM=llvm-nm RANLIB=llvm-ranlib RUSTFLAGS="-C opt-level=2 $RUSTFLAGS"
   export MOZ_MAKE_FLAGS="-j ${JOBS-1}"
 
   # Disable notification when build system has finished
