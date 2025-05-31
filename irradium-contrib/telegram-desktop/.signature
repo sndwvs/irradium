@@ -1,7 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7ljwm8rMTg8iBlRY9Gfs3E5amzmzR4lmHEWYnHEJP3QfUCdiUgv1BnkXATxXQx7tbEFR5HXJLAcTpu6WYFawQQc=
-SHA256 (Pkgfile) = a7cdcad75c1b7b1fccc33da413278f973a9e15d81714df3f926a7e7106c302d6
+RWTmT3d9kqan7rJtCcva5a+7JULakxklf/oEl9I/Xi85eklFezMKMtW69xbSM6eAoM4f3tPunr1XFxaxTO6hcc6tFyDz44U04AA=
+SHA256 (Pkgfile) = bb66776ec88c330131fb9bdd1b9330a9b8e623823cd4f53b5086a5c0ec63b881
 SHA256 (.footprint) = bd8bec2247fe41c73a44c9f3d34456a3120fa6971cfcc8a4a342344209bce11a
-SHA256 (tdesktop-5.13.1-full.tar.gz) = caa37bbf7d9fcdfecdb5f596f02a44becbe468ea5c6af7f3c670b61952744a80
-SHA256 (glibmm-2.78.0.tar.xz) = 5d2e872564996f02a06d8bbac3677e7c394af8b00dd1526aebd47af842a3ef50
-SHA256 (qt-6.9.patch) = 2d638fa6446df1385eac9a599a5dd013338d069718e18d244d44fa6c4ee954e5
+SHA256 (tdesktop-5.14.3-full.tar.gz) = af15716f053403dc42233775e931a711759c8f0468a0aff5f3dfabdf98bf6861
+SHA256 (51743dfd01dff6179e2d8f7095729caa4e2222e9.tar.gz) = f2c6b92533ba41a024b9fdb86d346c8bfc876d5961738ad463effbd844d61405
