@@ -4,10 +4,10 @@
 # Depends on: cmake ninja pipewire pulseaudio libjpeg-turbo libxcomposite openh264
 
 name=tg_owt
-version=20241203
+version=20250515
 release=1
-_commit=be39b8c8d0db1f377118f813f0c4bd331d341d5e
-_libsrtp_commit=a566a9cfcd619e8327784aa7cff4a1276dc1e895 
+_commit=232ec410502e773024e8d83cfae83a52203306c0
+_libsrtp_commit=a566a9cfcd619e8327784aa7cff4a1276dc1e895
 _libyuv_commit=04821d1e7d60845525e8db55c7bcd41ef5be9406
 _libvpx_commit=3688b17187d40a71f9a7de4bfac92201f3e4a533
 _abseil_commit=d7aaad83b488fd62bd51c81ecf16cd938532cc0a
@@ -20,8 +20,7 @@ source=(https://github.com/desktop-app/tg_owt/archive/${_commit}.tar.gz
         https://github.com/cisco/libsrtp/archive/$_libsrtp_commit.tar.gz
         cstdint.patch
         gcc12.patch
-        gcc13.patch
-        pipewire.patch)
+        gcc13.patch)
 
 build() {
     cd $name-${_commit}
@@ -40,7 +39,6 @@ build() {
     patch -Np1 -i $SRC/cstdint.patch
     patch -Np1 -i $SRC/gcc12.patch
     patch -Np1 -i $SRC/gcc13.patch
-    patch -Np1 -i $SRC/pipewire.patch
 
     CXXFLAGS+=" -DLIBYUV_DISABLE_NEON"
 
