@@ -34,6 +34,7 @@ d:nodejs
 d:shared-mime-info
 d:wpa_supplicant
 d:lame
+d:dovecot
 f:0072413ad564c8a82da0058e41ddce6b:cryptsetup/.footprint
 f:9874ea339796e7a32fe2f840e00b8481:cryptsetup/.signature
 f:921069ba04b101174ab92b95734262e8:cryptsetup/Pkgfile
@@ -214,3 +215,14 @@ f:5b505ff68474564b9eb44b04445ba730:wpa_supplicant/wpa_supplicant
 f:1cc2701f7267dad2c907ca304d22cc6c:lame/.footprint
 f:cce38c543bd5d52167e4fb7ec30daebc:lame/.signature
 f:52814a23ddd928be2c0d0632cc8bf84f:lame/Pkgfile
+f:78ec24d44b0f96cc32592c41aa2fd5ed:dovecot/.signature
+f:c134f2ad0545570b1e2eee1c9dbd4d07:dovecot/Pkgfile
+f:802c1e2cadcc62e325c55f2ecf1f4071:dovecot/.footprint
+f:fce818ed71a90dda4aabb021123db5bc:dovecot/README
+f:6597c97f5c341ccc66547f7033552004:dovecot/dovecot-2.3.21-openssl3_fixes-1.patch
+f:714acfd9fcf697b6487b15933fb556cd:dovecot/dovecot-2.3.21-security_fix-1.patch
+f:b8904c04b2a51a94ddc60c6abde7489d:dovecot/dovecot.pam
+f:4830236386471950e176dc1f6531f158:dovecot/dovecot.rc
+f:b63a1ee3a1409a5e8bcd774097181e74:dovecot/pre-install
+f:fe965e8205ce605dc81115a70c0c7008:dovecot/configure.ac.patch
+f:c0b4fd3774f578cda35e3639fd4f2a0d:dovecot/dovecot-2.3.21.1-fixicu.patch
