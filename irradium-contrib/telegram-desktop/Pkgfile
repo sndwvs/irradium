@@ -6,22 +6,25 @@
 name=telegram-desktop
 version=5.14.3
 release=1
+_commitid=51743dfd01dff6179e2d8f7095729caa4e2222e9
 source=(https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tdesktop-$version-full.tar.gz
-        https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.0.tar.xz)
+        https://github.com/tdlib/td/archive/$_commitid.tar.gz)
 
 build() {
-  meson -D maintainer-mode=true -Dbuild-documentation=false -Dbuild-examples=false --default-library static --prefix $SRC/glibmm glibmm-2.78.0 build
-  meson compile -C build
-  meson install -C build
-
   cd tdesktop-$version-full
 
-  export PKG_CONFIG_PATH=$SRC/glibmm/usr/local/lib/pkgconfig
+  LDFLAGS="$LDFLAGS -Wl,-z,stack-size=1024768"
+  cmake -S $SRC/td-$_commitid -B $SRC/td-$_commitid/build \
+    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_INSTALL_PREFIX="$SRC/td-$_commitid/install" \
+    -Wno-dev \
+    -DTD_E2E_ONLY=ON
+  cmake --build $SRC/td-$_commitid/build
+  cmake --install $SRC/td-$_commitid/build
 
-  LDFLAGS="$LDFLAGS -Wl,-z,stack-size=1024768" \
   cmake -B build -G Ninja . \
     -DCMAKE_INSTALL_PREFIX=/usr \
-    -DCMAKE_PREFIX_PATH=$SRC/glibmm \
+    -Dtde2e_DIR="$SRC/td-$_commitid/install/lib/cmake/tde2e" \
     -DCMAKE_BUILD_TYPE=MinSizeRel \
     -DTDESKTOP_API_ID=28851236 \
     -DTDESKTOP_API_HASH=830f83e5afbad782af2704a120e4dcdf \
