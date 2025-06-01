@@ -6,12 +6,13 @@
 name=qt5-webkit
 _qtver=5.212.0-alpha4
 version=5.212.0alpha4
-release=3
+release=4
 source=(https://github.com/annulen/webkit/releases/download/qtwebkit-$_qtver/qtwebkit-$_qtver.tar.xz
         glib-2.68.patch
         icu68.patch
         qt5-webkit-bison-3.7.patch
         qt5-webkit-icu75.patch
+        qt5-webkit-icu76.patch
         qt5-webkit-python-3.9.patch
         qtwebkit-cstdint.patch
         qtwebkit-fix-build-gcc14.patch
@@ -26,7 +27,8 @@ build() {
     patch -p1 -i $SRC/qt5-webkit-bison-3.7.patch # Fix build with bison 3.7
     patch -p1 -i $SRC/qtwebkit-cstdint.patch # gcc 11.1
     patch -p1 -i $SRC/qtwebkit-fix-build-gcc14.patch # GCC 14.1
-    patch -p1 -i $SRC/qt5-webkit-icu75.patch
+    patch -p1 -i $SRC/qt5-webkit-icu75.patch # Fix build ICU 75
+    patch -p1 -i $SRC/qt5-webkit-icu76.patch # Fix build ICU 76
     patch -p1 -i $SRC/webkit-offlineasm-warnings-ruby27.patch
 
     export CFLAGS+=" -DU_DEFINE_FALSE_AND_TRUE=1"
