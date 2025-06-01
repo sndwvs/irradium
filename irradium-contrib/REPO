@@ -325,7 +325,7 @@ f:aec15c20d792575f72122967af1ee827:qt5-webkit/glib-2.68.patch
 f:3540b17b2229c92567aa6f57ae8f41e0:qt5-webkit/icu68.patch
 f:f852ddcf1cd49354d75084e491783ec0:qt5-webkit/qt5-webkit-bison-3.7.patch
 f:aa35a52d0a4560753650dd7e06369d6c:qt5-webkit/qt5-webkit-python-3.9.patch
-f:aa5f7fbf4d04df6180ec2f7f3fe416c2:qt5-webkit/.signature
+f:dac00b081b059e83a95be238a27450d9:qt5-webkit/.signature
 f:69bd0de1528593f6949eb1e957becdc1:qt5-webkit/Pkgfile
 f:210c37bad93fd46863960054346313b5:qt5-webkit/qt5-webkit-icu75.patch
 f:4fbc16273f371a496ce2b27bbced199a:qt5-webkit/qtwebkit-cstdint.patch

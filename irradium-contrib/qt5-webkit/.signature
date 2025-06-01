@@ -1,12 +1,13 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7mXICws1k1plfZ0wfL+phTDxfRW6iOumKBZgDc6aSEAfIfpIMXzvlAWzOwgXrAwVFHcjjGpeWSNrDbqi9dfDtQw=
-SHA256 (Pkgfile) = e21f4b87861d9b1154a922a7cff5567b97c3055645d0a258e9640a56cba896f7
+RWTmT3d9kqan7kaQmSBflhJu4y7h+xLnAFrZxOcj8XqwRHeEemH13h6DU4r2h58Q3bdyb3GUBflpG35tox2aumwpJrcFarScGQU=
+SHA256 (Pkgfile) = 06d6d1a73008592c0ee77487239da867177574883f79eada01c968f5b0aa6365
 SHA256 (.footprint) = 839d04c7250b0262d6f81ad2c5ec4182e696bdb0a7c70c298afe2b0614269bc1
 SHA256 (qtwebkit-5.212.0-alpha4.tar.xz) = 9ca126da9273664dd23a3ccd0c9bebceb7bb534bddd743db31caf6a5a6d4a9e6
 SHA256 (glib-2.68.patch) = 4969dd03e482155e2490b50307dada81dda7bbc9e5398e3a53c20bc474f7c04e
 SHA256 (icu68.patch) = 0b40ed924f03ff6081af610bb0ee01560b7bd1fb68f8af02053304a01d4ccdf0
 SHA256 (qt5-webkit-bison-3.7.patch) = 34f37b53ee0bc31c63ce85ebd1ae95543a8ba28483e387b20efd50574bd813be
 SHA256 (qt5-webkit-icu75.patch) = b4d1ba1e99e28fd8cb1ec82252373c870ede683869a9cd43c8e465fe09531bcb
+SHA256 (qt5-webkit-icu76.patch) = 2e360197a23c6274d7190113381ad497b2bba60bec5f627f987ad4113063c0d3
 SHA256 (qt5-webkit-python-3.9.patch) = 6e0cee08e4fa57b04752e80817f33562f48aa42608a3a620930b6040259b4932
 SHA256 (qtwebkit-cstdint.patch) = 4c71c958eae45cae65c9f002024eb1369d06029b668e595158138ff7971e64f1
 SHA256 (qtwebkit-fix-build-gcc14.patch) = eea38db22078700887bf22b6a49bb628fd8444cdb2e506770c993df883d0e8fb
