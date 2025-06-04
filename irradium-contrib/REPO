@@ -118,6 +118,7 @@ d:iperf3
 d:libcue
 d:luajit
 d:logrotate
+d:vte3
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -657,3 +658,6 @@ f:2f22737488cdc80d357811197d7c4c36:logrotate/.signature
 f:cc3d57d34842d57ad038bfef0d2f39a0:logrotate/Pkgfile
 f:7bea0663634285e39b7f71be60ea0e84:logrotate/logrotate.conf
 f:91d8cf0598961982365ca010d375c42f:logrotate/logrotate.cron
+f:47eae343160b654631af3ce45ebc8bcb:vte3/.footprint
+f:d0e7ec4c1c8eed1b8c4865d6db92d539:vte3/.signature
+f:1f8aec6c4c7a276d3cfe0b7902b12c15:vte3/Pkgfile
