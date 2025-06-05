@@ -84,7 +84,7 @@ f:ffd59b0f7c8b5d66cdc3a5f33fa50e57:glibc/glibc-2.39-fhs-1.patch
 f:8ade3a1b3e11426f6c070daa3906c6f7:glibc/post-install
 f:cedc5025aefdb42a0f4713fce634831d:kbd/.footprint
 f:43af1d6335b8683cdfc28fce3d3d4351:kbd/.signature
-f:54cc085fdded1c45a476b2b05fda9a49:kbd/Pkgfile
+f:e5715ef58b3199f201e20fb40cbf7c9a:kbd/Pkgfile
 f:65632d841dc92bec22aa9354ad76ab5b:libgmp/.footprint
 f:5d6e03c51d708196b0994d3d5c826c65:libgmp/.signature
 f:a7110684a876a57e776357e37bf72c32:libgmp/Pkgfile
