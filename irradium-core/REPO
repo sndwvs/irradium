@@ -58,12 +58,12 @@ f:032ba6ae0bd4d6e405d012084816e334:gcc/gcc-aarch64-disable-multilib-support.patc
 f:a58ff03983cf89e5e690c71f7eab6fff:gcc/gcc-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
 f:9652a27711fa9f7989483ebe21786c16:gcc/gcc-configure-fix-detection-of-atomic-builtins-in-libato.patch
 f:7c9128522053af79791bcfdd55834c2a:gcc/gcc-nocheck-fixincludes.patch
-f:81abb17ba2185d67f11434c2888b2f63:gcc/.signature.aarch64
+f:fdbf69de7bcb8e44345645ad9e3033ca:gcc/.footprint.aarch64
 f:0915280e74d5b69092c593f2fdf78419:gcc/.footprint.riscv64
+f:81abb17ba2185d67f11434c2888b2f63:gcc/.signature.aarch64
 f:71fc3e082e457e920ff1414538358a5a:gcc/.signature.riscv64
 f:91141a370d29705090c5d45ccc8d3b87:gcc/Pkgfile
 f:7d16b76a4309eadedc9b1fe720cc58e9:gcc/gcc-riscv-disable-multilib-support.patch
-f:fdbf69de7bcb8e44345645ad9e3033ca:gcc/.footprint.aarch64
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:cc7bfdd526782e44ab589016ba953d02:gdbm/.signature
 f:4b8cd5b1617cce9f20f464ef2b24a0d0:gdbm/Pkgfile
@@ -102,11 +102,11 @@ f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
 f:3111e8e5893f27a69499808413911008:pkgconf/.footprint
 f:43492fd406acc422b95a1b09a25c38a2:pkgconf/.signature
 f:c997ffc58d2430a56db7d4ae28c1354f:pkgconf/Pkgfile
+f:ddd624554de06deb74530cf84f0ffa80:pkgutils/pkgmk.conf
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:85773ddb6595cc96b6776168a93a8ed9:pkgutils/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
 f:e429beab3a74a36b7eacf9ca2c2aa3fb:pkgutils/.signature
 f:570a371d48e9bc13feed463e0642dab8:pkgutils/Pkgfile
-f:ddd624554de06deb74530cf84f0ffa80:pkgutils/pkgmk.conf
 f:d4c72854441fa2a9cbd0085ad891f05a:ports/.footprint
 f:804bb419e539a70ad80e4c03df3c3411:ports/contrib.pub
 f:b8dd0aad383810cad920d6548cd1cb56:ports/core.pub
@@ -117,6 +117,9 @@ f:c439515bdbd1e17d8a74c2a37d285718:ports/irradium-xfce.pub
 f:1ec983509e56966c5a7945a854c0f7bf:ports/irradium-xorg.pub
 f:0d1f1fde50a9bd743d9cac6b235f038c:ports/opt.pub
 f:69927e5d0ae5dc3455faeaac916c4db2:ports/xorg.pub
+f:71ea9279e879c225c26a87e64a98d2d2:ports/.signature
+f:c0cbe8c3ef7b75046fd0eaf8cb9fa301:ports/Pkgfile
+f:ffcfbdbd1979f51825fa796a6296d1ab:ports/contrib.rsync.inactive
 f:9a7ec7bdf5155fbedb02b35e50420cfa:ports/core.rsync
 f:6fae15382775b3bd8121a25ce58cf70c:ports/irradium-contrib.httpup.inactive
 f:775c289306bce523da4973e8d3a3a965:ports/irradium-core.httpup
@@ -125,9 +128,6 @@ f:6a4987faf2ccaa3ba662b9ce48492c38:ports/irradium-xfce.httpup.inactive
 f:afb1747cb2cf9c9e4abbf49d8b8bb5cf:ports/irradium-xorg.httpup
 f:92891482d508900cd6208bdad41f549d:ports/opt.rsync
 f:939e6f38e938a2ba615e76f40b504c79:ports/xorg.rsync
-f:71ea9279e879c225c26a87e64a98d2d2:ports/.signature
-f:c0cbe8c3ef7b75046fd0eaf8cb9fa301:ports/Pkgfile
-f:ffcfbdbd1979f51825fa796a6296d1ab:ports/contrib.rsync.inactive
 f:cb96c46c2cf16e2a2f1f13f29f5faab3:prt-get/README
 f:1e68ce5a010624ae6f5c305937163e62:prt-get/fsearch-footprint-add-multi-arch-riscv64-aarch64.patch
 f:ac750b56369121ca6aad64dd4c03671b:prt-get/prt-get.aliases
@@ -171,7 +171,7 @@ f:b234015b73634def7fa8cbd2c8bac075:dhcpcd/dhcpcd.conf-request_ntp_server_by_defa
 f:1be1c29d9376024d75725b8de4905d38:dhcpcd/use-hostname_short-in-dhcpcd.conf.patch
 f:5a1cf3e66d492a1433ac84eaffd939d3:dhcpcd/dhcpcd.conf-Don-t-invoke-wpa_supplicant-by-default.patch
 f:22b0bf1f472a6db254456d58e484e7e0:dhcpcd/.footprint
-f:0a711bedff6da0e34239a5278f43eba2:dhcpcd/.signature
+f:de17716b8c7ea3275256b2ec73277ef2:dhcpcd/.signature
 f:4a213a7e7d485ba16628602ae52e453a:dhcpcd/Pkgfile
 f:f13ecf368970a7561b95c77fcfff5fae:iproute2/irradium-net.iproute2.patch
 f:7b469125cfe2d9916ba03f7c65b9dcd5:iproute2/lo.iproute2
