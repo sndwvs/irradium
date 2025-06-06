@@ -127,8 +127,6 @@ f:993eed7af08a51a8f8155769e900cbe9:android-tools/android-tools-35.0.2-fix-protob
 f:95d427053c3f2589d3eb98e419eac127:audacity/.footprint
 f:caafe7384c6b627d1aa44f2ae003d9e3:audacity/.signature
 f:79f8dbe19564cccf97ca4b71026e8c99:audacity/Pkgfile
-f:90d951170ad129272195336eedbad0fa:chromium/.footprint.aarch64
-f:6d883cdb7a7de1fb1a2c28f9daa3ac5b:chromium/.signature.aarch64
 f:cca42a21584d2e7a49baa60bb486c5d2:chromium/post-install
 f:8f6657577ad6609a22f2f7efe2fa237f:chromium/patches/increase-fortify-level.patch
 f:253856444af1433e94c378a481d685ae:chromium/patches/0001-widevine-support-for-arm.patch
@@ -140,6 +138,8 @@ f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64
 f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
+f:90d951170ad129272195336eedbad0fa:chromium/.footprint.aarch64
+f:6d883cdb7a7de1fb1a2c28f9daa3ac5b:chromium/.signature.aarch64
 f:1c2dc2f6c8c39ad801a2a3b1532d1eca:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:2a3fe0bbe2b23a66764034bd56fc2411:deadbeef/ddb_dsp_libretro_fix_aarch64_riscv64.patch
@@ -182,8 +182,8 @@ f:026e4f0c29fb9a901487f616b02e850b:gn/.footprint
 f:f31063a7fa96119fe9ae603953705da2:gn/.signature
 f:f3a9f8d67bd216d7f56ed977c3394e54:gn/Pkgfile
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
-f:6d142930033682de505f807f11702f3c:go/.footprint
-f:7724f1b534e40a14d83bb81286c026fe:go/.signature
+f:87f91733f48df2952db0ab6bc3fc6a5e:go/.footprint
+f:0c75d559043afe8ba2e9945647080a81:go/.signature
 f:7c9d485fab4f4eb28aed7beb2b4f9790:go/Pkgfile
 f:10ca5085e0dfb78c27e12b84d010c9ae:gtest/.footprint
 f:32eb7c972f06f9cb5409a0e5094a69af:gtest/.signature
