@@ -1,9 +1,9 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCUlv4am3wDIxGk7uGE1SjA2gCBodAyqDjBOrCTk/55W7ET6jSeErU7e6+Tn2ucbeg0ovR/0OJl8x6CGhPRgKcQI=
-SHA256 (Pkgfile) = 398b04d751a893b0ef7c6f156b9b7682d25ae24f551ef92c16246ab8acaf6c5a
-SHA256 (.footprint.aarch64) = aee8a409269950b40ea903ee70dca01c8d045ecb2aaf25fb509e34003066266d
-SHA256 (qt-everywhere-opensource-src-5.15.16.tar.xz) = efa99827027782974356aceff8a52bd3d2a8a93a54dd0db4cca41b5e35f1041c
-SHA256 (qt-everywhere-opensource-src-5.15.16-kf5-1.patch) = aea9b80aeec370726cfe63c8fdd9e99faf2db8c77346fa9b143345694a1b9248
+RWRxRnTWECCiCZamymypIF7Q+9ZNJm5XNjOiKSvqCu0msgdFzaf5ch80wTRhjphALorvla2kpL7PzDishF0Ml4ifBx4W7xPXRwQ=
+SHA256 (Pkgfile) = 519106596219d7948c5c1d1ba7ddf632a6c1f3972ec8db66119f7dea6ebe6515
+SHA256 (.footprint.aarch64) = cf5699f3c2fc078558871124e5808b71f25bda3aa178222e38e50db1b2e6d792
+SHA256 (qt-everywhere-opensource-src-5.15.17.tar.xz) = 5c34b2e8054d23cbd6c98715af8766a61c7f346ac687aa2d80edd73f8073d2d2
+SHA256 (qt-everywhere-opensource-src-5.15.17-kf5-1.patch) = b58edccd2e097ec8dfbe15e83af965e5b033a29f007401dfecafacb21d090f8a
 SHA256 (qtbase-5.15.8-fix-missing-qtsan-include.patch) = 65b435d09220fc66584f9613cdf7518367185af4e166c5b670301be6af98e8b1
 SHA256 (qt5-cflags.patch) = cf707cd970650f8b60f8897692b36708ded9ba116723ec8fcd885576783fe85c
 SHA256 (qt5-logo.png) = ae1335ecd1cd2d17032184895ab298a636cdfa8121b0ed71307c4f2b23ec928e
