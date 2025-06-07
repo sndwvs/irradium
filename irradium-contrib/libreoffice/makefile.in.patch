@@ -1,6 +1,6 @@
-diff -Naur a/Makefile.in b/Makefile.in
---- a/Makefile.in	2025-05-20 08:25:45.000000000 +0000
-+++ b/Makefile.in	2025-05-23 20:11:00.230828786 +0000
+diff -Naur libreoffice-25.2.4.1.orig/Makefile.in libreoffice-25.2.4.1/Makefile.in
+--- libreoffice-25.2.4.1.orig/Makefile.in	2025-05-22 19:59:35.040005962 +0200
++++ libreoffice-25.2.4.1/Makefile.in	2025-05-22 20:00:10.424885215 +0200
 @@ -9,7 +9,7 @@
  
  gb_Top_MODULE_CHECK_TARGETS := slowcheck unitcheck subsequentcheck perfcheck uicheck screenshot
@@ -10,10 +10,12 @@ diff -Naur a/Makefile.in b/Makefile.in
  
  MAKECMDGOALS?=build
  build_goal:=$(if $(filter build uicheck,$(MAKECMDGOALS)),build)\
-@@ -68,16 +68,6 @@ else # MAKE_RESTARTS
+@@ -66,18 +66,6 @@
  
- # Nested test is to check if the systemd-detect-virt command doesn't exist or it reports we're not
- # in a container:
+ .DEFAULT_GOAL := build
+ 
+-# Nested test is to check if the systemd-detect-virt command doesn't exist or it reports we're not
+-# in a container:
 -check-if-root:
 -	@if test ! `uname` = 'Haiku' -a `id -u` = 0 && test -z $$container; then \
 -		if test ! -x "$$(command -v systemd-detect-virt)" || ! systemd-detect-virt -c -q; then \
@@ -27,7 +29,7 @@ diff -Naur a/Makefile.in b/Makefile.in
  gb_Side ?= host
  
  include $(BUILDDIR)/config_$(gb_Side).mk
-@@ -288,7 +278,7 @@ endif
+@@ -288,7 +276,7 @@
  #
  # Bootstrap
  #
