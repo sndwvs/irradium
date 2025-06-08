@@ -274,7 +274,7 @@ f:22f915e02e330220075b895672faf62d:libreoffice/.footprint.riscv64
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
 f:faf069d19324a53f32cceaa8e7cc0ab2:libreoffice/libreoffice-7.6-qt6-wayland-egl.patch
 f:369cab52bd225255130b91b1862982f6:libreoffice/mdds.patch
-f:fbf7e67a6f82b6da4eaaca81987917bb:libreoffice/.signature.aarch64
+f:69820a2d074825d76fcf583a723d27b9:libreoffice/.signature.aarch64
 f:d9f72914c76becc36f03c3aa1fd0c057:libreoffice/.signature.riscv64
 f:ed5d5c16a6b31e0a3d6411d76e5a2cf6:libreoffice/Pkgfile
 f:8bfa5aed8ba9861c86b93e07ac3a39a2:libreoffice/makefile.in.patch

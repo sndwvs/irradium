@@ -1,11 +1,11 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7tUUrfw+54WITvyjSJUdmf69eHSwEW4tLgat0jiJyLj4MySpvl9JZOBrrRq6IpSuIiLKKWMDCI1kyeenKy7xMQ8=
-SHA256 (Pkgfile) = b076d61356e800d2ab759096aeecb826994693b8633c68ee8699bd791f61f8b0
+RWTmT3d9kqan7uDZOkToMfjAB9FxXPsd9OdFTapzQF0zXsbUlvaPjmhCgp+E9fAPkULD3sQ2TcEh/kZmhLYfmqbM9cMxZzojZgA=
+SHA256 (Pkgfile) = bc7761fa5b09670f4669f84dce377873696b90477453aae716e6170101fb132d
 SHA256 (.footprint.aarch64) = ceb962709ad9bd1642ba427a51e35640e76480afc33f8058b8afcf4c5bb855bf
-SHA256 (libreoffice-25.2.4.2.tar.xz) = d1064417ab7716cc32e831c08ab1cee23346b6ffe045c711ef17afad931cdfee
-SHA256 (libreoffice-dictionaries-25.2.4.2.tar.xz) = 6e920f030c3025d9aeab5f5e791abf3096d579468333984d769e67680295cc95
-SHA256 (libreoffice-translations-25.2.4.2.tar.xz) = 64c797f50756306538c8fb267c8f00fe8dfc934e71c7b71e6e6ea04cf95b7c70
-SHA256 (libreoffice-help-25.2.4.2.tar.xz) = 7190590e25ee62855cfc5d2678c6592a751716dc20f09fb767cb52697d8d3fdb
+SHA256 (libreoffice-25.2.4.3.tar.xz) = 01e1985f66c60da0e5cd9d1bb3773b7b46e9a920e318f35c6702d28e78e1c14f
+SHA256 (libreoffice-dictionaries-25.2.4.3.tar.xz) = 7e4ca2a62c9dbe4f32ce70064b65073effcdd54f7f296da61ea71d012c787699
+SHA256 (libreoffice-translations-25.2.4.3.tar.xz) = ecbce6336e596f26f9645672075efde19547648a622f215587dc615b6a20616c
+SHA256 (libreoffice-help-25.2.4.3.tar.xz) = 5f3bbca9fc96284b6ee78a31f9719c6b9930dd884ec5394b71af9e99b05e0bea
 SHA256 (185d60944ea767075d27247c3162b3bc-unowinreg.dll) = eafde646a7dbe46d20c291685b0beac2382174d78d66ee990e229a1bf6e6cec6
 SHA256 (0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz) = 983941d31ee8d366085cadf28db75eb1f5cb03ba1e5853b98f12f7f51c63b776
 SHA256 (dtoa-20180411.tgz) = 0082d0684f7db6f62361b76c4b7faba19e0c7ce5cb8e36c4b65fea8281e711b4
@@ -13,5 +13,4 @@ SHA256 (pdfium-6764.tar.bz2) = 59d5df3b38312b069d96a8de9d4f8d7f44a29835c9dc82bd7
 SHA256 (skia-m130-3c64459d5df2fa9794b277f0959ed8a92552bf4c.tar.xz) = 53f55303821158b6de9e6b90f1cc3a548611a7e430c1a0883ff159a8db89677d
 SHA256 (libreoffice-7.6-qt6-wayland-egl.patch) = 420fdbc4188bec05e62625355af4aea1b3eefd8abea0bb2a31115d938f5a70c6
 SHA256 (mdds.patch) = 31dbde6d3978d4762428e08c42ed156f2ffd9b582fac9875163b2a86ad4f4898
-SHA256 (makefile.in.patch) = 46f570e3109fc157d22ab4600a46a25ba9ec882e5cf1aab3af16c9a2aafc64fd
-SHA256 (libreoffice-25.2.4.1-upstream-consolidate-toOUString.patch) = 1020a36990da38d48332b6a4479a0597fc017bbef1a1c07c37510921b5b88e86
+SHA256 (makefile.in.patch) = ef570395a0ade91af1f86c260f99d0849069f07307e8a87a452af2379586ac49
