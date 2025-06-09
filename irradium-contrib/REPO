@@ -111,14 +111,14 @@ d:iozone
 d:iptraf-ng
 d:libutempter
 d:nmon
-d:python3-pyelftools
+d:vte3
 d:audacious-plugins
 d:gcc-fortran
 d:iperf3
 d:libcue
 d:luajit
 d:logrotate
-d:vte3
+d:python3-pyelftools
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -354,7 +354,6 @@ f:9da5f9129770d5d316e8da1125752b49:tk/font-sizes.diff
 f:ba82b096e39695cdfe72b8a9d7f02748:udisks2/Pkgfile
 f:02c393dcfd184cae94092af8dafbf19c:udisks2/.footprint
 f:413d5ef1602f805f3be1b56651b8b978:udisks2/.signature
-f:714daaa8645dbc3aa00c20a93bc83864:ungoogled-chromium/Pkgfile
 f:cca42a21584d2e7a49baa60bb486c5d2:ungoogled-chromium/post-install
 f:3d33f8598a13d0b25834578b73d7e6db:ungoogled-chromium/patches/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
 f:4b73c5caa891c0ca3c170b3688ec15c2:ungoogled-chromium/patches/chromium-136-drop-nodejs-ver-check.patch
@@ -370,6 +369,7 @@ f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:bc63f54185ba6efab2fbb70e87ad9742:ungoogled-chromium/.footprint
 f:a9d501a3c7710d5b68694fcc10a901bb:ungoogled-chromium/.signature
+f:714daaa8645dbc3aa00c20a93bc83864:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
 f:0cb29db19dda2ae4817b0380de127c8b:urxvt-perls/.signature
@@ -628,9 +628,9 @@ f:adaee3d78879d7ea3b8875ce5b929d39:nmon/.footprint
 f:879a0be4a751104f6157069cbf3f11d0:nmon/.signature
 f:01fa573c86a3862e0e2f999e4b6c685c:nmon/Pkgfile
 f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
-f:ba60765494299d5fc275df5fdd2c9888:python3-pyelftools/.footprint
-f:68121d34227bd00a94502e39d53a0159:python3-pyelftools/.signature
-f:9044efa6d0c35c5411dc49600d17b407:python3-pyelftools/Pkgfile
+f:47eae343160b654631af3ce45ebc8bcb:vte3/.footprint
+f:d0e7ec4c1c8eed1b8c4865d6db92d539:vte3/.signature
+f:1f8aec6c4c7a276d3cfe0b7902b12c15:vte3/Pkgfile
 f:2eeb580caa364fb204a4160daaded475:audacious-plugins/.footprint
 f:df32e1bb992a7b26f6abafbb96433c8a:audacious-plugins/.signature
 f:713313ca8b508b4e2aa7d89023144699:audacious-plugins/Pkgfile
@@ -657,6 +657,6 @@ f:2f22737488cdc80d357811197d7c4c36:logrotate/.signature
 f:cc3d57d34842d57ad038bfef0d2f39a0:logrotate/Pkgfile
 f:7bea0663634285e39b7f71be60ea0e84:logrotate/logrotate.conf
 f:91d8cf0598961982365ca010d375c42f:logrotate/logrotate.cron
-f:47eae343160b654631af3ce45ebc8bcb:vte3/.footprint
-f:d0e7ec4c1c8eed1b8c4865d6db92d539:vte3/.signature
-f:1f8aec6c4c7a276d3cfe0b7902b12c15:vte3/Pkgfile
+f:ba60765494299d5fc275df5fdd2c9888:python3-pyelftools/.footprint
+f:68121d34227bd00a94502e39d53a0159:python3-pyelftools/.signature
+f:9044efa6d0c35c5411dc49600d17b407:python3-pyelftools/Pkgfile
