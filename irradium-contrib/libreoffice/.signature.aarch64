@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7uDZOkToMfjAB9FxXPsd9OdFTapzQF0zXsbUlvaPjmhCgp+E9fAPkULD3sQ2TcEh/kZmhLYfmqbM9cMxZzojZgA=
-SHA256 (Pkgfile) = bc7761fa5b09670f4669f84dce377873696b90477453aae716e6170101fb132d
+RWTmT3d9kqan7qP1gqBcLhCcAmLGsyQokJBln6Rzzl+RBBaJFDU+pE4hueNiADnI+Q36HGmXpwC/FZybs6Ba1a2MvRMuu8K7wws=
+SHA256 (Pkgfile) = e957c070edb34d90ccbc9588064c987f84d11a065a64eb874ad6e87a2b8fbe7a
 SHA256 (.footprint.aarch64) = ceb962709ad9bd1642ba427a51e35640e76480afc33f8058b8afcf4c5bb855bf
 SHA256 (libreoffice-25.2.4.3.tar.xz) = 01e1985f66c60da0e5cd9d1bb3773b7b46e9a920e318f35c6702d28e78e1c14f
 SHA256 (libreoffice-dictionaries-25.2.4.3.tar.xz) = 7e4ca2a62c9dbe4f32ce70064b65073effcdd54f7f296da61ea71d012c787699
