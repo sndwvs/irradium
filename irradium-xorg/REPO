@@ -28,9 +28,9 @@ f:72e18c36d32f19ad08adb9f202c6341b:mesa/patches/0002-mesa-24.1-find-opencl-c-bas
 f:591163eafa6cd68689efefedde166911:mesa/patches/0004-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch
 f:5c81a53487c622cde9402a80b94b8f55:mesa/patches/0006-mesa-buildsystem-improvements.patch
 f:b4f8779303542471e8a279f27721e9b4:mesa/README.md
-f:e8f5b912acb6ce03a69f726895c47ed5:mesa/.footprint.aarch64
+f:911389c75d1c9a82e9d0806187addfc0:mesa/.footprint.aarch64
 f:495218cace357b9ddd3b7152c853c81f:mesa/.footprint.riscv64
-f:11e463eafec2ef8b7d907c260e8e0d26:mesa/.signature.aarch64
+f:d29a64f8bf575e2e682fde2b39c8a2bd:mesa/.signature.aarch64
 f:38f82f6f30af4624103fa6b87d2c6dda:mesa/.signature.riscv64
 f:de9d5d45003d0ec81764254259c90974:mesa/Pkgfile
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
