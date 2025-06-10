@@ -4,7 +4,7 @@
 
 name=filesystem
 version=3.8
-release=1
+release=2
 source=(issue motd shells group passwd shadow securetty fstab mime.types)
 
 build() {
@@ -81,10 +81,11 @@ EOF
     # /etc/os-release
     cat > $PKG/etc/os-release << EOF
 NAME=irradium
-VERSION="$version"
+VERSION_ID="$version"
 ID=irradium
 PRETTY_NAME="irradium"
-HOME_URL="https://irradium.org/"
-BUG_REPORT_URL="https://irradium.org/bugs/"
+HOME_URL="https://irradium.org"
+DOCUMENTATION_URL="https://irradium.org/Main/Handbook$(echo $version | awk '{ gsub(/\./, "-", $1); print $1 }')"
+BUG_REPORT_URL="https://irradium.org/bugs"
 EOF
 }

@@ -48,8 +48,8 @@ f:93464384634f815bf46a995f74823c5e:filesystem/passwd
 f:4faaa4e1ba24038f8638a0cae5046cfb:filesystem/securetty
 f:a79aae150aa240b06d52cc22d41bd3b6:filesystem/shadow
 f:dc4ff0c96d8dcd2141febc8b766e9a6b:filesystem/shells
-f:92a173ccd4b488449fa8d3088b82acb3:filesystem/.signature
-f:b28a45b179424d0dec47807b57740de4:filesystem/Pkgfile
+f:e344f43374d774353aea580d613a1329:filesystem/.signature
+f:7e83cfc9ba1f1b794eca8e266b7effc1:filesystem/Pkgfile
 f:9165347c2c736b0c48b1846004e650e9:flex/.footprint
 f:2169b4b22e7139587cfb1172033fd1e9:flex/.signature
 f:9642c903509ab5a3cd28d897f14f887d:flex/Pkgfile
@@ -102,11 +102,11 @@ f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
 f:3111e8e5893f27a69499808413911008:pkgconf/.footprint
 f:43492fd406acc422b95a1b09a25c38a2:pkgconf/.signature
 f:c997ffc58d2430a56db7d4ae28c1354f:pkgconf/Pkgfile
-f:ddd624554de06deb74530cf84f0ffa80:pkgutils/pkgmk.conf
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:85773ddb6595cc96b6776168a93a8ed9:pkgutils/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
 f:e429beab3a74a36b7eacf9ca2c2aa3fb:pkgutils/.signature
 f:570a371d48e9bc13feed463e0642dab8:pkgutils/Pkgfile
+f:ddd624554de06deb74530cf84f0ffa80:pkgutils/pkgmk.conf
 f:d4c72854441fa2a9cbd0085ad891f05a:ports/.footprint
 f:804bb419e539a70ad80e4c03df3c3411:ports/contrib.pub
 f:b8dd0aad383810cad920d6548cd1cb56:ports/core.pub
