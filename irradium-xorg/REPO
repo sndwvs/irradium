@@ -36,6 +36,6 @@ f:de9d5d45003d0ec81764254259c90974:mesa/Pkgfile
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:96f400c2e676aa9c2da5aed08bdba7f3:xorg-xf86-video-fbdev/.signature
 f:6e705c0e55a603a473afd94710d12d56:xorg-xf86-video-fbdev/Pkgfile
-f:477f204ba453196eec87d32b4fbc7795:xorg-libpixman/.footprint
-f:60d5d7cbd133d38c2cc99602d283c4e7:xorg-libpixman/.signature
+f:139306ca120c31153b14675620cb6fb3:xorg-libpixman/.footprint
+f:cecc88f9f3ea22b9d73141a4fc1fb61e:xorg-libpixman/.signature
 f:70ac23c242cd3edd297fc0ca9cf78816:xorg-libpixman/Pkgfile

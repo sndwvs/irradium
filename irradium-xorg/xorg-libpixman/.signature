@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/xorg.pub
-RWTSGWF5Q7TndINYwZ8/w4i/Q8gMJ1Wc0z2DNsthQIrx2o+9rLwZZBuIWiALgIDN8MA5CkouCUpw7BKOnbAMAGatEYTB3A5Fsw4=
-SHA256 (Pkgfile) = da3beaf8c74347c226fe5c9201d98531015c4efdc32fda94bcf6aee08e783504
-SHA256 (.footprint) = 7bb8955b0727c26e4bb94a15679335cd8780e31c491934630755b7075e24b539
-SHA256 (pixman-0.46.0.tar.xz) = d2eab57e1ce79de991f8ceb3fcd726a6978b970382c8ac8c8f112b61ceaa9167
+untrusted comment: verify with /etc/ports/irradium-xorg.pub
+RWT3zJzzKRcegkApLHD35QNKAn4SZ2cmix1WGB1QLCug4wGLZ5dR/AFLZhYwNG1xx351bzpNNh74OhmWdvUtJfOnLenG/ueIFws=
+SHA256 (Pkgfile) = cce163e1ff5ec0375c55e811fc24943edf045a96b499626b0f115acc7d9ffc61
+SHA256 (.footprint) = 9ee73422b4415eef3e62b0cbb4377102575f4cdaf08ab4153f6f31091e623dff
+SHA256 (pixman-0.46.2.tar.xz) = d075209d18728b1ca5d0bb864aa047a262a1fde206da8a677d6af75b2ee1ae98
