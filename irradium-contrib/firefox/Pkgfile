@@ -2,15 +2,16 @@
 # URL: https://www.mozilla.com/firefox/
 # Maintainer: John McQuah, jmcquah at disroot dot org
 # Depends on: alsa-lib aom autoconf-2.13 brotli cbindgen dav1d dbus-glib ffmpeg graphite2 libevent libnotify libvpx libwebp libxkbcommon nodejs nss unzip xorg-libxcomposite xorg-libxcursor xorg-libxinerama xorg-libxt zip
-# Optional: apulse jack pulseaudio pipewire sndio sccache lld wayland
+# Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland
 
 name=firefox
-version=139.0
+version=139.0.4
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   fix-target-detection.patch
   node-stdout-nonblocking-wrapper
+  sqlite-typedefs.patch
   01-rust-lto-thin.patch
   02-riscv64-no-lto.patch)
 
