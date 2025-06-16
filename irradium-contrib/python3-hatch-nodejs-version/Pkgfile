@@ -1,0 +1,16 @@
+# Description: hatch plugin for versioning from a package.json file
+# URL: https://github.com/agoose77/hatch-nodejs-version
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: python3-hatchling
+
+name=python3-hatch-nodejs-version
+version=0.3.2
+release=1
+source=(https://github.com/agoose77/hatch-nodejs-version/archive/v$version/$name-$version.tar.gz)
+
+build() {
+  cd hatch-nodejs-version-$version
+
+  /usr/bin/python3 -m build --wheel --skip-dependency-check --no-isolation
+  /usr/bin/python3 -m installer --compile-bytecode 2 --destdir=$PKG dist/*.whl
+}
