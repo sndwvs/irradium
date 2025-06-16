@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7kV2nOVVbUObr3BSvTPw/re4zYoIZ28Cf0AxeSXwLcGxBXWKbyrz6LHDWYBWQWOok1eyB4rNK0IZ/vmZtNvkAwE=
+SHA256 (Pkgfile) = 5b2515c646aa93dbc315b60878fd51b2568662a07759e7a1360b1b578706c989
+SHA256 (.footprint) = 648f52c5a32f71126dddcf352850779b6a773e01699f9c505c9fc971aff3f73a
+SHA256 (python3-hatch-nodejs-version-0.3.2.tar.gz) = c01dae87afcb7b6db421b5248154de26c556e569e2631e9f146bc5c78447eee6
