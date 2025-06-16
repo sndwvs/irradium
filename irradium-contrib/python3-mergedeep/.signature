@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7jVZEQX730K5Fz8pfXz2S1dA9idf/g35iqwcaw8DwEI0TSwHoGwCpaWr++fkl/HYu1Xwbvx8GwaQEDZMe4Gp4gA=
+SHA256 (Pkgfile) = dba3f0cae35538ee905b74dbe3bbecc50a620e48feb97c574843ffe7dcb21296
+SHA256 (.footprint) = 89ca5d67277c3b4b8e99c03de086aa737b475bfb8207827b558602cffcccf954
+SHA256 (python3-mergedeep-1.3.4.tar.gz) = 7d44051cce4de6a870bc08642e561e9d2b0c09b261e9fb709a5489f44699f551
