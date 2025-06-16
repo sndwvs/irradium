@@ -663,9 +663,9 @@ f:91d8cf0598961982365ca010d375c42f:logrotate/logrotate.cron
 f:ba60765494299d5fc275df5fdd2c9888:python3-pyelftools/.footprint
 f:68121d34227bd00a94502e39d53a0159:python3-pyelftools/.signature
 f:9044efa6d0c35c5411dc49600d17b407:python3-pyelftools/Pkgfile
-f:92e52e83300eb95b9c2d7b23e9908762:mkdocs-material/APKBUILD
 f:3b5b4c32ccadb967eaac89a231fbe531:mkdocs-material/Pkgfile
-f:8c6d04bea332ed03735acefecb22642e:mkdocs-material/.md5sum
+f:5f61c0fc1fca46b0fbfc08c7b02c69d9:mkdocs-material/.footprint
+f:16670713f59f816521b5b2dd4e019c1e:mkdocs-material/.signature
 f:deb2d2e5ff0682ba89096c3688a3c0d6:python3-hatch-nodejs-version/Pkgfile
 f:7792f32e9c54ff6de83b78bda93e9303:python3-hatch-nodejs-version/.footprint
 f:88b8c74a89a11888da465b9ba8986abe:python3-hatch-nodejs-version/.signature
