@@ -112,6 +112,7 @@ d:iptraf-ng
 d:libutempter
 d:nmon
 d:vte3
+d:mkdocs
 d:audacious-plugins
 d:gcc-fortran
 d:iperf3
@@ -634,6 +635,9 @@ f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
 f:47eae343160b654631af3ce45ebc8bcb:vte3/.footprint
 f:d0e7ec4c1c8eed1b8c4865d6db92d539:vte3/.signature
 f:1f8aec6c4c7a276d3cfe0b7902b12c15:vte3/Pkgfile
+f:7e32d983de0fbd80ba90d5948c1a76d8:mkdocs/Pkgfile
+f:8bd53362580841969d457f488d75cf51:mkdocs/.footprint
+f:f1fd3161d1784ce9d668951c35a0568a:mkdocs/.signature
 f:2eeb580caa364fb204a4160daaded475:audacious-plugins/.footprint
 f:df32e1bb992a7b26f6abafbb96433c8a:audacious-plugins/.signature
 f:713313ca8b508b4e2aa7d89023144699:audacious-plugins/Pkgfile
