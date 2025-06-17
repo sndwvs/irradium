@@ -65,6 +65,7 @@ d:yt-dlp
 d:dhcp
 d:acme.sh
 d:sshpass
+d:python3-pyyaml-env-tag
 d:gspell
 d:mkinitramfs
 d:ntp
@@ -408,6 +409,9 @@ f:84a278304eaf2a5aa93755a7bab278ee:acme.sh/Pkgfile
 f:7b39087f8e19d9392beeb0b96386cdc2:sshpass/.footprint
 f:511ddf7ee3ccd5eb66cfe72503279319:sshpass/.signature
 f:e878e7386df273a8d1e31f006a07bd77:sshpass/Pkgfile
+f:a3dbc5698088ce944be909d82d67bfd1:python3-pyyaml-env-tag/Pkgfile
+f:b388f48be231e7ce29536a22fbc8f378:python3-pyyaml-env-tag/.footprint
+f:7b694173628dbc5fdde89d50d120d9c1:python3-pyyaml-env-tag/.signature
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:c8f811ef2dddfcb8c540a79eeb3094aa:gspell/.footprint
 f:e2fa9558884c770209d7e582eb2cb0fc:gspell/.signature

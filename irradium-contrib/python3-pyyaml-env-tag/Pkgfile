@@ -1,0 +1,16 @@
+# Description: a custom yaml tag for referencing environment variables in yaml files
+# URL: https://github.com/waylan/pyyaml-env-tag
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: python3-build python3-flit-core python3-installer python3-wheel python3-yaml
+
+name=python3-pyyaml-env-tag
+version=1.1
+release=1
+source=(https://github.com/waylan/pyyaml-env-tag/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cd pyyaml-env-tag-$version
+
+  /usr/bin/python3 -m build --wheel --skip-dependency-check --no-isolation
+  /usr/bin/python3 -m installer --compile-bytecode 2 --destdir=$PKG dist/*.whl
+}
