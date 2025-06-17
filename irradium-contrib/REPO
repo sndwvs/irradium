@@ -124,6 +124,7 @@ d:logrotate
 d:python3-pyelftools
 d:mkdocs-material
 d:python3-hatch-nodejs-version
+d:python3-backrefs
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -681,3 +682,6 @@ f:16670713f59f816521b5b2dd4e019c1e:mkdocs-material/.signature
 f:deb2d2e5ff0682ba89096c3688a3c0d6:python3-hatch-nodejs-version/Pkgfile
 f:7792f32e9c54ff6de83b78bda93e9303:python3-hatch-nodejs-version/.footprint
 f:88b8c74a89a11888da465b9ba8986abe:python3-hatch-nodejs-version/.signature
+f:9571c9c39d0a0c73d100fa0db1bbd9f0:python3-backrefs/Pkgfile
+f:5b11ec88a7da0e92da4239e57af4b0c5:python3-backrefs/.footprint
+f:25d05c27cfc5774a6ddcf6925bb5bb6b:python3-backrefs/.signature
