@@ -105,6 +105,7 @@ d:bind
 d:openjdk21-jdk
 d:directx-shader-compiler
 d:rbdoom-3-bfg
+d:python3-pymdown-extensions
 d:aom
 d:audacious
 d:cava
@@ -614,6 +615,9 @@ f:3b199af0298c733edac9238fade1f1b5:rbdoom-3-bfg/Pkgfile
 f:2bf4e994d8df1899b21b0028fb7018ef:rbdoom-3-bfg/feffa4a4dd9a2a5f3c608f720cde41bea37797d3.patch
 f:4bc031ea2e4564054f678ece5e7078ae:rbdoom-3-bfg/rbdoom-3-bfg.desktop
 f:86455bb86d4267b447bd882dbde35231:rbdoom-3-bfg/rbdoom-3-bfg.png
+f:5afdfaa1ab55f03ccb50050088023249:python3-pymdown-extensions/Pkgfile
+f:e824f5082adf33ab1ed45ce8c9da5c22:python3-pymdown-extensions/.footprint
+f:e2274e04dc583008906d51a64e7d9c2a:python3-pymdown-extensions/.signature
 f:9f5fb284e018640c4d1b27c9e949ba4e:aom/.footprint
 f:fcc588af15fd9de0c5e88e93f86a20a0:aom/.signature
 f:abbf369b1e50956252d789ff234a1c80:aom/Pkgfile
