@@ -642,8 +642,8 @@ f:adaee3d78879d7ea3b8875ce5b929d39:nmon/.footprint
 f:879a0be4a751104f6157069cbf3f11d0:nmon/.signature
 f:01fa573c86a3862e0e2f999e4b6c685c:nmon/Pkgfile
 f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
-f:47eae343160b654631af3ce45ebc8bcb:vte3/.footprint
-f:d0e7ec4c1c8eed1b8c4865d6db92d539:vte3/.signature
+f:2fb477724563d2d0cb7b0a217b2ed1f7:vte3/.footprint
+f:a7a3645a2d527fc6afd7ba99a32ee4b4:vte3/.signature
 f:76bc6e29452cf38796cba549bc6c4cad:vte3/Pkgfile
 f:9eae0df7fb5a00f99d977fc1577a5a5f:mkdocs/Pkgfile
 f:8bd53362580841969d457f488d75cf51:mkdocs/.footprint
