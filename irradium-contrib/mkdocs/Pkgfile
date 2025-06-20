@@ -1,7 +1,7 @@
 # Description: project documentation with markdown
 # URL: https://www.mkdocs.org
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: git python3-build python3-hatchling python3-installer python3-setuptools python3-wheel python3-click python3-yaml python3-mergedeep
+# Depends on: git python3-babel python3-build python3-hatchling python3-installer python3-setuptools python3-wheel python3-click python3-yaml python3-mergedeep
 
 
 name=mkdocs
