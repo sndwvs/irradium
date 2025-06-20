@@ -645,9 +645,9 @@ f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
 f:2fb477724563d2d0cb7b0a217b2ed1f7:vte3/.footprint
 f:a7a3645a2d527fc6afd7ba99a32ee4b4:vte3/.signature
 f:76bc6e29452cf38796cba549bc6c4cad:vte3/Pkgfile
-f:9eae0df7fb5a00f99d977fc1577a5a5f:mkdocs/Pkgfile
+f:4b011d5a3a28e39469dcc9daad1e9fa5:mkdocs/Pkgfile
 f:8bd53362580841969d457f488d75cf51:mkdocs/.footprint
-f:f1fd3161d1784ce9d668951c35a0568a:mkdocs/.signature
+f:7d222f12f84c064edc7b757cef3b536d:mkdocs/.signature
 f:610fee7c887449a35d41bae6e43ead13:python3-mergedeep/Pkgfile
 f:42328999c33902223b8ca47aa32a5c2c:python3-mergedeep/.footprint
 f:1e76735a5087374936eb7a30c596fdb7:python3-mergedeep/.signature
