@@ -87,6 +87,7 @@ d:redland
 d:unixodbc
 d:ada
 d:libimobiledevice-glue
+d:python3-mdx-truly-sane-lists
 d:cpufrequtils
 d:mtd-utils
 d:rnnoise
@@ -515,6 +516,9 @@ f:19b1de39f6d2bdc525ea29c07d687ede:ada/Pkgfile
 f:c9ce75d9708c32ad3dc82f353175143a:libimobiledevice-glue/.footprint
 f:6c6cfbd50451b6c166258c57e43cb6d4:libimobiledevice-glue/.signature
 f:359ce620548cf8b1adf8a5acf8d61485:libimobiledevice-glue/Pkgfile
+f:b5c6236bd44e18f648e79133f6eb0ae7:python3-mdx-truly-sane-lists/Pkgfile
+f:fca0c16e1b1c6398ef645f3d3749a161:python3-mdx-truly-sane-lists/.footprint
+f:dabe50954406837ea04efeb02902cd4e:python3-mdx-truly-sane-lists/.signature
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch
