@@ -99,8 +99,8 @@ f:f0fdc422afa0d319b229c08a9d73b08f:mlocate/Pkgfile
 f:6fec70b14f238ad94caf5dac367ee427:pkgconf/README
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
-f:3111e8e5893f27a69499808413911008:pkgconf/.footprint
-f:43492fd406acc422b95a1b09a25c38a2:pkgconf/.signature
+f:285f4bf1682fec8bd0dde93bba8ec79e:pkgconf/.footprint
+f:e797a5bfa64bb03d7d0033ea7270c6fe:pkgconf/.signature
 f:69cfc583cf212f0d1bc15f7aaa8b0fba:pkgconf/Pkgfile
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:85773ddb6595cc96b6776168a93a8ed9:pkgutils/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
