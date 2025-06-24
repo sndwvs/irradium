@@ -3,30 +3,33 @@
 # Maintainer: CRUX System Team, core-ports at crux dot nu
 
 name=rc
-version=2.34.2
+version=2.35
 release=1
 source=(https://git.crux.nu/tools/rc/archive/$version.tar.gz
-    rc.patch rc.fix.patch)
+    rc.patch)
 renames=($name-$version.tar.gz)
 
 build() {
     cd $name
+    install -d $PKG/etc/rc.d
 
     patch -p1 -i $SRC/rc.patch
-    patch -p1 -i $SRC/rc.fix.patch
 
-    install -d  $PKG/etc/rc.d
     install -m 644 inittab $PKG/etc
+
     install -m 755 rc $PKG/etc
+    ln -sf rc $PKG/etc/rc.multi
+    ln -sf rc $PKG/etc/rc.single
+    ln -sf rc $PKG/etc/rc.shutdown
+
     install -m 755 rc.modules $PKG/etc
-    install -m 755 rc.single $PKG/etc
-    install -m 755 rc.multi $PKG/etc
     install -m 755 rc.local $PKG/etc
-    install -m 755 rc.fix $PKG/etc
-    install -m 755 rc.shutdown $PKG/etc
-    install -m 755 rc.functions $PKG/etc
     install -m 644 rc.conf $PKG/etc
-    install -d $PKG/var/log $PKG/var/lib/urandom
-    touch $PKG/var/log/boot $PKG/var/lib/urandom/seed
-    chmod 640 $PKG/var/log/boot $PKG/var/lib/urandom/seed
+
+    install -d $PKG/usr/share/man/man{4,5} $PKG/var/log
+    sed "s/#VERSION#/$version/" rc.conf.5.in > $PKG/usr/share/man/man5/rc.conf.5
+    sed "s/#VERSION#/$version/" rc.colors.4.in > $PKG/usr/share/man/man4/rc.colors.4
+
+    touch $PKG/var/log/boot
+    chmod 640 $PKG/var/log/boot
 }

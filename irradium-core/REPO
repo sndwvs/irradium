@@ -144,11 +144,10 @@ f:1746a2ef6fb54dc829082d5474ab1b21:eudev/.footprint
 f:35f5b3a0c85e342fe66a0a59c9b46b2b:eudev/.signature
 f:2185fdd0c5c128e6a5d37eb4ad4f6791:eudev/81-irradium.rules
 f:d684735bb45b287225d3ae1f9c36a916:eudev/Pkgfile
-f:0544125fa2eccfa325af5ccd40a1c1ac:rc/rc.fix.patch
-f:5d1af5d06f33ef70cb7f40133e927194:rc/.footprint
-f:b76e3e10f864a65ec7b7a10016f6e61b:rc/.signature
-f:f18ccf9cf5810655dfa9d5cf967924a3:rc/Pkgfile
-f:c484d4256590cd8ea887aee8334b9e6f:rc/rc.patch
+f:37e58a743584e66e54d502ade64902eb:rc/.footprint
+f:efa2cf570d18229451c233abae03e1ba:rc/.signature
+f:d38b3d3d24f53f7d494c674892ce6c0c:rc/Pkgfile
+f:1d56614c5ad308e92e42be6ef53bfeaa:rc/rc.patch
 f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
 f:9be46e727d1f64e28e732c51ea6fe5c6:bash/.signature
 f:05eb7fc2e559f236ff825ec2e1c65861:bash/Pkgfile

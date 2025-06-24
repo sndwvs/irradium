@@ -1,11 +1,11 @@
---- a/rc	2025-05-07 15:53:49.000000000 +0300
-+++ b/rc	2025-05-09 14:16:45.600715045 +0300
-@@ -120,7 +120,7 @@ printinfo "\nDeleting temporary files.."
- 
- # Set kernel variables
- printinfo "\nSetting kernel variables.."
--/sbin/sysctl -p > /dev/null || printf "%s" "${BOLD}${RED}[ERROR]${RESET}"
-+/sbin/sysctl -e --system > /dev/null || printf "%s" "${BOLD}${RED}[ERROR]${RESET}"
- 
- # Update shared library links
- printinfo "\nUpdating shared library links.."
+--- a/rc	2025-06-23 13:35:14.000000000 +0300
++++ b/rc	2025-06-24 18:25:07.013964046 +0300
+@@ -172,7 +172,7 @@ EOF
+     
+   # Set kernel variables
+   printinfo "Setting kernel variables.."
+-  /sbin/sysctl -p > /dev/null || printerror "\n"
++  /sbin/sysctl -e --system > /dev/null || printerror "\n"
+     
+   # Update shared library links
+   printinfo "Updating shared library links.."
