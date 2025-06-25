@@ -1,11 +1,11 @@
---- a/rc	2025-06-23 13:35:14.000000000 +0300
-+++ b/rc	2025-06-24 18:25:07.013964046 +0300
+--- a/rc	2025-06-24 20:49:38.000000000 +0300
++++ b/rc	2025-06-25 18:56:26.305990099 +0300
 @@ -172,7 +172,7 @@ EOF
-     
+ 
    # Set kernel variables
    printinfo "Setting kernel variables.."
 -  /sbin/sysctl -p > /dev/null || printerror "\n"
 +  /sbin/sysctl -e --system > /dev/null || printerror "\n"
-     
+ 
    # Update shared library links
    printinfo "Updating shared library links.."
