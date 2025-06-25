@@ -11,7 +11,6 @@ source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$versio
   firefox.desktop
   fix-target-detection.patch
   node-stdout-nonblocking-wrapper
-  sqlite-typedefs.patch
   01-rust-lto-thin.patch
   02-riscv64-no-lto.patch)
 
