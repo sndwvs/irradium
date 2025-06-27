@@ -1,13 +1,13 @@
 # Description: The Rust language with Cargo included.
 # URL: https://www.rust-lang.org/
 # Maintainer: CRUX System Team, core-ports at crux dot nu
-# Depends on: compiler-rt
-# Optional: clang libgit2 lld polly sccache
+# Depends on: compiler-rt lld
+# Optional: clang libgit2 polly sccache
 
 name=rust
-version=1.87.0
-_date=2025-04-03
-_rustc=1.86.0
+version=1.88.0
+_date=2025-05-15
+_rustc=1.87.0
 _cargo=$_rustc
 release=1
 
@@ -88,7 +88,7 @@ build() {
 
 cat <<- EOF > $SRC/bootstrap.toml
 profile = "dist"
-change-id = 138986
+change-id = 140732
 
 [llvm]
 ninja = true
@@ -105,11 +105,14 @@ prefix = "/usr"
 # http://blog.llvm.org/2019/09/closing-gap-cross-language-lto-between.html
 # https://github.com/rust-lang/rust/issues/54872
 channel = "stable"
+codegen-units = 1
 codegen-units-std = 1
 debuginfo-level = 1
 debuginfo-level-std = 2
 codegen-tests = false
 backtrace-on-ice = true
+lld = false
+use-lld = "external"
 jemalloc = true
 remap-debuginfo = false
 debug-assertions = false
@@ -119,7 +122,7 @@ frame-pointers = true
 deny-warnings = false
 optimize = true
 codegen-backends = ["llvm"]
-@LLD@
+lto = "fat"
 
 [build]
 target = ["$TARCH-unknown-linux-$BABI"]
@@ -168,12 +171,11 @@ EOF
         sed -e 's|@CARGO@||' -e 's|@RUST@||' -e 's|@RUSTFMT@||' -i $SRC/bootstrap.toml
     fi
 
-    if prt-get isinst clang lld; then
+    if prt-get isinst clang; then
         sed -e 's|@TARGETCC@|"clang"|g' -e 's|@TARGETCXX@|"clang++"|g' -e 's|@TARGETAR@|"llvm-ar"|g' -e 's|@TARGETRANLIB@|"llvm-ranlib"|g' -i $SRC/bootstrap.toml
     else
         sed -e 's|@TARGETCC@|"gcc"|g' -e 's|@TARGETCXX@|"g++"|g' -e 's|@TARGETAR@|"gcc-ar"|g' -e 's|@TARGETRANLIB@|"gcc-ranlib"|g' -i $SRC/bootstrap.toml
     fi
-    prt-get isinst lld && sed -e 's|@LLD@|use-lld = true\nlld = true|' -i $SRC/bootstrap.toml || sed -e 's|@LLD@||' -i $SRC/bootstrap.toml
     prt-get isinst polly && sed -e 's|@POLLY@|polly = true|' -i $SRC/bootstrap.toml || sed -e 's|@POLLY@||' -i $SRC/bootstrap.toml
 
     cat $SRC/bootstrap.toml
