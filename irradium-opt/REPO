@@ -35,9 +35,9 @@ d:shared-mime-info
 d:wpa_supplicant
 d:dovecot
 d:lame
+f:faf4c51c2443dc6ecce0414ef517be57:cryptsetup/Pkgfile
 f:fa75fbb042271cc211626d163661a949:cryptsetup/.footprint
 f:f45ce49d62916cc88a9863f032e07293:cryptsetup/.signature
-f:faf4c51c2443dc6ecce0414ef517be57:cryptsetup/Pkgfile
 f:dae0c10c99399580c929fc100e79faef:ffmpeg/ffmpeg-x264-10bit.sh
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg/add-av_stream_get_first_dts-for-chromium.patch
 f:89ad92073c2c3f61771204c4780a37bc:ffmpeg/fef22c87ada4517441701e6e61e062c9f4399c8e.patch
@@ -138,9 +138,9 @@ f:c98813e99d9adeecc1708f78df8041da:rust/0002-bootstrap-Change-bash-completion-di
 f:0a8059e5ee18b984894944da3adefcb4:rust/0003-compiler-Change-LLVM-targets.patch
 f:bdd37e1645359e0a29eaefdb3cb08126:rust/0004-compiler-Use-wasm-ld-for-wasm-targets.patch
 f:de975561cb04c2b18dfa50d88a18bbbe:rust/riscv64-disable-f16-f128.patch
-f:7b94db9a29ef3f10ae8d02427138d8ba:rust/.footprint.aarch64
+f:abca8aae236c538bd68067f806c035e0:rust/.footprint.aarch64
 f:0ebe1fa6449bf6a3b63dba35e168fff3:rust/.footprint.riscv64
-f:d94749ef0d7364e35267067deb423356:rust/.signature.aarch64
+f:668f3a3b76936369f90b573e5ff01b3f:rust/.signature.aarch64
 f:e86ff57038218de537f79d8cc3c823ea:rust/.signature.riscv64
 f:79f599d6c9177fdeaa37b8cfb9316f60:rust/Pkgfile
 f:258ab9a01a7c755ed2cd7c84489fd2f0:rust/0001-bootstrap-Change-libexec-dir.patch
@@ -198,9 +198,9 @@ f:f7748bfe653ff6a7a0719981cebbac97:nodejs/.footprint
 f:6f35bea030879f18394b1de2c469f449:nodejs/unbundle-uv.patch
 f:1a9c6b5bbab91c86bebd9fa47b146d1f:nodejs/v8-disable-trap-handler-on-riscv-sv39.patch
 f:a94415d6a47d2a13bdd7db3287589033:nodejs/v8-riscv-trap-handler.patch
-f:aa66225868bf4b99ebc5105a3afb940a:nodejs/.signature
 f:ddbc657ad20814466809a1d9cf69014e:nodejs/6bd4bdded4fe666dc90872fd4472b967b6e5cd55.patch
 f:3524336f1f8f15a7045b8d17160d1bed:nodejs/Pkgfile
+f:aa66225868bf4b99ebc5105a3afb940a:nodejs/.signature
 f:f8d2f18e32451d2f7d516ef7fd446dc8:shared-mime-info/.footprint
 f:ba273dc7e389002c9507f369fe299b59:shared-mime-info/.signature
 f:952b8f2b79db7944026a790578218e13:shared-mime-info/Pkgfile
