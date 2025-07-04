@@ -4,7 +4,7 @@
 # Depends on: acl ncurses
 
 name=gettext
-version=0.25
+version=0.25.1
 release=1
 source=(https://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.xz)
 
