@@ -1,0 +1,25 @@
+diff -urN grub-2.12.orig/util/grub.d/00_header.in grub-2.12/util/grub.d/00_header.in
+--- grub-2.12.orig/util/grub.d/00_header.in	2022-10-04 14:58:22.000000000 +0000
++++ grub-2.12/util/grub.d/00_header.in	2023-12-21 19:19:03.142352196 +0000
+@@ -152,7 +152,7 @@
+ if loadfont `make_system_path_relative_to_its_root "${GRUB_FONT}"` ; then
+ EOF
+     else
+-	for dir in "${pkgdatadir}" "`echo '/@bootdirname@/@grubdirname@' | sed "s,//*,/,g"`" /usr/share/grub ; do
++	for dir in "${pkgdatadir}" "`echo '/@bootdirname@/@grubdirname@' | sed "s,//*,/,g"`" /usr/share/grub /usr/lib/grub/fonts ; do
+ 	    for basename in unicode unifont ascii; do
+ 		path="${dir}/${basename}.pf2"
+ 		if is_path_readable_by_grub "${path}" > /dev/null ; then
+diff -urN grub-2.12.orig/util/grub.d/10_linux.in grub-2.12/util/grub.d/10_linux.in
+--- grub-2.12.orig/util/grub.d/10_linux.in	2022-12-07 13:47:11.000000000 +0000
++++ grub-2.12/util/grub.d/10_linux.in	2023-12-21 19:21:16.004258494 +0000
+@@ -226,7 +226,8 @@
+   for i in "initrd.img-${version}" "initrd-${version}.img" \
+ 	   "initrd-${alt_version}.img.old" "initrd-${version}.gz" \
+ 	   "initrd-${alt_version}.gz.old" "initrd-${version}" \
+-	   "initramfs-${version}.img" "initramfs-${alt_version}.img.old" \
++	   "initramfs-${version}.img" "initramfs-${version}.gz" \
++	   "initramfs-${alt_version}.img.old" \
+ 	   "initrd.img-${alt_version}" "initrd-${alt_version}.img" \
+ 	   "initrd-${alt_version}" "initramfs-${alt_version}.img" \
+ 	   "initramfs-genkernel-${version}" \

@@ -35,6 +35,7 @@ d:shared-mime-info
 d:wpa_supplicant
 d:dovecot
 d:lame
+d:grub2
 f:faf4c51c2443dc6ecce0414ef517be57:cryptsetup/Pkgfile
 f:fa75fbb042271cc211626d163661a949:cryptsetup/.footprint
 f:f45ce49d62916cc88a9863f032e07293:cryptsetup/.signature
@@ -226,3 +227,11 @@ f:b63a1ee3a1409a5e8bcd774097181e74:dovecot/pre-install
 f:1cc2701f7267dad2c907ca304d22cc6c:lame/.footprint
 f:cce38c543bd5d52167e4fb7ec30daebc:lame/.signature
 f:52814a23ddd928be2c0d0632cc8bf84f:lame/Pkgfile
+f:20130dde04b772df57e46c422d013f71:grub2/.footprint
+f:d022475601d3abbe59a221cde4d9c098:grub2/.signature
+f:cb969952c57d2218325dc0a2158efe0c:grub2/Pkgfile
+f:2d0a24dc5ce4b8641aa90e04e2a27898:grub2/README
+f:bf4ac2f1ee74359bd689fe6bee82f2e9:grub2/csum_seed.diff
+f:43e08eb0137bd7ffafda6bf4c7a9b327:grub2/extra_deps.lst
+f:8459e7425bf9eea9d482e53c5b5c91c9:grub2/grub.cfg.sample
+f:8945d02b41013f91b44652ba5c6caee9:grub2/grub2-tweaks.diff

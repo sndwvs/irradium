@@ -1,0 +1,38 @@
+# Description: A Multiboot boot loader
+# URL: http://www.gnu.org/software/grub/
+# Maintainer: Matt Housh, jaeger at crux dot ninja
+# Depends on: libdevmapper freetype libnvme keyutils
+
+name=grub2
+version=2.12
+release=1
+source=(http://ftp.gnu.org/gnu/grub/grub-$version.tar.xz \
+	http://jaeger.morpheus.net/linux/crux/files/unifont-9.0.06.pcf.gz \
+	$name-tweaks.diff grub.cfg.sample csum_seed.diff extra_deps.lst)
+
+build() {
+	export CFLAGS="${CFLAGS} -Wno-error -Os"
+	export PYTHON=python3
+	cd grub-$version
+	patch -p1 -i $SRC/$name-tweaks.diff
+	#patch -p1 -i $SRC/csum_seed.diff
+
+	cp $SRC/extra_deps.lst grub-core/
+
+	unset CFLAGS
+
+	./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--enable-device-mapper \
+		--disable-efiemu \
+		--disable-grub-mount
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/{info,locale,grub/themes}
+	gzip -d $SRC/unifont-9.0.06.pcf.gz
+	install -d $PKG/usr/lib/grub/fonts
+	./grub-mkfont -o $PKG/usr/lib/grub/fonts/unifont.pf2 \
+		$SRC/unifont-9.0.06.pcf
+	ln -s /usr/lib/grub/fonts/unifont.pf2 \
+		$PKG/usr/share/grub/unicode.pf2
+}
