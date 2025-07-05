@@ -36,6 +36,7 @@ d:wpa_supplicant
 d:dovecot
 d:lame
 d:grub2
+d:grub2-efi
 f:faf4c51c2443dc6ecce0414ef517be57:cryptsetup/Pkgfile
 f:fa75fbb042271cc211626d163661a949:cryptsetup/.footprint
 f:f45ce49d62916cc88a9863f032e07293:cryptsetup/.signature
@@ -235,3 +236,8 @@ f:bf4ac2f1ee74359bd689fe6bee82f2e9:grub2/csum_seed.diff
 f:43e08eb0137bd7ffafda6bf4c7a9b327:grub2/extra_deps.lst
 f:8459e7425bf9eea9d482e53c5b5c91c9:grub2/grub.cfg.sample
 f:8945d02b41013f91b44652ba5c6caee9:grub2/grub2-tweaks.diff
+f:43e08eb0137bd7ffafda6bf4c7a9b327:grub2-efi/extra_deps.lst
+f:bf4ac2f1ee74359bd689fe6bee82f2e9:grub2-efi/csum_seed.diff
+f:c55577cc3e1f235517271189ca808867:grub2-efi/Pkgfile
+f:673c90ed8abd8e4a48de248939fe9a2c:grub2-efi/.signature
+f:694933a1be5600c4d1d5e37c30c0e7bb:grub2-efi/.footprint

@@ -1,0 +1,40 @@
+# Description: GNU GRUB2 (EFI version)
+# URL: http://www.gnu.org/software/grub/
+# Maintainer: Matt Housh, jaeger at crux dot ninja
+# Depends on: grub2 efibootmgr
+
+name=grub2-efi
+version=2.12
+release=1
+source=(http://ftp.gnu.org/gnu/grub/grub-$version.tar.xz csum_seed.diff extra_deps.lst)
+
+build() {
+    export CFLAGS="${CFLAGS} -Wno-error"
+    export PYTHON=python3
+
+    MODLIST="boot chain configfile fat ext2 linux normal ntfs part_gpt part_msdos"
+
+    #patch -d grub-$version -p1 -i $SRC/csum_seed.diff
+
+    cp $SRC/extra_deps.lst grub-$version/grub-core/
+
+    unset CFLAGS
+
+    for ARCH in $(uname -m)
+    do
+        ARCH=${ARCH/aarch64/arm64}
+        mkdir $ARCH
+        cd $ARCH
+        ../grub-$version/configure --prefix=/usr \
+            --with-platform=efi --target=$ARCH \
+            --program-prefix=""
+        make
+        make DESTDIR=$PKG install
+        cd grub-core
+        ../grub-mkimage -O $ARCH-efi -d . -o grub2-$ARCH.efi -p "" $MODLIST
+        cp grub2-$ARCH.efi $PKG/usr/lib/grub/
+        cd ../..
+    done
+
+    rm -r $PKG/usr/{bin,etc,sbin,share}
+}
