@@ -5,7 +5,7 @@
 # Optional: cbindgen directx-headers glslang libclc libunwind libva libvdpau lm_sensors lua python3-ply rust-bindgen spirv-llvm-translator vulkan-loader wayland-protocols
 
 name=mesa
-version=25.1.4
+version=25.1.5
 release=1
 source=(https://archive.mesa3d.org/$name-$version.tar.xz
 	patches/0000-mesa-20.1.1-fix-opencl.patch
@@ -21,7 +21,6 @@ source=(https://archive.mesa3d.org/$name-$version.tar.xz
 
 build() {
 	prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
-	prt-get isinst libclc && PKGMK_MESA+=' -D gallium-opencl=icd' PKGMK_MESA_GALLIUM+='iris,'
 	prt-get isinst libclc rust-bindgen && PKGMK_MESA+=' -D gallium-rusticl=true'
 	prt-get isinst libunwind && PKGMK_MESA+=' -D libunwind=enabled'
 	prt-get isinst libva && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
@@ -66,7 +65,6 @@ build() {
 		-D glx=dri \
 		-D gallium-drivers=${PKGMK_MESA_GALLIUM}crocus,r300,r600,radeonsi,svga,virgl,freedreno,etnaviv,lima,panfrost,v3d,vc4 \
 		-D platforms=${PKGMK_MESA_PLATFORMS#,} \
-		-D shared-glapi=enabled \
 		-D video-codecs=all \
 		-D glvnd=enabled \
 		-D vulkan-drivers=$VULKAN_DRIVERS \
