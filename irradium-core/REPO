@@ -149,7 +149,7 @@ f:6b7c652bea42071121801f3c0e18245f:rc/.signature
 f:ac2d17598ebb0839afc6bc628e64745d:rc/Pkgfile
 f:d39452dd1bc4f0605584e435c6677723:rc/rc.patch
 f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
-f:9be46e727d1f64e28e732c51ea6fe5c6:bash/.signature
+f:d815c59f601115426476cc6bf9c7cf66:bash/.signature
 f:be5b8a1e3dd2272113e854ed0f155c47:bash/profile
 f:cf443b43826ea1ffb0abf92b5123297a:bash/profile.patch
 f:325e951d9957649b94c55c18e67680dd:bash/Pkgfile
