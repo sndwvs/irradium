@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGG2bjI+RMD4U8LpCJhY/BoLribsVvxpbKeOpmtZSX8eiLSHkHTWLQRHkXmBburGhAuOhdNTBsk//QMITsuNziAU=
-SHA256 (Pkgfile) = a327a63a3e774bed8c4eab1dd6507a24e02e945d395909a48e79d46dafacee78
+RWQAwxvZoACtGDHWxJYrBy583rBZXG3pIU9qDr+hmp8jpOpGYq0hyNZtuCsjjxQ011b5Ts9Zlyaq0A59jhuNHXp+aRd5QXy2Qgo=
+SHA256 (Pkgfile) = d3481c828a129c9456d6a3664e79eeed6cba6f822dda27a763bdf8f75ee8faf4
 SHA256 (.footprint) = 3db07693986e27e9e494a8ac18199986459ed68ff46740c352aa1a48f31b3734
 SHA256 (eudev-3.2.14.tar.gz) = 8da4319102f24abbf7fff5ce9c416af848df163b29590e666d334cc1927f006f
 SHA256 (81-irradium.rules) = 96d269d5ca29aa66b51755d7eb6d1d9738f781c6afbc4b8759eb64cde65075dd
