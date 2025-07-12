@@ -1,10 +1,10 @@
 # Description: Root filesystem package
-# URL: https://crux.nu
-# Maintainer: CRUX System Team, core-ports at crux dot nu
+# URL: https://irradium.org
+# Maintainer: mara, mara at fail dot pp dot ua
 
 name=filesystem
 version=3.8
-release=2
+release=3
 source=(issue motd shells group passwd shadow securetty fstab mime.types)
 
 build() {
@@ -85,7 +85,7 @@ VERSION_ID="$version"
 ID=irradium
 PRETTY_NAME="irradium"
 HOME_URL="https://irradium.org"
-DOCUMENTATION_URL="https://irradium.org/Main/Handbook$(echo $version | awk '{ gsub(/\./, "-", $1); print $1 }')"
-BUG_REPORT_URL="https://irradium.org/bugs"
+DOCUMENTATION_URL="https://irradium.org/documentation/$version/"
+BUG_REPORT_URL="https://irradium.org/bugs/"
 EOF
 }
