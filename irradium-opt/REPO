@@ -169,8 +169,8 @@ f:e0418c610312fb6e417398f1a29b7d07:zip/zip-3.0-format-security.patch
 f:8d60750c2f922cebbefd9de596518403:zip/zipnote.patch
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:7fbfaf55f8a1792a709a7914124bb168:pkg-get/.footprint
-f:be94b9adfbdca1b9d224fefdc33e6611:pkg-get/.signature
-f:66e64130b18bf1510013c4a4321d4fbb:pkg-get/Pkgfile
+f:00bf65d2abd3dbddb1934a5bf41dcaf1:pkg-get/.signature
+f:2e55b718203113868b8a4daf89f7ea4f:pkg-get/Pkgfile
 f:23bc5ff22fe4f9a208d65fbbfd489ad9:dbus/30-dbus.launch
 f:95412978f8aa3c9fc667543107086479:dbus/post-install
 f:c51f2067699af541512233bbdd48dec4:dbus/rc.dbus
