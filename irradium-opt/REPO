@@ -192,7 +192,7 @@ f:dd9390f6f5ac214b2d42e9cdc6865f9f:aspell/Pkgfile
 f:3dc09fe4bf975cc2c3460c94a51f4379:bindutils/utils.patch
 f:7f31d78849e7aeded9983123a526705f:bindutils/.footprint
 f:eb3dcecfdcae4e551744177570f006d9:bindutils/.signature
-f:409b44b837f48e04c5569c669edd8366:bindutils/Pkgfile
+f:1149f0cd1d7a731225c971f570a0ad06:bindutils/Pkgfile
 f:1d895ed35c46268c893ef9dd77dfab78:liburcu/.footprint
 f:1f7a86e1a68b2232063c729f5572e6ac:liburcu/.signature
 f:536f41f619eef8868225217295ababd3:liburcu/Pkgfile
