@@ -4,7 +4,7 @@
 # Depends on: libxml2 meson
 
 name=audacious
-version=4.4.2
+version=4.5
 release=1
 source=(http://distfiles.audacious-media-player.org/$name-$version.tar.bz2)
 
