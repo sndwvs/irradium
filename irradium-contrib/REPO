@@ -654,8 +654,8 @@ f:7d222f12f84c064edc7b757cef3b536d:mkdocs/.signature
 f:610fee7c887449a35d41bae6e43ead13:python3-mergedeep/Pkgfile
 f:42328999c33902223b8ca47aa32a5c2c:python3-mergedeep/.footprint
 f:1e76735a5087374936eb7a30c596fdb7:python3-mergedeep/.signature
-f:2eeb580caa364fb204a4160daaded475:audacious-plugins/.footprint
-f:df32e1bb992a7b26f6abafbb96433c8a:audacious-plugins/.signature
+f:70637cebd7da19a2e96cf6817cdeef8f:audacious-plugins/.footprint
+f:b956a2b0ceecdf469da7f21dca3731b2:audacious-plugins/.signature
 f:956d37c49d42f906c42731e1ef61ccc4:audacious-plugins/Pkgfile
 f:8f4e26836f7b950970df2cb085a7b3cd:gcc-fortran/.footprint.aarch64
 f:872e09584109dc7e2319a8df85f92ae4:gcc-fortran/.signature.aarch64
