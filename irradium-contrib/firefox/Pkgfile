@@ -83,9 +83,9 @@ EOF
 
   # use system icu only if new enough
   local ICU_VER=$(prt-get printf "%v" --filter=icu)
-#  if (( ${ICU_VER%.*} >= 76 )); then
-#    echo 'ac_add_options --with-system-icu' >> .mozconfig
-#  fi
+  if (( ${ICU_VER%.*} >= 76 )); then
+    echo 'ac_add_options --with-system-icu' >> .mozconfig
+  fi
 
   # disable jemalloc on systems without glibc 
   local LIBC=$(</var/lib/pkg/db awk -v RS="" -v FS="\n" '/\nusr\/lib\/libc.so\n/ { print $1 }')
