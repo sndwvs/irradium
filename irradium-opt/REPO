@@ -37,6 +37,7 @@ d:dovecot
 d:lame
 d:grub2
 d:grub2-efi
+d:gobject-introspection
 f:faf4c51c2443dc6ecce0414ef517be57:cryptsetup/Pkgfile
 f:fa75fbb042271cc211626d163661a949:cryptsetup/.footprint
 f:f45ce49d62916cc88a9863f032e07293:cryptsetup/.signature
@@ -241,3 +242,8 @@ f:bf4ac2f1ee74359bd689fe6bee82f2e9:grub2-efi/csum_seed.diff
 f:c55577cc3e1f235517271189ca808867:grub2-efi/Pkgfile
 f:673c90ed8abd8e4a48de248939fe9a2c:grub2-efi/.signature
 f:694933a1be5600c4d1d5e37c30c0e7bb:grub2-efi/.footprint
+f:2383204f82fb774b75eddbe0964d8b6e:gobject-introspection/Pkgfile
+f:6a3b37401d78735d427832419c15824c:gobject-introspection/.footprint.aarch64
+f:f566989c85bb5b95ff6c8e32209de904:gobject-introspection/.signature.aarch64
+f:4bdde34f5f6240d8bbc5873126a8e809:gobject-introspection/.footprint.riscv64
+f:2509ed54995a3907ae3380996f0b93a1:gobject-introspection/.signature.riscv64
