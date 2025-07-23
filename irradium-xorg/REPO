@@ -5,7 +5,6 @@ d:xorg-xcb-util-xrm
 d:mesa
 d:mesa/patches
 d:xorg-xf86-video-fbdev
-d:xorg-libpixman
 f:800a15cfc872acf9999bce55b30491a8:mtdev/.footprint
 f:3ac078834db014ccf66b1425274e9f53:mtdev/.signature
 f:a5bec44ea6d2f5e0021cc97fe8b26348:mtdev/Pkgfile
@@ -36,6 +35,3 @@ f:0973aa7ff236fb42af3aa783c1346af2:mesa/Pkgfile
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:96f400c2e676aa9c2da5aed08bdba7f3:xorg-xf86-video-fbdev/.signature
 f:6e705c0e55a603a473afd94710d12d56:xorg-xf86-video-fbdev/Pkgfile
-f:139306ca120c31153b14675620cb6fb3:xorg-libpixman/.footprint
-f:cecc88f9f3ea22b9d73141a4fc1fb61e:xorg-libpixman/.signature
-f:70ac23c242cd3edd297fc0ca9cf78816:xorg-libpixman/Pkgfile
