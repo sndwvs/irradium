@@ -277,12 +277,12 @@ f:70f7c8432ab31670f6775fa673112eb5:libplist/Pkgfile
 f:a8f10ebe2f26f5568b711dfd72065754:libptytty/.footprint
 f:5b27dcac763479364cdaa0c9d6ab32ed:libptytty/.signature
 f:73e7b99b3c8ae2ce230a665abc9ed5e1:libptytty/Pkgfile
-f:a853c1b2129f23706ca9af8cba3d8a52:libreoffice/.footprint.aarch64
-f:22f915e02e330220075b895672faf62d:libreoffice/.footprint.riscv64
+f:0d614c8bc2d41f056e813f6982eaed0a:libreoffice/.footprint.aarch64
+f:70aa2062a6b0045b580a53bddceb3905:libreoffice/.footprint.riscv64
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
 f:faf069d19324a53f32cceaa8e7cc0ab2:libreoffice/libreoffice-7.6-qt6-wayland-egl.patch
-f:d9f15f04e8cf9555c25341ca8da78db2:libreoffice/.signature.aarch64
-f:73d8989717631f0acd4583856277bbc0:libreoffice/.signature.riscv64
+f:4cf622a33d113bc9694f9c662f4c2f54:libreoffice/.signature.aarch64
+f:d3f2d6a424881f7df9ba986d95271276:libreoffice/.signature.riscv64
 f:93168c9a89333687c6a7c5c5d9772cb6:libreoffice/Pkgfile
 f:8bfa5aed8ba9861c86b93e07ac3a39a2:libreoffice/makefile.in.patch
 f:7b3ae4fbdd27165b5adb2956822eb63c:librga/.footprint
