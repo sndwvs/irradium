@@ -153,7 +153,8 @@ f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
 f:be5b8a1e3dd2272113e854ed0f155c47:bash/profile
 f:cf443b43826ea1ffb0abf92b5123297a:bash/profile.patch
 f:d815c59f601115426476cc6bf9c7cf66:bash/.signature
-f:325e951d9957649b94c55c18e67680dd:bash/Pkgfile
+f:06aa5897025275d7b80d73fa8afa5177:bash/Pkgfile
+f:2c20d6c86b600137626d380c4aa3c8fc:bash/bash-5.3.3.patch.gz
 f:4e1e8a61db6c9a19f9398eb1073d41e2:dcron/.footprint
 f:3596a4fa9cf63bdf130fd533ca7703d4:dcron/crontab
 f:0049730715f9841a1cd8f2721cb1bb1b:dcron/crontab.patch
