@@ -12,9 +12,10 @@ source=(https://ftpmirror.gnu.org/gnu/$name/$name-${version:0:3}.tar.gz
     $name-$version.patch.gz profile)
 
 build() {
+    patch -p1 -i $SRC/profile.patch
+
     cd $name-${version:0:3}
 
-    patch -p1 -i $SRC/profile.patch
     gunzip -c $SRC/$name-$version.patch.gz | patch -p0
 
     ./configure \
