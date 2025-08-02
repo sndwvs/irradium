@@ -76,6 +76,7 @@ d:rkdeveloptool
 d:tg_owt
 d:hostapd
 d:pkgtools
+d:btop
 d:crosstool-ng
 d:libe-book
 d:libfreehand
@@ -470,6 +471,9 @@ f:ea29b259b6fda2cfaaae1e8ab1239cf0:pkgtools/post-install
 f:b24a86d34e0f72b6d2507fa891360b1f:pkgtools/.footprint
 f:c3428327906d45790be03a31c6bc46a3:pkgtools/.signature
 f:89dc3291148ba8ca76e6ebcdac565bcc:pkgtools/Pkgfile
+f:6e8ad691030a96aa511fa5a4548d5d94:btop/Pkgfile
+f:bba18b1761e3147bd7ba2256c5818e1a:btop/.footprint
+f:ae5dd8a0754d7e24674c2f88904676a3:btop/.signature
 f:36663982cb2dd06e86a2afb7493af5a4:crosstool-ng/0001-sunrpc.diff
 f:a00b028d74df5eb04bf0072dcdf5d959:crosstool-ng/.footprint
 f:34c0b0bcbbb5c60221cafdb50c9e7407:crosstool-ng/.signature
