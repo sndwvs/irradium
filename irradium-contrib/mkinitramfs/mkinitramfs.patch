@@ -270,7 +270,7 @@
    # Conf file(s)
    cp -a /etc/lvm $WDIR/etc
  fi
-@@ -166,40 +236,69 @@ sort $unsorted | uniq | while read libra
+@@ -166,40 +236,70 @@ sort $unsorted | uniq | while read libra
    copy $library lib
  done
  
@@ -339,6 +339,7 @@
 +fi
 +
 +if [ ! -z ${MODULES} ] ; then
++    mkdir -p $WDIR/lib/modules/$KERNEL_VERSION
 +    cp /lib/modules/$KERNEL_VERSION/modules.{builtin,order}                     \
 +            $WDIR/lib/modules/$KERNEL_VERSION
 +  if [ -f /lib/modules/$KERNEL_VERSION/modules.builtin.modinfo ]; then

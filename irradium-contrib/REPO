@@ -421,10 +421,10 @@ f:850e7f7c9838c0071953e25b12d623c8:gspell/Pkgfile
 f:4461500806eba45e6f7dd0f5805ea777:mkinitramfs/init.in.patch
 f:1793b8523186ece9d46244e4c3b57fae:mkinitramfs/init.in
 f:6fc9192870e3cd2924aceb60f46c974a:mkinitramfs/.footprint
+f:96f4e40daebe30979c4f13b968179bc0:mkinitramfs/.signature
+f:57fbd4cf186c4e379ec8bd76d61e02f9:mkinitramfs/Pkgfile
+f:326dc51b2d21399c70aad5241ad3213a:mkinitramfs/mkinitramfs.patch
 f:ac7c2c0be8702ab9659ccca6679487f2:mkinitramfs/mkinitramfs
-f:21ec54b94159db8958e4dc1f8f8e8f89:mkinitramfs/.signature
-f:8a374c1a8946907d3fccf4d8fdaf06db:mkinitramfs/Pkgfile
-f:6c481b2d034259d4dfb0177cedc81f8c:mkinitramfs/mkinitramfs.patch
 f:5fa007503fb84bee9b6bd748d3a357f3:ntp/fix_ipv6_locallink_regression.diff
 f:e7cdc0f92b0ce136612839a7020980c3:ntp/ntp.conf
 f:32e69b89c80eeeb12516766bdc03a5f4:ntp/ntp.keys
