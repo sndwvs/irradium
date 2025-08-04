@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGM40okFOHubul9enYcJ2rctggMN/wad6waHeM+LvAQ4JB41Q7F4D8VOgN2gJnlp/AOFQ9EBMWp/qGRDL4TqpVwM=
-SHA256 (Pkgfile) = d0b6de3de120d9ca8b81bfd54f49fb6ffe89e2e6900146cb2365ed0e5b961848
-SHA256 (.footprint) = 549b0d17496c7d58e0609a8c962957285d35f7f8788b9ee74c9af08925b2b598
-SHA256 (iproute2-6.15.0.tar.xz) = 8041854a882583ad5263466736c9c8c68c74b1a35754ab770d23343f947528fb
+RWQAwxvZoACtGFAv1qeP3faAYNPzmenzurlzhWXNY6fHVOSMhA/NGmMwJnd88bfDq/xQUdH/9/D27S5HtfJbsFSfShfi135v1AU=
+SHA256 (Pkgfile) = 7cef3da211372ce5417a3ddb258406c98aca8c87b45021aa9ae150517afe11cf
+SHA256 (.footprint) = 1762a230e7bf5e26eba2977cfd38aaf625d907eff0fdb9470414540e85992c96
+SHA256 (iproute2-6.16.0.tar.xz) = 5900ccc15f9ac3bf7b7eae81deb5937123df35e99347a7f11a22818482f0a8d0
 SHA256 (lo.iproute2) = ce94fcf414aa11927a66a221af14180f125f4efbf985dd4db9a1b43dad9cbcc7
 SHA256 (net.iproute2) = 0af62a6d674d159ec77ccb46c7ee189c1dc4db0213026d6c42c2b80ce01d231d
 SHA256 (irradium-net.iproute2.patch) = 1ce76c5e977ad34d2292e0742a414169cd1e2e3cbff0608c2a93c0e925f0d09c
