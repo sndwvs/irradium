@@ -144,8 +144,7 @@ f:abca8aae236c538bd68067f806c035e0:rust/.footprint.aarch64
 f:d96810f09781fb5b546469ab2d387063:rust/.footprint.riscv64
 f:668f3a3b76936369f90b573e5ff01b3f:rust/.signature.aarch64
 f:4a82af8390b2be3ff8f8ac19c0417ec2:rust/.signature.riscv64
-f:6fe51fb8a718438fffccbfafbb4437b3:rust/Pkgfile
-f:de975561cb04c2b18dfa50d88a18bbbe:rust/riscv64-disable-f16-f128.patch
+f:52841593a1f464442b3b42438d6f4719:rust/Pkgfile
 f:258ab9a01a7c755ed2cd7c84489fd2f0:rust/0001-bootstrap-Change-libexec-dir.patch
 f:a23a8aac5a57faa325cbaf32d2f261c8:slim/.footprint
 f:9654119211dec3b51f819b7cc34380ac:slim/.signature
