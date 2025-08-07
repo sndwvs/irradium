@@ -5,9 +5,9 @@
 # Optional: clang libgit2 polly sccache
 
 name=rust
-version=1.88.0
-_date=2025-05-15
-_rustc=1.87.0
+version=1.89.0
+_date=2025-06-26
+_rustc=1.88.0
 _cargo=$_rustc
 release=1
 
@@ -88,7 +88,7 @@ build() {
 
 cat <<- EOF > $SRC/bootstrap.toml
 profile = "dist"
-change-id = 140732
+change-id = 142379
 
 [llvm]
 ninja = true
@@ -135,7 +135,8 @@ tools = ["cargo",
   "rust-demangler",
   "rust-analyzer",
   "rust-analyzer-proc-macro-srv",
-  "rustdoc"]
+  "rustdoc",
+  "rust-src"]
 docs = false
 extended = true
 sanitizers = true
