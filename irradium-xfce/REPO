@@ -56,8 +56,8 @@ f:0b805f8327a298ec2c64f132151442d3:mousepad/.footprint
 f:9c5bca65605f6e13a912267d6d23af72:mousepad/.signature
 f:9d24cfe33f3a5c4572f4a381e8e0f048:mousepad/Pkgfile
 f:fdc28c151b88be47a6c52035893bf50a:thunar/.footprint
-f:d1954bb0aa27c759b2b28c3883069d8d:thunar/Pkgfile
 f:d2a83fee0e4081854d90074b8e8a40ee:thunar/.signature
+f:d1954bb0aa27c759b2b28c3883069d8d:thunar/Pkgfile
 f:f115a73ca3aca7e750aff1df1056ff9b:thunar-volman/.footprint
 f:69c7e85d8b5401a297df9e260bfa3f4b:thunar-volman/.signature
 f:b11494c531e04064116c2f81fcf96be8:thunar-volman/Pkgfile
@@ -139,7 +139,7 @@ f:364fa23fa38d602049e53272823e16d5:xfwm4/.signature
 f:dec88d3b113e71c7f4667b128be9fa10:xfwm4/Pkgfile
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:786281391b8c06be6353a11ee2725c1c:libxfce4windowing/.footprint
-f:45ca1cdce575e6e4b683196166040625:libxfce4windowing/Pkgfile
+f:797db33ddedaf0d3bcfa9e14f4929e5c:libxfce4windowing/Pkgfile
 f:56eff2573a032213aec427109a00e4db:libxfce4windowing/.signature
 f:c63616d7afc51eea1dfc22e65a408701:xfce4-mixer/.footprint
 f:a144900c536cf74e05a1f4b5f7026889:xfce4-mixer/.signature
