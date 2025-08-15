@@ -329,7 +329,6 @@ drwxr-xr-x	root/root	usr/lib/libreoffice/program/services/
 -rw-r--r--	root/root	usr/lib/libreoffice/program/setuprc
 drwxr-xr-x	root/root	usr/lib/libreoffice/program/shell/
 -rw-r--r--	root/root	usr/lib/libreoffice/program/shell/about.svg
--rw-r--r--	root/root	usr/lib/libreoffice/program/shell/animatedbrand.gif
 -rw-r--r--	root/root	usr/lib/libreoffice/program/shell/logo-sc.svg
 -rw-r--r--	root/root	usr/lib/libreoffice/program/shell/logo-sc_inverted.svg
 -rw-r--r--	root/root	usr/lib/libreoffice/program/shell/logo.svg
