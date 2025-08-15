@@ -4,8 +4,8 @@
 # Depends on: gdk-pixbuf glib gtk3 libwnck-gtk3 xorg-libx11 wayland libdisplay-info
 
 name=libxfce4windowing
-version=4.20.3
-release=2
+version=4.20.4
+release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
 build(){
