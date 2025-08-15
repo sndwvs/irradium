@@ -4,7 +4,7 @@
 # Depends on: gtk3 libxfce4util startup-notification xfconf
 
 name=libxfce4ui
-version=4.20.1
+version=4.20.2
 release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
