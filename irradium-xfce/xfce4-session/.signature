@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0XJE59gc+ouD16oEynXRVzDlst+KJkI23tQw2fXWd8+J4GafgFnPbe44bSrQy8y0bYQSyQWKEeC1on1VFmfRsAQ=
-SHA256 (Pkgfile) = 268b7419573047acf4356c232aa7c8060bb29115da5719271f864f9f67bcaa4d
+RWQ1yk7gkrBo0Y1/nhu7RZOm+UBx9lZmGdb9AwKMoPDuO+ettflH8xPtd8B36kjVmA2hLX8bY5wqMO17ciTZj1UJimvWRMGSCwY=
+SHA256 (Pkgfile) = ce26c744e73b87c12465760006c7cf8d74a850acb4858b03365a8775b84a1dc1
 SHA256 (.footprint) = 0bdc88ce914d6a0a306a870031720689b2c50833df50426330f3d3dccf6783c0
-SHA256 (xfce4-session-4.20.2.tar.bz2) = a0b80b7136515bc3c0c54fa859ad420365e29b715b6da0b58a2d2781bfbe73c3
+SHA256 (xfce4-session-4.20.3.tar.bz2) = dbf00672c5316a30b7001fe852e6a5ba9f889afeab8a247545a160d4302f1fa2
 SHA256 (use-xfss-by-default-in-xfce.patch.gz) = 9e98b456d083c9345f3f709a2ef67c5cb30922e83eef78ba26595311ea392101
