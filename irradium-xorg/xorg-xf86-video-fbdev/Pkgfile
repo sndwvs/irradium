@@ -13,7 +13,7 @@ build() {
 
 	# riscv64 fix error:
 	# [    73.229] (EE) Failed to load /usr/lib/xorg/modules/drivers/fbdev_drv.so: /usr/lib/xorg/modules/drivers/fbdev_drv.so: undefined symbol: fbdevHWSave
-	export LDFLAGS=${LDFLAGS/,-z,now/}
+	export LDFLAGS=${LDFLAGS/-Wl,-z,now/}
 
 	./configure --prefix=/usr
 
