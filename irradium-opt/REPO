@@ -58,7 +58,7 @@ f:dae0c10c99399580c929fc100e79faef:ffmpeg-mpp/ffmpeg-x264-10bit.sh
 f:df409f613c10ae0b7e19e37e66717714:ffmpeg-mpp/rkmpp-6.patch
 f:13e6b933e62edbd9931ebd05a48386de:harfbuzz/.footprint
 f:a5f5635210ea85f65dd544a82284ab6e:harfbuzz/.signature
-f:b4a2950a122d58f3c6b407b3a6a4d8e6:harfbuzz/Pkgfile
+f:23bf6ed5786f3537ae01a7f354a47934:harfbuzz/Pkgfile
 f:5db6190db9bd0114880d1295e86e5781:libart_lgpl/Pkgfile
 f:58263621cc2c46c26e4bb2aa56cde0c7:libart_lgpl/.footprint
 f:4a20a4462b31e81c055e8872e284e185:libart_lgpl/.signature
