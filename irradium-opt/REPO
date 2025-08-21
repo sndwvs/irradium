@@ -40,7 +40,7 @@ d:grub2
 d:lame
 f:fa75fbb042271cc211626d163661a949:cryptsetup/.footprint
 f:f45ce49d62916cc88a9863f032e07293:cryptsetup/.signature
-f:faf4c51c2443dc6ecce0414ef517be57:cryptsetup/Pkgfile
+f:38c9932343434e9cbcf9bd92fe3616b7:cryptsetup/Pkgfile
 f:dae0c10c99399580c929fc100e79faef:ffmpeg/ffmpeg-x264-10bit.sh
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg/add-av_stream_get_first_dts-for-chromium.patch
 f:89ad92073c2c3f61771204c4780a37bc:ffmpeg/fef22c87ada4517441701e6e61e062c9f4399c8e.patch
