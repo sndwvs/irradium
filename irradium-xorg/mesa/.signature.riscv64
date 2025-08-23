@@ -1,13 +1,14 @@
 untrusted comment: verify with /etc/ports/irradium-xorg.pub
-RWT3zJzzKRcegmyAbx6U5ZjZfhQ7bwwpc093AGzO7zhipSnUMC6+ion5joorVM08p1a4SSijzvSZ5gWVkkZgHPyouGBXmPARXwI=
-SHA256 (Pkgfile) = 64820a4ba5c2835bdbf2e7d6b81b9a9b3c085d29ee373afe1031f4d1737316ec
-SHA256 (.footprint.riscv64) = fe1249e8d9f200f9939a0029eb3d76bfb7398f306feaf1acd765ee59cec95519
-SHA256 (mesa-25.1.8.tar.xz) = 5cf1571d0d646d90047f3d93f57acc787cf88ec7e95efe172c555b492c30fb71
-SHA256 (0000-mesa-20.1.1-fix-opencl.patch) = e4e6cb3a204485bcddfe4f715197704a7f73bc9d6282f7bdbd4c1e79a6641979
-SHA256 (0001-mesa-23.1-x86_32-llvm-detection.patch) = 79e2e290d8b1e89dbc92f7ad3e264ca17e881fdd1765102e9bf5ce19b0a2031d
-SHA256 (0002-mesa-24.1-find-opencl-c-base.h.patch) = cff85cbbc693faed44f21b3acecdfc204920b8ec84410166799b4eb12bd4439c
-SHA256 (0003-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch) = 6ed5aa69d9356682f9df41a5e7af466b8494c4c23c97a176f887266e091af229
-SHA256 (0004-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch) = 39fe2027f38dd4e93956ba594f5846ffdcfb56434c64a31748609c73e24be1cb
-SHA256 (0005-mesa-24-llvmspirv-detection.patch) = 1a7876583850fa75ba35d98eeeaeb363ccf05c514ad34d7db0ba83587b6646e4
-SHA256 (0006-mesa-buildsystem-improvements.patch) = 2cf4b199d24bc6a6bbcc07942beb5fa5cbe4e191c944816a1bf02fff9f6bf739
-SHA256 (0007-mesa-24.0-llvmspirvlib-version-check.patch) = c4913d20c5a83e9675206276e4b0eb0704cfb87d7483f1a767e3f82a73cbf0c5
+RWT3zJzzKRcegh4s1OcJ0aYsi1JSmCnBOOBYMPFtLDtujVh3xdhgvBgkLnYbtuV0X+RRUgqm1TQ2Ka/2pYZchguA5AeaTRU7fgM=
+SHA256 (Pkgfile) = ef428c2d2235ea176534900d3831559defdca96f18470b9d99f8dbce90174a48
+SHA256 (.footprint.riscv64) = 10efb4609049e95bc604761b6ffafa0336efb337551d3c88a94a2d8bea071fe3
+SHA256 (mesa-25.2.1.tar.xz) = c124372189d35f48e049ee503029171c68962c580971cb86d968a6771c965ba4
+SHA256 (0000-mesa-23.1-x86_32-llvm-detection.patch) = 271e986dd8e09635ac4f0cc8b59c251dcc79b6be0de41da5c615c7b5035b3ead
+SHA256 (0001-mesa-24.1-find-opencl-c-base.h.patch) = cff85cbbc693faed44f21b3acecdfc204920b8ec84410166799b4eb12bd4439c
+SHA256 (0002-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch) = 5d9613493b3031692dd588fbb5f9cee445986ad7bb569bdca750bd939615ce30
+SHA256 (0003-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch) = 6789490a644613bb5560159020d0dd48727faab222ca2b5e0d1fb0b2c9801095
+SHA256 (0004-mesa-24-llvmspirv-detection.patch) = 1a7876583850fa75ba35d98eeeaeb363ccf05c514ad34d7db0ba83587b6646e4
+SHA256 (0005-mesa-buildsystem-improvements.patch) = 5b7b3fa42ae4d7070b33084b4921f6086c46dc516eb92cc21f0c751c2e6cd6d5
+SHA256 (0006-mesa-24.0-llvmspirvlib-version-check.patch) = c4913d20c5a83e9675206276e4b0eb0704cfb87d7483f1a767e3f82a73cbf0c5
+SHA256 (0007-mesa-25.2-llvm-21.patch) = 848f03775f8ebefd85073bd7050cd9906b29e60760c160c5f52b3e0204cfdcff
+SHA256 (0008-mesa-25.2-aarch64-compile.patch) = b6fab05255e4fe9fdf348f5b8d1404c4dd5235659f9a8fa15194e03cd0ca5b52

@@ -28,10 +28,10 @@ f:8d38d25663ff46d55d7de46cc1add618:mesa/patches/0006-mesa-24.0-llvmspirvlib-vers
 f:8ed2d5060dcbf7c28594023bf24461d2:mesa/patches/0007-mesa-25.2-llvm-21.patch
 f:398504a224b1fc27938c7640a255af83:mesa/patches/0008-mesa-25.2-aarch64-compile.patch
 f:b4f8779303542471e8a279f27721e9b4:mesa/README.md
-f:0cf88f0ab72eb4949d2b2b4176b5c4ad:mesa/.footprint.aarch64
-f:6dc8f787c629dbb016a4a5cf9cb2f4a9:mesa/.footprint.riscv64
-f:50bcbeeef0e7f2789ec238df2663fad0:mesa/.signature.aarch64
-f:15e89bd3e8c8f31eb9c23e66e047ae41:mesa/.signature.riscv64
+f:48d195e6ff15db4f62533412b369d725:mesa/.footprint.aarch64
+f:a0c776c6722d82bc7445fd13734f4fa0:mesa/.footprint.riscv64
+f:c786bca16f6653a0648fcc4c1701a13d:mesa/.signature.aarch64
+f:293aeee1ff7385f1103e012a0d5c6b5b:mesa/.signature.riscv64
 f:29a4b4e802cdbcb4d7d4af6f46766c65:mesa/Pkgfile
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:9413f5282c3916c9969cd0eb5a1d1a97:xorg-xf86-video-fbdev/.signature
