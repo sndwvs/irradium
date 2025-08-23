@@ -20,7 +20,7 @@ source=(https://archive.mesa3d.org/$name-$version.tar.xz
 
 build() {
     prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
-    prt-get isinst libclc && PKGMK_MESA+=' -D gallium-opencl=icd' PKGMK_MESA_GALLIUM+='iris,'
+    #prt-get isinst libclc && PKGMK_MESA+=' -D gallium-opencl=icd' PKGMK_MESA_GALLIUM+='iris,'
     prt-get isinst libclc rust-bindgen && PKGMK_MESA+=' -D gallium-rusticl=true'
     prt-get isinst libunwind && PKGMK_MESA+=' -D libunwind=enabled'
     prt-get isinst libva && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
@@ -29,7 +29,7 @@ build() {
     if prt-get isinst vulkan-loader; then
         prt-get isinst cbindgen rust-bindgen spirv-llvm-translator && PKGMK_MESA_VULKAN_DRIVERS+='nouveau,'
         prt-get isinst directx-headers && PKGMK_MESA_VULKAN_DRIVERS+='microsoft-experimental,'
-        prt-get isinst glslang && PKGMK_MESA_VULKAN_DRIVERS+='amd,broadcom,panfrost,' PKGMK_MESA_VULKAN_LAYERS+='device-select,overlay,'
+        prt-get isinst glslang && PKGMK_MESA_VULKAN_DRIVERS+='amd,broadcom,panfrost,freedreno,imagination-experimental' PKGMK_MESA_VULKAN_LAYERS+='device-select,overlay,'
         prt-get isinst glslang libclc python3-ply lua && PKGMK_MESA_VULKAN_DRIVERS+='intel,' PKGMK_MESA_VULKAN_LAYERS+='intel-nullhw,'
         VULKAN_DRIVERS=${PKGMK_MESA_VULKAN_DRIVERS#,}intel_hasvk,virtio
         PKGMK_MESA_GALLIUM+='zink,'
@@ -63,7 +63,7 @@ build() {
         -D gles1=disabled \
         -D gles2=enabled \
         -D glx=dri \
-        -D gallium-drivers=${PKGMK_MESA_GALLIUM}crocus,r300,r600,radeonsi,svga,virgl,freedreno,etnaviv,lima,panfrost,v3d,vc4 \
+        -D gallium-drivers=${PKGMK_MESA_GALLIUM}auto,r300,r600,radeonsi,svga,virgl,freedreno,etnaviv,tegra,lima,panfrost,v3d,vc4 \
         -D platforms=${PKGMK_MESA_PLATFORMS#,} \
         -D video-codecs=all \
         -D glvnd=enabled \
