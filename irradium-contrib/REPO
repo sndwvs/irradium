@@ -460,7 +460,8 @@ f:cec977ebe8590aa485f1036aee5fbc7b:tg_owt/cstdint.patch
 f:815c0e4b2d7baaf455a38c728f1ee7f8:tg_owt/gcc12.patch
 f:f267b2d6e4135cb3e24b5a26892bf731:tg_owt/gcc13.patch
 f:c188298cd74e16a56d49d2547112b89f:tg_owt/.signature
-f:f7efb34ee52ffaed800afe1d97a97f58:tg_owt/Pkgfile
+f:5b635fa6437fd865bddcf723f959c611:tg_owt/Pkgfile
+f:275e5c9b3d8830514d65441a7c77386c:tg_owt/0001-Replace-absl-template-nullability-annotations.patch
 f:672d52f4e522c3a5366b472f8b9bac34:hostapd/.footprint
 f:532af9dc58bfb887e923f87795cb3af8:hostapd/.signature
 f:9fc18c8eab771033b956b4a6c881beb4:hostapd/0001-hostapd-Add-the-missing-CONFIG_SAE-option-to-the-def.patch

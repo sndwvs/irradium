@@ -4,9 +4,9 @@
 # Depends on: cmake ninja pipewire pulseaudio libjpeg-turbo libxcomposite openh264
 
 name=tg_owt
-version=20250515
+version=20250823
 release=1
-_commit=232ec410502e773024e8d83cfae83a52203306c0
+_commit=62321fd7128ab2650b459d4195781af8185e46b5
 _libsrtp_commit=a566a9cfcd619e8327784aa7cff4a1276dc1e895
 _libyuv_commit=04821d1e7d60845525e8db55c7bcd41ef5be9406
 _libvpx_commit=3688b17187d40a71f9a7de4bfac92201f3e4a533
@@ -20,7 +20,8 @@ source=(https://github.com/desktop-app/tg_owt/archive/${_commit}.tar.gz
         https://github.com/cisco/libsrtp/archive/$_libsrtp_commit.tar.gz
         cstdint.patch
         gcc12.patch
-        gcc13.patch)
+        gcc13.patch
+        0001-Replace-absl-template-nullability-annotations.patch)
 
 build() {
     cd $name-${_commit}
@@ -39,6 +40,8 @@ build() {
     patch -Np1 -i $SRC/cstdint.patch
     patch -Np1 -i $SRC/gcc12.patch
     patch -Np1 -i $SRC/gcc13.patch
+    # fix for abseil 20250814; see https://github.com/desktop-app/tg_owt/pull/164
+    patch -Np1 -i $SRC/0001-Replace-absl-template-nullability-annotations.patch
 
     CXXFLAGS+=" -DLIBYUV_DISABLE_NEON"
 
