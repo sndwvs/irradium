@@ -108,9 +108,6 @@ build() {
     # Increase _FORTIFY_SOURCE level to match Arch's default flags
     patch -Np1 -i $SRC/increase-fortify-level.patch || exit 1
 
-    # fix fallthrough annotation does not directly precede
-    patch -Np1 -i $SRC/gperf.patch
-
     # Fixes for building with libstdc++ instead of libc++
 
     # Link to system tools required by the build

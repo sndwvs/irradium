@@ -147,14 +147,13 @@ f:3554002a9bb2c060784e47032d4bedf1:chromium/patches/use-oauth2-client-switches-a
 f:883f63f2765d2eea97565e7ddf5c1834:chromium/patches/chromium-138-nodejs-version-check.patch
 f:c0d658293eca84c9895b8b6e64ad11c5:chromium/patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
 f:4556b5a46bfda86d08784461f9cc3a9f:chromium/patches/compiler-rt-adjust-paths.patch
-f:3effa10a0c417fcba9953671b542c129:chromium/patches/gperf.patch
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64
 f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.aarch64
 f:fe7e49720ca2e38f907c9a53d6c17ae6:chromium/.signature.aarch64
-f:7e04e092b8d60ea35728ef91f6a9b428:chromium/Pkgfile
+f:a6a17dad11a282b1a9b7036e9c0579d1:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:2a3fe0bbe2b23a66764034bd56fc2411:deadbeef/ddb_dsp_libretro_fix_aarch64_riscv64.patch
 f:56a2ee704d2bb8275f70d226c78df704:deadbeef/.footprint
