@@ -4,7 +4,7 @@
 # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
 
 name=ungoogled-chromium
-version=136.0.7103.92
+version=139.0.7258.138
 release=1
 _uc_version=$version-1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/${name#*-}-$version.tar.xz
@@ -17,9 +17,9 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/${nam
         patches/compiler-rt-adjust-paths.patch
         patches/increase-fortify-level.patch
         patches/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
-        patches/chromium-136-drop-nodejs-ver-check.patch
-        patches/disable-clang-warning-suppression-flag.patch
         patches/gperf.patch
+        patches/chromium-138-nodejs-version-check.patch
+        patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
 )
 
 build() {
@@ -101,16 +101,16 @@ build() {
     patch -Np1 -i $SRC/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
 
     # Fixes from Gentoo
-    patch -Np1 -i $SRC/chromium-136-drop-nodejs-ver-check.patch
+    patch -Np1 -i $SRC/chromium-138-nodejs-version-check.patch
+
+    # Fixes from NixOS
+    patch -Np1 -i $SRC/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
 
     # Allow libclang_rt.builtins from compiler-rt >= 16 to be used
     patch -Np1 -i $SRC/compiler-rt-adjust-paths.patch || exit 1
 
     # Increase _FORTIFY_SOURCE level to match Arch's default flags
     patch -Np1 -i $SRC/increase-fortify-level.patch || exit 1
-
-    # Disable usage of --warning-suppression-mappings flag which needs clang 20
-    patch -Np1 -i $SRC/disable-clang-warning-suppression-flag.patch
 
     # fix fallthrough annotation does not directly precede
     patch -Np1 -i $SRC/gperf.patch
@@ -138,10 +138,12 @@ build() {
         -f "$UNGOOGLED_REPO/domain_substitution.list" -c domainsubcache.tar.gz ./
 
     # Link to system tools required by the build
-    mkdir -p third_party/node/linux/node-linux-x64/bin/
-    ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
-    #ln -s /usr/bin/java third_party/jdk/current/bin/
-    ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
+    if (( ! _manual_clone )); then
+        rm third_party/node/linux/node-linux-x64/bin/node
+        ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
+        #ln -s /usr/bin/java third_party/jdk/current/bin/
+        ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
+    fi
 
     # Remove bundled libraries for which we will use the system copies; this
     # *should* do what the remove_bundled_libraries.py script does, with the
@@ -185,6 +187,7 @@ build() {
       'symbol_level=0' # sufficient for backtraces on x86(_64)
       'is_cfi=false'
       'treat_warnings_as_errors=false'
+      'fatal_linker_warnings=false'
       'disable_fieldtrial_testing_config=true'
       'blink_enable_generated_code_formatting=false'
       'ffmpeg_branding="Chrome"'
