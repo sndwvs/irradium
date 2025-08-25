@@ -14,9 +14,7 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/${nam
         patches/0002-Run-blink-bindings-generation-single-threaded.patch
         patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
         patches/use-oauth2-client-switches-as-default.patch
-        patches/compiler-rt-adjust-paths.patch
         patches/increase-fortify-level.patch
-        patches/gperf.patch
         patches/chromium-138-nodejs-version-check.patch
         patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
 )
@@ -104,14 +102,8 @@ build() {
     # Fixes from NixOS
     patch -Np1 -i $SRC/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
 
-    # Allow libclang_rt.builtins from compiler-rt >= 16 to be used
-    patch -Np1 -i $SRC/compiler-rt-adjust-paths.patch || exit 1
-
     # Increase _FORTIFY_SOURCE level to match Arch's default flags
     patch -Np1 -i $SRC/increase-fortify-level.patch || exit 1
-
-    # fix fallthrough annotation does not directly precede
-    patch -Np1 -i $SRC/gperf.patch
 
     # Fixes for building with libstdc++ instead of libc++
 
