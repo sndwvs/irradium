@@ -14,7 +14,6 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
         patches/use-oauth2-client-switches-as-default.patch
         patches/compiler-rt-adjust-paths.patch
         patches/increase-fortify-level.patch
-        patches/gperf.patch
         patches/chromium-138-nodejs-version-check.patch
         patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
 )
