@@ -14,7 +14,6 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
         patches/use-oauth2-client-switches-as-default.patch
         patches/compiler-rt-adjust-paths.patch
         patches/increase-fortify-level.patch
-        patches/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
         patches/gperf.patch
         patches/chromium-138-nodejs-version-check.patch
         patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
@@ -96,7 +95,6 @@ build() {
     patch -Np1 -i $SRC/use-oauth2-client-switches-as-default.patch || exit 1
 
     # Upstream fixes
-    patch -Np1 -i $SRC/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
 
     # Fixes from Gentoo
     patch -Np1 -i $SRC/chromium-138-nodejs-version-check.patch

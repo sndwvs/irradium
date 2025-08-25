@@ -142,7 +142,6 @@ f:cca42a21584d2e7a49baa60bb486c5d2:chromium/post-install
 f:253856444af1433e94c378a481d685ae:chromium/patches/0001-widevine-support-for-arm.patch
 f:3eb7a7bbf663a4c9b242ef833073f709:chromium/patches/0002-Run-blink-bindings-generation-single-threaded.patch
 f:f39af46a37b6b3dfebfb11bd27ffeeb2:chromium/patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
-f:3d33f8598a13d0b25834578b73d7e6db:chromium/patches/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
 f:3ab2e8fdace83afc1f7ed48d53394a31:chromium/patches/compiler-rt-adjust-paths.patch
 f:3effa10a0c417fcba9953671b542c129:chromium/patches/gperf.patch
 f:8f6657577ad6609a22f2f7efe2fa237f:chromium/patches/increase-fortify-level.patch
@@ -155,7 +154,7 @@ f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.aarch64
 f:fe7e49720ca2e38f907c9a53d6c17ae6:chromium/.signature.aarch64
-f:c5d07545e5c8e917bf03c96fddd62165:chromium/Pkgfile
+f:cd42b41024d795a08d32ee69f8ef507a:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:2a3fe0bbe2b23a66764034bd56fc2411:deadbeef/ddb_dsp_libretro_fix_aarch64_riscv64.patch
 f:56a2ee704d2bb8275f70d226c78df704:deadbeef/.footprint
@@ -366,7 +365,6 @@ f:cca42a21584d2e7a49baa60bb486c5d2:ungoogled-chromium/post-install
 f:253856444af1433e94c378a481d685ae:ungoogled-chromium/patches/0001-widevine-support-for-arm.patch
 f:3eb7a7bbf663a4c9b242ef833073f709:ungoogled-chromium/patches/0002-Run-blink-bindings-generation-single-threaded.patch
 f:f39af46a37b6b3dfebfb11bd27ffeeb2:ungoogled-chromium/patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
-f:3d33f8598a13d0b25834578b73d7e6db:ungoogled-chromium/patches/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
 f:883f63f2765d2eea97565e7ddf5c1834:ungoogled-chromium/patches/chromium-138-nodejs-version-check.patch
 f:c0d658293eca84c9895b8b6e64ad11c5:ungoogled-chromium/patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
 f:3ab2e8fdace83afc1f7ed48d53394a31:ungoogled-chromium/patches/compiler-rt-adjust-paths.patch
@@ -377,7 +375,7 @@ f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:bc63f54185ba6efab2fbb70e87ad9742:ungoogled-chromium/.footprint
 f:a9d501a3c7710d5b68694fcc10a901bb:ungoogled-chromium/.signature
-f:fbd5d8a17916906e35db1f0ee4dfea09:ungoogled-chromium/Pkgfile
+f:56be5a5dc2641aed174f48ca987d9e0c:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
 f:0cb29db19dda2ae4817b0380de127c8b:urxvt-perls/.signature
