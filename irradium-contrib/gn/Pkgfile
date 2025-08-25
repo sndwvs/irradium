@@ -4,19 +4,27 @@
 # Depends on: python3 zstd
 
 name=gn
-version=20250320
+version=20250527
 release=1
-source=(https://s3.sakamoto.pl/lnl-aports-snapshots/$name-18602f6cf1168cf78302024043edc02e8bad2ffb.tar.zst)
+source=(https://ab-sn.lnl.gay/gn-a84e399f9999003472192286abc03d752c9cb1f0.tar.zst)
+
 
 build() {
     cd $name
 
+    export CC=gcc
+    export CXX=g++
+    unset CFLAGS # all sources C++ but passes both
+    # Breaks build since upstream passes -Wno-format,
+    # annotated: "Use of %llx, which is supported by _UCRT, false positive"
+    CXXFLAGS="${CXXFLAGS/-Werror=format-security} -flto=auto" \
     python3 ./build/gen.py \
         --no-last-commit-position \
         --no-static-libstdc++ \
         --no-strip \
         --allow-warnings
+
     ninja -C out
 
-   install -Dm755 out/gn $PKG/usr/bin/gn
+    install -Dm755 out/gn $PKG/usr/bin/gn
 }
