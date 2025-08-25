@@ -1,0 +1,136 @@
+diff --git a/irradium-contrib/chromium/Pkgfile b/irradium-contrib/chromium/Pkgfile
+index 07f2345..13eb339 100644
+--- a/irradium-contrib/chromium/Pkgfile
++++ b/irradium-contrib/chromium/Pkgfile
+@@ -4,7 +4,7 @@
+ # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
+ 
+ name=chromium
+-version=136.0.7103.92
++version=139.0.7258.138
+ release=1
+ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz
+         chromium.default chromium.sh
+@@ -15,9 +15,9 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
+         patches/compiler-rt-adjust-paths.patch
+         patches/increase-fortify-level.patch
+         patches/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
+-        patches/chromium-136-drop-nodejs-ver-check.patch
+-        patches/disable-clang-warning-suppression-flag.patch
+         patches/gperf.patch
++        patches/chromium-138-nodejs-version-check.patch
++        patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
+ )
+ 
+ build() {
+@@ -99,7 +99,10 @@ build() {
+     patch -Np1 -i $SRC/add-more-CFI-suppressions-for-inline-PipeWire-functions.patch
+ 
+     # Fixes from Gentoo
+-    patch -Np1 -i $SRC/chromium-136-drop-nodejs-ver-check.patch
++    patch -Np1 -i $SRC/chromium-138-nodejs-version-check.patch
++
++    # Fixes from NixOS
++    patch -Np1 -i $SRC/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
+ 
+     # Allow libclang_rt.builtins from compiler-rt >= 16 to be used
+     patch -Np1 -i $SRC/compiler-rt-adjust-paths.patch || exit 1
+@@ -107,19 +110,18 @@ build() {
+     # Increase _FORTIFY_SOURCE level to match Arch's default flags
+     patch -Np1 -i $SRC/increase-fortify-level.patch || exit 1
+ 
+-    # Disable usage of --warning-suppression-mappings flag which needs clang 20
+-    patch -Np1 -i $SRC/disable-clang-warning-suppression-flag.patch
+-
+     # fix fallthrough annotation does not directly precede
+     patch -Np1 -i $SRC/gperf.patch
+ 
+     # Fixes for building with libstdc++ instead of libc++
+ 
+     # Link to system tools required by the build
+-    rm third_party/node/linux/node-linux-x64/bin/node
+-    ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
+-    #ln -s /usr/bin/java third_party/jdk/current/bin/
+-    ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
++    if (( ! _manual_clone )); then
++        rm third_party/node/linux/node-linux-x64/bin/node
++        ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
++        #ln -s /usr/bin/java third_party/jdk/current/bin/
++        ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
++    fi
+ 
+     if (( !_system_clang )); then
+         # Use prebuilt rust as system rust cannot be used due to the error:
+@@ -172,6 +174,7 @@ build() {
+       'symbol_level=0' # sufficient for backtraces on x86(_64)
+       'is_cfi=false'
+       'treat_warnings_as_errors=false'
++      'fatal_linker_warnings=false'
+       'disable_fieldtrial_testing_config=true'
+       'blink_enable_generated_code_formatting=false'
+       'ffmpeg_branding="Chrome"'
+diff --git a/irradium-contrib/chromium/patches/chromium-136-drop-nodejs-ver-check.patch b/irradium-contrib/chromium/patches/chromium-136-drop-nodejs-ver-check.patch
+deleted file mode 100644
+index 9cde5a9..0000000
+--- a/irradium-contrib/chromium/patches/chromium-136-drop-nodejs-ver-check.patch
++++ /dev/null
+@@ -1,39 +0,0 @@
+-From 3e06125358a050cc6535befd4fbd5b4f160a56b9 Mon Sep 17 00:00:00 2001
+-From: Matt Jolly <kangie@gentoo.org>
+-Date: Tue, 25 Mar 2025 13:33:48 +1000
+-Subject: [PATCH] Remove nodejs version check
+-
+-Added in https://github.com/chromium/chromium/commit/0ff8528999941d7182be6fc77aeb12a110a3cd86,
+-this change is only really useful for gclient checkouts and breaks the
+-ability for downstreams to provide their own, compatible, nodejs
+-version via the system package manager (or for use on arches other than
+-those that Google provides binaries for):
+-
+-[ERR_ASSERTION]: Failed NodeJS version check: Expected version 'v22.11.0', but found 'v22.13.1'. Did you run 'gclient sync'
+-
+-This is google development footgun protection, working around
+-poor development practices and gclient's inability to ensure
+-that the source tree is in a consistent state. We don't need it
+-here.
+-
+-Signed-off-by: Matt Jolly <kangie@gentoo.org>
+---- a/third_party/node/node.gni
+-+++ b/third_party/node/node.gni
+-@@ -36,15 +36,5 @@ template("node") {
+-       }
+-     }
+- 
+--    # Automatically add a dependency to ":check_version" to ensure NodeJS is
+--    # always running the expected version, except when the ':check_version'
+--    # target itself is running in which case it shouldn't depend on itself.
+--    if (get_label_info(":" + target_name, "label_no_toolchain") !=
+--        "//third_party/node:check_version") {
+--      if (!defined(deps)) {
+--        deps = []
+--      }
+--      deps += [ "//third_party/node:check_version" ]
+--    }
+-   }
+- }
+--- 
+-2.48.1
+diff --git a/irradium-contrib/chromium/patches/disable-clang-warning-suppression-flag.patch b/irradium-contrib/chromium/patches/disable-clang-warning-suppression-flag.patch
+deleted file mode 100644
+index aea87e3..0000000
+--- a/irradium-contrib/chromium/patches/disable-clang-warning-suppression-flag.patch
++++ /dev/null
+@@ -1,14 +0,0 @@
+-diff --git a/build/config/compiler/BUILD.gn b/build/config/compiler/BUILD.gn
+-index 2fc8d8234a1b..83a704e54628 100644
+---- a/build/config/compiler/BUILD.gn
+-+++ b/build/config/compiler/BUILD.gn
+-@@ -1718,7 +1718,8 @@ config("clang_revision") {
+- # To use a different file, or to use this functionality outside of chromium,
+- # set the `clang_warning_suppression_file` argument to point to the new file,
+- # e.g. by setting in the the project's .gn file.
+--config("clang_warning_suppression") {
+-+config("clang_warning_suppression") { }
+-+config("xclang_warning_suppression") {
+-   # Some build configs use older versions of clang that don't support WSMs
+-   if (!is_nacl && default_toolchain != "//build/toolchain/cros:target" &&
+-       !llvm_android_mainline && is_clang &&
