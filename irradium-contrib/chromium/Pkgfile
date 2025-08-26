@@ -111,11 +111,11 @@ build() {
 
     # Link to system tools required by the build
     if (( ! _manual_clone )); then
-        rm third_party/node/linux/node-linux-x64/bin/node
+        mkdir -p third_party/node/linux/node-linux-x64/bin
         ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
-        #ln -s /usr/bin/java third_party/jdk/current/bin/
-        ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
     fi
+    #ln -s /usr/bin/java third_party/jdk/current/bin/
+    ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
 
     if (( !_system_clang )); then
         # Use prebuilt rust as system rust cannot be used due to the error:

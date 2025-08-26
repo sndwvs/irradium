@@ -153,7 +153,7 @@ f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.aarch64
 f:08f43beeb7febeabf4827de24348f3dc:chromium/.signature.aarch64
-f:447519145c7c5ed43fae4191c8ae925e:chromium/Pkgfile
+f:9450e907f886705b62842b15d6569ebb:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:2a3fe0bbe2b23a66764034bd56fc2411:deadbeef/ddb_dsp_libretro_fix_aarch64_riscv64.patch
 f:56a2ee704d2bb8275f70d226c78df704:deadbeef/.footprint
