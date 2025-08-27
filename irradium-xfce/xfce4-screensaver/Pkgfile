@@ -4,9 +4,9 @@
 # Depends on: dbus-glib garcon libwnck-gtk3 libxklavier xorg-libxscrnsaver python3-gobject
 
 name=xfce4-screensaver
-version=4.18.4
+version=4.20.1
 release=1
-source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.bz2
+source=(https://archive.xfce.org/src/apps/$name/${version%.*}/$name-$version.tar.xz
         clarify-desc-in-xfce-settings.patch)
 
 build(){
@@ -15,19 +15,24 @@ build(){
   # Clarify description in Xfce Settings menu
   patch -p1 --verbose -i $SRC/clarify-desc-in-xfce-settings.patch
 
-  ./configure \
+  mkdir meson-build
+  cd meson-build
+  meson setup \
     --prefix=/usr \
-    --sysconfdir=/etc \
+    --libdir=lib \
     --libexecdir=/usr/lib/$name \
+    --bindir=/usr/bin \
+    --sbindir=/usr/sbin \
+    --includedir=/usr/include \
+    --datadir=/usr/share \
+    --sysconfdir=/etc \
     --localstatedir=/var \
-    --enable-pam \
-    --with-mit-ext \
-    --enable-locking \
-    --disable-debug \
-    --enable-gtk-doc=no \
-    --disable-nls
-
-  make
-  make DESTDIR=$PKG install || exit 1
+    --buildtype=release \
+    -Dsession-manager=elogind \
+    -Dauthentication-scheme=pam \
+    -Ddocs=disabled
+  "${NINJA:=ninja}"
+  DESTDIR=$PKG $NINJA install
+  cd ..
 
 }
