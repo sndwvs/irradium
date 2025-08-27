@@ -15,7 +15,7 @@ build(){
   cd meson-build
   meson setup \
     --prefix=/usr \
-    --libdir=lib${LIBDIRSUFFIX} \
+    --libdir=lib \
     --libexecdir=/usr/libexec \
     --bindir=/usr/bin \
     --sbindir=/usr/sbin \

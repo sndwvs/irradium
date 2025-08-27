@@ -92,9 +92,9 @@ f:aa99fc50e693d173b223fa9353ee1bef:xfce4-power-manager/Pkgfile
 f:dbc7e65acdcd5169f73f730e857592a6:xfce4-pulseaudio-plugin/.footprint
 f:43356454be42b3601557887d0247d04c:xfce4-pulseaudio-plugin/.signature
 f:c5b96b617e303a968eeb3221296d3c1a:xfce4-pulseaudio-plugin/Pkgfile
-f:ae28ee1dd6ad9d514079c3bbd3b5fdc0:xfce4-screensaver/.footprint
-f:468c0c03c3812525592df5b62728c9f2:xfce4-screensaver/.signature
-f:80bcffc15054b3dcc8a6d8fc4bd6136b:xfce4-screensaver/Pkgfile
+f:27a91765e54d6fe23523dffdb9058f04:xfce4-screensaver/.footprint
+f:d9c8b7a9925320d5506d803459bf3697:xfce4-screensaver/.signature
+f:2f9adb16e733f3a49974c901e9dc120b:xfce4-screensaver/Pkgfile
 f:2c68bc2fe2c343bcbaa9be0db91c3b0d:xfce4-screensaver/clarify-desc-in-xfce-settings.patch
 f:ad95d3006c61a0c8dd3079d391071894:xfce4-screenshooter/.footprint
 f:c755dd7b930d58e39e8ededa63692fb9:xfce4-screenshooter/.signature
@@ -116,8 +116,8 @@ f:bf7a4eea9796a3561498df2d07c1f73c:xfce4-taskmanager/.footprint
 f:034d9f5b1225c4c12cbed32a5427010f:xfce4-taskmanager/.signature
 f:e95ae9aa944026bc19fba6d250fbe6da:xfce4-taskmanager/Pkgfile
 f:9750b0c6db2ab1db11c527f786222bda:xfce4-terminal/.footprint
-f:188880a709d5e5515fae5e8a8734b90b:xfce4-terminal/.signature
-f:2f66333b6a58ad0efce72e260eb01490:xfce4-terminal/Pkgfile
+f:47068735d68494e1d195b2dba1ee20d8:xfce4-terminal/.signature
+f:dde05ee1a08facea0c9a7eb6f9b50fe5:xfce4-terminal/Pkgfile
 f:5445d6797b3f2325a442569f01e5961b:xfce4-weather-plugin/.footprint
 f:a63dbb6f77278ae0f99e0f42ce0b8432:xfce4-weather-plugin/.signature
 f:d44d9c717e5cf771efe596facbd4d76d:xfce4-weather-plugin/Pkgfile
