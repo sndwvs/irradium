@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCeMrbxuRKKiZvXhQ285Qo/GX0SZplMJXxZuhpBjMyFWt+jG2xEJuTnNu62daR4UnbFb3mP5av7BcZQmPlP1kWgc=
+SHA256 (Pkgfile) = 4e3e4e8fb474cdb6894b4e0e20e94cebacba32913f3e4e1c2f0b1704ceb22297
+SHA256 (.footprint) = cda25328607e977632487a52459e8c0627171d2d565cf152bbf429bf1acd095e
+SHA256 (efivar-39.tar.gz) = c9edd15f2eeeea63232f3e669a48e992c7be9aff57ee22672ac31f5eca1609a6
