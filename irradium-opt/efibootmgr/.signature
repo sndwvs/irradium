@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCRAthKmMAq07tmrlwAtF33hIjt5Mzow2pMQBX9VM7eWnXcJ8sG4v4X65A9cMcRzsdd7j/ubHMMlSDOhH6TRJ6gE=
+SHA256 (Pkgfile) = fafc13028d03504ec488f42390762f5ac75b083a68c0ad2fa75ef4a717026718
+SHA256 (.footprint) = e34f18fd1083f800387ab49d04767d3d41735415249dcd80b13acf5c78108282
+SHA256 (efibootmgr-18.tar.gz) = 442867d12f8525034a404fc8af3036dba8e1fc970998af2486c3b940dfad0874

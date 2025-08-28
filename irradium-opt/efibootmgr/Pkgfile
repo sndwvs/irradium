@@ -1,0 +1,22 @@
+# Description: manipulate efi boot managers
+# URL: https://github.com/rhboot/efibootmgr
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Depends on: efivar
+
+name=efibootmgr
+version=18
+release=1
+source=(https://github.com/rhboot/efibootmgr/archive/$version/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    export LDFLAGS=${LDFLAGS/-Wl,-z,pack-relative-relocs/}
+    export CFLAGS="${CFLAGS} -Wno-error=pointer-sign"
+    sed -e '/extern int efi_set_verbose/d' -i src/efibootmgr.c
+
+    EFIDIR=/boot/efi make
+
+    install -D src/efibootmgr $PKG/usr/sbin/efibootmgr
+    install -D src/efibootmgr.8 $PKG/usr/share/man/man8/efibootmgr.8
+}

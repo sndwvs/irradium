@@ -33,6 +33,7 @@ d:liburcu
 d:nodejs
 d:shared-mime-info
 d:wpa_supplicant
+d:efibootmgr
 d:dovecot
 d:gobject-introspection
 d:grub2-efi
@@ -216,6 +217,9 @@ f:94eda9e510358f6fc9e6033048cc05de:wpa_supplicant/README
 f:0be43cac70d6109c16ece5462a3eb3dd:wpa_supplicant/irradium-wlan.patch
 f:a804f8c2828b929446a928d02be98018:wpa_supplicant/wlan
 f:5b505ff68474564b9eb44b04445ba730:wpa_supplicant/wpa_supplicant
+f:f7cfede7c801951a0ff658d78ae3d053:efibootmgr/.footprint
+f:e326336f4bc83a319d32de3fb30354a9:efibootmgr/.signature
+f:a2e9954fdf88c7872c7617f3a524cf26:efibootmgr/Pkgfile
 f:802c1e2cadcc62e325c55f2ecf1f4071:dovecot/.footprint
 f:78ec24d44b0f96cc32592c41aa2fd5ed:dovecot/.signature
 f:c134f2ad0545570b1e2eee1c9dbd4d07:dovecot/Pkgfile
