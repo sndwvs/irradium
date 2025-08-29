@@ -38,7 +38,6 @@ build() {
         -D COMPILER_RT_INSTALL_PATH=/usr/lib/clang/${version:0:2} \
         -D Python3_EXECUTABLE=/usr/bin/python3 \
         -D COMPILER_RT_INCLUDE_TESTS=OFF \
-        $PKGMK_COMPILER_RT \
         -Wno-dev
     cmake --build build -j ${JOBS:-1}
     DESTDIR=$PKG cmake --install build
