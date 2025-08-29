@@ -135,8 +135,8 @@ f:ed6b1a17f450d8901fb1878142be490d:qt5/Pkgfile
 f:1b9a3e209c8bf3685d60948e366694f0:qt5/qt-everywhere-opensource-src-5.15.17-kf5-1.patch
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
-f:78c25b8282f5b2fc7ed33ef296924220:qt6-base/.footprint
-f:3967008dfbb7568e2e2eab92ffc1f5e4:qt6-base/.signature
+f:4f478ac63acce96a6f58218924a430a8:qt6-base/.footprint
+f:93d2d34ad2b563545cac53fc8168c0cc:qt6-base/.signature
 f:3b9eccba80181d96305c42a49390ae86:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
