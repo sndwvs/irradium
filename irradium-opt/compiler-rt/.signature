@@ -1,0 +1,8 @@
+untrusted comment: verify with /etc/ports/opt.pub
+RWSE3ohX2g5d/X6Q3IGuJlyGZ1KdZnESa/QG/39ArNrrwQvN3AFJI5dK51TXSnLqd7rerfsoqPBAPtYitFmWchHZZB9dubh96ww=
+SHA256 (Pkgfile) = 6ac302a00c4eb6d1a6aa50c9e7566dfae04fc543baa4720ea049f88b7b5181f1
+SHA256 (.footprint) = 4f4dfce577866add3686e55a5be1e71aed35a2a4fb8c149017f4a0bee60e3e36
+SHA256 (compiler-rt-21.1.0.src.tar.xz) = b065a2686674d931f2696517965260b1c92ffd18a492efb847fafb54457d690f
+SHA256 (llvm-21.1.0.src.tar.xz) = 0582ee18cb6e93f4e370cb4aa1e79465ba1100408053e1ff8294cef7fb230bd8
+SHA256 (cmake-21.1.0.src.tar.xz) = 528347c84c3571d9d387b825ef8b07c7ad93e9437243c32173838439c3b6028f
+SHA256 (third-party-21.1.0.src.tar.xz) = 60b3d8c2d1d8d43a705f467299144d232b8061a10541eaa3b0d6eaa2049a462f
