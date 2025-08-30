@@ -1,24 +1,36 @@
-# Description: daemon, tools and libraries to manipulate disks
+# Description: a daemon, tools and libraries to access and manipulate disks
 # URL: https://www.freedesktop.org/wiki/Software/udisks/
-# Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: libatasmart libblockdev libgudev libxslt polkit gobject-introspection
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: libatasmart libblockdev libgudev polkit
+# Optional: btrfs-progs lvm2
 
 name=udisks2
-version=2.10.1
+version=2.10.2
 release=1
 source=(https://github.com/storaged-project/udisks/releases/download/udisks-$version/udisks-$version.tar.bz2)
 
 build() {
-    cd udisks-$version
+  prt-get isinst btrfs-progs && PKGMK_UDISKS+=' --enable-btrfs'
+  prt-get isinst lvm2 && PKGMK_UDISKS+=' --enable-lvm2'
+  prt-get isinst doxygen || PKGMK_UDISKS+=' --disable-man'
+  prt-get isinst parted || PKGMK_UDISKS+=' --disable-daemon'
 
-    ./configure \
-        --prefix=/usr \
-        --sysconfdir=/etc \
-        --libexecdir=/usr/lib \
-        --localstatedir=/var \
-        --disable-static \
-        --disable-man
+  cd udisks-$version
 
-    make
-    make DESTDIR=$PKG install
+  ./configure $PKGMK_UDISKS \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --libexecdir=/usr/lib \
+    --localstatedir=/var \
+    --enable-fhs-media \
+    --disable-static \
+    --disable-gtk-doc \
+    --disable-nls
+
+  make
+  make DESTDIR=$PKG install
+
+  prt-get isinst bash-completion || rm -rf $PKG/usr/share/bash-completion
+  prt-get isinst zsh || rm -rf $PKG/usr/share/zsh
+  rm -rf $PKG/usr/share/gtk-doc
 }
