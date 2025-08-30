@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCV5avtR1WW6Us3+f4UxGRKDSTM5/Xo4CNqSeA1M34DZ8A7ydV2KiCIEMjWAiWaKByfCrV9ZebGY0HcaxOhf6Ng4=
+RWRxRnTWECCiCaW0gPefiCwVbEQAN+95nAhcSKz++C2WUcByUyXud0rF9luPD2rLULTt+jlL/XI9DQ9FfehrcmnVvtpBUtcB2Qo=
 SHA256 (Pkgfile) = 2042c6de429e38ab555adeb1f55c2e3344182e5eec12cc3f9c48b3481fd69d19
-SHA256 (.footprint) = ef93887b514eb0b0a8624cff0df24e9a9664ee4a98b6f44ec1b8a0f910b4fa41
+SHA256 (.footprint.riscv64) = 08d874316c9f1c9008f446ec32c330154b858b19ac5b8b473321b2926ccba731
 SHA256 (grub-2.12.tar.xz) = f3c97391f7c4eaa677a78e090c7e97e6dc47b16f655f04683ebd37bef7fe0faa
 SHA256 (unifont-9.0.06.pcf.gz) = 6d23e82ea3fd3d79849d675c0c30129b62a3973a83b4cdc05f9994efef773b86
 SHA256 (grub2-tweaks.diff) = 11261ece2e7025eecaf1c2d7145bdb1caaccd813104dd19c0b3301c95f51c59b
