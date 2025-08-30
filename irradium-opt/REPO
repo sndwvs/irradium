@@ -241,7 +241,9 @@ f:c55577cc3e1f235517271189ca808867:grub2-efi/Pkgfile
 f:bf4ac2f1ee74359bd689fe6bee82f2e9:grub2-efi/csum_seed.diff
 f:43e08eb0137bd7ffafda6bf4c7a9b327:grub2-efi/extra_deps.lst
 f:694933a1be5600c4d1d5e37c30c0e7bb:grub2-efi/.footprint.aarch64
-f:673c90ed8abd8e4a48de248939fe9a2c:grub2-efi/.signature.aarch64
+f:e27af085e6d4d1ba1dbb6e0500f90d6d:grub2-efi/.signature.aarch64
+f:ed775205c7b38d924660bd4b1a2b5bed:grub2-efi/.footprint.riscv64
+f:11172d215f51ce241be5ae2ca683e296:grub2-efi/.signature.riscv64
 f:cb969952c57d2218325dc0a2158efe0c:grub2/Pkgfile
 f:2d0a24dc5ce4b8641aa90e04e2a27898:grub2/README
 f:bf4ac2f1ee74359bd689fe6bee82f2e9:grub2/csum_seed.diff
