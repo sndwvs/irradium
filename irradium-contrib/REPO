@@ -602,7 +602,7 @@ f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.riscv64
 f:f0cf6fc36c48e14c52f25e9b432e9a7e:openjdk21-jdk/openjdk21.sh
 f:2a6ff80dd8d3fce7338894ed769747a6:openjdk21-jdk/riscv64.patch
 f:e5c61962170617fc8e681ae0018acabb:openjdk21-jdk/system-public-suffix.patch
-f:ce8a1a739f69b79486bf6bfc1c110bc7:openjdk21-jdk/.signature.aarch64
+f:a33faad33191cdcc67f5235cdb78db7c:openjdk21-jdk/.signature.aarch64
 f:359f03a59005632bd0706cf92de488b1:openjdk21-jdk/.signature.riscv64
 f:5a3239699a3db07cb440b3654406cf07:openjdk21-jdk/Pkgfile
 f:f41f5f0f90f201bc8f03b920cebb1692:directx-shader-compiler/.footprint
