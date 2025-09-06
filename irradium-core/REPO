@@ -85,7 +85,7 @@ f:394db37ac5d3c05540ba1012b0361832:glibc/.footprint.aarch64
 f:302d049c2e01cfc48e77003653474ddf:glibc/.footprint.riscv64
 f:979d8e162b2b46fc6552dc51a126983a:kbd/.footprint
 f:4f8ad2ed5e7f76334028c5bf88654651:kbd/.signature
-f:e5715ef58b3199f201e20fb40cbf7c9a:kbd/Pkgfile
+f:a04ef7ddd82dcc2a2cdf0578760189ca:kbd/Pkgfile
 f:65632d841dc92bec22aa9354ad76ab5b:libgmp/.footprint
 f:5d6e03c51d708196b0994d3d5c826c65:libgmp/.signature
 f:a7110684a876a57e776357e37bf72c32:libgmp/Pkgfile
