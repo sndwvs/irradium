@@ -107,7 +107,6 @@ d:openjdk21-jdk
 d:directx-shader-compiler
 d:rbdoom-3-bfg
 d:python3-pyyaml-env-tag
-d:aom
 d:audacious
 d:cava
 d:iozone
@@ -616,9 +615,6 @@ f:86455bb86d4267b447bd882dbde35231:rbdoom-3-bfg/rbdoom-3-bfg.png
 f:b388f48be231e7ce29536a22fbc8f378:python3-pyyaml-env-tag/.footprint
 f:7b694173628dbc5fdde89d50d120d9c1:python3-pyyaml-env-tag/.signature
 f:a3dbc5698088ce944be909d82d67bfd1:python3-pyyaml-env-tag/Pkgfile
-f:9f5fb284e018640c4d1b27c9e949ba4e:aom/.footprint
-f:fcc588af15fd9de0c5e88e93f86a20a0:aom/.signature
-f:abbf369b1e50956252d789ff234a1c80:aom/Pkgfile
 f:8dfa1cc62e495510c542a6b3b8751c83:audacious/.footprint
 f:cca42a21584d2e7a49baa60bb486c5d2:audacious/post-install
 f:8754f86174a31527988691badd3d3691:audacious/.signature
