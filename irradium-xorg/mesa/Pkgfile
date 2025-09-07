@@ -69,8 +69,7 @@ build() {
         -D video-codecs=all \
         -D glvnd=enabled \
         -D vulkan-drivers=$VULKAN_DRIVERS \
-        -D vulkan-layers=$VULKAN_LAYERS \
-        -D intel-rt=enabled
+        -D vulkan-layers=$VULKAN_LAYERS
 
     meson compile -C build -j ${JOBS:-1}
     DESTDIR=$PKG meson install -C build
