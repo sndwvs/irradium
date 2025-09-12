@@ -5,7 +5,7 @@
 # Optional: brotli c-ares icu libnghttp3 libngtcp2 simdjson simdutf
 
 name=nodejs
-version=24.7.0
+version=24.8.0
 release=1
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
   unbundle-uv.patch
@@ -29,7 +29,7 @@ build() {
   prt-get isinst icu && PKGMK_NODEJS+=' --with-intl=system-icu'
   prt-get isinst libnghttp3 && PKGMK_NODEJS+=' --shared-nghttp3'
   prt-get isinst libngtcp2 && PKGMK_NODEJS+=' --shared-ngtcp2'
-  prt-get isinst simdjson && PKGMK_NODEJS+=' --shared-simdjson'
+  #prt-get isinst simdjson && PKGMK_NODEJS+=' --shared-simdjson'
   #prt-get isinst simdutf && PKGMK_NODEJS+=' --shared-simdutf'
 
   CC="clang" \
