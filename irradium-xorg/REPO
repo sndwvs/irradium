@@ -27,7 +27,7 @@ f:32466113ec9e638532fbe7d2fc3bd479:mesa/patches/0005-mesa-buildsystem-improvemen
 f:8d38d25663ff46d55d7de46cc1add618:mesa/patches/0006-mesa-24.0-llvmspirvlib-version-check.patch
 f:8ed2d5060dcbf7c28594023bf24461d2:mesa/patches/0007-mesa-25.2-llvm-21.patch
 f:398504a224b1fc27938c7640a255af83:mesa/patches/0008-mesa-25.2-aarch64-compile.patch
-f:b4f8779303542471e8a279f27721e9b4:mesa/README.md
+f:98b3a71a12f1a42a37f1806a20652bfc:mesa/README.md
 f:ef0c722fe73ae2111578b97af9d672ed:mesa/.footprint.aarch64
 f:a0c776c6722d82bc7445fd13734f4fa0:mesa/.footprint.riscv64
 f:644d32483310565076eeebe5ceb7cfa3:mesa/.signature.aarch64

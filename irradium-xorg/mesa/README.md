@@ -111,30 +111,21 @@ NEW       -rw-r--r--      root/root       usr/share/vulkan/icd.d/radeon_icd.x86_
 
 ## libclc
 
-Builds both the gallium "clover" frontend and iris driver (Broadwell and
-later).
+Builds the iris driver (Intel Broadwell and later).
 
 ```
-=======> New files found:
-NEW       drwxr-xr-x      root/root       etc/
-NEW       drwxr-xr-x      root/root       etc/OpenCL/
-NEW       drwxr-xr-x      root/root       etc/OpenCL/vendors/
-NEW       -rw-r--r--      root/root       etc/OpenCL/vendors/mesa.icd
-NEW       -rwxr-xr-x      root/root       usr/lib/dri/iris_dri.so
-NEW       drwxr-xr-x      root/root       usr/lib/gallium-pipe/
-NEW       -rwxr-xr-x      root/root       usr/lib/gallium-pipe/pipe_crocus.so
-NEW       -rwxr-xr-x      root/root       usr/lib/gallium-pipe/pipe_i915.so
-NEW       -rwxr-xr-x      root/root       usr/lib/gallium-pipe/pipe_iris.so
-NEW       -rwxr-xr-x      root/root       usr/lib/gallium-pipe/pipe_nouveau.so
-NEW       -rwxr-xr-x      root/root       usr/lib/gallium-pipe/pipe_r300.so
-NEW       -rwxr-xr-x      root/root       usr/lib/gallium-pipe/pipe_r600.so
-NEW       -rwxr-xr-x      root/root       usr/lib/gallium-pipe/pipe_radeonsi.so
-NEW       -rwxr-xr-x      root/root       usr/lib/gallium-pipe/pipe_swrast.so
-NEW       -rwxr-xr-x      root/root       usr/lib/gallium-pipe/pipe_vmwgfx.so
-NEW       lrwxrwxrwx      root/root       usr/lib/libMesaOpenCL.so -> libMesaOpenCL.so.1
-NEW       lrwxrwxrwx      root/root       usr/lib/libMesaOpenCL.so.1 -> libMesaOpenCL.so.1.0.0
-NEW       -rwxr-xr-x      root/root       usr/lib/libMesaOpenCL.so.1.0.0
-=======> Building '/home/pkgmk/packages/mesa#24.1.4-1.pkg.tar.xz' succeeded.
+diff --git a/mesa/.footprint b/mesa/.footprint
+index a51c1d66..312dfc15 100644
+--- a/mesa/.footprint
++++ b/mesa/.footprint
+@@ -12,6 +12,7 @@ drwxr-xr-x    root/root   usr/lib/
+ drwxr-xr-x root/root   usr/lib/dri/
+ lrwxrwxrwx root/root   usr/lib/dri/crocus_dri.so -> libdril_dri.so
+ lrwxrwxrwx root/root   usr/lib/dri/i915_dri.so -> libdril_dri.so
++lrwxrwxrwx root/root   usr/lib/dri/iris_dri.so -> libdril_dri.so
+ -rwxr-xr-x root/root   usr/lib/dri/libdril_dri.so
+ lrwxrwxrwx root/root   usr/lib/dri/nouveau_dri.so -> libdril_dri.so
+ lrwxrwxrwx root/root   usr/lib/dri/r300_dri.so -> libdril_dri.so
 ```
 
 ## libclc rust-bindgen
