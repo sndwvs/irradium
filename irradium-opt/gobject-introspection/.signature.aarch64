@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCXcHjSAIowu7Z8sSuOYf39m9s9Z2CNl2POLKB9TOheCgHHiSFMcvLkIBkdIOmuL1iFGOD06/HINAVkwa9PtzgQ4=
-SHA256 (Pkgfile) = e3745137c42e0c4a2154e0bb82e60f7d509029f12f36c28bf15aef22fdca3510
+RWRxRnTWECCiCT4OWjLDDZfdsbb1Xtqxrg/F2UmFgL/ro2PCnUV95EIKpuuVrpRFW4rkFede7aSuIJVZD+hA7Gg7rV96EawQ7Ag=
+SHA256 (Pkgfile) = 9e146e29bffaab35a470d7a01d3bff74978dea612ff79a2656ce69242635d49d
 SHA256 (.footprint.aarch64) = 6d2e75085dc0dc3927fa537dd70574083f601de1d995a4bdcd99ad7a85e69e68
-SHA256 (gobject-introspection-1.84.0.tar.xz) = 945b57da7ec262e5c266b89e091d14be800cc424277d82a02872b7d794a84779
+SHA256 (gobject-introspection-1.86.0.tar.xz) = 920d1a3fcedeadc32acff95c2e203b319039dd4b4a08dd1a2dfd283d19c0b9ae
