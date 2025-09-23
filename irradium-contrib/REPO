@@ -348,8 +348,9 @@ f:5154211a88534e7dcae26e95f0b7fcb0:tcl/.footprint
 f:5f433fbd0ac6f3524bc585a8f6038cce:tcl/.signature
 f:0628dcc755f986173fb3f7c834f25ceb:tcl/Pkgfile
 f:49d8c3b35dddb633e07f59b38fdf59fc:telegram-desktop/.footprint
-f:52ae3b96a638bfea2d0a84849692f78d:telegram-desktop/Pkgfile
-f:aa197a269ec61e8065274f9e280cb34f:telegram-desktop/.signature
+f:3527d51e06b75aeb183023d0ca97d2d0:telegram-desktop/Pkgfile
+f:0886d5fbf6721c7c4cc90bbd2cca42e5:telegram-desktop/.signature
+f:3e4f0d59dfeed7e974a3df2c1883298c:telegram-desktop/base_url_scheme_linux.cpp.patch
 f:5fd9540530092495051bc72484027d38:tk/.footprint
 f:4a0cf636d10c64ff0a5c12fcec684a78:tk/.signature
 f:94c44128030f929514210cd358bcd567:tk/Pkgfile
