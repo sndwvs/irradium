@@ -51,7 +51,6 @@ drwxrwxr-x	root/root	usr/share/doc/openvpn/samples/sample-keys/
 -rw-rw-r--	root/root	usr/share/doc/openvpn/samples/sample-keys/client.crt
 -rw-rw-r--	root/root	usr/share/doc/openvpn/samples/sample-keys/client.key
 -rw-rw-r--	root/root	usr/share/doc/openvpn/samples/sample-keys/client.p12
--rw-rw-r--	root/root	usr/share/doc/openvpn/samples/sample-keys/dh2048.pem
 -rwxrwxr-x	root/root	usr/share/doc/openvpn/samples/sample-keys/gen-sample-keys.sh
 -rw-rw-r--	root/root	usr/share/doc/openvpn/samples/sample-keys/openssl.cnf
 -rw-rw-r--	root/root	usr/share/doc/openvpn/samples/sample-keys/server-ec.crt
