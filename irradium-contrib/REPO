@@ -388,8 +388,8 @@ f:1697f3fadd7c76e45240c1b248a7f8fe:xcursor-justblue/Pkgfile
 f:536c8ab1bcfc4f13e33c77b61facb496:xcursor-justblue/justblue-0.21.patch.xz
 f:ced72f96c2da007380ac85f8abea898a:xcursor-justblue/.footprint
 f:25e8619a3f1240c12b86a490f6379b24:xcursor-justblue/.signature
-f:14b8c9d3d88998bef58a7e6ce1aa6cc0:yt-dlp/.footprint
-f:d1a189d8fea53a54e10d05099efa1531:yt-dlp/.signature
+f:41a757cceca1b3d01ef41595dfca8b73:yt-dlp/.footprint
+f:2cbec872563f6eae9109b78d36089b23:yt-dlp/.signature
 f:9c556a91ea65d4548e92ba0acd8c0b4e:yt-dlp/Pkgfile
 f:93cad7cd88158d1560ce394d33319b52:dhcp/.footprint
 f:1e0ff50ec24f9e272937aea6ee7b9f77:dhcp/.signature
