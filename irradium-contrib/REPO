@@ -369,11 +369,12 @@ f:3554002a9bb2c060784e47032d4bedf1:ungoogled-chromium/patches/use-oauth2-client-
 f:883f63f2765d2eea97565e7ddf5c1834:ungoogled-chromium/patches/chromium-138-nodejs-version-check.patch
 f:c0d658293eca84c9895b8b6e64ad11c5:ungoogled-chromium/patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
 f:4556b5a46bfda86d08784461f9cc3a9f:ungoogled-chromium/patches/compiler-rt-adjust-paths.patch
+f:6809d262718def5f7bf240c1ab3e2307:ungoogled-chromium/patches/chromium-140.0.7339.41-rust.patch
 f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:bc63f54185ba6efab2fbb70e87ad9742:ungoogled-chromium/.footprint
 f:9f3acc12edec8169a009fb41c6e3af6c:ungoogled-chromium/.signature
-f:cc2e7bf383f81547c29a6c64b7a90e81:ungoogled-chromium/Pkgfile
+f:91514926aaf908171a3b2a1656f28052:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
 f:0cb29db19dda2ae4817b0380de127c8b:urxvt-perls/.signature

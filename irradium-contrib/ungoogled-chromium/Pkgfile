@@ -4,7 +4,7 @@
 # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
 
 name=ungoogled-chromium
-version=139.0.7258.138
+version=140.0.7339.207
 release=1
 _uc_version=$version-1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/${name#*-}-$version.tar.xz
@@ -18,6 +18,7 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/${nam
         patches/increase-fortify-level.patch
         patches/chromium-138-nodejs-version-check.patch
         patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
+        patches/chromium-140.0.7339.41-rust.patch
 )
 
 build() {
@@ -102,6 +103,7 @@ build() {
 
     # Fixes from NixOS
     patch -Np1 -i $SRC/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
+    patch -Np1 -i $SRC/chromium-140.0.7339.41-rust.patch
 
     # Allow libclang_rt.builtins from compiler-rt >= 16 to be used
     patch -Np1 -i $SRC/compiler-rt-adjust-paths.patch
@@ -217,7 +219,7 @@ build() {
         'clang_base_path="/usr"'
         'clang_use_chrome_plugins=false'
         "clang_version=\"$_clang_version\""
-        #'chrome_pgo_phase=0' # needs newer clang to read the bundled PGO profile
+        'chrome_pgo_phase=0' # needs newer clang to read the bundled PGO profile
       )
 
       # Allow the use of nightly features with stable Rust compiler
