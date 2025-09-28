@@ -142,7 +142,7 @@ f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.aarch64
 f:08f43beeb7febeabf4827de24348f3dc:chromium/.signature.aarch64
-f:9f700c24ca616be91ce0fd8dcd5e6d10:chromium/Pkgfile
+f:7cbff519824753962d7af091b8dcc29c:chromium/Pkgfile
 f:253856444af1433e94c378a481d685ae:chromium/patches/0001-widevine-support-for-arm.patch
 f:3eb7a7bbf663a4c9b242ef833073f709:chromium/patches/0002-Run-blink-bindings-generation-single-threaded.patch
 f:f39af46a37b6b3dfebfb11bd27ffeeb2:chromium/patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
