@@ -17,6 +17,7 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
         patches/chromium-138-nodejs-version-check.patch
         patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
         patches/chromium-140.0.7339.41-rust.patch
+        patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
 )
 
 build() {
@@ -95,6 +96,7 @@ build() {
     patch -Np1 -i $SRC/use-oauth2-client-switches-as-default.patch || exit 1
 
     # Upstream fixes
+    patch -Np1 -i $SRC/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
 
     # Fixes from Gentoo
     patch -Np1 -i $SRC/chromium-138-nodejs-version-check.patch
