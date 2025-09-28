@@ -144,13 +144,14 @@ f:3554002a9bb2c060784e47032d4bedf1:chromium/patches/use-oauth2-client-switches-a
 f:883f63f2765d2eea97565e7ddf5c1834:chromium/patches/chromium-138-nodejs-version-check.patch
 f:c0d658293eca84c9895b8b6e64ad11c5:chromium/patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
 f:4556b5a46bfda86d08784461f9cc3a9f:chromium/patches/compiler-rt-adjust-paths.patch
+f:6809d262718def5f7bf240c1ab3e2307:chromium/patches/chromium-140.0.7339.41-rust.patch
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64
 f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.aarch64
 f:08f43beeb7febeabf4827de24348f3dc:chromium/.signature.aarch64
-f:9450e907f886705b62842b15d6569ebb:chromium/Pkgfile
+f:9f700c24ca616be91ce0fd8dcd5e6d10:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:2a3fe0bbe2b23a66764034bd56fc2411:deadbeef/ddb_dsp_libretro_fix_aarch64_riscv64.patch
 f:56a2ee704d2bb8275f70d226c78df704:deadbeef/.footprint
@@ -517,6 +518,7 @@ f:359ce620548cf8b1adf8a5acf8d61485:libimobiledevice-glue/Pkgfile
 f:42328999c33902223b8ca47aa32a5c2c:python3-mergedeep/.footprint
 f:1e76735a5087374936eb7a30c596fdb7:python3-mergedeep/.signature
 f:610fee7c887449a35d41bae6e43ead13:python3-mergedeep/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:0.patch
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch
