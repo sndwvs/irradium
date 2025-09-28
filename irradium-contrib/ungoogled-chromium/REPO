@@ -1,0 +1,16 @@
+d:patches
+f:cca42a21584d2e7a49baa60bb486c5d2:post-install
+f:253856444af1433e94c378a481d685ae:patches/0001-widevine-support-for-arm.patch
+f:3eb7a7bbf663a4c9b242ef833073f709:patches/0002-Run-blink-bindings-generation-single-threaded.patch
+f:f39af46a37b6b3dfebfb11bd27ffeeb2:patches/0003-Fix-eu-strip-build-for-newer-GCC.patch
+f:8f6657577ad6609a22f2f7efe2fa237f:patches/increase-fortify-level.patch
+f:3554002a9bb2c060784e47032d4bedf1:patches/use-oauth2-client-switches-as-default.patch
+f:883f63f2765d2eea97565e7ddf5c1834:patches/chromium-138-nodejs-version-check.patch
+f:c0d658293eca84c9895b8b6e64ad11c5:patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
+f:26459cc79f26d8dfca369994135d6b22:patches/compiler-rt-adjust-paths.patch
+f:6809d262718def5f7bf240c1ab3e2307:patches/chromium-140.0.7339.41-rust.patch
+f:92a79d9005b5bef511da9c853a9afb9c:chromium.default
+f:218fe7585674cf5d68a0d7c2e7281274:chromium.sh
+f:bc63f54185ba6efab2fbb70e87ad9742:.footprint
+f:9f3acc12edec8169a009fb41c6e3af6c:.signature
+f:91514926aaf908171a3b2a1656f28052:Pkgfile
