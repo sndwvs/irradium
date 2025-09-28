@@ -135,6 +135,7 @@ build() {
 
     # Link to system tools required by the build
     if (( ! _manual_clone )); then
+        rm -rf third_party/node/linux/node-linux-x64
         mkdir -p third_party/node/linux/node-linux-x64/bin
         ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
     fi
