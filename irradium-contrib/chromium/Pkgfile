@@ -22,6 +22,7 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
 
 build() {
 
+    _manual_clone=1
     _system_clang=1
 
     cd $name-$version
