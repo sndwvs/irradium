@@ -4,7 +4,7 @@
 # Depends on: libtool readline
 
 name=unixodbc
-version=2.3.12
+version=2.3.13
 release=1
 source=(https://www.unixodbc.org/unixODBC-$version.tar.gz)
 
