@@ -1,15 +1,10 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7s0biQiivE2ihnY4XSiS5CO5WBXF9b8WA4OvffsW8p81MMG/QKJ+I5CLnZDF+MAWCHDloJueF3AxHhfaapAegww=
-SHA256 (Pkgfile) = f24b6920891e76bccb3c15ef246df30f0d6d46e6746bb0633a1352f88a36453b
-SHA256 (.footprint.riscv64) = e8f8260d0504b9c0039697e6457c9fa34e08a0f31105ee103fce39ece457a015
-SHA256 (libreoffice-25.8.2.1.tar.xz) = e892de832fc29e2740939bc0790381d94b762609b4c898ac3219fc37f8724075
-SHA256 (libreoffice-dictionaries-25.8.2.1.tar.xz) = 3e05befc0e851c68b960c3ebcd35ff2f0e63ff66dd0bc211685a1ea573c1eb79
-SHA256 (libreoffice-translations-25.8.2.1.tar.xz) = 3a5ab042b9542e10e4ac26c20700210bec9053fa191b95f49fa40367d988f455
-SHA256 (libreoffice-help-25.8.2.1.tar.xz) = 8fa119f87f5c2104e25a05310618a2057ccebd3271deee77cc27e80f5bc5e46b
-SHA256 (185d60944ea767075d27247c3162b3bc-unowinreg.dll) = eafde646a7dbe46d20c291685b0beac2382174d78d66ee990e229a1bf6e6cec6
-SHA256 (0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz) = 983941d31ee8d366085cadf28db75eb1f5cb03ba1e5853b98f12f7f51c63b776
-SHA256 (dtoa-20180411.tgz) = 0082d0684f7db6f62361b76c4b7faba19e0c7ce5cb8e36c4b65fea8281e711b4
-SHA256 (pdfium-7012.tar.bz2) = e647ca4fcc2c91d9dca717452e1b1be1ab6155ac4977dca716041652c7b10bdd
-SHA256 (skia-m136-28685d899b0a35894743e2cedad4c9f525e90e1e.tar.xz) = 2384f5f44a0b714d8dc78923fdf17453ab5a1808ca638154e3e27b361531db25
-SHA256 (libreoffice-7.6-qt6-wayland-egl.patch) = 420fdbc4188bec05e62625355af4aea1b3eefd8abea0bb2a31115d938f5a70c6
-SHA256 (makefile.in.patch) = ef570395a0ade91af1f86c260f99d0849069f07307e8a87a452af2379586ac49
+RWTmT3d9kqan7rbVSOw7rTRx4mx+3Nd+4sT/s3idQvGa7DggIudeEEWFBoTHxFAjpW2DI74gss4t6E5O040uqmM8C63YfgiLsAg=
+SHA256 (Pkgfile) = 0a67d1ecb1e784549ec32f9bffcf3171f8063c70a380c50ffe23619d78309d9f
+SHA256 (.footprint.riscv64) = fbb3bc2d4450de1d2e4499826800842c41167f153d48ee1d7fd1d9743a2488a0
+SHA256 (firefox-143.0.3.source.tar.xz) = cb65352aea024e3b52d99b6fa4d028be687e3455381a0c065b2da740eeb1002b
+SHA256 (firefox.desktop) = 05bd1a4e283bc68f525f87cabf35ad0a59e5e63e107ce3901a4ac73e3d16ef33
+SHA256 (fix-target-detection.patch) = 33199c6d64a2a775b4ede35aae84b95cef8476e8995a1d1b99eb65efb59008f4
+SHA256 (node-stdout-nonblocking-wrapper) = bb8c503015e49ed1b152225bdc56cf502cd831f35962d113dcbb9121967f3523
+SHA256 (01-rust-lto-thin.patch) = af0ce7f1c11dc12247e2ef57f088bdb8bb780fe73033af7e380b76d32fc8338b
+SHA256 (02-riscv64-no-lto.patch) = 219e23dc21e6193eaa89166c9e82ada9b50ccd0df691527ff55c13954cab0079
