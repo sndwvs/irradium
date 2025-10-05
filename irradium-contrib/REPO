@@ -369,7 +369,7 @@ f:8f6657577ad6609a22f2f7efe2fa237f:ungoogled-chromium/patches/increase-fortify-l
 f:3554002a9bb2c060784e47032d4bedf1:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
 f:883f63f2765d2eea97565e7ddf5c1834:ungoogled-chromium/patches/chromium-138-nodejs-version-check.patch
 f:c0d658293eca84c9895b8b6e64ad11c5:ungoogled-chromium/patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
-f:26459cc79f26d8dfca369994135d6b22:ungoogled-chromium/patches/compiler-rt-adjust-paths.patch
+f:a76aa8515699da182d02d17f7de6b1de:ungoogled-chromium/patches/compiler-rt-adjust-paths.patch
 f:a9c40bf9b10d6b2d97e7f660ccf609eb:ungoogled-chromium/patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
 f:148edb76690d70a78126b12766c55261:ungoogled-chromium/patches/chromium-141-cssstylesheet-iwyu.patch
 f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
