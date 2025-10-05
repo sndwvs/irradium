@@ -4,7 +4,7 @@
 # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
 
 name=chromium
-version=140.0.7339.207
+version=141.0.7390.54
 release=1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz
         chromium.default chromium.sh
@@ -16,7 +16,7 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
         patches/increase-fortify-level.patch
         patches/chromium-138-nodejs-version-check.patch
         patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
-        patches/chromium-140.0.7339.41-rust.patch
+        patches/chromium-141-cssstylesheet-iwyu.patch
         patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
 )
 
@@ -101,10 +101,10 @@ build() {
 
     # Fixes from Gentoo
     patch -Np1 -i $SRC/chromium-138-nodejs-version-check.patch
+    patch -Np1 -i $SRC/chromium-141-cssstylesheet-iwyu.patch
 
     # Fixes from NixOS
     patch -Np1 -i $SRC/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
-    patch -Np1 -i $SRC/chromium-140.0.7339.41-rust.patch
 
     # Allow libclang_rt.builtins from compiler-rt >= 16 to be used
     patch -Np1 -i $SRC/compiler-rt-adjust-paths.patch
@@ -190,9 +190,9 @@ build() {
       'use_system_libffi=true'
       'enable_hangout_services_extension=true'
       'enable_widevine=true'
-      'enable_nacl=false'
       'enable_rust=true'
       "google_api_key=\"$_google_api_key\""
+      'use_clang_modules=false'
     )
 
     if [[ -n ${_system_libs[icu]+set} ]]; then
