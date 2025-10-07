@@ -149,7 +149,7 @@ f:8f6657577ad6609a22f2f7efe2fa237f:chromium/patches/increase-fortify-level.patch
 f:3554002a9bb2c060784e47032d4bedf1:chromium/patches/use-oauth2-client-switches-as-default.patch
 f:883f63f2765d2eea97565e7ddf5c1834:chromium/patches/chromium-138-nodejs-version-check.patch
 f:c0d658293eca84c9895b8b6e64ad11c5:chromium/patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
-f:26459cc79f26d8dfca369994135d6b22:chromium/patches/compiler-rt-adjust-paths.patch
+f:a76aa8515699da182d02d17f7de6b1de:chromium/patches/compiler-rt-adjust-paths.patch
 f:a9c40bf9b10d6b2d97e7f660ccf609eb:chromium/patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
 f:148edb76690d70a78126b12766c55261:chromium/patches/chromium-141-cssstylesheet-iwyu.patch
 f:c65e24cc134d6952ea0ec61d8fae74e1:chromium/Pkgfile
@@ -178,7 +178,7 @@ f:5d88799932a7ad958e779057651a4cb9:firefox/.footprint.riscv64
 f:6a5dfdeb1c9e57d7277c147d6d09bb1e:firefox/.footprint.aarch64
 f:88bc6979faeb2e81d81d9968be983d54:firefox/.signature.aarch64
 f:f2cf8f2791b27155d0b67ed953364487:firefox/.signature.riscv64
-f:51cdf1967ee3231226352cfe58b6103f:firefox/Pkgfile
+f:304826e6155147f9c86e66c036390af8:firefox/Pkgfile
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
 f:f27fa622f17d099ba1bc08c4061acda6:freerdp/1ef7b9e3.patch
