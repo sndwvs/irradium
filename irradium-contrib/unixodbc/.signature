@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7km0iTPkHoGWs7amVUZ8ONYx1oWb57j5NhNDqjQQP9EnQYAfHVA3IVlCiNk5IK6VNmrfjfuagtrKLbTQrBXf5A0=
-SHA256 (Pkgfile) = 32c45dadc341c3922e004a86a6a1a899e39ac3286c54905cde1bec2b86ce8fb5
+RWTmT3d9kqan7mRXgQx0/OQJ44eWZVcZot95xjQDfSobgGZrp9woT8mhNODpv92TPTLSAothuT0ghczh7VXPQQeIb1Yy68cz6wE=
+SHA256 (Pkgfile) = db6dd23296dbe1ea2df4362dbaa7115c03dc0942ad75c09a28e61922d0172b00
 SHA256 (.footprint) = d80ba8c7498ccce5dab75fb8a5af550d45bf87414336a7baca8986b225401295
-SHA256 (unixODBC-2.3.13.tar.gz) = 119afef5f4cb04e780ca6cf763265b9fb2b99c4c11349a3f9cab14069d2c7c2b
+SHA256 (unixODBC-2.3.14.tar.gz) = 4e2814de3e01fc30b0b9f75e83bb5aba91ab0384ee951286504bb70205524771
