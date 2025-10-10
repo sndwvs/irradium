@@ -261,5 +261,5 @@ f:5387ad06a1dc0774320b4482f95580be:efivar/.footprint
 f:910f6052b02380c83db3223f3b7d9364:efivar/.signature
 f:f193e75ca62a9f19acc471f19b047a9f:efivar/Pkgfile
 f:5be6bc6f7d8ee33c7f5f00d4687a91d3:compiler-rt/.footprint
-f:f3c2ffa0290475bc4532ebb53ebb5ae1:compiler-rt/.signature
+f:3b0aaf773f870a5dcc8a2a8b5f170056:compiler-rt/.signature
 f:965a1621987e5cdfa84057b6989dd1ad:compiler-rt/Pkgfile
