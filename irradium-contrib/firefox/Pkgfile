@@ -5,7 +5,7 @@
 # Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland
 
 name=firefox
-version=143.0.4
+version=144.0
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -15,11 +15,11 @@ source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$versio
   02-riscv64-no-lto.patch)
 
 build() {
-  chmod a+x $SRC/node-stdout-nonblocking-wrapper
+  chmod a+x "$SRC"/node-stdout-nonblocking-wrapper
 
   cd $name-$version
 
-  for p in $SRC/*.patch; do
+  for p in "$SRC"/*.patch; do
     patch -p1 -i $p
   done
 
@@ -81,10 +81,11 @@ EOF
     echo 'ac_add_options --disable-sandbox' >> .mozconfig
   fi
 
-  # use system icu only if new enough
-  local ICU_VER="$(prt-get current icu)"
-  [[ "$ICU_VER" =~ "not installed" ]] || (( ${ICU_VER%.*} < 76 )) || \
-    echo 'ac_add_options --with-system-icu' >> .mozconfig
+  prt-get isinst icu >/dev/null && echo 'ac_add_options --with-system-icu' >> .mozconfig
+
+  # bugzilla 1988166: workaround for systems without the single_threaded header
+  [ -e /usr/include/sys/single_threaded.h ] || sed "/sys\/single_threaded.h/d" \
+                    -i "$SRC"/$name-$version/config/system-headers.mozbuild
 
   # disable jemalloc on systems without glibc 
   local LIBC=$(</var/lib/pkg/db awk -v RS="" -v FS="\n" '/\nusr\/lib\/libc.so\n/ { print $1 }')
@@ -140,18 +141,18 @@ EOF
   export SHELL='/bin/bash'
 
   ./mach build
-  DESTDIR=$PKG ./mach install
+  DESTDIR="$PKG" ./mach install
 
   # Remove crap
-  rm -rf $PKG/usr/lib/firefox/browser/features
-  rm -f $PKG/usr/lib/firefox/removed-files
+  rm -rf "$PKG"/usr/lib/firefox/browser/features
+  rm -f "$PKG"/usr/lib/firefox/removed-files
 
-  install -D -m 0644 $SRC/firefox.desktop $PKG/usr/share/applications/firefox.desktop
+  install -D -m 0644 "$SRC"/firefox.desktop "$PKG"/usr/share/applications/firefox.desktop
 
-  mkdir -p $PKG/etc/revdep.d
-  echo "/usr/lib/firefox" > $PKG/etc/revdep.d/firefox
+  mkdir -p "$PKG"/etc/revdep.d
+  echo "/usr/lib/firefox" > "$PKG"/etc/revdep.d/firefox
 
-  mkdir -p $PKG/usr/share/pixmaps
+  mkdir -p "$PKG"/usr/share/pixmaps
   ln -sf /usr/lib/firefox/browser/chrome/icons/default/default128.png \
-          $PKG/usr/share/pixmaps/firefox.png
+          "$PKG"/usr/share/pixmaps/firefox.png
 }
