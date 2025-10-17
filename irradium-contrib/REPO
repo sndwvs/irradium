@@ -152,7 +152,7 @@ f:c0d658293eca84c9895b8b6e64ad11c5:chromium/patches/chromium-138-rust-1.86-misma
 f:a76aa8515699da182d02d17f7de6b1de:chromium/patches/compiler-rt-adjust-paths.patch
 f:a9c40bf9b10d6b2d97e7f660ccf609eb:chromium/patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
 f:148edb76690d70a78126b12766c55261:chromium/patches/chromium-141-cssstylesheet-iwyu.patch
-f:c65e24cc134d6952ea0ec61d8fae74e1:chromium/Pkgfile
+f:b510bb6da01a78e82725042de1cfcf78:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:2a3fe0bbe2b23a66764034bd56fc2411:deadbeef/ddb_dsp_libretro_fix_aarch64_riscv64.patch
 f:56a2ee704d2bb8275f70d226c78df704:deadbeef/.footprint

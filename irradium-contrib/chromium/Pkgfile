@@ -4,7 +4,7 @@
 # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
 
 name=chromium
-version=141.0.7390.54
+version=141.0.7390.76
 release=1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz
         chromium.default chromium.sh
@@ -22,7 +22,7 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
 
 build() {
 
-    _manual_clone=1
+    _manual_clone=0
     _system_clang=1
 
     cd $name-$version
