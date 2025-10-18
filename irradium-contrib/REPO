@@ -19,7 +19,6 @@ d:gvfs
 d:jemalloc
 d:libatasmart
 d:libcanberra
-d:libcap-ng
 d:libcddb
 d:libdispatch
 d:libglade
@@ -224,9 +223,6 @@ f:0a78c70bbcd031f03495f19aa5f29fd1:libcanberra/.signature
 f:08babe5f17deae110d5fa163b55824bf:libcanberra/libcanberra-broadway-fix.patch
 f:a7d538151a41689f42a2a6b589ef0a3e:libcanberra/libcanberra-multi-backend.patch
 f:eb30b04e68004ee571ced332628c8dc9:libcanberra/Pkgfile
-f:28d54e9ca30752945039a04e4aaacfc1:libcap-ng/Pkgfile
-f:b50e86e08696c892265893a3ff686dcc:libcap-ng/.footprint
-f:5649728544551ff566795910671f75ec:libcap-ng/.signature
 f:bef48b648a86d17bad3adf0fbab8b238:libcddb/Pkgfile
 f:f944f031134b84af79aa4bbe8936902b:libcddb/.footprint
 f:1082d84f8827c5833ab718bf29ae65a2:libcddb/.signature
