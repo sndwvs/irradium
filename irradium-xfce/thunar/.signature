@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0WD9PDauAyZtlctH4GSeYN7V7WdgTG1qBXrFIMgltjvi+fHgazo3nX5hovbvIif7N7oNco052HOWeai3D1EWzwQ=
-SHA256 (Pkgfile) = 08069472a34a5efde29a2293dc4eb65a94b8b4f9fc5042f41dddb6dd8a393ab1
+RWQ1yk7gkrBo0U/o/DUIE2Spopx86vhggbu2DaqFT+xUsrlzURe4Iyo9yWCX5p52h8g6sn40JiiK82SYLpRnhJXVGVTSzVq54gY=
+SHA256 (Pkgfile) = 25cb79c7a50f90ab1c32fefef859e2fb5b42f7d679327d1b9288d021320077c3
 SHA256 (.footprint) = 8afaa6551ea949fc4a5c33a705916ab817c2a458dac5676d06b61523f906bd50
-SHA256 (thunar-4.20.5.tar.bz2) = da299babd233a079a443e527fa38cba3899b6131ef056593de9451178d812f2a
+SHA256 (thunar-4.20.6.tar.bz2) = e815e034c073d634d0e77566837e1d9417b65c886924e3678e3325d5466c784d
