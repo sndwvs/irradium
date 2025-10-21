@@ -4,13 +4,13 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.12/
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.9.26.dist-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.9.26.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.9.26.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.9.26.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.9.26.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.9.26.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.9.26.dist-info/licenses/LICENSE
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.10.14.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.10.14.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.10.14.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.10.14.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.10.14.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.10.14.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.10.14.dist-info/licenses/LICENSE
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/__init__.py
@@ -852,6 +852,8 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/icareus.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/ichinanalive.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/ichinanalive.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/idagio.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/idagio.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/idolplus.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/idolplus.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/ign.cpython-312.opt-1.pyc
@@ -2513,6 +2515,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/hytale.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/icareus.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/ichinanalive.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/idagio.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/idolplus.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/ign.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/iheart.py
