@@ -365,14 +365,14 @@ f:8f6657577ad6609a22f2f7efe2fa237f:ungoogled-chromium/patches/increase-fortify-l
 f:3554002a9bb2c060784e47032d4bedf1:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
 f:883f63f2765d2eea97565e7ddf5c1834:ungoogled-chromium/patches/chromium-138-nodejs-version-check.patch
 f:c0d658293eca84c9895b8b6e64ad11c5:ungoogled-chromium/patches/chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch
-f:a76aa8515699da182d02d17f7de6b1de:ungoogled-chromium/patches/compiler-rt-adjust-paths.patch
+f:24ea2b2ae799520979daa5a8a80e9514:ungoogled-chromium/patches/compiler-rt-adjust-paths.patch
 f:a9c40bf9b10d6b2d97e7f660ccf609eb:ungoogled-chromium/patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
 f:148edb76690d70a78126b12766c55261:ungoogled-chromium/patches/chromium-141-cssstylesheet-iwyu.patch
 f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:bc63f54185ba6efab2fbb70e87ad9742:ungoogled-chromium/.footprint
 f:9f3acc12edec8169a009fb41c6e3af6c:ungoogled-chromium/.signature
-f:45ffc24f80c18c08ff57344f652cbc7b:ungoogled-chromium/Pkgfile
+f:33eedf9b6bb90e679bc71cfce3107ad5:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
 f:0cb29db19dda2ae4817b0380de127c8b:urxvt-perls/.signature
