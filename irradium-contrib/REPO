@@ -101,7 +101,6 @@ d:librevenge
 d:libvisio
 d:libwpd
 d:rasqal
-d:bind
 d:openjdk21-jdk
 d:directx-shader-compiler
 d:rbdoom-3-bfg
@@ -586,17 +585,6 @@ f:cc021a91f559f6537d559733119cab92:rasqal/rasqal-pkgconfig.patch.1
 f:f5f8c571b32b868be4a3ff127dd6896a:rasqal/rasqal-xcompile.patch.1
 f:ef94bfe34794f27e5ca43a053aa4c046:rasqal/rpath.patch
 f:656e6422caf40d6b57e863dcfff8a7ca:rasqal/.signature
-f:aafb8f8ff4cddd87f3e257169554edd8:bind/README
-f:d5ef3bb5ce1020454a2c5996b73c8a5c:bind/db.0.0.127
-f:c1e9d24f8ca28d50b5d5ad1637ccf241:bind/db.ip6.arpa
-f:1041493a69a6a5c21d4a513323104a0f:bind/db.localhost
-f:607a961a7699d4a554c509ae76ccc943:bind/named
-f:d88f47dbf8ed587cbc15f50b3d4de2a6:bind/named.conf
-f:f11f3366bc8c9b2d15d5989ed5cf28f6:bind/named.root
-f:e718f850c043a0352cf95cc8fa9a05d7:bind/pre-install
-f:16e2b9e21c3277cba3b6c2b05cf0889b:bind/.footprint
-f:76e8e98299c58ea5ae60bd1a319d4523:bind/.signature
-f:4a5030424d4b69ff32b6d3548c2fd454:bind/Pkgfile
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.aarch64
 f:4e0e2499e68f3da55077abeda0c0de2a:openjdk21-jdk/.footprint.riscv64
 f:f0cf6fc36c48e14c52f25e9b432e9a7e:openjdk21-jdk/openjdk21.sh
