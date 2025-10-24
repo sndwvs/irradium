@@ -1,16 +1,18 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7s9mP8UqtGVhE046Grk1kW2KCmLwgOKSqKfiD4ksKGP7Zw/yBVS4kvpFiinpn+b04YGmu80UsyHZYYeOFERtQQk=
-SHA256 (Pkgfile) = 7206beb279cfd2f759c19e7fe3fc702d3ca1a2adf8749a65f4830d2b69e30872
-SHA256 (.footprint) = 8022ba2c739049d24d01e483c24287e6c0fd76641c6ba2e4d54d915e7cfcfd4f
-SHA256 (chromium-139.0.7258.138.tar.xz) = 86db7326987a280380e35cf1e961df8d08fb1f8eb3b0ae9ee8250b5dff65e1ea
-SHA256 (139.0.7258.138-1.tar.gz) = 8ab79886de6f625b8db9899c3098f5a4c3e5547a7cc87e68995f5e2308c9aeec
+RWTmT3d9kqan7pB0CyLHYDw8B9kFmrIlDsexqOgu8gdxQmkgnYNzJ7gP3oUPezLO/6RioIRZQ7YWAs9Kcf4FaggTFfU//O9GWgo=
+SHA256 (Pkgfile) = 612bfdb5016c480c4ff3e08f6772b34a5f51130cd2469f7143d9225492382306
+SHA256 (.footprint) = 55f8990a1f85ba153aeb6350f340535441908a432c3e0ef6a56fc8dcffb45bb7
+SHA256 (chromium-141.0.7390.122.tar.xz) = 2abd5f1175328a15bea8363d6105c584fe499d513c88e26cae64de27fe0eae49
+SHA256 (141.0.7390.122-1.tar.gz) = d8b02cce3f1852f1caa543b0e9704440e8591eb20ff64e8fb9e9eec147428699
 SHA256 (chromium.default) = f94677036f4d820c8361241bac84594ae6f2ae22839d906c66b2005bdde8ad78
 SHA256 (chromium.sh) = 0cfc11faeaf9a1e8775a248876d86cb798c17077618cbe4ccf9797d7c71386d5
 SHA256 (0001-widevine-support-for-arm.patch) = 5a45799258abde6836bef7209c10935ccf4c09bdd487a008b4d37a96f9b7af58
 SHA256 (0002-Run-blink-bindings-generation-single-threaded.patch) = 1721a7355822fa045698f613a9cda28f42cad58bfe2074e7044691f0b518c5a6
 SHA256 (0003-Fix-eu-strip-build-for-newer-GCC.patch) = 835ff938f21633abf7d5ec43be09014c8be060a919c8651dadbb2015dfef8216
 SHA256 (use-oauth2-client-switches-as-default.patch) = e6da901e4d0860058dc2f90c6bbcdc38a0cf4b0a69122000f62204f24fa7e374
-SHA256 (compiler-rt-adjust-paths.patch) = a6507371588ed4d87d6501220249264abfbcd814771cc1ba351e0ac6cc987400
+SHA256 (compiler-rt-adjust-paths.patch) = ec8e49b7114e2fa2d359155c9ef722ff1ba5fe2c518fa48e30863d71d3b82863
 SHA256 (increase-fortify-level.patch) = d634d2ce1fc63da7ac41f432b1e84c59b7cceabf19d510848a7cff40c8025342
 SHA256 (chromium-138-nodejs-version-check.patch) = 11a96ffa21448ec4c63dd5c8d6795a1998d8e5cd5a689d91aea4d2bdd13fb06e
 SHA256 (chromium-138-rust-1.86-mismatched_lifetime_syntaxes.patch) = 5abc8611463b3097fc5ce58017ef918af8b70d616ad093b8b486d017d021bbdf
+SHA256 (chromium-141-cssstylesheet-iwyu.patch) = de5c873564b09713b65dd9e6a0b9049d7b3cf8f881436f36e1c091824b63e876
+SHA256 (0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch) = e46dd55d7f4c215747aa3367e200b9f3dfa0cbbe24c4d6d8c6e6b781161133c1
