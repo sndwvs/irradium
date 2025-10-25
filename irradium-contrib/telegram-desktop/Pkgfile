@@ -8,15 +8,10 @@ version=6.2.4
 release=1
 _commitid=51743dfd01dff6179e2d8f7095729caa4e2222e9
 source=(https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tdesktop-$version-full.tar.gz
-        https://github.com/tdlib/td/archive/$_commitid.tar.gz
-        ffmpeg8.patch
-        glib2.86.patch)
+        https://github.com/tdlib/td/archive/$_commitid.tar.gz)
 
 build() {
   cd tdesktop-$version-full
-
-  patch -p1 -i $SRC/ffmpeg8.patch
-  patch -p1 -i $SRC/glib2.86.patch
 
   LDFLAGS="$LDFLAGS -Wl,-z,stack-size=1024768"
   cmake -S $SRC/td-$_commitid -B $SRC/td-$_commitid/build \
