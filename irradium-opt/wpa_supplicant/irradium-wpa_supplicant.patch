@@ -1,0 +1,35 @@
+--- a/wpa_supplicant	2024-12-02 16:45:38.128216638 +0200
++++ b/wpa_supplicant	2025-10-27 18:37:18.984000098 +0200
+@@ -1,22 +1,26 @@
+-#!/bin/sh
++#!/bin/bash
+ #
+ # /etc/rc.d/wpa_supplicant: start/stop wpa_supplicant
+ #
+ 
+-DEV=wlp3s0
++DEV=(wlan0)
+ 
+ SSD=/sbin/start-stop-daemon
+ PROG=/usr/sbin/wpa_supplicant
+-PID=/run/wpa_supplicant.pid
+-OPTS="-B -P $PID -D nl80211,wext -c /etc/wpa_supplicant.conf -i $DEV"
++OPTS="-B -D nl80211,wext -c /etc/wpa_supplicant.conf"
+ 
+ 
+ case $1 in
+ 	start)
+-		$SSD --start --pidfile $PID --exec $PROG -- $OPTS
++		for i in ${!DEV[@]}; do
++			PID=/run/wpa_supplicant.${DEV[$i]}.pid
++			$SSD --start --pidfile $PID --exec $PROG -- $OPTS -P $PID -i ${DEV[$i]}
++		done
+ 		;;
+ 	stop)
+-		$SSD --stop --retry 10 --pidfile $PID
++		for i in ${!DEV[@]}; do
++			$SSD --stop --retry 10 --pidfile /run/wpa_supplicant.${DEV[$i]}.pid
++		done
+ 		;;
+ 	restart)
+ 		$0 stop
