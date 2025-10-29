@@ -130,7 +130,7 @@ f:e9f8ce96b05106e22dae0a9b9dbe6cef:qt5/qt5-quick3d-assimp-5.1.patch
 f:43e9305944754ded3c4c49f2d3eba447:qt5/qtlocation-fix-rapidjson-build.patch
 f:85830af03653fb85620ba5ce05656ab0:qt5/.footprint.aarch64
 f:ca4afb44ecc4796ced25f3e917c5ae31:qt5/.signature.aarch64
-f:ed6b1a17f450d8901fb1878142be490d:qt5/Pkgfile
+f:c1f01c3ed9aa2e866703df380b7f2404:qt5/Pkgfile
 f:1b9a3e209c8bf3685d60948e366694f0:qt5/qt-everywhere-opensource-src-5.15.17-kf5-1.patch
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
