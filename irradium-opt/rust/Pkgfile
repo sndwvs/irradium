@@ -142,9 +142,9 @@ vendor = true
 locked-deps = true
 python = "/usr/bin/python3"
 optimized-compiler-builtins = true
-@CARGO@
-@RUST@
-@RUSTFMT@
+#@CARGO@
+#@RUST@
+#@RUSTFMT@
 
 [dist]
 compression-formats = ["gz"]
