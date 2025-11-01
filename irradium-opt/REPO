@@ -139,7 +139,7 @@ f:077bce553b441797d8205db9682bef73:qt6-base/.signature
 f:d15dfe03688942a0a25b3d7adda7857e:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
-f:50b1fc946383fff1ec66f243a0a493d6:rust/Pkgfile
+f:41cf8cb10a43f7b61c1c05ddd88183d3:rust/Pkgfile
 f:19368ee574587ede69279d0ea4993558:rust/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
 f:c6942c501e3b3f98e272dcf1296afa2b:rust/.footprint.aarch64
 f:b94a7e76cf9ed2673e6217f17f4be99b:rust/.footprint.riscv64
@@ -150,7 +150,6 @@ f:ad038a2aa1de454e47d70d0cbac53e1b:rust/0001-bootstrap-Change-libexec-dir.patch
 f:f8d11d8c7f2a63566ed2dffc01c2b952:rust/0002-bootstrap-Change-bash-completion-dir.patch
 f:f9d38b634d10e1353a4c1200e11401f9:rust/0003-bootstrap-Workaround-for-system-stage0.patch
 f:6ee6690b08086d4a6c949d23829d299b:rust/0004-compiler-Change-LLVM-targets.patch
-f:8d6a8b9ecd6ff40db154e498231c6a1a:rust/0005-compiler-Use-aarch64-linux-gnu-gcc-to-link-aarch64-t.patch
 f:a23a8aac5a57faa325cbaf32d2f261c8:slim/.footprint
 f:9654119211dec3b51f819b7cc34380ac:slim/.signature
 f:6bde2566611eb08c5b2d304416898527:slim/Pkgfile

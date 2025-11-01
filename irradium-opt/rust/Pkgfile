@@ -34,7 +34,6 @@ source=(https://static.rust-lang.org/dist/${name}c-$version-src.tar.xz
     0002-bootstrap-Change-bash-completion-dir.patch
     0003-bootstrap-Workaround-for-system-stage0.patch
     0004-compiler-Change-LLVM-targets.patch
-    0005-compiler-Use-aarch64-linux-gnu-gcc-to-link-aarch64-t.patch
     0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
     riscv64-disable-f16-f128.patch
 )
@@ -86,7 +85,6 @@ build() {
     patch -p1 -i $SRC/0002-bootstrap-Change-bash-completion-dir.patch
     patch -p1 -i $SRC/0003-bootstrap-Workaround-for-system-stage0.patch
     patch -p1 -i $SRC/0004-compiler-Change-LLVM-targets.patch
-    patch -p1 -i $SRC/0005-compiler-Use-aarch64-linux-gnu-gcc-to-link-aarch64-t.patch
     patch -p1 -i $SRC/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
     #riscv64: disable f16 f128 once
     patch -Np1 -i $SRC/riscv64-disable-f16-f128.patch
