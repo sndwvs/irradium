@@ -6,6 +6,7 @@ drwxr-xr-x	root/root	usr/share/acme.sh/
 -rwxr-xr-x	root/root	usr/share/acme.sh/acme.sh
 drwxr-xr-x	root/root	usr/share/acme.sh/deploy/
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/ali_cdn.sh
+-rwxr-xr-x	root/root	usr/share/acme.sh/deploy/ali_dcdn.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/apache.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/cleverreach.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/consul.sh
@@ -30,14 +31,17 @@ drwxr-xr-x	root/root	usr/share/acme.sh/deploy/
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/openstack.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/panos.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/peplink.sh
+-rwxr-xr-x	root/root	usr/share/acme.sh/deploy/proxmoxbs.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/proxmoxve.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/pureftpd.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/qiniu.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/routeros.sh
+-rwxr-xr-x	root/root	usr/share/acme.sh/deploy/ruckus.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/ssh.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/strongswan.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/synology_dsm.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/truenas.sh
+-rwxr-xr-x	root/root	usr/share/acme.sh/deploy/truenas_ws.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/unifi.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/vault.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/deploy/vault_cli.sh
@@ -58,6 +62,7 @@ drwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_aws.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_azion.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_azure.sh
+-rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_beget.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_bookmyname.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_bunny.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_cf.sh
@@ -89,11 +94,13 @@ drwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_dynu.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_dynv6.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_easydns.sh
+-rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_edgecenter.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_edgedns.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_euserv.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_exoscale.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_fornex.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_freedns.sh
+-rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_freemyip.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_gandi_livedns.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_gcloud.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_gcore.sh
@@ -101,6 +108,7 @@ drwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_geoscaling.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_googledomains.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_he.sh
+-rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_he_ddns.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_hetzner.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_hexonet.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_hostingde.sh
@@ -130,6 +138,7 @@ drwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_maradns.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_me.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_miab.sh
+-rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_mijnhost.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_misaka.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_myapi.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_mydevil.sh
@@ -151,6 +160,7 @@ drwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_nsupdate.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_nw.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_oci.sh
+-rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_omglol.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_one.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_online.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_openprovider.sh
@@ -172,6 +182,7 @@ drwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_selfhost.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_servercow.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_simply.sh
+-rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_technitium.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_tele3.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_tencent.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_timeweb.sh
@@ -191,6 +202,7 @@ drwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_yc.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_zilore.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_zone.sh
+-rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_zoneedit.sh
 -rwxr-xr-x	root/root	usr/share/acme.sh/dnsapi/dns_zonomi.sh
 drwxr-xr-x	root/root	usr/share/acme.sh/notify/
 -rwxr-xr-x	root/root	usr/share/acme.sh/notify/aws_ses.sh

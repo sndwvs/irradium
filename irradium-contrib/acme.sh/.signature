@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7j2dD0XYCs0oobfh+IU7DQ6f4zBNKLAo7+EvBUTXFPzdIA6eZXaghSmK8ryn/bHnZ+6irr/14CvOBUV5d29mTQc=
-SHA256 (Pkgfile) = 4aa2c211033cf06dbb6fa69ef3de5e8cfe6fd234cb6f6d42c1627699facf8eff
-SHA256 (.footprint) = af6d1d06976dbe460e5b5d6343284ce0bbd54181ec90e351cfe906258b2e238f
-SHA256 (3.0.9.tar.gz) = a599e8373cd327fb611362bec6f1bfb0bf65c97b3401c440cfea9304a0f0cb41
+RWTmT3d9kqan7v/CKTUGM0leowG2QpUHRCzQuYTx2/z5NrPoXNgNlkA4xpKbQsatNz9qjT/XhqDQDPhjUB+vFkaEWKTKlDLx7QY=
+SHA256 (Pkgfile) = 69d3d475b3db6da7dbe385562c498366a391d8d8f91340a5b6c8c20b8eb03af8
+SHA256 (.footprint) = 47899cc56d0c8bde13ba278d00740ad2adf938e79b5c1c4e911710c385dfedd3
+SHA256 (3.1.1.tar.gz) = c5d623ac0af400e83cd676aefaf045228f60e9fc597fea5db4c3a5bd7f6bfcf4
