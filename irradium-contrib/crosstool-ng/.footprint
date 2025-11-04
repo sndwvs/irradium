@@ -34,6 +34,7 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/config/arch/
 -rw-r--r--	root/root	usr/share/crosstool-ng/config/arch/powerpc.in
 -rw-r--r--	root/root	usr/share/crosstool-ng/config/arch/pru.in
 -rw-r--r--	root/root	usr/share/crosstool-ng/config/arch/riscv.in
+-rw-r--r--	root/root	usr/share/crosstool-ng/config/arch/rx.in
 -rw-r--r--	root/root	usr/share/crosstool-ng/config/arch/s390.in
 -rw-r--r--	root/root	usr/share/crosstool-ng/config/arch/sh.in
 -rw-r--r--	root/root	usr/share/crosstool-ng/config/arch/sparc.in
@@ -76,6 +77,8 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/config/comp_tools/
 -rw-r--r--	root/root	usr/share/crosstool-ng/config/config.in
 -rw-r--r--	root/root	usr/share/crosstool-ng/config/config_utils.in
 -rw-r--r--	root/root	usr/share/crosstool-ng/config/configure.in
+drwxr-xr-x	root/root	usr/share/crosstool-ng/config/contrib/
+-rw-r--r--	root/root	usr/share/crosstool-ng/config/contrib/gcc-test-suite.in
 -rw-r--r--	root/root	usr/share/crosstool-ng/config/debug.in
 drwxr-xr-x	root/root	usr/share/crosstool-ng/config/debug/
 -rw-r--r--	root/root	usr/share/crosstool-ng/config/debug/duma.in
@@ -196,6 +199,9 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/autoconf/2.69/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/autoconf/2.71/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/autoconf/2.71/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/autoconf/2.71/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/autoconf/2.72/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/autoconf/2.72/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/autoconf/2.72/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/autoconf/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/automake/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/automake/1.15.1/
@@ -204,6 +210,9 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/automake/1.15.1/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/automake/1.16.5/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/automake/1.16.5/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/automake/1.16.5/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/automake/1.17/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/automake/1.17/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/automake/1.17/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/automake/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/avr-libc/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/avr-libc/1.8.1/
@@ -494,6 +503,24 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/binutils/2.43.1/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.43.1/0008-gold-Deal-with-absence-of-uchar-on-macOS.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.43.1/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.43.1/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/binutils/2.44/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.44/0000-sh-conf.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.44/0001-check_ldrunpath_length.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.44/0002-Don-t-link-to-libfl-as-it-s-unnecessary.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.44/0003-Fix-darwin-build.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.44/0004-sysroot.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.44/0005-poison-system-directories.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.44/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.44/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/binutils/2.45/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.45/0000-sh-conf.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.45/0001-check_ldrunpath_length.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.45/0002-Don-t-link-to-libfl-as-it-s-unnecessary.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.45/0003-Fix-darwin-build.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.45/0004-sysroot.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.45/0005-poison-system-directories.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.45/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/2.45/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/binutils-ld.in
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/binutils/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/bison/
@@ -515,6 +542,9 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/bison/3.4.2/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/bison/3.5/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/bison/3.5/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/bison/3.5/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/bison/3.8.2/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/bison/3.8.2/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/bison/3.8.2/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/bison/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/cloog/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/cloog/0.18.1/
@@ -527,13 +557,16 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/cloog/0.18.4/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/dtc/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/dtc/1.4.7/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/dtc/1.4.7/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/dtc/1.4.7/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/dtc/1.4.7/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/dtc/1.5.1/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/dtc/1.5.1/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/dtc/1.5.1/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/dtc/1.5.1/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/dtc/1.6.1/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/dtc/1.6.1/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/dtc/1.6.1/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/dtc/1.6.1/version.desc
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/dtc/1.7.2/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/dtc/1.7.2/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/dtc/1.7.2/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/dtc/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/duma/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/duma/2_5_21/
@@ -546,6 +579,12 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/expat/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/expat/2.5.0/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/expat/2.5.0/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/expat/2.5.0/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/expat/2.6.4/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/expat/2.6.4/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/expat/2.6.4/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/expat/2.7.1/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/expat/2.7.1/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/expat/2.7.1/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/expat/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc-linaro/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc-linaro/4.9-2017.01/
@@ -739,64 +778,75 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/11.5.0/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/11.5.0/0011-Remove-crypt-and-crypt_r-interceptors.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/11.5.0/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/11.5.0/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/0000-libtool-leave-framework-alone.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/0001-gcc-plugin-POSIX-include-sys-select-h.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/0002-arm-softfloat-libgcc.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/0003-libgcc-disable-split-stack-nothreads.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/0004-Remove-use-of-include_next-from-c-headers.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/0005-Allow-default-libc-to-be-specified-to-configure.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/0006-driver-Extend-getenv-function-to-allow-default-value.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/0007-Add-newlib-and-picolibc-as-default-C-library-choices.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/0008-Support-picolibc-targets.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/0009-gcc-Allow-g-to-work-differently-from-gcc.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/0010-Remove-crypt-and-crypt_r-interceptors.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/chksum
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/experimental/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/experimental/0001-picolibc-Add-custom-spec-file-fragments-for-using-pi.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.4.0/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0000-libtool-leave-framework-alone.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0001-gcc-plugin-POSIX-include-sys-select-h.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0002-arm-softfloat-libgcc.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0003-libgcc-disable-split-stack-nothreads.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0004-Remove-use-of-include_next-from-c-headers.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0005-Allow-default-libc-to-be-specified-to-configure.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0006-driver-Extend-getenv-function-to-allow-default-value.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0007-Add-newlib-and-picolibc-as-default-C-library-choices.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0008-Support-picolibc-targets.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0009-gcc-Allow-g-to-work-differently-from-gcc.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0010-RISC-V-fix-build-issue-with-gcc-4.9.x.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0011-Remove-crypt-and-crypt_r-interceptors.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0012-libgcc-m68k-Fixes-for-soft-float.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0013-libgcc-Exclude-UCLIBC-from-GLIBC-thread-check.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/0014-LoongArch-Use-lib-instead-of-lib64-as-the-library-se.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/chksum
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/experimental/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/experimental/0001-picolibc-Add-custom-spec-file-fragments-for-using-pi.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.3.0/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0000-libtool-leave-framework-alone.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0001-gcc-plugin-POSIX-include-sys-select-h.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0002-arm-softfloat-libgcc.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0003-libgcc-disable-split-stack-nothreads.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0004-Remove-use-of-include_next-from-c-headers.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0005-Allow-default-libc-to-be-specified-to-configure.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0006-driver-Extend-getenv-function-to-allow-default-value.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0007-Add-newlib-and-picolibc-as-default-C-library-choices.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0008-Support-picolibc-targets.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0009-gcc-Allow-g-to-work-differently-from-gcc.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0010-libgcc-Exclude-UCLIBC-from-GLIBC-thread-check.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0011-aarch64-Fix-invalid-nested-subregs-PR115464.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0012-aarch64-Use-force_subreg-in-more-places.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0013-aarch64-Add-some-uses-of-force_lowpart_subreg.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0014-Add-force_lowpart_subreg.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0015-Make-more-use-of-force_subreg.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/0016-Revert-one-of-the-force_subreg-changes.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/chksum
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/experimental/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/experimental/0001-picolibc-Add-custom-spec-file-fragments-for-using-pi.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.2.0/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/0000-libtool-leave-framework-alone.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/0001-gcc-plugin-POSIX-include-sys-select-h.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/0002-arm-softfloat-libgcc.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/0003-libgcc-disable-split-stack-nothreads.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/0004-Remove-use-of-include_next-from-c-headers.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/0005-Allow-default-libc-to-be-specified-to-configure.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/0006-driver-Extend-getenv-function-to-allow-default-value.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/0007-Add-newlib-and-picolibc-as-default-C-library-choices.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/0008-Support-picolibc-targets.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/0009-gcc-Allow-g-to-work-differently-from-gcc.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/0010-Remove-crypt-and-crypt_r-interceptors.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/0011-always-define-win32-lean-and-mean-before-windows-h.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/chksum
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/experimental/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/experimental/0001-picolibc-Add-custom-spec-file-fragments-for-using-pi.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/12.5.0/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0000-libtool-leave-framework-alone.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0001-gcc-plugin-POSIX-include-sys-select-h.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0002-arm-softfloat-libgcc.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0003-libgcc-disable-split-stack-nothreads.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0004-Remove-use-of-include_next-from-c-headers.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0005-Allow-default-libc-to-be-specified-to-configure.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0006-driver-Extend-getenv-function-to-allow-default-value.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0007-Add-newlib-and-picolibc-as-default-C-library-choices.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0008-Support-picolibc-targets.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0009-gcc-Allow-g-to-work-differently-from-gcc.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0010-RISC-V-fix-build-issue-with-gcc-4.9.x.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0011-Remove-crypt-and-crypt_r-interceptors.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0012-libgcc-m68k-Fixes-for-soft-float.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0013-libgcc-Exclude-UCLIBC-from-GLIBC-thread-check.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/0014-LoongArch-Use-lib-instead-of-lib64-as-the-library-se.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/chksum
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/experimental/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/experimental/0001-picolibc-Add-custom-spec-file-fragments-for-using-pi.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/13.4.0/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/0000-libtool-leave-framework-alone.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/0001-gcc-plugin-POSIX-include-sys-select-h.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/0002-0002-arm-softfloat-libgcc.patch.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/0003-0003-libgcc-disable-split-stack-nothreads.patch.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/0004-Remove-use-of-include_next-from-c-headers.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/0005-Allow-default-libc-to-be-specified-to-configure.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/0006-driver-Extend-getenv-function-to-allow-default-value.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/0007-Add-newlib-and-picolibc-as-default-C-library-choices.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/0008-Support-picolibc-targets.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/0009-gcc-Allow-g-to-work-differently-from-gcc.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/0010-libgcc-Exclude-UCLIBC-from-GLIBC-thread-check.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/chksum
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/experimental/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/experimental/0001-picolibc-Add-custom-spec-file-fragments-for-using-pi.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/14.3.0/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/0000-libtool-leave-framework-alone.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/0001-gcc-plugin-POSIX-include-sys-select-h.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/0002-arm-softfloat-libgcc.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/0003-libgcc-disable-split-stack-nothreads.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/0004-Remove-use-of-include_next-from-c-headers.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/0005-Allow-default-libc-to-be-specified-to-configure.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/0006-driver-Extend-getenv-function-to-allow-default-value.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/0007-Add-newlib-and-picolibc-as-default-C-library-choices.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/0008-Support-picolibc-targets.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/0009-gcc-Allow-g-to-work-differently-from-gcc.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/0010-libgcc-Exclude-UCLIBC-from-GLIBC-thread-check.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/chksum
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/experimental/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/experimental/0001-picolibc-Add-custom-spec-file-fragments-for-using-pi.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/15.2.0/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/4.9.4/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/4.9.4/0000-Use-ucontext_t-not-struct-ucontext-in-linux-unwind.h.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/4.9.4/0001-gcc_bug_62231.patch
@@ -945,6 +995,9 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/7.5.0/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/7.5.0/0028-aarch64-Tweak-frame_size-comment.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/7.5.0/0029-Backport-check-function-bodies-support.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/7.5.0/0030-aarch64-Make-stack-smash-canary-protect-saved-regist.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/7.5.0/0031-riscv-Add-.type-and-.size-directives-to-riscv-libgcc-funct.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/7.5.0/0032-riscv-Make-__divdi3-handle-div-by-zero-same-as-hard.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/7.5.0/0033-riscv-jal-cannot-refer-to-a-default-visibility-symb.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/7.5.0/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/7.5.0/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/8.5.0/
@@ -981,6 +1034,8 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/8.5.0/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/8.5.0/0030-aarch64-Tweak-frame_size-comment.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/8.5.0/0031-Backport-check-function-bodies-support.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/8.5.0/0032-aarch64-Make-stack-smash-canary-protect-saved-regist.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/8.5.0/0033-riscv-Make-__divdi3-handle-div-by-zero-same-as-hard.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/8.5.0/0034-riscv-jal-cannot-refer-to-a-default-visibility-symb.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/8.5.0/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/8.5.0/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/9.5.0/
@@ -1015,6 +1070,8 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gcc/9.5.0/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/9.5.0/0028-aarch64-Put-LR-save-probe-in-first-16-bytes.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/9.5.0/0029-aarch64-Simplify-probe-of-final-frame-allocation.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/9.5.0/0030-aarch64-Make-stack-smash-canary-protect-saved-regist.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/9.5.0/0031-riscv-Make-__divdi3-handle-div-by-zero-same-as-hard.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/9.5.0/0032-riscv-jal-cannot-refer-to-a-default-visibility-symb.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/9.5.0/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/9.5.0/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gcc/package.desc
@@ -1057,11 +1114,14 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gdb/14.2/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/14.2/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/14.2/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gdb/15.2/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/15.2/0000-readline-bring-in-signal.c-from-gdb-16-branch.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/15.2/0001-readline-tcap.h-Update-definitions-for-C23.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/15.2/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/15.2/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gdb/16.2/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/16.2/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/16.2/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gdb/16.3/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/16.3/0001-readline-tcap.h-Update-definitions-for-C23.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/16.3/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/16.3/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gdb/8.3.1/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/8.3.1/0000-musl_fix.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gdb/8.3.1/0001-uclibc-no-gettimeofday-clobber.patch
@@ -1091,6 +1151,7 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gettext/0.20.1/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gettext/0.20.1/0000-Fix-linker-error-redefinition-of-vasprintf.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gettext/0.20.1/0001-pthread_sigmask.c-mingw.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gettext/0.20.1/0002-tparam-configure-fix.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gettext/0.20.1/0003-Fix-compilation-errors-with-ISO-C-23-compilers.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gettext/0.20.1/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gettext/0.20.1/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gettext/0.21/
@@ -1103,6 +1164,9 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gettext/0.22.5/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gettext/0.23.1/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gettext/0.23.1/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gettext/0.23.1/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gettext/0.26/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gettext/0.26/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gettext/0.26/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gettext/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc-oracle/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc-oracle/2.17/
@@ -1290,6 +1354,7 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.29/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.29/0002-x86-Assume-enable-cet-if-GCC-defaults-to-CET-BZ-2522.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.29/0003-Fix-build-with-GCC-10-when-long-double-double.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.29/0004-Makerules-fix-MAKEFLAGS-assignment-for-upcoming-make.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.29/0005-riscv-Fix-incorrect-jal-with-HIDDEN_JUMPTARGET.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.29/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.29/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.30/
@@ -1298,6 +1363,7 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.30/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.30/0002-x86-Assume-enable-cet-if-GCC-defaults-to-CET-BZ-2522.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.30/0003-Fix-build-with-GCC-10-when-long-double-double.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.30/0004-Makerules-fix-MAKEFLAGS-assignment-for-upcoming-make.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.30/0005-riscv-Fix-incorrect-jal-with-HIDDEN_JUMPTARGET.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.30/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.30/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.31/
@@ -1305,6 +1371,7 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.31/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.31/0001-Add-ARC-architecture.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.31/0002-Fix-build-with-GCC-10-when-long-double-double.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.31/0003-Makerules-fix-MAKEFLAGS-assignment-for-upcoming-make.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.31/0004-riscv-Fix-incorrect-jal-with-HIDDEN_JUMPTARGET.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.31/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.31/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.32/
@@ -1312,6 +1379,7 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.32/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.32/0001-Set-version.h-RELEASE-to-stable-Bug-26700.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.32/0002-Add-ARC700-support.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.32/0003-Makerules-fix-MAKEFLAGS-assignment-for-upcoming-make.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.32/0004-riscv-Fix-incorrect-jal-with-HIDDEN_JUMPTARGET.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.32/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.32/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.33/
@@ -1319,12 +1387,14 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.33/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.33/0001-Set-version.h-RELEASE-to-stable-Bug-26700.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.33/0002-Add-ARC700-support.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.33/0003-Makerules-fix-MAKEFLAGS-assignment-for-upcoming-make.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.33/0004-riscv-Fix-incorrect-jal-with-HIDDEN_JUMPTARGET.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.33/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.33/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.34/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.34/0000-typedef-caddr.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.34/0001-Add-ARC700-support.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.34/0002-Makerules-fix-MAKEFLAGS-assignment-for-upcoming-make.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.34/0003-riscv-Fix-incorrect-jal-with-HIDDEN_JUMPTARGET.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.34/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.34/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.35/
@@ -1366,6 +1436,10 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.41/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.41/0000-Add-ARC700-support.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.41/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.41/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/glibc/2.42/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.42/0000-Add-ARC700-support.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.42/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/2.42/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/glibc/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gmp/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gmp/6.1.2/
@@ -1376,23 +1450,20 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gmp/6.2.1/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gmp/6.2.1/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gmp/6.2.1/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gmp/6.3.0/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gmp/6.3.0/0000-Complete-function-prototype-in-acinclude.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gmp/6.3.0/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gmp/6.3.0/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gmp/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gnuprumcu/
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.5.0/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.5.0/0000-HACK-Fix-paths-for-crosstool-ng.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.5.0/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.5.0/version.desc
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.6.0/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.6.0/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.6.0/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.9.0/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.9.0/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.9.0/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.9.5/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.9.5/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.9.5/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.9.7/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.9.7/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/gnuprumcu/0.9.7/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/gnuprumcu/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/isl/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/isl/0.11.2/
@@ -1434,6 +1505,9 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/isl/0.25/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/isl/0.26/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/isl/0.26/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/isl/0.26/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/isl/0.27/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/isl/0.27/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/isl/0.27/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/isl/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/libelf/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/libelf/0.8.13/
@@ -1450,12 +1524,18 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/libiconv/1.15/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/libiconv/1.16/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/libiconv/1.16/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/libiconv/1.16/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/libiconv/1.18/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/libiconv/1.18/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/libiconv/1.18/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/libiconv/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/libtool/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/libtool/2.4.6/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/libtool/2.4.6/0000-2.4.5-pass-ldflags.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/libtool/2.4.6/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/libtool/2.4.6/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/libtool/2.5.4/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/libtool/2.5.4/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/libtool/2.5.4/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/libtool/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/2.6.32.71/
@@ -1487,34 +1567,34 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.1.49/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.1.49/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.10.17/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.10.17/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.10.17/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.10.17/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.11.12/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.11.12/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.11.12/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.11.12/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.12.14/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.12.14/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.12.14/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.12.14/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.13.16/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.13.16/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.13.16/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.13.16/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.14.329/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.14.329/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.14.329/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.15.18/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.15.18/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.15.18/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.15.18/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.16.18/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.16.18/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.16.18/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.16.18/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.17.19/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.17.19/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.17.19/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.17.19/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.18.20/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.18.20/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.18.20/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.19.324/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.19.324/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.19.324/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.18.20/version.desc
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.19.325/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.19.325/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.19.325/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.20.17/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.20.17/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.20.17/version.desc (EMPTY)
@@ -1526,13 +1606,13 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/4.9.335/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/4.9.335/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.0.19/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.0.19/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.0.19/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.0.19/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.1.21/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.1.21/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.1.21/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.10.233/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.10.233/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.10.233/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.1.21/version.desc
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.10.240/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.10.240/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.10.240/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.11.21/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.11.21/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.11.21/version.desc (EMPTY)
@@ -1545,9 +1625,9 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.13.14/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.14.18/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.14.18/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.14.18/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.15.177/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.15.177/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.15.177/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.15.189/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.15.189/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.15.189/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.16.20/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.16.20/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.16.20/version.desc (EMPTY)
@@ -1562,13 +1642,13 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.19.16/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.19.16/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.2.17/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.2.17/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.2.17/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.2.17/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.3.18/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.3.18/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.3.18/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.4.289/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.4.289/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.4.289/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.3.18/version.desc
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.4.296/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.4.296/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.4.296/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.5.19/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.5.19/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/5.5.19/version.desc
@@ -1584,21 +1664,30 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/5.9.16/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.0.12/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.0.12/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.0.12/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.1.127/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.1.127/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.1.127/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.1.147/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.1.147/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.1.147/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.10.14/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.10.14/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.10.14/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.11.9/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.11.9/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.11.9/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.12.11/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.12.11/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.12.11/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.13/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.13/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.13/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.11.11/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.11.11/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.11.11/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.12.41/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.12.41/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.12.41/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.13.12/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.13.12/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.13.12/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.14.11/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.14.11/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.14.11/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.15.9/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.15.9/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.15.9/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.16/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.16/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.16/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.2.16/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.2.16/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.2.16/version.desc (EMPTY)
@@ -1611,9 +1700,9 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.4.16/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.5.13/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.5.13/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.5.13/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.6.74/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.6.74/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.6.74/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.6.101/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.6.101/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.6.101/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/linux/6.7.12/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.7.12/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/linux/6.7.12/version.desc (EMPTY)
@@ -1639,22 +1728,17 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/ltrace/0.7.3/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/ltrace/0.7.3/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/ltrace/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/m4/
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/m4/1.4.19/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/m4/1.4.19/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/m4/1.4.19/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/m4/1.4.20/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/m4/1.4.20/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/m4/1.4.20/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/m4/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/make/
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/make/4.2.1/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/make/4.2.1/0000-glob-v2.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/make/4.2.1/0001-glob-v2-gl_lstat.patch
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/make/4.2.1/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/make/4.2.1/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/make/4.3/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/make/4.3/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/make/4.3/version.desc
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/make/4.4/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/make/4.4/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/make/4.4/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/make/4.4.1/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/make/4.4.1/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/make/4.4.1/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/make/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mingw-w64/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/package.desc
@@ -1664,12 +1748,18 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mingw-w64/v10.0.0/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v10.0.0/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mingw-w64/v11.0.1/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v11.0.1/0000-mingw64-malloc.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v11.0.1/0001-crt-ssp-fix-stack-smashing-protection-bootstrapping.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v11.0.1/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v11.0.1/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mingw-w64/v12.0.0/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v12.0.0/0000-mingw64-malloc.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v12.0.0/0001-crt-ssp-fix-stack-smashing-protection-bootstrapping.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v12.0.0/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v12.0.0/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mingw-w64/v13.0.0/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v13.0.0/0000-mingw64-malloc.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v13.0.0/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v13.0.0/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mingw-w64/v4.0.6/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v4.0.6/0000-mingw64-malloc.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mingw-w64/v4.0.6/0001-gendef-explicit-fallthrough.patch
@@ -1699,16 +1789,28 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mingw-w64/v9.0.0/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mold/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mold/2.31.0/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.31.0/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.31.0/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.31.0/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mold/2.32.0/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.32.0/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.32.0/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.32.0/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mold/2.33.0/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.33.0/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.33.0/version.desc (EMPTY)
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.33.0/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mold/2.36.0/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.36.0/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.36.0/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mold/2.37.1/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.37.1/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.37.1/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mold/2.38.1/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.38.1/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.38.1/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mold/2.39.1/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.39.1/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.39.1/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mold/2.40.4/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.40.4/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/2.40.4/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mold/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/moxiebox/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/moxiebox/git-9a79ac54/
@@ -1717,17 +1819,14 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/moxiebox/git-9a79ac54/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/moxiebox/sha.h
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/moxiebox/sha256_wrap.c
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mpc/
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mpc/1.2.1/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/mpc/1.2.1/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/mpc/1.2.1/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mpc/1.3.1/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mpc/1.3.1/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mpc/1.3.1/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mpc/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mpfr/
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mpfr/4.2.1/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/mpfr/4.2.1/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/mpfr/4.2.1/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/mpfr/4.2.2/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mpfr/4.2.2/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/mpfr/4.2.2/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/mpfr/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/musl/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/musl/1.1.16/
@@ -1770,6 +1869,7 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/musl/1.2.4/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/musl/1.2.4/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/musl/1.2.4/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/musl/1.2.5/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/musl/1.2.5/0001-loongarch64-add-hwcap-header.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/musl/1.2.5/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/musl/1.2.5/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/musl/package.desc
@@ -1798,11 +1898,79 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/ncurses/6.1/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.1/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/ncurses/6.2/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.2/0000-Improve-version-extraction.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.2/0001-MKlib_gen-Handle-gcc-version-containing-too.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.2/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.2/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/ncurses/6.4/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.4/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.4/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240504.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240511.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240518.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240519.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240525.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240601.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240608.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240615.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240622.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240629.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240706.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240713.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240720.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240727.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240810.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240817.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240824.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240831.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240914.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240922.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20240928.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20241006.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20241019.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20241026.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20241102.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20241109.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20241123.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20241130.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20241207.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20241214.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20241221.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20241228.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250104.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250111.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250118.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250125.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250201.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250208.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250215.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250216.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250222.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250301.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250308.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250315.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250322.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250329.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250405.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250412.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250419.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250426.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250503.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250510.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250517.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250524.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250531.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250614.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250621.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250628.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250705.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250712.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250720.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250726.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250802.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/ncurses-6.5-20250809.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/6.5/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/ncurses/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/newlib-nano/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/newlib-nano/4.2.0.20211231/
@@ -1821,6 +1989,11 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/newlib-nano/4.4.0.20231231/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib-nano/4.4.0.20231231/0000-or1k-fix-compiler-warnings.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib-nano/4.4.0.20231231/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib-nano/4.4.0.20231231/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/newlib-nano/4.5.0.20241231/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib-nano/4.5.0.20241231/0000-libgloss-rs6000-Add-missing-function-prototypes.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib-nano/4.5.0.20241231/0001-libgloss-use-expected-prototype-for-__inln.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib-nano/4.5.0.20241231/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib-nano/4.5.0.20241231/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib-nano/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/newlib/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/newlib/4.2.0.20211231/
@@ -1840,21 +2013,23 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/newlib/4.4.0.20231231/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib/4.4.0.20231231/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib/4.4.0.20231231/version.desc (EMPTY)
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/newlib/4.5.0.20241231/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib/4.5.0.20241231/0000-libgloss-rs6000-Add-missing-function-prototypes.patch
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib/4.5.0.20241231/0001-libgloss-use-expected-prototype-for-__inln.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib/4.5.0.20241231/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib/4.5.0.20241231/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/newlib/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/picolibc/
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/picolibc/1.8.8/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/picolibc/1.8.8/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/picolibc/1.8.8/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/picolibc/1.8.10/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/picolibc/1.8.10/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/picolibc/1.8.10/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/picolibc/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/strace/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/strace/6.13/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/strace/6.13/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/strace/6.13/version.desc (EMPTY)
-drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/strace/6.4/
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/strace/6.4/chksum
--rw-r--r--	root/root	usr/share/crosstool-ng/packages/strace/6.4/version.desc
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/strace/6.13/version.desc
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/strace/6.16/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/strace/6.16/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/strace/6.16/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/strace/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/uClibc-ng/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/uClibc-ng/1.0.25/
@@ -1928,6 +2103,12 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/uClibc-ng/1.0.49/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/uClibc-ng/1.0.50/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/uClibc-ng/1.0.50/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/uClibc-ng/1.0.50/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/uClibc-ng/1.0.52/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/uClibc-ng/1.0.52/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/uClibc-ng/1.0.52/version.desc (EMPTY)
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/uClibc-ng/1.0.54/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/uClibc-ng/1.0.54/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/uClibc-ng/1.0.54/version.desc (EMPTY)
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/uClibc-ng/config
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/uClibc-ng/package.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/zlib/
@@ -1949,8 +2130,12 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/zstd/1.5.5/
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/zstd/1.5.5/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/zstd/1.5.5/version.desc
 drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/zstd/1.5.6/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/zstd/1.5.6/0000-Fix-filter-and-Msys-Cygwin.patch
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/zstd/1.5.6/chksum
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/zstd/1.5.6/version.desc
+drwxr-xr-x	root/root	usr/share/crosstool-ng/packages/zstd/1.5.7/
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/zstd/1.5.7/chksum
+-rw-r--r--	root/root	usr/share/crosstool-ng/packages/zstd/1.5.7/version.desc
 -rw-r--r--	root/root	usr/share/crosstool-ng/packages/zstd/package.desc
 -rw-r--r--	root/root	usr/share/crosstool-ng/paths.sh
 drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/
@@ -2176,6 +2361,9 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/mips-unknown-linux-gnu/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/mips-unknown-linux-uclibc/
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/mips-unknown-linux-uclibc/crosstool.config
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/mips-unknown-linux-uclibc/reported.by
+drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/mips64-ol9u5-linux-gnu/
+-rw-r--r--	root/root	usr/share/crosstool-ng/samples/mips64-ol9u5-linux-gnu/crosstool.config
+-rw-r--r--	root/root	usr/share/crosstool-ng/samples/mips64-ol9u5-linux-gnu/reported.by
 drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/mips64-unknown-linux-gnu/
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/mips64-unknown-linux-gnu/crosstool.config
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/mips64-unknown-linux-gnu/reported.by
@@ -2275,6 +2463,9 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/riscv64-unknown-elf/
 drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/riscv64-unknown-linux-gnu/
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/riscv64-unknown-linux-gnu/crosstool.config
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/riscv64-unknown-linux-gnu/reported.by
+drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/rx-unknown-elf/
+-rw-r--r--	root/root	usr/share/crosstool-ng/samples/rx-unknown-elf/crosstool.config
+-rw-r--r--	root/root	usr/share/crosstool-ng/samples/rx-unknown-elf/reported.by
 drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/s390-ibm-linux-gnu/
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/s390-ibm-linux-gnu/crosstool.config
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/s390-ibm-linux-gnu/reported.by
@@ -2288,15 +2479,15 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/s390x-unknown-linux-gnu/
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/s390x-unknown-linux-gnu/crosstool.config
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/s390x-unknown-linux-gnu/reported.by
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/samples.mk
-drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/sh-multilib-linux-gnu/
--rw-r--r--	root/root	usr/share/crosstool-ng/samples/sh-multilib-linux-gnu/crosstool.config
--rw-r--r--	root/root	usr/share/crosstool-ng/samples/sh-multilib-linux-gnu/reported.by
-drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/sh-multilib-linux-uclibc/
--rw-r--r--	root/root	usr/share/crosstool-ng/samples/sh-multilib-linux-uclibc/crosstool.config
--rw-r--r--	root/root	usr/share/crosstool-ng/samples/sh-multilib-linux-uclibc/reported.by
 drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/sh-unknown-elf/
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/sh-unknown-elf/crosstool.config
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/sh-unknown-elf/reported.by
+drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/sh4-multilib-linux-gnu/
+-rw-r--r--	root/root	usr/share/crosstool-ng/samples/sh4-multilib-linux-gnu/crosstool.config
+-rw-r--r--	root/root	usr/share/crosstool-ng/samples/sh4-multilib-linux-gnu/reported.by
+drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/sh4-multilib-linux-uclibc/
+-rw-r--r--	root/root	usr/share/crosstool-ng/samples/sh4-multilib-linux-uclibc/crosstool.config
+-rw-r--r--	root/root	usr/share/crosstool-ng/samples/sh4-multilib-linux-uclibc/reported.by
 drwxr-xr-x	root/root	usr/share/crosstool-ng/samples/sparc-leon-linux-uclibc/
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/sparc-leon-linux-uclibc/crosstool.config
 -rw-r--r--	root/root	usr/share/crosstool-ng/samples/sparc-leon-linux-uclibc/reported.by
@@ -2411,6 +2602,7 @@ drwxr-xr-x	root/root	usr/share/crosstool-ng/scripts/build/arch/
 -rw-r--r--	root/root	usr/share/crosstool-ng/scripts/build/arch/powerpc.sh
 -rw-r--r--	root/root	usr/share/crosstool-ng/scripts/build/arch/pru.sh
 -rw-r--r--	root/root	usr/share/crosstool-ng/scripts/build/arch/riscv.sh
+-rw-r--r--	root/root	usr/share/crosstool-ng/scripts/build/arch/rx.sh
 -rw-r--r--	root/root	usr/share/crosstool-ng/scripts/build/arch/s390.sh
 -rw-r--r--	root/root	usr/share/crosstool-ng/scripts/build/arch/sh.sh
 -rw-r--r--	root/root	usr/share/crosstool-ng/scripts/build/arch/sparc.sh
