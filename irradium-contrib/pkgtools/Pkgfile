@@ -4,7 +4,7 @@
 # Depends on: bash
 
 name=pkgtools
-version=15.1.29
+version=15.1.30
 release=1
 source=(https://gitlab.com/sndwvs/$name/-/archive/$version/$name-$version.tar.bz2)
 

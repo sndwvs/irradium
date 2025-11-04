@@ -462,8 +462,8 @@ f:5cdcc7dea3af935216e1a35ab5f6c4b2:hostapd/config
 f:dd8a03baafdac0efcf198f4f2528c6da:hostapd/rc.hostapd
 f:ea29b259b6fda2cfaaae1e8ab1239cf0:pkgtools/post-install
 f:b24a86d34e0f72b6d2507fa891360b1f:pkgtools/.footprint
-f:c3428327906d45790be03a31c6bc46a3:pkgtools/.signature
-f:89dc3291148ba8ca76e6ebcdac565bcc:pkgtools/Pkgfile
+f:f70ebb5798f7b37523399f75558c865c:pkgtools/.signature
+f:f54045a3566a62eaf9c7dbd5a00703a2:pkgtools/Pkgfile
 f:6e8ad691030a96aa511fa5a4548d5d94:btop/Pkgfile
 f:bba18b1761e3147bd7ba2256c5818e1a:btop/.footprint
 f:ae5dd8a0754d7e24674c2f88904676a3:btop/.signature
