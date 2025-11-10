@@ -5,7 +5,7 @@
 # Optional: btrfs-progs lvm2
 
 name=udisks2
-version=2.10.2
+version=2.11.0
 release=1
 source=(https://github.com/storaged-project/udisks/releases/download/udisks-$version/udisks-$version.tar.bz2)
 
