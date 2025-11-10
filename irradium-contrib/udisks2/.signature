@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7tTHbI8QbBIhxHRKCXYs7/ENLaK9BB8XCRKDCjlMVm6dHCJKoJi3EQq9p1rr9YtsoTbeSzN0dNwpuJzdqLTZUw4=
-SHA256 (Pkgfile) = 83ced7ceb89e53307173ca8534693756925446557c4bd543f012a94f3c3cab86
-SHA256 (.footprint) = d1eae9999a5e7ee7d18d7ec0b80a617902d01131e9d811f98e1baa2868f5e51a
-SHA256 (udisks-2.10.2.tar.bz2) = 6401c715d287ec84fe605e0cb90579e8da6c395bce5f42e419f205dd297e261f
+RWTmT3d9kqan7lojp0IrY1hj8qGUhyk9krEL+uunwzjLwI05/nosLwCDrLNwgFpgMYFe6pAmfj1133o6o9/HmwsQBRk2EMqwRwk=
+SHA256 (Pkgfile) = 63d65583ba89684f6352a48741fa11bd1aec0dfa29aa01decc9c6b077ff3a468
+SHA256 (.footprint) = f52b8919475b2a269d5d5348d0f0dc58dd39865a8fa42f07225a2e55d47851d9
+SHA256 (udisks-2.11.0.tar.bz2) = 0bf30151fe8d9d2fb59b57f6630739dfbbd16417dee69ec57d43b37335bd649a
