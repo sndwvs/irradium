@@ -29,9 +29,9 @@ f:8ed2d5060dcbf7c28594023bf24461d2:mesa/patches/0007-mesa-25.2-llvm-21.patch
 f:398504a224b1fc27938c7640a255af83:mesa/patches/0008-mesa-25.2-aarch64-compile.patch
 f:30ec6ecfe9890b87c7ea4ea332fd996e:mesa/patches/37027-gallivm_support_LLVM_21.patch
 f:98b3a71a12f1a42a37f1806a20652bfc:mesa/README.md
-f:baf5feb98a70cf26834ee2508e556146:mesa/.footprint.aarch64
+f:c15b0123d144952e336285b98d8786a0:mesa/.footprint.aarch64
 f:ddca01f7f9a86933fb7ee81ab7946349:mesa/.footprint.riscv64
-f:8f2d8d3e14f9237aebbbc356feaeb0f5:mesa/.signature.aarch64
+f:ca0982dc40282f37f4d21ba997454166:mesa/.signature.aarch64
 f:900d08a8b32ff57cfdcdcaf13a268c68:mesa/.signature.riscv64
 f:e9341dde644cd9aa028157fd5f6a32b2:mesa/Pkgfile
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
