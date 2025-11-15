@@ -170,7 +170,7 @@ f:0b056dd3e5a3e1eacb7c9b38f0641e4d:dhcpcd/rc.dhcpcd
 f:b234015b73634def7fa8cbd2c8bac075:dhcpcd/dhcpcd.conf-request_ntp_server_by_default.patch
 f:1be1c29d9376024d75725b8de4905d38:dhcpcd/use-hostname_short-in-dhcpcd.conf.patch
 f:22b0bf1f472a6db254456d58e484e7e0:dhcpcd/.footprint
-f:de17716b8c7ea3275256b2ec73277ef2:dhcpcd/.signature
+f:ec19909f5980d8aa0a24e91274a07ec8:dhcpcd/.signature
 f:3c34cb519c903512a76bd6eb6c25119a:dhcpcd/Pkgfile
 f:5a1cf3e66d492a1433ac84eaffd939d3:dhcpcd/dhcpcd.conf-Don-t-invoke-wpa_supplicant-by-default.patch
 f:f13ecf368970a7561b95c77fcfff5fae:iproute2/irradium-net.iproute2.patch
