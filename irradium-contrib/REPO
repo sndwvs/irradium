@@ -88,13 +88,11 @@ d:unixodbc
 d:ada
 d:libimobiledevice-glue
 d:python3-mergedeep
-d:bonding
 d:cpufrequtils
 d:mtd-utils
 d:rnnoise
 d:rp-pppoe
 d:shntool
-d:vlan
 d:libabw
 d:libepubgen
 d:libmspub
@@ -516,11 +514,6 @@ f:359ce620548cf8b1adf8a5acf8d61485:libimobiledevice-glue/Pkgfile
 f:42328999c33902223b8ca47aa32a5c2c:python3-mergedeep/.footprint
 f:1e76735a5087374936eb7a30c596fdb7:python3-mergedeep/.signature
 f:610fee7c887449a35d41bae6e43ead13:python3-mergedeep/Pkgfile
-f:d0c45c627fe889d12a0b7ae437255d1f:bonding/rc.bonding
-f:fd594955ae82285c10df9b57f910de37:bonding/Pkgfile
-f:12e6954de221f62c16059d6ce6411847:bonding/bonding.conf
-f:ed86a62dd0e454fe6cb17a9dc7661105:bonding/.footprint
-f:a93b90d845d1fc6264673a7aee35d028:bonding/.signature
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch
@@ -551,10 +544,6 @@ f:a3aa5b817cedb4226fa32340609a5995:shntool/debian_patches_950803.patch
 f:596398b13e02b243078320ebde4743fb:shntool/debian_patches_no-cdquality-check.patch
 f:4265935ef1d684a4b49041278ffda7de:shntool/shntool-3.0.10-large-size.diff
 f:6f0d61ddbf8cbee5c0b51a99e987ddda:shntool/shntool-3.0.10-large-times.diff
-f:7b578da747b4d3033c3c7c133e138932:vlan/Pkgfile
-f:494b17ab7f02c3788d22451de24318ec:vlan/rc.vlan
-f:e5f7f057e8e13807b6d40d9b1a407131:vlan/.footprint
-f:46f62c97aa0d2d45d63920ef504989d7:vlan/.signature
 f:63dc65925299640665e0b5a885d53ae6:libabw/.footprint
 f:24b2d10a1ec0bd6c4af145db9a6a00fb:libabw/.signature
 f:af871f5c000e15590949975dab938807:libabw/Pkgfile
