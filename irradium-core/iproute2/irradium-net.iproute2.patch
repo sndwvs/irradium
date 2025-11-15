@@ -1,6 +1,6 @@
---- a/net.iproute2	2024-11-22 23:08:11.979635930 +0200
-+++ b/net.iproute2	2024-11-23 00:33:57.143486218 +0200
-@@ -1,42 +1,68 @@
+--- a/net.iproute2	2025-11-15 19:19:16.840135653 +0200
++++ b/net.iproute2	2025-11-15 19:21:46.000135724 +0200
+@@ -1,42 +1,72 @@
 -#!/bin/sh
 +#!/bin/bash
  #
@@ -29,18 +29,21 @@
 +ADDR[0]=""
 +MASK[0]=""
 +USE_DHCP[0]=""
++DHCP_HOSTNAME[0]=""
 +
 +# ipv4 config options for eth1
 +DEV[1]=""
 +ADDR[1]=""
 +MASK[1]=""
 +USE_DHCP[1]=""
++DHCP_HOSTNAME[1]=""
 +
 +# ipv4 config options for eth2
 +DEV[2]=""
 +ADDR[2]=""
 +MASK[2]=""
 +USE_DHCP[2]=""
++DHCP_HOSTNAME[2]=""
 +
 +# ipv4 default gateway ip address
 +GW=""
@@ -56,6 +59,7 @@
 -			/sbin/ip link set ${DEV} up
 +		for i in ${!DEV[@]}; do
 +			if [ "${USE_DHCP[$i]}" = "yes" ]; then
++				[ -n "${DHCP_HOSTNAME[$i]}" ] && DHCP_OPTS+=("-h" "${DHCP_HOSTNAME[$i]}")
 +				/sbin/dhcpcd ${DHCP_OPTS} ${DEV[$i]}
 +			elif [ ! -z "${DEV[$i]}" -a ! -z "${ADDR[$i]}" -a ! -z "${MASK[$i]}" ]; then
 +				/sbin/ip addr add ${ADDR[$i]}/${MASK[$i]} dev ${DEV[$i]} broadcast +
