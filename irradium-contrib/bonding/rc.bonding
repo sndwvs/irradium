@@ -57,7 +57,6 @@ case $1 in
 	start)
 		for i in ${!IFNAME[@]}; do
 			if [ -n "${IFNAME[$i]}" ]; then
-				[ -n "${DHCP_HOSTNAME[$i]}" ] && DHCP_OPTS+=("-h" "${DHCP_HOSTNAME[$i]}")
 				/sbin/ip link add name ${IFNAME[$1]} type bond
 				/sbin/ip link set dev ${IFNAME[$1]} type bond mode ${BONDMODE[$1]:-balance-rr}
 				for BONDIF in ${BONDNICS[$1]}; do
@@ -74,6 +73,7 @@ case $1 in
 				done <<<"${IFOPTS[$1]/%|*([[:blank:]])}|"	# The | on the end is required.
 
 				if [ "${USE_DHCP[$i]}" = "yes" ]; then
+					[ -n "${DHCP_HOSTNAME[$i]}" ] && DHCP_OPTS+=("-h" "${DHCP_HOSTNAME[$i]}")
 					/sbin/dhcpcd ${DHCP_OPTS} ${IFNAME[$i]}
 				elif [ ! -z "${IFNAME[$i]}" -a ! -z "${IFADDR[$i]}" ]; then
 					/sbin/ip addr add ${IFADDR[$i]} dev ${IFNAME[$i]} broadcast +
