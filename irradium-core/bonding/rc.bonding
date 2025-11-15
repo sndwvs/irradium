@@ -5,11 +5,11 @@
 
 # The rc.inet1 Slackware script is used as a basis.
 # https://ftp.slackware.com/pub/slackware/slackware-current/source/n/network-scripts/scripts/rc.inet1
-
+#
 # Warning:
 # This script must be executed before the 'vlan' and 'net' script.
 # The interface names created in this script must be specified in the 'vlan' or 'net' script.
-
+#
 # Example of how to configure a bond (link aggregation) interface.
 # Note the addition of the BONDNICS and BONDMODE parameters.
 # BONDNICS is a space delimited list of interfaces to add to this bond.  The
