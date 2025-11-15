@@ -1,0 +1,90 @@
+#!/bin/bash
+#
+# /etc/rc.d/vlan: start/stop network interface vlan
+#
+
+# Warning:
+# This script must be executed before the 'net' script.
+# The interface names created in this script must be specified in the 'net' script.
+#
+# Example of how to configure a VLAN interface:
+# The VLAN ID is taken from the full interface name, which is comprised of the
+# underlying interface name, a period (.) and then the VLAN ID.
+# IFOPTS is a pipe (|) delimited list of VLAN module specific settings to be
+# applied to the interface.  See the ip-link(8) man page (search for "VLAN Type
+# Support") for details of the options available.  This option is not required
+# for a standard VLAN to be configured.
+#IFNAME[0]="eth0.10"
+#IFOPTS[0]=""
+
+# ----------------------------------------
+
+# config options for eth0.10
+IFNAME[0]=""
+IFOPTS[0]=""
+
+# config options for eth1.10
+IFNAME[1]=""
+IFOPTS[1]=""
+
+# config options for eth2.10
+IFNAME[2]=""
+IFOPTS[2]=""
+
+# config options for eth3.10
+IFNAME[3]=""
+IFOPTS[3]=""
+
+# ----------------------------------------
+
+case $1 in
+	start)
+		for i in ${!IFNAME[@]}; do
+			# Handle VLAN interfaces before trying to configure IP addresses.
+			if echo "${IFNAME[$i]}" | grep -Fq .; then
+				IFACE="${IFNAME[$i]%.*}"
+				VLAN="${IFNAME[$i]##*.}"
+				# Check if the underlying interface is already up.
+				if ! /sbin/ip link show dev $IFACE 2>/dev/null| grep -wq "state UP"; then
+					# Bring up the underlying interface.
+					if ! /sbin/ip link set dev $IFACE up; then
+						return
+					fi
+				fi
+				# Configure the VLAN interface.
+				if ! /sbin/ip link add link $IFACE name ${IFNAME[$i]} type vlan id $VLAN; then
+					/sbin/ip link set dev $IFACE down
+					return
+				fi
+				while read -r -d \| IFOPT; do
+					if [ -n "$IFOPT" ]; then
+						/sbin/ip link set dev ${IFNAME[$i]} type vlan $IFOPT
+					fi
+				done <<<"${IFOPTS[$i]/%|*([[:blank:]])}|"	# The | on the end is required.
+			fi
+		done
+		;;
+	stop)
+		for i in ${!IFNAME[@]}; do
+			# Take down VLAN interface, if configured.
+			if echo "${IFNAME[$i]}" | grep -Fq .; then
+				/sbin/ip link set dev ${IFNAME[$i]} down
+				/sbin/ip link delete ${IFNAME[$i]}
+				if ! /sbin/ip address show scope global dev ${IFNAME[$i]%.*} 2>/dev/null | grep -Ewq '(inet|inet6)'; then
+					/sbin/ip link set dev ${IFNAME[$i]%.*} down
+				fi
+			fi
+		done
+		;;
+	restart)
+		$0 stop
+		sleep 1
+		$0 start
+		;;
+	*)
+		echo "Usage: $0 [start|stop|restart]"
+		;;
+esac
+
+# End of file
+

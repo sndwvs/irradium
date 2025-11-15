@@ -23,6 +23,7 @@ d:dhcpcd
 d:iproute2
 d:gettext
 d:m4
+d:vlan
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:6dac3988756d2be3bf51fd270d3981c2:binutils/Pkgfile
@@ -185,3 +186,7 @@ f:5e9ba1015d08fdd390d5806f8f0b4259:gettext/Pkgfile
 f:c479565d921098228dc5f2edaae01515:m4/.footprint
 f:e07f5a018c18851c1661d70fddd76c78:m4/.signature
 f:3648e7b648d148e8607277ea8d3971a8:m4/Pkgfile
+f:7b578da747b4d3033c3c7c133e138932:vlan/Pkgfile
+f:494b17ab7f02c3788d22451de24318ec:vlan/rc.vlan
+f:e5f7f057e8e13807b6d40d9b1a407131:vlan/.footprint
+f:46f62c97aa0d2d45d63920ef504989d7:vlan/.signature

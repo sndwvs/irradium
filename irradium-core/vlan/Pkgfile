@@ -1,0 +1,13 @@
+# Description: scripts for configuring vlan network interfaces
+# URL: https://en.wikipedia.org/wiki/VLAN
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: iproute2
+
+name=vlan
+version=0.1
+release=1
+source=(rc.vlan)
+
+build() {
+    install -D -m 0755 $SRC/rc.vlan $PKG/etc/rc.d/vlan
+}
