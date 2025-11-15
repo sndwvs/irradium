@@ -1,0 +1,122 @@
+#!/bin/bash
+#
+# /etc/rc.d/bonding: start/stop network interface bonding
+#
+
+DHCP_OPTS="-t 10 -b"
+
+# Example of how to configure a bond (link aggregation) interface.
+# Note the addition of the BONDNICS and BONDMODE parameters.
+# BONDNICS is a space delimited list of interfaces to add to this bond.  The
+# BONDNICS interfaces will be brought up and configured while bringing up the
+# bond interface, so do not need to be previously defined in rc.inet1.conf.
+# BONDMODE sets the bonding mode for this interface.  If not specified when
+# BONDNICS has been used, the default is 'balance-rr'.
+# IFOPTS is a pipe (|) delimited list of bonding module specific settings to be
+# applied to the interface, and should always include the 'miimon' option when
+# configuring bonding - not using this option will result in network
+# degradation.  In 'active-backup' mode, the 'primary' option should also be
+# supplied.  When using '802.3ad' mode, set "lacp_rate fast" for faster
+# recovery from an interface failure.  In other modes, the 'xmit_hash_policy'
+# should be set.  See the /usr/src/linux/Documentation/networking/bonding.txt
+# file (search for "Bonding Driver Options") for the full set of options.
+#IFNAME[0]="bond0"
+#BONDNICS[0]="eth0 eth1"
+#BONDMODE[0]="balance-rr"
+#IFOPTS[0]="xmit_hash_policy layer2+3 | miimon 100"
+#IPADDRS[0]="192.168.0.1/24"
+#USE_DHCP[0]=""
+#DHCP_HOSTNAME[0]=""
+
+# ----------------------------------------
+
+# ipv4 config options for bond0
+IFNAME[0]=""
+BONDNICS[0]=""
+BONDMODE[0]=""
+IFOPTS[0]=""
+IPADDRS[0]=""
+USE_DHCP[0]=""
+DHCP_HOSTNAME[0]=""
+
+# ipv4 config options for bond1
+IFNAME[1]=""
+BONDNICS[1]=""
+BONDMODE[1]=""
+IFOPTS[1]=""
+IPADDRS[1]=""
+USE_DHCP[1]=""
+DHCP_HOSTNAME[1]=""
+
+# ipv4 default gateway ip address
+GW=""
+
+# ----------------------------------------
+
+case $1 in
+	start)
+		for i in ${!IFNAME[@]}; do
+			if [ -n "${IFNAME[$i]}" ]; then
+				[ -n "${DHCP_HOSTNAME[$i]}" ] && DHCP_OPTS+=("-h" "${DHCP_HOSTNAME[$i]}")
+				/sbin/ip link add name ${IFNAME[$1]} type bond
+				/sbin/ip link set dev ${IFNAME[$1]} type bond mode ${BONDMODE[$1]:-balance-rr}
+				for BONDIF in ${BONDNICS[$1]}; do
+					/sbin/ip address flush dev $BONDIF
+					/sbin/ip link set $BONDIF master ${IFNAME[$1]}
+					/sbin/ip link set dev $BONDIF up
+				done
+				# This has to be done *after* the interface is brought up because the
+				# 'primary <interface>' option has to occur after the interface is active.
+				while read -r -d \| IFOPT; do
+					if [ -n "$IFOPT" ]; then
+						/sbin/ip link set dev ${IFNAME[$1]} type bond $IFOPT
+					fi
+				done <<<"${IFOPTS[$1]/%|*([[:blank:]])}|"	# The | on the end is required.
+
+				if [ "${USE_DHCP[$i]}" = "yes" ]; then
+					/sbin/dhcpcd ${DHCP_OPTS} ${IFNAME[$i]}
+				elif [ ! -z "${IFNAME[$i]}" -a ! -z "${IFADDR[$i]}" ]; then
+					/sbin/ip addr add ${IFADDR[$i]} dev ${IFNAME[$i]} broadcast +
+					/sbin/ip link set ${IFNAME[$i]} up
+				fi
+			fi
+		done
+		if [ ! -z $GW ] ; then
+			/sbin/ip route add default via ${GW}
+		fi
+		;;
+	stop)
+		if [ ! -z $GW ] ; then
+			echo /sbin/ip route del default
+		fi
+		for i in ${!IFNAME[@]}; do
+			if [ -n "${IFNAME[$i]}" ]; then
+				if [ "${USE_DHCP[$i]}" = "yes" ]; then
+					/sbin/dhcpcd -k ${IFNAME[$i]}
+				elif [ ! -z "${IFNAME[$i]}" -a ! -z "${IFADDR[$i]}" ]; then
+					/sbin/ip link set ${IFNAME[$i]} down
+					/sbin/ip addr del ${IFADDR[$i]} dev ${IFNAME[$i]}
+				fi
+
+				/sbin/ip link set dev ${IFNAME[$1]} down
+				/sbin/ip address flush dev ${IFNAME[$1]}
+				for BONDIF in ${BONDNICS[$1]}; do
+					/sbin/ip link set $BONDIF nomaster
+					/sbin/ip link set dev $BONDIF down
+				done
+				/sbin/ip link del name ${IFNAME[$1]} type bond
+			fi
+		done
+		;;
+	restart)
+		$0 stop
+		sleep 1
+		$0 start
+		;;
+	*)
+		echo "Usage: $0 [start|stop|restart]"
+		;;
+esac
+
+# End of file
+
