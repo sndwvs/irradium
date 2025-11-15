@@ -3,9 +3,12 @@
 # /etc/rc.d/vlan: start/stop network interface vlan
 #
 
+# The rc.inet1 Slackware script is used as a basis.
+# https://ftp.slackware.com/pub/slackware/slackware-current/source/n/network-scripts/scripts/rc.inet1
+#
 # Warning:
-# This script must be executed before the 'net' script.
-# The interface names created in this script must be specified in the 'net' script.
+# This script must be executed before the 'bonding' and/or 'net' script.
+# The interface names created in this script must be specified in the 'bonding' and/or 'net' script.
 #
 # Example of how to configure a VLAN interface:
 # The VLAN ID is taken from the full interface name, which is comprised of the
