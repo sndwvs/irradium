@@ -24,6 +24,7 @@ d:iproute2
 d:gettext
 d:m4
 d:vlan
+d:bonding
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:6dac3988756d2be3bf51fd270d3981c2:binutils/Pkgfile
@@ -190,3 +191,8 @@ f:7b578da747b4d3033c3c7c133e138932:vlan/Pkgfile
 f:494b17ab7f02c3788d22451de24318ec:vlan/rc.vlan
 f:e5f7f057e8e13807b6d40d9b1a407131:vlan/.footprint
 f:46f62c97aa0d2d45d63920ef504989d7:vlan/.signature
+f:e048e0225060e09a4fb22ee92f955678:bonding/rc.bonding
+f:d2d106696f26adbc8f60285c06f91283:bonding/Pkgfile
+f:12e6954de221f62c16059d6ce6411847:bonding/bonding.conf
+f:ed86a62dd0e454fe6cb17a9dc7661105:bonding/.footprint
+f:b471f47f9e49e037a9e36b17ec693e42:bonding/.signature

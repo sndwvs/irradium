@@ -1,0 +1,94 @@
+#!/bin/bash
+#
+# /etc/rc.d/bonding: start/stop network interface bonding
+#
+
+# The rc.inet1 Slackware script is used as a basis.
+# https://ftp.slackware.com/pub/slackware/slackware-current/source/n/network-scripts/scripts/rc.inet1
+
+# Warning:
+# This script must be executed before the 'vlan' and 'net' script.
+# The interface names created in this script must be specified in the 'vlan' or 'net' script.
+
+# Example of how to configure a bond (link aggregation) interface.
+# Note the addition of the BONDNICS and BONDMODE parameters.
+# BONDNICS is a space delimited list of interfaces to add to this bond.  The
+# BONDNICS interfaces will be brought up and configured while bringing up the
+# bond interface, so do not need to be previously defined in rc.inet1.conf.
+# BONDMODE sets the bonding mode for this interface.  If not specified when
+# BONDNICS has been used, the default is 'balance-rr'.
+# IFOPTS is a pipe (|) delimited list of bonding module specific settings to be
+# applied to the interface, and should always include the 'miimon' option when
+# configuring bonding - not using this option will result in network
+# degradation.  In 'active-backup' mode, the 'primary' option should also be
+# supplied.  When using '802.3ad' mode, set "lacp_rate fast" for faster
+# recovery from an interface failure.  In other modes, the 'xmit_hash_policy'
+# should be set.  See the /usr/src/linux/Documentation/networking/bonding.txt
+# file (search for "Bonding Driver Options") for the full set of options.
+#IFNAME[0]="bond0"
+#BONDNICS[0]="eth0 eth1"
+#BONDMODE[0]="balance-rr"
+#IFOPTS[0]="xmit_hash_policy layer2+3 | miimon 100"
+
+# ----------------------------------------
+
+# ipv4 config options for bond0
+IFNAME[0]=""
+BONDNICS[0]=""
+BONDMODE[0]=""
+IFOPTS[0]=""
+
+# ipv4 config options for bond1
+IFNAME[1]=""
+BONDNICS[1]=""
+BONDMODE[1]=""
+IFOPTS[1]=""
+
+# ----------------------------------------
+
+case $1 in
+	start)
+		for i in ${!IFNAME[@]}; do
+			if [ -n "${IFNAME[$i]}" ]; then
+				/sbin/ip link add name ${IFNAME[$i]} type bond
+				/sbin/ip link set dev ${IFNAME[$i]} type bond mode ${BONDMODE[$1]:-balance-rr}
+				for BONDIF in ${BONDNICS[$i]}; do
+					/sbin/ip address flush dev $BONDIF
+					/sbin/ip link set $BONDIF master ${IFNAME[$i]}
+					/sbin/ip link set dev $BONDIF up
+				done
+				# This has to be done *after* the interface is brought up because the
+				# 'primary <interface>' option has to occur after the interface is active.
+				while read -r -d \| IFOPT; do
+					if [ -n "$IFOPT" ]; then
+						/sbin/ip link set dev ${IFNAME[$i]} type bond $IFOPT
+					fi
+				done <<<"${IFOPTS[$i]/%|*([[:blank:]])}|"	# The | on the end is required.
+			fi
+		done
+		;;
+	stop)
+		for i in ${!IFNAME[@]}; do
+			if [ -n "${IFNAME[$i]}" ]; then
+				/sbin/ip link set dev ${IFNAME[$i]} down
+				/sbin/ip address flush dev ${IFNAME[$i]}
+				for BONDIF in ${BONDNICS[$i]}; do
+					/sbin/ip link set $BONDIF nomaster
+					/sbin/ip link set dev $BONDIF down
+				done
+				/sbin/ip link del name ${IFNAME[$i]} type bond
+			fi
+		done
+		;;
+	restart)
+		$0 stop
+		sleep 1
+		$0 start
+		;;
+	*)
+		echo "Usage: $0 [start|stop|restart]"
+		;;
+esac
+
+# End of file
+
