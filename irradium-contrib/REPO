@@ -397,7 +397,7 @@ f:ab13f9d99eabdf8f38b174a2673e2f9f:dhcp/config.guess
 f:2055f6f00b78921814a391b8ae222961:dhcp/config.sub
 f:2566e35b763ede563e361869b7ad6b42:dhcp/dhclient-script.PATH.diff
 f:35f7388d1085c3f798e40d56af31a3f8:dhcp/pre-install
-f:23ee3a45fcf220dbe8eacf5fa4946c84:dhcp/rc.dhcpd
+f:8d8b91e539d9b097292c20574e6d508a:dhcp/rc.dhcpd
 f:0f08bffbda4e7a438c76d14f39acfd86:acme.sh/.footprint
 f:82e8f21487afc35767fee813e3c409be:acme.sh/.signature
 f:5ceb7cc9dc3b53e8129d4ea425a46775:acme.sh/Pkgfile

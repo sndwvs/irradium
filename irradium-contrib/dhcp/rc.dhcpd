@@ -19,6 +19,7 @@ PID=/run/dhcp/dhcpd$(echo $DHCPD_OPTS | grep -oP "(?<=-)6").pid
 
 case $1 in
     start)
+        [ ! -d /run/dhcp ] && mkdir -p /run/dhcp
         $SSD --start --pidfile $PID --exec $PROG -u dhcp -g dhcp \
             -- $DHCPD_OPTS -q -pf $PID $DHCPD_IFACE
         ;;
