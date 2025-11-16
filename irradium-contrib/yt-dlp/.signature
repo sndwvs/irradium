@@ -1,5 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7pKOFPoWlQ004+eX6bR+yxOa0z1qmiqx8/nbR80wLmfNy/uzB/5JXdDeXaV7/uyLSyu8ZYGHgdaV+UYRfhw3nAI=
-SHA256 (Pkgfile) = b08d775f8c651e6193697a49d521ae96fde79e525574f9326f8138db70e3126d
-SHA256 (.footprint) = 8079ab000fded1afef5a2d04f3c725bb42b0b3fc5bb77b2651c7773dab9784f7
-SHA256 (yt-dlp-2025.10.22.tar.gz) = ef21d5427e896d46180408dc1feb0da19bf0a97876b0f10b15f6304fa496991c
+RWTmT3d9kqan7ozrvSeLd3WlKuEzqQ3xk/Ihj7DULaqz9Wg7YrK+yjoTQAr64MIVO1LNEY8FnTutHSdmVhq/7Vq3a7cX/VosrAo=
+SHA256 (Pkgfile) = 231435cbec8b0ec9d94335d5b9663ed78e57be7418224641adbc8914c1ef4b22
+SHA256 (.footprint) = d845caadf388536a4244101da2cd4c07921163727cd00fbc04c793ffd0e7dcd9
+SHA256 (yt-dlp-2025.11.12.tar.gz) = 6f5f2d716968d6c84d05d179fc1ce50ccca23706b9dbbc3c57fec97a8b9ea440
+SHA256 (allow-nodejs-by-default.patch) = 9c57e91a3478f0f94dd1fcb598855a2bee14b079f424f6bcd3e533545c5e14a7
