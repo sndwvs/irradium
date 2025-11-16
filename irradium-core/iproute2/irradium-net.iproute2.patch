@@ -1,6 +1,6 @@
---- a/net.iproute2	2025-11-15 19:19:16.840135653 +0200
-+++ b/net.iproute2	2025-11-15 19:21:46.000135724 +0200
-@@ -1,42 +1,72 @@
+--- a/net.iproute2	2025-11-16 02:02:42.704147195 +0200
++++ b/net.iproute2	2025-11-16 02:05:24.220147272 +0200
+@@ -1,42 +1,87 @@
 -#!/bin/sh
 +#!/bin/bash
  #
@@ -9,7 +9,40 @@
  
 -# Connection type: "DHCP" or "static"
 -TYPE="DHCP"
++# The rc.inet1 Slackware script is used as a basis.
++# https://ftp.slackware.com/pub/slackware/slackware64-current/source/n/network-scripts/scripts/rc.inet1
++#
++
 +DHCP_OPTS="-t 10 -b"
++
++# If USE_DHCP[interface] is set to "yes", this overrides any other settings.
++# If you don't have an interface, leave the settings null ("").
++
++# ----------------------------------------
++
++# ipv4 config options for eth0, eth0.10 or bond0
++IFNAME[0]=""
++IFADDRS[0]=""
++USE_DHCP[0]=""
++DHCP_HOSTNAME[0]=""
++
++# ipv4 config options for eth1, eth1.10 or bond1
++IFNAME[1]=""
++IFADDRS[1]=""
++USE_DHCP[1]=""
++DHCP_HOSTNAME[1]=""
++
++# ipv4 config options for eth2, eth2.10 or bond2
++IFNAME[2]=""
++IFADDRS[2]=""
++USE_DHCP[2]=""
++DHCP_HOSTNAME[2]=""
++
++# ipv4 config options for eth3, eth3.10 or bond3
++IFNAME[3]=""
++IFADDRS[3]=""
++USE_DHCP[3]=""
++DHCP_HOSTNAME[3]=""
  
 -# For "static" connections, specify your settings here:
 -# To see your available devices run "ip link".
@@ -17,37 +50,11 @@
 -ADDR=192.168.1.100
 -MASK=24
 -GW=192.168.1.1
-+# If USE_DHCP[interface] is set to "yes", this overrides any other settings.
-+# If you don't have an interface, leave the settings null ("").
++# ipv4 default gateway ip address
++GW=""
  
 -# Optional settings:
 -DHCPOPTS="-t 10"
-+# ----------------------------------------
-+
-+# ipv4 config options for eth0
-+DEV[0]=""
-+ADDR[0]=""
-+MASK[0]=""
-+USE_DHCP[0]=""
-+DHCP_HOSTNAME[0]=""
-+
-+# ipv4 config options for eth1
-+DEV[1]=""
-+ADDR[1]=""
-+MASK[1]=""
-+USE_DHCP[1]=""
-+DHCP_HOSTNAME[1]=""
-+
-+# ipv4 config options for eth2
-+DEV[2]=""
-+ADDR[2]=""
-+MASK[2]=""
-+USE_DHCP[2]=""
-+DHCP_HOSTNAME[2]=""
-+
-+# ipv4 default gateway ip address
-+GW=""
-+
 +# ----------------------------------------
  
  case $1 in
@@ -57,13 +64,17 @@
 -		else
 -			/sbin/ip addr add ${ADDR}/${MASK} dev ${DEV} broadcast +
 -			/sbin/ip link set ${DEV} up
-+		for i in ${!DEV[@]}; do
-+			if [ "${USE_DHCP[$i]}" = "yes" ]; then
-+				[ -n "${DHCP_HOSTNAME[$i]}" ] && DHCP_OPTS+=("-h" "${DHCP_HOSTNAME[$i]}")
-+				/sbin/dhcpcd ${DHCP_OPTS} ${DEV[$i]}
-+			elif [ ! -z "${DEV[$i]}" -a ! -z "${ADDR[$i]}" -a ! -z "${MASK[$i]}" ]; then
-+				/sbin/ip addr add ${ADDR[$i]}/${MASK[$i]} dev ${DEV[$i]} broadcast +
-+				/sbin/ip link set ${DEV[$i]} up
++		for i in ${!IFNAME[@]}; do
++			if [ -d /sys/class/net/${IFNAME[$i]:-"empty"} ]; then
++				IP="${IFADDRS[$i]%/*}"
++				NM="${IFADDRS[$i]#*/:-32}"
++				if [ "${USE_DHCP[$i]}" = "yes" ]; then
++					[ -n "${DHCP_HOSTNAME[$i]}" ] && DHCP_OPTS+=("-h" "${DHCP_HOSTNAME[$i]}")
++					/sbin/dhcpcd ${DHCP_OPTS} ${IFNAME[$i]}
++				elif [ ! -z "$IP" -a ! -z "$NM" ]; then
++					/sbin/ip addr add $IP/$NM dev ${IFNAME[$i]} broadcast +
++				fi
++				/sbin/ip link set ${IFNAME[$i]} up
 +			fi
 +		done
 +		if [ ! -z $GW ] ; then
@@ -74,18 +85,21 @@
 -		if [ "${TYPE}" = "DHCP" ]; then
 -			/sbin/dhcpcd -x
 -		else
--			/sbin/ip route del default
++		if [ ! -z $GW ] ; then
+ 			/sbin/ip route del default
 -			/sbin/ip link set ${DEV} down
 -			/sbin/ip addr del ${ADDR}/${MASK} dev ${DEV}
-+		if [ ! -z $GW ] ; then
-+			echo /sbin/ip route del default
  		fi
-+		for i in ${!DEV[@]}; do
-+			if [ "${USE_DHCP[$i]}" = "yes" ]; then
-+				/sbin/dhcpcd -k ${DEV[$i]}
-+			elif [ ! -z "${DEV[$i]}" -a ! -z "${ADDR[$i]}" -a ! -z "${MASK[$i]}" ]; then
-+				/sbin/ip link set ${DEV[$i]} down
-+				/sbin/ip addr del ${ADDR[$i]}/${MASK[$i]} dev ${DEV[$i]}
++		for i in ${!IFNAME[@]}; do
++			if [ -d /sys/class/net/${IFNAME[$i]:-"empty"} ]; then
++				IP="${IFADDRS[$i]%/*}"
++				NM="${IFADDRS[$i]#*/:-32}"
++				if [ "${USE_DHCP[$i]}" = "yes" ]; then
++					/sbin/dhcpcd -k ${IFNAME[$i]}
++				elif [ ! -z "$IP" -a ! -z "$NM" ]; then
++					/sbin/ip addr del $IP/$NM dev ${IFNAME[$i]}
++				fi
++				/sbin/ip link set ${IFNAME[$i]} down
 +			fi
 +		done
  		;;
