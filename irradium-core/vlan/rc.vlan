@@ -51,13 +51,13 @@ case $1 in
 				if ! /sbin/ip link show dev $IFACE 2>/dev/null| grep -wq "state UP"; then
 					# Bring up the underlying interface.
 					if ! /sbin/ip link set dev $IFACE up; then
-						return
+						continue
 					fi
 				fi
 				# Configure the VLAN interface.
 				if ! /sbin/ip link add link $IFACE name ${IFNAME[$i]} type vlan id $VLAN; then
 					/sbin/ip link set dev $IFACE down
-					return
+					continue
 				fi
 				while read -r -d \| IFOPT; do
 					if [ -n "$IFOPT" ]; then
@@ -90,4 +90,3 @@ case $1 in
 esac
 
 # End of file
-
