@@ -1,5 +1,5 @@
---- a/wpa_supplicant	2024-12-02 16:45:38.128216638 +0200
-+++ b/wpa_supplicant	2025-10-27 18:37:18.984000098 +0200
+--- a/wpa_supplicant	2025-11-16 06:09:53.040154266 +0200
++++ b/wpa_supplicant	2025-11-16 06:11:51.604154323 +0200
 @@ -1,22 +1,26 @@
 -#!/bin/sh
 +#!/bin/bash
@@ -8,7 +8,7 @@
  #
  
 -DEV=wlp3s0
-+DEV=(wlan0)
++IFNAME=(wlan0)
  
  SSD=/sbin/start-stop-daemon
  PROG=/usr/sbin/wpa_supplicant
@@ -20,15 +20,15 @@
  case $1 in
  	start)
 -		$SSD --start --pidfile $PID --exec $PROG -- $OPTS
-+		for i in ${!DEV[@]}; do
-+			PID=/run/wpa_supplicant.${DEV[$i]}.pid
-+			$SSD --start --pidfile $PID --exec $PROG -- $OPTS -P $PID -i ${DEV[$i]}
++		for i in ${!IFNAME[@]}; do
++			PID=/run/wpa_supplicant.${IFNAME[$i]}.pid
++			$SSD --start --pidfile $PID --exec $PROG -- $OPTS -P $PID -i ${IFNAME[$i]}
 +		done
  		;;
  	stop)
 -		$SSD --stop --retry 10 --pidfile $PID
-+		for i in ${!DEV[@]}; do
-+			$SSD --stop --retry 10 --pidfile /run/wpa_supplicant.${DEV[$i]}.pid
++		for i in ${!IFNAME[@]}; do
++			$SSD --stop --retry 10 --pidfile /run/wpa_supplicant.${IFNAME[$i]}.pid
 +		done
  		;;
  	restart)
