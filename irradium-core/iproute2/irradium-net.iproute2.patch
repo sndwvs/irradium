@@ -1,5 +1,5 @@
 --- a/net.iproute2	2025-11-16 02:02:42.704147195 +0200
-+++ b/net.iproute2	2025-11-16 02:05:24.220147272 +0200
++++ b/net.iproute2	2025-11-16 08:53:23.704176997 +0200
 @@ -1,42 +1,87 @@
 -#!/bin/sh
 +#!/bin/bash
@@ -17,9 +17,17 @@
 +
 +# If USE_DHCP[interface] is set to "yes", this overrides any other settings.
 +# If you don't have an interface, leave the settings null ("").
-+
+ 
+-# For "static" connections, specify your settings here:
+-# To see your available devices run "ip link".
+-DEV=enp11s0
+-ADDR=192.168.1.100
+-MASK=24
+-GW=192.168.1.1
 +# ----------------------------------------
-+
+ 
+-# Optional settings:
+-DHCPOPTS="-t 10"
 +# ipv4 config options for eth0, eth0.10 or bond0
 +IFNAME[0]=""
 +IFADDRS[0]=""
@@ -43,18 +51,10 @@
 +IFADDRS[3]=""
 +USE_DHCP[3]=""
 +DHCP_HOSTNAME[3]=""
- 
--# For "static" connections, specify your settings here:
--# To see your available devices run "ip link".
--DEV=enp11s0
--ADDR=192.168.1.100
--MASK=24
--GW=192.168.1.1
++
 +# ipv4 default gateway ip address
 +GW=""
- 
--# Optional settings:
--DHCPOPTS="-t 10"
++
 +# ----------------------------------------
  
  case $1 in
@@ -67,7 +67,7 @@
 +		for i in ${!IFNAME[@]}; do
 +			if [ -d /sys/class/net/${IFNAME[$i]:-"empty"} ]; then
 +				IP="${IFADDRS[$i]%/*}"
-+				NM="${IFADDRS[$i]#*/:-32}"
++				NM="${IFADDRS[$i]#*/}"
 +				if [ "${USE_DHCP[$i]}" = "yes" ]; then
 +					[ -n "${DHCP_HOSTNAME[$i]}" ] && DHCP_OPTS+=("-h" "${DHCP_HOSTNAME[$i]}")
 +					/sbin/dhcpcd ${DHCP_OPTS} ${IFNAME[$i]}
@@ -93,7 +93,7 @@
 +		for i in ${!IFNAME[@]}; do
 +			if [ -d /sys/class/net/${IFNAME[$i]:-"empty"} ]; then
 +				IP="${IFADDRS[$i]%/*}"
-+				NM="${IFADDRS[$i]#*/:-32}"
++				NM="${IFADDRS[$i]#*/}"
 +				if [ "${USE_DHCP[$i]}" = "yes" ]; then
 +					/sbin/dhcpcd -k ${IFNAME[$i]}
 +				elif [ ! -z "$IP" -a ! -z "$NM" ]; then
@@ -109,3 +109,8 @@
  		$0 start
  		;;
  	*)
+@@ -45,4 +90,3 @@ case $1 in
+ esac
+ 
+ # End of file
+-
