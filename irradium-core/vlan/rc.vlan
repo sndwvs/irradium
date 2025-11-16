@@ -69,12 +69,14 @@ case $1 in
 		;;
 	stop)
 		for i in ${!IFNAME[@]}; do
-			# Take down VLAN interface, if configured.
-			if echo "${IFNAME[$i]}" | grep -Fq .; then
-				/sbin/ip link set dev ${IFNAME[$i]} down
-				/sbin/ip link delete ${IFNAME[$i]}
-				if ! /sbin/ip address show scope global dev ${IFNAME[$i]%.*} 2>/dev/null | grep -Ewq '(inet|inet6)'; then
-					/sbin/ip link set dev ${IFNAME[$i]%.*} down
+			if [ -d /sys/class/net/${IFNAME[$i]:-"empty"} ]; then
+				# Take down VLAN interface, if configured.
+				if echo "${IFNAME[$i]}" | grep -Fq .; then
+					/sbin/ip link set dev ${IFNAME[$i]} down
+					/sbin/ip link delete ${IFNAME[$i]}
+					if ! /sbin/ip address show scope global dev ${IFNAME[$i]%.*} 2>/dev/null | grep -Ewq '(inet|inet6)'; then
+						/sbin/ip link set dev ${IFNAME[$i]%.*} down
+					fi
 				fi
 			fi
 		done
