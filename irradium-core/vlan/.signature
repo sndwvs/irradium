@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGBIDumRfHDGBcxaxDbaX0LkaK3K4eWJ5ykoZxBi/cchEEvQOsoDEgboGDkQ94ieMzg0R6xL7KEp2k3WCApN5PAs=
+RWQAwxvZoACtGEDxfgJicZkb3j5op5Ui+f6nUGy2Fxofz4on4c76DoM3OgwVoffpj5UHqlWp1inUu5ggs+AH7nsXdZzALhimUgE=
 SHA256 (Pkgfile) = 909ca2c06ceb13204c61abb0ced17d13fe6711a94d299fbd2d613f2dfb7a56a4
 SHA256 (.footprint) = 5a05afabb6b7e02d7f92d01f0d8ed6a48e4a6d363c9ab6c3a6f77e9ac028335b
-SHA256 (rc.vlan) = 68065baa23bd7c6982197e5a8fcd4b3d203fe196ea1298d8d9bd745f952c4e17
+SHA256 (rc.vlan) = 9a2e5da3cbc5050a2fd83e6f9253bd6ccb04745e76f8a1f69cb5ab699ab02900
