@@ -388,7 +388,8 @@ f:ced72f96c2da007380ac85f8abea898a:xcursor-justblue/.footprint
 f:25e8619a3f1240c12b86a490f6379b24:xcursor-justblue/.signature
 f:a29fbef434021fb0c09c912787c35650:yt-dlp/.footprint
 f:b86bb74fdff739fb9cac2fa9adf2f892:yt-dlp/.signature
-f:ee8407176978182903798de8e51c20cf:yt-dlp/Pkgfile
+f:97f03727cbbebf63239e311e54f1b156:yt-dlp/Pkgfile
+f:3c31ef99d9a6312cc399823676aead73:yt-dlp/allow-nodejs-by-default.patch
 f:93cad7cd88158d1560ce394d33319b52:dhcp/.footprint
 f:1e0ff50ec24f9e272937aea6ee7b9f77:dhcp/.signature
 f:7b0d77b0577f0986e89070e4f44b645b:dhcp/Pkgfile

@@ -4,12 +4,15 @@
 # Depends on: python3 python3-hatchling
 
 name=yt-dlp
-version=2025.10.22
+version=2025.11.12
 release=1
-source=(https://github.com/yt-dlp/yt-dlp/archive/$version/$name-$version.tar.gz)
+source=(https://github.com/yt-dlp/yt-dlp/archive/$version/$name-$version.tar.gz
+        allow-nodejs-by-default.patch)
 
 build() {
   cd $name-$version
+
+  patch -p1 -i $SRC/allow-nodejs-by-default.patch
 
   python3 -m build --wheel --no-isolation
 
