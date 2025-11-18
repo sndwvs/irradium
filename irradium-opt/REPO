@@ -33,7 +33,6 @@ d:nodejs
 d:shared-mime-info
 d:wpa_supplicant
 d:efibootmgr
-d:dovecot
 d:gobject-introspection
 d:grub2-efi
 d:grub2
@@ -218,17 +217,6 @@ f:11f549ffa18fbd1cd97d2b4a4f329f28:wpa_supplicant/irradium-wpa_supplicant.patch
 f:f7cfede7c801951a0ff658d78ae3d053:efibootmgr/.footprint
 f:e326336f4bc83a319d32de3fb30354a9:efibootmgr/.signature
 f:a2e9954fdf88c7872c7617f3a524cf26:efibootmgr/Pkgfile
-f:802c1e2cadcc62e325c55f2ecf1f4071:dovecot/.footprint
-f:78ec24d44b0f96cc32592c41aa2fd5ed:dovecot/.signature
-f:c134f2ad0545570b1e2eee1c9dbd4d07:dovecot/Pkgfile
-f:fce818ed71a90dda4aabb021123db5bc:dovecot/README
-f:fe965e8205ce605dc81115a70c0c7008:dovecot/configure.ac.patch
-f:6597c97f5c341ccc66547f7033552004:dovecot/dovecot-2.3.21-openssl3_fixes-1.patch
-f:714acfd9fcf697b6487b15933fb556cd:dovecot/dovecot-2.3.21-security_fix-1.patch
-f:c0b4fd3774f578cda35e3639fd4f2a0d:dovecot/dovecot-2.3.21.1-fixicu.patch
-f:b8904c04b2a51a94ddc60c6abde7489d:dovecot/dovecot.pam
-f:4830236386471950e176dc1f6531f158:dovecot/dovecot.rc
-f:b63a1ee3a1409a5e8bcd774097181e74:dovecot/pre-install
 f:6a3b37401d78735d427832419c15824c:gobject-introspection/.footprint.aarch64
 f:573d6fee048e01b3e0a10d18c9854b28:gobject-introspection/.footprint.riscv64
 f:f084746f364f164445784132cd1b98c2:gobject-introspection/.signature.aarch64
