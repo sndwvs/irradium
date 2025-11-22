@@ -650,8 +650,8 @@ f:7c9128522053af79791bcfdd55834c2a:gcc-fortran/gcc-nocheck-fixincludes.patch
 f:d999afb2c8abba1591154b6e6717e6d8:gcc-fortran/gcc-riscv-disable-multilib-support.patch
 f:74c19f45168bec431eef8ca72f028ad6:gcc-fortran/Pkgfile
 f:f9bc7137b9698dff9d7655a9ea09e124:iperf3/.footprint
-f:6eaef1398cba601216dbedfd2fffdfef:iperf3/.signature
-f:7c6fe9e91bb38131674eccef87ea2623:iperf3/Pkgfile
+f:1d30a18986b86c87651258a3aa6c6b74:iperf3/.signature
+f:04d4d0c57e7456179bd7b4830f9a9a35:iperf3/Pkgfile
 f:6d0e91bdc8991b5e8272da3b3e977808:libcue/.footprint
 f:d0b60ca189cf86c0bf632aa06f4e3112:libcue/.signature
 f:1e74b0fc686f2c1a344bc81042334367:libcue/Pkgfile

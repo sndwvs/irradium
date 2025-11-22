@@ -4,7 +4,7 @@
 # Depends on: openssl
 
 name=iperf3
-version=3.18
+version=3.20
 release=1
 source=(https://github.com/esnet/iperf/archive/$version.tar.gz)
 
