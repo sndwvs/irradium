@@ -656,9 +656,9 @@ f:6d0e91bdc8991b5e8272da3b3e977808:libcue/.footprint
 f:d0b60ca189cf86c0bf632aa06f4e3112:libcue/.signature
 f:1e74b0fc686f2c1a344bc81042334367:libcue/Pkgfile
 f:e1a5569bb7e8a9a4c08d6303034a1b2e:logrotate/.footprint
-f:2f22737488cdc80d357811197d7c4c36:logrotate/.signature
-f:cc3d57d34842d57ad038bfef0d2f39a0:logrotate/Pkgfile
-f:7bea0663634285e39b7f71be60ea0e84:logrotate/logrotate.conf
+f:e1a7786ebb4130042b6a4d2387e4e7bd:logrotate/.signature
+f:4d67126dc925bf7e10e3ff6f99181439:logrotate/Pkgfile
+f:be11113bcb44c86f9bdb49f4d77f9a99:logrotate/logrotate.conf
 f:91d8cf0598961982365ca010d375c42f:logrotate/logrotate.cron
 f:8bd53362580841969d457f488d75cf51:mkdocs/.footprint
 f:7d222f12f84c064edc7b757cef3b536d:mkdocs/.signature
