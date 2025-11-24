@@ -425,8 +425,8 @@ f:544b10b0536b8a329e8e9deea702714f:ntp/ntp.logrotate
 f:4a9598f50ab4ac9b693a37b2750c1c26:ntp/ntp.no.openssl.noise.patch
 f:6e43231687a41272a913911994909469:ntp/pre-install
 f:1bba21fa121fd3e00f8ba272b6abda5a:ntp/rc.ntpd
-f:56a954370c460dfec3a079e1a98241e1:ntp/.footprint
-f:169aceeeadaf6a61967bec6848211860:ntp/.signature
+f:3de4e21c996d665b2926b4f901bfab47:ntp/.footprint
+f:8554d321cd98d1454de13da82ea31a9b:ntp/.signature
 f:106cce3dde891ef58ce45195da88dcee:ntp/Pkgfile
 f:4a3b1c6d05147d5b141ade4b947f09d1:glmark2/.footprint
 f:1bca2a75f4b401372397cbc7ac84adbd:glmark2/.signature
