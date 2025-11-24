@@ -436,7 +436,7 @@ f:43d5a35ffd5968ae8ada966053c1d438:tinc/rc.tincd
 f:f8bc94d205b4ec78c8915b74688a74f5:tinc/tincd.logrotate
 f:d414206d1533f78f00f29d43acb5626a:tinc/.footprint
 f:9300bebee5f341331d6e0202e0b16663:tinc/.signature
-f:5b8cbd84843d20a340cc119d502e404f:tinc/Pkgfile
+f:8701f04883e2152623242cd21a6f26b5:tinc/Pkgfile
 f:45dc1a87d057d29c1bc30d2f85895016:rxvt-unicode/.footprint
 f:744b5ae0d596b7f545953900eb9f0f50:rxvt-unicode/perl.5.38.patch
 f:700b75f444046de0ea90043dec62b91a:rxvt-unicode/rxvt-unicode-256color.desktop
