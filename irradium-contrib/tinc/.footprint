@@ -1,6 +1,6 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/logrotate.d/
--rw-rw-rw-	root/root	etc/logrotate.d/tincd.conf
+-rw-------	root/root	etc/logrotate.d/tincd.conf
 drwxr-xr-x	root/root	etc/rc.d/
 -rwxr-xr-x	root/root	etc/rc.d/tincd
 drwxr-xr-x	root/root	etc/tinc/
