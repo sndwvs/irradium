@@ -4,13 +4,17 @@
 # Depends on: git go
 
 name=consul
-version=1.20.2
+version=1.22.0
 release=1
 source=(https://github.com/hashicorp/consul/archive/refs/tags/v$version.tar.gz
         rc.consul
         example.json)
 
 build() {
+  export GOCACHE="${GOCACHE:-"$SRC/go-cache"}"
+  export GOTMPDIR="${GOTMPDIR:-"$SRC"}"
+  export GOMODCACHE="${GOMODCACHE:-"$SRC/go"}"
+
   cd $name-$version
 
   mkdir -p build
