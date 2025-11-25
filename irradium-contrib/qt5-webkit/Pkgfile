@@ -6,7 +6,7 @@
 name=qt5-webkit
 _qtver=5.212.0-alpha4
 version=5.212.0alpha4
-release=4
+release=5
 source=(https://github.com/annulen/webkit/releases/download/qtwebkit-$_qtver/qtwebkit-$_qtver.tar.xz
         glib-2.68.patch
         icu68.patch
@@ -46,8 +46,9 @@ build() {
         -DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
         -DPORT=Qt \
         -DQt5_DIR=$QTDIR \
+        -DUSE_LD_GOLD=OFF \
         -DENABLE_TOOLS=OFF \
-        -Wno-dev 
+        -Wno-dev
     cmake --build build
     DESTDIR=$PKG cmake --install build
 }
