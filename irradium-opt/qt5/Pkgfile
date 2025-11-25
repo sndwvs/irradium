@@ -8,13 +8,13 @@ name=qt5
 version=5.15.18
 release=1
 source=(https://download.qt.io/archive/qt/5.15/$version/single/qt-everywhere-opensource-src-$version.tar.xz
-	#qt-everywhere-opensource-src-$version-kf5-1.patch
 	qtbase-5.15.8-fix-missing-qtsan-include.patch
 	qt5-cflags.patch
 	qt5-logo.png
 	qtbase-everywhere-src-5.14.2-no_relocatable.patch
 	qtbase-everywhere-src-5.15.2-libglvnd.patch
-	qtbase-use-wayland-on-gnome.patch)
+	qtbase-use-wayland-on-gnome.patch
+	35d566724c48180c9a372c2ed50a253871a51574.patch)
 
 build() {
 	if [[ ! -e /usr/include/xkbcommon/xkbcommon-x11.h ]]; then
@@ -25,12 +25,13 @@ build() {
 
 	cd qt-everywhere-src-$version
 
-	#patch -p1 -i $SRC/qt-everywhere-opensource-src-$version-kf5-1.patch
 	patch -d qtbase -p1 -i $SRC/qt5-cflags.patch
 	patch -d qtbase -p1 -i $SRC/qtbase-everywhere-src-5.14.2-no_relocatable.patch
 	patch -d qtbase -p1 -i $SRC/qtbase-everywhere-src-5.15.2-libglvnd.patch
 	patch -d qtbase -p1 -i $SRC/qtbase-use-wayland-on-gnome.patch
 	patch -d qtbase -p1 -i $SRC/qtbase-5.15.8-fix-missing-qtsan-include.patch
+	# fix build with icu 78.1
+	patch -d qtlocation/src/3rdparty/mapbox-gl-native -p1 -i $SRC/35d566724c48180c9a372c2ed50a253871a51574.patch
 
 	export PYTHON='/usr/bin/python3'
 	mkdir $SRC/bin
@@ -74,8 +75,8 @@ build() {
 		-headerdir /usr/include/qt5 \
 		-libdir /usr/lib \
 		-sysconfdir /etc/xdg \
-		QMAKE_CFLAGS_RELEASE="$CFLAGS -std=c++17" \
-		QMAKE_CXXFLAGS_RELEASE="$CXXFLAGS -std=c++17" \
+		QMAKE_CFLAGS_RELEASE="$CFLAGS" \
+		QMAKE_CXXFLAGS_RELEASE="$CXXFLAGS" \
 		QMAKE_LFLAGS_RELEASE="${LDFLAGS}" \
 		-confirm-license \
 		-opensource \

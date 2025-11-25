@@ -124,8 +124,8 @@ f:6a01be298cb7504c63818e7c7a1ec263:qt5/.signature.riscv64
 f:e9f8ce96b05106e22dae0a9b9dbe6cef:qt5/qt5-quick3d-assimp-5.1.patch
 f:85830af03653fb85620ba5ce05656ab0:qt5/.footprint.aarch64
 f:ca4afb44ecc4796ced25f3e917c5ae31:qt5/.signature.aarch64
-f:ad3185cc9a2fa6b4dcc8598922d0c6dd:qt5/Pkgfile
-f:ce4f3cb4a30f88136b1d3d1bcef40448:qt5/qt5-webengine-icu-75.patch
+f:76717cbecc33cde0f73b3bd2cc5359b5:qt5/Pkgfile
+f:2616e44a7b8a04ce7947efdc031dd6fb:qt5/35d566724c48180c9a372c2ed50a253871a51574.patch
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
 f:291d2a724f5651bb7507d53da4b1da87:qt6-base/.footprint
