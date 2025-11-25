@@ -5,19 +5,13 @@
 # Optional: assimp bluez cups double-conversion gtk3 ibus icu krb5 libinput libsdl2 mariadb mtdev openal pulseaudio unixodbc vulkan-headers wayland-protocols xkeyboard-config
 
 name=qt5
-version=5.15.17
+version=5.15.18
 release=1
 source=(https://download.qt.io/archive/qt/5.15/$version/single/qt-everywhere-opensource-src-$version.tar.xz
-	qt-everywhere-opensource-src-$version-kf5-1.patch
+	#qt-everywhere-opensource-src-$version-kf5-1.patch
 	qtbase-5.15.8-fix-missing-qtsan-include.patch
 	qt5-cflags.patch
 	qt5-logo.png
-	qt5-quick3d-assimp-5.1.patch
-	d8054f1efa0b97b291a6f8c7fff9090b0fd4328e.patch
-	5a07e1967dcc925d9def47accadae991436b9686.patch
-	0d9987b43e695f5202c5d69a5e42ab70a678b04f.patch
-	35d566724c48180c9a372c2ed50a253871a51574.patch
-	qtlocation-fix-rapidjson-build.patch
 	qtbase-everywhere-src-5.14.2-no_relocatable.patch
 	qtbase-everywhere-src-5.15.2-libglvnd.patch
 	qtbase-use-wayland-on-gnome.patch)
@@ -31,16 +25,12 @@ build() {
 
 	cd qt-everywhere-src-$version
 
-	patch -p1 -i $SRC/qt-everywhere-opensource-src-$version-kf5-1.patch
+	#patch -p1 -i $SRC/qt-everywhere-opensource-src-$version-kf5-1.patch
 	patch -d qtbase -p1 -i $SRC/qt5-cflags.patch
 	patch -d qtbase -p1 -i $SRC/qtbase-everywhere-src-5.14.2-no_relocatable.patch
 	patch -d qtbase -p1 -i $SRC/qtbase-everywhere-src-5.15.2-libglvnd.patch
 	patch -d qtbase -p1 -i $SRC/qtbase-use-wayland-on-gnome.patch
 	patch -d qtbase -p1 -i $SRC/qtbase-5.15.8-fix-missing-qtsan-include.patch
-	patch -d qtlocation -p1 -i $SRC/qtlocation-fix-rapidjson-build.patch
-	patch -d qtlocation/src/3rdparty/mapbox-gl-native -p1 -i $SRC/d8054f1efa0b97b291a6f8c7fff9090b0fd4328e.patch
-	patch -d qtlocation/src/3rdparty/mapbox-gl-native -p1 -i $SRC/5a07e1967dcc925d9def47accadae991436b9686.patch
-	patch -d qtlocation/src/3rdparty/mapbox-gl-native -p1 -i $SRC/35d566724c48180c9a372c2ed50a253871a51574.patch
 
 	export PYTHON='/usr/bin/python3'
 	mkdir $SRC/bin
@@ -60,14 +50,6 @@ build() {
 
 	#prt-get isinst clang && PKGMK_QT5+=' -platform linux-clang'
 	#prt-get isinst clang lld && PKGMK_QT5+=' -linker lld' || PKGMK_QT5+=' -linker gold'
-
-	# Set linker to use:
-	if [ $(uname -m) != "riscv64" ]; then
-		# Upstream default:
-		LINKER=gold
-	else
-		LINKER=bfd
-	fi
 
 	sed -i '/utility/a #include <limits>'     qtbase/src/corelib/global/qglobal.h
 	sed -i '/string/a #include <limits>'      qtbase/src/corelib/global/qfloat16.h
@@ -92,9 +74,9 @@ build() {
 		-headerdir /usr/include/qt5 \
 		-libdir /usr/lib \
 		-sysconfdir /etc/xdg \
-		QMAKE_CFLAGS_RELEASE="$CFLAGS" \
-		QMAKE_CXXFLAGS_RELEASE="$CXXFLAGS" \
-		QMAKE_LFLAGS_RELEASE="${LDFLAGS} -fuse-ld=$LINKER" \
+		QMAKE_CFLAGS_RELEASE="$CFLAGS -Wno-enum-constexpr-conversion" \
+		QMAKE_CXXFLAGS_RELEASE="$CXXFLAGS -Wno-enum-constexpr-conversion" \
+		QMAKE_LFLAGS_RELEASE="${LDFLAGS}" \
 		-confirm-license \
 		-opensource \
 		-release \
@@ -112,6 +94,7 @@ build() {
 		-no-rpath \
 		-no-strip \
 		-no-reduce-relocations \
+		-no-use-gold-linker \
 		-no-feature-relocatable \
 		-no-pch \
 		-skip qtwebengine \
