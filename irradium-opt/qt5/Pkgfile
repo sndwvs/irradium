@@ -74,8 +74,8 @@ build() {
 		-headerdir /usr/include/qt5 \
 		-libdir /usr/lib \
 		-sysconfdir /etc/xdg \
-		QMAKE_CFLAGS_RELEASE="$CFLAGS -Wno-enum-constexpr-conversion" \
-		QMAKE_CXXFLAGS_RELEASE="$CXXFLAGS -Wno-enum-constexpr-conversion" \
+		QMAKE_CFLAGS_RELEASE="$CFLAGS -std=c++17" \
+		QMAKE_CXXFLAGS_RELEASE="$CXXFLAGS -std=c++17" \
 		QMAKE_LFLAGS_RELEASE="${LDFLAGS}" \
 		-confirm-license \
 		-opensource \
