@@ -12,7 +12,8 @@ source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$versio
   fix-target-detection.patch
   node-stdout-nonblocking-wrapper
   01-rust-lto-thin.patch
-  02-riscv64-no-lto.patch)
+  02-riscv64-no-lto.patch
+  fix-icu-78.1-LineBreaker.patch)
 
 build() {
   chmod a+x "$SRC"/node-stdout-nonblocking-wrapper
