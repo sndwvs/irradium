@@ -6,13 +6,14 @@
 
 name=firefox
 version=145.0
-release=1
+release=2
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   fix-target-detection.patch
   node-stdout-nonblocking-wrapper
   01-rust-lto-thin.patch
-  02-riscv64-no-lto.patch)
+  02-riscv64-no-lto.patch
+  mozilla-bmo1862601.patch)
 
 build() {
   chmod a+x "$SRC"/node-stdout-nonblocking-wrapper
