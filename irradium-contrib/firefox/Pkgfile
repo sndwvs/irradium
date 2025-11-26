@@ -5,15 +5,14 @@
 # Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland
 
 name=firefox
-version=145.0
-release=2
+version=145.0.2
+release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   fix-target-detection.patch
   node-stdout-nonblocking-wrapper
   01-rust-lto-thin.patch
-  02-riscv64-no-lto.patch
-  fix-icu-78.1-LineBreaker.patch)
+  02-riscv64-no-lto.patch)
 
 build() {
   chmod a+x "$SRC"/node-stdout-nonblocking-wrapper
@@ -34,7 +33,7 @@ build() {
   export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
 
   export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none
-  export MOZBUILD_STATE_PATH=${PWD}/mozbuild
+  export MOZBUILD_STATE_PATH="$PWD"/mozbuild
 
   cat > .mozconfig << EOF
   export NODEJS="$SRC/node-stdout-nonblocking-wrapper"
@@ -125,7 +124,7 @@ EOF
 
   if prt-get isinst clang lld >/dev/null; then
       echo 'ac_add_options --enable-linker=lld' >> .mozconfig
-      export LDFLAGS+=",--thinlto-jobs=$((JOBS / 2))"
+      export LDFLAGS+=",--thinlto-jobs=$((${JOBS-2} / 2))"
       export CC=clang CXX=clang++
   else
       echo 'ac_add_options --enable-linker=bfd' >> .mozconfig
