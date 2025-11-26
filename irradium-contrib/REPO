@@ -169,6 +169,7 @@ f:c5716166dc3207c34e27d55c6907991a:elogind/login-10-elogind.conf.manpage.fix.pat
 f:ce8226895c981265c806fe855308406d:firefox/README
 f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
+f:b94f6f9501e21a4686309bc7756ef280:firefox/fix-icu-78.1-LineBreaker.patch
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
@@ -176,8 +177,7 @@ f:5541e0d6e02a74426852511a3f41f572:firefox/.footprint.riscv64
 f:65e862a68ea6249bf98dd4824dc58ae0:firefox/.footprint.aarch64
 f:a9da109e598d60ac56b67edf6ea1daf9:firefox/.signature.aarch64
 f:53d224397a641e3bd096b97fc2eee963:firefox/.signature.riscv64
-f:2330d5f54893e46f6afdacf6d7737531:firefox/Pkgfile
-f:c12bb757458d0190caaab02c817358e4:firefox/mozilla-bmo1862601.patch
+f:c2d0627d0e8caa90517e434cca31dacc:firefox/Pkgfile
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
 f:f27fa622f17d099ba1bc08c4061acda6:freerdp/1ef7b9e3.patch

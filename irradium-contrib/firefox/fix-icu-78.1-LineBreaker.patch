@@ -1,0 +1,11 @@
+--- a/intl/lwbrk/LineBreaker.cpp	2025-11-06 22:07:23.000000000 +0000
++++ b/intl/lwbrk/LineBreaker.cpp	2025-11-26 08:16:40.505933000 +0000
+@@ -448,7 +448,7 @@ static int8_t GetClass(uint32_t u, LineB
+       /* REGIONAL_INDICATOR = 39,           [RI] */ CLASS_CHARACTER,
+       /* E_BASE = 40,                       [EB] */ CLASS_BREAKABLE,
+       /* E_MODIFIER = 41,                   [EM] */ CLASS_CHARACTER,
+-      /* ZWJ = 42,                          [ZWJ]*/ CLASS_CHARACTER,
++      /* ZWJ = 42,                          [ZWJ]*/ CLASS_CHARACTER,,CLASS_CHARACTER,CLASS_CHARACTER,CLASS_CHARACTER,CLASS_CHARACTER,CLASS_CHARACTER,CLASS_CHARACTER
+       /* AKSARA = 43,                       [AK] */ CLASS_CHARACTER,
+       /* AKSARA_PREBASE = 44,               [AP] */ CLASS_CHARACTER,
+       /* AKSARA_START = 45,                 [AS] */ CLASS_CHARACTER,
