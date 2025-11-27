@@ -154,7 +154,7 @@ f:d39452dd1bc4f0605584e435c6677723:rc/rc.patch
 f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
 f:be5b8a1e3dd2272113e854ed0f155c47:bash/profile
 f:cf443b43826ea1ffb0abf92b5123297a:bash/profile.patch
-f:2f8f75a616023a2b80eb7cb666e38bbe:bash/.signature
+f:17b8a445f80af45fbf1298f5364f88eb:bash/.signature
 f:b2a5b389371df5dccec486896f2c1be9:bash/Pkgfile
 f:1bd23ba0326c0479c2c1af6a3c19daf2:bash/bash-5.3.8.patch.gz
 f:4e1e8a61db6c9a19f9398eb1073d41e2:dcron/.footprint
