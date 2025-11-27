@@ -1,0 +1,20 @@
+# Description: simple qt feed reader
+# URL: https://github.com/martinrotter/rssguard
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: qt6-base qt6-tools qt6-declarative qt6-multimedia sqlite
+
+name=rssguard
+version=4.8.6
+release=1
+source=(https://github.com/martinrotter/rssguard/archive/refs/tags/$version.tar.gz)
+
+build() {
+    cmake -S $name-$version -B build -G Ninja \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DNO_LITE=OFF \
+        -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+        -DCMAKE_C_FLAGS="$CFLAGS"
+    cmake --build build
+    DESTDIR=$PKG cmake --install build
+}
