@@ -5,7 +5,7 @@
 # Optional: python3-sphinx
 
 name=cmake
-version=3.31.9
+version=3.31.10
 release=1
 source=(https://cmake.org/files/v${version%.*}/$name-$version.tar.gz)
 
@@ -21,7 +21,7 @@ build() {
         export LDFLAGS="-latomic"
     fi
 
-    CONFIG_SHELL=/bin/bash ./bootstrap --generator=Ninja $PKGMK_CMAKE \
+    ./bootstrap --generator=Ninja $PKGMK_CMAKE \
         --prefix=/usr \
         --datadir=/share/cmake \
         --bootstrap-system-libuv \
