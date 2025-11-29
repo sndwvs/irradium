@@ -131,6 +131,7 @@ d:logrotate
 d:mkdocs
 d:python3-hatch-nodejs-version
 d:python3-pymdown-extensions
+d:zabbix-frontend
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -726,3 +727,7 @@ f:deb2d2e5ff0682ba89096c3688a3c0d6:python3-hatch-nodejs-version/Pkgfile
 f:e824f5082adf33ab1ed45ce8c9da5c22:python3-pymdown-extensions/.footprint
 f:e2274e04dc583008906d51a64e7d9c2a:python3-pymdown-extensions/.signature
 f:5afdfaa1ab55f03ccb50050088023249:python3-pymdown-extensions/Pkgfile
+f:7692140721b5a9009423ecdda58a6a5d:zabbix-frontend/Pkgfile
+f:fc9164f41c8cc7c42a1100f58a98c7af:zabbix-frontend/apache.conf
+f:0ee2f5810be9fb1173f4166e8af42527:zabbix-frontend/.footprint
+f:a3602082ffb16fb6c50bab1327007829:zabbix-frontend/.signature

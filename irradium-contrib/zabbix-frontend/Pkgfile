@@ -1,0 +1,20 @@
+# Description: zabbix web-interface
+# URL: https://www.zabbix.com
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: zabbix-server apache openssl php php-fpm php-gd
+
+name=zabbix-frontend
+version=7.4.5
+release=1
+source=(https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-$version.tar.gz
+        apache.conf)
+
+build() {
+  cd ${name%-*}-$version
+
+  install -D -m644 $SRC/apache.conf \
+    $PKG/etc/httpd/extra/zabbix.conf
+
+  mkdir -p "$PKG"/usr/share/zabbix/
+  cp -a ui "$PKG"/usr/share/zabbix/
+}

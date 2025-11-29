@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7vlXyqaQFud+i2uZqyNrs/8rg5sUJtGnWuRdTu+WWEm/ZfSImAqqxHMQWSKxmYpKoPoiON9cf62YDyEYRIy3vQ4=
+SHA256 (Pkgfile) = cc3053d4374eab85b8c00ca10866ccee1c797ee21c00c31a6fcff5496996de05
+SHA256 (.footprint) = 701334bb7298f2b94140e13f9d0ebce34ffcff89f636a41afcd64ad9d4940633
+SHA256 (zabbix-7.4.5.tar.gz) = 3eae4bc712f530b2df6624cba03ce23e29b2a11aefac0b6d4c27a64d425fdfc8
+SHA256 (apache.conf) = 3fe88931a4717e7f1d1c7108a50d71db4901fa169ac90610b1a2908aabd5eb9f
