@@ -6,6 +6,6 @@
   delaycompress
   sharedscripts
   postrotate
-    /etc/rc.d/zabbix_agentd restart
+    /etc/rc.d/zabbix-agentd restart
   endscript
 }
