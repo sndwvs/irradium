@@ -1,0 +1,46 @@
+# Description: zabbix network monitoring agent
+# URL: https://www.zabbix.com
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: libxml2 autoconf automake curl libevent libssh2 openssl pcre2
+
+name=zabbix-utils
+version=7.4.5
+release=1
+source=(https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-$version.tar.gz)
+
+build() {
+  cd ${name%-*}-$version
+
+  export CFLAGS+=" -D_LARGEFILE64_SOURCE"
+
+  # pass --export-dynamic to the linker
+  # to make zabbix loadable modules work
+  export LDFLAGS+=" -Wl,--export-dynamic"
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc/zabbix \
+    --mandir=/usr/share/man \
+    --infodir=/usr/share/info \
+    --disable-agent2 \
+    --enable-agent \
+    --disable-proxy \
+    --disable-server \
+    --enable-ipv6 \
+    --with-net-snmp \
+    --with-libcurl \
+    --with-libxml2 \
+    --with-openipmi \
+    --with-unixodbc \
+    --with-ssh2 \
+    --with-openssl \
+    --with-libpcre2
+
+  make
+  #make DESTDIR=$PKG install
+
+  install -D -m0755 \
+    src/zabbix_get/zabbix_get \
+    src/zabbix_sender/zabbix_sender \
+    -t "$PKG"/usr/bin
+}
