@@ -113,6 +113,7 @@ d:iozone
 d:iptraf-ng
 d:libutempter
 d:nmon
+d:zabbix_agentd
 d:mkdocs-material
 d:python3-backrefs
 d:python3-mdx-truly-sane-lists
@@ -518,13 +519,13 @@ f:359ce620548cf8b1adf8a5acf8d61485:libimobiledevice-glue/Pkgfile
 f:42328999c33902223b8ca47aa32a5c2c:python3-mergedeep/.footprint
 f:1e76735a5087374936eb7a30c596fdb7:python3-mergedeep/.signature
 f:610fee7c887449a35d41bae6e43ead13:python3-mergedeep/Pkgfile
-f:ec6a1ca97aa9933386446c63a045cbe8:zabbix_agent2/Pkgfile
 f:a057f5c2bce545176e8810c28b363de9:zabbix_agent2/zabbix_agent2.conf.patch
 f:309287bb44a16bf458026013eb248bd4:zabbix_agent2/rc.zabbix_agent2
 f:90348a1de323e2265fe8073b766e6fdd:zabbix_agent2/zabbix_agent2.logrotate
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix_agent2/pre-install
 f:7ba8dc9ee010ec2fec61344eb986e753:zabbix_agent2/.footprint
-f:197c2579efe6039c3ef2ec182f288ab1:zabbix_agent2/.signature
+f:df18595e8682539e71012304bf5b657e:zabbix_agent2/.signature
+f:356991ce78b3d430290c8f74cf9706c8:zabbix_agent2/Pkgfile
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch
@@ -638,6 +639,13 @@ f:adaee3d78879d7ea3b8875ce5b929d39:nmon/.footprint
 f:879a0be4a751104f6157069cbf3f11d0:nmon/.signature
 f:01fa573c86a3862e0e2f999e4b6c685c:nmon/Pkgfile
 f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
+f:7ba8dc9ee010ec2fec61344eb986e753:zabbix_agentd/.footprint
+f:d86c4675ff16ae154fb56ec8921c108b:zabbix_agentd/Pkgfile
+f:000f16fee0fb4077dd2c110d28c646b8:zabbix_agentd/pre-install
+f:197c2579efe6039c3ef2ec182f288ab1:zabbix_agentd/.signature
+f:0521320138ad97e4b15f12b054c82188:zabbix_agentd/rc.zabbix_agentd
+f:bc4f9c335e32d8b35999cca2a1a07e58:zabbix_agentd/zabbix_agentd.logrotate
+f:d3525bb2b5f44f17eba35c1fca61d85e:zabbix_agentd/APKBUILD
 f:5f61c0fc1fca46b0fbfc08c7b02c69d9:mkdocs-material/.footprint
 f:16670713f59f816521b5b2dd4e019c1e:mkdocs-material/.signature
 f:3b5b4c32ccadb967eaac89a231fbe531:mkdocs-material/Pkgfile

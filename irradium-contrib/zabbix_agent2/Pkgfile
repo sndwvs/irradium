@@ -22,12 +22,6 @@ build() {
 
   patch -p1 -i $SRC/zabbix_agent2.conf.patch
 
-  # Fix config file locations
-  sed -i conf/zabbix_agentd.conf \
-      -e 's|SNMPTrapperFile=/tmp|SNMPTrapperFile=/var/log/zabbix|' \
-      -e 's|PidFile=/tmp|PidFile=/run/zabbix|' \
-      -e 's|LogFile=/tmp|LogFile=/var/log/zabbix|'
-
   export CFLAGS+=" -D_LARGEFILE64_SOURCE"
 
   # pass --export-dynamic to the linker
