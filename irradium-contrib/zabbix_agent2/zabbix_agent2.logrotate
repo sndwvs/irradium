@@ -1,0 +1,11 @@
+/var/log/zabbix/zabbix_agent2.log {
+  rotate 10
+  notifempty
+  size=5M
+  compress
+  delaycompress
+  sharedscripts
+  postrotate
+    /etc/rc.d/zabbix_agent2 restart
+  endscript
+}

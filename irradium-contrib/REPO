@@ -88,6 +88,7 @@ d:unixodbc
 d:ada
 d:libimobiledevice-glue
 d:python3-mergedeep
+d:zabbix_agent2
 d:cpufrequtils
 d:mtd-utils
 d:rnnoise
@@ -517,6 +518,13 @@ f:359ce620548cf8b1adf8a5acf8d61485:libimobiledevice-glue/Pkgfile
 f:42328999c33902223b8ca47aa32a5c2c:python3-mergedeep/.footprint
 f:1e76735a5087374936eb7a30c596fdb7:python3-mergedeep/.signature
 f:610fee7c887449a35d41bae6e43ead13:python3-mergedeep/Pkgfile
+f:ec6a1ca97aa9933386446c63a045cbe8:zabbix_agent2/Pkgfile
+f:a057f5c2bce545176e8810c28b363de9:zabbix_agent2/zabbix_agent2.conf.patch
+f:309287bb44a16bf458026013eb248bd4:zabbix_agent2/rc.zabbix_agent2
+f:90348a1de323e2265fe8073b766e6fdd:zabbix_agent2/zabbix_agent2.logrotate
+f:000f16fee0fb4077dd2c110d28c646b8:zabbix_agent2/pre-install
+f:7ba8dc9ee010ec2fec61344eb986e753:zabbix_agent2/.footprint
+f:197c2579efe6039c3ef2ec182f288ab1:zabbix_agent2/.signature
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch

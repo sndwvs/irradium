@@ -1,0 +1,8 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7o5vkXaej6r0XNjcg5nFmAffD0OfH3xKWILJFQGW9j+CzIEySZYcWXtQASMIi/hH35bHPcLILfe4vdN5IGUQtgE=
+SHA256 (Pkgfile) = 685df22483b116ed48badbeeef8b96b142ad954429a6ccfe12196cac05b1bd62
+SHA256 (.footprint) = 4a7bfa0017ae11ac921e6d38260289a308abdfb28e9a9797268d2dca37050c66
+SHA256 (zabbix-7.4.5.tar.gz) = 3eae4bc712f530b2df6624cba03ce23e29b2a11aefac0b6d4c27a64d425fdfc8
+SHA256 (rc.zabbix_agent2) = 58df55ab050099c95a0f9a2ad5ce8acd3750978a84ec5135ab72679b84f8006c
+SHA256 (zabbix_agent2.logrotate) = 4584342feaacfdd6fe91d381e360ffdc9defe223ab7866966fe7e15e5911eeeb
+SHA256 (zabbix_agent2.conf.patch) = 90f8eb382571a262ce786ce23b2eafc953dc51c87143dda2037e2c7e341ca905
