@@ -111,9 +111,9 @@ d:audacious
 d:cava
 d:iozone
 d:iptraf-ng
+d:zabbix-agentd
 d:libutempter
 d:nmon
-d:zabbix_agentd
 d:mkdocs-material
 d:python3-backrefs
 d:python3-mdx-truly-sane-lists
@@ -632,6 +632,12 @@ f:140883be494b876db58f18e30acaadf2:iozone/Pkgfile
 f:6af1adf0df27f4a4024633a823c2f45c:iptraf-ng/.footprint
 f:3b39d000c9a3bc753625396f2540419d:iptraf-ng/.signature
 f:2190317ade7c835d7f8ec924360c7439:iptraf-ng/Pkgfile
+f:63ec6c01822ad41655beeb128f056018:zabbix-agentd/Pkgfile
+f:000f16fee0fb4077dd2c110d28c646b8:zabbix-agentd/pre-install
+f:bc4f9c335e32d8b35999cca2a1a07e58:zabbix-agentd/zabbix_agentd.logrotate
+f:fd2a73fcf6ddc5b15a71a10d87408869:zabbix-agentd/.footprint
+f:84557a96f0614c5ddd38e17ea385af13:zabbix-agentd/.signature
+f:eb4b64dcb0a3ca96d4693e38c6ea272a:zabbix-agentd/rc.zabbix-agentd
 f:727845b8b33e9d115ffded2fb54c4e53:libutempter/.footprint
 f:25c5b1dad8516f04ff73044f5d76aac5:libutempter/.signature
 f:9bd0087bcc6d655a972b1a666d8d486b:libutempter/Pkgfile
@@ -640,12 +646,6 @@ f:adaee3d78879d7ea3b8875ce5b929d39:nmon/.footprint
 f:879a0be4a751104f6157069cbf3f11d0:nmon/.signature
 f:01fa573c86a3862e0e2f999e4b6c685c:nmon/Pkgfile
 f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
-f:e485fa83d0958bcae673a45781d48b8b:zabbix_agentd/Pkgfile
-f:000f16fee0fb4077dd2c110d28c646b8:zabbix_agentd/pre-install
-f:bfdd48587b542b54a88c1c0d780fa97b:zabbix_agentd/rc.zabbix_agentd
-f:bc4f9c335e32d8b35999cca2a1a07e58:zabbix_agentd/zabbix_agentd.logrotate
-f:accd049eb00c98e061a07b3aec9ed200:zabbix_agentd/.footprint
-f:edd12ba928c47b1cf1cb262dfd2bba2a:zabbix_agentd/.signature
 f:5f61c0fc1fca46b0fbfc08c7b02c69d9:mkdocs-material/.footprint
 f:16670713f59f816521b5b2dd4e019c1e:mkdocs-material/.signature
 f:3b5b4c32ccadb967eaac89a231fbe531:mkdocs-material/Pkgfile

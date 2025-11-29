@@ -3,15 +3,15 @@
 # Maintainer: mara, mara at fail dot pp dot ua
 # Depends on: libxml2 autoconf automake curl libevent libssh2 openssl pcre2
 
-name=zabbix_agentd
+name=zabbix-agentd
 version=7.4.5
 release=1
 source=(https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-$version.tar.gz
-        rc.zabbix_agentd
+        rc.zabbix-agentd
         zabbix_agentd.logrotate)
 
 build() {
-  cd ${name%_*}-$version
+  cd ${name%-*}-$version
 
   # Fix config file locations
   sed -i conf/zabbix_agentd.conf \
@@ -64,6 +64,6 @@ build() {
   install -D -m600 $SRC/zabbix_agentd.logrotate \
     $PKG/etc/logrotate.d/zabbix_agentd.conf
 
-  install -D -m755 $SRC/rc.zabbix_agentd \
-    $PKG/etc/rc.d/zabbix_agentd
+  install -D -m755 $SRC/rc.zabbix-agentd \
+    $PKG/etc/rc.d/zabbix-agentd
 }
