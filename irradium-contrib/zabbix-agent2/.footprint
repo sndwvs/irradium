@@ -2,7 +2,7 @@ drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/logrotate.d/
 -rw-------	root/root	etc/logrotate.d/zabbix_agent2.conf
 drwxr-xr-x	root/root	etc/rc.d/
--rwxr-xr-x	root/root	etc/rc.d/zabbix_agent2
+-rwxr-xr-x	root/root	etc/rc.d/zabbix-agent2
 drwxr-xr-x	root/root	etc/zabbix/
 -rw-r--r--	root/root	etc/zabbix/zabbix_agent2.conf
 drwxr-xr-x	root/root	etc/zabbix/zabbix_agent2.d/

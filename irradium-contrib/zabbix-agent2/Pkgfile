@@ -3,11 +3,11 @@
 # Maintainer: mara, mara at fail dot pp dot ua
 # Depends on: libxml2 autoconf automake curl go libevent libssh2 openssl pcre2
 
-name=zabbix_agent2
+name=zabbix-agent2
 version=7.4.5
 release=6
 source=(https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-$version.tar.gz
-        rc.zabbix_agent2
+        rc.zabbix-agent2
         zabbix_agent2.logrotate
         zabbix_agent2.conf.patch)
 
@@ -18,7 +18,7 @@ build() {
   export GOPATH="$SRC/zabbix-$version"
   export GOFLAGS="$GOFLAGS -modcacherw"
 
-  cd ${name%_*}-$version
+  cd ${name%-*}-$version
 
   patch -p1 -i $SRC/zabbix_agent2.conf.patch
 
@@ -68,6 +68,6 @@ build() {
   install -D -m600 $SRC/zabbix_agent2.logrotate \
     $PKG/etc/logrotate.d/zabbix_agent2.conf
 
-  install -D -m755 $SRC/rc.zabbix_agent2 \
-    $PKG/etc/rc.d/zabbix_agent2
+  install -D -m755 $SRC/rc.zabbix-agent2 \
+    $PKG/etc/rc.d/zabbix-agent2
 }

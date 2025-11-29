@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# /etc/rc.d/zabbix_agent2: start/stop zabbix agent version 2
+# /etc/rc.d/zabbix-agent2: start/stop zabbix agent version 2
 #
 
 SSD=/sbin/start-stop-daemon
 PROG=/usr/sbin/zabbix_agent2
 PID=/run/zabbix/zabbix_agent2.pid
-OPTS=""
+OPTS=" -f "
 
 case $1 in
     start)

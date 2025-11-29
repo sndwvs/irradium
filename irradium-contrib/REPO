@@ -65,6 +65,7 @@ d:dhcp
 d:acme.sh
 d:sshpass
 d:python3-pyelftools
+d:zabbix-agent2
 d:gspell
 d:mkinitramfs
 d:ntp
@@ -88,7 +89,6 @@ d:unixodbc
 d:ada
 d:libimobiledevice-glue
 d:python3-mergedeep
-d:zabbix_agent2
 d:cpufrequtils
 d:mtd-utils
 d:rnnoise
@@ -412,6 +412,13 @@ f:e878e7386df273a8d1e31f006a07bd77:sshpass/Pkgfile
 f:ba60765494299d5fc275df5fdd2c9888:python3-pyelftools/.footprint
 f:68121d34227bd00a94502e39d53a0159:python3-pyelftools/.signature
 f:9044efa6d0c35c5411dc49600d17b407:python3-pyelftools/Pkgfile
+f:a057f5c2bce545176e8810c28b363de9:zabbix-agent2/zabbix_agent2.conf.patch
+f:90348a1de323e2265fe8073b766e6fdd:zabbix-agent2/zabbix_agent2.logrotate
+f:000f16fee0fb4077dd2c110d28c646b8:zabbix-agent2/pre-install
+f:06687e96334e9bbe44c1f908a6338912:zabbix-agent2/.footprint
+f:49f8e60d9dd44fa25aa99b3db9e2b344:zabbix-agent2/.signature
+f:5c5f00a8ec98487375f70330736b5727:zabbix-agent2/Pkgfile
+f:21a4ffd451b77e0646659bd59fc81744:zabbix-agent2/rc.zabbix-agent2
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:c8f811ef2dddfcb8c540a79eeb3094aa:gspell/.footprint
 f:e2fa9558884c770209d7e582eb2cb0fc:gspell/.signature
@@ -520,13 +527,6 @@ f:359ce620548cf8b1adf8a5acf8d61485:libimobiledevice-glue/Pkgfile
 f:42328999c33902223b8ca47aa32a5c2c:python3-mergedeep/.footprint
 f:1e76735a5087374936eb7a30c596fdb7:python3-mergedeep/.signature
 f:610fee7c887449a35d41bae6e43ead13:python3-mergedeep/Pkgfile
-f:a057f5c2bce545176e8810c28b363de9:zabbix_agent2/zabbix_agent2.conf.patch
-f:309287bb44a16bf458026013eb248bd4:zabbix_agent2/rc.zabbix_agent2
-f:90348a1de323e2265fe8073b766e6fdd:zabbix_agent2/zabbix_agent2.logrotate
-f:000f16fee0fb4077dd2c110d28c646b8:zabbix_agent2/pre-install
-f:7ba8dc9ee010ec2fec61344eb986e753:zabbix_agent2/.footprint
-f:df18595e8682539e71012304bf5b657e:zabbix_agent2/.signature
-f:356991ce78b3d430290c8f74cf9706c8:zabbix_agent2/Pkgfile
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch
