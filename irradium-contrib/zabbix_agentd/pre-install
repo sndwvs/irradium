@@ -1,0 +1,10 @@
+#!/bin/sh
+
+_ZABBIXUID=228
+_ZABBIXGID=228
+_ZABBIXUSER="zabbix"
+_ZABBIXGROUP="zabbix"
+
+getent group ${_ZABBIXGROUP} || /usr/sbin/groupadd -g ${_ZABBIXGID} ${_ZABBIXGROUP}
+getent passwd ${_ZABBIXUSER} || /usr/sbin/useradd -r -u ${_ZABBIXUID} -d /dev/null -s /bin/false -G ${_ZABBIXGROUP} -g ${_ZABBIXGID} ${_ZABBIXUSER}
+/usr/bin/passwd -l ${_ZABBIXUSER}
