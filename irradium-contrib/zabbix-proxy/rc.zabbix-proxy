@@ -1,0 +1,36 @@
+#!/bin/sh
+#
+# /etc/rc.d/zabbix-proxy: start/stop zabbix proxy
+#
+
+SSD=/sbin/start-stop-daemon
+PROG=/usr/sbin/zabbix_proxy
+PID=/run/zabbix/zabbix_proxy.pid
+OPTS=" -f "
+
+case $1 in
+    start)
+        $SSD --start -b --exec $PROG -- $OPTS
+        ;;
+    stop)
+        $SSD --stop -u zabbix -g zabbix --retry 10 --pidfile $PID
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+    status)
+        $SSD --status --pidfile $PID
+        case $? in
+        0) echo "$PROG is running with pid $(cat $PID)" ;;
+        1) echo "$PROG is not running but the pid file $PID exists" ;;
+        3) echo "$PROG is not running" ;;
+        4) echo "Unable to determine the program status" ;;
+        esac
+        ;;
+    *)
+        echo "Usage: $0 [start|stop|restart|status]"
+        ;;
+esac
+
+# End of file

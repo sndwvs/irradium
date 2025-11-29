@@ -75,6 +75,7 @@ d:rxvt-unicode
 d:rkdeveloptool
 d:tg_owt
 d:hostapd
+d:openipmi
 d:pkgtools
 d:btop
 d:crosstool-ng
@@ -89,6 +90,7 @@ d:unixodbc
 d:ada
 d:libimobiledevice-glue
 d:python3-mergedeep
+d:zabbix-server
 d:cpufrequtils
 d:mtd-utils
 d:rnnoise
@@ -107,6 +109,7 @@ d:openjdk21-jdk
 d:directx-shader-compiler
 d:rbdoom-3-bfg
 d:python3-pyyaml-env-tag
+d:zabbix-proxy
 d:audacious
 d:cava
 d:iozone
@@ -114,6 +117,7 @@ d:iptraf-ng
 d:zabbix-agentd
 d:libutempter
 d:nmon
+d:net-snmp
 d:mkdocs-material
 d:python3-backrefs
 d:python3-mdx-truly-sane-lists
@@ -413,7 +417,7 @@ f:ba60765494299d5fc275df5fdd2c9888:python3-pyelftools/.footprint
 f:68121d34227bd00a94502e39d53a0159:python3-pyelftools/.signature
 f:9044efa6d0c35c5411dc49600d17b407:python3-pyelftools/Pkgfile
 f:a057f5c2bce545176e8810c28b363de9:zabbix-agent2/zabbix_agent2.conf.patch
-f:90348a1de323e2265fe8073b766e6fdd:zabbix-agent2/zabbix_agent2.logrotate
+f:5c53327412e28c3a029e386d47825953:zabbix-agent2/zabbix_agent2.logrotate
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-agent2/pre-install
 f:06687e96334e9bbe44c1f908a6338912:zabbix-agent2/.footprint
 f:49f8e60d9dd44fa25aa99b3db9e2b344:zabbix-agent2/.signature
@@ -473,6 +477,9 @@ f:9fc18c8eab771033b956b4a6c881beb4:hostapd/0001-hostapd-Add-the-missing-CONFIG_S
 f:94a2900808c2507fe87e224217eebb8f:hostapd/Pkgfile
 f:5cdcc7dea3af935216e1a35ab5f6c4b2:hostapd/config
 f:dd8a03baafdac0efcf198f4f2528c6da:hostapd/rc.hostapd
+f:0076af8fa1df0bd99f4ad410fe4c7199:openipmi/Pkgfile
+f:2c46b5111d2a8d3b4449dea1882e3e05:openipmi/.footprint
+f:da59a8d7ffc5a8a5db09387252c80d38:openipmi/.signature
 f:ea29b259b6fda2cfaaae1e8ab1239cf0:pkgtools/post-install
 f:b24a86d34e0f72b6d2507fa891360b1f:pkgtools/.footprint
 f:f70ebb5798f7b37523399f75558c865c:pkgtools/.signature
@@ -527,6 +534,13 @@ f:359ce620548cf8b1adf8a5acf8d61485:libimobiledevice-glue/Pkgfile
 f:42328999c33902223b8ca47aa32a5c2c:python3-mergedeep/.footprint
 f:1e76735a5087374936eb7a30c596fdb7:python3-mergedeep/.signature
 f:610fee7c887449a35d41bae6e43ead13:python3-mergedeep/Pkgfile
+f:213e96e2b560590611cd5f3c663b12d9:zabbix-server/Pkgfile
+f:000f16fee0fb4077dd2c110d28c646b8:zabbix-server/pre-install
+f:2d1f5bb40b0d5553d66c92007622c407:zabbix-server/rc.zabbix-server
+f:94c320d0056d7973e21891cbbdde431b:zabbix-server/zabbix_server.logrotate
+f:6c4de850edb9046f69ad57d7413da725:zabbix-server/zabbix_server.conf.patch
+f:faa9e4dfb74365d2d59d15065f5a82a1:zabbix-server/.footprint
+f:8e75f49b0993fd6288976a38ebe982b3:zabbix-server/.signature
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch
@@ -619,6 +633,12 @@ f:86455bb86d4267b447bd882dbde35231:rbdoom-3-bfg/rbdoom-3-bfg.png
 f:b388f48be231e7ce29536a22fbc8f378:python3-pyyaml-env-tag/.footprint
 f:7b694173628dbc5fdde89d50d120d9c1:python3-pyyaml-env-tag/.signature
 f:a3dbc5698088ce944be909d82d67bfd1:python3-pyyaml-env-tag/Pkgfile
+f:000f16fee0fb4077dd2c110d28c646b8:zabbix-proxy/pre-install
+f:cbed50b2ddb380b481bdf06cdc2c04f3:zabbix-proxy/Pkgfile
+f:18ccb0b20ee232a89fb6ecb41772d4d4:zabbix-proxy/rc.zabbix-proxy
+f:04276a7482d2bd18ba3d0473531717c7:zabbix-proxy/zabbix_proxy.logrotate
+f:e70080cf360016d747a6a04ff337f3e0:zabbix-proxy/.footprint
+f:a3cd86d5c97e998606fdb1fd6eeca510:zabbix-proxy/.signature
 f:8dfa1cc62e495510c542a6b3b8751c83:audacious/.footprint
 f:cca42a21584d2e7a49baa60bb486c5d2:audacious/post-install
 f:775313e0f95a537aa05acb5c5e678767:audacious/.signature
@@ -634,7 +654,7 @@ f:3b39d000c9a3bc753625396f2540419d:iptraf-ng/.signature
 f:2190317ade7c835d7f8ec924360c7439:iptraf-ng/Pkgfile
 f:63ec6c01822ad41655beeb128f056018:zabbix-agentd/Pkgfile
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-agentd/pre-install
-f:bc4f9c335e32d8b35999cca2a1a07e58:zabbix-agentd/zabbix_agentd.logrotate
+f:5c8161eec17c15d479f61a927fbecbb3:zabbix-agentd/zabbix_agentd.logrotate
 f:fd2a73fcf6ddc5b15a71a10d87408869:zabbix-agentd/.footprint
 f:84557a96f0614c5ddd38e17ea385af13:zabbix-agentd/.signature
 f:eb4b64dcb0a3ca96d4693e38c6ea272a:zabbix-agentd/rc.zabbix-agentd
@@ -646,6 +666,19 @@ f:adaee3d78879d7ea3b8875ce5b929d39:nmon/.footprint
 f:879a0be4a751104f6157069cbf3f11d0:nmon/.signature
 f:01fa573c86a3862e0e2f999e4b6c685c:nmon/Pkgfile
 f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
+f:7119c2ca7adff6ba9f354b0f808bd54b:net-snmp/rc.snmpd
+f:d67274250f9419b16aab397874371bb9:net-snmp/snmpd.default
+f:4dcf7301d40144fe4c5a47c408b4baa1:net-snmp/785.patch
+f:bdcc0d5b927cd79e02307aec9e420e6e:net-snmp/Pkgfile
+f:b1ece64f617b0e6122944d0b1e24002f:net-snmp/net-snmp-5.7.2-cert-path.patch
+f:39f925962239687cc8ff919ff776a4a8:net-snmp/net-snmp-5.7.3-iterator-fix.patch
+f:3d844da010e967272baed7fc7bf1806e:net-snmp/net-snmp-5.8-Remove-U64-typedef.patch
+f:eeb75b542d87026c0c77285c86cafe99:net-snmp/net-snmp-5.8-modern-rpm-api.patch
+f:9bd8916435941776413fd8413683cf0a:net-snmp/net-snmp-5.8-multilib.patch
+f:ef2b068ad9ad0cbc63ca3d2c4a6fb669:net-snmp/snmpd.conf
+f:6f4c927ddc9bf6ef1aa764d6232d8ef3:net-snmp/snmpd.logrotate
+f:b16c49ec90e262c2535bffd305d6d158:net-snmp/.footprint
+f:a567ac190b5ea3240901ab4ed4dc9038:net-snmp/.signature
 f:5f61c0fc1fca46b0fbfc08c7b02c69d9:mkdocs-material/.footprint
 f:16670713f59f816521b5b2dd4e019c1e:mkdocs-material/.signature
 f:3b5b4c32ccadb967eaac89a231fbe531:mkdocs-material/Pkgfile
