@@ -1,0 +1,74 @@
+# Description: zabbix server with postgersql database support
+# URL: https://www.zabbix.com
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: libxml2 postgresql unixodbc openldap autoconf automake curl libevent libssh2 openssl pcre2 net-snmp openipmi
+
+name=zabbix-server
+version=7.4.5
+release=1
+source=(https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-$version.tar.gz
+        rc.zabbix-server
+        zabbix_server.logrotate
+        zabbix_server.conf.patch)
+
+build() {
+  cd ${name%-*}-$version
+
+  patch -p1 -i $SRC/zabbix_server.conf.patch
+
+  # Fix config file locations
+  sed -i conf/zabbix_server.conf \
+      -e 's|SNMPTrapperFile=/tmp|SNMPTrapperFile=/var/log/zabbix|' \
+      -e 's|PidFile=/tmp|PidFile=/run/zabbix|' \
+      -e 's|LogFile=/tmp|LogFile=/var/log/zabbix|'
+
+  export CFLAGS+=" -D_LARGEFILE64_SOURCE"
+
+  # pass --export-dynamic to the linker
+  # to make zabbix loadable modules work
+  export LDFLAGS+=" -Wl,--export-dynamic"
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc/zabbix \
+    --mandir=/usr/share/man \
+    --infodir=/usr/share/info \
+    --disable-agent2 \
+    --disable-agent \
+    --disable-proxy \
+    --enable-server \
+    --enable-ipv6 \
+    --with-postgresql \
+    --with-ldap \
+    --with-net-snmp \
+    --with-libcurl \
+    --with-libxml2 \
+    --with-openipmi \
+    --with-unixodbc \
+    --with-ssh2 \
+    --with-openssl \
+    --with-libpcre2
+
+  make
+  make DESTDIR=$PKG install
+
+
+  install -D -m644 man/zabbix_server.man \
+    "$PKG"/usr/share/man/man8/zabbix_server.8
+
+  install -d -m0750 -o zabbix -g zabbix \
+    "$PKG"/run/zabbix "$PKG"/var/log/zabbix
+
+  install -D -m0644 conf/zabbix_server.conf \
+    "$PKG"/etc/zabbix/zabbix_server.conf
+
+  install -D -m600 $SRC/zabbix_server.logrotate \
+    $PKG/etc/logrotate.d/zabbix_server.conf
+
+  install -D -m755 $SRC/rc.zabbix-server \
+    $PKG/etc/rc.d/zabbix-server
+
+  mkdir -p "$PKG"/usr/share/zabbix
+  cp -r database "$PKG"/usr/share/zabbix/
+  find "$PKG"/usr/share/zabbix -name 'Makefile*' -delete
+}
