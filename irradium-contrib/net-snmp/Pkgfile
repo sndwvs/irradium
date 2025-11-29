@@ -1,0 +1,70 @@
+# Description: simple network management protocol
+# URL: http://www.net-snmp.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: openssl perl
+
+name=net-snmp
+version=5.9.4
+release=1
+source=(https://downloads.sourceforge.net/net-snmp/net-snmp-$version.tar.gz
+        rc.snmpd
+        snmpd.logrotate
+        snmpd.conf
+        snmpd.default
+        net-snmp-5.8-multilib.patch
+        net-snmp-5.7.2-cert-path.patch
+        net-snmp-5.8-Remove-U64-typedef.patch
+        net-snmp-5.7.3-iterator-fix.patch
+        net-snmp-5.8-modern-rpm-api.patch
+        785.patch)
+
+build() {
+  cd $name-$version
+
+  # fix compilation for aarch64, riscv64
+  unset CFLAGS
+  unset LDFLAGS
+
+  patch -p1 -i $SRC/net-snmp-5.8-multilib.patch
+  patch -p1 -i $SRC/net-snmp-5.7.2-cert-path.patch
+  patch -p1 -i $SRC/net-snmp-5.8-Remove-U64-typedef.patch
+  patch -p1 -i $SRC/net-snmp-5.7.3-iterator-fix.patch
+  patch -p1 -i $SRC/net-snmp-5.8-modern-rpm-api.patch
+  # Patch for Linux 6.7+ kernel (also works with older kernels):
+  patch -p1 -i $SRC/785.patch
+
+  ./configure \
+    --prefix=/usr \
+    --libdir=/usr/lib \
+    --sysconfdir=/etc/snmp \
+    --mandir=/usr/share/man \
+    --enable-ipv6 \
+    --disable-debugging \
+    --enable-static=no \
+    --with-perl-modules \
+    --with-default-snmp-version=3 \
+    --with-sys-contact="root@example.org" \
+    --with-sys-location="unknown" \
+    --with-logfile="/var/log/snmpd.log" \
+    --with-persistent-directory="/var/lib/net-snmp" \
+    --without-rpm \
+    --program-suffix= \
+    --program-prefix= \
+    --enable-ucd-snmp-compatibility \
+    --with-python-modules
+
+  make INSTALLDIRS=vendor
+  make install INSTALLDIRS=vendor DESTDIR=$PKG
+
+  install -D -m644 $SRC/snmpd.conf \
+    $PKG/etc/snmp/snmpd.conf
+
+  install -D -m644 $SRC/snmpd.default \
+    $PKG/etc/default/snmpd
+
+  install -D -m600 $SRC/snmpd.logrotate \
+    $PKG/etc/logrotate.d/snmpd.conf
+
+  install -D -m755 $SRC/rc.snmpd \
+    $PKG/etc/rc.d/snmpd
+}

@@ -1,0 +1,15 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7kgAdwF+c9G8R/j6oybmDTJBsMBzpxccT+zUUgLWm3CL7n1MC4IUTuImLK8SApvZVNuCCJRgj9WBjuRIQpkedQk=
+SHA256 (Pkgfile) = 2284d0d114bd4535f4b1b84da41776c75b6e46744481f7d52aa7431ea92ebdd7
+SHA256 (.footprint) = 864b98ab43f5922b0cf5ff5f11b666f461848c9703fdb889024a9854e597fb2a
+SHA256 (net-snmp-5.9.4.tar.gz) = 8b4de01391e74e3c7014beb43961a2d6d6fa03acc34280b9585f4930745b0544
+SHA256 (rc.snmpd) = 09a04e4b7c0e5f8f445507ff3ce585a569a07dbce3089fa44c9ebcc9e83757bc
+SHA256 (snmpd.logrotate) = 96110f6c3877787bbce05e987ea32f9cacb3bfec58134eb02e1e513523ac091b
+SHA256 (snmpd.conf) = 4190f8de03c2a4c6ae59433b906645b72db0a5e146c58c61ac9f241f14e1dbf1
+SHA256 (snmpd.default) = 67def91a74d823450d7f217cdc16ed3044d4de5ca3c5298385e7e922aa66ba7d
+SHA256 (net-snmp-5.8-multilib.patch) = 633a409571db263f603f27608eae60e72f0d96486b5854a3bd2c912c35384158
+SHA256 (net-snmp-5.7.2-cert-path.patch) = 859e52bc82d12751f3011d81ad0a39a63eda900e9e4476a7dd56a38092487b3b
+SHA256 (net-snmp-5.8-Remove-U64-typedef.patch) = eda714447a11a4327ca587545b3a77cb83312b09f7c639a6e2a9356af1fef970
+SHA256 (net-snmp-5.7.3-iterator-fix.patch) = a1db585a4973d7caaafd68aba8a2497727a86c8c0279f0f6126be2e66a54faa6
+SHA256 (net-snmp-5.8-modern-rpm-api.patch) = f66766c2db2c682b6ce4b020b34246ca70ee3d5fec3393d13312216cde042b2b
+SHA256 (785.patch) = 35471c1c5a7df3740ca3d2fd8b87d77c5eaf446c873da6e1be2f96f2f72f397a
