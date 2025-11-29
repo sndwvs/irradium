@@ -1,0 +1,149 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/ipmi/
+-rw-------	root/root	etc/ipmi/ipmisim1.emu
+-rw-------	root/root	etc/ipmi/lan.conf
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/ipmi_sim
+-rwxr-xr-x	root/root	usr/bin/ipmi_ui
+lrwxrwxrwx	root/root	usr/bin/ipmicmd -> openipmicmd
+-rwxr-xr-x	root/root	usr/bin/ipmilan
+lrwxrwxrwx	root/root	usr/bin/ipmish -> openipmish
+-rwxr-xr-x	root/root	usr/bin/openipmi_eventd
+-rwxr-xr-x	root/root	usr/bin/openipmicmd
+-rwxr-xr-x	root/root	usr/bin/openipmish
+-rwxr-xr-x	root/root	usr/bin/rmcp_ping
+-rwxr-xr-x	root/root	usr/bin/sdrcomp
+-rwxr-xr-x	root/root	usr/bin/solterm
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/OpenIPMI/
+-rw-r--r--	root/root	usr/include/OpenIPMI/deprecator.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/dllvisibility.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/extcmd.h
+drwxr-xr-x	root/root	usr/include/OpenIPMI/internal/
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ilist.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_control.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_domain.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_entity.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_event.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_fru.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_int.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_locks.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_malloc.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_mc.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_oem.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_sel.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_sensor.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/ipmi_utils.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/locked_list.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/md2.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/md5.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/opq.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/internal/winsock_compat.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmbserv.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_addr.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_auth.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_bits.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_cmdlang.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_conn.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_debug.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_err.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_fru.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_glib.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_lan.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_lanparm.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_log.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_mc.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_msgbits.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_pef.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_pet.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_picmg.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_posix.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_sdr.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_smi.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_sol.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_solparm.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_string.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_tcl.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_types.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_ui.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmi_user.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/ipmiif.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/lanserv.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/lanserv_dllvisibility.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/mcserv.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/msg.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/mxp.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/os_handler.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/persist.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/selector.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/serserv.h
+-rw-r--r--	root/root	usr/include/OpenIPMI/serv.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libIPMIlanserv.la
+lrwxrwxrwx	root/root	usr/lib/libIPMIlanserv.so -> libIPMIlanserv.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libIPMIlanserv.so.0 -> libIPMIlanserv.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libIPMIlanserv.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMI.la
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMI.so -> libOpenIPMI.so.0.0.5
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMI.so.0 -> libOpenIPMI.so.0.0.5
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMI.so.0.0.5
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMIcmdlang.la
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMIcmdlang.so -> libOpenIPMIcmdlang.so.0.0.5
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMIcmdlang.so.0 -> libOpenIPMIcmdlang.so.0.0.5
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMIcmdlang.so.0.0.5
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMIglib.la
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMIglib.so -> libOpenIPMIglib.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMIglib.so.0 -> libOpenIPMIglib.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMIglib.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMIposix.la
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMIposix.so -> libOpenIPMIposix.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMIposix.so.0 -> libOpenIPMIposix.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMIposix.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMIpthread.la
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMIpthread.so -> libOpenIPMIpthread.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMIpthread.so.0 -> libOpenIPMIpthread.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMIpthread.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMIui.la
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMIui.so -> libOpenIPMIui.so.1.0.1
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMIui.so.1 -> libOpenIPMIui.so.1.0.1
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMIui.so.1.0.1
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMIutils.la
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMIutils.so -> libOpenIPMIutils.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libOpenIPMIutils.so.0 -> libOpenIPMIutils.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libOpenIPMIutils.so.0.0.1
+drwxr-xr-x	root/root	usr/lib/perl5/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.40/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.40/linux-thread-multi/
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.40/linux-thread-multi/OpenIPMI.pm
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.40/linux-thread-multi/auto/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.40/linux-thread-multi/auto/OpenIPMI/
+-rwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.40/linux-thread-multi/auto/OpenIPMI/OpenIPMI.so
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/OpenIPMI.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/OpenIPMIcmdlang.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/OpenIPMIglib.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/OpenIPMIposix.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/OpenIPMIpthread.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/OpenIPMIui.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/OpenIPMIutils.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/ipmi_sim.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/ipmi_ui.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/openipmi_eventd.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/openipmicmd.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/openipmigui.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/openipmish.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/rmcp_ping.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/solterm.1.gz
+drwxr-xr-x	root/root	usr/share/man/man5/
+-rw-r--r--	root/root	usr/share/man/man5/ipmi_lan.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/ipmi_sim_cmd.5.gz
+drwxr-xr-x	root/root	usr/share/man/man7/
+-rw-r--r--	root/root	usr/share/man/man7/ipmi_cmdlang.7.gz
+-rw-r--r--	root/root	usr/share/man/man7/openipmi_conparms.7.gz
+drwxr-xr-x	root/root	usr/share/man/man8/
+-rw-r--r--	root/root	usr/share/man/man8/ipmilan.8.gz

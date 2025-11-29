@@ -1,0 +1,26 @@
+# Description: ipmi (intelligent platform management interface) library and tools
+# URL: https://sourceforge.net/projects/openipmi/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: openssl libedit readline popt glib net-snmp ncurses
+
+name=openipmi
+version=2.0.36
+release=1
+source=(https://downloads.sourceforge.net/openipmi/OpenIPMI-$version.tar.gz)
+
+build() {
+  cd OpenIPMI-$version
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --mandir=/usr/share/man \
+    --infodir=/usr/share/info \
+    --localstatedir=/var \
+    --disable-static \
+    --with-ucdsnmp \
+    --without-python
+
+  make
+  make DESTDIR=$PKG install
+}

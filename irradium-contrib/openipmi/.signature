@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7hBMTlEO3ZZ/HwA66uysBACvwFu9FCLmATUyMI4smCbNiaOOXeE/y08TWB+4/NxWg89wUeqOhwvwfkf8aKk/lgM=
+SHA256 (Pkgfile) = 8136e590ef3b8567a86c4794ba0dc6a6cb9911889cf551ff1d2bd388b73bcaf5
+SHA256 (.footprint) = 638422bd365395401d671c46b6390ac2d09ab9c82e945829a519d5fa8ac773d9
+SHA256 (OpenIPMI-2.0.36.tar.gz) = a0403148fa5f7bed930c958a4d1c558047e273763a408b3a0368edc137cc55d9
