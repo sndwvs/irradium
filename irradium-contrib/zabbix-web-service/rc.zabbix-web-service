@@ -6,7 +6,7 @@
 SSD=/sbin/start-stop-daemon
 PROG=/usr/sbin/zabbix_web_service
 PID=/run/zabbix/zabbix_web_service.pid
-OPTS=" -f "
+OPTS=" -c /etc/zabbix/zabbix_web_service.conf "
 
 case $1 in
     start)
