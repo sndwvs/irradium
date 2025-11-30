@@ -134,6 +134,7 @@ d:mkdocs
 d:python3-hatch-nodejs-version
 d:python3-pymdown-extensions
 d:zabbix-frontend
+d:zabbix-web-service
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -740,3 +741,10 @@ f:6971e7300fca5b45cbe73d536a3196b8:zabbix-frontend/.footprint
 f:0f2e63345bb0c1bf3706e88e930cdc95:zabbix-frontend/.signature
 f:b667a28d3d7195dc388f81fe36328854:zabbix-frontend/apache-zabbix.conf
 f:7aee820a83dbbef40c072851c4432190:zabbix-frontend/php-fpm-zabbix.conf
+f:000f16fee0fb4077dd2c110d28c646b8:zabbix-web-service/pre-install
+f:ccf0dc864574e72a3e02e9f3f7cd6be7:zabbix-web-service/Pkgfile
+f:3ff1ce93b440a5f570325b0864b2f41a:zabbix-web-service/rc.zabbix-web-service
+f:bd7bafa1a751ad22c0413c40f9b2196f:zabbix-web-service/zabbix_web_service.logrotate
+f:9c7e0229477fb5acdc9f5ec14f5f6e2f:zabbix-web-service/zabbix_web_service.conf.patch
+f:e1db94138aa5bcfb86d845a95f5fc674:zabbix-web-service/.footprint
+f:46ca4940183199cb51cb697f74713f41:zabbix-web-service/.signature

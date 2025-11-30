@@ -1,0 +1,11 @@
+--- a/src/go/conf/zabbix_web_service.conf	2025-11-30 20:52:58.474725493 +0200
++++ b/src/go/conf/zabbix_web_service.conf	2025-11-30 20:53:49.404730610 +0200
+@@ -20,6 +20,8 @@
+ # Default:
+ # LogFile=/tmp/zabbix_web_service.log
+ 
++LogFile=/var/log/zabbix/zabbix_web_service.log
++
+ ### Option: LogFileSize
+ #	Maximum size of log file in MB.
+ #	0 - disable automatic log rotation.

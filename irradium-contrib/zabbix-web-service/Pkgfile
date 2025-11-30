@@ -1,0 +1,74 @@
+# Description: zabbix network monitoring agent version 2
+# URL: https://www.zabbix.com
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: libxml2 autoconf automake curl go libevent libssh2 openssl pcre2
+
+name=zabbix-web-service
+version=7.4.5
+release=1
+source=(https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-$version.tar.gz
+        rc.zabbix-web-service
+        zabbix_web_service.logrotate
+        zabbix_web_service.conf.patch)
+
+build() {
+  export GOCACHE="${GOCACHE:-"$SRC/go-cache"}"
+  export GOTMPDIR="${GOTMPDIR:-"$SRC"}"
+  export GOMODCACHE="${GOMODCACHE:-"$SRC/go"}"
+  export GOPATH="$SRC/zabbix-$version"
+  export GOFLAGS="$GOFLAGS -modcacherw"
+
+  cd ${name%%-*}-$version
+
+  patch -p1 -i $SRC/zabbix_web_service.conf.patch
+
+  export CFLAGS+=" -D_LARGEFILE64_SOURCE"
+
+  # pass --export-dynamic to the linker
+  # to make zabbix loadable modules work
+  export LDFLAGS+=" -Wl,--export-dynamic"
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc/zabbix \
+    --mandir=/usr/share/man \
+    --infodir=/usr/share/info \
+    --enable-webservice \
+    --disable-agent2 \
+    --disable-agent \
+    --disable-proxy \
+    --disable-server \
+    --enable-ipv6 \
+    --with-net-snmp \
+    --with-libcurl \
+    --with-libxml2 \
+    --with-openipmi \
+    --with-unixodbc \
+    --with-ssh2 \
+    --with-openssl \
+    --with-libpcre2
+
+  make
+  #make DESTDIR=$PKG install
+
+  install -D -m755 src/go/bin/zabbix_web_service \
+    "$PKG"/usr/sbin/zabbix_web_service
+
+  install -D -m644 man/zabbix_web_service.man \
+    "$PKG"/usr/share/man/man8/zabbix_web_service.8
+
+  install -d -m0750 -o zabbix -g zabbix \
+    "$PKG"/run/zabbix "$PKG"/var/log/zabbix
+
+  install -D -m0644 src/go/conf/zabbix_web_service.conf \
+    "$PKG"/etc/zabbix/zabbix_web_service.conf
+
+#  install -D -m0644 src/go/conf/zabbix_agent2.d/plugins.d/*.conf \
+#    -t "$PKG"/etc/zabbix/zabbix_agent2.d/plugins.d/
+
+  install -D -m600 $SRC/zabbix_web_service.logrotate \
+    $PKG/etc/logrotate.d/zabbix_web_service.conf
+
+  install -D -m755 $SRC/rc.zabbix-web-service \
+    $PKG/etc/rc.d/zabbix-web-service
+}
