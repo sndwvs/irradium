@@ -1,0 +1,22 @@
+# Description: an open-source time-series database optimized for fast ingest and complex queries
+# URL: https://www.timescale.com/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: glibc openssl postgresql gcc cmake git
+
+name=timescaledb
+version=2.23.1
+release=1
+source=(https://github.com/timescale/timescaledb/archive/refs/tags/$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  ./bootstrap \
+      -DWARNINGS_AS_ERRORS=OFF \
+      -DREGRESS_CHECKS=OFF \
+      -DTAP_CHECKS=OFF \
+      -DGENERATE_DOWNGRADE_SCRIPT=OFF
+
+  make -C build
+  make -C build DESTDIR=$PKG install
+}
