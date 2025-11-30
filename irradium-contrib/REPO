@@ -136,6 +136,7 @@ d:python3-hatch-nodejs-version
 d:python3-pymdown-extensions
 d:zabbix-frontend
 d:zabbix-web-service
+d:timescaledb-tune
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -753,3 +754,6 @@ f:bd7bafa1a751ad22c0413c40f9b2196f:zabbix-web-service/zabbix_web_service.logrota
 f:9c7e0229477fb5acdc9f5ec14f5f6e2f:zabbix-web-service/zabbix_web_service.conf.patch
 f:e1db94138aa5bcfb86d845a95f5fc674:zabbix-web-service/.footprint
 f:4b53a9449c82e1b897f5a69cfaf8981b:zabbix-web-service/.signature
+f:b16661af1787ba844e7366631813013d:timescaledb-tune/Pkgfile
+f:984d47e913ea05924aca37917d959e39:timescaledb-tune/.footprint
+f:1e8f977ca8a5ded6ce8c6bb311989c1e:timescaledb-tune/.signature
