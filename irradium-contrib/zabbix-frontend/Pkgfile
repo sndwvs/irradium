@@ -1,7 +1,7 @@
 # Description: zabbix web-interface
 # URL: https://www.zabbix.com
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: zabbix-server apache php php-fpm php-gd php-pgsql php-ldap php-mbstring php-gettext php-sockets
+# Depends on: zabbix-server apache php php-fpm php-gd php-pgsql php-ldap php-mbstring php-gettext php-sockets php-bcmath
 
 name=zabbix-frontend
 version=7.4.5
