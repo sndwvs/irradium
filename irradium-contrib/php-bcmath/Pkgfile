@@ -1,0 +1,20 @@
+# Description: Zip module for PHP
+# URL: https://www.php.net
+# Maintainer: Juergen Daubert, jue at crux dot nu
+
+name=php-bcmath
+version=8.4.15
+release=1
+source=(https://www.php.net/distributions/php-$version.tar.xz)
+
+build() {
+    cd php-$version
+
+    ./configure --disable-all --enable-bcmath=shared
+    make build-modules
+
+    install -d $PKG/{etc/php/conf.d,usr/lib/php/extensions}
+    install -m 755 modules/bcmath.so $PKG/usr/lib/php/extensions/
+
+    printf 'extension=%s\n' bcmath.so > $PKG/etc/php/conf.d/bcmath.ini
+}

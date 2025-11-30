@@ -20,6 +20,7 @@ d:jemalloc
 d:libatasmart
 d:libcanberra
 d:libcddb
+d:php-bcmath
 d:libdispatch
 d:libglade
 d:libglade-compat
@@ -236,6 +237,9 @@ f:eb30b04e68004ee571ced332628c8dc9:libcanberra/Pkgfile
 f:bef48b648a86d17bad3adf0fbab8b238:libcddb/Pkgfile
 f:f944f031134b84af79aa4bbe8936902b:libcddb/.footprint
 f:1082d84f8827c5833ab718bf29ae65a2:libcddb/.signature
+f:e24c018c1b38e047e0b9351ebdd20f19:php-bcmath/Pkgfile
+f:4dded01055cadd7f8e4f283bc3cf7c3f:php-bcmath/.footprint
+f:d32eb6d62c53c8740237a31e5238e774:php-bcmath/.signature
 f:5d7067b0661f91df5d4557c3a649fe51:libdispatch/Pkgfile
 f:9fe9d7ffb6b528962d781a93fa78c0ac:libdispatch/.footprint
 f:71e90b24015c908c30fc813f59702741:libdispatch/.signature
