@@ -1,7 +1,10 @@
 drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/httpd/
-drwxr-xr-x	root/root	etc/httpd/extra/
--rw-r--r--	root/root	etc/httpd/extra/zabbix.conf
+drwxr-xr-x	root/root	etc/apache/
+drwxr-xr-x	root/root	etc/apache/extra/
+-rw-r--r--	root/root	etc/apache/extra/zabbix.conf
+drwxr-xr-x	root/root	etc/php/
+drwxr-xr-x	root/root	etc/php/php-fpm.d/
+-rw-r--r--	root/root	etc/php/php-fpm.d/zabbix.conf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/zabbix/
