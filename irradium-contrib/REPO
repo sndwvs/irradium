@@ -138,6 +138,7 @@ d:zabbix-frontend
 d:zabbix-web-service
 d:timescaledb-tune
 d:python3-ydiff
+d:python3-prettytable
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -761,3 +762,6 @@ f:1e8f977ca8a5ded6ce8c6bb311989c1e:timescaledb-tune/.signature
 f:af818690b6da8d09ec1c7a00b5c7e672:python3-ydiff/Pkgfile
 f:9ee309cd5888758a4e0ba573e9044407:python3-ydiff/.footprint
 f:f5ccc6f6998f4829b9b521063d259daa:python3-ydiff/.signature
+f:0688796fa4d47e01961738a925eaf517:python3-prettytable/Pkgfile
+f:32c8ad83506f3489414a814454a95c8b:python3-prettytable/.footprint
+f:ac963524e2510f7ca2a6a2f6d5e4e03a:python3-prettytable/.signature

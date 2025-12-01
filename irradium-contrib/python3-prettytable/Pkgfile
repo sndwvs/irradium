@@ -1,0 +1,17 @@
+# Description: a simple python library for easily displaying tabular data
+# URL: https://github.com/jazzband/prettytable
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: git python3-build python3-installer python3-wcwidth python3-hatchling python3-hatch-vcs
+
+name=python3-prettytable
+version=3.17.0
+release=1
+source=(https://github.com/jazzband/prettytable/archive/refs/tags/${version}.tar.gz)
+
+build() {
+  cd prettytable-$version
+
+  export SETUPTOOLS_SCM_PRETEND_VERSION=$version
+  /usr/bin/python3 -m build --wheel --skip-dependency-check --no-isolation
+  /usr/bin/python3 -m installer --destdir=$PKG dist/*.whl
+}
