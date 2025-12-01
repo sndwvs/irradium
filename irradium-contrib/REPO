@@ -137,6 +137,7 @@ d:python3-pymdown-extensions
 d:zabbix-frontend
 d:zabbix-web-service
 d:timescaledb-tune
+d:python3-ydiff
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -314,8 +315,8 @@ f:2afb336186c3466ee6604e8c9d55b635:mpv/README
 f:284168cfcd33260ec8bac900098c7417:mpv/.footprint
 f:bab2ba8eadf3b61d5ce4b80ca2a7cc3c:mpv/.signature
 f:5f3c06ce779f794bbc882a0d9eb14c7b:mpv/Pkgfile
-f:6e6ac1e73de5134e19b0690307670a56:consul/.footprint
-f:d83bc0a6f5462cc636ba805ec4de8dce:consul/.signature
+f:8cf138d27b9ce3af9c6cbc0ec1a012dc:consul/.footprint
+f:44dfa9ab91d2db6b061fe1043e9ae301:consul/.signature
 f:8664047003f1fb6b1ba25227a9e108b6:consul/Pkgfile
 f:9532948eccf0609d7560395177194e85:consul/example.json
 f:672b071ab60798058c03ca8cbcb5fb2b:consul/pre-install
@@ -757,3 +758,6 @@ f:4b53a9449c82e1b897f5a69cfaf8981b:zabbix-web-service/.signature
 f:b16661af1787ba844e7366631813013d:timescaledb-tune/Pkgfile
 f:984d47e913ea05924aca37917d959e39:timescaledb-tune/.footprint
 f:1e8f977ca8a5ded6ce8c6bb311989c1e:timescaledb-tune/.signature
+f:af818690b6da8d09ec1c7a00b5c7e672:python3-ydiff/Pkgfile
+f:9ee309cd5888758a4e0ba573e9044407:python3-ydiff/.footprint
+f:f5ccc6f6998f4829b9b521063d259daa:python3-ydiff/.signature
