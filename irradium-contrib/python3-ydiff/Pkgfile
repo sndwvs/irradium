@@ -1,0 +1,16 @@
+# Description: colored, incremental, side-by-side diff viewer
+# URL: http://pypi.python.org/pypi/ydiff/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: python3-setuptools python3-build python3-installer python3-wheel
+
+name=python3-ydiff
+version=1.4.2
+release=1
+source=(https://github.com/ymattw/ydiff/archive/refs/tags/${version}.tar.gz)
+
+build() {
+  cd ydiff-$version
+
+  /usr/bin/python3 -m build --wheel --skip-dependency-check --no-isolation
+  /usr/bin/python3 -m installer --destdir=$PKG dist/*.whl
+}
