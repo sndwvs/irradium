@@ -52,6 +52,7 @@ d:qrencode
 d:qt5-webkit
 d:quiterss
 d:range-v3
+d:postgresql
 d:slang
 d:tcl
 d:telegram-desktop
@@ -369,6 +370,17 @@ f:4f4f1ebbc3641e20ba718f1dc13d372c:quiterss/Pkgfile
 f:252da7d909cee2088734e606b6e5d8a5:range-v3/Pkgfile
 f:f10337f48f3f0e2f66f9c4c17c59acae:range-v3/.footprint
 f:5c04793566c4387427033b01c7f6d81d:range-v3/.signature
+f:a70a96ef14d9fdf315a71eb27cd8c524:postgresql/README
+f:e6df03a7c79b3ce89ec2c82ed7402fcb:postgresql/post-install
+f:0f96c09cb07cb5bf7c0f74b399128f33:postgresql/postgresql-run-socket.patch
+f:865b85e804f45f9ccdf28f030f9b32ab:postgresql/postgresql.pam
+f:1c0683b763210276f18d111175dd41d9:postgresql/postgresql.rc
+f:cc040f44d63f4e603255a9ccc75a3af5:postgresql/pre-install
+f:6c9ce20f7febd016f96c61e702d0a76c:postgresql/.footprint
+f:e7ab4db81d3036d70f5a34157c84996b:postgresql/.signature
+f:37ec0bf332cff0a515a64d1a6412f04c:postgresql/Pkgfile
+f:bd0d149a40c01ae6efb42e9e761e1d2c:postgresql/wget-log
+f:b74d848f5527740dce663ae72f39c5ae:postgresql/0002-Force-RPATH-to-be-used-for-the-PL-Perl-plugin.patch
 f:6b10d81e43c890e377dfadfe72dbfa3a:slang/.footprint
 f:01b4c8973511a76b596f5d110c488ff3:slang/.signature
 f:5ee1ede2ebe321245a17d2d2d75b5711:slang/Pkgfile

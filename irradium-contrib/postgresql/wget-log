@@ -1,0 +1,11 @@
+--2025-12-02 13:56:23--  https://gitlab.archlinux.org/archlinux/packaging/packages/postgresql/-/raw/main/0002-Force-RPATH-to-be-used-for-the-PL-Perl-plugin.patch?ref_type=heads
+Resolving gitlab.archlinux.org (gitlab.archlinux.org)... 213.133.111.15, 2a01:4f8:222:174c::1
+Connecting to gitlab.archlinux.org (gitlab.archlinux.org)|213.133.111.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 881 [text/plain]
+Saving to: '0002-Force-RPATH-to-be-used-for-the-PL-Perl-plugin.patch?ref_type=heads'
+
+           0002-Force   0%[                          ]       0  --.-KB/s               0002-Force-RPATH-to-b 100%[=========================>]     881  --.-KB/s    in 0s      
+
+2025-12-02 13:56:23 (160 MB/s) - '0002-Force-RPATH-to-be-used-for-the-PL-Perl-plugin.patch?ref_type=heads' saved [881/881]
+

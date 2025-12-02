@@ -1,0 +1,8 @@
+untrusted comment: verify with /etc/ports/contrib.pub
+RWSagIOpLGJF38e6sAse+9B30VqO9H2kCXrhYmA4TscCw4gFQNetgR2pnyDe51cp+V7fbtU6Egy1W7/6H7GI95XFlZ10fjesNAE=
+SHA256 (Pkgfile) = 920522a1d6d170393f0efd8236eb1fd8806f7a8fe630ef88482a3706942a0cf4
+SHA256 (.footprint) = e683ac5fe08ec2aeb20decd94694d1d819b9d4b7de418ed4320f1ed4dfd05574
+SHA256 (postgresql-18.1.tar.bz2) = ff86675c336c46e98ac991ebb306d1b67621ece1d06787beaade312c2c915d54
+SHA256 (postgresql-run-socket.patch) = 02ffb53b0a5049233f665c873b96264db77daab30e5a2194d038202d815a8e6a
+SHA256 (postgresql.rc) = 1e06f7cb11e198201f40bb265dc36bfd0085a29e55a8352315969d3512607044
+SHA256 (postgresql.pam) = db431b3ceb77e75c0ecfac13a5394f9b575a50512ef2940e8a137c0b4efbb1dc
