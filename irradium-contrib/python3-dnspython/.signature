@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7jsijcdc/wLqVVmqRIoFgCfYddDmAjGlqoyUvk2LhP1Qp2gmChpBzLa1+hCHv7CiBRjyyo6KV3Wm0f8JVhaTiAI=
+SHA256 (Pkgfile) = cd9de96ae82a9fdc79c97f36874d8d7c474005584ad4a23e96ac35036f803999
+SHA256 (.footprint) = c7419bfb7f2d354897a3163e6faf8dd60358b7aa4b47ac92849c2ee7d994c89f
+SHA256 (dnspython-2.8.0.tar.gz) = 8b21c64bd780d461aa96c5e082db78537c675813b58ef5753056907a602ef2ce
