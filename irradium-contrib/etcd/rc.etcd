@@ -3,6 +3,9 @@
 # /etc/rc.d/etcd: start/stop etcd agent
 #
 
+USER="etcd"
+GROUP="etcd"
+
 SSD=/sbin/start-stop-daemon
 PROG=/usr/bin/etcd
 PID=/run/etcd.pid
@@ -12,7 +15,8 @@ OPTS="--config-file=$ETCD_CONFIG_FILE"
 
 case $1 in
 	start)
-		$SSD --start -bm --pidfile $PID -O $ETCD_LOG_FILE --exec $PROG -- $OPTS
+		$SSD --start -bm -c $USER:$GROUP --pidfile $PID \
+		     -O $ETCD_LOG_FILE --exec $PROG -- $OPTS
 		;;
 	stop)
 		$SSD --stop --retry 10 --pidfile $PID
