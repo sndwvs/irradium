@@ -56,6 +56,7 @@ d:postgresql
 d:slang
 d:tcl
 d:telegram-desktop
+d:python3-etcd
 d:tk
 d:udisks2
 d:ungoogled-chromium
@@ -143,6 +144,7 @@ d:python3-ydiff
 d:python3-prettytable
 d:python3-py-consul
 d:python3-kazoo
+d:python3-dnspython
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -391,6 +393,9 @@ f:0628dcc755f986173fb3f7c834f25ceb:tcl/Pkgfile
 f:49d8c3b35dddb633e07f59b38fdf59fc:telegram-desktop/.footprint
 f:ddd41971807df63d8bbf341f81242157:telegram-desktop/Pkgfile
 f:c3403a57a32b94a0b9da136d8143956d:telegram-desktop/.signature
+f:1a69adadfeda9cc05e884091ec34143f:python3-etcd/Pkgfile
+f:373cd69053e4bf367be1b67b38788742:python3-etcd/.footprint
+f:c953cd3ec4fd6408571bf54dcf208935:python3-etcd/.signature
 f:5fd9540530092495051bc72484027d38:tk/.footprint
 f:4a0cf636d10c64ff0a5c12fcec684a78:tk/.signature
 f:94c44128030f929514210cd358bcd567:tk/Pkgfile
@@ -791,3 +796,6 @@ f:fdcc1ae2bdb538c792febc12169afc78:python3-py-consul/.signature
 f:894bc7b9ebc3cc3d85145dade7c0f22a:python3-kazoo/Pkgfile
 f:9270d00fc35c7ad071b70cfbf72c2446:python3-kazoo/.footprint
 f:e7c1970be46f7a7fe81db428ff7c7332:python3-kazoo/.signature
+f:2f655f05620f79b23a43e2247d1806be:python3-dnspython/Pkgfile
+f:9acc164fa338e5d2f709686f71b2df12:python3-dnspython/.footprint
+f:3cb3a13a47c9278bee7d6d32aada635e:python3-dnspython/.signature
