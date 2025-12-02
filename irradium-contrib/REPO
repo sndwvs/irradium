@@ -252,7 +252,7 @@ f:08babe5f17deae110d5fa163b55824bf:libcanberra/libcanberra-broadway-fix.patch
 f:a7d538151a41689f42a2a6b589ef0a3e:libcanberra/libcanberra-multi-backend.patch
 f:eb30b04e68004ee571ced332628c8dc9:libcanberra/Pkgfile
 f:236b91c4dc2bcb22d2a1d3bfc83044ac:patroni/Pkgfile
-f:dcd96851ab3ef210a3d01c7b9f2e7ec9:patroni/rc.patroni
+f:a50499877a94c31da1b50fe45c0f937b:patroni/rc.patroni
 f:0417e30ccbe7db10fee4029f1c8bf16b:patroni/.footprint
 f:6f9f5fddd45de843e2a1ba1964313802:patroni/.signature
 f:bef48b648a86d17bad3adf0fbab8b238:libcddb/Pkgfile
