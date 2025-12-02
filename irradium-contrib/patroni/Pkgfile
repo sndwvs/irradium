@@ -1,7 +1,7 @@
 # Description: a template for postgresql ha with zookeeper, etcd or consul
 # URL: https://github.com/patroni/patroni/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: python3-requests python3-build python3-installer python3-setuptools python3-six python3-dateutil python3-ydiff python3-click python3-cryptography python3-psutil python3-prettytable python3-pyyaml python3-urllib3 python3-psycopg2 python3-wcwidth python3-py-consul
+# Depends on: python3-requests python3-build python3-installer python3-setuptools python3-six python3-dateutil python3-ydiff python3-click python3-cryptography python3-psutil python3-prettytable python3-pyyaml python3-urllib3 python3-psycopg2 python3-wcwidth python3-py-consul python3-pysyncobj
 # Optional: python3-dns python3-etcd python3-boto3 python3-kazoo
 
 name=patroni
