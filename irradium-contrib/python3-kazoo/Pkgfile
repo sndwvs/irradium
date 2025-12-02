@@ -1,0 +1,16 @@
+# Description: a high-level python library that makes it easier to use apache zookeeper
+# URL: https://github.com/python-zk/kazoo
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: python3-build python3-installer python3-setuptools python3-wheel
+
+name=python3-kazoo
+version=2.10.0
+release=1
+source=(https://github.com/jazzband/prettytable/archive/refs/tags/${version}.tar.gz)
+
+build() {
+  cd kazoo-$version
+
+  /usr/bin/python3 -m build --wheel --skip-dependency-check --no-isolation
+  /usr/bin/python3 -m installer --destdir=$PKG dist/*.whl
+}

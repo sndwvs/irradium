@@ -141,6 +141,7 @@ d:timescaledb-tune
 d:python3-ydiff
 d:python3-prettytable
 d:python3-py-consul
+d:python3-kazoo
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -774,3 +775,6 @@ f:ac963524e2510f7ca2a6a2f6d5e4e03a:python3-prettytable/.signature
 f:e57c59840d8d0c1555c6db014156701c:python3-py-consul/Pkgfile
 f:43517f7796613bf2079e21bf4885ade4:python3-py-consul/.footprint
 f:fdcc1ae2bdb538c792febc12169afc78:python3-py-consul/.signature
+f:894bc7b9ebc3cc3d85145dade7c0f22a:python3-kazoo/Pkgfile
+f:9270d00fc35c7ad071b70cfbf72c2446:python3-kazoo/.footprint
+f:e7c1970be46f7a7fe81db428ff7c7332:python3-kazoo/.signature
