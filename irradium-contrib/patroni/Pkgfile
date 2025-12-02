@@ -6,7 +6,7 @@
 
 name=patroni
 version=4.1.0
-release=1
+release=2
 source=(https://github.com/patroni/patroni/archive/refs/tags/v${version}.tar.gz
         rc.patroni)
 

@@ -1,134 +1,42 @@
 #!/bin/sh
 #
-### BEGIN INIT INFO
-# Provides:          patroni
-# Required-Start:    $remote_fs $syslog
-# Required-Stop:     $remote_fs $syslog
-# Default-Start:     2 3 4 5
-# Default-Stop:      0 1 6
-# Short-Description: Patroni init script
-# Description:       Runners to orchestrate a high-availability PostgreSQL
-### END INIT INFO
+# /etc/rc.d/patroni: start/stop patroni
+#
 
-### BEGIN USER CONFIGURATION
-
-CONF="/etc/patroni/patroni.yml"
-LOGFILE="/var/log/patroni/patroni.log"
 USER="postgres"
 GROUP="postgres"
 
-NAME=patroni
-PATRONI="/usr/bin/$NAME"
-PIDFILE="/run/$NAME.pid"
+SSD=/sbin/start-stop-daemon
+PROG=/usr/bin/patroni
+CONF=/etc/patroni/patroni.yml
+LOGFILE=/var/log/patroni/patroni.log
+PID=/run/patroni.pid
+OPTS="$CONF"
 
-# Set this parameter, if you have several Postgres versions installed
-# POSTGRES_VERSION="9.4"
-POSTGRES_VERSION=""
-
-### END USER CONFIGURATION
-
-# Is there Patroni executable?
-if test ! -e $PATRONI; then
-  echo "Patroni executable $PATRONI does not exist."
-  exit 1
-fi
-
-# Is there Patroni configuration file?
-if test ! -e $CONF; then
-  echo "Patroni configuration file $CONF does not exist."
-  exit 1
-fi
-
-# Create logfile if doesn't exist
-if test ! -e $LOGFILE; then
-  echo "Creating logfile for Patroni..."
-  touch $LOGFILE
-  chown $USER:$GROUP $LOGFILE
-fi
-
-prepare_pgpath() {
-  if [ "$POSTGRES_VERSION" != "" ]; then
-    if [ -x /usr/lib/postgresql/$POSTGRES_VERSION/bin/pg_ctl ]; then
-      PGPATH="/usr/lib/postgresql/$POSTGRES_VERSION/bin"
-    else
-      echo "Postgres version incorrect, check POSTGRES_VERSION variable."
-      exit 0
-    fi
-  else
-    get_versions
-    if echo $versions | grep -q -e "\s"; then
-      echo "You have several Postgres versions installed. Please, use POSTGRES_VERSION to define correct environment."
-    else
-      versions=`echo $versions | sed -e 's/^[ \t]*//'`
-      PGPATH="/usr/lib/postgresql/$versions/bin"
-    fi
-  fi
-}
-
-get_pid() {
-  if test -e $PIDFILE; then
-    PID=`cat $PIDFILE`
-    CHILDPID=`ps --ppid $PID -o %p --no-headers`
-  else
-    echo "Could not find PID file. Patroni probably down."
-    exit 1
-  fi
-}
-
-
-case "$1" in
-  start)
-    prepare_pgpath
-    PGPATH=$PATH:$PGPATH
-    echo "Starting Patroni\n"
-    exec start-stop-daemon --start --quiet \
-        --background \
-        --pidfile $PIDFILE --make-pidfile \
-        --chuid $USER:$GROUP \
-        --chdir `eval echo ~$USER` \
-        --exec $PATRONI \
-        --startas /bin/sh -- \
-        -c "/usr/bin/env PATH=$PGPATH /usr/bin/python $PATRONI $CONF >> $LOGFILE 2>&1"
-    ;;
-
-  stop)
-    echo "Stopping Patroni"
-    get_pid
-    start-stop-daemon --stop --pid $CHILDPID
-    start-stop-daemon --stop --pidfile $PIDFILE --remove-pidfile --quiet
-    ;;
-
-  reload)
-    echo "Reloading Patroni configuration"
-    get_pid
-    kill -HUP $CHILDPID
-    ;;
-
-  status)
-    get_pid
-    if start-stop-daemon -T --pid $CHILDPID; then
-      echo "Patroni is running\n"
-      exit 0
-    else
-      echo "Patroni in not running\n"
-    fi
-    ;;
-
-  restart)
-    $0 stop
-    $0 start
-    ;;
-
-  *)
-    echo "Usage: /etc/init.d/$NAME {start|stop|restart|reload|status}"
-    exit 1
-    ;;
+case $1 in
+start)
+        $SSD --start -c $USER:$GROUP --chdir `eval echo ~$USER` \
+             -b -m --pidfile $PID --exec $PROG -O $LOGFILE -- $OPTS
+        ;;
+stop)
+        $SSD --stop --retry 10 --pidfile $PID --remove-pidfile
+        ;;
+restart)
+        $0 stop
+        $0 start
+        ;;
+status)
+        $SSD --status --pidfile $PID
+        case $? in
+        0) echo "$PROG is running with pid $(cat $PID)" ;;
+        1) echo "$PROG is not running but the pid file $PID exists" ;;
+        3) echo "$PROG is not running" ;;
+        4) echo "Unable to determine the program status" ;;
+        esac
+        ;;
+*)
+        echo "usage: $0 [start|stop|restart|status]"
+        ;;
 esac
 
-if [ $? -eq 0 ]; then
-        echo .
-        exit 0
-else
-        echo " failed"
-        exit 1
-fi
+# End of file
