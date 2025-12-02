@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	etc/
+drwxr-x---	root/etcd	etc/etcd/
+-rw-r--r--	root/root	etc/etcd/conf.yml
+drwxr-xr-x	root/root	etc/rc.d/
+-rwxr-xr-x	root/root	etc/rc.d/etcd
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/etcd
+-rwxr-xr-x	root/root	usr/bin/etcdctl
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/lib/
+drwxr-x---	etcd/etcd	var/lib/etcd/

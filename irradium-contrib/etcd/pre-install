@@ -1,0 +1,5 @@
+#!/bin/sh
+
+getent group etcd || /usr/sbin/groupadd -r etcd
+getent passwd etcd || /usr/sbin/useradd -r -d /var/lib/etcd -s /bin/false -G etcd -g etcd etcd
+/usr/bin/passwd -l etcd
