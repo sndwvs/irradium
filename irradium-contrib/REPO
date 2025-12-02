@@ -327,12 +327,12 @@ f:2afb336186c3466ee6604e8c9d55b635:mpv/README
 f:284168cfcd33260ec8bac900098c7417:mpv/.footprint
 f:bab2ba8eadf3b61d5ce4b80ca2a7cc3c:mpv/.signature
 f:5f3c06ce779f794bbc882a0d9eb14c7b:mpv/Pkgfile
-f:8cf138d27b9ce3af9c6cbc0ec1a012dc:consul/.footprint
-f:44dfa9ab91d2db6b061fe1043e9ae301:consul/.signature
+f:6e6ac1e73de5134e19b0690307670a56:consul/.footprint
+f:26e0307b015a7a71fa9dd736af7f77ce:consul/.signature
 f:8664047003f1fb6b1ba25227a9e108b6:consul/Pkgfile
 f:9532948eccf0609d7560395177194e85:consul/example.json
 f:672b071ab60798058c03ca8cbcb5fb2b:consul/pre-install
-f:307f1103573f13155eb3a4e0171b0ff6:consul/rc.consul
+f:7ce6acd7025ee3e869c03ab728befb9f:consul/rc.consul
 f:6978f14ab88ed92240c18798e79102bd:openvpn/README
 f:2f135439cf6e9a6db466acf3d567b4c3:openvpn/rc.openvpn
 f:d4724521ac6fda77fbc56571d0333261:openvpn/.footprint

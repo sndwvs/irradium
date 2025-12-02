@@ -3,6 +3,9 @@
 # /etc/rc.d/consul: start/stop consul agent
 #
 
+USER="consul"
+GROUP="consul"
+
 SSD=/sbin/start-stop-daemon
 PROG=/usr/bin/consul
 PID=/run/consul.pid
@@ -10,7 +13,7 @@ OPTS="agent -config-dir=/etc/consul.d"
 
 case $1 in
 	start)
-		$SSD --start -bm --pidfile $PID --exec $PROG -- $OPTS
+		$SSD --start -bm -c $USER:$GROUP --pidfile $PID --exec $PROG -- $OPTS
 		;;
 	stop)
 		$SSD --stop --retry 10 --pidfile $PID
