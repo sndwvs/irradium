@@ -146,6 +146,7 @@ d:python3-prettytable
 d:python3-py-consul
 d:python3-kazoo
 d:python3-dnspython
+d:python3-pysyncobj
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -806,3 +807,6 @@ f:e7c1970be46f7a7fe81db428ff7c7332:python3-kazoo/.signature
 f:2f655f05620f79b23a43e2247d1806be:python3-dnspython/Pkgfile
 f:9acc164fa338e5d2f709686f71b2df12:python3-dnspython/.footprint
 f:3cb3a13a47c9278bee7d6d32aada635e:python3-dnspython/.signature
+f:a132bbe2659f1512573ed7c32000e4e9:python3-pysyncobj/Pkgfile
+f:6b55f3f81d5bca00d53b51eb1681df35:python3-pysyncobj/.footprint
+f:147b23b4195b3f627ef1d713ba910e35:python3-pysyncobj/.signature

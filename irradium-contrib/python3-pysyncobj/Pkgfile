@@ -1,0 +1,16 @@
+# Description: a library for replicating your python class between multiple servers, based on raft protocol
+# URL: https://github.com/bakwc/PySyncObj
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: python3-build python3-installer python3-setuptools
+
+name=python3-pysyncobj
+version=0.3.14
+release=1
+source=(https://github.com/bakwc/PySyncObj/archive/refs/tags/v$version.tar.gz)
+
+build() {
+  cd PySyncObj-$version
+
+  /usr/bin/python3 -m build --wheel --skip-dependency-check --no-isolation
+  /usr/bin/python3 -m installer --destdir=$PKG dist/*.whl
+}
