@@ -725,8 +725,8 @@ f:eeb75b542d87026c0c77285c86cafe99:net-snmp/net-snmp-5.8-modern-rpm-api.patch
 f:9bd8916435941776413fd8413683cf0a:net-snmp/net-snmp-5.8-multilib.patch
 f:ef2b068ad9ad0cbc63ca3d2c4a6fb669:net-snmp/snmpd.conf
 f:6f4c927ddc9bf6ef1aa764d6232d8ef3:net-snmp/snmpd.logrotate
-f:b16c49ec90e262c2535bffd305d6d158:net-snmp/.footprint
-f:a567ac190b5ea3240901ab4ed4dc9038:net-snmp/.signature
+f:455e65832ce3378cce55b6460c612655:net-snmp/.footprint
+f:2287a11d9427fd508381f5cf4f16477b:net-snmp/.signature
 f:5f61c0fc1fca46b0fbfc08c7b02c69d9:mkdocs-material/.footprint
 f:16670713f59f816521b5b2dd4e019c1e:mkdocs-material/.signature
 f:3b5b4c32ccadb967eaac89a231fbe531:mkdocs-material/Pkgfile

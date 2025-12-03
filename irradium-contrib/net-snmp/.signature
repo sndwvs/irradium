@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7kgAdwF+c9G8R/j6oybmDTJBsMBzpxccT+zUUgLWm3CL7n1MC4IUTuImLK8SApvZVNuCCJRgj9WBjuRIQpkedQk=
-SHA256 (Pkgfile) = 2284d0d114bd4535f4b1b84da41776c75b6e46744481f7d52aa7431ea92ebdd7
-SHA256 (.footprint) = 864b98ab43f5922b0cf5ff5f11b666f461848c9703fdb889024a9854e597fb2a
+RWTmT3d9kqan7j4E/9Lx796L9+aawbxGO9o9cmPoMRcYlMlvtCmG+DTRAp5ziJy82WF9nAjLqM4sWERdLRNjDemhHFb0OoSHtgs=
+SHA256 (Pkgfile) = 9bd3f1105b08120cb42ff365b8ce30f87084f56955be5fdf701f37b0b1fac9ef
+SHA256 (.footprint) = 1c5a82f6e79890472fb56b84c8eea673f6fea0b988c9d26eba823680f089eec4
 SHA256 (net-snmp-5.9.4.tar.gz) = 8b4de01391e74e3c7014beb43961a2d6d6fa03acc34280b9585f4930745b0544
 SHA256 (rc.snmpd) = 09a04e4b7c0e5f8f445507ff3ce585a569a07dbce3089fa44c9ebcc9e83757bc
 SHA256 (snmpd.logrotate) = 96110f6c3877787bbce05e987ea32f9cacb3bfec58134eb02e1e513523ac091b

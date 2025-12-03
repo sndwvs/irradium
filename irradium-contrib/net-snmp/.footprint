@@ -30,6 +30,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/snmpgetnext
 lrwxrwxrwx	root/root	usr/bin/snmpinform -> snmptrap
 -rwxr-xr-x	root/root	usr/bin/snmpnetstat
+-rwxr-xr-x	root/root	usr/bin/snmppcap
 -rwxr-xr-x	root/root	usr/bin/snmpping
 -rwxr-xr-x	root/root	usr/bin/snmpps
 -rwxr-xr-x	root/root	usr/bin/snmpset
