@@ -779,7 +779,7 @@ f:e2274e04dc583008906d51a64e7d9c2a:python3-pymdown-extensions/.signature
 f:5afdfaa1ab55f03ccb50050088023249:python3-pymdown-extensions/Pkgfile
 f:c27a48cf36499a5a9cd661168e8bfb3a:zabbix-frontend/Pkgfile
 f:6971e7300fca5b45cbe73d536a3196b8:zabbix-frontend/.footprint
-f:0f2e63345bb0c1bf3706e88e930cdc95:zabbix-frontend/.signature
+f:1bed758830562b32ce9120f33d62f1f7:zabbix-frontend/.signature
 f:b667a28d3d7195dc388f81fe36328854:zabbix-frontend/apache-zabbix.conf
 f:7aee820a83dbbef40c072851c4432190:zabbix-frontend/php-fpm-zabbix.conf
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-web-service/pre-install
