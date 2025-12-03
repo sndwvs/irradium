@@ -1,0 +1,52 @@
+# Description: failover and monitoring daemon for lvs clusters
+# URL: https://www.keepalived.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: glibc kmod libmnl libnftnl libnl openssl file iptables
+
+name=keepalived
+version=2.3.4
+release=1
+source=(https://github.com/acassen/keepalived/archive/refs/tags/v$version.tar.gz
+        always-use-pid-dir.patch
+        fix-vrrp-notify-fifo-reload.patch
+        rc.keepalived
+        keepalived.logrotate)
+
+build() {
+  cd $name-$version
+
+  patch -p1 -i $SRC/always-use-pid-dir.patch
+  patch -p1 -i $SRC/fix-vrrp-notify-fifo-reload.patch
+
+  ./autogen.sh
+  sed 's:\#\!.*\/bin\/sh:\#\!\/bin\/bash:' -i configure
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --sbindir=/usr/bin \
+    --mandir=/usr/share/man \
+    --localstatedir=/var \
+    --runstatedir=/run \
+    --enable-vrrp \
+    --enable-json
+
+  make
+  make DESTDIR=$PKG install
+
+  # move conf file to correct name
+  mv "$PKG"/etc/keepalived/keepalived.conf{.sample,}
+
+  # move examples to /usr/share
+  install -d -m 0755 "$PKG/usr/share/$name"
+  mv "$PKG/etc/keepalived/samples" "$PKG/usr/share/$name/samples"
+
+  # clean up files
+  rm -rf $PKG/etc/sysconfig $PKG/usr/share/{snmp,doc}
+
+  install -D -m600 $SRC/keepalived.logrotate \
+    $PKG/etc/logrotate.d/keepalived.conf
+
+  install -D -m755 $SRC/rc.keepalived \
+    $PKG/etc/rc.d/keepalived
+}

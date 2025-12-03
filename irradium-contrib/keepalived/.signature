@@ -1,0 +1,9 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7oQso7cMTAcv1QFKudg0pPgYcBpxfyNE5f/uYh0jKIHSNBLgoCl/63pUjwhXJ9m6baqPbxThSZy0XSiVqAwTyQ8=
+SHA256 (Pkgfile) = 09856236ef168c1a589076d549ce6f5746d5b5e8fd2c8d343238f8cb9a8f1821
+SHA256 (.footprint) = fd36c6a97d6fdb994931ad964fc351a373e6639c27746d7c916fcbc4dbbe1fda
+SHA256 (v2.3.4.tar.gz) = 4bdca1e82656453d791af63daa99ae9131da65e641f5c186982a21a996382dd5
+SHA256 (always-use-pid-dir.patch) = 3af18bc59d187229b33f1088db91e3020086f126acbd9a4c49afa5f6a3c45779
+SHA256 (fix-vrrp-notify-fifo-reload.patch) = c8e294932ce6e59cac41f07b73da4530ca2d09610953d204a78803da6bb4dcf4
+SHA256 (rc.keepalived) = 5ae02692710666359d2431ef7c9b1908ca5741aa1318b66dd6d22860723cc2f9
+SHA256 (keepalived.logrotate) = 2bb62ef46e5c1e1c9524dbfd6d00b55a773be18e3bf53e2b3370197031d05f05

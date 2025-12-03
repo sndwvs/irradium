@@ -67,6 +67,7 @@ d:viewnior
 d:vlc
 d:xcursor-justblue
 d:yt-dlp
+d:keepalived
 d:dhcp
 d:acme.sh
 d:sshpass
@@ -447,6 +448,13 @@ f:4ad52a9546f1747d27253a401f14862c:yt-dlp/.footprint
 f:cab75997c7e521a803f0184769b6d29f:yt-dlp/.signature
 f:97f03727cbbebf63239e311e54f1b156:yt-dlp/Pkgfile
 f:3c31ef99d9a6312cc399823676aead73:yt-dlp/allow-nodejs-by-default.patch
+f:0150088660bf9b789059014338a88afe:keepalived/Pkgfile
+f:4b2b11c12bd8bd8db2a46f047d9c0300:keepalived/rc.keepalived
+f:544f2af7d883899583a9c65f64282021:keepalived/keepalived.logrotate
+f:400dd28ee32751e43cd750411ed64836:keepalived/always-use-pid-dir.patch
+f:88465c82745b6d93097df0301c32de3d:keepalived/fix-vrrp-notify-fifo-reload.patch
+f:f7554d9ec0bfd1bd410e18dc172b6ea6:keepalived/.footprint
+f:7bcd41da88acf2f71156de9dde231e97:keepalived/.signature
 f:93cad7cd88158d1560ce394d33319b52:dhcp/.footprint
 f:1e0ff50ec24f9e272937aea6ee7b9f77:dhcp/.signature
 f:7b0d77b0577f0986e89070e4f44b645b:dhcp/Pkgfile
