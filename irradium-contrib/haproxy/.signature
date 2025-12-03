@@ -1,0 +1,9 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7mGR5SsXYQJ6hm7mM0dooJOSpJp8KgOEOevrZeC/VJseXIuPAi86YGCElr/nRK0EiW4TTVwdJXrm1X5J4JyYxAw=
+SHA256 (Pkgfile) = 5427b01cff15471f6292d4759079d1a9ef59fc8fcff237099c18b6618c2d3374
+SHA256 (.footprint) = 0e01e9d581c4942978ef45975316e29dbf8e1ca54f77c724a162562c5b6c07e9
+SHA256 (haproxy-3.3.0.tar.gz) = bf2da6b69f82d7b855be977ab9e1d4704eef5629b657ac72afb5958a869c902e
+SHA256 (rc.haproxy) = 0c6d3bfaeeca2ceff4cedc964590852b985eef5eac226d4980c3808b0b40a156
+SHA256 (haproxy.logrotate) = 32012db96feb0f678b3eb699a754dbcb5d048025d2b244fb4c462d2047eb7c92
+SHA256 (haproxy.cfg.example) = 28011e2aab5fa939a4dfcd03eb0b109c493ab8a2f5ea350090103b52fd5a2323
+SHA256 (0001-Use-CFLAGS-and-LDFLAGS-when-building-admin.patch) = a1e3a1c2923465081383eb431bae55ff9841d89909469311cdba4b394ec4a998

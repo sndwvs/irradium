@@ -1,0 +1,51 @@
+# Description: a tcp/http reverse proxy for high availability environments
+# URL: https://www.haproxy.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: libpcre2 openssl glibc lua53 libxcrypt zlib
+
+name=haproxy
+version=3.3.0
+release=1
+source=(https://www.haproxy.org/download/${version%.*}/src/haproxy-$version.tar.gz
+        rc.haproxy
+        haproxy.logrotate
+        haproxy.cfg.example
+        0001-Use-CFLAGS-and-LDFLAGS-when-building-admin.patch)
+
+build() {
+  cd $name-$version
+
+  patch -p1 -i $SRC/0001-Use-CFLAGS-and-LDFLAGS-when-building-admin.patch
+
+  export CFLAGS="$CFLAGS -fwrapv"
+
+  make \
+    CFLAGS="$CFLAGS" \
+    LDFLAGS="$LDFLAGS" \
+    CPU=generic \
+    TARGET=linux-glibc \
+    USE_PCRE2=1 \
+    USE_PCRE2_JIT=1 \
+    USE_OPENSSL=1 \
+    USE_QUIC=1 \
+    USE_ZLIB=1 \
+    USE_LUA=1 \
+    USE_NS=1 \
+    USE_PROMEX=1 \
+    LUA_LIB=/usr/lib/lua5.3 \
+    LUA_INC=/usr/include/lua5.3
+
+  make PREFIX=$PKG/usr install
+
+  rm -rf $PKG/usr/doc
+  install -d $PKG/var/lib/haproxy
+
+  install -D -m 644 $SRC/haproxy.cfg.example \
+    $PKG/etc/haproxy/haproxy.cfg.example
+
+  install -D -m600 $SRC/haproxy.logrotate \
+    $PKG/etc/logrotate.d/haproxy.conf
+
+  install -D -m755 $SRC/rc.haproxy \
+    $PKG/etc/rc.d/haproxy
+}

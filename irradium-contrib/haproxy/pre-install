@@ -1,0 +1,5 @@
+#!/bin/sh
+
+getent group haproxy || /usr/sbin/groupadd -r haproxy
+getent passwd haproxy || /usr/sbin/useradd -r -d /var/lib/haproxy -s /bin/false -G haproxy -g haproxy haproxy
+/usr/bin/passwd -l haproxy
