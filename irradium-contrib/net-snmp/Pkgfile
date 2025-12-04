@@ -22,6 +22,7 @@ build() {
   cd $name-$version
 
   # fix compilation for aarch64, riscv64
+  unset CFLAGS
   unset LDFLAGS
 
   patch -p1 -i $SRC/net-snmp-5.8-multilib.patch
