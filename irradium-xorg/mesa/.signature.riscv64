@@ -1,15 +1,14 @@
 untrusted comment: verify with /etc/ports/irradium-xorg.pub
-RWT3zJzzKRcegkBsqabpil5b3US221Pu9X0IJVPvQN27J8dM5I0DJbnrqCj5KAUTcvek+3Q+TjneTjXiqB6Pq41teD6A9UlRQwU=
-SHA256 (Pkgfile) = 3e4e87f3012943dca578bed8d24a7085f12348df7442d022a23fd1e307db43ee
-SHA256 (.footprint.riscv64) = c72b8c3814f4a77ba42e0c670b6a33d7ea5f6388eeff3e10471249dc1972ae42
-SHA256 (mesa-25.2.7.tar.xz) = b40232a642011820211aab5a9cdf754e106b0bce15044bc4496b0ac9615892ad
+RWT3zJzzKRcegj0OeJeQOOHqmftckVp5wc8nyIdrhJvJ1Qs3gWzHQJciFMAH2R09QU0a1QJldkviUpH5w8R+JTq0pggI+WCIng4=
+SHA256 (Pkgfile) = 145397e6e7d93a328ce11f6115276c13ed3000d984c6f3a6c269db34bca215ee
+SHA256 (.footprint.riscv64) = 121d689201794629be3892bda7165b7752f97f76096cc90861ec1de3871d6d41
+SHA256 (mesa-25.3.1.tar.xz) = 059d0d985622f49588f01aa29152804f4da8ffe6add046e00a52923379c2d8da
 SHA256 (0000-mesa-23.1-x86_32-llvm-detection.patch) = 271e986dd8e09635ac4f0cc8b59c251dcc79b6be0de41da5c615c7b5035b3ead
 SHA256 (0001-mesa-24.1-find-opencl-c-base.h.patch) = cff85cbbc693faed44f21b3acecdfc204920b8ec84410166799b4eb12bd4439c
-SHA256 (0002-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch) = 5d9613493b3031692dd588fbb5f9cee445986ad7bb569bdca750bd939615ce30
+SHA256 (0002-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch) = dfbad2f4fd8445dd2b609ae29f5645536648b1faaa44ecc2ef200d3908b574d1
 SHA256 (0003-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch) = 6789490a644613bb5560159020d0dd48727faab222ca2b5e0d1fb0b2c9801095
 SHA256 (0004-mesa-24-llvmspirv-detection.patch) = 1a7876583850fa75ba35d98eeeaeb363ccf05c514ad34d7db0ba83587b6646e4
 SHA256 (0005-mesa-buildsystem-improvements.patch) = 5b7b3fa42ae4d7070b33084b4921f6086c46dc516eb92cc21f0c751c2e6cd6d5
 SHA256 (0006-mesa-24.0-llvmspirvlib-version-check.patch) = c4913d20c5a83e9675206276e4b0eb0704cfb87d7483f1a767e3f82a73cbf0c5
 SHA256 (0007-mesa-25.2-llvm-21.patch) = 848f03775f8ebefd85073bd7050cd9906b29e60760c160c5f52b3e0204cfdcff
 SHA256 (0008-mesa-25.2-aarch64-compile.patch) = b6fab05255e4fe9fdf348f5b8d1404c4dd5235659f9a8fa15194e03cd0ca5b52
-SHA256 (37027-gallivm_support_LLVM_21.patch) = d6e6fad736581fe876b807d9a6faebcca4e01a37b1008c466bea8ff942d03420
