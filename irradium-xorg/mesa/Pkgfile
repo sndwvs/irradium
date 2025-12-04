@@ -16,41 +16,7 @@ source=(https://archive.mesa3d.org/$name-$version.tar.xz
     patches/0005-mesa-buildsystem-improvements.patch
     patches/0006-mesa-24.0-llvmspirvlib-version-check.patch
     patches/0007-mesa-25.2-llvm-21.patch
-    patches/0008-mesa-25.2-aarch64-compile.patch
-    patches/0009-62188b9ee128983158e813ec5faf4bfa96390624.patch
-    patches/0010-572b63960f59f1da22aa815ce93b36c1c4a3a4c6.patch
-    patches/0011-408c0986b5d7a478ef10061c7006f1b6962ed214.patch
-    patches/0012-d192fdcf66d7432d18b7dc829d1cecbadfca13c2.patch
-    patches/0013-b1c32cbee9083efd0caff087fd68c339f7b4a4c6.patch
-    patches/0014-ddc1be73d140945c31df7265c447f94db7703d07.patch
-    patches/0015-9ece69f6fa229f59bfe66acf1b4776f342711cfb.patch
-    patches/0016-7926f888997eff464cb12ecb2dd6d8672b6f3b97.patch
-    patches/0017-581e201960a55bf5dbf7a9506b3ae55ad2a4f467.patch
-    patches/0018-32fe63d091ae3685c42b524cc476f4e408c2e778.patch
-    patches/0019-03be9ed679e9043a273d8d052724a43c51ca84c9.patch
-    patches/0020-4c1435fb92fbf31116ec3dbb2e0bdf73b5874793.patch
-    patches/0021-dc52f2e4386ce5e177b523c39681479df6363c0a.patch
-    patches/0022-1e6aec2fa398134246a0aea4496aaa8949677455.patch
-    patches/0023-8404366d2f8efdf422ee835d322ffc741f357961.patch
-    patches/0024-ecae718b5bba470dbab43826f6896c9a6b1a7316.patch
-    patches/0025-8082052636540808fef65677eaa129e3d32361c7.patch
-    patches/0026-e7899b17ac9a91eebf9ba20503a98691bb4b8178.patch
-    patches/0027-fd12c95ccc0c3ea88759b9911db3e90dc25d6cdc.patch
-    patches/0028-0155d3c7e2168d7376bb2f3ed62563f002ac21aa.patch
-    patches/0029-3971bceb15f7fc4d83e8fbd209945269f657a070.patch
-    patches/0030-6fc34ae63294aacf18e4fb1c8909b2b957eb8db4.patch
-    patches/0031-9afb9eda277bcf9a734a5f9d91159d57aad7e59b.patch
-    patches/0032-3ea39caea3457b1e8f35d83f3a01136f1553b33e.patch
-    patches/0033-14a8d894d052c4c2b8fe4526f6da75f1a581e2db.patch
-    patches/0034-0027315f4d2a4d219d52fbb00651577ba6b01822.patch
-    patches/0035-fd5c33c03a706c52b8a07eddcda442877575b233.patch
-    patches/0036-2c63a7ff5bc39f70bb96c03bea5ddb792c05ad50.patch
-    patches/0037-0589f69702fc2da8afe9a044a57137943b13f1cd.patch
-    patches/0038-2aaf58cb829c7e51ad38dc4a891c394889e22b5b.patch
-    patches/0039-0765b2d10b647ac19dc016dc26478921be1f7564.patch
-    patches/0040-4b2460ae89eb931a7c3bd4a5c04189743f056338.patch
-    patches/0041-92f56777b3ebbf780ef55f64e23f84a34ce71f21.patch
-    patches/0042-841c868ccbfe1592ba0362ab1d1e732492aea79b.patch)
+    patches/0008-mesa-25.2-aarch64-compile.patch)
 
 build() {
     prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
