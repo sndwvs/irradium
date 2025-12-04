@@ -29,7 +29,7 @@ build() {
     if prt-get isinst vulkan-loader; then
         prt-get isinst cbindgen rust-bindgen spirv-llvm-translator && PKGMK_MESA_VULKAN_DRIVERS+='nouveau,'
         prt-get isinst directx-headers && PKGMK_MESA_VULKAN_DRIVERS+='microsoft-experimental,'
-        prt-get isinst glslang && PKGMK_MESA_VULKAN_DRIVERS+='amd,broadcom,panfrost,freedreno,imagination-experimental,' PKGMK_MESA_VULKAN_LAYERS+='device-select,overlay,'
+        prt-get isinst glslang && PKGMK_MESA_VULKAN_DRIVERS+='amd,broadcom,freedreno,panfrost,swrast,imagination,' PKGMK_MESA_VULKAN_LAYERS+='device-select,overlay,'
         prt-get isinst glslang libclc python3-ply lua && PKGMK_MESA_VULKAN_DRIVERS+='intel,' PKGMK_MESA_VULKAN_LAYERS+='intel-nullhw,'
         VULKAN_DRIVERS=${PKGMK_MESA_VULKAN_DRIVERS#,}intel_hasvk,virtio
         PKGMK_MESA_GALLIUM+='zink,'
