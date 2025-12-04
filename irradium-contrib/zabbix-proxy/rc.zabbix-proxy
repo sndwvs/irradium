@@ -10,6 +10,8 @@ OPTS=" -f "
 
 case $1 in
     start)
+        [ ! -e /run/zabbix ] && install -d -o zabbix -g zabbix /run/zabbix
+
         $SSD --start -b --exec $PROG -- $OPTS
         ;;
     stop)
