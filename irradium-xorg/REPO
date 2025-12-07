@@ -1,12 +1,8 @@
-d:mtdev
 d:xorg-rendercheck
 d:xorg-xcb-util-xrm
 d:mesa
 d:mesa/patches
 d:xorg-xf86-video-fbdev
-f:800a15cfc872acf9999bce55b30491a8:mtdev/.footprint
-f:3ac078834db014ccf66b1425274e9f53:mtdev/.signature
-f:a5bec44ea6d2f5e0021cc97fe8b26348:mtdev/Pkgfile
 f:04618950e29d6a926c05b43e027128a7:xorg-rendercheck/.footprint
 f:e18a0f25a1ab578d779ea8770330a013:xorg-rendercheck/.signature
 f:0431def0282c6bc31d27ef1653c4bd84:xorg-rendercheck/Pkgfile
