@@ -26,7 +26,6 @@ d:zip
 d:pkg-get
 d:dbus
 d:hyphen
-d:strace
 d:aspell
 d:liburcu
 d:nodejs
@@ -185,9 +184,6 @@ f:1ffa747b5a17d9e0f3a19ca41bee81d7:dbus/Pkgfile
 f:761d01b09e41159c71636c6ce8e18f65:hyphen/.footprint
 f:f2a6bc2de0496063825791220cf24be6:hyphen/.signature
 f:e1dadd566a18049c0bdcfe2c7b4773a5:hyphen/Pkgfile
-f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
-f:49852d7002c5503075c0cd173577e553:strace/.signature
-f:21dd0c6e7f28cf1c20189446d84b9a58:strace/Pkgfile
 f:c32d199bdb048fcdc8596761f82e6f8d:aspell/.footprint
 f:9b6c9378cdeb1efa1d3e0fb679d37e82:aspell/.signature
 f:dd9390f6f5ac214b2d42e9cdc6865f9f:aspell/Pkgfile
