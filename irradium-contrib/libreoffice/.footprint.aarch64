@@ -164,6 +164,8 @@ lrwxrwxrwx	root/root	usr/lib/libreoffice/program/bootstraprc -> ../../../etc/lib
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libpdffilterlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libpdfimportlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libpdfiumlo.so
+-rwxr-xr-x	root/root	usr/lib/libreoffice/program/libpostgresql-sdbc-impllo.so
+-rwxr-xr-x	root/root	usr/lib/libreoffice/program/libpostgresql-sdbclo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libpricinglo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libprotocolhandlerlo.so
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/libproxyfaclo.so
@@ -325,6 +327,7 @@ drwxr-xr-x	root/root	usr/lib/libreoffice/program/resource/common/fonts/
 -rwxr-xr-x	root/root	usr/lib/libreoffice/program/senddoc
 -rw-r--r--	root/root	usr/lib/libreoffice/program/services.rdb
 drwxr-xr-x	root/root	usr/lib/libreoffice/program/services/
+-rw-r--r--	root/root	usr/lib/libreoffice/program/services/postgresql-sdbc.rdb
 -rw-r--r--	root/root	usr/lib/libreoffice/program/services/pyuno.rdb
 -rw-r--r--	root/root	usr/lib/libreoffice/program/services/scriptproviderforpython.rdb
 -rw-r--r--	root/root	usr/lib/libreoffice/program/services/services.rdb
@@ -3261,6 +3264,7 @@ drwxr-xr-x	root/root	usr/lib/libreoffice/share/registry/
 -rw-r--r--	root/root	usr/lib/libreoffice/share/registry/oo-ad-ldap.xcd.sample
 -rw-r--r--	root/root	usr/lib/libreoffice/share/registry/oo-ldap.xcd.sample
 -rw-r--r--	root/root	usr/lib/libreoffice/share/registry/pdfimport.xcd
+-rw-r--r--	root/root	usr/lib/libreoffice/share/registry/postgresql.xcd
 drwxr-xr-x	root/root	usr/lib/libreoffice/share/registry/res/
 -rw-r--r--	root/root	usr/lib/libreoffice/share/registry/res/fcfg_langpack_en-US.xcd
 -rw-r--r--	root/root	usr/lib/libreoffice/share/registry/writer.xcd
