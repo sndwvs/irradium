@@ -4,13 +4,13 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.12/
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.11.12.dist-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.11.12.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.11.12.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.11.12.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.11.12.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.11.12.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.11.12.dist-info/licenses/LICENSE
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/licenses/LICENSE
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/__init__.py
@@ -183,12 +183,16 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/aeonco.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/afreecatv.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/afreecatv.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/agalega.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/agalega.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/agora.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/agora.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/airtv.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/airtv.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/aitube.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/aitube.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/alibaba.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/alibaba.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/aliexpress.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/aliexpress.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/aljazeera.cpython-312.opt-1.pyc
@@ -323,6 +327,8 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/biobiochiletv.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/bitchute.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/bitchute.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/bitmovin.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/bitmovin.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/blackboardcollaborate.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/blackboardcollaborate.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/bleacherreport.cpython-312.opt-1.pyc
@@ -707,6 +713,8 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/freetv.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/frontendmasters.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/frontendmasters.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/frontro.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/frontro.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/fujitv.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/fujitv.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/funk.cpython-312.opt-1.pyc
@@ -1199,6 +1207,8 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nerdcubed.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nest.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nest.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/netapp.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/netapp.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/neteasemusic.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/neteasemusic.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/netverse.cpython-312.opt-1.pyc
@@ -1259,6 +1269,8 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nova.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/novaplay.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/novaplay.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nowcanal.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nowcanal.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nowness.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nowness.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/noz.cpython-312.opt-1.pyc
@@ -2133,6 +2145,8 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/yapfiles.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/yappy.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/yappy.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/yfanefa.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/yfanefa.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/yle_areena.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/yle_areena.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/youjizz.cpython-312.opt-1.pyc
@@ -2183,9 +2197,11 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/aenetworks.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/aeonco.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/afreecatv.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/agalega.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/agora.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/airtv.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/aitube.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/alibaba.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/aliexpress.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/aljazeera.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/allocine.py
@@ -2253,6 +2269,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/bilibili.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/biobiochiletv.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/bitchute.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/bitmovin.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/blackboardcollaborate.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/bleacherreport.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/blerp.py
@@ -2445,6 +2462,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/freespeech.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/freetv.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/frontendmasters.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/frontro.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/fujitv.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/funk.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/funker530.py
@@ -2691,6 +2709,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/nekohacker.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/nerdcubed.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/nest.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/netapp.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/neteasemusic.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/netverse.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/netzkino.py
@@ -2721,6 +2740,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/nosnl.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/nova.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/novaplay.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/nowcanal.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/nowness.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/noz.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/npo.py
@@ -3158,6 +3178,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/yandexvideo.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/yapfiles.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/yappy.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/yfanefa.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/yle_areena.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/youjizz.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/youku.py
