@@ -200,7 +200,7 @@ f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:5541e0d6e02a74426852511a3f41f572:firefox/.footprint.riscv64
 f:65e862a68ea6249bf98dd4824dc58ae0:firefox/.footprint.aarch64
-f:9dc7ba7bcc5628c44951d68c67eea24c:firefox/.signature.aarch64
+f:196c680b3dc7b5563cdc3f704bad5179:firefox/.signature.aarch64
 f:bad5563a7f53db4a06076f384bdfeb72:firefox/.signature.riscv64
 f:9693a9d9ca48f7e366b19f4e07ba71b3:firefox/Pkgfile
 f:2f5fc408ed89fdff07279b68a94039c7:firefox/fix-icu-78.1-LineBreaker.patch
