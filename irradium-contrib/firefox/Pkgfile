@@ -80,6 +80,8 @@ EOF
     echo 'ac_add_options --disable-elf-hack' >> .mozconfig
   else
     echo 'ac_add_options --disable-sandbox' >> .mozconfig
+    echo 'ac_add_options --disable-webrtc' >> .mozconfig
+    echo 'ac_add_options --enable-rust-simd' >> .mozconfig
   fi
 
   prt-get isinst icu >/dev/null && echo 'ac_add_options --with-system-icu' >> .mozconfig

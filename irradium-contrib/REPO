@@ -202,7 +202,7 @@ f:5541e0d6e02a74426852511a3f41f572:firefox/.footprint.riscv64
 f:65e862a68ea6249bf98dd4824dc58ae0:firefox/.footprint.aarch64
 f:196c680b3dc7b5563cdc3f704bad5179:firefox/.signature.aarch64
 f:bad5563a7f53db4a06076f384bdfeb72:firefox/.signature.riscv64
-f:9693a9d9ca48f7e366b19f4e07ba71b3:firefox/Pkgfile
+f:4fa5fbff4c3113494b209497b182db2e:firefox/Pkgfile
 f:2f5fc408ed89fdff07279b68a94039c7:firefox/fix-icu-78.1-LineBreaker.patch
 f:1bdedda3b6bb7a21ac0373e6df5f1dc0:freerdp/.footprint
 f:22a09d743d7fd6eae661af15c18065f5:freerdp/.signature
