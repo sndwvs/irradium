@@ -2,7 +2,7 @@
 
 GIT_URL_CRUX="https://git.crux.nu/ports"
 GIT_URL_IRRADIUM="https://gitlab.com/sndwvs"
-DISTR_VERSIONS=("3.7" "3.8")
+DISTR_VERSIONS=("3.8")
 
 #CRUX_UPDATE_GIT_REPO=${CRUX_UPDATE_GIT_REPO:-"yes"}
 WORK_DIR=$(mktemp -d)
