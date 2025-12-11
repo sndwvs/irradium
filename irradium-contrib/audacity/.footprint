@@ -88,8 +88,10 @@ drwxr-xr-x	root/root	usr/lib/audacity/modules/
 -rwxr-xr-x	root/root	usr/lib/audacity/modules/mod-mp3.so
 -rwxr-xr-x	root/root	usr/lib/audacity/modules/mod-mpg123.so
 -rwxr-xr-x	root/root	usr/lib/audacity/modules/mod-ogg.so
+-rwxr-xr-x	root/root	usr/lib/audacity/modules/mod-opus.so
 -rwxr-xr-x	root/root	usr/lib/audacity/modules/mod-pcm.so
 -rwxr-xr-x	root/root	usr/lib/audacity/modules/mod-script-pipe.so
+-rwxr-xr-x	root/root	usr/lib/audacity/modules/mod-wavpack.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/audacity.desktop

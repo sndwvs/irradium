@@ -156,9 +156,10 @@ f:c35f78590d60146abc6f593e113ef6ba:android-tools/.footprint
 f:46a1f05324771aa19279183b0d677d48:android-tools/.signature
 f:5a7c243a452747190e6fbde07cc10c34:android-tools/Pkgfile
 f:993eed7af08a51a8f8155769e900cbe9:android-tools/android-tools-35.0.2-fix-protobuf-30.0-compilation.patch
-f:95d427053c3f2589d3eb98e419eac127:audacity/.footprint
-f:caafe7384c6b627d1aa44f2ae003d9e3:audacity/.signature
-f:79f8dbe19564cccf97ca4b71026e8c99:audacity/Pkgfile
+f:fa351dca0dc5a7bf5a2be4a8df88ef61:audacity/.footprint
+f:59d0155912092cfbef8f48db297a2191:audacity/.signature
+f:261cbb8c2b81fe0df1635789cbdba40a:audacity/Pkgfile
+f:649c435cef9d967e4fdb99e0481dddd9:audacity/add-cstdint.patch
 f:cca42a21584d2e7a49baa60bb486c5d2:chromium/post-install
 f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64

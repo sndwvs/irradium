@@ -5,11 +5,14 @@
 # Optional: libsndfile mpg123 wavpack opusfile opus vamp-plugin-sdk vst3sdk suil lilv twolame sratom lv2
 
 name=audacity
-version=3.7.1
-release=2
-source=(https://github.com/$name/$name/archive/refs/tags/Audacity-$version.tar.gz)
+version=3.7.7
+release=1
+source=(https://github.com/$name/$name/archive/refs/tags/Audacity-$version.tar.gz
+    add-cstdint.patch)
 
 build() {
+
+  patch -d $name-Audacity-$version -p1 -i $SRC/add-cstdint.patch
 
   prt-get isinst vamp-plugin-sdk && PKGMK_AUDACITY+=" -D audacity_use_vamp=system" || PKGMK_AUDACITY+=" -D audacity_use_vamp=off"
   prt-get isinst lv2 && PKGMK_AUDACITY+=" -D audacity_use_lv2=system" || PKGMK_AUDACITY+=" -D audacity_use_lv2=local"
@@ -25,7 +28,7 @@ build() {
     -D CMAKE_INSTALL_LIBDIR=lib \
     -D CMAKE_INSTALL_LIBEXECDIR=lib \
     -D CMAKE_BUILD_TYPE=None \
-    -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG" \
+    -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG -std=gnu17" \
     -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG" \
     -D AUDACITY_BUILD_LEVEL=2 \
     -D audacity_conan_enabled=OFF \
