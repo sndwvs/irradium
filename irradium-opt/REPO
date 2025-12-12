@@ -139,9 +139,9 @@ f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:c9256bdee5eb6052846d0f65f85fbc08:rust/Pkgfile
 f:19368ee574587ede69279d0ea4993558:rust/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
-f:183e539730c16ed0f400c7b0c52048e5:rust/.footprint.aarch64
+f:739e0ee7395eca51dcf94c62430c6d58:rust/.footprint.aarch64
 f:e7b06145fec88b8ca87446ce5c0d454b:rust/.footprint.riscv64
-f:0dd462b5f7e4273b6e9f5d17bfa921d9:rust/.signature.aarch64
+f:349cd6b997ba86c5419e93fff3186518:rust/.signature.aarch64
 f:53e7130349ac3a3c0f9c9568c9574383:rust/.signature.riscv64
 f:ffe6852cdf38381d36027a61216e6df7:rust/riscv64-disable-f16-f128.patch
 f:ad038a2aa1de454e47d70d0cbac53e1b:rust/0001-bootstrap-Change-libexec-dir.patch
