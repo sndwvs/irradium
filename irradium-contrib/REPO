@@ -543,7 +543,7 @@ f:9fc18c8eab771033b956b4a6c881beb4:hostapd/0001-hostapd-Add-the-missing-CONFIG_S
 f:94a2900808c2507fe87e224217eebb8f:hostapd/Pkgfile
 f:5cdcc7dea3af935216e1a35ab5f6c4b2:hostapd/config
 f:dd8a03baafdac0efcf198f4f2528c6da:hostapd/rc.hostapd
-f:0076af8fa1df0bd99f4ad410fe4c7199:openipmi/Pkgfile
+f:8b8e5d3d7f4297b604e8b522b32c0152:openipmi/Pkgfile
 f:2c46b5111d2a8d3b4449dea1882e3e05:openipmi/.footprint
 f:da59a8d7ffc5a8a5db09387252c80d38:openipmi/.signature
 f:ea29b259b6fda2cfaaae1e8ab1239cf0:pkgtools/post-install

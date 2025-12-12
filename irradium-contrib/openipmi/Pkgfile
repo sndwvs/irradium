@@ -19,7 +19,8 @@ build() {
     --localstatedir=/var \
     --disable-static \
     --with-ucdsnmp \
-    --without-python
+    --without-python \
+    --build=$(uname -m)-unknown-linux-gnu
 
   make
   make DESTDIR=$PKG install
