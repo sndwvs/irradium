@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7r2Dm3fI6g0+Vh2OMcJXYQ9ltviR3aebj93Q+6B77fsqF9Ti9oOYTwiPbBd5nlhT1JRca6HZEgbngOwHbAqaagM=
-SHA256 (Pkgfile) = f2c0caf790b0e0e2d656446fe37830c70631ab253a7e3e3c755ccec921d743dc
-SHA256 (.footprint) = 5f801454a68e05cd90a7f03ee55bd4df15c202e9dd4ce1d98e7ab4e1e146b2fe
-SHA256 (vlc-3.0.21.tar.xz) = 24dbbe1d7dfaeea0994d5def0bbde200177347136dbfe573f5b6a4cee25afbb0
-SHA256 (vlc-3.0.20-ffmpeg7.patch) = 2f3ec236a77f3a9f39f02823ee0d072d0a3492bd59ab43b6048a1a7156e07fda
+RWTmT3d9kqan7h/R+K8i7rEPir673B8JMvdPLStF2d2fJVMrrtNoWF2/xQWwSmcLItscGvY0qZ+CateoOCdMGxAzsqFQbtLfeA0=
+SHA256 (Pkgfile) = b6997c5d6fadbcbc941ddfc1ff340fa2f322b4b96f72bdae98ef1f6551150ca9
+SHA256 (.footprint) = ece9a62dc76cf6e00cdcdeb8c49c5a07d251ea86211067a25f2cbc04f860b1c3
+SHA256 (vlc-3.0.22.tar.xz) = e2cc1cf0ae0902a09da5a37c249a8a4e4b5ec4dc095443b8e1493c6a7cc138ea
