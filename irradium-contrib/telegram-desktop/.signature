@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7jb/d9oEyKXzzS+dihIdNhucVy9l1cSOssCKDqLNn5ZRsjRwmfiPZPQJlrzzofekzvsbMr3B35hyerJGoPw/JwI=
-SHA256 (Pkgfile) = 53f597d0d016f9ca9ccf451483193142870decd0e6d6fb640b87dd87b003b25d
+RWTmT3d9kqan7uVZCGlISz1fq47DYtZb+cZsbYwgf6SxZkVr3n8h/UyYw+cq8RmRL3BKDAYBZ0/YOpaucxINoKI8BWjk9afT7QI=
+SHA256 (Pkgfile) = 2cf5e3c5c910647b6951f5e68cf4b5ed9a7751812514f836c37f4568a14ebe76
 SHA256 (.footprint) = 76d165e53801f61908af767852014d7f7b616f4f7a71f03ef546e632a3fe48ba
-SHA256 (tdesktop-6.3.4-full.tar.gz) = 7943671e3242bbc714c260e910333c5731ebef37e2c0310a563d4de6329fbfdd
+SHA256 (tdesktop-6.3.6-full.tar.gz) = e2cb4d726f8ce9a268ce903317b02b17a3b8486372e3e121dd57c130e7b55498
 SHA256 (51743dfd01dff6179e2d8f7095729caa4e2222e9.tar.gz) = f2c6b92533ba41a024b9fdb86d346c8bfc876d5961738ad463effbd844d61405
