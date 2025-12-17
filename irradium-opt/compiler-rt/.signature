@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCSNZGq5z1CrALPRBP1rZg+0D5QzlEtN54XmUresrhZMysMFous/4IOl8TfBBHkF0LHlXPKJDWrp/Ptfh4TbDFgM=
-SHA256 (Pkgfile) = 02bf585cf275e9e6e8499063d904da54aff8073123a09fc54b9a91b4497248fc
+RWRxRnTWECCiCVVFlHDOgh4nmBZl5+YV3hWuIeUSI6lGWs3vzgAHuXMHHChv1fqh4AolBbKlCEG81oxMGftGcAALftJlLrNLEAc=
+SHA256 (Pkgfile) = e42c92fff762a74099a2f015e690940460bf490a7b93ac6f56417142cb4758df
 SHA256 (.footprint) = 7005b51fdac0c8dd29dd87f6c560f2a54637d9c4af926da4f75f11ca0decac55
-SHA256 (compiler-rt-21.1.7.src.tar.xz) = 4358e4476ab89b6ca9e4174f05f4a2c2c10e4a41c3c7febd25afe96bc27b5758
-SHA256 (llvm-21.1.7.src.tar.xz) = 8657ee188b673a3285b991131abe905b4129a18d52d334f9d122463164ecd000
-SHA256 (cmake-21.1.7.src.tar.xz) = f25ca011e4453ac035e940aa729d482d08eb83a91b4aaf1f230dc9ea28cadfa4
-SHA256 (third-party-21.1.7.src.tar.xz) = 5fe212feb27f325fa29530eb38e746a73d18205bf6a36d9800778a94108d2ee5
+SHA256 (compiler-rt-21.1.8.src.tar.xz) = dd54ae21aee1780fac59445b51ebff601ad016b31ac3a7de3b21126fd3ccb229
+SHA256 (llvm-21.1.8.src.tar.xz) = d9022ddadb40a15015f6b27e6549a7144704ded8828ba036ffe4b8165707de21
+SHA256 (cmake-21.1.8.src.tar.xz) = 85735f20fd8c81ecb0a09abb0c267018475420e93b65050cc5b7634eab744de9
+SHA256 (third-party-21.1.8.src.tar.xz) = 7fe99424384aea529ffaeec9cc9dfb8b451fd1852c03fc109e426fe208a1f1a7
