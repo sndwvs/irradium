@@ -41,7 +41,7 @@ d:efivar
 d:compiler-rt
 d:strace
 f:fa75fbb042271cc211626d163661a949:cryptsetup/.footprint
-f:97b86f7d721e6560241481994ecd3232:cryptsetup/.signature
+f:82911800c39406ba7c85a49abe597e96:cryptsetup/.signature
 f:0a11d9366e643b97670f653b98ff79a4:cryptsetup/Pkgfile
 f:dae0c10c99399580c929fc100e79faef:ffmpeg/ffmpeg-x264-10bit.sh
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg/add-av_stream_get_first_dts-for-chromium.patch
