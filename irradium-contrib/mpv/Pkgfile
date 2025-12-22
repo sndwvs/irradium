@@ -2,7 +2,7 @@
 # URL: https://mpv.io/
 # Maintainer: John McQuah, jmcquah at disroot dot org
 # Depends on: ffmpeg libass libplacebo util-linux xorg-libxscrnsaver
-# Optional: libdvdnav libbluray libcdio-paranoia luajit libsdl2 libvdpau pipewire pulseaudio sndio rubberband xorg-libxpresent
+# Optional: libdvdnav libbluray libcdio-paranoia luajit libvdpau pipewire pulseaudio sndio rubberband xorg-libxpresent
 
 name=mpv
 version=0.41.0
@@ -12,7 +12,6 @@ source=(https://github.com/mpv-player/mpv/archive/v$version/$name-$version.tar.g
 build() {
   prt-get isinst libdvdnav && PKGMK_MPV="-D dvdnav=enabled"
   prt-get isinst libcdio-paranoia && PKGMK_MPV+=" -D cdda=enabled"
-  prt-get isinst libsdl2 && PKGMK_MPV+=" -D sdl2=enabled"
   prt-get isinst luajit && PKGMK_MPV+=" -D lua=luajit"
   [ -e /usr/lib/libsndio.so ] && PKGMK_MPV+=" -D sndio=enabled"
 
