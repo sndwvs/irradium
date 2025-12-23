@@ -4,7 +4,7 @@
 # Depends on: openssl perl
 
 name=net-snmp
-version=5.9.4
+version=5.9.5
 release=1
 source=(https://downloads.sourceforge.net/net-snmp/net-snmp-$version.tar.gz
         rc.snmpd
