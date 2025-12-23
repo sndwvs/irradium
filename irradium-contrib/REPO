@@ -732,8 +732,7 @@ f:01fa573c86a3862e0e2f999e4b6c685c:nmon/Pkgfile
 f:4b74cb75ee1cac92cc85b541b9b1df40:nmon/glibc.patch
 f:7119c2ca7adff6ba9f354b0f808bd54b:net-snmp/rc.snmpd
 f:d67274250f9419b16aab397874371bb9:net-snmp/snmpd.default
-f:4dcf7301d40144fe4c5a47c408b4baa1:net-snmp/785.patch
-f:332de0e3abffeba173ba72ddac336370:net-snmp/Pkgfile
+f:8cda15293837120ba5edb547a82751a6:net-snmp/Pkgfile
 f:b1ece64f617b0e6122944d0b1e24002f:net-snmp/net-snmp-5.7.2-cert-path.patch
 f:39f925962239687cc8ff919ff776a4a8:net-snmp/net-snmp-5.7.3-iterator-fix.patch
 f:3d844da010e967272baed7fc7bf1806e:net-snmp/net-snmp-5.8-Remove-U64-typedef.patch
