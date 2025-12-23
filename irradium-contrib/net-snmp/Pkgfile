@@ -15,7 +15,8 @@ source=(https://downloads.sourceforge.net/net-snmp/net-snmp-$version.tar.gz
         net-snmp-5.7.2-cert-path.patch
         net-snmp-5.8-Remove-U64-typedef.patch
         net-snmp-5.7.3-iterator-fix.patch
-        net-snmp-5.8-modern-rpm-api.patch)
+        net-snmp-5.8-modern-rpm-api.patch
+        785.patch)
 
 build() {
   cd $name-$version
@@ -29,6 +30,8 @@ build() {
   patch -p1 -i $SRC/net-snmp-5.8-Remove-U64-typedef.patch
   patch -p1 -i $SRC/net-snmp-5.7.3-iterator-fix.patch
   patch -p1 -i $SRC/net-snmp-5.8-modern-rpm-api.patch
+  # Patch for Linux 6.7+ kernel (also works with older kernels):
+  patch -p1 -i $SRC/785.patch
 
   CC=clang \
   CXX=clang++ \
