@@ -94,7 +94,6 @@ build() {
     --enable-lto \
     --enable-ffplay \
     --enable-avfilter \
-    --enable-postproc \
     --enable-pthreads \
     --enable-swresample \
     --disable-debug \
