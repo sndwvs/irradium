@@ -5,13 +5,10 @@
 # Optional: alsa-lib amf-headers aom chromaprint cuda dav1d fdk-aac fontconfig freetype gnutls gsm jack jack-audio-connection-kit ladspa lame lcms2 lensfun libass libbs2b libcaca libcdio-paranoia libdrm libmodplug libplacebo librsvg libsdl2 libsoxr libssh libtheora libva libvdpau libvorbis libvpx libwebp libxml2 lv2 nv-codec-headers openal opencv openh264 openjpeg2 opus pulseaudio rav1e rtmpdump rubberband shaderc snappy speex svt-av1 v4l-utils x264 x265
 
 name=ffmpeg
-version=7.1.3
+version=8.0.1
 release=1
 source=(https://ffmpeg.org/releases/$name-$version.tar.bz2
   add-av_stream_get_first_dts-for-chromium.patch
-  fef22c87ada4517441701e6e61e062c9f4399c8e.patch
-  bcfbf2bac8f9eeeedc407b40596f5c7aaa0d5b47.patch
-  d0facac679faf45d3356dff2e2cb382580d7a521.patch
   add-in-cpu-__NR_riscv_hwprobe.patch
   ffmpeg-x264-10bit.sh)
 
@@ -74,8 +71,6 @@ build() {
   prt-get isinst mpp && PKGMK_FFMPEG+=' --enable-rkmpp'
 
   patch -Np1 -i $SRC/add-av_stream_get_first_dts-for-chromium.patch
-  patch -Np1 -i $SRC/bcfbf2bac8f9eeeedc407b40596f5c7aaa0d5b47.patch
-  patch -Np1 -i $SRC/d0facac679faf45d3356dff2e2cb382580d7a521.patch
   patch -Np1 -i $SRC/add-in-cpu-__NR_riscv_hwprobe.patch
 
   sed -i -e '/check_cflags -fdiagnostics-color=auto/d' configure
