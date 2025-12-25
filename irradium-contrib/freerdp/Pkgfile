@@ -7,23 +7,34 @@ name=freerdp
 version=2.11.7
 release=1
 source=(https://github.com/FreeRDP/FreeRDP/archive/$version.tar.gz
-    d0c5b1ae.patch
-    1ef7b9e3.patch)
+    0002-info-Fix-incompatible-pointer-type.patch
+    0003-redirection-Fix-incompatible-pointer-type.patch
+    0004-redirection-Fix-incompatible-pointer-type.patch
+    0005-X11-fix-pointer-integer-type-mismatch.patch
+    0006-client-wayland-fix-const-correctness.patch
+    0007-warnings-fix-Wincompatible-pointer-types.patch
+    0008-server-proxy-deactivate-capture-module.patch
+    0009-switch-to-absolute-rpath.patch)
 
 build(){
   cd FreeRDP-$version
 
-  # Fix build with ffmpeg 7
-  patch -p1 -i $SRC/d0c5b1ae.patch
-  patch -p1 -i $SRC/1ef7b9e3.patch
+  patch -p1 -i $SRC/0002-info-Fix-incompatible-pointer-type.patch
+  patch -p1 -i $SRC/0003-redirection-Fix-incompatible-pointer-type.patch
+  patch -p1 -i $SRC/0004-redirection-Fix-incompatible-pointer-type.patch
+  patch -p1 -i $SRC/0005-X11-fix-pointer-integer-type-mismatch.patch
+  patch -p1 -i $SRC/0006-client-wayland-fix-const-correctness.patch
+  patch -p1 -i $SRC/0007-warnings-fix-Wincompatible-pointer-types.patch
+  patch -p1 -i $SRC/0008-server-proxy-deactivate-capture-module.patch
+  patch -p1 -i $SRC/0009-switch-to-absolute-rpath.patch
 
   export CFLAGS="$CFLAGS -D_BSD_SOURCE -flto=auto"
   cmake -B build -G Ninja \
     -DCMAKE_BUILD_TYPE=MinSizeRel \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_INSTALL_LIBDIR=lib \
-    -DCMAKE_C_FLAGS="$SLKCFLAGS" \
-    -DCMAKE_CXX_FLAGS="$SLKCFLAGS" \
+    -DCMAKE_C_FLAGS="$CFLAGS" \
+    -DCMAKE_CXX_FLAGS="$CFLAGS" \
     -DWITH_ALSA=ON \
     -DWITH_PULSE=ON \
     -DWITH_CHANNELS=ON \
