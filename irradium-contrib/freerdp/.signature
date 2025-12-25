@@ -1,7 +1,16 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7koc0Q4uavWqIfk9+9n+NQ0kx+6IVqpLjfX48xVi/YKy5vIK1Q7rI3RqCsIK1eBlSXTP4UJZq6xE0IH0x4i7KwQ=
-SHA256 (Pkgfile) = 350949bb103cb09e612675c2817692253561ca70104ff2acbf7d08b0264058f4
-SHA256 (.footprint) = 41cb7ed3ed17d354399d8dea74c2f9a0f33191e51839c89cf548437d1c35b390
-SHA256 (2.11.6.tar.gz) = 39b6b3e0aea76bf43fc724b95369e69626a452a1db4cbbb84b9b490ecf05b2be
+RWTmT3d9kqan7qpBcdg7hojC2LqGitusbwQcO3+kVZSnmInu2ZAe33gpmugr4x2VoVEM0RgknWC+0DL8mJWSofuYkj6PADXcNwQ=
+SHA256 (Pkgfile) = b7ce1a7f05d4c8c3537cd39b0a8c30f1b004c85e7767609c564e48f74ef099f2
+SHA256 (.footprint) = 1072e2bad6e47791658797fa371669a6a31b3b50c1ce61c19a946fce7cffebd4
+SHA256 (2.11.7.tar.gz) = 22dbeeaad065e93f152d70e04ec8eeab08aa32c406a96be64f252526623625a4
 SHA256 (d0c5b1ae.patch) = 1ba92603451c34d8b023cc0f0665931230da251cd33e4638d4f01ff9d8e0f988
 SHA256 (1ef7b9e3.patch) = dd965c293bec907ba292b71c7cb7f008d1595908d48399f03d625af3fc3270b8
+SHA256 (ffmpeg-8.patch) = b71a7e6409d8256b06b2a07f98e58f8ac200005f63052e6702a05e209a8be01d
+SHA256 (0002-info-Fix-incompatible-pointer-type.patch) = 3aad8862cdac5d9e037f814c4f00d90a24bc74b5bb95b091e7b4038abe1217be
+SHA256 (0003-redirection-Fix-incompatible-pointer-type.patch) = 69d4d9cdee6aa294e7b3fc7aaac70243c6450191ee5e7e8252943302f95294da
+SHA256 (0004-redirection-Fix-incompatible-pointer-type.patch) = 6861598883e5b58a1c41295c63b0e41c80db30eca9a6132bc3c57deb8dbb7f90
+SHA256 (0005-X11-fix-pointer-integer-type-mismatch.patch) = 0f36026bf2ab7f8403a7c5fd86f33882e5c081fc96bb2c998713209b7abb46e9
+SHA256 (0006-client-wayland-fix-const-correctness.patch) = 5cb36fcc343befe01e7d22b3ee9d09f9f6bc7549c1d1bf41d620fd5c5a278c29
+SHA256 (0007-warnings-fix-Wincompatible-pointer-types.patch) = 5568e72e6e123d742286ae783c622bb48a3e9d7c773005dae6fe2cad3b25f6ae
+SHA256 (0008-server-proxy-deactivate-capture-module.patch) = 4cb60e3283e3dd2011778b02ca4bd5baf773f05a21986b903cf4764b25815a35
+SHA256 (0009-switch-to-absolute-rpath.patch) = a4c32df9817606ebe8a7488a6bf3f0df1c15c9b7be87c2eeabc0d7d59aecd9de

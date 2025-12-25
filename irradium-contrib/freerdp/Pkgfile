@@ -7,6 +7,9 @@ name=freerdp
 version=2.11.7
 release=1
 source=(https://github.com/FreeRDP/FreeRDP/archive/$version.tar.gz
+    d0c5b1ae.patch
+    1ef7b9e3.patch
+    ffmpeg-8.patch
     0002-info-Fix-incompatible-pointer-type.patch
     0003-redirection-Fix-incompatible-pointer-type.patch
     0004-redirection-Fix-incompatible-pointer-type.patch
@@ -28,7 +31,12 @@ build(){
   patch -p1 -i $SRC/0008-server-proxy-deactivate-capture-module.patch
   patch -p1 -i $SRC/0009-switch-to-absolute-rpath.patch
 
-  export CFLAGS="$CFLAGS -D_BSD_SOURCE -flto=auto"
+  # Fix build with ffmpeg 7
+  patch -p1 -i $SRC/d0c5b1ae.patch
+  patch -p1 -i $SRC/1ef7b9e3.patch
+  # Fix build with ffmpeg 8
+  patch -p1 -i $SRC/ffmpeg-8.patch
+
   cmake -B build -G Ninja \
     -DCMAKE_BUILD_TYPE=MinSizeRel \
     -DCMAKE_INSTALL_PREFIX=/usr \
