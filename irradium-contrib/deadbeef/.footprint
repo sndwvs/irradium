@@ -164,6 +164,8 @@ drwxr-xr-x	root/root	usr/lib/deadbeef/data68/Replay/
 -rwxr-xr-x	root/root	usr/lib/deadbeef/notify.so
 -rwxr-xr-x	root/root	usr/lib/deadbeef/nullout.la
 -rwxr-xr-x	root/root	usr/lib/deadbeef/nullout.so
+-rwxr-xr-x	root/root	usr/lib/deadbeef/opus.la
+-rwxr-xr-x	root/root	usr/lib/deadbeef/opus.so
 -rwxr-xr-x	root/root	usr/lib/deadbeef/oss.la
 -rwxr-xr-x	root/root	usr/lib/deadbeef/oss.so
 -rwxr-xr-x	root/root	usr/lib/deadbeef/pltbrowser_gtk3.la

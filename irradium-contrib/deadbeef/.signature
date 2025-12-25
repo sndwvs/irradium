@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7pNRTt66EtR27hszlSegKc1pwI/GLPNisjVm2zT9PEbBlq5MzrI7YdlKZxarw9J2Ng1Lm+q+4ZzJTfqWwLnIvgI=
+RWTmT3d9kqan7iPPnitxlaxXTBCWnCwxvP64wBLQ+x2i1hAacVdJFJI9oId3dhqCxJqokFaZszqI3+soF7tgySKhGi3Xr2gsfw0=
 SHA256 (Pkgfile) = aa0011dfc610e7b5ef59aac7d8875662c7580482b4d32c22a46cc3430d8962fb
-SHA256 (.footprint) = ebbd58f5126036ecf78ff38ae62bac54b7fc78abfa5f85bbaa6fae4790b24d9c
+SHA256 (.footprint) = 177439caa4d07bac704d37d91e2a90c2f64dfa31dd0666dfb4bbefb84d69f004
 SHA256 (ddb_dsp_libretro_fix_aarch64_riscv64.patch) = ff31200725ffceda4d17fed3940959a64a919cd019af99e985c7101c73b59b31
