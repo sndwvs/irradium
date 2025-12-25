@@ -153,7 +153,7 @@ f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
 f:c35f78590d60146abc6f593e113ef6ba:android-tools/.footprint
-f:46a1f05324771aa19279183b0d677d48:android-tools/.signature
+f:6eccbd81b976ee8e5b7f70466617ecae:android-tools/.signature
 f:5a7c243a452747190e6fbde07cc10c34:android-tools/Pkgfile
 f:993eed7af08a51a8f8155769e900cbe9:android-tools/android-tools-35.0.2-fix-protobuf-30.0-compilation.patch
 f:fa351dca0dc5a7bf5a2be4a8df88ef61:audacity/.footprint
