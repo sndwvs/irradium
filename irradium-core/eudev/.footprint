@@ -1,3 +1,5 @@
+drwxr-xr-x	root/root	bin/
+-rwxr-xr-x	root/root	bin/mount_fusectl
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/udev/
 -r--r--r--	root/root	etc/udev/hwdb.bin
@@ -41,8 +43,6 @@ drwxr-xr-x	root/root	lib/udev/
 -rwxr-xr-x	root/root	lib/udev/cdrom_id
 -rwxr-xr-x	root/root	lib/udev/collect
 drwxr-xr-x	root/root	lib/udev/devices/
-drwxr-xr-x	root/root	lib/udev/devices/pts/
-drwxr-xr-x	root/root	lib/udev/devices/shm/
 -rwxr-xr-x	root/root	lib/udev/dmi_memory_id
 -rwxr-xr-x	root/root	lib/udev/fido_id
 -rwxr-xr-x	root/root	lib/udev/mtd_probe

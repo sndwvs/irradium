@@ -5,9 +5,11 @@
 
 name=eudev
 version=3.2.14
-release=4
+release=5
 source=(https://github.com/eudev-project/eudev/releases/download/v$version/$name-$version.tar.gz
-    81-irradium.rules start_udev
+    81-irradium.rules
+    mount_fusectl.sh
+    start_udev
     eudev.ignore_bind_unbind_events.diff
     eudev.no.renderD.diff
     eudev.no.sgx.diff)
@@ -54,10 +56,11 @@ build() {
         $PKG/sbin/udevadm hwdb --update --root=$PKG
 
     # Devices
-    install -d $PKG/lib/{firmware,udev/devices/{pts,shm}}
+    install -d $PKG/lib/{firmware,udev/devices}
     install -d $PKG/{lib,sbin,run}
 
-    # Add irradium items
+    # add irradium items
     install -m 0755 $SRC/start_udev $PKG/sbin
+    install -Dm 0755 $SRC/mount_fusectl.sh $PKG/bin/mount_fusectl
     install -m 0644 $SRC/81-irradium.rules $PKG/lib/udev/rules.d
 }
