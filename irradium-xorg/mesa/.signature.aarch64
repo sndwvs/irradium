@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-xorg.pub
-RWT3zJzzKRcegoTeqBek3anxlPv3jvbM6v1GPk1+6PWXYULIWDFB0Nz5hR27NxiA3Ov0trdJbrVNJzB3uL9xjQxuhUR2381BigU=
-SHA256 (Pkgfile) = 71dde534a6f939aecaee99d3f2557af5699c62d813c6a7979e0e1914e74cf02e
-SHA256 (.footprint.aarch64) = 6c888a728233e5e01c1e268839f103bc9764f2fc21f082e9c21b4d0a0f073bed
-SHA256 (mesa-25.3.2.tar.xz) = e69dab0d0ea03e3e8cb141b032f58ea9fcf3b9c1f61b31f6592cb4bbd8d0185d
+RWT3zJzzKRcegpuUJL0AalBfB+WbOEjL9d/jh5etvLv7BR9jjYuzJMlAohxJ0c73rvt9AsXTUvl4fxmjYyeNTXBIws2gPsWqyQY=
+SHA256 (Pkgfile) = d261be8c86af68d405a4fedc22bc6f719f5dfbed120b686fb87f48f6ef295376
+SHA256 (.footprint.aarch64) = d0fdea5601cb2677c480482148b1ea6e3462abcaa1a962e86bd6bc13a25c3128
+SHA256 (mesa-25.3.3.tar.xz) = 05328b3891c000e6a110a3e7321d8bfbb21631d132bf86bd3d4a8f45c535ef6b
 SHA256 (0000-mesa-23.1-x86_32-llvm-detection.patch) = 271e986dd8e09635ac4f0cc8b59c251dcc79b6be0de41da5c615c7b5035b3ead
 SHA256 (0001-mesa-24.1-find-opencl-c-base.h.patch) = cff85cbbc693faed44f21b3acecdfc204920b8ec84410166799b4eb12bd4439c
 SHA256 (0002-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch) = dfbad2f4fd8445dd2b609ae29f5645536648b1faaa44ecc2ef200d3908b574d1
