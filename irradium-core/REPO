@@ -152,10 +152,10 @@ f:441c8f54e449ebb04236731ee6033784:rc/.footprint
 f:6b7c652bea42071121801f3c0e18245f:rc/.signature
 f:ac2d17598ebb0839afc6bc628e64745d:rc/Pkgfile
 f:d39452dd1bc4f0605584e435c6677723:rc/rc.patch
-f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
+f:49567abb8fcb5b244b0b07738d4a460e:bash/.footprint
 f:be5b8a1e3dd2272113e854ed0f155c47:bash/profile
 f:cf443b43826ea1ffb0abf92b5123297a:bash/profile.patch
-f:17b8a445f80af45fbf1298f5364f88eb:bash/.signature
+f:18096a490bcd9304e9f367e2eaa6e631:bash/.signature
 f:ed506b3477888846e4fe40111a10c8a8:bash/Pkgfile
 f:1a63f345cd91916c2395bcfc2d54cdb3:bash/bash-5.3.9.patch.gz
 f:16bb1bd8843e58cc4ba357b58324cd3b:bash/locale.sh
