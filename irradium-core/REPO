@@ -69,7 +69,7 @@ f:7d16b76a4309eadedc9b1fe720cc58e9:gcc/gcc-riscv-disable-multilib-support.patch
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
 f:29486f3715cae1093e81ed54a4c17c25:gdbm/.signature
 f:55e1b8bbf5a80862ba3e3f464aec2391:gdbm/Pkgfile
-f:178e20989f69c7dabaa304071d187304:glibc/Pkgfile
+f:38b746c26e7d2e0a42b59f61f23b43c9:glibc/Pkgfile
 f:5d37085c6a7714fcc5443f05a07a873d:glibc/.nostrip
 f:257f3fdb989aa87993cbdd6e8dd213a4:glibc/.signature.aarch64
 f:ef4026788cb097673a0daa215a8920ca:glibc/.signature.riscv64
@@ -81,8 +81,8 @@ f:518de5e52f9166e58ed613a0d636e774:glibc/locale.gen.in
 f:75931315bf9bc9be15a5e25e4ddd5f0d:glibc/nsswitch.conf
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
 f:ffd59b0f7c8b5d66cdc3a5f33fa50e57:glibc/glibc-2.39-fhs-1.patch
-f:5144c947aeca04bffaf957022ffd639a:glibc/glibc-2.40-1.patch
 f:8ade3a1b3e11426f6c070daa3906c6f7:glibc/post-install
+f:1ef2167b2a0f449a12259a38878115df:glibc/glibc-2.40-2.patch
 f:394db37ac5d3c05540ba1012b0361832:glibc/.footprint.aarch64
 f:302d049c2e01cfc48e77003653474ddf:glibc/.footprint.riscv64
 f:78f62461eb778cea149a4f9966ea0c91:kbd/.footprint
