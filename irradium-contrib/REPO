@@ -749,7 +749,7 @@ f:9bd8916435941776413fd8413683cf0a:net-snmp/net-snmp-5.8-multilib.patch
 f:ef2b068ad9ad0cbc63ca3d2c4a6fb669:net-snmp/snmpd.conf
 f:6f4c927ddc9bf6ef1aa764d6232d8ef3:net-snmp/snmpd.logrotate
 f:455e65832ce3378cce55b6460c612655:net-snmp/.footprint
-f:2287a11d9427fd508381f5cf4f16477b:net-snmp/.signature
+f:a2f1c010f9ba518513d9c7737c5842c6:net-snmp/.signature
 f:4dcf7301d40144fe4c5a47c408b4baa1:net-snmp/785.patch
 f:f1d5aca022822ef640047250d2bbe52c:net-snmp/Pkgfile
 f:5f61c0fc1fca46b0fbfc08c7b02c69d9:mkdocs-material/.footprint
@@ -763,7 +763,7 @@ f:dabe50954406837ea04efeb02902cd4e:python3-mdx-truly-sane-lists/.signature
 f:b5c6236bd44e18f648e79133f6eb0ae7:python3-mdx-truly-sane-lists/Pkgfile
 f:dce0b45f8def17ca2b2cd70b7bb93eeb:vte3/.footprint
 f:ba5c3c60329ae6731cc2613996c1d969:vte3/.signature
-f:cd495a967f8b4dc0c515daf6626a3e84:vte3/Pkgfile
+f:4aa13a916c589487003b50680c67e26b:vte3/Pkgfile
 f:4bcff8c2fae56f50bf50bb9a3211205e:php-pgsql/.footprint
 f:625aee0a4705cec917b5a85ba5c8894a:php-pgsql/.signature
 f:c55b3908df29f5b6aeafb5df9cc887e3:php-pgsql/Pkgfile
