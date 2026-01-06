@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7uNPuV1tDi5NUlMofkx8QiyaSEuIfslQzc3uYfOxKjI5kv/3+NMEBJXTWa59K0rqY0evX4d+Y4FIhKoVrNHd7Qs=
-SHA256 (Pkgfile) = 75dd318c745357dc5db2020c2b821715a46713d788aeadd5a1ee0420e03f9ccd
-SHA256 (.footprint) = f96f9410628eeb98f65308f2d6d27278658084bfa0f281d0ef16412d96530cff
-SHA256 (vte-0.82.1.tar.xz) = 79376d70402d271e2d38424418e1aea72357934d272e321e3906b71706a78e3a
+RWTmT3d9kqan7nkGbAYCM6GKYQHYeEBa22dXcteHzOuHe0ICHYn3KtLr7tGfOW/P1x+zQ3I0WBLep/7dl4WPl4hduCAJGmFuWQw=
+SHA256 (Pkgfile) = 02d28cfdaa6e0dda8bed00f06003d06afc8fa74e6b7bf523c0bfcb0f5bc11578
+SHA256 (.footprint) = 10bdaaf0ccc6fe04a782160fdd2d0b4328381fc02cf2fb2f0e63f50495f6262e
+SHA256 (vte-0.82.3.tar.xz) = 6dc6278f6fee30d07d1a03e2ba3335b1ea4e8d2956ceb59d861943115d930a85
