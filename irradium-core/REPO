@@ -72,7 +72,7 @@ f:55e1b8bbf5a80862ba3e3f464aec2391:gdbm/Pkgfile
 f:38b746c26e7d2e0a42b59f61f23b43c9:glibc/Pkgfile
 f:5d37085c6a7714fcc5443f05a07a873d:glibc/.nostrip
 f:375d67fa4e0db2e56969a277d0315be2:glibc/.signature.aarch64
-f:ef4026788cb097673a0daa215a8920ca:glibc/.signature.riscv64
+f:12ec8fe1aec7d00d72ad50ddfdd19fad:glibc/.signature.riscv64
 f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
 f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
 f:f7fefce570a3c776e26e778c5e401490:glibc/ld.so.conf
