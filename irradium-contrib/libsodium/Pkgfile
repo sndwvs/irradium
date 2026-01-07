@@ -1,0 +1,20 @@
+# Description: A modern, portable, easy to use crypto library
+# URL: https://github.com/jedisct1/libsodium
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on:
+
+name=libsodium
+version=1.0.21
+release=1
+source=(https://github.com/jedisct1/libsodium/archive/$version-RELEASE/$name-$version.tar.gz
+        6702f69bef6044163acc7715e6ac7e430890ce78.patch)
+
+build() {
+  cd $name-$version-RELEASE
+
+  patch -p1 -i $SRC/6702f69bef6044163acc7715e6ac7e430890ce78.patch
+
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+}

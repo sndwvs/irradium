@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7kgwwNVw17wBudQ5F5oRoHAYRj5Zx6vWW+7WpPl1cCxxEVTqDNBTDCRFmNApZyKURSqmNd06lIVS0ukAv442SAU=
+SHA256 (Pkgfile) = 9c5c958d79844fecbabd2843562752ef3bb6dc646f5b1412fde473216bf0c9fd
+SHA256 (.footprint) = 14900c77090ab046b48ddac7903c702dd66588d8bdb79e06752a41872eacf105
+SHA256 (libsodium-1.0.21.tar.gz) = 42e0ca94faaec901f4fbeda84b1b94b18f5309c360c66345cf52a7ab515b245b
+SHA256 (6702f69bef6044163acc7715e6ac7e430890ce78.patch) = db581548a5c470601ec1ca56a32b0ab8b961ac9ed07025089895dbe05da28bfd
