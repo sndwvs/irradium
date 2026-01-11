@@ -12,5 +12,5 @@ build() {
   cd $name-$version
 
   make CXXFLAGS+=" -fno-ipa-cp"
-  make DESTDIR=$PKG install
+  make DESTDIR=$PKG PREFIX=/usr install
 }
