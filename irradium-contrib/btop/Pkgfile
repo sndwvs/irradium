@@ -4,7 +4,7 @@
 # Depends on: glibc gcc
 
 name=btop
-version=1.4.4
+version=1.4.6
 release=1
 source=(https://github.com/aristocratos/btop/archive/v$version/$name-$version.tar.gz)
 
