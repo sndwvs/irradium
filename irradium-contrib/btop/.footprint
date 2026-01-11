@@ -6,7 +6,6 @@ drwxr-xr-x	root/root	usr/local/share/
 drwxr-xr-x	root/root	usr/local/share/applications/
 -rw-rw-r--	root/root	usr/local/share/applications/btop.desktop
 drwxr-xr-x	root/root	usr/local/share/btop/
--rw-rw-r--	root/root	usr/local/share/btop/README.md
 drwxrwxr-x	root/root	usr/local/share/btop/themes/
 -rw-rw-r--	root/root	usr/local/share/btop/themes/HotPurpleTrafficLight.theme
 -rw-rw-r--	root/root	usr/local/share/btop/themes/adapta.theme
@@ -21,6 +20,7 @@ drwxrwxr-x	root/root	usr/local/share/btop/themes/
 -rw-rw-r--	root/root	usr/local/share/btop/themes/everforest-light-medium.theme
 -rw-rw-r--	root/root	usr/local/share/btop/themes/flat-remix-light.theme
 -rw-rw-r--	root/root	usr/local/share/btop/themes/flat-remix.theme
+-rw-rw-r--	root/root	usr/local/share/btop/themes/gotham.theme
 -rw-rw-r--	root/root	usr/local/share/btop/themes/greyscale.theme
 -rw-rw-r--	root/root	usr/local/share/btop/themes/gruvbox_dark.theme
 -rw-rw-r--	root/root	usr/local/share/btop/themes/gruvbox_dark_v2.theme
@@ -43,6 +43,9 @@ drwxrwxr-x	root/root	usr/local/share/btop/themes/
 -rw-rw-r--	root/root	usr/local/share/btop/themes/tokyo-storm.theme
 -rw-rw-r--	root/root	usr/local/share/btop/themes/tomorrow-night.theme
 -rw-rw-r--	root/root	usr/local/share/btop/themes/whiteout.theme
+drwxr-xr-x	root/root	usr/local/share/doc/
+drwxr-xr-x	root/root	usr/local/share/doc/btop/
+-rw-rw-r--	root/root	usr/local/share/doc/btop/README.md
 drwxr-xr-x	root/root	usr/local/share/icons/
 drwxr-xr-x	root/root	usr/local/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/local/share/icons/hicolor/48x48/
