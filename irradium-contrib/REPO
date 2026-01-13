@@ -542,9 +542,10 @@ f:357dfaa20af521331d9771a5f7218ab9:tg_owt/.footprint
 f:cec977ebe8590aa485f1036aee5fbc7b:tg_owt/cstdint.patch
 f:815c0e4b2d7baaf455a38c728f1ee7f8:tg_owt/gcc12.patch
 f:f267b2d6e4135cb3e24b5a26892bf731:tg_owt/gcc13.patch
-f:4da3d365bf53b8d5602f1ff05a31864d:tg_owt/.signature
-f:59aaaac8ba1702bdebcbdcd5fcec27c6:tg_owt/Pkgfile
+f:f3e3e5c6a76a377e23cbf688688450ff:tg_owt/.signature
+f:4a15f7bd60f5df6aa19dca92770c40bb:tg_owt/Pkgfile
 f:11a736cd81ab8dc6eaf14c4380439a4f:tg_owt/abseil-cpp-20250814.patch
+f:74c3ccab1d8cf940731e7fb8e856a24c:tg_owt/cstring_cstddef.patch
 f:672d52f4e522c3a5366b472f8b9bac34:hostapd/.footprint
 f:532af9dc58bfb887e923f87795cb3af8:hostapd/.signature
 f:9fc18c8eab771033b956b4a6c881beb4:hostapd/0001-hostapd-Add-the-missing-CONFIG_SAE-option-to-the-def.patch

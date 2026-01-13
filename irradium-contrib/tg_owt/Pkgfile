@@ -6,7 +6,7 @@
 name=tg_owt
 version=20250823
 release=2
-_commit=62321fd7128ab2650b459d4195781af8185e46b5
+_commit=ec53225952d5a2a398227644a2017358d2665fa8
 _libsrtp_commit=a566a9cfcd619e8327784aa7cff4a1276dc1e895
 _libyuv_commit=04821d1e7d60845525e8db55c7bcd41ef5be9406
 _libvpx_commit=3688b17187d40a71f9a7de4bfac92201f3e4a533
@@ -21,7 +21,8 @@ source=(https://github.com/desktop-app/tg_owt/archive/${_commit}.tar.gz
         cstdint.patch
         gcc12.patch
         gcc13.patch
-        abseil-cpp-20250814.patch)
+        abseil-cpp-20250814.patch
+        cstring_cstddef.patch)
 
 build() {
     cd $name-${_commit}
@@ -42,6 +43,7 @@ build() {
     patch -Np1 -i $SRC/gcc13.patch
     # fix for abseil 20250814; see https://github.com/desktop-app/tg_owt/pull/164
     patch -Np1 -i $SRC/abseil-cpp-20250814.patch
+    patch -Np1 -i $SRC/cstring_cstddef.patch
 
     CXXFLAGS+=" -DLIBYUV_DISABLE_NEON"
 

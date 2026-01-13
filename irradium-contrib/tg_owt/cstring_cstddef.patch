@@ -1,0 +1,87 @@
+--- a/src/modules/audio_processing/aec3/alignment_mixer.cc	2026-01-13 19:54:16.478749000 +0000
++++ b/src/modules/audio_processing/aec3/alignment_mixer.cc	2026-01-13 19:54:50.446749000 +0000
+@@ -10,6 +10,8 @@
+ #include "modules/audio_processing/aec3/alignment_mixer.h"
+ 
+ #include <algorithm>
++#include <cstddef>
++#include <cstring>
+ 
+ #include "rtc_base/checks.h"
+ 
+--- a/src/net/dcsctp/packet/bounded_byte_writer.h	2026-01-13 20:34:43.078749000 +0000
++++ b/src/net/dcsctp/packet/bounded_byte_writer.h	2026-01-13 20:36:11.990749000 +0000
+@@ -11,6 +11,8 @@
+ #ifndef NET_DCSCTP_PACKET_BOUNDED_BYTE_WRITER_H_
+ #define NET_DCSCTP_PACKET_BOUNDED_BYTE_WRITER_H_
+ 
++#include <cstdint>
++#include <cstring>
+ #include <algorithm>
+ 
+ #include "api/array_view.h"
+--- a/src/audio/utility/channel_mixer.cc	2026-01-13 20:44:15.114749000 +0000
++++ b/src/audio/utility/channel_mixer.cc	2026-01-13 20:44:47.530749000 +0000
+@@ -10,6 +10,8 @@
+ 
+ #include "audio/utility/channel_mixer.h"
+ 
++#include <cstring>
++
+ #include "audio/utility/channel_mixing_matrix.h"
+ #include "rtc_base/checks.h"
+ #include "rtc_base/logging.h"
+--- a/src/modules/video_coding/utility/ivf_file_reader.cc	2026-01-13 20:02:47.954749000 +0000
++++ b/src/modules/video_coding/utility/ivf_file_reader.cc	2026-01-13 20:04:29.254749000 +0000
+@@ -10,6 +10,9 @@
+ 
+ #include "modules/video_coding/utility/ivf_file_reader.h"
+ 
++#include <cstddef>
++#include <cstdint>
++#include <cstring>
+ #include <string>
+ #include <vector>
+ 
+--- a/src/api/video/nv12_buffer.cc	2026-01-13 19:38:33.262749000 +0000
++++ b/src/api/video/nv12_buffer.cc	2026-01-13 19:38:53.766749000 +0000
+@@ -8,6 +8,7 @@
+  *  be found in the AUTHORS file in the root of the source tree.
+  */
+ 
++#include <cstring>
+ #include "api/video/nv12_buffer.h"
+ 
+ #include "api/make_ref_counted.h"
+--- a/src/modules/desktop_capture/linux/wayland/shared_screencast_stream.cc	2026-01-13 20:52:33.542749000 +0000
++++ b/src/modules/desktop_capture/linux/wayland/shared_screencast_stream.cc	2026-01-13 20:53:03.682749000 +0000
+@@ -18,6 +18,9 @@
+ #include <spa/param/video/format-utils.h>
+ #include <sys/mman.h>
+ 
++#include <cstddef>
++#include <cstdint>
++#include <cstring>
+ #include <vector>
+ 
+ #include "absl/memory/memory.h"
+--- a/src/net/dcsctp/socket/state_cookie.cc	2026-01-13 20:22:45.418749000 +0000
++++ b/src/net/dcsctp/socket/state_cookie.cc	2026-01-13 20:24:31.422749000 +0000
+@@ -9,6 +9,7 @@
+  */
+ #include "net/dcsctp/socket/state_cookie.h"
+ 
++#include <cstddef>
+ #include <cstdint>
+ #include <vector>
+ 
+--- a/src/net/dcsctp/socket/state_cookie.h	2026-01-13 20:22:48.566749000 +0000
++++ b/src/net/dcsctp/socket/state_cookie.h	2026-01-13 20:24:50.154749000 +0000
+@@ -10,6 +10,7 @@
+ #ifndef NET_DCSCTP_SOCKET_STATE_COOKIE_H_
+ #define NET_DCSCTP_SOCKET_STATE_COOKIE_H_
+ 
++#include <cstddef>
+ #include <cstdint>
+ #include <vector>
+ 
