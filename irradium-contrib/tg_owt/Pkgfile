@@ -5,7 +5,7 @@
 
 name=tg_owt
 version=20250823
-release=1
+release=2
 _commit=62321fd7128ab2650b459d4195781af8185e46b5
 _libsrtp_commit=a566a9cfcd619e8327784aa7cff4a1276dc1e895
 _libyuv_commit=04821d1e7d60845525e8db55c7bcd41ef5be9406
@@ -21,7 +21,7 @@ source=(https://github.com/desktop-app/tg_owt/archive/${_commit}.tar.gz
         cstdint.patch
         gcc12.patch
         gcc13.patch
-        0001-Replace-absl-template-nullability-annotations.patch)
+        abseil-cpp-20250814.patch)
 
 build() {
     cd $name-${_commit}
@@ -41,7 +41,7 @@ build() {
     patch -Np1 -i $SRC/gcc12.patch
     patch -Np1 -i $SRC/gcc13.patch
     # fix for abseil 20250814; see https://github.com/desktop-app/tg_owt/pull/164
-    patch -Np1 -i $SRC/0001-Replace-absl-template-nullability-annotations.patch
+    patch -Np1 -i $SRC/abseil-cpp-20250814.patch
 
     CXXFLAGS+=" -DLIBYUV_DISABLE_NEON"
 

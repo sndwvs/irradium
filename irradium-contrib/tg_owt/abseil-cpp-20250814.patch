@@ -35,7 +35,7 @@ Fixes issue #163.
  21 files changed, 80 insertions(+), 80 deletions(-)
 
 diff --git a/src/api/environment/environment.h b/src/api/environment/environment.h
-index d86b7ae7..cc2761f7 100644
+index d86b7ae78..cc2761f71 100644
 --- a/src/api/environment/environment.h
 +++ b/src/api/environment/environment.h
 @@ -99,10 +99,10 @@ class RTC_EXPORT Environment final {
@@ -69,7 +69,7 @@ index d86b7ae7..cc2761f7 100644
  
  //------------------------------------------------------------------------------
 diff --git a/src/api/environment/environment_factory.cc b/src/api/environment/environment_factory.cc
-index c0b681aa..ded3effe 100644
+index c0b681aa0..ded3effe8 100644
 --- a/src/api/environment/environment_factory.cc
 +++ b/src/api/environment/environment_factory.cc
 @@ -25,12 +25,12 @@ namespace webrtc {
@@ -132,7 +132,7 @@ index c0b681aa..ded3effe 100644
      event_log_ = utility.get();
      Store(std::move(utility), leaf_);
 diff --git a/src/api/environment/environment_factory.h b/src/api/environment/environment_factory.h
-index a0fc3eff..b6be04f6 100644
+index a0fc3effd..b6be04f6a 100644
 --- a/src/api/environment/environment_factory.h
 +++ b/src/api/environment/environment_factory.h
 @@ -54,15 +54,15 @@ class RTC_EXPORT EnvironmentFactory final {
@@ -205,7 +205,7 @@ index a0fc3eff..b6be04f6 100644
      event_log_ = utility;
    }
 diff --git a/src/api/rtc_event_log/rtc_event_log_factory.cc b/src/api/rtc_event_log/rtc_event_log_factory.cc
-index bfe272d2..2196c31c 100644
+index bfe272d2a..2196c31cd 100644
 --- a/src/api/rtc_event_log/rtc_event_log_factory.cc
 +++ b/src/api/rtc_event_log/rtc_event_log_factory.cc
 @@ -23,7 +23,7 @@
@@ -218,7 +218,7 @@ index bfe272d2..2196c31c 100644
  #ifndef WEBRTC_ENABLE_RTC_EVENT_LOG
    return std::make_unique<RtcEventLogNull>();
 diff --git a/src/api/rtc_event_log/rtc_event_log_factory.h b/src/api/rtc_event_log/rtc_event_log_factory.h
-index 1deb0612..7f868a55 100644
+index 1deb0612b..7f868a552 100644
 --- a/src/api/rtc_event_log/rtc_event_log_factory.h
 +++ b/src/api/rtc_event_log/rtc_event_log_factory.h
 @@ -31,7 +31,7 @@ class RTC_EXPORT RtcEventLogFactory : public RtcEventLogFactoryInterface {
@@ -231,7 +231,7 @@ index 1deb0612..7f868a55 100644
  };
  
 diff --git a/src/api/rtc_event_log/rtc_event_log_factory_interface.h b/src/api/rtc_event_log/rtc_event_log_factory_interface.h
-index 31355849..d3976695 100644
+index 313558496..d39766955 100644
 --- a/src/api/rtc_event_log/rtc_event_log_factory_interface.h
 +++ b/src/api/rtc_event_log/rtc_event_log_factory_interface.h
 @@ -26,7 +26,7 @@ class RtcEventLogFactoryInterface {
@@ -244,7 +244,7 @@ index 31355849..d3976695 100644
  };
  
 diff --git a/src/api/task_queue/pending_task_safety_flag.cc b/src/api/task_queue/pending_task_safety_flag.cc
-index 4d8fc2b9..4b521ea0 100644
+index 4d8fc2b9f..4b521ea04 100644
 --- a/src/api/task_queue/pending_task_safety_flag.cc
 +++ b/src/api/task_queue/pending_task_safety_flag.cc
 @@ -37,7 +37,7 @@ PendingTaskSafetyFlag::CreateDetached() {
@@ -257,7 +257,7 @@ index 4d8fc2b9..4b521ea0 100644
    return rtc::scoped_refptr<PendingTaskSafetyFlag>(
        new PendingTaskSafetyFlag(alive, attached_queue));
 diff --git a/src/api/task_queue/pending_task_safety_flag.h b/src/api/task_queue/pending_task_safety_flag.h
-index 12b1e00e..1a002e0a 100644
+index 12b1e00ee..1a002e0ad 100644
 --- a/src/api/task_queue/pending_task_safety_flag.h
 +++ b/src/api/task_queue/pending_task_safety_flag.h
 @@ -73,7 +73,7 @@ class RTC_EXPORT PendingTaskSafetyFlag final
@@ -279,7 +279,7 @@ index 12b1e00e..1a002e0a 100644
  
   private:
 diff --git a/src/api/test/create_time_controller.cc b/src/api/test/create_time_controller.cc
-index cbf1f09a..049451bf 100644
+index cbf1f09aa..049451bf5 100644
 --- a/src/api/test/create_time_controller.cc
 +++ b/src/api/test/create_time_controller.cc
 @@ -44,8 +44,8 @@ void EnableMediaWithDefaultsAndTimeController(
@@ -305,7 +305,7 @@ index cbf1f09a..049451bf 100644
  
    EnableMediaWithDefaults(deps);
 diff --git a/src/logging/rtc_event_log/fake_rtc_event_log_factory.cc b/src/logging/rtc_event_log/fake_rtc_event_log_factory.cc
-index bacc3cd1..c5a43e7d 100644
+index bacc3cd1c..c5a43e7dd 100644
 --- a/src/logging/rtc_event_log/fake_rtc_event_log_factory.cc
 +++ b/src/logging/rtc_event_log/fake_rtc_event_log_factory.cc
 @@ -17,7 +17,7 @@
@@ -318,7 +318,7 @@ index bacc3cd1..c5a43e7d 100644
    auto fake_event_log = std::make_unique<FakeRtcEventLog>();
    const_cast<FakeRtcEventLog*&>(last_log_created_) = fake_event_log.get();
 diff --git a/src/logging/rtc_event_log/fake_rtc_event_log_factory.h b/src/logging/rtc_event_log/fake_rtc_event_log_factory.h
-index 0d6d0760..08017432 100644
+index 0d6d07603..08017432a 100644
 --- a/src/logging/rtc_event_log/fake_rtc_event_log_factory.h
 +++ b/src/logging/rtc_event_log/fake_rtc_event_log_factory.h
 @@ -25,7 +25,7 @@ class FakeRtcEventLogFactory : public RtcEventLogFactoryInterface {
@@ -331,7 +331,7 @@ index 0d6d0760..08017432 100644
  
    FakeRtcEventLog* last_log_created() { return last_log_created_; }
 diff --git a/src/modules/audio_processing/aec_dump/aec_dump_factory.h b/src/modules/audio_processing/aec_dump/aec_dump_factory.h
-index 0d258a9e..89435d62 100644
+index 0d258a9eb..89435d62c 100644
 --- a/src/modules/audio_processing/aec_dump/aec_dump_factory.h
 +++ b/src/modules/audio_processing/aec_dump/aec_dump_factory.h
 @@ -29,18 +29,18 @@ class RTC_EXPORT AecDumpFactory {
@@ -361,7 +361,7 @@ index 0d258a9e..89435d62 100644
  
  }  // namespace webrtc
 diff --git a/src/modules/audio_processing/aec_dump/aec_dump_impl.cc b/src/modules/audio_processing/aec_dump/aec_dump_impl.cc
-index 8484fcc6..76b59d0e 100644
+index 8484fcc6e..76b59d0e5 100644
 --- a/src/modules/audio_processing/aec_dump/aec_dump_impl.cc
 +++ b/src/modules/audio_processing/aec_dump/aec_dump_impl.cc
 @@ -60,7 +60,7 @@ void CopyFromConfigToEvent(const webrtc::InternalAPMConfig& config,
@@ -411,7 +411,7 @@ index 8484fcc6..76b59d0e 100644
  }
  
 diff --git a/src/modules/audio_processing/aec_dump/aec_dump_impl.h b/src/modules/audio_processing/aec_dump/aec_dump_impl.h
-index d5af31b0..e3fb2546 100644
+index d5af31b01..e3fb25469 100644
 --- a/src/modules/audio_processing/aec_dump/aec_dump_impl.h
 +++ b/src/modules/audio_processing/aec_dump/aec_dump_impl.h
 @@ -39,7 +39,7 @@ class AecDumpImpl : public AecDump {
@@ -433,7 +433,7 @@ index d5af31b0..e3fb2546 100644
  };
  }  // namespace webrtc
 diff --git a/src/modules/audio_processing/aec_dump/null_aec_dump_factory.cc b/src/modules/audio_processing/aec_dump/null_aec_dump_factory.cc
-index 63929afa..2902c1bb 100644
+index 63929afac..2902c1bbc 100644
 --- a/src/modules/audio_processing/aec_dump/null_aec_dump_factory.cc
 +++ b/src/modules/audio_processing/aec_dump/null_aec_dump_factory.cc
 @@ -16,24 +16,24 @@
@@ -469,7 +469,7 @@ index 63929afa..2902c1bb 100644
  }
  }  // namespace webrtc
 diff --git a/src/modules/audio_processing/audio_processing_impl.cc b/src/modules/audio_processing/audio_processing_impl.cc
-index 0d11e418..0a579f7d 100644
+index 0d11e418e..0a579f7dd 100644
 --- a/src/modules/audio_processing/audio_processing_impl.cc
 +++ b/src/modules/audio_processing/audio_processing_impl.cc
 @@ -2087,7 +2087,7 @@ void AudioProcessingImpl::UpdateRecommendedInputVolumeLocked() {
@@ -491,7 +491,7 @@ index 0d11e418..0a579f7d 100644
        AecDumpFactory::Create(handle, max_log_size_bytes, worker_queue);
    if (!aec_dump) {
 diff --git a/src/modules/audio_processing/audio_processing_impl.h b/src/modules/audio_processing/audio_processing_impl.h
-index 2c0ab198..4cea151c 100644
+index 2c0ab198d..4cea151cd 100644
 --- a/src/modules/audio_processing/audio_processing_impl.h
 +++ b/src/modules/audio_processing/audio_processing_impl.h
 @@ -76,11 +76,11 @@ class AudioProcessingImpl : public AudioProcessing {
@@ -509,7 +509,7 @@ index 2c0ab198..4cea151c 100644
    void AttachAecDump(std::unique_ptr<AecDump> aec_dump) override;
    void DetachAecDump() override;
 diff --git a/src/modules/audio_processing/include/audio_processing.h b/src/modules/audio_processing/include/audio_processing.h
-index dd484be4..f7c115e5 100644
+index dd484be4f..f7c115e58 100644
 --- a/src/modules/audio_processing/include/audio_processing.h
 +++ b/src/modules/audio_processing/include/audio_processing.h
 @@ -633,11 +633,11 @@ class RTC_EXPORT AudioProcessing : public RefCountInterface {
@@ -528,7 +528,7 @@ index dd484be4..f7c115e5 100644
    // TODO(webrtc:5298) Deprecated variant.
    // Attaches provided webrtc::AecDump for recording debugging
 diff --git a/src/modules/audio_processing/include/mock_audio_processing.h b/src/modules/audio_processing/include/mock_audio_processing.h
-index dfe7d84e..fad0a5b8 100644
+index dfe7d84e0..fad0a5b83 100644
 --- a/src/modules/audio_processing/include/mock_audio_processing.h
 +++ b/src/modules/audio_processing/include/mock_audio_processing.h
 @@ -157,13 +157,13 @@ class MockAudioProcessing : public AudioProcessing {
@@ -548,7 +548,7 @@ index dfe7d84e..fad0a5b8 100644
    MOCK_METHOD(void, AttachAecDump, (std::unique_ptr<AecDump>), (override));
    MOCK_METHOD(void, DetachAecDump, (), (override));
 diff --git a/src/pc/test/enable_fake_media.cc b/src/pc/test/enable_fake_media.cc
-index 5497c607..5c10fd8d 100644
+index 5497c6072..5c10fd8d5 100644
 --- a/src/pc/test/enable_fake_media.cc
 +++ b/src/pc/test/enable_fake_media.cc
 @@ -29,11 +29,11 @@ using ::cricket::MediaEngineInterface;
@@ -575,7 +575,7 @@ index 5497c607..5c10fd8d 100644
  
    deps.media_factory =
 diff --git a/src/pc/test/enable_fake_media.h b/src/pc/test/enable_fake_media.h
-index 82c55ad0..5fc339d2 100644
+index 82c55ad08..5fc339d29 100644
 --- a/src/pc/test/enable_fake_media.h
 +++ b/src/pc/test/enable_fake_media.h
 @@ -28,7 +28,7 @@ namespace webrtc {
@@ -587,6 +587,3 @@ index 82c55ad0..5fc339d2 100644
  
  // Enables media support backed by unspecified lightweight fake implementation.
  void EnableFakeMedia(PeerConnectionFactoryDependencies& deps);
--- 
-2.51.0
-
