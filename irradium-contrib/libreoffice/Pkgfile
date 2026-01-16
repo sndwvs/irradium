@@ -1,13 +1,16 @@
 # Description: LibreOffice is a powerful office suite
 # URL: https://www.libreoffice.org/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: abseil-cpp argon2 box2d clucene dragonbox fakeroot fontforge frozen graphite2 gst-plugins-base gtk4 hyphen libabw libcdr libcmis libcuckoo libe-book libepubgen libetonyek libexttextcat libfixmath libfreehand libmspub libmwaw libmythes libnumbertext libodfgen liborcus libpagemaker libqrcodegen libqxp libstaroffice libtommath libvisio libwpg libwps libzmf neon nss openjpeg2 paper redland xmlsec xorg-libxcomposite zip zxcvbn-c
+# Depends on: abseil-cpp argon2 box2d clucene dragonbox fakeroot fast_float fontforge frozen graphite2 gst-plugins-base gtk4 hyphen libabw libcdr libcmis libcuckoo libe-book libepubgen libetonyek libexttextcat libfixmath libfreehand libmspub libmwaw libmythes libnumbertext libodfgen liborcus libpagemaker libqrcodegen libqxp libstaroffice libtommath libvisio libwpg libwps libzmf md4c neon nss openjpeg2 paper redland xmlsec xorg-libxcomposite zip zxcvbn-c
 # Optional: avahi coin-or-mp cups dconf gpgme kio lpsolve mariadb openldap postgresql python3-lxml qt6-multimedia sane valgrind
 
 name=libreoffice
-version=25.8.4.2
+version=26.2.0.1
 release=1
-pdfiumversion=7012
+pdfiumversion=7471
+skiaversion=m142-f4ed99d2443962782cf5f8b4dd27179f131e7cbe
+afdkoversion=4.0.3
+antlr4version=4.13.2
 source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-$version.tar.xz
   https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-dictionaries-$version.tar.xz
   https://downloadarchive.documentfoundation.org/libreoffice/old/$version/src/$name-translations-$version.tar.xz
@@ -15,8 +18,10 @@ source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/
   https://dev-www.libreoffice.org/extern/185d60944ea767075d27247c3162b3bc-unowinreg.dll
   https://dev-www.libreoffice.org/src/0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz
   https://dev-www.libreoffice.org/src/dtoa-20180411.tgz
+  https://dev-www.libreoffice.org/src/afdko-$afdkoversion.tar.gz
+  https://dev-www.libreoffice.org/src/antlr4-cpp-runtime-${antlr4version}-source.zip
   https://dev-www.libreoffice.org/src/pdfium-$pdfiumversion.tar.bz2
-  https://dev-www.libreoffice.org/src/skia-m136-28685d899b0a35894743e2cedad4c9f525e90e1e.tar.xz
+  https://dev-www.libreoffice.org/src/skia-$skiaversion.tar.xz
   libreoffice-7.6-qt6-wayland-egl.patch
   makefile.in.patch)
 
@@ -35,8 +40,10 @@ unpack_source() {
     185d60944ea767075d27247c3162b3bc-unowinreg.dll | \
       pdfium-$pdfiumversion.tar.bz2 | \
       dtoa-20180411.tgz | \
-      skia-m136-28685d899b0a35894743e2cedad4c9f525e90e1e.tar.xz | \
-      0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz)
+      skia-$skiaversion.tar.xz | \
+      0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz | \
+      afdko-$afdkoversion.tar.gz | \
+      antlr4-cpp-runtime-${antlr4version}-source.zip)
       echo "Moving $(get_filename $file) to $SRC/tarballs"
       cp $(get_filename $file) $SRC/tarballs
       ;;
@@ -127,8 +134,8 @@ build() {
     --with-external-hyph-dir=/usr/share/hypen \
     --with-external-thes-dir=/usr/share/mythes \
     --disable-scripting-{beanshell,javascript} \
-    --without-{doxygen,fonts,gssapi,help,helppack-integration,java,system-firebird} \
-    --disable-{ccache,community-flavor,dependency-tracking,eot,extension-update,fetch-external,firebird-sdbc,gtk4,odk,qt5} \
+    --without-{doxygen,fonts,gssapi,help,helppack-integration,java,system-firebird,system-afdko} \
+    --disable-{ccache,dependency-tracking,eot,extension-update,fetch-external,firebird-sdbc,gtk4,odk,qt5} \
     --disable-{online-update,pch,poppler,report-builder,sdremote-bluetooth,werror,xmlhelp,zxing}
 
   touch {sources.ver,src.downloaded}
