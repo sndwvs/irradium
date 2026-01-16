@@ -202,7 +202,7 @@ f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:5541e0d6e02a74426852511a3f41f572:firefox/.footprint.riscv64
 f:26687a21035a9afdbfec120ed0c1b19f:firefox/.signature.aarch64
 f:f8d124ee975af577fc57f1ccac07a0d6:firefox/.signature.riscv64
-f:e61b9df4e189a06d1b374986765cce68:firefox/Pkgfile
+f:ab665c47526583b7be5c417619989a8e:firefox/Pkgfile
 f:2f5fc408ed89fdff07279b68a94039c7:firefox/fix-icu-78.1-LineBreaker.patch
 f:65e862a68ea6249bf98dd4824dc58ae0:firefox/.footprint.aarch64
 f:3219f5d622520efe5321b3b8de56be2d:freerdp/.footprint
