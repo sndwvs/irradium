@@ -194,7 +194,7 @@ f:34587f37f305b734c07acac6c51bac0e:nodejs/v8-disable-trap-handler-on-riscv-sv39.
 f:d0874a9792b1941a95c7f23b6d55fed5:nodejs/v8-riscv-trap-handler.patch
 f:8a17b936ebb1543a249d462bb870bdb9:nodejs/.signature
 f:ddbc657ad20814466809a1d9cf69014e:nodejs/6bd4bdded4fe666dc90872fd4472b967b6e5cd55.patch
-f:b43169dc07c87b78a8f580ef6a2165f9:nodejs/Pkgfile
+f:fa6aa454dc61b8d127edaefe106c909a:nodejs/Pkgfile
 f:f8d2f18e32451d2f7d516ef7fd446dc8:shared-mime-info/.footprint
 f:ba273dc7e389002c9507f369fe299b59:shared-mime-info/.signature
 f:952b8f2b79db7944026a790578218e13:shared-mime-info/Pkgfile
@@ -212,7 +212,7 @@ f:e326336f4bc83a319d32de3fb30354a9:efibootmgr/.signature
 f:a2e9954fdf88c7872c7617f3a524cf26:efibootmgr/Pkgfile
 f:0fac9b02d2ab26cfd0c61670f2758641:php-zip/.footprint
 f:235630aa8b6a30b4078b87950dca246b:php-zip/.signature
-f:792c5c26c05af31bc296a55a9c57e258:php-zip/Pkgfile
+f:a96ff97c8b5ca134bae524f5ef439207:php-zip/Pkgfile
 f:6a3b37401d78735d427832419c15824c:gobject-introspection/.footprint.aarch64
 f:573d6fee048e01b3e0a10d18c9854b28:gobject-introspection/.footprint.riscv64
 f:f084746f364f164445784132cd1b98c2:gobject-introspection/.signature.aarch64
