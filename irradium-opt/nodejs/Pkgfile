@@ -29,8 +29,8 @@ build() {
   prt-get isinst icu && PKGMK_NODEJS+=' --with-intl=system-icu'
   prt-get isinst libnghttp3 && PKGMK_NODEJS+=' --shared-nghttp3'
   prt-get isinst libngtcp2 && PKGMK_NODEJS+=' --shared-ngtcp2'
-  #prt-get isinst simdjson && PKGMK_NODEJS+=' --shared-simdjson'
-  #prt-get isinst simdutf && PKGMK_NODEJS+=' --shared-simdutf'
+  prt-get isinst simdjson && PKGMK_NODEJS+=' --shared-simdjson'
+  prt-get isinst simdutf && PKGMK_NODEJS+=' --shared-simdutf'
 
   CC="clang" \
   CXX="clang++" \
