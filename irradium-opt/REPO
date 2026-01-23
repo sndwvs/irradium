@@ -134,7 +134,7 @@ f:ea31a8d2428eff21544f48ab82e0bde9:qt6-base/.signature
 f:7da40efe6efb767b542c76d27a46c22c:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
-f:c9256bdee5eb6052846d0f65f85fbc08:rust/Pkgfile
+f:1c75d57915bcd36065bf1833b8f5862f:rust/Pkgfile
 f:19368ee574587ede69279d0ea4993558:rust/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
 f:739e0ee7395eca51dcf94c62430c6d58:rust/.footprint.aarch64
 f:661ddfe4b23f0f33604ff3598ced695e:rust/.footprint.riscv64
