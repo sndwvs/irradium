@@ -4,19 +4,15 @@
 # Depends on: grub2 efibootmgr
 
 name=grub2-efi
-version=2.12
+version=2.14
 release=1
-source=(http://ftp.gnu.org/gnu/grub/grub-$version.tar.xz csum_seed.diff extra_deps.lst)
+source=(http://ftp.gnu.org/gnu/grub/grub-$version.tar.xz extra_deps.lst)
 
 build() {
     export CFLAGS="${CFLAGS} -Wno-error"
     export PYTHON=python3
 
     MODLIST="boot chain configfile fat ext2 linux normal ntfs part_gpt part_msdos"
-
-    #patch -d grub-$version -p1 -i $SRC/csum_seed.diff
-
-    cp $SRC/extra_deps.lst grub-$version/grub-core/
 
     unset CFLAGS
 
@@ -28,6 +24,7 @@ build() {
         ../grub-$version/configure --prefix=/usr \
             --with-platform=efi --target=$ARCH \
             --program-prefix=""
+        cp $SRC/extra_deps.lst grub-core/
         make
         make DESTDIR=$PKG install
         cd grub-core

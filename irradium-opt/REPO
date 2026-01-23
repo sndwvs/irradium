@@ -218,8 +218,7 @@ f:573d6fee048e01b3e0a10d18c9854b28:gobject-introspection/.footprint.riscv64
 f:f084746f364f164445784132cd1b98c2:gobject-introspection/.signature.aarch64
 f:c7254d4100cffac96d8d6c0834883f60:gobject-introspection/.signature.riscv64
 f:2e76bab5d87c041ba164e5f23bbd3a5c:gobject-introspection/Pkgfile
-f:c55577cc3e1f235517271189ca808867:grub2-efi/Pkgfile
-f:bf4ac2f1ee74359bd689fe6bee82f2e9:grub2-efi/csum_seed.diff
+f:38ff0fa6fe856d964035bf233d0555c2:grub2-efi/Pkgfile
 f:43e08eb0137bd7ffafda6bf4c7a9b327:grub2-efi/extra_deps.lst
 f:694933a1be5600c4d1d5e37c30c0e7bb:grub2-efi/.footprint.aarch64
 f:e27af085e6d4d1ba1dbb6e0500f90d6d:grub2-efi/.signature.aarch64
