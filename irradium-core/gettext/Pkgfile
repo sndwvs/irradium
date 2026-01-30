@@ -4,7 +4,7 @@
 # Depends on: acl ncurses
 
 name=gettext
-version=0.26
+version=1.0
 release=1
 source=(https://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.xz)
 
@@ -13,6 +13,7 @@ build() {
 
     export CFLAGS=${CFLAGS/-Werror=format-security/}
     export CXXFLAGS=${CXXFLAGS/-Werror=format-security/}
+    sed '/^SUBDIRS/s/examples//' -i gettext-tools/Makefile.in
 
     ./configure \
         --prefix=/usr \
