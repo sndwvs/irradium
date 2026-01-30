@@ -4,13 +4,13 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.12/
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/entry_points.txt
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/licenses/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2025.12.8.dist-info/licenses/LICENSE
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp-2026.1.29.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2026.1.29.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2026.1.29.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2026.1.29.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2026.1.29.dist-info/entry_points.txt
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp-2026.1.29.dist-info/licenses/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp-2026.1.29.dist-info/licenses/LICENSE
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/__init__.py
@@ -497,6 +497,8 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/cracked.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/craftsy.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/craftsy.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/croatianfilm.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/croatianfilm.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/crooksandliars.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/crooksandliars.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/crowdbunker.cpython-312.opt-1.pyc
@@ -667,6 +669,8 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/fczenit.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/fifa.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/fifa.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/filmarchiv.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/filmarchiv.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/filmon.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/filmon.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/filmweb.cpython-312.opt-1.pyc
@@ -1055,8 +1059,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/mainstreaming.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/mangomolo.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/mangomolo.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/manoto.cpython-312.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/manoto.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/manyvids.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/manyvids.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/maoritv.cpython-312.opt-1.pyc
@@ -1221,8 +1223,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/newspicks.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/newsy.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/newsy.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nextmedia.cpython-312.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nextmedia.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nexx.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nexx.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/nfb.cpython-312.opt-1.pyc
@@ -1351,6 +1351,8 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/packtpub.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/palcomp3.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/palcomp3.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/pandatv.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/pandatv.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/panopto.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/panopto.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/parler.cpython-312.opt-1.pyc
@@ -1613,8 +1615,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/scrippsnetworks.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/scrolller.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/scrolller.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/scte.cpython-312.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/scte.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/sejmpl.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/sejmpl.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/sen.cpython-312.opt-1.pyc
@@ -1759,6 +1759,8 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/tagesschau.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/taptap.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/taptap.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/tarangplus.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/tarangplus.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/tass.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/tass.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache__/tbs.cpython-312.opt-1.pyc
@@ -2354,6 +2356,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/cpac.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/cracked.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/craftsy.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/croatianfilm.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/crooksandliars.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/crowdbunker.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/crtvg.py
@@ -2439,6 +2442,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/fc2.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/fczenit.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/fifa.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/filmarchiv.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/filmon.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/filmweb.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/firsttv.py
@@ -2633,7 +2637,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/mailru.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/mainstreaming.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/mangomolo.py
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/manoto.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/manyvids.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/maoritv.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/markiza.py
@@ -2716,7 +2719,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/newgrounds.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/newspicks.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/newsy.py
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/nextmedia.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/nexx.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/nfb.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/nfhsnetwork.py
@@ -2781,6 +2783,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/owncloud.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/packtpub.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/palcomp3.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/pandatv.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/panopto.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/parler.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/parlview.py
@@ -2912,7 +2915,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/screenrec.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/scrippsnetworks.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/scrolller.py
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/scte.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/sejmpl.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/sen.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/senalcolombia.py
@@ -2985,6 +2987,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/__pycache
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/sztvhu.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/tagesschau.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/taptap.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/tarangplus.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/tass.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/tbs.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/yt_dlp/extractor/tbsjp.py
