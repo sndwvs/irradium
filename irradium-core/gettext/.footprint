@@ -17,19 +17,21 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/msggrep
 -rwxr-xr-x	root/root	usr/bin/msginit
 -rwxr-xr-x	root/root	usr/bin/msgmerge
+-rwxr-xr-x	root/root	usr/bin/msgpre
 -rwxr-xr-x	root/root	usr/bin/msgunfmt
 -rwxr-xr-x	root/root	usr/bin/msguniq
 -rwxr-xr-x	root/root	usr/bin/ngettext
+-rwxr-xr-x	root/root	usr/bin/po-fetch
 -rwxr-xr-x	root/root	usr/bin/printf_gettext
 -rwxr-xr-x	root/root	usr/bin/printf_ngettext
 -rwxr-xr-x	root/root	usr/bin/recode-sr-latin
+-rwxr-xr-x	root/root	usr/bin/spit
 -rwxr-xr-x	root/root	usr/bin/xgettext
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/autosprintf.h
 -rw-r--r--	root/root	usr/include/gettext-po.h
 -rw-r--r--	root/root	usr/include/textstyle.h
 drwxr-xr-x	root/root	usr/include/textstyle/
--rw-r--r--	root/root	usr/include/textstyle/stdbool.h
 -rw-r--r--	root/root	usr/include/textstyle/version.h
 -rw-r--r--	root/root	usr/include/textstyle/woe32dll.h
 drwxr-xr-x	root/root	usr/lib/
@@ -44,41 +46,41 @@ drwxr-xr-x	root/root	usr/lib/gettext/
 lrwxrwxrwx	root/root	usr/lib/libasprintf.so -> libasprintf.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libasprintf.so.0 -> libasprintf.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libasprintf.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libgettextlib-0.26.so
+-rwxr-xr-x	root/root	usr/lib/libgettextlib-1.0.so
 -rw-r--r--	root/root	usr/lib/libgettextlib.a
 -rwxr-xr-x	root/root	usr/lib/libgettextlib.la
-lrwxrwxrwx	root/root	usr/lib/libgettextlib.so -> libgettextlib-0.26.so
+lrwxrwxrwx	root/root	usr/lib/libgettextlib.so -> libgettextlib-1.0.so
 -rw-r--r--	root/root	usr/lib/libgettextpo.a
 -rwxr-xr-x	root/root	usr/lib/libgettextpo.la
-lrwxrwxrwx	root/root	usr/lib/libgettextpo.so -> libgettextpo.so.0.5.15
-lrwxrwxrwx	root/root	usr/lib/libgettextpo.so.0 -> libgettextpo.so.0.5.15
--rwxr-xr-x	root/root	usr/lib/libgettextpo.so.0.5.15
--rwxr-xr-x	root/root	usr/lib/libgettextsrc-0.26.so
+lrwxrwxrwx	root/root	usr/lib/libgettextpo.so -> libgettextpo.so.0.6.0
+lrwxrwxrwx	root/root	usr/lib/libgettextpo.so.0 -> libgettextpo.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libgettextpo.so.0.6.0
+-rwxr-xr-x	root/root	usr/lib/libgettextsrc-1.0.so
 -rw-r--r--	root/root	usr/lib/libgettextsrc.a
 -rwxr-xr-x	root/root	usr/lib/libgettextsrc.la
-lrwxrwxrwx	root/root	usr/lib/libgettextsrc.so -> libgettextsrc-0.26.so
+lrwxrwxrwx	root/root	usr/lib/libgettextsrc.so -> libgettextsrc-1.0.so
 -rw-r--r--	root/root	usr/lib/libtextstyle.a
 -rwxr-xr-x	root/root	usr/lib/libtextstyle.la
-lrwxrwxrwx	root/root	usr/lib/libtextstyle.so -> libtextstyle.so.0.2.6
-lrwxrwxrwx	root/root	usr/lib/libtextstyle.so.0 -> libtextstyle.so.0.2.6
--rwxr-xr-x	root/root	usr/lib/libtextstyle.so.0.2.6
+lrwxrwxrwx	root/root	usr/lib/libtextstyle.so -> libtextstyle.so.0.2.7
+lrwxrwxrwx	root/root	usr/lib/libtextstyle.so.0 -> libtextstyle.so.0.2.7
+-rwxr-xr-x	root/root	usr/lib/libtextstyle.so.0.2.7
 -rw-r--r--	root/root	usr/lib/preloadable_libintl.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/nls.m4
-drwxr-xr-x	root/root	usr/share/gettext-0.26/
-drwxr-xr-x	root/root	usr/share/gettext-0.26/its/
--rw-r--r--	root/root	usr/share/gettext-0.26/its/docbook.loc
--rw-r--r--	root/root	usr/share/gettext-0.26/its/docbook4.its
--rw-r--r--	root/root	usr/share/gettext-0.26/its/docbook5.its
--rw-r--r--	root/root	usr/share/gettext-0.26/its/glade.loc
--rw-r--r--	root/root	usr/share/gettext-0.26/its/glade1.its
--rw-r--r--	root/root	usr/share/gettext-0.26/its/glade2.its
--rw-r--r--	root/root	usr/share/gettext-0.26/its/gsettings.its
--rw-r--r--	root/root	usr/share/gettext-0.26/its/gsettings.loc
--rw-r--r--	root/root	usr/share/gettext-0.26/its/gtkbuilder.its
--rw-r--r--	root/root	usr/share/gettext-0.26/its/metainfo.its
--rw-r--r--	root/root	usr/share/gettext-0.26/its/metainfo.loc
+drwxr-xr-x	root/root	usr/share/gettext-1.0/
+drwxr-xr-x	root/root	usr/share/gettext-1.0/its/
+-rw-r--r--	root/root	usr/share/gettext-1.0/its/docbook.loc
+-rw-r--r--	root/root	usr/share/gettext-1.0/its/docbook4.its
+-rw-r--r--	root/root	usr/share/gettext-1.0/its/docbook5.its
+-rw-r--r--	root/root	usr/share/gettext-1.0/its/glade.loc
+-rw-r--r--	root/root	usr/share/gettext-1.0/its/glade1.its
+-rw-r--r--	root/root	usr/share/gettext-1.0/its/glade2.its
+-rw-r--r--	root/root	usr/share/gettext-1.0/its/gsettings.its
+-rw-r--r--	root/root	usr/share/gettext-1.0/its/gsettings.loc
+-rw-r--r--	root/root	usr/share/gettext-1.0/its/gtkbuilder.its
+-rw-r--r--	root/root	usr/share/gettext-1.0/its/metainfo.its
+-rw-r--r--	root/root	usr/share/gettext-1.0/its/metainfo.loc
 drwxr-xr-x	root/root	usr/share/gettext/
 -rw-r--r--	root/root	usr/share/gettext/ABOUT-NLS
 -rw-r--r--	root/root	usr/share/gettext/archive.dir.tar.xz
@@ -106,6 +108,7 @@ drwxr-xr-x	root/root	usr/share/gettext/po/
 -rw-r--r--	root/root	usr/share/gettext/po/boldquot.sed
 -rw-r--r--	root/root	usr/share/gettext/po/en@boldquot.header
 -rw-r--r--	root/root	usr/share/gettext/po/en@quot.header
+-rwxr-xr-x	root/root	usr/share/gettext/po/fetch-po
 -rw-r--r--	root/root	usr/share/gettext/po/insert-header.sed
 -rw-r--r--	root/root	usr/share/gettext/po/quot.sed
 -rw-r--r--	root/root	usr/share/gettext/po/remove-potcdate.sed
@@ -158,12 +161,15 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/msggrep.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/msginit.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/msgmerge.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/msgpre.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/msgunfmt.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/msguniq.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ngettext.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/po-fetch.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/printf_gettext.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/printf_ngettext.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/recode-sr-latin.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/spit.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/xgettext.1.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/bind_textdomain_codeset.3.gz
