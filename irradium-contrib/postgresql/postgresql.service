@@ -1,0 +1,44 @@
+#!/bin/sh
+#
+# /etc/rc.d/postgresql: start/stop postgresql daemon
+#
+
+SSD=/sbin/start-stop-daemon
+PROG=/usr/bin/pg_ctl
+PID=/var/pgsql/data/postmaster.pid
+USER=postgres
+HOME=/var/pgsql/data
+OPTS="-D $HOME -l /var/log/postgresql"
+
+case $1 in
+start)
+  if [ ! -e /run/postgresql ]; then 
+    install -vdm 750 -o $USER -g $USER /run/postgresql
+  fi
+  $SSD --start --chuid $USER --chdir $HOME --background --exec $PROG -- $OPTS start
+  ;;
+stop)
+  $SSD --start --chuid $USER --chdir $HOME --background --exec $PROG -- $OPTS stop
+  ;;
+restart)
+  $0 stop
+  $0 start
+  ;;
+reload)
+  $SSD --start --chuid $USER --chdir $HOME --background --exec $PROG -- $OPTS restart
+  ;;
+status)
+  $SSD --status --pidfile $PID --exec /usr/bin/postgres
+  case $? in
+  0) echo "$PROG is running with pid $(cat $PID | head -n1)" ;;
+  1) echo "$PROG is not running but the pid file $PID exists" ;;
+  3) echo "$PROG is not running" ;;
+  4) echo "Unable to determine the program status" ;;
+  esac
+  ;;
+*)
+  echo "usage: $0 [start|stop|restart|reload|status]"
+  ;;
+esac
+
+# End of file

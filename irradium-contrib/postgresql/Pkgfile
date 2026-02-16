@@ -2,14 +2,14 @@
 # URL: https://www.postgresql.org
 # Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on: openssl
-# Optional: clang docbook-xsl icu krb5 libxml2 libxslt openldap tcl lz4 zstd openldap
+# Optional: clang docbook-xsl icu krb5 libxml2 libxslt openldap tcl
 
 name=postgresql
-version=18.1
+version=18.2
 release=1
 source=(https://ftp.postgresql.org/pub/source/v$version/postgresql-$version.tar.bz2
   postgresql-run-socket.patch
-  postgresql.rc postgresql.pam
+  postgresql.service postgresql.pam
   0002-Force-RPATH-to-be-used-for-the-PL-Perl-plugin.patch
   0dceba21d74f01e63aa690879b44808bbb74a9c3.patch)
 
@@ -27,9 +27,6 @@ build() {
   prt-get isinst libxml2 && PKGMK_PGSQL+=' --with-libxml'
   prt-get isinst libxslt && PKGMK_PGSQL+=' --with-libxslt'
   prt-get isinst tcl && PKGMK_PGSQL+=' --with-tcl'
-  prt-get isinst lz4 && PKGMK_PGSQL+=' --with-lz4'
-  prt-get isinst zstd && PKGMK_PGSQL+=' --with-zstd'
-  prt-get isinst openldap && PKGMK_PGSQL+=' --with-ldap'
   # }}}
 
   CFLAGS+=" -ffat-lto-objects"
@@ -52,10 +49,10 @@ build() {
     make DESTDIR=$PKG install-man
   fi
 
-  install -Dm 755 $SRC/postgresql.rc $PKG/etc/rc.d/postgresql
+  install -Dm 755 $SRC/postgresql.service $PKG/etc/rc.d/postgresql
   install -Dm 755 $SRC/postgresql.pam $PKG/etc/pam.d/postgresql
 
-  install -Dm 660 -o postgres -g postgres /dev/null $PKG/var/log/postgresql.log
+  install -Dm 660 -o postgres -g postgres /dev/null $PKG/var/log/postgresql
 
   rm -rf $PKG/usr/share/doc
 }

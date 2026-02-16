@@ -13,16 +13,16 @@ Example: (for your convenience, there could be better ways to
 # pg_dumpall -U postgres > pg.dump
 # /etc/rc.d/postgresql stop
 
-# mv /var/lib/pgsql/data /var/lib/pgsql/data-backup
-# mkdir /var/lib/pgsql/data
-# chown postgres /var/lib/pgsql/data
+# mv /var/pgsql/data /var/pgsql/data-backup
+# mkdir /var/pgsql/data
+# chown postgres /var/pgsql/data
 
-# sudo -u postgres initdb -D /var/lib/pgsql/data
+# sudo -u postgres initdb -D /var/pgsql/data
 
 # /etc/rc.d/postgresql start
 # psql -U postgres -f pg.dump postgres
 
-Do not forget to update / copy old config files to /var/lib/pgsql/data 
+Do not forget to update / copy old config files to /var/pgsql/data 
 
 
 NEW INSTALL
@@ -34,9 +34,9 @@ some additional steps or use the included post-install script.
 # useradd -m -d /home/postgres -s /bin/false postgres
 # passwd -l postgres
 
-# mkdir -p /var/lib/pgsql/data
+# mkdir -p /var/pgsql/data
 
-# sudo -u postgres initdb -D /var/lib/pgsql/data
+# sudo -u postgres initdb -D /var/pgsql/data
 
 # /etc/rc.d/postgresql start
 # sudo -u postgres createdb test
