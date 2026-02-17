@@ -392,10 +392,8 @@ f:865b85e804f45f9ccdf28f030f9b32ab:postgresql/postgresql.pam
 f:8c0e56c70522bfc9c89af401215414c4:postgresql/pre-install
 f:a867017bcc5eb6ecfb2ecf58712f150e:postgresql/.footprint
 f:adc759a00e322704d12fba0b041a3927:postgresql/.signature
-f:7a7a71760587d09b49a9b6c885d7ee70:postgresql/Pkgfile
+f:7540d898c8b1f5a177e641b520c5a1ed:postgresql/Pkgfile
 f:bd0d149a40c01ae6efb42e9e761e1d2c:postgresql/wget-log
-f:b74d848f5527740dce663ae72f39c5ae:postgresql/0002-Force-RPATH-to-be-used-for-the-PL-Perl-plugin.patch
-f:544bdb211757e2a16c0c23164cef9d75:postgresql/0dceba21d74f01e63aa690879b44808bbb74a9c3.patch
 f:558a4ee95d0ccf9c49d0da42cdef47eb:postgresql/postgresql.service
 f:6b10d81e43c890e377dfadfe72dbfa3a:slang/.footprint
 f:01b4c8973511a76b596f5d110c488ff3:slang/.signature

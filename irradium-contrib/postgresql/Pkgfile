@@ -9,16 +9,12 @@ version=18.2
 release=1
 source=(https://ftp.postgresql.org/pub/source/v$version/postgresql-$version.tar.bz2
   postgresql-run-socket.patch
-  postgresql.service postgresql.pam
-  0002-Force-RPATH-to-be-used-for-the-PL-Perl-plugin.patch
-  0dceba21d74f01e63aa690879b44808bbb74a9c3.patch)
+  postgresql.service postgresql.pam)
 
 build() {
   cd $name-$version
 
   patch -Np1 -i $SRC/postgresql-run-socket.patch
-  patch -Np1 -i $SRC/0002-Force-RPATH-to-be-used-for-the-PL-Perl-plugin.patch
-  patch -Np1 -i $SRC/0dceba21d74f01e63aa690879b44808bbb74a9c3.patch
 
   # optionals {{{
   prt-get isinst clang && PKGMK_PGSQL+=' --with-llvm'
