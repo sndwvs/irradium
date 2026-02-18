@@ -3521,4 +3521,4 @@ drwxr-xr-x	root/root	usr/share/postgresql/tsearch_data/
 -rw-r--r--	root/root	usr/share/postgresql/tsearch_data/xsyn_sample.rules
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/log/
--rw-rw----	postgres/postgres	var/log/postgresql.log (EMPTY)
+-rw-rw----	postgres/postgres	var/log/postgresql (EMPTY)
