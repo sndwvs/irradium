@@ -318,11 +318,11 @@ f:a8f10ebe2f26f5568b711dfd72065754:libptytty/.footprint
 f:5b27dcac763479364cdaa0c9d6ab32ed:libptytty/.signature
 f:73e7b99b3c8ae2ce230a665abc9ed5e1:libptytty/Pkgfile
 f:ec21e17d14d828ee00207c0b25b8e91d:libreoffice/.footprint.aarch64
-f:bd6ccabe4af132d9bf602c20f4169605:libreoffice/.footprint.riscv64
+f:ae621ba6aedeab36b36d2a1416ac4750:libreoffice/.footprint.riscv64
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
 f:faf069d19324a53f32cceaa8e7cc0ab2:libreoffice/libreoffice-7.6-qt6-wayland-egl.patch
 f:13e4ac3547d90d7b1c738da16aa580c4:libreoffice/.signature.aarch64
-f:0ded410986200532ca365208c531ef0f:libreoffice/.signature.riscv64
+f:aad615a8f7d905ae89d9c0e89b4b8590:libreoffice/.signature.riscv64
 f:2702c3123672b594e338413813e9c6fc:libreoffice/Pkgfile
 f:8bfa5aed8ba9861c86b93e07ac3a39a2:libreoffice/makefile.in.patch
 f:7b3ae4fbdd27165b5adb2956822eb63c:librga/.footprint
