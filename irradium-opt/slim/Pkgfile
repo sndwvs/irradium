@@ -1,46 +1,52 @@
 # Description: Simple Login Manager
-# URL: https://sourceforge.net/projects/slim
-# Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: xorg-libx11 xorg-libxft xorg-libxrender xorg-libxrandr xorg-libxmu freetype libjpeg-turbo libpng zlib linux-pam elogind
+# URL: https://slim-fork.sourceforge.io/
+# Maintainer: Matt Housh, jaeger at crux dot ninja
+# Depends on: xorg-xauth libjpeg-turbo
 
 name=slim
-version=1.4.0
+version=1.4.1
 release=1
-source=(https://sourceforge.net/projects/${name}-fork/files/$name-$version.tar.gz
-        $name $name.pam
-        theme/background.png theme/panel.png theme/slim.theme)
+source=(https://sourceforge.net/projects/slim-fork/files/$name-$version.tar.gz
+    https://crux.nu/files/slim-crux-smooth.tar.gz $name.rc $name.pam
+    log_h_includes.patch
+    theme/background.png theme/panel.png theme/slim.theme)
 
 build(){
-  cd $name-$version
+    patch -d $name-$version -p1 -i $SRC/log_h_includes.patch
 
-  sed -i -e 's|/var/run/slim.lock|/var/lock/slim.lock|' \
-    -e 's|halt_cmd.*|halt_cmd            /sbin/poweroff|'\
-    -e 's|reboot_cmd.*|reboot_cmd          /sbin/reboot|'\
-    -e 's|login_cmd.*|login_cmd           exec /bin/sh -l /etc/X11/xinit/xinitrc|' \
-    -e 's|current_theme.*|current_theme       irradium|' \
-    slim.conf
+    sed -i -e 's|/var/run/slim.lock|/var/lock/slim.lock|' \
+        -e 's|halt_cmd.*|halt_cmd            /sbin/poweroff|'\
+        -e 's|reboot_cmd.*|reboot_cmd          /sbin/reboot|'\
+        -e 's|login_cmd.*|login_cmd           exec /bin/sh -l /etc/X11/xinit/xinitrc|' \
+        -e 's|current_theme.*|current_theme       irradium|' \
+        $name-$version/slim.conf
 
-  cmake -B build \
-    -DCMAKE_INSTALL_PREFIX=/usr \
-    -DCMAKE_INSTALL_LIBDIR=lib \
-    -DCMAKE_INSTALL_LIBEXECDIR=lib \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-    -DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-    -DUSE_CONSOLEKIT=OFF \
-    -DUSE_PAM=ON \
-    -Wno-dev
+    cmake -S $name-$version -B build \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DUSE_PAM=yes \
+        -DBUILD_SLIMLOCK=yes \
+        -DUSE_CONSOLEKIT=no
+
     cmake --build build
+
     DESTDIR=$PKG cmake --install build
 
-  install -Dm644 $SRC/$name.pam $PKG/etc/pam.d/$name
-  install -D -m 755 $SRC/$name $PKG/etc/rc.d/$name
+    mkdir $PKG/etc/rc.d
+    install -m 755 $SRC/$name.rc $PKG/etc/rc.d/$name
 
-  # install our default theme
-  install -d $PKG/usr/share/slim/themes/irradium
-  cp $SRC/background.png $SRC/panel.png $SRC/slim.theme \
-     $PKG/usr/share/slim/themes/irradium/
+    rm -f slim-crux-smooth/README
+    cp -r slim-crux-smooth $PKG/usr/share/slim/themes/crux-smooth
+    chmod 0644 $PKG/usr/share/slim/themes/crux-smooth/*
 
-  rm -rf $PKG/usr/share/slim/themes/default
-  rm -rf $PKG/usr/share/slim/themes/original
+    # install our default theme
+    install -d $PKG/usr/share/slim/themes/irradium
+    cp $SRC/background.png $SRC/panel.png $SRC/slim.theme \
+        $PKG/usr/share/slim/themes/irradium/
+
+    install -Dm 0644 $name.pam $PKG/etc/pam.d/$name
+
+    # remove systemd service file
+    rm -r $PKG/lib
 }

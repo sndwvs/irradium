@@ -1,0 +1,37 @@
+From 874f5fd2da065e5dd28d20385344559a0bf85857 Mon Sep 17 00:00:00 2001
+From: Mark Hindley <mark@hindley.org.uk>
+Date: Wed, 29 May 2024 18:47:16 +0100
+Subject: [PATCH] log.h: Restore required includes.
+
+Fixes
+
+In file included from /build/slim-1.4.1/app.cpp:31:
+/build/slim-1.4.1/log.h: In instantiation of 'LogUnit& LogUnit::operator<<(const Type&) [with Type = PAM::Exception]':
+/build/slim-1.4.1/app.cpp:331:35:   required from here
+/build/slim-1.4.1/log.h:34:25: error: no match for 'operator<<' (operand types are 'std::ostream' {aka 'std::basic_ostream<char>'} and 'const PAM::Exception')
+   34 |                 *logOut << text; logOut->flush();
+      |                 ~~~~~~~~^~~~~~~
+---
+ log.h | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/log.h b/log.h
+index 6b341f8..8c3ad25 100644
+--- a/log.h
++++ b/log.h
+@@ -13,6 +13,12 @@
+ #ifndef _LOG_H_
+ #define _LOG_H_
+ 
++#ifdef USE_CONSOLEKIT
++#include "Ck.h" 
++#endif
++#ifdef USE_PAM
++#include "PAM.h"
++#endif
+ #include <fstream>
+ 
+ using namespace std;
+-- 
+2.39.2
+
