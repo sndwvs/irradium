@@ -8,13 +8,9 @@ name=mesa
 version=26.0.1
 release=1
 source=(https://archive.mesa3d.org/$name-$version.tar.xz
-    patches/0000-mesa-23.1-x86_32-llvm-detection.patch
-    patches/0001-mesa-24.1-find-opencl-c-base.h.patch
     patches/0002-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch
     patches/0003-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch
-    patches/0004-mesa-24-llvmspirv-detection.patch
     patches/0005-mesa-buildsystem-improvements.patch
-    patches/0006-mesa-24.0-llvmspirvlib-version-check.patch
     patches/0007-mesa-25.2-aarch64-compile.patch)
 
 build() {
