@@ -25,6 +25,8 @@ build() {
 
   patch -p1 -i $SRC/enable-internal-minizip.patch
 
+  export CXXFLAGS+=" -fpermissive"
+
   cmake -B build -G Ninja . \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -Dtde2e_DIR="$SRC/td-$_commitid/install/lib/cmake/tde2e" \
