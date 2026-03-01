@@ -8,7 +8,8 @@ version=6.5.1
 release=1
 _commitid=369ee922b45bfa7e8da357e4d62e93925862d86d
 source=(https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tdesktop-$version-full.tar.gz
-        https://github.com/tdlib/td/archive/$_commitid.tar.gz)
+        https://github.com/tdlib/td/archive/$_commitid.tar.gz
+        enable-internal-minizip.patch)
 
 build() {
   cd tdesktop-$version-full
@@ -21,6 +22,8 @@ build() {
     -DTD_E2E_ONLY=ON
   cmake --build $SRC/td-$_commitid/build
   cmake --install $SRC/td-$_commitid/build
+
+  patch -p1 -i $SRC/enable-internal-minizip.patch
 
   cmake -B build -G Ninja . \
     -DCMAKE_INSTALL_PREFIX=/usr \
