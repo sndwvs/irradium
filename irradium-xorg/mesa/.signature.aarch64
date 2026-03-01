@@ -1,14 +1,9 @@
 untrusted comment: verify with /etc/ports/irradium-xorg.pub
-RWT3zJzzKRcegtPC/QgIJ28J3Pa1UeocJcwVtMj0imYRg1Uiii4fRPC0goZBURG71u9baznS5T0jBOx6A628wJlr46WTjUqhTgw=
-SHA256 (Pkgfile) = 25ab1916ea656ae144a6debd4db44d16f70cd97bf8ae29c14f95c90c0b75612a
-SHA256 (.footprint.aarch64) = 69a48271959b64924a9a6d7b9537793fc0d5bb136570317ae98e84d0cb29ac46
-SHA256 (mesa-25.3.6.tar.xz) = 59217efeac3b64e7ced958324b9db7494f1e0741aeb22d780276514cc1b8f206
-SHA256 (0000-mesa-23.1-x86_32-llvm-detection.patch) = 271e986dd8e09635ac4f0cc8b59c251dcc79b6be0de41da5c615c7b5035b3ead
-SHA256 (0001-mesa-24.1-find-opencl-c-base.h.patch) = cff85cbbc693faed44f21b3acecdfc204920b8ec84410166799b4eb12bd4439c
+RWT3zJzzKRceguJmphGG9JVcf5VnUosW2Caf/rasDbqsawVNlE9QD1aq3l2206IOtGgIjaR78WN6906h6qJWVlwfqfwFvO6q6gE=
+SHA256 (Pkgfile) = 604b2060730753c612d0bddc3aaa662eced4e3cb682357cea0475ed2f8f173ce
+SHA256 (.footprint.aarch64) = 6475d5cfc712da8baeea0827d1fb2c222f1a8cf2edb63338211f546e0ac3c0ad
+SHA256 (mesa-26.0.1.tar.xz) = bb5104f9f9a46c9b5175c24e601e0ef1ab44ce2d0fdbe81548b59adc8b385dcc
 SHA256 (0002-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch) = dfbad2f4fd8445dd2b609ae29f5645536648b1faaa44ecc2ef200d3908b574d1
-SHA256 (0003-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch) = 6789490a644613bb5560159020d0dd48727faab222ca2b5e0d1fb0b2c9801095
-SHA256 (0004-mesa-24-llvmspirv-detection.patch) = 1a7876583850fa75ba35d98eeeaeb363ccf05c514ad34d7db0ba83587b6646e4
+SHA256 (0003-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch) = 8fcb646bb7901d333dbeb48ab2d06a291ab63fa8ee9673df296a20b8d293afa4
 SHA256 (0005-mesa-buildsystem-improvements.patch) = 5b7b3fa42ae4d7070b33084b4921f6086c46dc516eb92cc21f0c751c2e6cd6d5
-SHA256 (0006-mesa-24.0-llvmspirvlib-version-check.patch) = c4913d20c5a83e9675206276e4b0eb0704cfb87d7483f1a767e3f82a73cbf0c5
-SHA256 (0007-mesa-25.2-llvm-21.patch) = 848f03775f8ebefd85073bd7050cd9906b29e60760c160c5f52b3e0204cfdcff
-SHA256 (0008-mesa-25.2-aarch64-compile.patch) = b6fab05255e4fe9fdf348f5b8d1404c4dd5235659f9a8fa15194e03cd0ca5b52
+SHA256 (0007-mesa-25.2-aarch64-compile.patch) = b6fab05255e4fe9fdf348f5b8d1404c4dd5235659f9a8fa15194e03cd0ca5b52
