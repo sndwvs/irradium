@@ -15,8 +15,7 @@ source=(https://archive.mesa3d.org/$name-$version.tar.xz
     patches/0004-mesa-24-llvmspirv-detection.patch
     patches/0005-mesa-buildsystem-improvements.patch
     patches/0006-mesa-24.0-llvmspirvlib-version-check.patch
-    patches/0007-mesa-25.2-aarch64-compile.patch
-    patches/0008-mesa-25.2-llvm-21.patch)
+    patches/0007-mesa-25.2-aarch64-compile.patch)
 
 build() {
     prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
