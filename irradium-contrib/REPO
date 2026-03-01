@@ -391,7 +391,7 @@ f:0f96c09cb07cb5bf7c0f74b399128f33:postgresql/postgresql-run-socket.patch
 f:865b85e804f45f9ccdf28f030f9b32ab:postgresql/postgresql.pam
 f:8c0e56c70522bfc9c89af401215414c4:postgresql/pre-install
 f:8fbbce68120dac529b04bd6878f03618:postgresql/.footprint
-f:f82079f8a9a6c1f8d0cff626247e5d20:postgresql/.signature
+f:8b020cedaa150d5066a5ee0015f97490:postgresql/.signature
 f:bd0d149a40c01ae6efb42e9e761e1d2c:postgresql/wget-log
 f:558a4ee95d0ccf9c49d0da42cdef47eb:postgresql/postgresql.service
 f:0d87f29663bf6a77c5be80f789456ba3:postgresql/Pkgfile
