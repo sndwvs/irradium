@@ -92,8 +92,8 @@ f:aa99fc50e693d173b223fa9353ee1bef:xfce4-power-manager/Pkgfile
 f:dbc7e65acdcd5169f73f730e857592a6:xfce4-pulseaudio-plugin/.footprint
 f:43356454be42b3601557887d0247d04c:xfce4-pulseaudio-plugin/.signature
 f:c5b96b617e303a968eeb3221296d3c1a:xfce4-pulseaudio-plugin/Pkgfile
-f:27a91765e54d6fe23523dffdb9058f04:xfce4-screensaver/.footprint
-f:d9c8b7a9925320d5506d803459bf3697:xfce4-screensaver/.signature
+f:7cca761f0e8316c24acde4000d8929a9:xfce4-screensaver/.footprint
+f:79410743bcabefae55696c47298eac03:xfce4-screensaver/.signature
 f:d653eb43fc465e7005ab46e409e46949:xfce4-screensaver/Pkgfile
 f:2c68bc2fe2c343bcbaa9be0db91c3b0d:xfce4-screensaver/clarify-desc-in-xfce-settings.patch
 f:ad95d3006c61a0c8dd3079d391071894:xfce4-screenshooter/.footprint

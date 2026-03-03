@@ -130,6 +130,9 @@ drwxr-xr-x	root/root	usr/share/locale/ja/LC_MESSAGES/
 drwxr-xr-x	root/root	usr/share/locale/kab/
 drwxr-xr-x	root/root	usr/share/locale/kab/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/kab/LC_MESSAGES/xfce4-screensaver.mo
+drwxr-xr-x	root/root	usr/share/locale/kk/
+drwxr-xr-x	root/root	usr/share/locale/kk/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/kk/LC_MESSAGES/xfce4-screensaver.mo
 drwxr-xr-x	root/root	usr/share/locale/ko/
 drwxr-xr-x	root/root	usr/share/locale/ko/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/ko/LC_MESSAGES/xfce4-screensaver.mo
@@ -184,9 +187,15 @@ drwxr-xr-x	root/root	usr/share/locale/th/LC_MESSAGES/
 drwxr-xr-x	root/root	usr/share/locale/tr/
 drwxr-xr-x	root/root	usr/share/locale/tr/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/tr/LC_MESSAGES/xfce4-screensaver.mo
+drwxr-xr-x	root/root	usr/share/locale/ug/
+drwxr-xr-x	root/root	usr/share/locale/ug/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/ug/LC_MESSAGES/xfce4-screensaver.mo
 drwxr-xr-x	root/root	usr/share/locale/uk/
 drwxr-xr-x	root/root	usr/share/locale/uk/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/uk/LC_MESSAGES/xfce4-screensaver.mo
+drwxr-xr-x	root/root	usr/share/locale/vi/
+drwxr-xr-x	root/root	usr/share/locale/vi/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/vi/LC_MESSAGES/xfce4-screensaver.mo
 drwxr-xr-x	root/root	usr/share/locale/zh_CN/
 drwxr-xr-x	root/root	usr/share/locale/zh_CN/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/zh_CN/LC_MESSAGES/xfce4-screensaver.mo

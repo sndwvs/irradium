@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0SKq9NrkCyxprCyVPaisxQ0ym0K1E30hmEIapr4NYsaH9teOwu4HGW8NaKy6SnLtYtPYuryrCQtCkkJ7LeZxawE=
-SHA256 (Pkgfile) = 4c3b813ec5371f200afd9bd81fb76e8656a4362bbaaa89b6b6c470329bab87af
-SHA256 (.footprint) = 88020391fe27dd58a3b1cf15d9efb1b723161587a6a3033772a0593933cb8509
-SHA256 (xfce4-screensaver-4.20.1.tar.xz) = a94ce9ca3f56db183f1cbc60ba4accd91575b02a6d20b1876ad19131982f2243
+RWQ1yk7gkrBo0XVezYs1RiKrsp7uFA7aBYFLRuaBxdk6pCVvvR7iwhcLJX5Dsio0XxN7X+XzqJKs8QIbRD5qE9C8xfMcb2Q6gQY=
+SHA256 (Pkgfile) = a90401e88d0b112eb8452763336d6ce60ac97d2de2baf7ac569b36ceae59c993
+SHA256 (.footprint) = 62b839434d4b098739324245545b31d1b2a7a94f7b40917144b34a29064a73cc
+SHA256 (xfce4-screensaver-4.20.2.tar.xz) = 5032f60a31df5e50a80512e301b595be5ea6a6bd762cdd95cacc24cbd29a01d7
 SHA256 (clarify-desc-in-xfce-settings.patch) = a82868d57f17d1fefd647ef495e3eeec716e43f73bbfd2976c4ae05df0e9006c
