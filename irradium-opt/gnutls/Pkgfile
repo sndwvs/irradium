@@ -1,0 +1,33 @@
+# Description: A library that provides a secure layer over a reliable transport layer
+# URL: https://gnutls.org
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: libunistring nettle p11-kit
+# Optional: brotli libidn2 texinfo tpm2-tss
+
+name=gnutls
+version=3.8.12
+release=2
+source=(https://www.gnupg.org/ftp/gcrypt/$name/v${version:0:3}/$name-$version.tar.xz)
+
+build() {
+  cd $name-${version:0:6}
+
+  prt-get isinst brotli && PKGMK_GNUTLS+=' --with-brotli'
+  prt-get isinst libidn2 && PKGMK_GNUTLS+=' --with-idn'
+  prt-get isinst texinfo || PKGMK_GNUTLS+=' --disable-doc'
+  prt-get isinst tpm2-tss || PKGMK_GNUTLS+=' --without-tpm2'
+
+  ./configure $PKGMK_GNUTLS \
+    --prefix=/usr \
+    --with-default-trust-store-pkcs11="pkcs11:" \
+    --enable-openssl-compatibility \
+    --with-zstd \
+    --disable-static \
+    --without-tpm
+
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+  make
+  make DESTDIR=$PKG install
+
+  rm -r $PKG/usr/share/{locale,info}
+}
