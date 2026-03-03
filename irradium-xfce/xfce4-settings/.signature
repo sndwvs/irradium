@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-xfce.pub
-RWQ1yk7gkrBo0YPnx/RkAlIFUiLc0iUiz1qkMvmQEEobThLpRAgQVvDlDPtBlwBYdnKIlLF8BCo1OmRAJDlqIVTAp1GrBbnOWQA=
-SHA256 (Pkgfile) = 2e4bbfe7f96c43c529e5f1e0f13421b85ead330eee5af9730acdc364206a8d86
+RWQ1yk7gkrBo0aabzav7kw1f9Vt4YBl2z9HncBmmV6GBYaeu0hYqWvTXG1tD9tSrgDLHd/lX89nETHxMh4Q3y+EgRXaNVD80RgI=
+SHA256 (Pkgfile) = 58bd3eb895a771b0c3c160a126ffeec0c6e2f6466caee8eace722259a86c0a27
 SHA256 (.footprint) = 3982d12bb7d4366d0205e5b90f1ae36e7ccb82920740c43261acdabe021de83d
-SHA256 (xfce4-settings-4.20.3.tar.bz2) = f77f79925391b142101bac46e2c48373d87ad73f610af371b8bcf92ba11c6383
+SHA256 (xfce4-settings-4.20.4.tar.bz2) = ad5c3c5bfb36f5eb091c05897d60f468d0d5cc4364c8d1d38ca53d8bb04387da
 SHA256 (xfce4-settings.theme.diff.gz) = f19392c8f3cf73d20402ef5f0d4c351355e04450a6fbf72dccb025b9296b3130
 SHA256 (xfce4-settings.xft.defaults.diff.gz) = 651a6a05da64d94b4e0f09cbcc9e86ac22da2c8dafcce6615ebd605184e03769
