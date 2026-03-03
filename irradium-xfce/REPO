@@ -52,8 +52,8 @@ f:eb5081b795690f9e39643dccbd0aa3c1:libxfce4util/.footprint
 f:d290deb806da1ec98bc13486571718f4:libxfce4util/.signature
 f:64c9e24a2b7aa7c1086a1bf251750f2c:libxfce4util/Pkgfile
 f:0806d0afa08aec01b9699e7d52096fac:mousepad/post-install
-f:0b805f8327a298ec2c64f132151442d3:mousepad/.footprint
-f:9c5bca65605f6e13a912267d6d23af72:mousepad/.signature
+f:f479572e112d839343257d94892edaf8:mousepad/.footprint
+f:650b38b9d10a0e987263671ec1340dba:mousepad/.signature
 f:8b51157bfa48af2254963f2e501c1607:mousepad/Pkgfile
 f:fdc28c151b88be47a6c52035893bf50a:thunar/.footprint
 f:71e711490a2e69c7f9733879764c9cfd:thunar/.signature
