@@ -388,8 +388,8 @@ f:5c04793566c4387427033b01c7f6d81d:range-v3/.signature
 f:0f96c09cb07cb5bf7c0f74b399128f33:postgresql/postgresql-run-socket.patch
 f:865b85e804f45f9ccdf28f030f9b32ab:postgresql/postgresql.pam
 f:bd0d149a40c01ae6efb42e9e761e1d2c:postgresql/wget-log
-f:8fbbce68120dac529b04bd6878f03618:postgresql/.footprint
-f:8b020cedaa150d5066a5ee0015f97490:postgresql/.signature
+f:6fadaac5810733738affb12afd575e4c:postgresql/.footprint
+f:1e145dbf0401fd408b9099306d479d73:postgresql/.signature
 f:0d87f29663bf6a77c5be80f789456ba3:postgresql/Pkgfile
 f:4ee4808e4b6bc64806eb74007263f1e9:postgresql/README
 f:3674b0f356862f27d47aebeb28f7331f:postgresql/post-install
