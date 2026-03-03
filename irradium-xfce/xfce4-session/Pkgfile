@@ -4,15 +4,19 @@
 # Depends on: libwnck-gtk3 libxfce4ui libxfce4windowing consolekit desktop-file-utils shared-mime-info polkit xfdesktop xorg-libsm xorg-iceauth xorg-xinit xorg-xrdb
 
 name=xfce4-session
-version=4.20.3
+version=4.20.4
 release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2 \
-        use-xfss-by-default-in-xfce.patch.gz)
+        use-xfss-by-default-in-xfce.patch.gz
+        xfce4-session.labwc.session.diff)
 
 build(){
   cd $name-$version
 
   zcat $SRC/use-xfss-by-default-in-xfce.patch.gz | patch -p1 --verbose || exit 1
+
+  # labwc should be called with --session, not --startup:
+  cat $SRC/xfce4-session.labwc.session.diff | patch -p1 --version || exit 1
 
   ./configure \
     --prefix=/usr \
