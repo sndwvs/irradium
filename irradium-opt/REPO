@@ -42,6 +42,7 @@ d:lame
 d:efivar
 d:compiler-rt
 d:strace
+d:libxml2
 f:fa75fbb042271cc211626d163661a949:cryptsetup/.footprint
 f:4f5722d302011b70acf83129691cdbac:cryptsetup/.signature
 f:e710a1bd06d54be6d722c416bc6212d1:cryptsetup/Pkgfile
@@ -254,3 +255,6 @@ f:b3e941b358daf0adda0571dc1c4e3efb:compiler-rt/Pkgfile
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
 f:b01d773e50b4c26b652ba715d6d88435:strace/.signature
 f:be0a3203f999023218ca0d016e31821f:strace/Pkgfile
+f:07e98255c6d1948feb847566db164c8d:libxml2/.footprint
+f:a15e58ec6bd035c8199f5eab81cd3679:libxml2/.signature
+f:83d29fc6db0377e710159daeb5daf0ea:libxml2/Pkgfile
