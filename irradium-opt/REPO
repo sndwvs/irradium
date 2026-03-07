@@ -249,8 +249,8 @@ f:52814a23ddd928be2c0d0632cc8bf84f:lame/Pkgfile
 f:5387ad06a1dc0774320b4482f95580be:efivar/.footprint
 f:910f6052b02380c83db3223f3b7d9364:efivar/.signature
 f:f193e75ca62a9f19acc471f19b047a9f:efivar/Pkgfile
-f:5be6bc6f7d8ee33c7f5f00d4687a91d3:compiler-rt/.footprint
-f:06055269ccb4713cbf357fa74c9aec12:compiler-rt/.signature
+f:fd0fa3b88c025d8cd1042eddb9480abf:compiler-rt/.footprint
+f:382e733a7ca5a74782d5178c17472134:compiler-rt/.signature
 f:f7dce0ea8e21b0fb3f12b949038147b5:compiler-rt/Pkgfile
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
 f:b01d773e50b4c26b652ba715d6d88435:strace/.signature
