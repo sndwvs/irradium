@@ -1,6 +1,9 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/xfce4-terminal
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+-rw-r--r--	root/root	usr/man/man1/xfce4-terminal.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/xfce4-terminal-settings.desktop
@@ -196,6 +199,9 @@ drwxr-xr-x	root/root	usr/share/locale/th/LC_MESSAGES/
 drwxr-xr-x	root/root	usr/share/locale/tr/
 drwxr-xr-x	root/root	usr/share/locale/tr/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/tr/LC_MESSAGES/xfce4-terminal.mo
+drwxr-xr-x	root/root	usr/share/locale/tt/
+drwxr-xr-x	root/root	usr/share/locale/tt/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/tt/LC_MESSAGES/xfce4-terminal.mo
 drwxr-xr-x	root/root	usr/share/locale/ug/
 drwxr-xr-x	root/root	usr/share/locale/ug/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/ug/LC_MESSAGES/xfce4-terminal.mo
@@ -217,9 +223,6 @@ drwxr-xr-x	root/root	usr/share/locale/zh_CN/LC_MESSAGES/
 drwxr-xr-x	root/root	usr/share/locale/zh_TW/
 drwxr-xr-x	root/root	usr/share/locale/zh_TW/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/zh_TW/LC_MESSAGES/xfce4-terminal.mo
-drwxr-xr-x	root/root	usr/share/man/
-drwxr-xr-x	root/root	usr/share/man/man1/
--rw-r--r--	root/root	usr/share/man/man1/xfce4-terminal.1.gz
 drwxr-xr-x	root/root	usr/share/xfce4/
 drwxr-xr-x	root/root	usr/share/xfce4/terminal/
 drwxr-xr-x	root/root	usr/share/xfce4/terminal/colorschemes/
