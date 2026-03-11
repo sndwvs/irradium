@@ -6,7 +6,7 @@
 name=deadbeef
 version=1.10.1
 release=1
-source=(ddb_dsp_libretro_fix_aarch64_riscv64.patch)
+source=()
 
 build() {
   mkdir $name-$version
@@ -18,8 +18,6 @@ build() {
   git checkout $version
   git submodule update --init
   ./autogen.sh
-
-  patch -p1 -i $SRC/ddb_dsp_libretro_fix_aarch64_riscv64.patch
 
   CFLAGS=${CFLAGS/-fstack-clash-protection/}
   export CC=clang CXX=clang++
