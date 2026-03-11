@@ -152,6 +152,8 @@ drwxr-xr-x	root/root	usr/lib/deadbeef/data68/Replay/
 -rwxr-xr-x	root/root	usr/lib/deadbeef/hotkeys.so
 -rwxr-xr-x	root/root	usr/lib/deadbeef/in_sc68.la
 -rwxr-xr-x	root/root	usr/lib/deadbeef/in_sc68.so
+-rwxr-xr-x	root/root	usr/lib/deadbeef/lyrics_gtk3.la
+-rwxr-xr-x	root/root	usr/lib/deadbeef/lyrics_gtk3.so
 -rwxr-xr-x	root/root	usr/lib/deadbeef/m3u.la
 -rwxr-xr-x	root/root	usr/lib/deadbeef/m3u.so
 -rwxr-xr-x	root/root	usr/lib/deadbeef/medialib.la
@@ -187,6 +189,7 @@ drwxr-xr-x	root/root	usr/lib/deadbeef/data68/Replay/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/deadbeef.desktop
+-rw-r--r--	root/root	usr/share/applications/deadbeef_enqueue.desktop
 drwxr-xr-x	root/root	usr/share/deadbeef/
 drwxr-xr-x	root/root	usr/share/deadbeef/pixmaps/
 -rw-r--r--	root/root	usr/share/deadbeef/pixmaps/buffering_16.png
