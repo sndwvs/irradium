@@ -5,7 +5,7 @@
 # Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland
 
 name=firefox
-version=148.0
+version=148.0.2
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -28,7 +28,7 @@ build() {
     exit 1
   fi
 
-  prt-get isinst sccache >/dev/null && export RUSTC_WRAPPER='/usr/bin/sccache'
+  [ -x /usr/bin/sccache ] && export RUSTC_WRAPPER='/usr/bin/sccache'
   mkdir -p "$PKGMK_SOURCE_DIR/rust"
   export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
 
@@ -83,7 +83,7 @@ EOF
     echo 'ac_add_options --enable-rust-simd' >> .mozconfig
   fi
 
-  prt-get isinst icu >/dev/null && echo 'ac_add_options --with-system-icu' >> .mozconfig
+  [ -x /usr/bin/uconv ] && echo 'ac_add_options --with-system-icu' >> .mozconfig
 
   # bugzilla 1988166: workaround for systems without the single_threaded header
   [ -e /usr/include/sys/single_threaded.h ] || sed "/sys\/single_threaded.h/d" \
@@ -124,7 +124,7 @@ EOF
   export CXXFLAGS="$CXXFLAGS -w"
   export LDFLAGS="$LDFLAGS -Wl,-rpath=/usr/lib/firefox,--enable-new-dtags"
 
-  if prt-get isinst clang lld >/dev/null; then
+  if [ -x /usr/bin/clang ] && [ -x /usr/bin/lld ]; then
       echo 'ac_add_options --enable-linker=lld' >> .mozconfig
       export LDFLAGS+=",--thinlto-jobs=$((${JOBS-2} / 2))"
       export CC=clang CXX=clang++
