@@ -183,7 +183,7 @@ f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:2a3fe0bbe2b23a66764034bd56fc2411:deadbeef/ddb_dsp_libretro_fix_aarch64_riscv64.patch
 f:42a3e8ce4c68f7adfa1a8d6dc19a2bc4:deadbeef/.footprint
 f:5a68a8129aec8be1c6252fb1df4b9d2d:deadbeef/.signature
-f:871c1c3a57bb1945fe6aa32eb11a44b5:deadbeef/Pkgfile
+f:5db9f85e1c315a0251c667e6c572d561:deadbeef/Pkgfile
 f:4f7b29eb38aa1ade091f8478b4c8057b:elogind/11-prefer-deep-suspend.patch
 f:0a13ac50fadfb4d9dc20b3e8c81ebce1:elogind/12-default-deep-suspend.patch
 f:5009a303246ecef5ea0aaa49952c52af:elogind/pre-install

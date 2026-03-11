@@ -4,7 +4,7 @@
 # Depends on: alsa-lib curl desktop-file-utils jansson gtk3 clang libdispatch libmad libtool libsamplerate yasm intltool gettext pkgconf ffmpeg
 
 name=deadbeef
-version=1.10.0
+version=1.10.1
 release=1
 source=(ddb_dsp_libretro_fix_aarch64_riscv64.patch)
 
