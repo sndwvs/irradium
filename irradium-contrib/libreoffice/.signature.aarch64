@@ -1,11 +1,11 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7llhdKudyL9JQq0EAhIsR6/thVlZVZ46/Q/yiUYsb6aFhPbyghocoR8xXMguhOcT047QnlJu5XISd5E0C52IJgA=
-SHA256 (Pkgfile) = dcf0a9c09b20aba130ce69d8baba0ba9cbd46dbcba4b5955ddf41e29a8717d9b
+RWTmT3d9kqan7jeYQxDmGZpRhg/QGaB/mr/Io0mopMlSM9ddp+cVEBURWi98qj4IyLSkOaZJnVHqLZJHvF2t9wGZpeMAr9gqDQQ=
+SHA256 (Pkgfile) = 25b8d7e938a95d7c09c0cfa4dba98378cdefe90db63710eaccc6e793babf86d5
 SHA256 (.footprint.aarch64) = f6c3f403d7d2630f8dc54df757facaf7c8a11a3f532dda09052ced3e9d9b11e0
-SHA256 (libreoffice-26.2.1.2.tar.xz) = 18ce225f73fb2a37710b3ce2246a6fab9fb25ef10bc6960ac57b594bf5e8fc28
-SHA256 (libreoffice-dictionaries-26.2.1.2.tar.xz) = 02f2a45c0f3ff2357ecb9e8165ce64743c892ea9b5acc24cae0c965c52382913
-SHA256 (libreoffice-translations-26.2.1.2.tar.xz) = 4c78dde91e04e50090c861964923b0695fc21df1376cbbb500c8cdf435aa9143
-SHA256 (libreoffice-help-26.2.1.2.tar.xz) = da279231c1b2eb21238411f1e8e09527bb5b7c17cce9993baf6624db4fd92568
+SHA256 (libreoffice-26.2.2.1.tar.xz) = b93ee179b959744896249fdc9791eb22a10b28e146cfa6c82a80b8c98cc2b171
+SHA256 (libreoffice-dictionaries-26.2.2.1.tar.xz) = c12e244cd4bf61a9854650995160301fbbab93c00271af24aa609ae916b80e26
+SHA256 (libreoffice-translations-26.2.2.1.tar.xz) = 318b075bbc9cc85adb3df758f931b1f3eae16393b0ab3a63215f21af6f383269
+SHA256 (libreoffice-help-26.2.2.1.tar.xz) = dfccd779cd01ba610c6ab208a0b3f727eb49bc7ce84a2eed91f58263f8165522
 SHA256 (185d60944ea767075d27247c3162b3bc-unowinreg.dll) = eafde646a7dbe46d20c291685b0beac2382174d78d66ee990e229a1bf6e6cec6
 SHA256 (0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz) = 983941d31ee8d366085cadf28db75eb1f5cb03ba1e5853b98f12f7f51c63b776
 SHA256 (dtoa-20180411.tgz) = 0082d0684f7db6f62361b76c4b7faba19e0c7ce5cb8e36c4b65fea8281e711b4
