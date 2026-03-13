@@ -58,8 +58,8 @@ f:9b7540a197371561b62b9de0e67617af:ffmpeg-mpp/Pkgfile
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg-mpp/add-av_stream_get_first_dts-for-chromium.patch
 f:dae0c10c99399580c929fc100e79faef:ffmpeg-mpp/ffmpeg-x264-10bit.sh
 f:df409f613c10ae0b7e19e37e66717714:ffmpeg-mpp/rkmpp-6.patch
-f:fbbb44667259905ab33a7f4b2db0a042:harfbuzz/.footprint
-f:04e33bc8a17751dd4eda713af17829d8:harfbuzz/.signature
+f:83b4fed2d2ca7e5bfd5000821eb4e296:harfbuzz/.footprint
+f:ae972797acfd5c7829ee529a4a86c670:harfbuzz/.signature
 f:1d5ecb1ceb99eda9db2bd488d24c8659:harfbuzz/Pkgfile
 f:5db6190db9bd0114880d1295e86e5781:libart_lgpl/Pkgfile
 f:58263621cc2c46c26e4bb2aa56cde0c7:libart_lgpl/.footprint
