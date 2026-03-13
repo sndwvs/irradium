@@ -4,7 +4,7 @@
 # Depends on: python3 python3-hatchling
 
 name=yt-dlp
-version=2026.01.29
+version=2026.03.13
 release=1
 source=(https://github.com/yt-dlp/yt-dlp/archive/$version/$name-$version.tar.gz
         allow-nodejs-by-default.patch)
