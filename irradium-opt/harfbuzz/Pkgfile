@@ -5,7 +5,7 @@
 # Optional: cairo chafa glib glib-introspection graphite2 icu
 
 name=harfbuzz
-version=13.1.0
+version=13.1.1
 release=1
 source=(https://github.com/harfbuzz/harfbuzz/releases/download/$version/$name-$version.tar.xz)
 
@@ -17,6 +17,10 @@ build() {
     prt-get isinst chafa || PKGMK_HARFBUZZ+=' -D chafa=disabled'
     prt-get isinst graphite2 && PKGMK_HARFBUZZ+=' -D graphite2=enabled'
     prt-get isinst icu || PKGMK_HARFBUZZ+=' -D icu=disabled'
+
+    sed -i '/# include/s/chafa.h/chafa\/chafa.h/' \
+      $name-$version/util/hb-info.cc $name-$version/util/helper-image-output.hh \
+      $name-$version/util/helper-cairo-ansi.hh
 
     meson setup build $name-$version $PKGMK_HARFBUZZ \
         --prefix=/usr \

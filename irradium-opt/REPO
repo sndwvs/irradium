@@ -60,7 +60,7 @@ f:dae0c10c99399580c929fc100e79faef:ffmpeg-mpp/ffmpeg-x264-10bit.sh
 f:df409f613c10ae0b7e19e37e66717714:ffmpeg-mpp/rkmpp-6.patch
 f:fbbb44667259905ab33a7f4b2db0a042:harfbuzz/.footprint
 f:04e33bc8a17751dd4eda713af17829d8:harfbuzz/.signature
-f:833c4d33064aea8356b177951981d492:harfbuzz/Pkgfile
+f:1d5ecb1ceb99eda9db2bd488d24c8659:harfbuzz/Pkgfile
 f:5db6190db9bd0114880d1295e86e5781:libart_lgpl/Pkgfile
 f:58263621cc2c46c26e4bb2aa56cde0c7:libart_lgpl/.footprint
 f:4a20a4462b31e81c055e8872e284e185:libart_lgpl/.signature
@@ -215,7 +215,7 @@ f:f7cfede7c801951a0ff658d78ae3d053:efibootmgr/.footprint
 f:e326336f4bc83a319d32de3fb30354a9:efibootmgr/.signature
 f:a2e9954fdf88c7872c7617f3a524cf26:efibootmgr/Pkgfile
 f:0fac9b02d2ab26cfd0c61670f2758641:php-zip/.footprint
-f:e788f82d092a324629cd74fae3eca6f1:php-zip/Pkgfile
+f:32c294c1906a4bb92182c716baa09bba:php-zip/Pkgfile
 f:1edf166f280ce88e645159bdb70ebb81:php-zip/.signature
 f:063fd3ca2c930e791270c2860e51379b:minizip/.footprint
 f:d2fe861ae69c637659ee2d848139beed:minizip/.signature
