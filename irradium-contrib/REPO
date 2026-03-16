@@ -816,7 +816,7 @@ f:9a420da381535d49b2b4d4bf8bb1018b:zabbix-web-service/rc.zabbix-web-service
 f:bd7bafa1a751ad22c0413c40f9b2196f:zabbix-web-service/zabbix_web_service.logrotate
 f:9c7e0229477fb5acdc9f5ec14f5f6e2f:zabbix-web-service/zabbix_web_service.conf.patch
 f:e1db94138aa5bcfb86d845a95f5fc674:zabbix-web-service/.footprint
-f:07aa20274d037010bc688e9205446faa:zabbix-web-service/.signature
+f:966c35944968665f5e711b2dc630c295:zabbix-web-service/.signature
 f:b16661af1787ba844e7366631813013d:timescaledb-tune/Pkgfile
 f:984d47e913ea05924aca37917d959e39:timescaledb-tune/.footprint
 f:1e8f977ca8a5ded6ce8c6bb311989c1e:timescaledb-tune/.signature
