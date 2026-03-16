@@ -4,7 +4,7 @@
 # Depends on: libxml2 autoconf automake curl libevent libssh2 openssl pcre2
 
 name=zabbix-utils
-version=7.4.5
+version=7.4.8
 release=1
 source=(https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-$version.tar.gz)
 
