@@ -728,7 +728,7 @@ f:140883be494b876db58f18e30acaadf2:iozone/Pkgfile
 f:6af1adf0df27f4a4024633a823c2f45c:iptraf-ng/.footprint
 f:3b39d000c9a3bc753625396f2540419d:iptraf-ng/.signature
 f:2190317ade7c835d7f8ec924360c7439:iptraf-ng/Pkgfile
-f:bb41486103a873af7a6ac421827dd9b5:zabbix-agentd/Pkgfile
+f:55920ef5397dab2aae641f7a18078a87:zabbix-agentd/Pkgfile
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-agentd/pre-install
 f:5c8161eec17c15d479f61a927fbecbb3:zabbix-agentd/zabbix_agentd.logrotate
 f:fd2a73fcf6ddc5b15a71a10d87408869:zabbix-agentd/.footprint
