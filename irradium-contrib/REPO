@@ -710,7 +710,7 @@ f:b388f48be231e7ce29536a22fbc8f378:python3-pyyaml-env-tag/.footprint
 f:7b694173628dbc5fdde89d50d120d9c1:python3-pyyaml-env-tag/.signature
 f:a3dbc5698088ce944be909d82d67bfd1:python3-pyyaml-env-tag/Pkgfile
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-proxy/pre-install
-f:fb3d89b0b142f1b70839048284730a62:zabbix-proxy/Pkgfile
+f:57e62044fe19508472d2780b2ec40f86:zabbix-proxy/Pkgfile
 f:7434ee965d25e58e609525118321a4f4:zabbix-proxy/rc.zabbix-proxy
 f:04276a7482d2bd18ba3d0473531717c7:zabbix-proxy/zabbix_proxy.logrotate
 f:e70080cf360016d747a6a04ff337f3e0:zabbix-proxy/.footprint
