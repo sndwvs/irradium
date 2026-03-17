@@ -175,7 +175,7 @@ f:b234015b73634def7fa8cbd2c8bac075:dhcpcd/dhcpcd.conf-request_ntp_server_by_defa
 f:1be1c29d9376024d75725b8de4905d38:dhcpcd/use-hostname_short-in-dhcpcd.conf.patch
 f:22b0bf1f472a6db254456d58e484e7e0:dhcpcd/.footprint
 f:ec19909f5980d8aa0a24e91274a07ec8:dhcpcd/.signature
-f:3c34cb519c903512a76bd6eb6c25119a:dhcpcd/Pkgfile
+f:e723b6b3e4720be8130d8d7b1b682c4c:dhcpcd/Pkgfile
 f:5a1cf3e66d492a1433ac84eaffd939d3:dhcpcd/dhcpcd.conf-Don-t-invoke-wpa_supplicant-by-default.patch
 f:fbafc77f3c89f312a0bc3ff68fe9bc44:iproute2/irradium-net.iproute2.patch
 f:7b469125cfe2d9916ba03f7c65b9dcd5:iproute2/lo.iproute2
@@ -187,8 +187,8 @@ f:b66f28122de2fa333a958a42895eb3a6:gettext/.footprint
 f:6fafdb713dbc6e230d3a7a7af79a81e7:gettext/.signature
 f:8b358f40da9d512eff751df5e47b2548:gettext/Pkgfile
 f:c479565d921098228dc5f2edaae01515:m4/.footprint
-f:e95191fc8a92660aa6c5c4c9cd487133:m4/.signature
 f:2afff61b59ec274d8192a46345560939:m4/Pkgfile
+f:e95191fc8a92660aa6c5c4c9cd487133:m4/.signature
 f:4fc600da67a127f7bd388638db960171:vlan/Pkgfile
 f:e5f7f057e8e13807b6d40d9b1a407131:vlan/.footprint
 f:ac8dceafa0807225651a88e6eb3d2eb6:vlan/.signature
