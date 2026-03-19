@@ -5,14 +5,15 @@
 
 name=eudev
 version=3.2.14
-release=5
+release=6
 source=(https://github.com/eudev-project/eudev/releases/download/v$version/$name-$version.tar.gz
     81-irradium.rules
     mount_fusectl.sh
     start_udev
     eudev.ignore_bind_unbind_events.diff
     eudev.no.renderD.diff
-    eudev.no.sgx.diff)
+    eudev.no.sgx.diff
+    eudev.ignore_bind_unbind_events.diff)
 
 build() {
     cd $name-$version
@@ -25,6 +26,9 @@ build() {
     # Don't require groups that we don't need:
     patch -p1 -i $SRC/eudev.no.renderD.diff
     patch -p1 -i $SRC/eudev.no.sgx.diff
+
+    # Change perms on kvm and vhost-net from 666 to 660, as recommended for QEMU:
+    patch -p1 -i $SRC/eudev.kvm.vhost-net.qemu.recommended-perms.diff
 
     # needed for static linking, e.g. dmsetup.static
     sed -i '/^Libs:/s/-ludev/-ludev -lrt/' src/libudev/libudev.pc.in

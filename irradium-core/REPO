@@ -147,7 +147,8 @@ f:b718f4557fdb011766ccc45c5efacba5:eudev/.footprint
 f:264ff2915c5dd21b26036988020434ea:eudev/81-irradium.rules
 f:c2bbe117ce2511d90cfef6a999b6acec:eudev/.signature
 f:43731ee9a509839f0f43bf371d8c6a40:eudev/mount_fusectl.sh
-f:4bc6519813c00ca4cb17b8a65267010f:eudev/Pkgfile
+f:81a90328bfe1ecf0d07edda0df21e126:eudev/Pkgfile
+f:7b7c383e1dc86df51e915b80c8607453:eudev/eudev.kvm.vhost-net.qemu.recommended-perms.diff
 f:441c8f54e449ebb04236731ee6033784:rc/.footprint
 f:6b7c652bea42071121801f3c0e18245f:rc/.signature
 f:ac2d17598ebb0839afc6bc628e64745d:rc/Pkgfile
