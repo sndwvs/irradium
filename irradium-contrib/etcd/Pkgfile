@@ -4,7 +4,7 @@
 # Depends on: git go bash
 
 name=etcd
-version=3.6.4
+version=3.6.9
 release=1
 source=(https://github.com/etcd-io/etcd/archive/v$version.tar.gz
         rc.etcd

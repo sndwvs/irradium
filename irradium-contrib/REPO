@@ -412,7 +412,7 @@ f:4a0cf636d10c64ff0a5c12fcec684a78:tk/.signature
 f:94c44128030f929514210cd358bcd567:tk/Pkgfile
 f:9da5f9129770d5d316e8da1125752b49:tk/font-sizes.diff
 f:c1436dee8fcb78a65bc1c0c660133f9d:etcd/etcd.yaml
-f:cd6408ab1cb0b8efac3a8ff089f05e3b:etcd/Pkgfile
+f:80ecd74d51ef86529f11606ea7c064a9:etcd/Pkgfile
 f:cc67109c45538888f25b32814fac074c:etcd/rc.etcd
 f:1df0f85bfc3003e0455a891642bfec4e:etcd/pre-install
 f:5da472016e2cfb4add8b055c533a674b:etcd/.footprint
