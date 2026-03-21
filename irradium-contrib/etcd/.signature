@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7hAxEMi1ylsD+JBmoSThVpJZ3X96n3ldoDy1e7DtrmuYj2Svjs28qLVDz7C1LzgrfQDl/6FU2qDulA2YfxXMuAY=
-SHA256 (Pkgfile) = 97ac194942c49b66c4033411d32797201582a19dc9f91b8999bd91605db31e1e
+RWTmT3d9kqan7vLpito6pq/bwF90LFxNdojhU31z9LsjhpNkKj27aS27KAlks1uY/B4mo89qu/7tD2OxWZxbSc+aDdO44BBYcgo=
+SHA256 (Pkgfile) = fbe5aef8f5da55a62d3b0dfa2753d71da192068655bb909906e7e5b842dbda08
 SHA256 (.footprint) = 549b5c36352ae219812d2abc1ba08a17a629c8d86e2ca422840ed7826c7e1483
-SHA256 (v3.6.4.tar.gz) = dcbb42495ebdfa66c3cbba00501f679a88de11523533ba13ead3de8585422b2c
+SHA256 (v3.6.9.tar.gz) = 17d01cb6075a50cbc795ded0f4caf2bcf5b8005fc4c4631ce8df711dfbd118ed
 SHA256 (rc.etcd) = 1cd7e073725252797bb67fdfcd1a084c029b4a7f11b4677a9b3c8420c3a1e192
 SHA256 (etcd.yaml) = 7c9285e2d4ddfbdb0ffbb5c952a7f3e3086570e51057a04c18092732ef6991b1
