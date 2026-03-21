@@ -340,7 +340,7 @@ f:a07294647986084eff127cf5fa5f7c1b:mpv/.signature
 f:b65fb959e44adf842705e839b3e7f654:mpv/Pkgfile
 f:6e6ac1e73de5134e19b0690307670a56:consul/.footprint
 f:26e0307b015a7a71fa9dd736af7f77ce:consul/.signature
-f:8664047003f1fb6b1ba25227a9e108b6:consul/Pkgfile
+f:1297cad438356e4d67c4540c4cc1d5e7:consul/Pkgfile
 f:9532948eccf0609d7560395177194e85:consul/example.json
 f:672b071ab60798058c03ca8cbcb5fb2b:consul/pre-install
 f:7ce6acd7025ee3e869c03ab728befb9f:consul/rc.consul
