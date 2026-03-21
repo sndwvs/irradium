@@ -178,33 +178,6 @@ NEW       -rwxr-xr-x      root/root       usr/lib/dri/virtio_gpu_drv_video.so
 =======> Building '/home/pkgmk/packages/mesa#24.1.4-2.pkg.tar.xz' succeeded.
 ```
 
-## libvdpau
-
-Video Decode and Presentation API for Unix developed by NVIDIA. Might be
-obsolete by now.
-
-```
-=======> New files found:
-NEW       drwxr-xr-x      root/root       usr/lib/vdpau/
-NEW       lrwxrwxrwx      root/root       usr/lib/vdpau/libvdpau_nouveau.so -> libvdpau_nouveau.so.1.0.0
-NEW       lrwxrwxrwx      root/root       usr/lib/vdpau/libvdpau_nouveau.so.1 -> libvdpau_nouveau.so.1.0.0
-NEW       lrwxrwxrwx      root/root       usr/lib/vdpau/libvdpau_nouveau.so.1.0 -> libvdpau_nouveau.so.1.0.0
-NEW       -rwxr-xr-x      root/root       usr/lib/vdpau/libvdpau_nouveau.so.1.0.0
-NEW       lrwxrwxrwx      root/root       usr/lib/vdpau/libvdpau_r600.so -> libvdpau_r600.so.1.0.0
-NEW       lrwxrwxrwx      root/root       usr/lib/vdpau/libvdpau_r600.so.1 -> libvdpau_r600.so.1.0.0
-NEW       lrwxrwxrwx      root/root       usr/lib/vdpau/libvdpau_r600.so.1.0 -> libvdpau_r600.so.1.0.0
-NEW       -rwxr-xr-x      root/root       usr/lib/vdpau/libvdpau_r600.so.1.0.0
-NEW       lrwxrwxrwx      root/root       usr/lib/vdpau/libvdpau_radeonsi.so -> libvdpau_radeonsi.so.1.0.0
-NEW       lrwxrwxrwx      root/root       usr/lib/vdpau/libvdpau_radeonsi.so.1 -> libvdpau_radeonsi.so.1.0.0
-NEW       lrwxrwxrwx      root/root       usr/lib/vdpau/libvdpau_radeonsi.so.1.0 -> libvdpau_radeonsi.so.1.0.0
-NEW       -rwxr-xr-x      root/root       usr/lib/vdpau/libvdpau_radeonsi.so.1.0.0
-NEW       lrwxrwxrwx      root/root       usr/lib/vdpau/libvdpau_virtio_gpu.so -> libvdpau_virtio_gpu.so.1.0.0
-NEW       lrwxrwxrwx      root/root       usr/lib/vdpau/libvdpau_virtio_gpu.so.1 -> libvdpau_virtio_gpu.so.1.0.0
-NEW       lrwxrwxrwx      root/root       usr/lib/vdpau/libvdpau_virtio_gpu.so.1.0 -> libvdpau_virtio_gpu.so.1.0.0
-NEW       -rwxr-xr-x      root/root       usr/lib/vdpau/libvdpau_virtio_gpu.so.1.0.0
-=======> Building '/home/pkgmk/packages/mesa#24.1.4-2.pkg.tar.xz' succeeded.
-```
-
 ## lm_sensors
 
 Enable HUD lmsensors support.
