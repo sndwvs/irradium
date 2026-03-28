@@ -101,9 +101,9 @@ f:8588e227a9e80787b8c4ed61b123a03a:lightdm-gtk-greeter/post-install
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm/README
 f:7fc6870fe0887ee43a2f0b720e4cdd4f:llvm/install-prefix.patch
 f:739e9caf3b2ab369ea9634eef3062ce1:llvm/.footprint.aarch64
-f:13d94f81f4fdf086c349c17878169b4c:llvm/.footprint.riscv64
+f:739e9caf3b2ab369ea9634eef3062ce1:llvm/.footprint.riscv64
 f:5a09188ceab76cc551ffbd4a17da65c6:llvm/.signature.aarch64
-f:dd89aed01dce5331c1aa99e0d5f7fa27:llvm/.signature.riscv64
+f:f10e3ce126fcaf143a5995bdc3ac1f0d:llvm/.signature.riscv64
 f:a8513fcd4455cd202d0c8152fa2892d4:llvm/Pkgfile
 f:97d2901b0c7929f1469fed61587d3c59:mc/.footprint
 f:b4841f1b6a92ca8dd65a602c6350250b:mc/.signature
@@ -140,13 +140,13 @@ f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:9aade342837abec7ee4e8408cc0118eb:rust/Pkgfile
 f:19368ee574587ede69279d0ea4993558:rust/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
 f:2bf5dc333cd70815d313251b1c9f80a7:rust/.footprint.aarch64
-f:60bc6aa096d9ee64a0b318c86972e893:rust/.signature.riscv64
+f:25bbdacc4b63a5770654c0d4781abadd:rust/.signature.riscv64
 f:ffe6852cdf38381d36027a61216e6df7:rust/riscv64-disable-f16-f128.patch
 f:ad038a2aa1de454e47d70d0cbac53e1b:rust/0001-bootstrap-Change-libexec-dir.patch
 f:f8d11d8c7f2a63566ed2dffc01c2b952:rust/0002-bootstrap-Change-bash-completion-dir.patch
 f:f9d38b634d10e1353a4c1200e11401f9:rust/0003-bootstrap-Workaround-for-system-stage0.patch
 f:6ee6690b08086d4a6c949d23829d299b:rust/0004-compiler-Change-LLVM-targets.patch
-f:378fb95bbe2c71f3a657d4fa80b4a03c:rust/.footprint.riscv64
+f:46688aa6bb29513171792caf4207d514:rust/.footprint.riscv64
 f:85351bf97c57d627d5110b0a3b4ee342:rust/.signature.aarch64
 f:2874f3457c724a96ff926ceef88fc999:slim/theme/background.png
 f:74bd5175145e88e0dc7fd369ceeaa75a:slim/theme/panel.png
