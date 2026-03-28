@@ -4,7 +4,7 @@
 # Depends on: libyaml exo libwnck-gtk3 libxfce4ui libxfce4windowing libnotify startup-notification thunar
 
 name=xfdesktop
-version=4.20.1
+version=4.20.2
 release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
