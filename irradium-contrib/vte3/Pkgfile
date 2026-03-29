@@ -7,7 +7,8 @@
 name=vte3
 version=0.84.0
 release=1
-source=(https://download.gnome.org/sources/vte/${version:0:4}/vte-${version}.tar.xz)
+source=(https://download.gnome.org/sources/vte/${version:0:4}/vte-${version}.tar.xz
+        simdutf-update-8.2.0.patch)
 
 build() {
     prt-get isinst gtk4 && PKGMK_VTE+=' -D gtk4=true' || PKGMK_VTE+=' -D gtk4=false'
@@ -17,6 +18,8 @@ build() {
     if [[ $(uname -m) == riscv64 ]]; then
         PKGMK_VTE+=' -D _b_symbolic_functions=false'
     fi
+
+    patch -p1 -d vte-$version -i $SRC/simdutf-update-8.2.0.patch
 
     meson setup build vte-$version ${PKGMK_VTE} \
         --prefix=/usr \

@@ -765,8 +765,9 @@ f:fca0c16e1b1c6398ef645f3d3749a161:python3-mdx-truly-sane-lists/.footprint
 f:dabe50954406837ea04efeb02902cd4e:python3-mdx-truly-sane-lists/.signature
 f:b5c6236bd44e18f648e79133f6eb0ae7:python3-mdx-truly-sane-lists/Pkgfile
 f:f7767bf247ca58e1173c7b36dec92166:vte3/.footprint
-f:0e8829a33fd0e7d1ad7662121866e4c1:vte3/.signature
-f:ce8573cf193e58e2932452b9a3ded136:vte3/Pkgfile
+f:2e90c27e06b93c5b07844bcd5b229ea4:vte3/.signature
+f:922d640c6e996222d5d7255f58cec427:vte3/Pkgfile
+f:46881cfe1d5f6f5b593f73107b8f6723:vte3/simdutf-update-8.2.0.patch
 f:4bcff8c2fae56f50bf50bb9a3211205e:php-pgsql/.footprint
 f:f10f51995e8701c3b3aafc531ed68cf1:php-pgsql/.signature
 f:869ac44086c0e26e650a3255b3406f19:php-pgsql/Pkgfile
