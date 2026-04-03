@@ -15,6 +15,9 @@ drwxr-xr-x	root/root	usr/lib/openvpn/plugins/
 -rwxr-xr-x	root/root	usr/lib/openvpn/plugins/openvpn-plugin-auth-pam.so
 -rwxr-xr-x	root/root	usr/lib/openvpn/plugins/openvpn-plugin-down-root.la
 -rwxr-xr-x	root/root	usr/lib/openvpn/plugins/openvpn-plugin-down-root.so
+drwxr-xr-x	root/root	usr/libexec/
+drwxr-xr-x	root/root	usr/libexec/openvpn/
+-rwxr-xr-x	root/root	usr/libexec/openvpn/dns-updown
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/openvpn
 drwxr-xr-x	root/root	usr/share/
@@ -51,6 +54,7 @@ drwxrwxr-x	root/root	usr/share/doc/openvpn/samples/sample-keys/
 -rw-rw-r--	root/root	usr/share/doc/openvpn/samples/sample-keys/client.crt
 -rw-rw-r--	root/root	usr/share/doc/openvpn/samples/sample-keys/client.key
 -rw-rw-r--	root/root	usr/share/doc/openvpn/samples/sample-keys/client.p12
+-rw-rw-r--	root/root	usr/share/doc/openvpn/samples/sample-keys/ffdhe2048.pem
 -rwxrwxr-x	root/root	usr/share/doc/openvpn/samples/sample-keys/gen-sample-keys.sh
 -rw-rw-r--	root/root	usr/share/doc/openvpn/samples/sample-keys/openssl.cnf
 -rw-rw-r--	root/root	usr/share/doc/openvpn/samples/sample-keys/server-ec.crt
@@ -93,8 +97,6 @@ drwxrwxr-x	root/root	usr/share/doc/openvpn/samples/sample-scripts/
 -rwxrwxr-x	root/root	usr/share/doc/openvpn/samples/sample-scripts/totpauth.py
 -rwxrwxr-x	root/root	usr/share/doc/openvpn/samples/sample-scripts/ucn.pl
 -rwxrwxr-x	root/root	usr/share/doc/openvpn/samples/sample-scripts/verify-cn
-drwxrwxr-x	root/root	usr/share/doc/openvpn/samples/sample-windows/
--rwxrwxr-x	root/root	usr/share/doc/openvpn/samples/sample-windows/sample.ovpn
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/openvpn-examples.5.gz
