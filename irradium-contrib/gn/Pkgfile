@@ -4,9 +4,9 @@
 # Depends on: python3 zstd
 
 name=gn
-version=20250527
+version=20260401
 release=1
-source=(https://ab-sn.lnl.gay/gn-a84e399f9999003472192286abc03d752c9cb1f0.tar.zst)
+source=(https://ab-sn.lnl.gay/gn-6e8dcdebbadf4f8aa75e6a4b6e0bdf89dce1513a.tar.zst)
 
 
 build() {
