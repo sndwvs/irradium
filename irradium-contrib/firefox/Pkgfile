@@ -5,7 +5,7 @@
 # Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland
 
 name=firefox
-version=149.0
+version=149.0.2
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -88,6 +88,13 @@ EOF
   # bugzilla 1988166: workaround for systems without the single_threaded header
   [ -e /usr/include/sys/single_threaded.h ] || sed "/sys\/single_threaded.h/d" \
                     -i "$SRC"/$name-$version/config/system-headers.mozbuild
+
+  # workaround if the PR_* constants are hard-coded in more than one location,
+  # not relying on the kernel headers as the Single Point Of Truth
+  if ! grep -q "^.include <linux/prctl.h>" /usr/include/sys/prctl.h; then
+    sed -e "/^.include <linux\/prctl.h>/d" \
+        -i third_party/libwebrtc/rtc_base/platform_thread_types.cc
+  fi
 
   # disable jemalloc on systems without glibc 
   local LIBC=$(</var/lib/pkg/db awk -v RS="" -v FS="\n" '/\nusr\/lib\/libc.so\n/ { print $1 }')
