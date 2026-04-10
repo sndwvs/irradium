@@ -227,8 +227,8 @@ f:026e4f0c29fb9a901487f616b02e850b:gn/.footprint
 f:be74f20165c508a5d267d0a6541a77ba:gn/.signature
 f:962f43ae4680276d2dc1ae9e85ba4723:gn/Pkgfile
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
-f:cc3d12e60c5a1ef1d2aa24243c176613:go/.footprint
-f:6257a1820328b53943b3f74eafdb49ac:go/.signature
+f:878103bcb815ae8b9a9a55a224cf32a2:go/.footprint
+f:e5c34f7488b445f6ae53de0adddada93:go/.signature
 f:f3e740c2d1d7d1bb51cd22906bf9e2cc:go/Pkgfile
 f:10ca5085e0dfb78c27e12b84d010c9ae:gtest/.footprint
 f:32eb7c972f06f9cb5409a0e5094a69af:gtest/.signature
