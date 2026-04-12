@@ -86,7 +86,6 @@ d:hostapd
 d:openipmi
 d:pkgtools
 d:btop
-d:libsodium
 d:crosstool-ng
 d:libe-book
 d:libfreehand
@@ -559,10 +558,6 @@ f:f54045a3566a62eaf9c7dbd5a00703a2:pkgtools/Pkgfile
 f:60c1f3339271f0dbe30a098a14fd46c3:btop/Pkgfile
 f:ef80464f2219b7c28bf5f49c3dfe03ab:btop/.footprint
 f:f9027312a0bfc74c0e7668bfc48a03e4:btop/.signature
-f:64f66a5e67afc004323683ad60abac96:libsodium/.footprint
-f:e30768f66abacf102c6da59962ac259e:libsodium/.signature
-f:6cf9ab2c7900d861cbf45319b1c11577:libsodium/Pkgfile
-f:d0b5e6785736060e988fc3312f987240:libsodium/6702f69bef6044163acc7715e6ac7e430890ce78.patch
 f:36663982cb2dd06e86a2afb7493af5a4:crosstool-ng/0001-sunrpc.diff
 f:3ed9ddb003c32686428f90045a8582ad:crosstool-ng/.footprint
 f:7906135464207f045d449d5b3e4bcd45:crosstool-ng/.signature
