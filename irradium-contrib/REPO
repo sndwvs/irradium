@@ -86,6 +86,7 @@ d:hostapd
 d:openipmi
 d:pkgtools
 d:btop
+d:lrzsz
 d:crosstool-ng
 d:libe-book
 d:libfreehand
@@ -558,6 +559,12 @@ f:f54045a3566a62eaf9c7dbd5a00703a2:pkgtools/Pkgfile
 f:60c1f3339271f0dbe30a098a14fd46c3:btop/Pkgfile
 f:ef80464f2219b7c28bf5f49c3dfe03ab:btop/.footprint
 f:f9027312a0bfc74c0e7668bfc48a03e4:btop/.signature
+f:99afd047860cbba89000e217543a1925:lrzsz/.footprint
+f:0f018ac767cccbeae7d005c9e42f64f9:lrzsz/.signature
+f:585b37785fab305361f9894632b60c44:lrzsz/Pkgfile
+f:81edef5e88ef0f77422e1a0e652f2aa9:lrzsz/lrzsz-0.12.20.patch
+f:332f6e4af9fe0266efecf9d334c4d3db:lrzsz/lrzsz.patch
+f:3b903525d9960e84ebe8c1ca020a2d79:lrzsz/program-name.patch
 f:36663982cb2dd06e86a2afb7493af5a4:crosstool-ng/0001-sunrpc.diff
 f:3ed9ddb003c32686428f90045a8582ad:crosstool-ng/.footprint
 f:7906135464207f045d449d5b3e4bcd45:crosstool-ng/.signature

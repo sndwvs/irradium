@@ -1,0 +1,8 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7rVQ63HnySumfK32y3/4SA3pquaFwleCi5ePqyfOmWLa7mOXZB0TiR3Z2tW6OdfxRDG0z1BMHVyDd/sA4ss4QAM=
+SHA256 (Pkgfile) = 456515096c4a21cff36b616407203f90f171f9798508ff08e16667cdd18280b7
+SHA256 (.footprint) = 7861f8da50d8ee3e9a081dc03628c09bec347cdd10b4c1b22a706bb6fe7792a8
+SHA256 (lrzsz-0.12.20.tar.gz) = c28b36b14bddb014d9e9c97c52459852f97bd405f89113f30bee45ed92728ff1
+SHA256 (lrzsz-0.12.20.patch) = 4147d16b8820e36084bea9d593bfe7e0bcc7b34658f373e2719f8d4a6f453ed2
+SHA256 (lrzsz.patch) = 5fcc42b5df49c4bd5833216b2d8cad2d8a67b93252336e369cb98a88f379bf84
+SHA256 (program-name.patch) = e6ffa2155e8340fb4f15269ad7fece39d89e607607a69363b6d0f723412c560c
