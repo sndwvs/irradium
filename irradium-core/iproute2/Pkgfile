@@ -4,16 +4,16 @@
 # Depends on: db elfutils iptables libcap
 
 name=iproute2
-version=6.19.0
+version=7.0.0
 release=1
-source=(https://www.kernel.org/pub/linux/utils/net/$name/$name-$version.tar.xz
+source=(https://www.kernel.org/pub/linux/utils/net/$name/$name-v$version.tar.xz
     lo.iproute2 net.iproute2
     irradium-net.iproute2.patch)
 
 build() {
     patch -p1 -i $SRC/irradium-net.iproute2.patch
 
-    cd $name-$version
+    cd $name-v$version
 
     ./configure
     make CCOPTS="$CFLAGS"
