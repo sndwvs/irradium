@@ -808,7 +808,7 @@ f:deb2d2e5ff0682ba89096c3688a3c0d6:python3-hatch-nodejs-version/Pkgfile
 f:e824f5082adf33ab1ed45ce8c9da5c22:python3-pymdown-extensions/.footprint
 f:e2274e04dc583008906d51a64e7d9c2a:python3-pymdown-extensions/.signature
 f:5afdfaa1ab55f03ccb50050088023249:python3-pymdown-extensions/Pkgfile
-f:57c008c0b51266d6e856ba54337bd289:zabbix-frontend/Pkgfile
+f:802fe583762e3cc7894202365b7a6ee8:zabbix-frontend/Pkgfile
 f:f909514498461ab8422a6cda4db6e4e3:zabbix-frontend/.footprint
 f:7173e99cb5fc1c2424f44abe1d57d782:zabbix-frontend/.signature
 f:b667a28d3d7195dc388f81fe36328854:zabbix-frontend/apache-zabbix.conf
