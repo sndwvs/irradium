@@ -4,7 +4,7 @@
 # Depends on: libxml2 postgresql unixodbc openldap autoconf automake curl libevent libssh2 openssl pcre2 net-snmp openipmi
 
 name=zabbix-server
-version=7.4.8
+version=7.4.9
 release=1
 source=(https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-$version.tar.gz
         rc.zabbix-server
