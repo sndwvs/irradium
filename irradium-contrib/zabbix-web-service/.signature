@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7ueK9RH2NJ6DNEddMtmcyWOzx2TMkPMsqtb3aSTn1QimHDGbwIOQA4cWMj03bOZ7DyNX0FuVfJhqP/F+08Hjsws=
-SHA256 (Pkgfile) = a18143cfa0fd3898bd00b6993d2fc4096c3b1202534ac12916e3b83e49c7d65b
+RWTmT3d9kqan7vEPFJ3KjHPP6gqbDrtrL4/VQnU+phNAwT4bSeov1AyLYLID5ht0X3GMthiMh/0wxYhwhJWrpaM2Go02V1jvMwE=
+SHA256 (Pkgfile) = 37bec32f995519170b79bcf7996fa6f2a65110398e5b8007ea2932f06f838e29
 SHA256 (.footprint) = e876181eb7c81353be3cba22a601a5e7c799fbde01e3879505a7d9b2f7d7a093
-SHA256 (zabbix-7.4.8.tar.gz) = a9b452b6c574d22829ce20693a1aa9cab88bf0f585b7aa2a6a3ad4cb14dd3b1c
+SHA256 (zabbix-7.4.9.tar.gz) = f97ed8932821a51f645100adf7d480e87580eb4e83849c104f44fd556af1afcf
 SHA256 (rc.zabbix-web-service) = 56b1165b8bc15de1449e478f46baecf7f2bb3f53b5551c43449829ad4736597a
 SHA256 (zabbix_web_service.logrotate) = ef53a0dbd589f671c3662f912ae8cd839fabc29186e86dff25c361cc918f62ff
 SHA256 (zabbix_web_service.conf.patch) = b64927bf85f2fe9b858659f39bb513d27fdfde6fc2ef64f3cb88b42d72450928
