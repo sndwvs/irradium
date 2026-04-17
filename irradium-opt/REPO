@@ -146,7 +146,7 @@ f:f8d11d8c7f2a63566ed2dffc01c2b952:rust/0002-bootstrap-Change-bash-completion-di
 f:f9d38b634d10e1353a4c1200e11401f9:rust/0003-bootstrap-Workaround-for-system-stage0.patch
 f:6ee6690b08086d4a6c949d23829d299b:rust/0004-compiler-Change-LLVM-targets.patch
 f:b538bd5e038dc9f059140a04c5cb7a9e:rust/.footprint.riscv64
-f:42b805f95ae3eb5bb0659a87c5a0920b:rust/.signature.aarch64
+f:3fc90a66e71e9e2f17306d067f4a1d50:rust/.signature.aarch64
 f:2874f3457c724a96ff926ceef88fc999:slim/theme/background.png
 f:74bd5175145e88e0dc7fd369ceeaa75a:slim/theme/panel.png
 f:96fd21a461c54eec6c6a1e37a7aad719:slim/theme/slim.theme
