@@ -42,7 +42,6 @@ d:lame
 d:efivar
 d:compiler-rt
 d:strace
-d:libxml2
 d:libjpeg-turbo
 f:fa75fbb042271cc211626d163661a949:cryptsetup/.footprint
 f:fb1e5bdb14608caaeea7f3e665ecf96f:cryptsetup/.signature
@@ -259,9 +258,6 @@ f:7de2a97fe1cb6b5c901958b954679afe:compiler-rt/.signature.riscv64
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
 f:b01d773e50b4c26b652ba715d6d88435:strace/.signature
 f:be0a3203f999023218ca0d016e31821f:strace/Pkgfile
-f:07e98255c6d1948feb847566db164c8d:libxml2/.footprint
-f:70bbb8d62a42a67f5afd1e881f4975ee:libxml2/.signature
-f:83d29fc6db0377e710159daeb5daf0ea:libxml2/Pkgfile
 f:95a496d0f206483f510cc70f255554c3:libjpeg-turbo/.footprint
 f:bd6eb184ef2492b053c9b6eb8fd1eebc:libjpeg-turbo/.signature
 f:3ab26517c29c46bd35afb801b0c26b20:libjpeg-turbo/Pkgfile
