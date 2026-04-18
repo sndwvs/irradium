@@ -1,0 +1,13 @@
+--- a/pkgadd.conf	2026-04-16 23:43:52.000000000 +0300
++++ b/pkgadd.conf	2026-04-16 23:02:12.656063085 +0300
+@@ -19,6 +19,10 @@ UPGRADE		^etc/rc\.modules$	NO
+ UPGRADE		^etc/rc\.conf$		NO
+ UPGRADE		^etc/rc\.d/net$		NO
+ UPGRADE		^etc/rc\.d/wlan$	NO
++UPGRADE		^etc/rc\.d/bonding$	NO
++UPGRADE		^etc/rc\.d/bridge$	NO
++UPGRADE		^etc/rc\.d/macvlan$	NO
++UPGRADE		^etc/rc\.d/vlan$	NO
+ 
+ UPGRADE		^etc/udev/rules.d/.*$	YES
+ UPGRADE		^etc/udev/rules.d/1.*$	NO

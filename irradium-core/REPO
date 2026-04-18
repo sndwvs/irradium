@@ -108,9 +108,10 @@ f:d82383ee265087214c13795a50e17841:pkgconf/.signature
 f:e343e8f6071f3e161efb0bc18f31ac5f:pkgconf/Pkgfile
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:85773ddb6595cc96b6776168a93a8ed9:pkgutils/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
-f:e220c11dbad53771bae6e6c70a440822:pkgutils/.signature
-f:8722d3da7a9b0f45f13b963c1a114d3c:pkgutils/Pkgfile
-f:ddd624554de06deb74530cf84f0ffa80:pkgutils/pkgmk.conf
+f:fbc13afb294f16b010c7fd3f9f7e67f9:pkgutils/.signature
+f:6a7705f65d8fadd2cfa118ff5a08b211:pkgutils/Pkgfile
+f:f6844a846625c796847eab009b3177f2:pkgutils/pkgmk.conf.patch
+f:5986f3066bde8a77a08e6ab57a1260c9:pkgutils/pkgadd.conf.patch
 f:d4c72854441fa2a9cbd0085ad891f05a:ports/.footprint
 f:804bb419e539a70ad80e4c03df3c3411:ports/contrib.pub
 f:b8dd0aad383810cad920d6548cd1cb56:ports/core.pub

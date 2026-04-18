@@ -1,0 +1,38 @@
+--- a/pkgmk.conf	2026-04-16 23:43:52.000000000 +0300
++++ b/pkgmk.conf	2025-07-20 20:35:32.551556925 +0300
+@@ -2,26 +2,17 @@
+ # /etc/pkgmk.conf: pkgmk(8) configuration
+ #
+ 
+-export CFLAGS="-O2 -march=x86-64 -pipe"
+-export CXXFLAGS="${CFLAGS}"
++export CFLAGS="-O2 -pipe -fstack-protector-strong -fno-plt -fexceptions \
++               -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security \
++               -fstack-clash-protection \
++               -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
+ 
+-# export JOBS=$(nproc)
+-# export MAKEFLAGS="-j $JOBS"
++export CXXFLAGS="$CFLAGS -Wp,-D_GLIBCXX_ASSERTIONS"
++export LDFLAGS="-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now \
++                -Wl,-z,pack-relative-relocs"
+ 
+-case ${PKGMK_ARCH} in
+-	"64"|"")
+-		;;
+-	"32")
+-		export CFLAGS="${CFLAGS} -m32"
+-		export CXXFLAGS="${CXXFLAGS} -m32"
+-		export LDFLAGS="${LDFLAGS} -m32"
+-		export PKG_CONFIG_LIBDIR="/usr/lib32/pkgconfig"
+-		;;
+-	*)
+-		echo "Unknown architecture selected! Exiting."
+-		exit 1
+-		;;
+-esac
++export JOBS=$(($(nproc)+1))
++export MAKEFLAGS="-j $JOBS"
+ 
+ # PKGMK_SOURCE_MIRRORS=()
+ # PKGMK_SOURCE_DIR="$PWD"
