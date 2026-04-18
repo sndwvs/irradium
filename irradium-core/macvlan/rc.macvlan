@@ -1,0 +1,104 @@
+#!/bin/bash
+#
+# /etc/rc.d/macvlan: start/stop network interface macvlan
+#
+
+# Warning:
+# This script must be executed before the 'bonding' and/or 'vlan' script, 'net' should always be started later.
+# The interface names created in this script must be specified in the 'bonding' and/or 'vlan' script.
+#
+# Network setup options in rc.conf:
+# 1. Configuring the service startup sequence when configuring a network adapter
+# SERVICES=(macvlan net)
+# 2. Configuring the service startup sequence when configuring a VLAN
+# SERVICES=(vlan macvlan net)
+# 3. Configuring the service startup sequence when configuring overlay BOUNDING
+# SERVICES=(bonding macvlan net)
+#
+# Example of how to configure a MACVLAN interface:
+# MACVLANMODE can take the following parameters: private, vera, bridge, passthru, sourceis.
+# 1. example:
+# IFNAME[0]="macvlan0"
+# MACVLANNIC[0]="eth0"
+# MACVLANMODE[0]="bridge"
+# 2. example:
+# IFNAME[0]="macvlan0"
+# MACVLANNIC[0]="eth0.10"
+# MACVLANMODE[0]="bridge"
+# 3. example:
+# IFNAME[0]="macvlan0"
+# MACVLANNIC[0]="bond0"
+# MACVLANMODE[0]="bridge"
+
+# ----------------------------------------
+
+# config options for macvlan0
+IFNAME[0]=""
+MACVLANNIC[0]=""
+MACVLANMODE[0]="bridge"
+
+# config options for macvlan1
+IFNAME[1]=""
+MACVLANNIC[1]=""
+MACVLANMODE[1]="bridge"
+
+# config options for macvlan2
+IFNAME[2]=""
+MACVLANNIC[2]=""
+MACVLANMODE[2]="bridge"
+
+# config options for macvlan3
+IFNAME[3]=""
+MACVLANNIC[3]=""
+MACVLANMODE[3]="bridge"
+
+# ----------------------------------------
+
+case $1 in
+	start)
+		for i in ${!IFNAME[@]}; do
+			# Handle MACVLAN interfaces before trying to configure IP addresses.
+			if [ -d /sys/class/net/${MACVLANNIC[$i]:-"empty"} ]; then
+				if [ ! -d /sys/class/net/${IFNAME[$i]:-"empty"} ]; then
+					HWADDRESS=$(/sbin/ip link show dev ${MACVLANNIC[$i]} 2>/dev/null | /usr/bin/grep "link/ether" | cut -d ' ' -f6 | /bin/sed 's#\(.*:\)\(.*\):\(.*\)#\1\3:\2#g')
+					# Configure the MACVLAN interface.
+					if ! /sbin/ip link add link ${MACVLANNIC[$i]} address $HWADDRESS name ${IFNAME[$i]} type macvlan mode ${MACVLANMODE[$i]}; then
+						/sbin/ip link set dev ${IFNAME[$i]} down
+						continue
+					fi
+					if ! /sbin/ip link show dev ${IFNAME[$i]} 2>/dev/null| grep -wq "state UP"; then
+						# Check if the underlying interface is already up.
+						if ! /sbin/ip link show dev ${IFNAME[$i]} 2>/dev/null| grep -wq "state UP"; then
+							# Bring up the underlying interface.
+							if ! /sbin/ip link set dev ${IFNAME[$i]} up; then
+								continue
+							fi
+						fi
+					fi
+				fi
+			fi
+		done
+		;;
+	stop)
+		for i in ${!IFNAME[@]}; do
+			if [ -d /sys/class/net/${IFNAME[$i]:-"empty"} ]; then
+				# Take down MACVLAN interface, if configured.
+				if ! /sbin/ip address show scope global dev ${IFNAME[$i]} 2>/dev/null | grep -Ewq '(inet|inet6)'; then
+					/sbin/ip link set dev ${IFNAME[$i]} down
+				fi
+				/sbin/ip link set dev ${IFNAME[$i]} down
+				/sbin/ip link delete ${IFNAME[$i]}
+			fi
+		done
+		;;
+	restart)
+		$0 stop
+		sleep 1
+		$0 start
+		;;
+	*)
+		echo "Usage: $0 [start|stop|restart]"
+		;;
+esac
+
+# End of file

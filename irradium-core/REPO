@@ -25,6 +25,7 @@ d:gettext
 d:m4
 d:vlan
 d:bonding
+d:macvlan
 f:123b17863bb2d75888e1a8d51c8f3bd4:binutils/.footprint
 f:4cc1d27e0e1f7c6a537d9cbd176e2e55:binutils/.signature
 f:6dac3988756d2be3bf51fd270d3981c2:binutils/Pkgfile
@@ -199,3 +200,7 @@ f:12e6954de221f62c16059d6ce6411847:bonding/bonding.conf
 f:ed86a62dd0e454fe6cb17a9dc7661105:bonding/.footprint
 f:b471f47f9e49e037a9e36b17ec693e42:bonding/.signature
 f:a1db13f28db4e6c60c41d5b4b83bcbf0:bonding/rc.bonding
+f:4f6280eb6e4a63210ed98937a0dbf8cc:macvlan/.footprint
+f:e2ac1f8e200a7e8af8933c9c55ad410c:macvlan/.signature
+f:5c9bda848b5ff5e325081098cc72cf8d:macvlan/Pkgfile
+f:650580485f7a91fe40955984a661fbc0:macvlan/rc.macvlan

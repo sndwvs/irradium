@@ -1,0 +1,13 @@
+# Description: scripts for configuring vlan network interfaces
+# URL: https://suhu0426.github.io/Web/Presentation/20150203/index.html
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: iproute2
+
+name=macvlan
+version=0.1
+release=1
+source=(rc.macvlan)
+
+build() {
+    install -D -m 0755 $SRC/rc.macvlan $PKG/etc/rc.d/macvlan
+}

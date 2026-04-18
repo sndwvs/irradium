@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/irradium-core.pub
+RWQAwxvZoACtGFCytxr6ge+noqkjXNh2F+MdE7c1tWcTLQtGe0nh0vlqrHbFif/90rbtCrYeUzXZaklBnEJZYZteoKgn43srmgk=
+SHA256 (Pkgfile) = c2920c26eb3e557ba24f845e28eb11d1cfd739c56bfb64ec88e82be7b2eced7d
+SHA256 (.footprint) = afd58dd232b13bdcc78fdfcb870f25035d5cd22a9c5d388b3459e7408200f8e0
+SHA256 (rc.macvlan) = a581cde4e1637af49cf0c0872b4264330cb67178a57d50b7c9334d8b1dd661ca
