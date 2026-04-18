@@ -5,7 +5,7 @@
 
 name=macvlan
 version=0.1
-release=1
+release=2
 source=(rc.macvlan)
 
 build() {

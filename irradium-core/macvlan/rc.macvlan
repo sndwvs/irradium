@@ -9,26 +9,26 @@
 #
 # Network setup options in rc.conf:
 # 1. Configuring the service startup sequence when configuring a network adapter
-# SERVICES=(macvlan net)
+#    SERVICES=(macvlan net)
 # 2. Configuring the service startup sequence when configuring a VLAN
-# SERVICES=(vlan macvlan net)
+#    SERVICES=(vlan macvlan net)
 # 3. Configuring the service startup sequence when configuring overlay BOUNDING
-# SERVICES=(bonding macvlan net)
+#    SERVICES=(bonding macvlan net)
 #
 # Example of how to configure a MACVLAN interface:
 # MACVLANMODE can take the following parameters: private, vera, bridge, passthru, sourceis.
 # 1. example:
-# IFNAME[0]="macvlan0"
-# MACVLANNIC[0]="eth0"
-# MACVLANMODE[0]="bridge"
+#    IFNAME[0]="macvlan0"
+#    MACVLANNIC[0]="eth0"
+#    MACVLANMODE[0]="bridge"
 # 2. example:
-# IFNAME[0]="macvlan0"
-# MACVLANNIC[0]="eth0.10"
-# MACVLANMODE[0]="bridge"
+#    IFNAME[0]="macvlan0"
+#    MACVLANNIC[0]="eth0.10"
+#    MACVLANMODE[0]="bridge"
 # 3. example:
-# IFNAME[0]="macvlan0"
-# MACVLANNIC[0]="bond0"
-# MACVLANMODE[0]="bridge"
+#    IFNAME[0]="macvlan0"
+#    MACVLANNIC[0]="bond0"
+#    MACVLANMODE[0]="bridge"
 
 # ----------------------------------------
 
