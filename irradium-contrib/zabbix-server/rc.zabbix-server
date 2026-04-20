@@ -12,9 +12,29 @@ case $1 in
     start)
         [ ! -e /run/zabbix ] && install -d -o zabbix -g zabbix /run/zabbix
 
+        WPID=$(echo $PROG | rev | cut -d  '/' -f1 | rev | xargs -I{} pidof {} | cut -d  '/' -f1 | rev | cut -d ' ' -f1 | rev)
+
+        if [ -z $WPID ]; then
+            rm -f $PID
+        fi
+
         $SSD --start -b --exec $PROG -- $OPTS
         ;;
     stop)
+        WPID=$(echo $PROG | rev | cut -d  '/' -f1 | rev | xargs -I{} pidof {} | cut -d  '/' -f1 | rev | cut -d ' ' -f1 | rev)
+
+        if [ -z $WPID ]; then
+            return
+        else
+            if [ ! -e $PID ]; then
+                echo $WPID > $PID
+            else
+                if [ $(cat $PID) != $WPID ]; then
+                    echo $WPID > $PID
+                fi
+            fi
+        fi
+
         $SSD --stop -u zabbix -g zabbix --retry 10 --pidfile $PID
         ;;
     restart)
