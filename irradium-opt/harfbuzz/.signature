@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCX7tXtZd1DgcEl6RShbDitp4eRIF3YF3VPpqlwNUVBHz7Ia1ymxzXqqxExIDxZr9goRIjmDFDNy8YIn4AtfxigM=
-SHA256 (Pkgfile) = bfbef5bb21281de872b04aa964bb62c7dd0a0646075197ee4ae25577441ec688
-SHA256 (.footprint) = 57ee02ee2de6d577c3d43bfdec82ada33f77cf05fc15dcbd1cf293c959af71ff
-SHA256 (harfbuzz-14.1.0.tar.xz) = ee0eb3a1da2c5a28147f12dff55f6c7d60aeeeb29ac7ef334eabe84c8476c105
+RWRxRnTWECCiCcd7fPsBi1nSSPXI8Toq453luZ8MSH4lDQLSN8pOtFMDaZuKTQvLq5k/mwbhzzFu1i7rGjKwcAPuFZrw+sg0fQ4=
+SHA256 (Pkgfile) = 395837270ab98ae2724a312c410074e3d82e5ed1bf6b0011e73779b146706f37
+SHA256 (.footprint) = dad1bea152a31c2a1a1c776a4258574b6045bdca4779afe78607e407230c96f8
+SHA256 (harfbuzz-14.2.0.tar.xz) = 94017020f96d025bb66ae91574e4cf334bcad23e8175a8a40565b3721bc2eaff
