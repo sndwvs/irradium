@@ -249,7 +249,7 @@ f:96771e4a1970a8ea247601256d9ba970:compiler-rt/Pkgfile
 f:fd0fa3b88c025d8cd1042eddb9480abf:compiler-rt/.footprint.aarch64
 f:6dbaa46bb461e0fa2a6fbaf15b12b4d4:compiler-rt/.signature.aarch64
 f:efe31a023a57c63838368e0d189e83b9:compiler-rt/.footprint.riscv64
-f:7de2a97fe1cb6b5c901958b954679afe:compiler-rt/.signature.riscv64
+f:51355ab524653c203a90d5f18e6856f3:compiler-rt/.signature.riscv64
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
 f:b01d773e50b4c26b652ba715d6d88435:strace/.signature
 f:be0a3203f999023218ca0d016e31821f:strace/Pkgfile
