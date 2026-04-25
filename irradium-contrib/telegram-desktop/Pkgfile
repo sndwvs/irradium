@@ -23,7 +23,6 @@ build() {
   cmake --build $SRC/td-$_commitid/build
   cmake --install $SRC/td-$_commitid/build
 
-  patch -p1 -i $SRC/enable-internal-minizip.patch
   patch -p1 -i $SRC/tdesktop-fix-minizip-includes.patch
 
   export CXXFLAGS+=" -fpermissive"
