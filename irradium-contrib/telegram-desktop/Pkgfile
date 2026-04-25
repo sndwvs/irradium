@@ -6,10 +6,10 @@
 name=telegram-desktop
 version=6.7.8
 release=1
-_commitid=369ee922b45bfa7e8da357e4d62e93925862d86d
+_commitid=8921c22f0f85b3cb0b56303f9cba81ba8549f4e8
 source=(https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tdesktop-$version-full.tar.gz
         https://github.com/tdlib/td/archive/$_commitid.tar.gz
-        enable-internal-minizip.patch)
+        tdesktop-fix-minizip-includes.patch)
 
 build() {
   cd tdesktop-$version-full
@@ -24,6 +24,7 @@ build() {
   cmake --install $SRC/td-$_commitid/build
 
   patch -p1 -i $SRC/enable-internal-minizip.patch
+  patch -p1 -i $SRC/tdesktop-fix-minizip-includes.patch
 
   export CXXFLAGS+=" -fpermissive"
 
