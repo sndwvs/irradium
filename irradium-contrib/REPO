@@ -189,7 +189,7 @@ f:5009a303246ecef5ea0aaa49952c52af:elogind/pre-install
 f:a9e7ccb4cc486e1967f58572f8a2060b:elogind/rc.elogind
 f:7aba887960fb7f2b489c6e5a7c96ede4:elogind/10-enable-elogind-power.rules
 f:9745f7ad6bf9c5deaac125c7f820bf14:elogind/.footprint
-f:25dea600262c838243c4d49569d21581:elogind/.signature
+f:218b488f3a0eac485701ddcd482eacda:elogind/.signature
 f:dd4f7f0178fa57a470d4c1134bd22da0:elogind/elogind.nobody.nogroup.99.99.diff
 f:7d42f2922ed703773dfd28c497111b15:elogind/Pkgfile
 f:ce8226895c981265c806fe855308406d:firefox/README
