@@ -50,7 +50,7 @@ f:8d01f9dc6e07549a5006967efd3622be:ffmpeg/add-av_stream_get_first_dts-for-chromi
 f:fdc0328c4e5c341ed1d623ba1c16480e:ffmpeg/add-in-cpu-__NR_riscv_hwprobe.patch
 f:f35940c5dc1e962aa1c908eeab6f1885:ffmpeg/.footprint
 f:3579c9d9171c7a6af1ff7a367332cba6:ffmpeg/.signature
-f:ee0517be968805ce5bc58d7322f580a6:ffmpeg/Pkgfile
+f:db4213cd4532054ea2b40ff84277f64c:ffmpeg/Pkgfile
 f:b2c9d9a5b28f0803f79c748833911236:ffmpeg-mpp/.footprint
 f:5206bedf65b28e2b5b31038304f9202f:ffmpeg-mpp/.signature
 f:9b7540a197371561b62b9de0e67617af:ffmpeg-mpp/Pkgfile
