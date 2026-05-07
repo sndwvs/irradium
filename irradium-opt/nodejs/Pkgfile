@@ -10,8 +10,7 @@ release=1
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
   unbundle-uv.patch
   v8-riscv-trap-handler.patch
-  v8-disable-trap-handler-on-riscv-sv39.patch
-  6bd4bdded4fe666dc90872fd4472b967b6e5cd55.patch)
+  v8-disable-trap-handler-on-riscv-sv39.patch)
 
 build() {
   cd node-v$version
@@ -22,7 +21,6 @@ build() {
   # fix riscv64
   patch -Np1 -i $SRC/v8-riscv-trap-handler.patch
   patch -Np1 -i $SRC/v8-disable-trap-handler-on-riscv-sv39.patch
-  patch -Np1 -i $SRC/6bd4bdded4fe666dc90872fd4472b967b6e5cd55.patch
 
   prt-get isinst brotli && PKGMK_NODEJS+=' --shared-brotli'
   prt-get isinst c-ares && PKGMK_NODEJS+=' --shared-cares'
