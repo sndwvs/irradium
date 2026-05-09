@@ -618,7 +618,7 @@ f:e68a05689e10e84780fd6516ca6a2da8:zabbix-server/rc.zabbix-server
 f:94c320d0056d7973e21891cbbdde431b:zabbix-server/zabbix_server.logrotate
 f:6c4de850edb9046f69ad57d7413da725:zabbix-server/zabbix_server.conf.patch
 f:faa9e4dfb74365d2d59d15065f5a82a1:zabbix-server/.footprint
-f:ed9c1d67f25ec55197b8f59c07eb54db:zabbix-server/.signature
+f:82a06a1787c95cd4a7b9124b05017e45:zabbix-server/.signature
 f:125595b52baf948f8694afa540aa8838:cpufrequtils/.footprint
 f:07be6830ccba8db08af7cfd5a8c93286:cpufrequtils/.signature
 f:9ed71a50670aa99e12245cb3f5199142:cpufrequtils/0001-Only-x86-has-cpuid-instruction.patch
