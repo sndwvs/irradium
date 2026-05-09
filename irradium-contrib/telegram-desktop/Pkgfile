@@ -4,7 +4,7 @@
 # Depends on: minizip openal range-v3 tg_owt qt6-imageformats qt6-svg qt6-wayland qt6-5compat rnnoise protobuf fmt graphviz mm-common boost libsigc++ ada
 
 name=telegram-desktop
-version=6.7.8
+version=6.8.1
 release=1
 _commitid=8921c22f0f85b3cb0b56303f9cba81ba8549f4e8
 source=(https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tdesktop-$version-full.tar.gz
