@@ -814,7 +814,7 @@ f:05bc85b8b58fe4a160abe50723b92358:zabbix-frontend/.signature
 f:b667a28d3d7195dc388f81fe36328854:zabbix-frontend/apache-zabbix.conf
 f:7aee820a83dbbef40c072851c4432190:zabbix-frontend/php-fpm-zabbix.conf
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-web-service/pre-install
-f:f909ab6793e9f7c360cc3d6dd4420757:zabbix-web-service/Pkgfile
+f:70ddcb8c77760ab2f7103ba180a816fc:zabbix-web-service/Pkgfile
 f:9a420da381535d49b2b4d4bf8bb1018b:zabbix-web-service/rc.zabbix-web-service
 f:bd7bafa1a751ad22c0413c40f9b2196f:zabbix-web-service/zabbix_web_service.logrotate
 f:9c7e0229477fb5acdc9f5ec14f5f6e2f:zabbix-web-service/zabbix_web_service.conf.patch
