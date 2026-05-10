@@ -5,7 +5,7 @@
 
 name=zabbix-agentd
 version=7.4.10
-release=2
+release=3
 source=(https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-$version.tar.gz
         rc.zabbix-agentd
         zabbix_agentd.logrotate
