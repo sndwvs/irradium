@@ -10,6 +10,7 @@ _uc_version=$version-1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/${name#*-}-$version.tar.xz
         https://github.com/ungoogled-software/$name/archive/$_uc_version.tar.gz
         chromium.default chromium.sh
+        patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
         patches/enable-widevine-arm64.patch
         patches/glibc-2.42-baud-rate-fix.patch
         patches/0001-Run-blink-bindings-generation-single-threaded.patch
@@ -75,6 +76,7 @@ build() {
       tools/generate_shim_headers/generate_shim_headers.py
 
     # Arch Linux ARM fixes
+    patch -Np1 -i $SRC/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
     patch -Np1 -i $SRC/0001-Run-blink-bindings-generation-single-threaded.patch
     patch -Np1 -i $SRC/0002-Fix-distcc.patch
     export ALARM_NINJA_JOBS="16"

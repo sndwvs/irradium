@@ -441,11 +441,12 @@ f:d030bab5c46f970b1c282ad7582e1b69:ungoogled-chromium/patches/chromium-147-rever
 f:952d2907f3cd468cfe6a9e78ecd3db4d:ungoogled-chromium/patches/chromium-147-rust-1.95-bytemuck.patch
 f:c170af9510f649e50c571e07ee926f6d:ungoogled-chromium/patches/chromium-148-revert-clang-fsanitize-return-flag-1.patch
 f:633170ab6dc57011297ad53c25b5d8e3:ungoogled-chromium/patches/chromium-148-revert-clang-fsanitize-return-flag-2.patch
+f:a9c40bf9b10d6b2d97e7f660ccf609eb:ungoogled-chromium/patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
 f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:03e5d1e73f43528641499925f34affce:ungoogled-chromium/.footprint
 f:a7d135bb0b1b923589e1362a28a1887e:ungoogled-chromium/.signature
-f:a8ad289573520f2840d6f9fdf100fb7f:ungoogled-chromium/Pkgfile
+f:e3080132b7bbc99e304a448e17597209:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
 f:0cb29db19dda2ae4817b0380de127c8b:urxvt-perls/.signature
