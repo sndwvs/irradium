@@ -52,7 +52,7 @@ build() {
       #[libaom]=aom
       #[libavif]=libavif  # needs -DAVIF_ENABLE_EXPERIMENTAL_GAIN_MAP=ON
       [libjpeg]=libjpeg-turbo
-      [libpng]=libpng
+      #[libpng]=libpng
       #[libvpx]=libvpx
       [libwebp]=libwebp
       [libxml]=libxml2
