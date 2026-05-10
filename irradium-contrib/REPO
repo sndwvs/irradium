@@ -479,12 +479,12 @@ f:e878e7386df273a8d1e31f006a07bd77:sshpass/Pkgfile
 f:ba60765494299d5fc275df5fdd2c9888:python3-pyelftools/.footprint
 f:68121d34227bd00a94502e39d53a0159:python3-pyelftools/.signature
 f:9044efa6d0c35c5411dc49600d17b407:python3-pyelftools/Pkgfile
-f:a057f5c2bce545176e8810c28b363de9:zabbix-agent2/zabbix_agent2.conf.patch
+f:7ad4cf5bd0fb54a12281db3dccdbc1dc:zabbix-agent2/zabbix_agent2.conf.patch
 f:5c53327412e28c3a029e386d47825953:zabbix-agent2/zabbix_agent2.logrotate
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-agent2/pre-install
 f:06687e96334e9bbe44c1f908a6338912:zabbix-agent2/.footprint
 f:8d4a5d33d190470e65c257c591e81525:zabbix-agent2/.signature
-f:8fa89b4dd16ec69e8d228ca716efd663:zabbix-agent2/Pkgfile
+f:a3d960928033c5d4c89bbcd1b9a795b9:zabbix-agent2/Pkgfile
 f:62a1f8b1cedaa77516601a396a95d322:zabbix-agent2/rc.zabbix-agent2
 f:d32239bcb673463ab874e80d47fae504:COPYING
 f:c8f811ef2dddfcb8c540a79eeb3094aa:gspell/.footprint

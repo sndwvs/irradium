@@ -5,7 +5,7 @@
 
 name=zabbix-agent2
 version=7.4.10
-release=1
+release=2
 source=(https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-$version.tar.gz
         rc.zabbix-agent2
         zabbix_agent2.logrotate

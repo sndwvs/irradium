@@ -2,7 +2,16 @@ diff --git a/src/go/conf/zabbix_agent2.conf b/src/go/conf/zabbix_agent2.conf
 index 6fdd050..fe48861 100644
 --- a/src/go/conf/zabbix_agent2.conf
 +++ b/src/go/conf/zabbix_agent2.conf
-@@ -27,6 +27,8 @@
+@@ -10,6 +10,8 @@
+ # Default:
+ # PidFile=/tmp/zabbix_agent2.pid
+ 
++PidFile=/run/zabbix/zabbix_agent2.pid
++
+ ### Option: LogType
+ #	Specifies where log messages are written to:
+ #		system  - syslog
+@@ -27,6 +29,8 @@
  # Default:
  # LogFile=/tmp/zabbix_agent2.log
  
@@ -11,7 +20,7 @@ index 6fdd050..fe48861 100644
  ### Option: LogFileSize
  #	Maximum size of log file in MB.
  #	0 - disable automatic log rotation.
-@@ -135,7 +137,7 @@ ServerActive=127.0.0.1
+@@ -139,7 +143,7 @@ ServerActive=127.0.0.1
  # Default:
  # Hostname=
  
@@ -20,7 +29,7 @@ index 6fdd050..fe48861 100644
  
  ### Option: HostnameItem
  #	Item used for generating Hostname if it is undefined. Ignored if Hostname is defined.
-@@ -145,6 +147,8 @@ Hostname=Zabbix server
+@@ -149,6 +153,8 @@ Hostname=Zabbix server
  # Default:
  # HostnameItem=system.hostname
  
@@ -29,7 +38,7 @@ index 6fdd050..fe48861 100644
  ### Option: HostMetadata
  #	Optional parameter that defines host metadata.
  #	Host metadata is used at host auto-registration process.
-@@ -301,6 +305,8 @@ Hostname=Zabbix server
+@@ -293,6 +299,8 @@ Hostname=Zabbix server
  # Default:/tmp/agent.plugin.sock
  # PluginSocket=
  
@@ -38,7 +47,7 @@ index 6fdd050..fe48861 100644
  ####### USER-DEFINED MONITORED PARAMETERS #######
  
  ### Option: UnsafeUserParameters
-@@ -342,7 +348,7 @@ Hostname=Zabbix server
+@@ -334,7 +342,7 @@ Hostname=Zabbix server
  # Default:
  # ControlSocket=
  
