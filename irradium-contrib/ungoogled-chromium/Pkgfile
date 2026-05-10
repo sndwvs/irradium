@@ -12,7 +12,7 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/${nam
         chromium.default chromium.sh
         patches/enable-widevine-arm64.patch
         patches/glibc-2.42-baud-rate-fix.patch
-        patches/001-Run-blink-bindings-generation-single-threaded.patch
+        patches/0001-Run-blink-bindings-generation-single-threaded.patch
         patches/0002-Fix-distcc.patch
         patches/use-oauth2-client-switches-as-default.patch
         patches/compiler-rt-adjust-paths.patch
