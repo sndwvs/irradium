@@ -159,9 +159,11 @@ build() {
              third_party/rust-toolchain/bin \
              third_party/jdk/current/bin
 
-    rm -rf third_party/node/linux/node-linux-x64/*
+    rm -rf third_party/node/linux/node-linux-x64
+    mkdir -p third_party/node/linux/node-linux-x64
     ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
-    rm -rf third_party/rust-toolchain/bin/*
+    rm -rf third_party/rust-toolchain/bin
+    mkdir -p third_party/rust-toolchain/bin
     ln -s /usr/bin/rustc third_party/rust-toolchain/bin/
     #ln -s /usr/bin/java third_party/jdk/current/bin/
     ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
