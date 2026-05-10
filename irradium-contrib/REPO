@@ -745,7 +745,7 @@ f:2190317ade7c835d7f8ec924360c7439:iptraf-ng/Pkgfile
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-agentd/pre-install
 f:5c8161eec17c15d479f61a927fbecbb3:zabbix-agentd/zabbix_agentd.logrotate
 f:fd2a73fcf6ddc5b15a71a10d87408869:zabbix-agentd/.footprint
-f:d60ab1154b48e31ba5264a932642acb9:zabbix-agentd/.signature
+f:0a87b8c092de8b03f179c05a11bccebd:zabbix-agentd/.signature
 f:76b1c5523ccd9afa1169ab9e503fb526:zabbix-agentd/rc.zabbix-agentd
 f:d7083e67c3acf7c7954d7f1576abc302:zabbix-agentd/Pkgfile
 f:f54754230ec7a3c8c0987afd82a0c51e:zabbix-agentd/zabbix_agentd.conf.patch
