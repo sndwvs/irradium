@@ -5,19 +5,17 @@
 
 name=zabbix-agentd
 version=7.4.10
-release=1
+release=2
 source=(https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-$version.tar.gz
         rc.zabbix-agentd
-        zabbix_agentd.logrotate)
+        zabbix_agentd.logrotate
+        zabbix_agentd.conf.patch)
 
 build() {
   cd ${name%-*}-$version
 
   # Fix config file locations
-  sed -i conf/zabbix_agentd.conf \
-      -e 's|SNMPTrapperFile=/tmp|SNMPTrapperFile=/var/log/zabbix|' \
-      -e 's|PidFile=/tmp|PidFile=/run/zabbix|' \
-      -e 's|LogFile=/tmp|LogFile=/var/log/zabbix|'
+  patch -p1 -i $SRC/zabbix_agentd.conf.patch
 
   export CFLAGS+=" -D_LARGEFILE64_SOURCE"
 

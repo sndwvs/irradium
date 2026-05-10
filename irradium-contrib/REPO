@@ -730,12 +730,13 @@ f:140883be494b876db58f18e30acaadf2:iozone/Pkgfile
 f:6af1adf0df27f4a4024633a823c2f45c:iptraf-ng/.footprint
 f:3b39d000c9a3bc753625396f2540419d:iptraf-ng/.signature
 f:2190317ade7c835d7f8ec924360c7439:iptraf-ng/Pkgfile
-f:f637d023f3c06ff25421f6c8be79eb24:zabbix-agentd/Pkgfile
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-agentd/pre-install
 f:5c8161eec17c15d479f61a927fbecbb3:zabbix-agentd/zabbix_agentd.logrotate
 f:fd2a73fcf6ddc5b15a71a10d87408869:zabbix-agentd/.footprint
 f:d60ab1154b48e31ba5264a932642acb9:zabbix-agentd/.signature
 f:76b1c5523ccd9afa1169ab9e503fb526:zabbix-agentd/rc.zabbix-agentd
+f:20e9451a2d60e9444b4ecc1ae7764963:zabbix-agentd/Pkgfile
+f:8b254f2939953eaf6aaf00c3bfb5c0bb:zabbix-agentd/zabbix_agentd.conf.patch
 f:727845b8b33e9d115ffded2fb54c4e53:libutempter/.footprint
 f:25c5b1dad8516f04ff73044f5d76aac5:libutempter/.signature
 f:9bd0087bcc6d655a972b1a666d8d486b:libutempter/Pkgfile
