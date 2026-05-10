@@ -183,7 +183,8 @@ f:d030bab5c46f970b1c282ad7582e1b69:chromium/patches/chromium-147-revert-clang-no
 f:952d2907f3cd468cfe6a9e78ecd3db4d:chromium/patches/chromium-147-rust-1.95-bytemuck.patch
 f:c170af9510f649e50c571e07ee926f6d:chromium/patches/chromium-148-revert-clang-fsanitize-return-flag-1.patch
 f:633170ab6dc57011297ad53c25b5d8e3:chromium/patches/chromium-148-revert-clang-fsanitize-return-flag-2.patch
-f:a68621687764c18d92f08a8bc5bb74b2:chromium/Pkgfile
+f:a9c40bf9b10d6b2d97e7f660ccf609eb:chromium/patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
+f:cdfd5d5431cbe8c7749007241c8f3e67:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:21b87db70c6f721259e8bdde6a2ae435:deadbeef/.footprint
 f:79f129b0b6f852945dad71322bc8b228:deadbeef/.signature
