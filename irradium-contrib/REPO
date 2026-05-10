@@ -428,7 +428,6 @@ f:f5ead9c0017a82dbe35247f60be2163b:udisks2/.footprint
 f:011c64dc46c000fce6d791c82e6f1e20:udisks2/.signature
 f:778d77abd5a00269b2193f70313c5478:udisks2/Pkgfile
 f:cca42a21584d2e7a49baa60bb486c5d2:ungoogled-chromium/post-install
-f:a9c40bf9b10d6b2d97e7f660ccf609eb:ungoogled-chromium/patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
 f:883f63f2765d2eea97565e7ddf5c1834:ungoogled-chromium/patches/chromium-138-nodejs-version-check.patch
 f:24ea2b2ae799520979daa5a8a80e9514:ungoogled-chromium/patches/compiler-rt-adjust-paths.patch
 f:8f6657577ad6609a22f2f7efe2fa237f:ungoogled-chromium/patches/increase-fortify-level.patch
@@ -438,7 +437,6 @@ f:eaccde81e6ff3045858a7d18af7e091e:ungoogled-chromium/patches/0002-Fix-distcc.pa
 f:47444a9ba2ac31fa4b11128373a7bdaf:ungoogled-chromium/patches/glibc-2.42-baud-rate-fix.patch
 f:21b273ce8f52a74cd3030b2fe240998b:ungoogled-chromium/patches/enable-widevine-arm64.patch
 f:065415c9d8e19b349682608e88bcb852:ungoogled-chromium/patches/chromium-145-fix-SYS_SECCOMP.patch
-f:d3c28ed0d0728bbdc753f20159390415:ungoogled-chromium/patches/chromium-146-build-with-wasm-rollup.patch
 f:dd91cd4b75f63d4890b1a32d223393c2:ungoogled-chromium/patches/chromium-146-drop-unknown-clang-flag.patch
 f:d030bab5c46f970b1c282ad7582e1b69:ungoogled-chromium/patches/chromium-147-revert-clang-no-lifetime-dse-flag.patch
 f:952d2907f3cd468cfe6a9e78ecd3db4d:ungoogled-chromium/patches/chromium-147-rust-1.95-bytemuck.patch
@@ -448,7 +446,7 @@ f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:03e5d1e73f43528641499925f34affce:ungoogled-chromium/.footprint
 f:a7d135bb0b1b923589e1362a28a1887e:ungoogled-chromium/.signature
-f:e5f0895c83e11e96c6ab2c0e3befd20e:ungoogled-chromium/Pkgfile
+f:54bad8e241fd95673816a08126720483:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
 f:0cb29db19dda2ae4817b0380de127c8b:urxvt-perls/.signature

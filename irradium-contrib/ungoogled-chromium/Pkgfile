@@ -20,12 +20,10 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/${nam
         patches/chromium-138-nodejs-version-check.patch
         patches/chromium-145-fix-SYS_SECCOMP.patch
         patches/chromium-146-drop-unknown-clang-flag.patch
-        patches/chromium-146-build-with-wasm-rollup.patch
         patches/chromium-147-revert-clang-no-lifetime-dse-flag.patch
         patches/chromium-147-rust-1.95-bytemuck.patch
         patches/chromium-148-revert-clang-fsanitize-return-flag-1.patch
         patches/chromium-148-revert-clang-fsanitize-return-flag-2.patch
-        patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
 )
 
 build() {
@@ -95,7 +93,6 @@ build() {
     patch -Np1 -i $SRC/use-oauth2-client-switches-as-default.patch || exit 1
 
     # Upstream fixes
-    patch -Np1 -i $SRC/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
 
     # Fixes from Gentoo
     patch -Np1 -i $SRC/chromium-138-nodejs-version-check.patch
@@ -119,9 +116,6 @@ build() {
 
     # https://crbug.com/456218403
     patch -Np1 -i $SRC/chromium-145-fix-SYS_SECCOMP.patch
-
-    patch -Np1 -i $SRC/chromium-146-build-with-wasm-rollup.patch
-
     patch -Np1 -i $SRC/chromium-147-rust-1.95-bytemuck.patch
 
     # enable widevine for arm64
