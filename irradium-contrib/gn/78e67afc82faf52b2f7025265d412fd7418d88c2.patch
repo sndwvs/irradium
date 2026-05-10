@@ -38,8 +38,21 @@ index 956f1db6..ef1357f5 100644
  Michael Gilbert <floppymaster@gmail.com>
  Milko Leporis <milko.leporis@imgtec.com>
  Mohan Reddy <mohan.reddy@samsung.com>
+diff --git a/README.md b/README.md
+index 3dd52193..cdcb8f4b 100644
+--- a/README.md
++++ b/README.md
+@@ -90,7 +90,7 @@ You can download the latest version of GN binary for
+ from Google's build infrastructure (see "Versioning and distribution" below for
+ how this is expected to work).
+ 
+-Alternatively, you can build GN from source with a C++17 compiler:
++Alternatively, you can build GN from source with a C++23 compiler:
+ 
+     git clone https://gn.googlesource.com/gn
+     cd gn
 diff --git a/build/gen.py b/build/gen.py
-index 5d161e4e..432924e4 100755
+index 5d161e4e..736f6098 100755
 --- a/build/gen.py
 +++ b/build/gen.py
 @@ -246,13 +246,19 @@ def is_gcc(cxx):
@@ -78,6 +91,15 @@ index 5d161e4e..432924e4 100755
  
    # Only write/touch this file if the commit position has changed.
    old_contents = ''
+@@ -503,7 +509,7 @@ def WriteGNNinja(path, platform, host, options, args_list):
+         '-Wextra-semi',
+         '-Wundef',
+ 
+-        '-std=c++20'
++        '-std=c++23'
+     ])
+ 
+     if is_gcc(cxx):
 @@ -531,7 +537,9 @@ def WriteGNNinja(path, platform, host, options, args_list):
        ])
  
@@ -89,6 +111,15 @@ index 5d161e4e..432924e4 100755
        cflags.append(min_mac_version_flag)
        ldflags.append(min_mac_version_flag)
      elif platform.is_aix():
+@@ -599,7 +607,7 @@ def WriteGNNinja(path, platform, host, options, args_list):
+         '/wd4505',
+         '/wd4838',
+         '/wd4996',
+-        '/std:c++20',
++        '/std:c++23preview',
+         '/GR-',
+         '/D_HAS_EXCEPTIONS=0',
+     ])
 @@ -629,6 +637,7 @@ def WriteGNNinja(path, platform, host, options, args_list):
          'src/base/memory/ref_counted.cc',
          'src/base/memory/weak_ptr.cc',
@@ -823,6 +854,173 @@ index d5dfa0ff..e05f0154 100644
      *   --version: Prints the GN version number and exits.
  ```
 -
+diff --git a/examples/rust_example/BUILD.gn b/examples/rust_example/BUILD.gn
+index 964b331f..48da170c 100644
+--- a/examples/rust_example/BUILD.gn
++++ b/examples/rust_example/BUILD.gn
+@@ -1,3 +1,17 @@
+ group("default") {
+-  deps = [ "//hello_world/src:hello_world" ]
++  deps = [
++    "//hello_world/src:hello_world",
++    ":c_main",
++  ]
++}
++
++static_library("c_lib") {
++  complete_static_lib = true
++  deps = [ "//hello_world/foo/src:foo" ]
++  sources = [ "c_lib.cc" ]
++}
++
++executable("c_main") {
++  deps = [ ":c_lib" ]
++  sources = [ "c_main.cc" ]
+ }
+diff --git a/examples/rust_example/build/BUILD.gn b/examples/rust_example/build/BUILD.gn
+index ebfaa64f..567cc15c 100644
+--- a/examples/rust_example/build/BUILD.gn
++++ b/examples/rust_example/build/BUILD.gn
+@@ -2,7 +2,7 @@ toolchain("rust") {
+   tool("rust_bin") {
+     depfile = "{{target_out_dir}}/{{crate_name}}.d"
+     outfile = "{{target_out_dir}}/{{crate_name}}"
+-    command = "rustc --crate-name {{crate_name}} {{source}} --crate-type {{crate_type}} --emit=dep-info=$depfile,link -Z dep-info-omit-d-target {{rustflags}} -o $outfile {{rustdeps}} {{externs}}"
++    command = "rustc --crate-name {{crate_name}} {{source}} --crate-type {{crate_type}} --emit=dep-info=$depfile,link {{rustflags}} -o $outfile {{rustdeps}} {{externs}}"
+     description = "RUST $outfile"
+     outputs = [ outfile ]
+   }
+@@ -10,7 +10,7 @@ toolchain("rust") {
+   tool("rust_staticlib") {
+     depfile = "{{target_out_dir}}/{{crate_name}}.d"
+     outfile = "{{target_out_dir}}/{{crate_name}}.a"
+-    command = "rustc --crate-name {{crate_name}} {{source}} --crate-type {{crate_type}} --emit=dep-info=$depfile,link -Z dep-info-omit-d-target {{rustflags}} -o $outfile {{rustdeps}} {{externs}}"
++    command = "rustc --crate-name {{crate_name}} {{source}} --crate-type {{crate_type}} --emit=dep-info=$depfile,link {{rustflags}} -o $outfile {{rustdeps}} {{externs}}"
+     description = "RUST $outfile"
+     outputs = [ outfile ]
+   }
+@@ -18,7 +18,7 @@ toolchain("rust") {
+   tool("rust_rlib") {
+     depfile = "{{target_out_dir}}/{{crate_name}}.d"
+     outfile = "{{target_out_dir}}/lib{{crate_name}}.rlib"
+-    command = "rustc --crate-name {{crate_name}} {{source}} --crate-type {{crate_type}} --emit=dep-info=$depfile,link -Z dep-info-omit-d-target {{rustflags}} -o $outfile {{rustdeps}} {{externs}}"
++    command = "rustc --crate-name {{crate_name}} {{source}} --crate-type {{crate_type}} --emit=dep-info=$depfile,link {{rustflags}} -o $outfile {{rustdeps}} {{externs}}"
+     description = "RUST $outfile"
+     outputs = [ outfile ]
+   }
+@@ -26,7 +26,7 @@ toolchain("rust") {
+   tool("rust_cdylib") {
+     depfile = "{{target_out_dir}}/{{crate_name}}.d"
+     outfile = "{{target_out_dir}}/lib{{crate_name}}.so"
+-    command = "rustc --crate-name {{crate_name}} {{source}} --crate-type {{crate_type}} --emit=dep-info=$depfile,link -Z dep-info-omit-d-target {{rustflags}} -o $outfile {{rustdeps}} {{externs}}"
++    command = "rustc --crate-name {{crate_name}} {{source}} --crate-type {{crate_type}} --emit=dep-info=$depfile,link {{rustflags}} -o $outfile {{rustdeps}} {{externs}}"
+     description = "RUST $outfile"
+     outputs = [ outfile ]
+   }
+@@ -40,6 +40,32 @@ toolchain("rust") {
+     command = "cp -af {{source}} {{output}}"
+     description = "COPY {{source}} {{output}}"
+   }
++
++  tool("cxx") {
++    depfile = "{{output}}.d"
++    command = "clang++ -MMD -MF $depfile {{defines}} {{include_dirs}} {{cflags}} {{cflags_cc}} -c {{source}} -o {{output}}"
++    depsformat = "gcc"
++    description = "CXX {{output}}"
++    outputs = [ "{{source_out_dir}}/{{target_output_name}}.{{source_name_part}}.o" ]
++  }
++
++  tool("alink") {
++    command = "llvm-ar rcs {{output}} {{inputs}}"
++    description = "AR {{target_output_name}}{{output_extension}}"
++    outputs = [ "{{target_out_dir}}/{{target_output_name}}{{output_extension}}" ]
++    default_output_extension = ".a"
++    output_prefix = "lib"
++  }
++
++  tool("link") {
++    outfile = "{{target_output_name}}{{output_extension}}"
++    rspfile = "$outfile.rsp"
++    command = "clang++ {{ldflags}} -o $outfile -Wl,--start-group @$rspfile {{solibs}} {{libs}} {{rlibs}} -Wl,--end-group"
++    description = "LINK $outfile"
++    default_output_dir = "{{root_out_dir}}"
++    rspfile_content = "{{inputs}}"
++    outputs = [ outfile ]
++  }
+ }
+ 
+ config("rust_defaults") {
+diff --git a/examples/rust_example/c_lib.cc b/examples/rust_example/c_lib.cc
+new file mode 100644
+index 00000000..ec8b33e6
+--- /dev/null
++++ b/examples/rust_example/c_lib.cc
+@@ -0,0 +1,5 @@
++extern "C" int call_from_c();
++
++int c_lib_get_value() {
++  return call_from_c();
++}
+diff --git a/examples/rust_example/c_main.cc b/examples/rust_example/c_main.cc
+new file mode 100644
+index 00000000..23a868ec
+--- /dev/null
++++ b/examples/rust_example/c_main.cc
+@@ -0,0 +1,13 @@
++#include <stdio.h>
++
++int c_lib_get_value();
++
++int main() {
++  int val = c_lib_get_value();
++  printf("Value from c_lib (via Rust): %d\n", val);
++  if (val == 42) {
++    printf("SUCCESS!\n");
++    return 0;
++  }
++  return 1;
++}
+diff --git a/examples/rust_example/hello_world/foo/src/lib.rs b/examples/rust_example/hello_world/foo/src/lib.rs
+index 73c615c9..d4d20607 100644
+--- a/examples/rust_example/hello_world/foo/src/lib.rs
++++ b/examples/rust_example/hello_world/foo/src/lib.rs
+@@ -8,4 +8,9 @@ impl Foo {
+     pub fn new(s: &'static str) -> Foo {
+         Foo{s: s, i: "foo"}
+     }
++}
++
++#[no_mangle]
++pub extern "C" fn call_from_c() -> i32 {
++    42
+ }
+\ No newline at end of file
+diff --git a/infra/recipe_modules/windows_sdk/__init__.py b/infra/recipe_modules/windows_sdk/__init__.py
+index c111b2ad..65a1ac2a 100644
+--- a/infra/recipe_modules/windows_sdk/__init__.py
++++ b/infra/recipe_modules/windows_sdk/__init__.py
+@@ -25,7 +25,7 @@ PROPERTIES = {
+                 sdk_version=Single(str)),
+             default={
+                 'sdk_package': 'chrome_internal/third_party/sdk/windows',
+-                'sdk_version': 'uploaded:2024-01-11',
++                'sdk_version': 'uploaded:2026-05-06',
+             },
+         )
+ }
+diff --git a/infra/recipe_modules/windows_sdk/examples/full.expected/win.json b/infra/recipe_modules/windows_sdk/examples/full.expected/win.json
+index 4d5f5101..a9ab126b 100644
+--- a/infra/recipe_modules/windows_sdk/examples/full.expected/win.json
++++ b/infra/recipe_modules/windows_sdk/examples/full.expected/win.json
+@@ -6,7 +6,7 @@
+       "-root",
+       "[CACHE]\\windows_sdk",
+       "-ensure-file",
+-      "chrome_internal/third_party/sdk/windows uploaded:2024-01-11",
++      "chrome_internal/third_party/sdk/windows uploaded:2026-05-06",
+       "-max-threads",
+       "0",
+       "-json-output",
 diff --git a/infra/recipes/gn.expected/ci_linux.json b/infra/recipes/gn.expected/ci_linux.json
 index d8199096..f907debd 100644
 --- a/infra/recipes/gn.expected/ci_linux.json
@@ -1064,6 +1262,19 @@ index d8199096..f907debd 100644
    {
      "cmd": [],
      "name": "release.linux-amd64.upload",
+diff --git a/infra/recipes/gn.expected/ci_win.json b/infra/recipes/gn.expected/ci_win.json
+index 61d16039..97ec0964 100644
+--- a/infra/recipes/gn.expected/ci_win.json
++++ b/infra/recipes/gn.expected/ci_win.json
+@@ -152,7 +152,7 @@
+       "-root",
+       "[CACHE]\\windows_sdk",
+       "-ensure-file",
+-      "chrome_internal/third_party/sdk/windows uploaded:2024-01-11",
++      "chrome_internal/third_party/sdk/windows uploaded:2026-05-06",
+       "-max-threads",
+       "0",
+       "-json-output",
 diff --git a/infra/recipes/gn.expected/cipd_exists.json b/infra/recipes/gn.expected/cipd_exists.json
 index 1f544ca7..5ce1915e 100644
 --- a/infra/recipes/gn.expected/cipd_exists.json
@@ -1787,6 +1998,19 @@ index d12efc0f..72f2aefa 100644
    {
      "cmd": [],
      "name": "release.linux-amd64.upload",
+diff --git a/infra/recipes/gn.expected/cq_win.json b/infra/recipes/gn.expected/cq_win.json
+index 390a5901..8f26aee8 100644
+--- a/infra/recipes/gn.expected/cq_win.json
++++ b/infra/recipes/gn.expected/cq_win.json
+@@ -203,7 +203,7 @@
+       "-root",
+       "[CACHE]\\windows_sdk",
+       "-ensure-file",
+-      "chrome_internal/third_party/sdk/windows uploaded:2024-01-11",
++      "chrome_internal/third_party/sdk/windows uploaded:2026-05-06",
+       "-max-threads",
+       "0",
+       "-json-output",
 diff --git a/infra/recipes/gn.py b/infra/recipes/gn.py
 index f4723bd8..93c9634c 100644
 --- a/infra/recipes/gn.py
@@ -3888,6 +4112,343 @@ index 491afa35..2e8f18a5 100644
    visibility
    walk_keys
    weak_frameworks
+diff --git a/src/gn/command_format.cc b/src/gn/command_format.cc
+index 98053090..f7649cd2 100644
+--- a/src/gn/command_format.cc
++++ b/src/gn/command_format.cc
+@@ -158,9 +158,7 @@ class Printer {
+   // Add the current margin (as spaces) to the output.
+   void PrintMargin();
+ 
+-  void TrimAndPrintToken(const Token& token);
+-
+-  void PrintTrailingCommentsWrapped(const std::vector<Token>& comments);
++  void PrintTokensWrapped(const std::vector<Token>& comments);
+ 
+   void FlushComments();
+ 
+@@ -316,20 +314,7 @@ void Printer::PrintMargin() {
+   output_ += std::string(margin(), ' ');
+ }
+ 
+-void Printer::TrimAndPrintToken(const Token& token) {
+-  std::string trimmed;
+-  TrimWhitespaceASCII(std::string(token.value()), base::TRIM_ALL, &trimmed);
+-  Print(trimmed);
+-}
+-
+-// Assumes that the margin is set to the indent level where the comments should
+-// be aligned. This doesn't de-wrap, it only wraps. So if a suffix comment
+-// causes the line to exceed 80 col it will be wrapped, but the subsequent line
+-// would fit on the then-broken line it will not be merged with it. This is
+-// partly because it's difficult to implement at this level, but also because
+-// it can break hand-authored line breaks where they're starting a new paragraph
+-// or statement.
+-void Printer::PrintTrailingCommentsWrapped(const std::vector<Token>& comments) {
++void Printer::PrintTokensWrapped(const std::vector<Token>& comments) {
+   bool have_empty_line = true;
+   auto start_next_line = [this, &have_empty_line]() {
+     Trim();
+@@ -337,38 +322,158 @@ void Printer::PrintTrailingCommentsWrapped(const std::vector<Token>& comments) {
+     PrintMargin();
+     have_empty_line = true;
+   };
+-  for (const auto& c : comments) {
+-    if (!have_empty_line) {
+-      start_next_line();
++
++  // Group consecutive comment lines into paragraphs. A paragraph is reflowed
++  // if any line exceeds the maximum width. Special lines (e.g. URLs, lists,
++  // preformatted text) are kept in their own paragraphs and never reflowed.
++  struct Paragraph {
++    std::vector<Token> tokens;
++    bool should_reflow = false;
++    bool is_preformatted = false;
++  };
++  std::vector<Paragraph> paragraphs;
++  Paragraph current_paragraph;
++
++  auto flush_paragraph = [&]() {
++    if (!current_paragraph.tokens.empty()) {
++      paragraphs.push_back(current_paragraph);
++      current_paragraph = Paragraph();
+     }
++  };
++
++  bool in_preformatted_block = false;
+ 
++  for (const auto& c : comments) {
+     std::string trimmed;
+     TrimWhitespaceASCII(std::string(c.value()), base::TRIM_ALL, &trimmed);
+ 
+-    if (margin() + trimmed.size() <= kMaximumWidth) {
+-      Print(trimmed);
+-      have_empty_line = false;
++    bool is_empty = trimmed == "#";
++    if (is_empty) {
++      in_preformatted_block = false;
++    }
++
++    bool is_indented = c.value().starts_with("#  ");
++    bool has_url = trimmed.find("http://") != std::string::npos ||
++                   trimmed.find("https://") != std::string::npos;
++    bool is_list = false;
++    if (trimmed.starts_with("# ") && trimmed.length() >= 4) {
++      if (trimmed[2] == '-' || trimmed[2] == '*') {
++        is_list = trimmed[3] == ' ';
++      } else if (isdigit(trimmed[2])) {
++        size_t i = 3;
++        while (i < trimmed.length() && isdigit(trimmed[i]))
++          i++;
++        if (i < trimmed.length() && trimmed[i] == '.')
++          i++;
++        is_list = i < trimmed.length() && trimmed[i] == ' ';
++      }
++    }
++    bool is_pragma = trimmed.find("# NOSORT") != std::string::npos ||
++                     trimmed.find("# KEEPDUPS") != std::string::npos;
++
++    std::string text_only = trimmed.length() > 1 ? trimmed.substr(1) : "";
++    TrimWhitespaceASCII(text_only, base::TRIM_ALL, &text_only);
++
++    // A single word (e.g. a long file path) should not be joined with other
++    // lines, as it often represents a vertical list of items.
++    bool is_single_word = !text_only.empty() &&
++                          text_only.find(' ') == std::string::npos &&
++                          (text_only.find('/') != std::string::npos ||
++                           text_only.find(':') != std::string::npos);
++
++    // Attention markers start a new paragraph to ensure they remain visible.
++    bool is_attention_marker =
++        text_only.starts_with("TODO") || text_only.starts_with("NOTE") ||
++        text_only.starts_with("WARNING") || text_only.starts_with("FIXME");
++
++    if (is_attention_marker) {
++      flush_paragraph();
++    }
++
++    bool is_special = is_indented || has_url || is_empty || is_list ||
++                      is_pragma || is_single_word || in_preformatted_block;
++
++    if (is_special) {
++      flush_paragraph();
++      Paragraph p;
++      p.tokens.push_back(c);
++      p.should_reflow = false;
++      p.is_preformatted = in_preformatted_block || is_single_word ||
++                          is_indented || has_url || is_list || is_pragma;
++      paragraphs.push_back(p);
+     } else {
++      if (margin() + trimmed.size() > kMaximumWidth) {
++        current_paragraph.should_reflow = true;
++      }
++      current_paragraph.tokens.push_back(c);
++    }
++
++    // If a line ends with a colon, treat subsequent lines as preformatted
++    // until an empty comment line is encountered.
++    if (trimmed.ends_with(':')) {
++      in_preformatted_block = true;
++    }
++  }
++  flush_paragraph();
++
++  for (const auto& p : paragraphs) {
++    if (p.should_reflow) {
++      // Combine all tokens in the paragraph into a single list of words.
++      std::vector<std::string> words;
++      for (const auto& t : p.tokens) {
++        std::string trimmed;
++        TrimWhitespaceASCII(std::string(t.value()), base::TRIM_ALL, &trimmed);
++        std::vector<std::string> line_words = base::SplitString(
++            trimmed, " ", base::WhitespaceHandling::TRIM_WHITESPACE,
++            base::SplitResult::SPLIT_WANT_NONEMPTY);
++        if (words.empty()) {
++          words.push_back("#");
++        }
++        for (const auto& w : line_words) {
++          if (w != "#")
++            words.push_back(w);
++        }
++      }
++
++      if (!have_empty_line)
++        start_next_line();
++
++      // Output words, wrapping to the next line when the maximum width is
++      // reached.
+       bool continuation = false;
+-      std::vector<std::string> split_on_spaces = base::SplitString(
+-          c.value(), " ", base::WhitespaceHandling::TRIM_WHITESPACE,
+-          base::SplitResult::SPLIT_WANT_NONEMPTY);
+-      for (size_t j = 0; j < split_on_spaces.size(); ++j) {
++      for (size_t j = 0; j < words.size(); ++j) {
+         if (have_empty_line && continuation) {
+           Print("# ");
++          have_empty_line = false;
++        } else if (j > 0) {
++          Print(" ");
+         }
+-        Print(split_on_spaces[j]);
+-        Print(" ");
+-        if (split_on_spaces[j] != "#") {
++        Print(words[j]);
++
++        if (words[j] != "#") {
+           have_empty_line = false;
+         }
+-        if (!have_empty_line &&
+-            (j < split_on_spaces.size() - 1 &&
+-             CurrentColumn() + split_on_spaces[j + 1].size() > kMaximumWidth)) {
++
++        if (!have_empty_line && j < words.size() - 1 &&
++            CurrentColumn() + 1 + words[j + 1].size() > kMaximumWidth) {
+           start_next_line();
+           continuation = true;
+         }
+       }
++    } else {
++      // For paragraphs that do not require reflowing (e.g. special lines or
++      // paragraphs where all lines fit within the maximum width), output them
++      // exactly as authored.
++      for (const auto& c : p.tokens) {
++        if (!have_empty_line) {
++          start_next_line();
++        }
++
++        std::string trimmed;
++        TrimWhitespaceASCII(std::string(c.value()), base::TRIM_ALL, &trimmed);
++        Print(trimmed);
++        have_empty_line = false;
++      }
+     }
+   }
+ }
+@@ -378,7 +483,7 @@ void Printer::PrintSuffixComments(const ParseNode* node) {
+   if (node->comments() && !node->comments()->suffix().empty()) {
+     Print("  ");
+     stack_.push_back(IndentState(CurrentColumn(), false, false));
+-    PrintTrailingCommentsWrapped(node->comments()->suffix());
++    PrintTokensWrapped(node->comments()->suffix());
+     stack_.pop_back();
+   }
+ }
+@@ -389,7 +494,7 @@ void Printer::FlushComments() {
+     // Save the margin, and temporarily set it to where the first comment
+     // starts so that multiple suffix comments are vertically aligned.
+     stack_.push_back(IndentState(CurrentColumn(), false, false));
+-    PrintTrailingCommentsWrapped(comments_);
++    PrintTokensWrapped(comments_);
+     stack_.pop_back();
+     comments_.clear();
+   }
+@@ -705,8 +810,8 @@ void Printer::Block(const ParseNode* root) {
+   const BlockNode* block = root->AsBlock();
+ 
+   if (block->comments()) {
+-    for (const auto& c : block->comments()->before()) {
+-      TrimAndPrintToken(c);
++    if (!block->comments()->before().empty()) {
++      PrintTokensWrapped(block->comments()->before());
+       Newline();
+     }
+   }
+@@ -724,8 +829,8 @@ void Printer::Block(const ParseNode* root) {
+       // However, because it's a general expression handler, it doesn't insert
+       // the newline itself, which only happens between block statements. So,
+       // the after are handled explicitly here.
+-      for (const auto& c : stmt->comments()->after()) {
+-        TrimAndPrintToken(c);
++      if (!stmt->comments()->after().empty()) {
++        PrintTokensWrapped(stmt->comments()->after());
+         Newline();
+       }
+     }
+@@ -744,8 +849,8 @@ void Printer::Block(const ParseNode* root) {
+       // then the two comments were originally separate, so keep them that way.
+       Newline();
+     }
+-    for (const auto& c : block->comments()->after()) {
+-      TrimAndPrintToken(c);
++    if (!block->comments()->after().empty()) {
++      PrintTokensWrapped(block->comments()->after());
+       Newline();
+     }
+   }
+@@ -797,8 +902,8 @@ int Printer::Expr(const ParseNode* root,
+         Print("\n");
+       // We're printing a line comment, so we need to be at the current margin.
+       PrintMargin();
+-      for (const auto& c : root->comments()->before()) {
+-        TrimAndPrintToken(c);
++      if (!root->comments()->before().empty()) {
++        PrintTokensWrapped(root->comments()->before());
+         Newline();
+       }
+     }
+@@ -998,7 +1103,7 @@ int Printer::Expr(const ParseNode* root,
+     Print(unaryop->op().value());
+     Expr(unaryop->operand(), kPrecedenceUnary, std::string());
+   } else if (const BlockCommentNode* block_comment = root->AsBlockComment()) {
+-    Print(block_comment->comment().value());
++    PrintTokensWrapped({block_comment->comment()});
+   } else if (const EndNode* end = root->AsEnd()) {
+     Print(end->value().value());
+   } else {
+@@ -1076,10 +1181,8 @@ void Printer::Sequence(SequenceStyle style,
+     if (end->comments() && !end->comments()->before().empty()) {
+       if (list.size() >= 2)
+         Newline();
+-      for (const auto& c : end->comments()->before()) {
+-        Newline();
+-        TrimAndPrintToken(c);
+-      }
++      Newline();
++      PrintTokensWrapped(end->comments()->before());
+     }
+ 
+     stack_.pop_back();
+@@ -1239,10 +1342,8 @@ int Printer::FunctionCall(const FunctionCallNode* func_call,
+     if (end->comments() && !end->comments()->before().empty()) {
+       if (!list.empty())
+         Newline();
+-      for (const auto& c : end->comments()->before()) {
+-        Newline();
+-        TrimAndPrintToken(c);
+-      }
++      Newline();
++      PrintTokensWrapped(end->comments()->before());
+       Newline();
+     }
+     stack_.pop_back();
+diff --git a/src/gn/command_format_unittest.cc b/src/gn/command_format_unittest.cc
+index 645ec271..0149cbc6 100644
+--- a/src/gn/command_format_unittest.cc
++++ b/src/gn/command_format_unittest.cc
+@@ -138,3 +138,23 @@ FORMAT_TEST(082)
+ FORMAT_TEST(083)
+ FORMAT_TEST(084)
+ FORMAT_TEST(085)
++FORMAT_TEST(086)
++FORMAT_TEST(087)
++FORMAT_TEST(088)
++FORMAT_TEST(089)
++FORMAT_TEST(090)
++FORMAT_TEST(091)
++FORMAT_TEST(092)
++FORMAT_TEST(093)
++FORMAT_TEST(094)
++FORMAT_TEST(095)
++FORMAT_TEST(096)
++FORMAT_TEST(097)
++FORMAT_TEST(098)
++FORMAT_TEST(099)
++FORMAT_TEST(100)
++FORMAT_TEST(101)
++FORMAT_TEST(102)
++FORMAT_TEST(103)
++FORMAT_TEST(104)
++FORMAT_TEST(105)
 diff --git a/src/gn/command_gen.cc b/src/gn/command_gen.cc
 index 652c3e3d..de8b89fe 100644
 --- a/src/gn/command_gen.cc
@@ -5141,10 +5702,21 @@ index cf91a8ce..e2750662 100644
 +  }
  }
 diff --git a/src/gn/desc_builder.cc b/src/gn/desc_builder.cc
-index 1b80302e..8c6d897e 100644
+index 1b80302e..1823520d 100644
 --- a/src/gn/desc_builder.cc
 +++ b/src/gn/desc_builder.cc
-@@ -575,6 +575,10 @@ class TargetDescBuilder : public BaseDescBuilder {
+@@ -391,6 +391,10 @@ class TargetDescBuilder : public BaseDescBuilder {
+       }
+     }
+ 
++    if (what(variables::kData) && !target_->data().empty())
++      res->SetWithoutPathExpansion(variables::kData,
++                                   RenderValue(target_->data()));
++
+     if (what(variables::kSources) && !target_->sources().empty())
+       res->SetWithoutPathExpansion(variables::kSources,
+                                    RenderValue(target_->sources()));
+@@ -575,6 +579,10 @@ class TargetDescBuilder : public BaseDescBuilder {
      if (what(variables::kGenDeps) && !target_->gen_deps().empty())
        res->SetWithoutPathExpansion(variables::kGenDeps, RenderGenDeps());
  
@@ -5155,7 +5727,7 @@ index 1b80302e..8c6d897e 100644
      // Runtime deps are special, print only when explicitly asked for and not in
      // overview mode.
      if (what_.find("runtime_deps") != what_.end())
-@@ -743,6 +747,20 @@ class TargetDescBuilder : public BaseDescBuilder {
+@@ -743,6 +751,20 @@ class TargetDescBuilder : public BaseDescBuilder {
      return res;
    }
  
@@ -5367,6 +5939,471 @@ index c1a0ae8e..7b69a639 100644
  
    // Pattern but no template expansions are allowed.
    EXPECT_FALSE(EnsureStringIsInOutputDir(output_dir, "{{source_gen_dir}}",
+diff --git a/src/gn/format_test_data/086.gn b/src/gn/format_test_data/086.gn
+new file mode 100644
+index 00000000..d1ab8997
+--- /dev/null
++++ b/src/gn/format_test_data/086.gn
+@@ -0,0 +1,11 @@
++# This is a very very very very very very very very very very very very very very very very very very very very very very very very very long comment.
++# Another line.
++executable("foo") {
++  sources = [ "foo.cc" ]
++
++  # And here is an indented comment that is also extremely long and needs to be wrapped properly at the 80 character limit.
++  if (is_win) {
++    # This is a block comment in an inner scope.
++    # It also has a long line that exceeds the 80 column limit and should be wrapped to the next line keeping the same indentation.
++  }
++}
+diff --git a/src/gn/format_test_data/086.golden b/src/gn/format_test_data/086.golden
+new file mode 100644
+index 00000000..8ff561b0
+--- /dev/null
++++ b/src/gn/format_test_data/086.golden
+@@ -0,0 +1,14 @@
++# This is a very very very very very very very very very very very very very
++# very very very very very very very very very very very very long comment.
++# Another line.
++executable("foo") {
++  sources = [ "foo.cc" ]
++
++  # And here is an indented comment that is also extremely long and needs to be
++  # wrapped properly at the 80 character limit.
++  if (is_win) {
++    # This is a block comment in an inner scope. It also has a long line that
++    # exceeds the 80 column limit and should be wrapped to the next line keeping
++    # the same indentation.
++  }
++}
+diff --git a/src/gn/format_test_data/087.gn b/src/gn/format_test_data/087.gn
+new file mode 100644
+index 00000000..0e9110fc
+--- /dev/null
++++ b/src/gn/format_test_data/087.gn
+@@ -0,0 +1 @@
++# This is a very very very very very very very very very very very very very very very very very very very very very very very very very long comment with     extra     spaces.
+\ No newline at end of file
+diff --git a/src/gn/format_test_data/087.golden b/src/gn/format_test_data/087.golden
+new file mode 100644
+index 00000000..f882a2b6
+--- /dev/null
++++ b/src/gn/format_test_data/087.golden
+@@ -0,0 +1,3 @@
++# This is a very very very very very very very very very very very very very
++# very very very very very very very very very very very very long comment with
++# extra spaces.
+diff --git a/src/gn/format_test_data/088.gn b/src/gn/format_test_data/088.gn
+new file mode 100644
+index 00000000..31a0b8a9
+--- /dev/null
++++ b/src/gn/format_test_data/088.gn
+@@ -0,0 +1 @@
++# This is a short comment with     extra     spaces.
+\ No newline at end of file
+diff --git a/src/gn/format_test_data/088.golden b/src/gn/format_test_data/088.golden
+new file mode 100644
+index 00000000..b3635ca0
+--- /dev/null
++++ b/src/gn/format_test_data/088.golden
+@@ -0,0 +1 @@
++# This is a short comment with     extra     spaces.
+diff --git a/src/gn/format_test_data/089.gn b/src/gn/format_test_data/089.gn
+new file mode 100644
+index 00000000..f85de6f0
+--- /dev/null
++++ b/src/gn/format_test_data/089.gn
+@@ -0,0 +1 @@
++# This is a very very very very very very very very very very long URL: https://www.google.com/very/long/url/that/exceeds/the/eighty/character/limit/for/a/line/length
+diff --git a/src/gn/format_test_data/089.golden b/src/gn/format_test_data/089.golden
+new file mode 100644
+index 00000000..f85de6f0
+--- /dev/null
++++ b/src/gn/format_test_data/089.golden
+@@ -0,0 +1 @@
++# This is a very very very very very very very very very very long URL: https://www.google.com/very/long/url/that/exceeds/the/eighty/character/limit/for/a/line/length
+diff --git a/src/gn/format_test_data/090.gn b/src/gn/format_test_data/090.gn
+new file mode 100644
+index 00000000..821376e5
+--- /dev/null
++++ b/src/gn/format_test_data/090.gn
+@@ -0,0 +1,3 @@
++executable("foo") {
++  sources = [ "foo.cc" ] # This is a very very very very very very very very very very very very very very very very very very very very very very very very very long trailing comment.
++}
+\ No newline at end of file
+diff --git a/src/gn/format_test_data/090.golden b/src/gn/format_test_data/090.golden
+new file mode 100644
+index 00000000..54943fb8
+--- /dev/null
++++ b/src/gn/format_test_data/090.golden
+@@ -0,0 +1,6 @@
++executable("foo") {
++  sources =
++      [ "foo.cc" ]  # This is a very very very very very very very very very
++                    # very very very very very very very very very very very
++                    # very very very very very long trailing comment.
++}
+diff --git a/src/gn/format_test_data/091.gn b/src/gn/format_test_data/091.gn
+new file mode 100644
+index 00000000..ecd1b17e
+--- /dev/null
++++ b/src/gn/format_test_data/091.gn
+@@ -0,0 +1,3 @@
++executable("foo") {
++  sources = [ "foo.cc" ] # This is a very very very very very very very very very very very very very very very very very very very very very very very very very long URL: https://www.google.com/very/long/url/that/exceeds/the/eighty/character/limit/for/a/line/length
++}
+diff --git a/src/gn/format_test_data/091.golden b/src/gn/format_test_data/091.golden
+new file mode 100644
+index 00000000..d4febd0c
+--- /dev/null
++++ b/src/gn/format_test_data/091.golden
+@@ -0,0 +1,3 @@
++executable("foo") {
++  sources = [ "foo.cc" ]  # This is a very very very very very very very very very very very very very very very very very very very very very very very very very long URL: https://www.google.com/very/long/url/that/exceeds/the/eighty/character/limit/for/a/line/length
++}
+diff --git a/src/gn/format_test_data/092.gn b/src/gn/format_test_data/092.gn
+new file mode 100644
+index 00000000..82d4fa46
+--- /dev/null
++++ b/src/gn/format_test_data/092.gn
+@@ -0,0 +1,3 @@
++executable("foo") {
++  sources = [ "foo.cc" ] # This is a very very very very very very very very very very very very very very very very very very very very very very very very very long trailing comment with      extra       spaces.
++}
+\ No newline at end of file
+diff --git a/src/gn/format_test_data/092.golden b/src/gn/format_test_data/092.golden
+new file mode 100644
+index 00000000..c5aad2fe
+--- /dev/null
++++ b/src/gn/format_test_data/092.golden
+@@ -0,0 +1,6 @@
++executable("foo") {
++  sources = [ "foo.cc" ]  # This is a very very very very very very very very
++                          # very very very very very very very very very very
++                          # very very very very very very very long trailing
++                          # comment with extra spaces.
++}
+diff --git a/src/gn/format_test_data/093.gn b/src/gn/format_test_data/093.gn
+new file mode 100644
+index 00000000..b3dead15
+--- /dev/null
++++ b/src/gn/format_test_data/093.gn
+@@ -0,0 +1 @@
++this_is_a_very_long_variable_name_that_exceeds_eighty_characters_all_by_itself_without_any_spaces = true # This is a very very very very very very very very very very very very very very very very very very very very very very very very very long trailing comment.
+diff --git a/src/gn/format_test_data/093.golden b/src/gn/format_test_data/093.golden
+new file mode 100644
+index 00000000..88a9b084
+--- /dev/null
++++ b/src/gn/format_test_data/093.golden
+@@ -0,0 +1,31 @@
++this_is_a_very_long_variable_name_that_exceeds_eighty_characters_all_by_itself_without_any_spaces = true  # This
++                                                                                                          # is
++                                                                                                          # a
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # very
++                                                                                                          # long
++                                                                                                          # trailing
++                                                                                                          # comment.
+diff --git a/src/gn/format_test_data/094.gn b/src/gn/format_test_data/094.gn
+new file mode 100644
+index 00000000..2e2c3ca6
+--- /dev/null
++++ b/src/gn/format_test_data/094.gn
+@@ -0,0 +1,3 @@
++# Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor and
++# incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
++# exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute a /
+diff --git a/src/gn/format_test_data/094.golden b/src/gn/format_test_data/094.golden
+new file mode 100644
+index 00000000..e8a00301
+--- /dev/null
++++ b/src/gn/format_test_data/094.golden
+@@ -0,0 +1,4 @@
++# Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
++# and incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
++# nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
++# Duis aute a /
+diff --git a/src/gn/format_test_data/095.gn b/src/gn/format_test_data/095.gn
+new file mode 100644
+index 00000000..d954df51
+--- /dev/null
++++ b/src/gn/format_test_data/095.gn
+@@ -0,0 +1 @@
++# RSP manipulation due to https://bugs.an_foo_b.com/p/gn/issues/detail?id=249
+diff --git a/src/gn/format_test_data/095.golden b/src/gn/format_test_data/095.golden
+new file mode 100644
+index 00000000..d954df51
+--- /dev/null
++++ b/src/gn/format_test_data/095.golden
+@@ -0,0 +1 @@
++# RSP manipulation due to https://bugs.an_foo_b.com/p/gn/issues/detail?id=249
+diff --git a/src/gn/format_test_data/096.gn b/src/gn/format_test_data/096.gn
+new file mode 100644
+index 00000000..065108a9
+--- /dev/null
++++ b/src/gn/format_test_data/096.gn
+@@ -0,0 +1,7 @@
++if (true) {
++  if (true) {
++    if (true) {
++      pgo_data_path = "//android_web_foo/tools/orderfiles/arm64/pgo_profile.arm64.profdata"
++    }
++  }
++}
+diff --git a/src/gn/format_test_data/096.golden b/src/gn/format_test_data/096.golden
+new file mode 100644
+index 00000000..513adb7d
+--- /dev/null
++++ b/src/gn/format_test_data/096.golden
+@@ -0,0 +1,8 @@
++if (true) {
++  if (true) {
++    if (true) {
++      pgo_data_path =
++          "//android_web_foo/tools/orderfiles/arm64/pgo_profile.arm64.profdata"
++    }
++  }
++}
+diff --git a/src/gn/format_test_data/097.gn b/src/gn/format_test_data/097.gn
+new file mode 100644
+index 00000000..7beacc1a
+--- /dev/null
++++ b/src/gn/format_test_data/097.gn
+@@ -0,0 +1,2 @@
++# problematic for FooBar because of targets like
++#   //third_party/an_foo_b/src/trace_processor/an_foo_b_sql/stdlib:stdlib_generated_file
+diff --git a/src/gn/format_test_data/097.golden b/src/gn/format_test_data/097.golden
+new file mode 100644
+index 00000000..7beacc1a
+--- /dev/null
++++ b/src/gn/format_test_data/097.golden
+@@ -0,0 +1,2 @@
++# problematic for FooBar because of targets like
++#   //third_party/an_foo_b/src/trace_processor/an_foo_b_sql/stdlib:stdlib_generated_file
+diff --git a/src/gn/format_test_data/098.gn b/src/gn/format_test_data/098.gn
+new file mode 100644
+index 00000000..eae4aecc
+--- /dev/null
++++ b/src/gn/format_test_data/098.gn
+@@ -0,0 +1,3 @@
++# Copyright 2013 The Chromium Authors
++# Use of this source code is governed by a BSD-style license that can be
++# found in the LICENSE file.
+diff --git a/src/gn/format_test_data/098.golden b/src/gn/format_test_data/098.golden
+new file mode 100644
+index 00000000..eae4aecc
+--- /dev/null
++++ b/src/gn/format_test_data/098.golden
+@@ -0,0 +1,3 @@
++# Copyright 2013 The Chromium Authors
++# Use of this source code is governed by a BSD-style license that can be
++# found in the LICENSE file.
+diff --git a/src/gn/format_test_data/099.gn b/src/gn/format_test_data/099.gn
+new file mode 100644
+index 00000000..a7925678
+--- /dev/null
++++ b/src/gn/format_test_data/099.gn
+@@ -0,0 +1,8 @@
++if (is_android) {
++  if (true) {
++    # lorem_ips is a dolor of amet_ that are being elit_ipsum by almost every tempor and
++    # library in Chromium, adding new amet modules here means that all elit_amet will be
++    # impacted (eg: This could have severe consequences as Nullam can't depend on Ipsum /
++    # AndroidX).
++  }
++}
+diff --git a/src/gn/format_test_data/099.golden b/src/gn/format_test_data/099.golden
+new file mode 100644
+index 00000000..4f0ea1cb
+--- /dev/null
++++ b/src/gn/format_test_data/099.golden
+@@ -0,0 +1,8 @@
++if (is_android) {
++  if (true) {
++    # lorem_ips is a dolor of amet_ that are being elit_ipsum by almost every
++    # tempor and library in Chromium, adding new amet modules here means that
++    # all elit_amet will be impacted (eg: This could have severe consequences as
++    # Nullam can't depend on Ipsum / AndroidX).
++  }
++}
+diff --git a/src/gn/format_test_data/100.gn b/src/gn/format_test_data/100.gn
+new file mode 100644
+index 00000000..e3235662
+--- /dev/null
++++ b/src/gn/format_test_data/100.gn
+@@ -0,0 +1,3 @@
++# To regenerate this list, run:
++# sed -i '/^[^#][^[]*$/d' an_foo_java_resources.gni
++# (for f in $(find java/res/*/ -type f); do echo '  "'$f'",'; done; echo ']') >> an_foo_java_resources.gni
+diff --git a/src/gn/format_test_data/100.golden b/src/gn/format_test_data/100.golden
+new file mode 100644
+index 00000000..e3235662
+--- /dev/null
++++ b/src/gn/format_test_data/100.golden
+@@ -0,0 +1,3 @@
++# To regenerate this list, run:
++# sed -i '/^[^#][^[]*$/d' an_foo_java_resources.gni
++# (for f in $(find java/res/*/ -type f); do echo '  "'$f'",'; done; echo ']') >> an_foo_java_resources.gni
+diff --git a/src/gn/format_test_data/101.gn b/src/gn/format_test_data/101.gn
+new file mode 100644
+index 00000000..08804158
+--- /dev/null
++++ b/src/gn/format_test_data/101.gn
+@@ -0,0 +1,12 @@
++group("foo") {
++  if (true) {
++    if (true) {
++      # TODO(crbug.com/123456789): Remove this circular dependency once the following
++      # headers get componentized:
++      # a/b/custom_handlers/protocol_handler_registry_factory.h
++      # a/b/profiles/profile_io_data.h
++      # a/b/history/top_sites_factory.h
++      # a/b/history_embeddings/history_embeddings_service_factory.h
++    }
++  }
++}
+diff --git a/src/gn/format_test_data/101.golden b/src/gn/format_test_data/101.golden
+new file mode 100644
+index 00000000..7a9757e0
+--- /dev/null
++++ b/src/gn/format_test_data/101.golden
+@@ -0,0 +1,12 @@
++group("foo") {
++  if (true) {
++    if (true) {
++      # TODO(crbug.com/123456789): Remove this circular dependency once the
++      # following headers get componentized:
++      # a/b/custom_handlers/protocol_handler_registry_factory.h
++      # a/b/profiles/profile_io_data.h
++      # a/b/history/top_sites_factory.h
++      # a/b/history_embeddings/history_embeddings_service_factory.h
++    }
++  }
++}
+diff --git a/src/gn/format_test_data/102.gn b/src/gn/format_test_data/102.gn
+new file mode 100644
+index 00000000..4b5c188a
+--- /dev/null
++++ b/src/gn/format_test_data/102.gn
+@@ -0,0 +1,8 @@
++if (true) {
++  if (true) {
++    # you are adding //third_party/a_foo_b_deps:a_foo_b_support_*, use the a_foo_bx
++    # version of the dep instead.
++    # TODO(b/123456789): Use per-feature -keep rules in R8 once supported, then
++    # this can be removed.
++  }
++}
+diff --git a/src/gn/format_test_data/102.golden b/src/gn/format_test_data/102.golden
+new file mode 100644
+index 00000000..903be420
+--- /dev/null
++++ b/src/gn/format_test_data/102.golden
+@@ -0,0 +1,8 @@
++if (true) {
++  if (true) {
++    # you are adding //third_party/a_foo_b_deps:a_foo_b_support_*, use the
++    # a_foo_bx version of the dep instead.
++    # TODO(b/123456789): Use per-feature -keep rules in R8 once supported, then
++    # this can be removed.
++  }
++}
+diff --git a/src/gn/format_test_data/103.gn b/src/gn/format_test_data/103.gn
+new file mode 100644
+index 00000000..84265d85
+--- /dev/null
++++ b/src/gn/format_test_data/103.gn
+@@ -0,0 +1,6 @@
++# NOTE: This target is separated from :browser as
++# //components/safe_foo_bar_/content/browser/triggers, which this depends on, depends
++# on :browser.
++# TODO(crbug.com/12345678): Consider folding all of three these together into
++# :browser, along with the other browser process code in
++# //components/safe_foo_bar_/content.
+diff --git a/src/gn/format_test_data/103.golden b/src/gn/format_test_data/103.golden
+new file mode 100644
+index 00000000..f0f836d7
+--- /dev/null
++++ b/src/gn/format_test_data/103.golden
+@@ -0,0 +1,6 @@
++# NOTE: This target is separated from :browser as
++# //components/safe_foo_bar_/content/browser/triggers, which this depends on,
++# depends on :browser.
++# TODO(crbug.com/12345678): Consider folding all of three these together into
++# :browser, along with the other browser process code in
++# //components/safe_foo_bar_/content.
+diff --git a/src/gn/format_test_data/104.gn b/src/gn/format_test_data/104.gn
+new file mode 100644
+index 00000000..2bf51999
+--- /dev/null
++++ b/src/gn/format_test_data/104.gn
+@@ -0,0 +1,4 @@
++# These sources depend on targets from "//content/browser", which means they can
++# only be loaded on A_Foo builds.
++# NOTE: If/when targets used on iOS are refactored into a separate BUILD file,
++# this check can be removed.
+diff --git a/src/gn/format_test_data/104.golden b/src/gn/format_test_data/104.golden
+new file mode 100644
+index 00000000..2bf51999
+--- /dev/null
++++ b/src/gn/format_test_data/104.golden
+@@ -0,0 +1,4 @@
++# These sources depend on targets from "//content/browser", which means they can
++# only be loaded on A_Foo builds.
++# NOTE: If/when targets used on iOS are refactored into a separate BUILD file,
++# this check can be removed.
+diff --git a/src/gn/format_test_data/105.gn b/src/gn/format_test_data/105.gn
+new file mode 100644
+index 00000000..76e48546
+--- /dev/null
++++ b/src/gn/format_test_data/105.gn
+@@ -0,0 +1,7 @@
++# This is a very long line that should normally reflow but we want to make sure it does not merge with the list item below it.
++# 1. This is a list item.
++# 10. This is a multi-digit list item.
++# 100 This is a multi-digit list item without a dot.
++# - This is a bullet list.
++# * This is another bullet list.
++# This is another very long line that should also reflow but should not merge with the list item above it.
+diff --git a/src/gn/format_test_data/105.golden b/src/gn/format_test_data/105.golden
+new file mode 100644
+index 00000000..60b6fc60
+--- /dev/null
++++ b/src/gn/format_test_data/105.golden
+@@ -0,0 +1,9 @@
++# This is a very long line that should normally reflow but we want to make sure
++# it does not merge with the list item below it.
++# 1. This is a list item.
++# 10. This is a multi-digit list item.
++# 100 This is a multi-digit list item without a dot.
++# - This is a bullet list.
++# * This is another bullet list.
++# This is another very long line that should also reflow but should not merge
++# with the list item above it.
 diff --git a/src/gn/function_exec_script.cc b/src/gn/function_exec_script.cc
 index 6f8bdf5b..966dbfcf 100644
 --- a/src/gn/function_exec_script.cc
@@ -8102,8 +9139,20 @@ index c54ad72e..3f5385f6 100644
  
    std::string output;
    std::string stderr_output;
+diff --git a/src/gn/json_project_writer.h b/src/gn/json_project_writer.h
+index 05576896..63549a91 100644
+--- a/src/gn/json_project_writer.h
++++ b/src/gn/json_project_writer.h
+@@ -29,6 +29,7 @@ class JSONProjectWriter {
+   FRIEND_TEST_ALL_PREFIXES(JSONWriter, ForEachWithResponseFile);
+   FRIEND_TEST_ALL_PREFIXES(JSONWriter, RustTarget);
+   FRIEND_TEST_ALL_PREFIXES(JSONWriter, FilterTargetsWithDataDeps);
++  FRIEND_TEST_ALL_PREFIXES(JSONWriter, GroupWithData);
+ 
+   static bool FilterTargets(const BuildSettings* build_settings,
+                             std::vector<const Target*>& all_targets,
 diff --git a/src/gn/json_project_writer_unittest.cc b/src/gn/json_project_writer_unittest.cc
-index 4b58e2cf..a050b092 100644
+index 4b58e2cf..6c43cc75 100644
 --- a/src/gn/json_project_writer_unittest.cc
 +++ b/src/gn/json_project_writer_unittest.cc
 @@ -36,7 +36,7 @@ TEST_F(JSONWriter, ActionWithResponseFile) {
@@ -8151,6 +9200,55 @@ index 4b58e2cf..a050b092 100644
  }
  
  TEST_F(JSONWriter, FilterTargetsWithDataDeps) {
+@@ -835,3 +835,48 @@ TEST_F(JSONWriter, FilterTargetsWithDataDeps) {
+   EXPECT_GT(labels_all.count(Label(SourceDir("//foo/"), "b")), 0u);
+   EXPECT_GT(labels_all.count(Label(SourceDir("//foo/"), "c")), 0u);
+ }
++
++TEST_F(JSONWriter, GroupWithData) {
++  Err err;
++  TestWithScope setup;
++
++  Target target(setup.settings(), Label(SourceDir("//foo/"), "docs"));
++  target.set_output_type(Target::GROUP);
++  target.data().push_back("README.md");
++  target.data().push_back("docs/help.txt");
++  target.SetToolchain(setup.toolchain());
++  ASSERT_TRUE(target.OnResolved(&err));
++
++  std::vector<const Target*> targets = {&target};
++  std::string out =
++      JSONProjectWriter::RenderJSON(setup.build_settings(), targets);
++#if defined(OS_WIN)
++  base::ReplaceSubstringsAfterOffset(&out, 0, "\r\n", "\n");
++#endif
++  const char expected_json[] =
++      R"_({
++   "build_settings": {
++      "build_dir": "//out/Debug/",
++      "default_toolchain": "//toolchain:default",
++      "gen_input_files": [  ],
++      "root_path": ""
++   },
++   "targets": {
++      "//foo:docs()": {
++         "data": [ "README.md", "docs/help.txt" ],
++         "deps": [  ],
++         "metadata": {
++
++         },
++         "public": "*",
++         "testonly": false,
++         "toolchain": "",
++         "type": "group",
++         "visibility": [  ]
++      }
++   },
++   "toolchains": {
++)_";
++
++  EXPECT_TRUE(out.starts_with(expected_json)) << out;
++}
 diff --git a/src/gn/label.cc b/src/gn/label.cc
 index 6914962d..93f35056 100644
 --- a/src/gn/label.cc
@@ -8548,23 +9646,10 @@ index 9f83fa37..518fdf26 100644
    std::vector<Value> expected;
    expected.push_back(Value(nullptr, "bar"));
 diff --git a/src/gn/ninja_action_target_writer.cc b/src/gn/ninja_action_target_writer.cc
-index 0fe0c1be..0d01d07d 100644
+index 0fe0c1be..3aa56862 100644
 --- a/src/gn/ninja_action_target_writer.cc
 +++ b/src/gn/ninja_action_target_writer.cc
-@@ -73,8 +73,11 @@ void NinjaActionTargetWriter::Run() {
-   // and the action will just depend on all the input deps directly.
-   size_t num_output_uses =
-       target_->output_type() == Target::ACTION ? 1u : target_->sources().size();
--  std::vector<OutputFile> input_deps = WriteInputDepsStampOrPhonyAndGetDep(
-+  NinjaTargetWriter::InputDeps stamp_deps = WriteInputDepsStampOrPhonyAndGetDep(
-       additional_hard_deps, num_output_uses);
-+  std::vector<OutputFile> input_deps = stamp_deps.implicit;
-+  input_deps.insert(input_deps.end(), stamp_deps.order_only.begin(),
-+                    stamp_deps.order_only.end());
-   out_ << std::endl;
- 
-   // Collects all output files for writing below.
-@@ -108,7 +111,9 @@ void NinjaActionTargetWriter::Run() {
+@@ -108,7 +108,9 @@ void NinjaActionTargetWriter::Run() {
        path_output_.WriteFiles(out_, order_only_deps);
      }
  
@@ -8574,7 +9659,7 @@ index 0fe0c1be..0d01d07d 100644
      if (target_->action_values().has_depfile()) {
        WriteDepfile(SourceFile());
      }
-@@ -235,6 +240,7 @@ void NinjaActionTargetWriter::WriteSourceRules(
+@@ -235,6 +237,7 @@ void NinjaActionTargetWriter::WriteSourceRules(
        out_ << " ||";
        path_output_.WriteFiles(out_, order_only_deps);
      }
@@ -8743,7 +9828,7 @@ index 9b7c76f2..e8555828 100644
 +  EXPECT_EQ(expected, out.str());
 +}
 diff --git a/src/gn/ninja_binary_target_writer.cc b/src/gn/ninja_binary_target_writer.cc
-index ac45e976..aad2eb20 100644
+index ac45e976..b075df37 100644
 --- a/src/gn/ninja_binary_target_writer.cc
 +++ b/src/gn/ninja_binary_target_writer.cc
 @@ -4,7 +4,9 @@
@@ -8912,7 +9997,7 @@ index ac45e976..aad2eb20 100644
    out_ << std::endl;
  
    if (!sources.empty() && can_write_source_info) {
-@@ -439,3 +547,60 @@ void NinjaBinaryTargetWriter::WritePool(std::ostream& out) {
+@@ -439,3 +547,13 @@ void NinjaBinaryTargetWriter::WritePool(std::ostream& out) {
      out << std::endl;
    }
  }
@@ -8920,58 +10005,11 @@ index ac45e976..aad2eb20 100644
 +std::vector<OutputFile>
 +NinjaBinaryTargetWriter::GetOrderOnlyDepsFromNonLinkableDeps(
 +    const UniqueVector<const Target*>& non_linkable_deps) const {
-+  std::vector<const Target*> group_stack;
-+  std::vector<OutputFile> outputs_to_write;
-+  std::set<std::string> seen_outputs;
-+
-+  auto add_output = [&](const OutputFile& output) {
-+    if (seen_outputs.insert(output.value()).second) {
-+      outputs_to_write.push_back(output);
-+    }
-+  };
-+
-+  auto process_dep = [&](const Target* dep) {
-+    if (dep->output_type() == Target::GROUP) {
-+      group_stack.push_back(dep);
-+    } else if (dep->has_dependency_output()) {
-+      OutputFile dep_output = dep->dependency_output();
-+      if (dep->output_type() == Target::SOURCE_SET) {
-+        dep_output.value().append(".linkdeps");
-+      }
-+      add_output(dep_output);
-+    }
-+  };
-+
-+  for (auto* dep : non_linkable_deps) {
-+    process_dep(dep);
++  UniqueVector<OutputFile> outputs_to_write;
++  for (const Target* dep : non_linkable_deps) {
++    outputs_to_write.Append(resolved().GetOrderOnlyDeps(dep));
 +  }
-+
-+  // Recursively expand dependencies of groups to avoid unnecessary
-+  // dependencies. If a group depends on a source set, we depend on its
-+  // .linkdeps instead of the group itself. This prevents including non-object
-+  // files (like .dwo files) in order-only dependencies. This is crucial for
-+  // remote linking to avoid uploading unnecessary files, which increases data
-+  // transfer and could hit file count limits.
-+  std::set<const Target*> visited_groups;
-+  while (!group_stack.empty()) {
-+    const Target* current = group_stack.back();
-+    group_stack.pop_back();
-+
-+    if (!visited_groups.insert(current).second)
-+      continue;
-+
-+    auto add_deps = [&](const LabelTargetVector& deps) {
-+      for (const auto& pair : deps) {
-+        process_dep(pair.ptr);
-+      }
-+    };
-+
-+    add_deps(current->public_deps());
-+    add_deps(current->private_deps());
-+    add_deps(current->data_deps());
-+  }
-+
-+  return outputs_to_write;
++  return outputs_to_write.release();
 +}
 diff --git a/src/gn/ninja_binary_target_writer.h b/src/gn/ninja_binary_target_writer.h
 index 29105b47..99b2b729 100644
@@ -9058,31 +10096,8 @@ index 29dfd33a..e8a6f516 100644
 +    EXPECT_EQ(expected, out_str);
    }
  }
-diff --git a/src/gn/ninja_bundle_data_target_writer.cc b/src/gn/ninja_bundle_data_target_writer.cc
-index 4ba17336..d6c2e560 100644
---- a/src/gn/ninja_bundle_data_target_writer.cc
-+++ b/src/gn/ninja_bundle_data_target_writer.cc
-@@ -21,11 +21,14 @@ void NinjaBundleDataTargetWriter::Run() {
-         OutputFile(settings_->build_settings(), source_file));
-   }
- 
--  std::vector<OutputFile> input_deps = WriteInputDepsStampOrPhonyAndGetDep(
--      std::vector<const Target*>(), /*num_output_uses=*/1);
--  output_files.insert(output_files.end(), input_deps.begin(), input_deps.end());
-+  NinjaTargetWriter::InputDeps stamp_deps =
-+      WriteInputDepsStampOrPhonyAndGetDep(std::vector<const Target*>(),
-+                                          /*num_output_uses=*/1);
-+  std::vector<OutputFile> implicit_deps = stamp_deps.implicit;
-+  std::vector<OutputFile> order_only_deps = stamp_deps.order_only;
-+  output_files.insert(output_files.end(), implicit_deps.begin(),
-+                      implicit_deps.end());
- 
--  std::vector<OutputFile> order_only_deps;
-   for (const Target* data_dep : resolved().GetDataDeps(target_)) {
-     if (data_dep->has_dependency_output())
-       order_only_deps.push_back(data_dep->dependency_output());
 diff --git a/src/gn/ninja_c_binary_target_writer.cc b/src/gn/ninja_c_binary_target_writer.cc
-index c864bc09..fdc02b1d 100644
+index c864bc09..4f196453 100644
 --- a/src/gn/ninja_c_binary_target_writer.cc
 +++ b/src/gn/ninja_c_binary_target_writer.cc
 @@ -12,6 +12,7 @@
@@ -9102,20 +10117,7 @@ index c864bc09..fdc02b1d 100644
        GetModuleDepsInformation(target_, resolved());
  
    WriteCompilerVars(module_dep_info);
-@@ -103,8 +104,11 @@ void NinjaCBinaryTargetWriter::Run() {
-   // that also use PCH files won't have a phony target even though having
-   // one would make output ninja file size a bit lower. That's ok, binary
-   // targets with a single source are rare.
--  std::vector<OutputFile> order_only_deps = WriteInputDepsStampOrPhonyAndGetDep(
-+  NinjaTargetWriter::InputDeps stamp_deps = WriteInputDepsStampOrPhonyAndGetDep(
-       std::vector<const Target*>(), num_output_uses);
-+  input_deps.insert(input_deps.end(), stamp_deps.implicit.begin(),
-+                    stamp_deps.implicit.end());
-+  std::vector<OutputFile> order_only_deps = stamp_deps.order_only;
- 
-   // For GCC builds, the .gch files are not object files, but still need to be
-   // added as explicit dependencies below. The .gch output files are placed in
-@@ -134,7 +138,7 @@ void NinjaCBinaryTargetWriter::Run() {
+@@ -134,7 +135,7 @@ void NinjaCBinaryTargetWriter::Run() {
    std::vector<OutputFile>* stamp_files = &obj_files;  // default
    if (!target_->source_types_used().SwiftSourceUsed()) {
      WriteSources(*pch_files, input_deps, order_only_deps, module_dep_info,
@@ -9124,7 +10126,7 @@ index c864bc09..fdc02b1d 100644
    } else {
      stamp_files = &extra_files;  // Swift generates more than object files
      WriteSwiftSources(input_deps, order_only_deps, &obj_files, &extra_files);
-@@ -146,7 +150,6 @@ void NinjaCBinaryTargetWriter::Run() {
+@@ -146,7 +147,6 @@ void NinjaCBinaryTargetWriter::Run() {
      return;
  
    if (target_->output_type() == Target::SOURCE_SET) {
@@ -9132,7 +10134,7 @@ index c864bc09..fdc02b1d 100644
  #ifndef NDEBUG
      // Verify that the function that separately computes a source set's object
      // files match the object files just computed.
-@@ -156,13 +159,21 @@ void NinjaCBinaryTargetWriter::Run() {
+@@ -156,13 +156,21 @@ void NinjaCBinaryTargetWriter::Run() {
      for (const auto& obj : obj_files)
        DCHECK(computed_obj.Contains(obj));
  #endif
@@ -9155,7 +10157,7 @@ index c864bc09..fdc02b1d 100644
    const SubstitutionBits& subst = target_->toolchain()->substitution_bits();
  
    WriteCCompilerVars(subst, /*indent=*/false,
-@@ -189,7 +200,7 @@ void NinjaCBinaryTargetWriter::WriteModuleNameSubstitution() {
+@@ -189,7 +197,7 @@ void NinjaCBinaryTargetWriter::WriteModuleNameSubstitution() {
            &CSubstitutionModuleName)) {
      out_ << CSubstitutionModuleName.ninja_name << " = ";
      EscapeOptions options;
@@ -9164,7 +10166,7 @@ index c864bc09..fdc02b1d 100644
      EscapeStringToStream(out_, target_->module_name(), options);
      out_ << std::endl;
    }
-@@ -197,7 +208,7 @@ void NinjaCBinaryTargetWriter::WriteModuleNameSubstitution() {
+@@ -197,7 +205,7 @@ void NinjaCBinaryTargetWriter::WriteModuleNameSubstitution() {
  
  void NinjaCBinaryTargetWriter::WriteModuleDepsSubstitution(
      const Substitution* substitution,
@@ -9173,7 +10175,7 @@ index c864bc09..fdc02b1d 100644
      bool include_self) {
    if (target_->toolchain()->substitution_bits().used.count(substitution)) {
      EscapeOptions options;
-@@ -205,13 +216,7 @@ void NinjaCBinaryTargetWriter::WriteModuleDepsSubstitution(
+@@ -205,13 +213,7 @@ void NinjaCBinaryTargetWriter::WriteModuleDepsSubstitution(
  
      out_ << substitution->ninja_name << " =";
      for (const auto& module_dep : module_dep_info) {
@@ -9188,7 +10190,7 @@ index c864bc09..fdc02b1d 100644
      }
  
      out_ << std::endl;
-@@ -229,14 +234,14 @@ void NinjaCBinaryTargetWriter::WritePCHCommands(
+@@ -229,14 +231,14 @@ void NinjaCBinaryTargetWriter::WritePCHCommands(
    const CTool* tool_c = target_->toolchain()->GetToolAsC(CTool::kCToolCc);
    if (tool_c && tool_c->precompiled_header_type() != CTool::PCH_NONE &&
        target_->source_types_used().Get(SourceFile::SOURCE_C)) {
@@ -9205,7 +10207,7 @@ index c864bc09..fdc02b1d 100644
                      tool_cxx->precompiled_header_type(), input_deps,
                      order_only_deps, object_files, other_files);
    }
-@@ -244,7 +249,7 @@ void NinjaCBinaryTargetWriter::WritePCHCommands(
+@@ -244,7 +246,7 @@ void NinjaCBinaryTargetWriter::WritePCHCommands(
    const CTool* tool_objc = target_->toolchain()->GetToolAsC(CTool::kCToolObjC);
    if (tool_objc && tool_objc->precompiled_header_type() == CTool::PCH_GCC &&
        target_->source_types_used().Get(SourceFile::SOURCE_M)) {
@@ -9214,7 +10216,7 @@ index c864bc09..fdc02b1d 100644
                      tool_objc->precompiled_header_type(), input_deps,
                      order_only_deps, object_files, other_files);
    }
-@@ -253,7 +258,7 @@ void NinjaCBinaryTargetWriter::WritePCHCommands(
+@@ -253,7 +255,7 @@ void NinjaCBinaryTargetWriter::WritePCHCommands(
        target_->toolchain()->GetToolAsC(CTool::kCToolObjCxx);
    if (tool_objcxx && tool_objcxx->precompiled_header_type() == CTool::PCH_GCC &&
        target_->source_types_used().Get(SourceFile::SOURCE_MM)) {
@@ -9223,7 +10225,7 @@ index c864bc09..fdc02b1d 100644
                      tool_objcxx->precompiled_header_type(), input_deps,
                      order_only_deps, object_files, other_files);
    }
-@@ -261,7 +266,7 @@ void NinjaCBinaryTargetWriter::WritePCHCommands(
+@@ -261,7 +263,7 @@ void NinjaCBinaryTargetWriter::WritePCHCommands(
  
  void NinjaCBinaryTargetWriter::WritePCHCommand(
      const Substitution* flag_type,
@@ -9232,7 +10234,7 @@ index c864bc09..fdc02b1d 100644
      CTool::PrecompiledHeaderType header_type,
      const std::vector<OutputFile>& input_deps,
      const std::vector<OutputFile>& order_only_deps,
-@@ -269,11 +274,11 @@ void NinjaCBinaryTargetWriter::WritePCHCommand(
+@@ -269,11 +271,11 @@ void NinjaCBinaryTargetWriter::WritePCHCommand(
      std::vector<OutputFile>* other_files) {
    switch (header_type) {
      case CTool::PCH_MSVC:
@@ -9246,7 +10248,7 @@ index c864bc09..fdc02b1d 100644
                           other_files);
        break;
      case CTool::PCH_NONE:
-@@ -284,12 +289,13 @@ void NinjaCBinaryTargetWriter::WritePCHCommand(
+@@ -284,12 +286,13 @@ void NinjaCBinaryTargetWriter::WritePCHCommand(
  
  void NinjaCBinaryTargetWriter::WriteGCCPCHCommand(
      const Substitution* flag_type,
@@ -9261,7 +10263,7 @@ index c864bc09..fdc02b1d 100644
    GetPCHOutputFiles(target_, tool_name, &outputs);
    if (outputs.empty())
      return;
-@@ -302,7 +308,7 @@ void NinjaCBinaryTargetWriter::WriteGCCPCHCommand(
+@@ -302,7 +305,7 @@ void NinjaCBinaryTargetWriter::WriteGCCPCHCommand(
  
    // Build line to compile the file.
    WriteCompilerBuildLine({target_->config_values().precompiled_source()},
@@ -9270,7 +10272,7 @@ index c864bc09..fdc02b1d 100644
  
    // This build line needs a custom language-specific flags value. Rule-specific
    // variables are just indented underneath the rule line.
-@@ -340,13 +346,13 @@ void NinjaCBinaryTargetWriter::WriteGCCPCHCommand(
+@@ -340,13 +343,13 @@ void NinjaCBinaryTargetWriter::WriteGCCPCHCommand(
  
  void NinjaCBinaryTargetWriter::WriteWindowsPCHCommand(
      const Substitution* flag_type,
@@ -9286,7 +10288,7 @@ index c864bc09..fdc02b1d 100644
    if (outputs.empty())
      return;
  
-@@ -358,7 +364,7 @@ void NinjaCBinaryTargetWriter::WriteWindowsPCHCommand(
+@@ -358,7 +361,7 @@ void NinjaCBinaryTargetWriter::WriteWindowsPCHCommand(
  
    // Build line to compile the file.
    WriteCompilerBuildLine({target_->config_values().precompiled_source()},
@@ -9295,7 +10297,7 @@ index c864bc09..fdc02b1d 100644
  
    // This build line needs a custom language-specific flags value. Rule-specific
    // variables are just indented underneath the rule line.
-@@ -378,14 +384,28 @@ void NinjaCBinaryTargetWriter::WriteSources(
+@@ -378,14 +381,28 @@ void NinjaCBinaryTargetWriter::WriteSources(
      const std::vector<OutputFile>& pch_deps,
      const std::vector<OutputFile>& input_deps,
      const std::vector<OutputFile>& order_only_deps,
@@ -9325,7 +10327,7 @@ index c864bc09..fdc02b1d 100644
    for (const auto& source : target_->sources()) {
      DCHECK_NE(source.GetType(), SourceFile::SOURCE_SWIFT);
  
-@@ -431,11 +451,29 @@ void NinjaCBinaryTargetWriter::WriteSources(
+@@ -431,11 +448,29 @@ void NinjaCBinaryTargetWriter::WriteSources(
        }
  
        for (const auto& module_dep : module_dep_info) {
@@ -9358,7 +10360,7 @@ index c864bc09..fdc02b1d 100644
                               tool_outputs);
        WritePool(out_);
      }
-@@ -444,6 +482,14 @@ void NinjaCBinaryTargetWriter::WriteSources(
+@@ -444,6 +479,14 @@ void NinjaCBinaryTargetWriter::WriteSources(
      // output, but we'll only link to the first output.
      if (!source.IsModuleMapType()) {
        object_files->push_back(tool_outputs[0]);
@@ -9373,7 +10375,7 @@ index c864bc09..fdc02b1d 100644
      }
    }
  
-@@ -480,8 +526,7 @@ void NinjaCBinaryTargetWriter::WriteSwiftSources(
+@@ -480,8 +523,7 @@ void NinjaCBinaryTargetWriter::WriteSwiftSources(
  
    const Tool* tool = target_->swift_values().GetTool(target_);
    WriteCompilerBuildLine(target_->sources(), input_deps,
@@ -9383,7 +10385,7 @@ index c864bc09..fdc02b1d 100644
                           /*can_write_source_info=*/false,
                           /*restat_output_allowed=*/true);
  
-@@ -490,6 +535,12 @@ void NinjaCBinaryTargetWriter::WriteSwiftSources(
+@@ -490,6 +532,12 @@ void NinjaCBinaryTargetWriter::WriteSwiftSources(
  
  void NinjaCBinaryTargetWriter::WriteSourceSetStamp(
      const std::vector<OutputFile>& object_files) {
@@ -9396,18 +10398,16 @@ index c864bc09..fdc02b1d 100644
    // The stamp rule for source sets is generally not used, since targets that
    // depend on this will reference the object files directly. However, writing
    // this rule allows the user to type the name of the target and get a build
-@@ -504,11 +555,53 @@ void NinjaCBinaryTargetWriter::WriteSourceSetStamp(
-   std::vector<OutputFile> order_only_deps;
-   for (auto* dep : classified_deps.non_linkable_deps) {
-     if (dep->has_dependency_output()) {
+@@ -501,14 +549,48 @@ void NinjaCBinaryTargetWriter::WriteSourceSetStamp(
+   // instead.
+   DCHECK(classified_deps.extra_object_files.empty());
+ 
+-  std::vector<OutputFile> order_only_deps;
+-  for (auto* dep : classified_deps.non_linkable_deps) {
+-    if (dep->has_dependency_output()) {
 -      order_only_deps.push_back(dep->dependency_output());
-+      OutputFile dep_output = dep->dependency_output();
-+      if (dep->output_type() == Target::SOURCE_SET) {
-+        dep_output.value().append(".linkdeps");
-+      }
-+      order_only_deps.push_back(dep_output);
-+    }
-+  }
++  std::vector<OutputFile> order_only_deps =
++      GetOrderOnlyDepsFromNonLinkableDeps(classified_deps.non_linkable_deps);
 +
 +  // 1. Link-only phony target (.linkdeps) containing only object files.
 +  std::vector<OutputFile> link_files;
@@ -9452,7 +10452,7 @@ index c864bc09..fdc02b1d 100644
  }
  
  void NinjaCBinaryTargetWriter::WriteLinkerStuff(
-@@ -591,6 +684,12 @@ void NinjaCBinaryTargetWriter::WriteLinkerStuff(
+@@ -591,6 +673,12 @@ void NinjaCBinaryTargetWriter::WriteLinkerStuff(
    std::copy(input_deps.begin(), input_deps.end(),
              std::back_inserter(implicit_deps));
  
@@ -9465,7 +10465,7 @@ index c864bc09..fdc02b1d 100644
    // Any C++ target which depends on a Rust .rlib has to depend on its entire
    // tree of transitive rlibs found inside the linking target (which excludes
    // rlibs only depended on inside a shared library dependency).
-@@ -640,6 +739,8 @@ void NinjaCBinaryTargetWriter::WriteLinkerStuff(
+@@ -640,6 +728,8 @@ void NinjaCBinaryTargetWriter::WriteLinkerStuff(
    // to listing them again.
    WriteOrderOnlyDependencies(classified_deps.non_linkable_deps);
  
@@ -9474,7 +10474,7 @@ index c864bc09..fdc02b1d 100644
    // End of the link "build" line.
    out_ << std::endl;
  
-@@ -707,15 +808,14 @@ void NinjaCBinaryTargetWriter::WriteLibsList(
+@@ -707,15 +797,14 @@ void NinjaCBinaryTargetWriter::WriteLibsList(
  
  void NinjaCBinaryTargetWriter::WriteOrderOnlyDependencies(
      const UniqueVector<const Target*>& non_linkable_deps) {
@@ -9553,7 +10553,7 @@ index 3707f0eb..3353a1b9 100644
    void WriteSwiftSources(const std::vector<OutputFile>& input_deps,
                           const std::vector<OutputFile>& order_only_deps,
 diff --git a/src/gn/ninja_c_binary_target_writer_unittest.cc b/src/gn/ninja_c_binary_target_writer_unittest.cc
-index f324d533..161845c2 100644
+index f324d533..73ffbeb5 100644
 --- a/src/gn/ninja_c_binary_target_writer_unittest.cc
 +++ b/src/gn/ninja_c_binary_target_writer_unittest.cc
 @@ -9,6 +9,7 @@
@@ -9957,7 +10957,7 @@ index f324d533..161845c2 100644
    }
  
    // Make the dependent static library complete.
-@@ -304,7 +611,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, CompleteStaticLibrary) {
+@@ -304,10 +611,125 @@ TEST_F(NinjaCBinaryTargetWriterTest, CompleteStaticLibrary) {
          "  output_extension =\n"
          "  output_dir =\n";
      std::string out_str = out.str();
@@ -9966,7 +10966,125 @@ index f324d533..161845c2 100644
    }
  }
  
-@@ -369,7 +676,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, OutputExtensionAndInputDeps) {
++TEST_F(NinjaCBinaryTargetWriterTest, CompleteStaticLibraryWithRustDep) {
++  TestWithScope setup;
++  Err err;
++
++  Target rust_lib(setup.settings(), setup.ParseLabel("//foo:rust_lib"));
++  rust_lib.set_output_type(Target::RUST_LIBRARY);
++  rust_lib.visibility().SetPublic();
++  rust_lib.sources().push_back(SourceFile("//foo/lib.rs"));
++  rust_lib.source_types_used().Set(SourceFile::SOURCE_RS);
++  rust_lib.rust_values().crate_name() = "rust_lib";
++  SourceFile crate_root("//foo/lib.rs");
++  rust_lib.rust_values().set_crate_root(crate_root);
++  rust_lib.SetToolchain(setup.toolchain());
++  ASSERT_TRUE(rust_lib.OnResolved(&err));
++
++  TestTarget target(setup, "//foo:bar", Target::STATIC_LIBRARY);
++  target.sources().push_back(SourceFile("//foo/input1.cc"));
++  target.source_types_used().Set(SourceFile::SOURCE_CPP);
++  target.set_complete_static_lib(true);
++  target.public_deps().push_back(LabelTargetPair(&rust_lib));
++
++  ASSERT_TRUE(target.OnResolved(&err));
++
++  std::ostringstream out;
++  NinjaCBinaryTargetWriter writer(&target, out);
++  writer.Run();
++
++  const char expected[] =
++      "defines =\n"
++      "include_dirs =\n"
++      "cflags =\n"
++      "cflags_cc =\n"
++      "root_out_dir = .\n"
++      "target_gen_dir = gen/foo\n"
++      "target_out_dir = obj/foo\n"
++      "target_output_name = libbar\n"
++      "\n"
++      "build obj/foo/libbar.input1.o: cxx ../../foo/input1.cc\n"
++      "  source_file_part = input1.cc\n"
++      "  source_name_part = input1\n"
++      "\n"
++      "build obj/foo/libbar.a: alink obj/foo/libbar.input1.o | "
++      "obj/foo/librust_lib.rlib\n"
++      "  arflags =\n"
++      "  output_extension =\n"
++      "  output_dir =\n"
++      "  rlibs = obj/foo/librust_lib.rlib\n";
++  std::string out_str = out.str();
++  EXPECT_EQ(expected, out_str);
++}
++
++TEST_F(NinjaCBinaryTargetWriterTest,
++       CompleteStaticLibraryWithRustDepPropagation) {
++  TestWithScope setup;
++  Err err;
++
++  Target rust_lib(setup.settings(), setup.ParseLabel("//foo:rust_lib"));
++  rust_lib.set_output_type(Target::RUST_LIBRARY);
++  rust_lib.visibility().SetPublic();
++  rust_lib.sources().push_back(SourceFile("//foo/lib.rs"));
++  rust_lib.source_types_used().Set(SourceFile::SOURCE_RS);
++  rust_lib.rust_values().crate_name() = "rust_lib";
++  SourceFile crate_root("//foo/lib.rs");
++  rust_lib.rust_values().set_crate_root(crate_root);
++  rust_lib.SetToolchain(setup.toolchain());
++  ASSERT_TRUE(rust_lib.OnResolved(&err));
++
++  Target c_lib(setup.settings(), setup.ParseLabel("//foo:c_lib"));
++  c_lib.set_output_type(Target::STATIC_LIBRARY);
++  c_lib.visibility().SetPublic();
++  c_lib.sources().push_back(SourceFile("//foo/lib.cc"));
++  c_lib.source_types_used().Set(SourceFile::SOURCE_CPP);
++  c_lib.set_complete_static_lib(true);
++  c_lib.public_deps().push_back(LabelTargetPair(&rust_lib));
++  c_lib.SetToolchain(setup.toolchain());
++  ASSERT_TRUE(c_lib.OnResolved(&err));
++
++  TestTarget target(setup, "//foo:main", Target::EXECUTABLE);
++  target.sources().push_back(SourceFile("//foo/main.cc"));
++  target.source_types_used().Set(SourceFile::SOURCE_CPP);
++  target.private_deps().push_back(LabelTargetPair(&c_lib));
++
++  ASSERT_TRUE(target.OnResolved(&err));
++
++  std::ostringstream out;
++  NinjaCBinaryTargetWriter writer(&target, out);
++  writer.Run();
++
++  const char expected[] =
++      "defines =\n"
++      "include_dirs =\n"
++      "cflags =\n"
++      "cflags_cc =\n"
++      "root_out_dir = .\n"
++      "target_gen_dir = gen/foo\n"
++      "target_out_dir = obj/foo\n"
++      "target_output_name = main\n"
++      "\n"
++      "build obj/foo/main.main.o: cxx ../../foo/main.cc\n"
++      "  source_file_part = main.cc\n"
++      "  source_name_part = main\n"
++      "\n"
++      "build ./main: link obj/foo/main.main.o obj/foo/libc_lib.a | "
++      "obj/foo/librust_lib.rlib\n"
++      "  ldflags =\n"
++      "  libs =\n"
++      "  frameworks =\n"
++      "  swiftmodules =\n"
++      "  output_extension =\n"
++      "  output_dir =\n"
++      "  rlibs = obj/foo/librust_lib.rlib\n";
++  std::string out_str = out.str();
++  EXPECT_EQ(expected, out_str);
++}
++
+ // This tests that output extension and output dir overrides apply, and input
+ // dependencies are applied.
+ TEST_F(NinjaCBinaryTargetWriterTest, OutputExtensionAndInputDeps) {
+@@ -369,7 +791,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, OutputExtensionAndInputDeps) {
        "  output_dir = foo\n";
  
    std::string out_str = out.str();
@@ -9975,7 +11093,7 @@ index f324d533..161845c2 100644
  }
  
  TEST_F(NinjaCBinaryTargetWriterTest, NoHardDepsToNoPublicHeaderTarget) {
-@@ -420,10 +727,12 @@ TEST_F(NinjaCBinaryTargetWriterTest, NoHardDepsToNoPublicHeaderTarget) {
+@@ -420,10 +842,12 @@ TEST_F(NinjaCBinaryTargetWriterTest, NoHardDepsToNoPublicHeaderTarget) {
        "  source_file_part = generated.cc\n"
        "  source_name_part = generated\n"
        "\n"
@@ -9990,7 +11108,7 @@ index f324d533..161845c2 100644
  
    std::string obj_str = obj_out.str();
    EXPECT_EQ(std::string(obj_expected), obj_str);
-@@ -457,7 +766,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, NoHardDepsToNoPublicHeaderTarget) {
+@@ -457,7 +881,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, NoHardDepsToNoPublicHeaderTarget) {
        // The order-only dependency here is strictly unnecessary since
        // obj/out/Debug/gen_obj.generated.o has dependency to
        // obj/foo/gen_obj.stamp
@@ -9999,7 +11117,7 @@ index f324d533..161845c2 100644
        "  ldflags =\n"
        "  libs =\n"
        "  frameworks =\n"
-@@ -555,7 +864,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, LibsAndLibDirs) {
+@@ -555,7 +979,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, LibsAndLibDirs) {
        "  output_dir =\n";
  
    std::string out_str = out.str();
@@ -10008,7 +11126,7 @@ index f324d533..161845c2 100644
  }
  
  // Tests frameworks are applied.
-@@ -621,7 +930,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, FrameworksAndFrameworkDirs) {
+@@ -621,7 +1045,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, FrameworksAndFrameworkDirs) {
        "  output_dir =\n";
  
    std::string out_str = out.str();
@@ -10017,7 +11135,7 @@ index f324d533..161845c2 100644
  }
  
  TEST_F(NinjaCBinaryTargetWriterTest, EmptyOutputExtension) {
-@@ -673,7 +982,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, EmptyOutputExtension) {
+@@ -673,7 +1097,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, EmptyOutputExtension) {
        "  output_dir =\n";
  
    std::string out_str = out.str();
@@ -10026,7 +11144,7 @@ index f324d533..161845c2 100644
  }
  
  TEST_F(NinjaCBinaryTargetWriterTest, SourceSetDataDeps) {
-@@ -719,8 +1028,9 @@ TEST_F(NinjaCBinaryTargetWriterTest, SourceSetDataDeps) {
+@@ -719,8 +1143,9 @@ TEST_F(NinjaCBinaryTargetWriterTest, SourceSetDataDeps) {
        "  source_file_part = inter.cc\n"
        "  source_name_part = inter\n"
        "\n"
@@ -10038,7 +11156,7 @@ index f324d533..161845c2 100644
    EXPECT_EQ(inter_expected, inter_out.str());
  
    // Final target.
-@@ -756,7 +1066,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, SourceSetDataDeps) {
+@@ -756,7 +1181,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, SourceSetDataDeps) {
        "  source_name_part = final\n"
        "\n"
        "build ./exe: link obj/foo/exe.final.o obj/foo/inter.inter.o || "
@@ -10047,7 +11165,7 @@ index f324d533..161845c2 100644
        "  ldflags =\n"
        "  libs =\n"
        "  frameworks =\n"
-@@ -958,9 +1268,11 @@ TEST_F(NinjaCBinaryTargetWriterTest, WinPrecompiledHeaders) {
+@@ -958,9 +1383,11 @@ TEST_F(NinjaCBinaryTargetWriterTest, WinPrecompiledHeaders) {
          "  source_file_part = input2.c\n"
          "  source_name_part = input2\n"
          "\n"
@@ -10061,7 +11179,7 @@ index f324d533..161845c2 100644
      EXPECT_EQ(no_pch_expected, out.str());
    }
  
-@@ -1020,12 +1332,14 @@ TEST_F(NinjaCBinaryTargetWriterTest, WinPrecompiledHeaders) {
+@@ -1020,12 +1447,14 @@ TEST_F(NinjaCBinaryTargetWriterTest, WinPrecompiledHeaders) {
          "  source_file_part = input2.c\n"
          "  source_name_part = input2\n"
          "\n"
@@ -10078,7 +11196,7 @@ index f324d533..161845c2 100644
      EXPECT_EQ(pch_win_expected, out.str());
    }
  }
-@@ -1104,9 +1418,11 @@ TEST_F(NinjaCBinaryTargetWriterTest, GCCPrecompiledHeaders) {
+@@ -1104,9 +1533,11 @@ TEST_F(NinjaCBinaryTargetWriterTest, GCCPrecompiledHeaders) {
          "  source_file_part = input2.c\n"
          "  source_name_part = input2\n"
          "\n"
@@ -10092,7 +11210,7 @@ index f324d533..161845c2 100644
      EXPECT_EQ(no_pch_expected, out.str());
    }
  
-@@ -1164,11 +1480,12 @@ TEST_F(NinjaCBinaryTargetWriterTest, GCCPrecompiledHeaders) {
+@@ -1164,11 +1595,12 @@ TEST_F(NinjaCBinaryTargetWriterTest, GCCPrecompiledHeaders) {
          "  source_file_part = input2.c\n"
          "  source_name_part = input2\n"
          "\n"
@@ -10109,7 +11227,7 @@ index f324d533..161845c2 100644
    }
  }
  
-@@ -1236,8 +1553,9 @@ TEST_F(NinjaCBinaryTargetWriterTest, InputFiles) {
+@@ -1236,8 +1668,9 @@ TEST_F(NinjaCBinaryTargetWriterTest, InputFiles) {
          "  source_file_part = input2.cc\n"
          "  source_name_part = input2\n"
          "\n"
@@ -10121,7 +11239,7 @@ index f324d533..161845c2 100644
  
      EXPECT_EQ(expected, out.str());
    }
-@@ -1313,8 +1631,9 @@ TEST_F(NinjaCBinaryTargetWriterTest, InputFiles) {
+@@ -1313,8 +1746,9 @@ TEST_F(NinjaCBinaryTargetWriterTest, InputFiles) {
          "  source_file_part = input2.cc\n"
          "  source_name_part = input2\n"
          "\n"
@@ -10133,7 +11251,7 @@ index f324d533..161845c2 100644
  
      EXPECT_EQ(expected, out.str());
    }
-@@ -1368,8 +1687,9 @@ TEST_F(NinjaCBinaryTargetWriterTest, InputFiles) {
+@@ -1368,8 +1802,9 @@ TEST_F(NinjaCBinaryTargetWriterTest, InputFiles) {
          "  source_file_part = input2.cc\n"
          "  source_name_part = input2\n"
          "\n"
@@ -10145,7 +11263,7 @@ index f324d533..161845c2 100644
  
      EXPECT_EQ(expected, out.str());
    }
-@@ -1427,7 +1747,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, RustStaticLib) {
+@@ -1427,7 +1862,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, RustStaticLib) {
        "  output_dir =\n";
  
    std::string out_str = out.str();
@@ -10154,7 +11272,7 @@ index f324d533..161845c2 100644
  }
  
  // Test linking of Rust dependencies into C targets.
-@@ -1602,8 +1922,8 @@ TEST_F(NinjaCBinaryTargetWriterTest, RlibInLibrary) {
+@@ -1602,8 +2037,8 @@ TEST_F(NinjaCBinaryTargetWriterTest, RlibInLibrary) {
        "obj/dylib/libdylib.so | "
        "obj/pub_in_staticlib/libpub_in_staticlib.rlib "
        "obj/priv_in_staticlib/libpriv_in_staticlib.rlib || "
@@ -10165,7 +11283,7 @@ index f324d533..161845c2 100644
        "  ldflags =\n"
        "  libs =\n"
        "  frameworks =\n"
-@@ -1614,7 +1934,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, RlibInLibrary) {
+@@ -1614,7 +2049,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, RlibInLibrary) {
        "obj/priv_in_staticlib/libpriv_in_staticlib.rlib\n";
  
    std::string out_str = out.str();
@@ -10174,7 +11292,7 @@ index f324d533..161845c2 100644
  }
  
  // Test linking of Rust dependencies into C targets. Proc-macro dependencies are
-@@ -1781,7 +2101,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, RlibsWithProcMacros) {
+@@ -1781,7 +2216,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, RlibsWithProcMacros) {
        "obj/pub_in_procmacro_and_rlib/libpub_in_procmacro_and_rlib.rlib\n";
  
    std::string out_str = out.str();
@@ -10183,7 +11301,7 @@ index f324d533..161845c2 100644
  }
  
  // Test linking of Rust dependencies into C targets.
-@@ -1849,7 +2169,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, ProcMacroInRustStaticLib) {
+@@ -1849,7 +2284,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, ProcMacroInRustStaticLib) {
        "  output_dir =\n";
  
    std::string out_str = out.str();
@@ -10192,7 +11310,7 @@ index f324d533..161845c2 100644
  }
  
  TEST_F(NinjaCBinaryTargetWriterTest, RustDepsOverDynamicLinking) {
-@@ -1954,7 +2274,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, RustDepsOverDynamicLinking) {
+@@ -1954,7 +2389,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, RustDepsOverDynamicLinking) {
        "  rlibs = obj/near/libnear.rlib\n";
  
    std::string out_str = out.str();
@@ -10201,7 +11319,7 @@ index f324d533..161845c2 100644
  }
  
  TEST_F(NinjaCBinaryTargetWriterTest, LinkingWithRustLibraryDepsOnCdylib) {
-@@ -2052,7 +2372,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, LinkingWithRustLibraryDepsOnCdylib) {
+@@ -2052,7 +2487,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, LinkingWithRustLibraryDepsOnCdylib) {
        "  rlibs = obj/rlib/librlib.rlib\n";
  
    std::string out_str = out.str();
@@ -10210,7 +11328,7 @@ index f324d533..161845c2 100644
  }
  
  TEST_F(NinjaCBinaryTargetWriterTest, LinkingWithRustLibraryDepsOnDylib) {
-@@ -2150,7 +2470,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, LinkingWithRustLibraryDepsOnDylib) {
+@@ -2150,7 +2585,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, LinkingWithRustLibraryDepsOnDylib) {
        "  rlibs = obj/rlib/librlib.rlib\n";
  
    std::string out_str = out.str();
@@ -10219,7 +11337,7 @@ index f324d533..161845c2 100644
  }
  
  // Verify dependencies of a shared library and a rust library are inherited
-@@ -2259,7 +2579,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, RustLibAfterSharedLib) {
+@@ -2259,7 +2694,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, RustLibAfterSharedLib) {
        "  rlibs = obj/rlib2/libmyrlib2.rlib\n";
  
    std::string out_str = out.str();
@@ -10228,7 +11346,7 @@ index f324d533..161845c2 100644
  }
  
  TEST_F(NinjaCBinaryTargetWriterTest, ModuleMapInStaticLibrary) {
-@@ -2271,6 +2591,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, ModuleMapInStaticLibrary) {
+@@ -2271,6 +2706,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, ModuleMapInStaticLibrary) {
    target.sources().push_back(SourceFile("//foo/bar.modulemap"));
    target.source_types_used().Set(SourceFile::SOURCE_CPP);
    target.source_types_used().Set(SourceFile::SOURCE_MODULEMAP);
@@ -10236,7 +11354,7 @@ index f324d533..161845c2 100644
    ASSERT_TRUE(target.OnResolved(&err));
  
    std::ostringstream out;
-@@ -2300,7 +2621,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, ModuleMapInStaticLibrary) {
+@@ -2300,7 +2736,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, ModuleMapInStaticLibrary) {
        "  output_extension =\n"
        "  output_dir =\n";
    std::string out_str = out.str();
@@ -10245,7 +11363,7 @@ index f324d533..161845c2 100644
  }
  
  TEST_F(NinjaCBinaryTargetWriterTest, ModuleMapInSourceSet) {
-@@ -2312,6 +2633,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, ModuleMapInSourceSet) {
+@@ -2312,6 +2748,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, ModuleMapInSourceSet) {
    target.sources().push_back(SourceFile("//foo/bar.modulemap"));
    target.source_types_used().Set(SourceFile::SOURCE_CPP);
    target.source_types_used().Set(SourceFile::SOURCE_MODULEMAP);
@@ -10253,7 +11371,7 @@ index f324d533..161845c2 100644
    ASSERT_TRUE(target.OnResolved(&err));
  
    std::ostringstream out;
-@@ -2336,9 +2658,10 @@ TEST_F(NinjaCBinaryTargetWriterTest, ModuleMapInSourceSet) {
+@@ -2336,9 +2773,10 @@ TEST_F(NinjaCBinaryTargetWriterTest, ModuleMapInSourceSet) {
        "  source_file_part = bar.modulemap\n"
        "  source_name_part = bar\n"
        "\n"
@@ -10266,7 +11384,7 @@ index f324d533..161845c2 100644
  }
  
  // Test linking of targets containing Swift modules.
-@@ -2376,12 +2699,12 @@ TEST_F(NinjaCBinaryTargetWriterTest, SwiftModule) {
+@@ -2376,12 +2814,12 @@ TEST_F(NinjaCBinaryTargetWriterTest, SwiftModule) {
          "obj/foo/file2.o: swift ../../foo/file1.swift ../../foo/file2.swift\n"
          "  restat = 1\n"
          "\n"
@@ -10283,7 +11401,7 @@ index f324d533..161845c2 100644
    }
  
    // Swift module_dirs correctly set if dependency between Swift modules.
-@@ -2414,12 +2737,13 @@ TEST_F(NinjaCBinaryTargetWriterTest, SwiftModule) {
+@@ -2414,12 +2852,13 @@ TEST_F(NinjaCBinaryTargetWriterTest, SwiftModule) {
          "../../bar/bar.swift || phony/foo/foo\n"
          "  restat = 1\n"
          "\n"
@@ -10301,14 +11419,14 @@ index f324d533..161845c2 100644
    }
  
    // Swift module_dirs correctly set if dependency between Swift modules,
-@@ -2460,12 +2784,13 @@ TEST_F(NinjaCBinaryTargetWriterTest, SwiftModule) {
+@@ -2460,12 +2899,13 @@ TEST_F(NinjaCBinaryTargetWriterTest, SwiftModule) {
          "../../bar/bar.swift || phony/bar/group phony/foo/foo\n"
          "  restat = 1\n"
          "\n"
 -        "build phony/bar/bar: phony"
 -        " gen/bar/bar.h obj/bar/Bar.swiftmodule obj/bar/bar.o "
 -        "|| phony/bar/group phony/foo/foo\n";
-+        "build phony/bar/bar.linkdeps: phony obj/bar/bar.o || phony/bar/group "
++        "build phony/bar/bar.linkdeps: phony obj/bar/bar.o || "
 +        "phony/foo/foo.linkdeps\n"
 +        "build phony/bar/bar: phony phony/bar/bar.linkdeps gen/bar/bar.h "
 +        "obj/bar/Bar.swiftmodule\n";
@@ -10319,7 +11437,7 @@ index f324d533..161845c2 100644
    }
  
    // C target links with module.
-@@ -2492,7 +2817,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, SwiftModule) {
+@@ -2492,7 +2932,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, SwiftModule) {
          "\n"
          "build ./bar: link obj/foo/file1.o obj/foo/file2.o "
          "| obj/foo/Foo.swiftmodule "
@@ -10328,7 +11446,7 @@ index f324d533..161845c2 100644
          "  ldflags =\n"
          "  libs =\n"
          "  frameworks =\n"
-@@ -2501,7 +2826,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, SwiftModule) {
+@@ -2501,7 +2941,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, SwiftModule) {
          "  output_dir =\n";
  
      const std::string out_str = out.str();
@@ -10337,7 +11455,7 @@ index f324d533..161845c2 100644
    }
  }
  
-@@ -2572,6 +2897,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, DependOnModule) {
+@@ -2572,6 +3012,7 @@ TEST_F(NinjaCBinaryTargetWriterTest, DependOnModule) {
    target.sources().push_back(SourceFile("//blah/a.h"));
    target.source_types_used().Set(SourceFile::SOURCE_CPP);
    target.source_types_used().Set(SourceFile::SOURCE_MODULEMAP);
@@ -10345,7 +11463,7 @@ index f324d533..161845c2 100644
    target.SetToolchain(&module_toolchain);
    ASSERT_TRUE(target.OnResolved(&err));
  
-@@ -2586,8 +2912,8 @@ include_dirs =
+@@ -2586,8 +3027,8 @@ include_dirs =
  cflags =
  cflags_cc =
  cc_module_name = blah_a
@@ -10356,7 +11474,7 @@ index f324d533..161845c2 100644
  root_out_dir = withmodules
  target_out_dir = obj/blah
  target_output_name = liba
-@@ -2606,10 +2932,12 @@ build obj/blah/liba.a: alink obj/blah/liba.a.o
+@@ -2606,10 +3047,12 @@ build obj/blah/liba.a: alink obj/blah/liba.a.o
  )";
  
      std::string out_str = out.str();
@@ -10371,7 +11489,7 @@ index f324d533..161845c2 100644
    target2.set_output_type(Target::STATIC_LIBRARY);
    target2.visibility().SetPublic();
    target2.sources().push_back(SourceFile("//stuff/b.modulemap"));
-@@ -2617,6 +2945,7 @@ build obj/blah/liba.a: alink obj/blah/liba.a.o
+@@ -2617,6 +3060,7 @@ build obj/blah/liba.a: alink obj/blah/liba.a.o
    target2.sources().push_back(SourceFile("//stuff/b.h"));
    target2.source_types_used().Set(SourceFile::SOURCE_CPP);
    target2.source_types_used().Set(SourceFile::SOURCE_MODULEMAP);
@@ -10379,7 +11497,7 @@ index f324d533..161845c2 100644
    target2.public_deps().push_back(LabelTargetPair(&target));
    target2.SetToolchain(&module_toolchain);
    ASSERT_TRUE(target2.OnResolved(&err));
-@@ -2631,9 +2960,9 @@ build obj/blah/liba.a: alink obj/blah/liba.a.o
+@@ -2631,9 +3075,9 @@ build obj/blah/liba.a: alink obj/blah/liba.a.o
  include_dirs =
  cflags =
  cflags_cc =
@@ -10392,7 +11510,7 @@ index f324d533..161845c2 100644
  root_out_dir = withmodules
  target_out_dir = obj/stuff
  target_output_name = libb
-@@ -2641,7 +2970,7 @@ target_output_name = libb
+@@ -2641,7 +3085,7 @@ target_output_name = libb
  build obj/stuff/libb.b.pcm: cxx_module ../../stuff/b.modulemap | obj/blah/liba.a.pcm
    source_file_part = b.modulemap
    source_name_part = b
@@ -10401,7 +11519,7 @@ index f324d533..161845c2 100644
    source_file_part = b.cc
    source_name_part = b
  
-@@ -2652,14 +2981,17 @@ build obj/stuff/libb.a: alink obj/stuff/libb.b.o || obj/blah/liba.a
+@@ -2652,14 +3096,17 @@ build obj/stuff/libb.a: alink obj/stuff/libb.b.o || obj/blah/liba.a
  )";
  
      std::string out_str = out.str();
@@ -10421,7 +11539,7 @@ index f324d533..161845c2 100644
    target3.public_deps().push_back(LabelTargetPair(&target2));
    target3.SetToolchain(&module_toolchain);
    ASSERT_TRUE(target3.OnResolved(&err));
-@@ -2675,14 +3007,14 @@ build obj/stuff/libb.a: alink obj/stuff/libb.b.o || obj/blah/liba.a
+@@ -2675,14 +3122,14 @@ build obj/stuff/libb.a: alink obj/stuff/libb.b.o || obj/blah/liba.a
  include_dirs =
  cflags =
  cflags_cc =
@@ -10440,7 +11558,7 @@ index f324d533..161845c2 100644
    source_file_part = c.modulemap
    source_name_part = c
  
-@@ -2693,10 +3025,12 @@ build obj/things/libc.a: alink || obj/stuff/libb.a obj/blah/liba.a
+@@ -2693,10 +3140,12 @@ build obj/things/libc.a: alink || obj/stuff/libb.a obj/blah/liba.a
  )";
  
      std::string out_str = out.str();
@@ -10455,7 +11573,7 @@ index f324d533..161845c2 100644
    depender.set_output_type(Target::EXECUTABLE);
    depender.sources().push_back(SourceFile("//zap/x.cc"));
    depender.sources().push_back(SourceFile("//zap/y.cc"));
-@@ -2715,17 +3049,17 @@ build obj/things/libc.a: alink || obj/stuff/libb.a obj/blah/liba.a
+@@ -2715,17 +3164,17 @@ build obj/things/libc.a: alink || obj/stuff/libb.a obj/blah/liba.a
  include_dirs =
  cflags =
  cflags_cc =
@@ -10478,7 +11596,7 @@ index f324d533..161845c2 100644
    source_file_part = y.cc
    source_name_part = y
  
-@@ -2739,7 +3073,7 @@ build withmodules/c: link obj/zap/c.x.o obj/zap/c.y.o obj/stuff/libb.a obj/blah/
+@@ -2739,7 +3188,7 @@ build withmodules/c: link obj/zap/c.x.o obj/zap/c.y.o obj/stuff/libb.a obj/blah/
  )";
  
      std::string out_str = out.str();
@@ -10487,7 +11605,7 @@ index f324d533..161845c2 100644
    }
  }
  
-@@ -2799,7 +3133,7 @@ build ./main: link obj/launchpad/main.main.o | ./Space$ Cadet.so.TOC
+@@ -2799,7 +3248,7 @@ build ./main: link obj/launchpad/main.main.o | ./Space$ Cadet.so.TOC
  #endif
  
    std::string out_str = out.str();
@@ -10496,7 +11614,7 @@ index f324d533..161845c2 100644
  }
  
  TEST_F(NinjaCBinaryTargetWriterTest, Pool) {
-@@ -2845,5 +3179,300 @@ TEST_F(NinjaCBinaryTargetWriterTest, Pool) {
+@@ -2845,5 +3294,376 @@ TEST_F(NinjaCBinaryTargetWriterTest, Pool) {
        "  output_dir =\n"
        "  pool = foo_pool\n";
    std::string out_str = out.str();
@@ -10797,66 +11915,99 @@ index f324d533..161845c2 100644
 +      "build phony/foo/root: phony phony/foo/root.linkdeps\n";
 +
 +  EXPECT_EQ(expected_root_ninja, root_ninja_str);
++}
++
++TEST_F(NinjaCBinaryTargetWriterTest,
++       SourceSetToGroupToSourceSetWithAdditionalOutputs) {
++  Err err;
++  TestWithScope setup;
++
++  Value outputs_value(nullptr, Value::LIST);
++  outputs_value.list_value().push_back(
++      Value(nullptr, "{{target_out_dir}}/{{source_name_part}}.dwo"));
++
++  Config config(setup.settings(), Label(SourceDir("//foo/"), "split_dwarf"));
++  config.visibility().SetPublic();
++
++  std::vector<SubstitutionPattern> patterns;
++  for (const auto& v : outputs_value.list_value()) {
++    SubstitutionPattern pattern;
++    ASSERT_TRUE(pattern.Parse(v, &err));
++    patterns.push_back(std::move(pattern));
++  }
++  config.own_values().c_additional_outputs() = std::move(patterns);
++  ASSERT_TRUE(config.OnResolved(&err));
++
++  // Source set B (dependee)
++  Target target_b(setup.settings(), Label(SourceDir("//foo/"), "b"));
++  target_b.set_output_type(Target::SOURCE_SET);
++  target_b.sources().push_back(SourceFile("//foo/b.cc"));
++  target_b.source_types_used().Set(SourceFile::SOURCE_CPP);
++  target_b.visibility().SetPublic();
++  target_b.configs().push_back(LabelConfigPair(&config));
++  target_b.SetToolchain(setup.toolchain());
++  ASSERT_TRUE(target_b.OnResolved(&err)) << err.message();
++
++  // Group G (middle)
++  Target target_g(setup.settings(), Label(SourceDir("//foo/"), "g"));
++  target_g.set_output_type(Target::GROUP);
++  target_g.visibility().SetPublic();
++  target_g.private_deps().push_back(LabelTargetPair(&target_b));
++  target_g.SetToolchain(setup.toolchain());
++  ASSERT_TRUE(target_g.OnResolved(&err)) << err.message();
++
++  // Source set A (depender on G)
++  Target target_a(setup.settings(), Label(SourceDir("//foo/"), "a"));
++  target_a.set_output_type(Target::SOURCE_SET);
++  target_a.sources().push_back(SourceFile("//foo/a.cc"));
++  target_a.source_types_used().Set(SourceFile::SOURCE_CPP);
++  target_a.private_deps().push_back(LabelTargetPair(&target_g));
++  target_a.SetToolchain(setup.toolchain());
++  ASSERT_TRUE(target_a.OnResolved(&err)) << err.message();
++
++  // Verify A's output
++  {
++    std::ostringstream out;
++    NinjaCBinaryTargetWriter writer(&target_a, out);
++    writer.Run();
++
++    const char expected[] =
++        "defines =\n"
++        "include_dirs =\n"
++        "cflags =\n"
++        "cflags_cc =\n"
++        "root_out_dir = .\n"
++        "target_gen_dir = gen/foo\n"
++        "target_out_dir = obj/foo\n"
++        "target_output_name = a\n"
++        "\n"
++        "build obj/foo/a.a.o: cxx ../../foo/a.cc\n"
++        "  source_file_part = a.cc\n"
++        "  source_name_part = a\n"
++        "\n"
++        "build phony/foo/a.linkdeps: phony obj/foo/a.a.o"
++        " || phony/foo/b.linkdeps\n"
++        "build phony/foo/a: phony phony/foo/a.linkdeps\n";
++
++    EXPECT_EQ(expected, out.str());
++  }
  }
 diff --git a/src/gn/ninja_copy_target_writer.cc b/src/gn/ninja_copy_target_writer.cc
-index 47657c0d..16fca067 100644
+index 47657c0d..0952c6ff 100644
 --- a/src/gn/ninja_copy_target_writer.cc
 +++ b/src/gn/ninja_copy_target_writer.cc
-@@ -72,13 +72,14 @@ void NinjaCopyTargetWriter::WriteCopyRules(
-       GetNinjaRulePrefixForToolchain(settings_) + GeneralTool::kGeneralToolCopy;
- 
-   size_t num_output_uses = target_->sources().size();
--  std::vector<OutputFile> input_deps = WriteInputDepsStampOrPhonyAndGetDep(
-+  NinjaTargetWriter::InputDeps stamp_deps = WriteInputDepsStampOrPhonyAndGetDep(
-       std::vector<const Target*>(), num_output_uses);
-+  std::vector<OutputFile> implicit_deps = stamp_deps.implicit;
-+  std::vector<OutputFile> order_only_deps = stamp_deps.order_only;
- 
--  std::vector<OutputFile> data_outs;
-   for (const Target* data_dep : resolved().GetDataDeps(target_)) {
-     if (data_dep->has_dependency_output())
--      data_outs.push_back(data_dep->dependency_output());
-+      order_only_deps.push_back(data_dep->dependency_output());
-   }
- 
-   // Note that we don't write implicit deps for copy steps. "copy" only
-@@ -119,11 +120,15 @@ void NinjaCopyTargetWriter::WriteCopyRules(
- 
-     out_ << ": " << tool_name << " ";
-     path_output_.WriteFile(out_, input_file);
--    if (!input_deps.empty() || !data_outs.empty()) {
-+    if (!implicit_deps.empty()) {
-+      out_ << " |";
-+      path_output_.WriteFiles(out_, implicit_deps);
-+    }
-+    if (!order_only_deps.empty()) {
-       out_ << " ||";
--      path_output_.WriteFiles(out_, input_deps);
--      path_output_.WriteFiles(out_, data_outs);
-+      path_output_.WriteFiles(out_, order_only_deps);
+@@ -124,6 +124,7 @@ void NinjaCopyTargetWriter::WriteCopyRules(
+       path_output_.WriteFiles(out_, input_deps);
+       path_output_.WriteFiles(out_, data_outs);
      }
 +    WriteValidations();
      out_ << std::endl;
    }
  }
 diff --git a/src/gn/ninja_copy_target_writer_unittest.cc b/src/gn/ninja_copy_target_writer_unittest.cc
-index e094f80a..6fc5e438 100644
+index e094f80a..da7da59f 100644
 --- a/src/gn/ninja_copy_target_writer_unittest.cc
 +++ b/src/gn/ninja_copy_target_writer_unittest.cc
-@@ -208,10 +208,10 @@ TEST(NinjaCopyTargetWriter, NoSourcesInOutputs) {
-     writer.Run();
- 
-     const char expected_linux[] =
--        "build phony/foo/bar.inputdeps: phony phony/foo/action1 "
-+        "build phony/foo/bar.inputdeps: phony || phony/foo/action1 "
-         "phony/foo/action2\n"
--        "build action1.copy: copy action1.out || phony/foo/bar.inputdeps\n"
--        "build action2.copy: copy action2.out || phony/foo/bar.inputdeps\n"
-+        "build action1.copy: copy action1.out | phony/foo/bar.inputdeps\n"
-+        "build action2.copy: copy action2.out | phony/foo/bar.inputdeps\n"
-         "\n"
-         "build phony/foo/bar: phony action1.copy action2.copy\n";
-     std::string out_str = out.str();
 @@ -223,3 +223,38 @@ TEST(NinjaCopyTargetWriter, NoSourcesInOutputs) {
      EXPECT_EQ(ninja_outputs[2].value(), "phony/foo/bar");
    }
@@ -10896,229 +12047,11 @@ index e094f80a..6fc5e438 100644
 +  std::string out_str = out.str();
 +  EXPECT_EQ(expected_linux, out_str);
 +}
-diff --git a/src/gn/ninja_create_bundle_target_writer.cc b/src/gn/ninja_create_bundle_target_writer.cc
-index b3a15bae..ca305e6a 100644
---- a/src/gn/ninja_create_bundle_target_writer.cc
-+++ b/src/gn/ninja_create_bundle_target_writer.cc
-@@ -81,16 +81,18 @@ void NinjaCreateBundleTargetWriter::Run() {
-   // Stamp users are CopyBundleData, CompileAssetsCatalog, PostProcessing and
-   // StampForTarget.
-   size_t num_stamp_uses = 4;
--  std::vector<OutputFile> order_only_deps = WriteInputDepsStampOrPhonyAndGetDep(
-+  NinjaTargetWriter::InputDeps stamp_deps = WriteInputDepsStampOrPhonyAndGetDep(
-       std::vector<const Target*>(), num_stamp_uses);
-+  std::vector<OutputFile> implicit_deps = stamp_deps.implicit;
-+  std::vector<OutputFile> order_only_deps = stamp_deps.order_only;
- 
-   std::string post_processing_rule_name = WritePostProcessingRuleDefinition();
- 
-   std::vector<OutputFile> output_files;
--  WriteCopyBundleDataSteps(order_only_deps, &output_files);
--  WriteCompileAssetsCatalogStep(order_only_deps, &output_files);
--  WritePostProcessingStep(post_processing_rule_name, order_only_deps,
--                          &output_files);
-+  WriteCopyBundleDataSteps(implicit_deps, order_only_deps, &output_files);
-+  WriteCompileAssetsCatalogStep(implicit_deps, order_only_deps, &output_files);
-+  WritePostProcessingStep(post_processing_rule_name, implicit_deps,
-+                          order_only_deps, &output_files);
- 
-   for (const Target* data_dep : resolved().GetDataDeps(target_)) {
-     if (data_dep->has_dependency_output())
-@@ -179,14 +181,17 @@ void NinjaCreateBundleTargetWriter::WritePostProcessingManifestFile() {
- }
- 
- void NinjaCreateBundleTargetWriter::WriteCopyBundleDataSteps(
-+    const std::vector<OutputFile>& implicit_deps,
-     const std::vector<OutputFile>& order_only_deps,
-     std::vector<OutputFile>* output_files) {
-   for (const BundleFileRule& file_rule : target_->bundle_data().file_rules())
--    WriteCopyBundleFileRuleSteps(file_rule, order_only_deps, output_files);
-+    WriteCopyBundleFileRuleSteps(file_rule, implicit_deps, order_only_deps,
-+                                 output_files);
- }
- 
- void NinjaCreateBundleTargetWriter::WriteCopyBundleFileRuleSteps(
-     const BundleFileRule& file_rule,
-+    const std::vector<OutputFile>& implicit_deps,
-     const std::vector<OutputFile>& order_only_deps,
-     std::vector<OutputFile>* output_files) {
-   // Note that we don't write implicit deps for copy steps. "copy_bundle_data"
-@@ -209,6 +214,10 @@ void NinjaCreateBundleTargetWriter::WriteCopyBundleFileRuleSteps(
-          << GeneralTool::kGeneralToolCopyBundleData << " ";
-     path_output_.WriteFile(out_, source_file);
- 
-+    if (!implicit_deps.empty()) {
-+      out_ << " |";
-+      path_output_.WriteFiles(out_, implicit_deps);
-+    }
-     if (!order_only_deps.empty()) {
-       out_ << " ||";
-       path_output_.WriteFiles(out_, order_only_deps);
-@@ -219,6 +228,7 @@ void NinjaCreateBundleTargetWriter::WriteCopyBundleFileRuleSteps(
- }
- 
- void NinjaCreateBundleTargetWriter::WriteCompileAssetsCatalogStep(
-+    const std::vector<OutputFile>& implicit_deps,
-     const std::vector<OutputFile>& order_only_deps,
-     std::vector<OutputFile>* output_files) {
-   if (!TargetRequireAssetCatalogCompilation(target_))
-@@ -251,6 +261,10 @@ void NinjaCreateBundleTargetWriter::WriteCompileAssetsCatalogStep(
-     WriteOutput(partial_info_plist);
-     out_ << ": " << GetNinjaRulePrefixForToolchain(settings_)
-          << GeneralTool::kGeneralToolStamp;
-+    if (!implicit_deps.empty()) {
-+      out_ << " |";
-+      path_output_.WriteFiles(out_, implicit_deps);
-+    }
-     if (!order_only_deps.empty()) {
-       out_ << " ||";
-       path_output_.WriteFiles(out_, order_only_deps);
-@@ -286,6 +300,7 @@ void NinjaCreateBundleTargetWriter::WriteCompileAssetsCatalogStep(
- 
-   out_ << " | ";
-   path_output_.WriteFile(out_, input_dep);
-+  path_output_.WriteFiles(out_, implicit_deps);
- 
-   if (!order_only_deps.empty()) {
-     out_ << " ||";
-@@ -362,13 +377,15 @@ NinjaCreateBundleTargetWriter::WriteCompileAssetsCatalogInputDepsStampOrPhony(
- 
- void NinjaCreateBundleTargetWriter::WritePostProcessingStep(
-     const std::string& post_processing_rule_name,
-+    const std::vector<OutputFile>& implicit_deps,
-     const std::vector<OutputFile>& order_only_deps,
-     std::vector<OutputFile>* output_files) {
-   if (post_processing_rule_name.empty())
-     return;
- 
-   OutputFile post_processing_input_stamp_file =
--      WritePostProcessingInputDepsStampOrPhony(order_only_deps, output_files);
-+      WritePostProcessingInputDepsStampOrPhony(implicit_deps, order_only_deps,
-+                                               output_files);
-   DCHECK(!post_processing_input_stamp_file.value().empty());
- 
-   out_ << "build";
-@@ -391,6 +408,7 @@ void NinjaCreateBundleTargetWriter::WritePostProcessingStep(
- 
- OutputFile
- NinjaCreateBundleTargetWriter::WritePostProcessingInputDepsStampOrPhony(
-+    const std::vector<OutputFile>& implicit_deps,
-     const std::vector<OutputFile>& order_only_deps,
-     std::vector<OutputFile>* output_files) {
-   std::vector<SourceFile> post_processing_input_files;
-@@ -406,7 +424,8 @@ NinjaCreateBundleTargetWriter::WritePostProcessingInputDepsStampOrPhony(
-   }
- 
-   DCHECK(!post_processing_input_files.empty());
--  if (post_processing_input_files.size() == 1 && order_only_deps.empty())
-+  if (post_processing_input_files.size() == 1 && implicit_deps.empty() &&
-+      order_only_deps.empty())
-     return OutputFile(settings_->build_settings(),
-                       post_processing_input_files[0]);
- 
-@@ -438,6 +457,10 @@ NinjaCreateBundleTargetWriter::WritePostProcessingInputDepsStampOrPhony(
-     out_ << " ";
-     path_output_.WriteFile(out_, source);
-   }
-+  if (!implicit_deps.empty()) {
-+    out_ << " |";
-+    path_output_.WriteFiles(out_, implicit_deps);
-+  }
-   if (!order_only_deps.empty()) {
-     out_ << " ||";
-     path_output_.WriteFiles(out_, order_only_deps);
-diff --git a/src/gn/ninja_create_bundle_target_writer.h b/src/gn/ninja_create_bundle_target_writer.h
-index 6b5d6cc2..7d603a09 100644
---- a/src/gn/ninja_create_bundle_target_writer.h
-+++ b/src/gn/ninja_create_bundle_target_writer.h
-@@ -30,7 +30,8 @@ class NinjaCreateBundleTargetWriter : public NinjaTargetWriter {
-   // Writes the steps to copy files into the bundle.
-   //
-   // The list of newly created files will be added to |output_files|.
--  void WriteCopyBundleDataSteps(const std::vector<OutputFile>& order_only_deps,
-+  void WriteCopyBundleDataSteps(const std::vector<OutputFile>& implicit_deps,
-+                                const std::vector<OutputFile>& order_only_deps,
-                                 std::vector<OutputFile>* output_files);
- 
-   // Writes the step to copy files BundleFileRule into the bundle.
-@@ -38,6 +39,7 @@ class NinjaCreateBundleTargetWriter : public NinjaTargetWriter {
-   // The list of newly created files will be added to |output_files|.
-   void WriteCopyBundleFileRuleSteps(
-       const BundleFileRule& file_rule,
-+      const std::vector<OutputFile>& implicit_deps,
-       const std::vector<OutputFile>& order_only_deps,
-       std::vector<OutputFile>* output_files);
- 
-@@ -45,6 +47,7 @@ class NinjaCreateBundleTargetWriter : public NinjaTargetWriter {
-   //
-   // The list of newly created files will be added to |output_files|.
-   void WriteCompileAssetsCatalogStep(
-+      const std::vector<OutputFile>& implicit_deps,
-       const std::vector<OutputFile>& order_only_deps,
-       std::vector<OutputFile>* output_files);
- 
-@@ -59,12 +62,14 @@ class NinjaCreateBundleTargetWriter : public NinjaTargetWriter {
-   // post-processing may depends on the full bundle structure, this step will
-   // depends on all files generated via other rules.
-   void WritePostProcessingStep(const std::string& post_processing_rule_name,
-+                               const std::vector<OutputFile>& implicit_deps,
-                                const std::vector<OutputFile>& order_only_deps,
-                                std::vector<OutputFile>* output_files);
- 
-   // Writes the stamp file or phony target for the post-processing input
-   // dependencies.
-   OutputFile WritePostProcessingInputDepsStampOrPhony(
-+      const std::vector<OutputFile>& implicit_deps,
-       const std::vector<OutputFile>& order_only_deps,
-       std::vector<OutputFile>* output_files);
- 
 diff --git a/src/gn/ninja_create_bundle_target_writer_unittest.cc b/src/gn/ninja_create_bundle_target_writer_unittest.cc
-index d79b719b..7aa13136 100644
+index d79b719b..3dfd6a3f 100644
 --- a/src/gn/ninja_create_bundle_target_writer_unittest.cc
 +++ b/src/gn/ninja_create_bundle_target_writer_unittest.cc
-@@ -75,16 +75,15 @@ TEST(NinjaCreateBundleTargetWriter, Run) {
-   writer.Run();
- 
-   const char expected[] =
--      "build phony/baz/bar.inputdeps: phony phony/foo/bar "
-+      "build phony/baz/bar.inputdeps: phony || phony/foo/bar "
-       "phony/foo/data\n"
-       "build bar.bundle/Contents/Resources/input1.txt: copy_bundle_data "
--      "../../foo/input1.txt || phony/baz/bar.inputdeps\n"
-+      "../../foo/input1.txt | phony/baz/bar.inputdeps\n"
-       "build bar.bundle/Contents/Resources/input2.txt: copy_bundle_data "
--      "../../foo/input2.txt || phony/baz/bar.inputdeps\n"
-+      "../../foo/input2.txt | phony/baz/bar.inputdeps\n"
-       "build phony/baz/bar: phony "
-       "bar.bundle/Contents/Resources/input1.txt "
--      "bar.bundle/Contents/Resources/input2.txt"
--      " || phony/baz/bar.inputdeps\n"
-+      "bar.bundle/Contents/Resources/input2.txt\n"
-       "build bar.bundle: phony phony/baz/bar\n";
-   std::string out_str = out.str();
-   EXPECT_EQ(expected, out_str);
-@@ -124,16 +123,15 @@ TEST(NinjaCreateBundleTargetWriter, InSubDirectory) {
-   writer.Run();
- 
-   const char expected[] =
--      "build phony/baz/bar.inputdeps: phony phony/foo/bar "
-+      "build phony/baz/bar.inputdeps: phony || phony/foo/bar "
-       "phony/foo/data\n"
-       "build gen/bar.bundle/Contents/Resources/input1.txt: copy_bundle_data "
--      "../../foo/input1.txt || phony/baz/bar.inputdeps\n"
-+      "../../foo/input1.txt | phony/baz/bar.inputdeps\n"
-       "build gen/bar.bundle/Contents/Resources/input2.txt: copy_bundle_data "
--      "../../foo/input2.txt || phony/baz/bar.inputdeps\n"
-+      "../../foo/input2.txt | phony/baz/bar.inputdeps\n"
-       "build phony/baz/bar: phony "
-       "gen/bar.bundle/Contents/Resources/input1.txt "
--      "gen/bar.bundle/Contents/Resources/input2.txt || "
--      "phony/baz/bar.inputdeps\n"
-+      "gen/bar.bundle/Contents/Resources/input2.txt\n"
-       "build gen/bar.bundle: phony phony/baz/bar\n";
-   std::string out_str = out.str();
-   EXPECT_EQ(expected, out_str);
-@@ -170,7 +168,7 @@ TEST(NinjaCreateBundleTargetWriter, JustPartialInfoPlist) {
+@@ -170,7 +170,7 @@ TEST(NinjaCreateBundleTargetWriter, JustPartialInfoPlist) {
        "baz/bar/bar_partial_info.plist || phony/foo/bar\n"
        "build bar.bundle: phony phony/baz/bar\n";
    std::string out_str = out.str();
@@ -11127,27 +12060,7 @@ index d79b719b..7aa13136 100644
  }
  
  // Tests multiple files from asset catalog.
-@@ -229,16 +227,14 @@ TEST(NinjaCreateBundleTargetWriter, AssetCatalog) {
-   writer.Run();
- 
-   const char expected[] =
--      "build phony/baz/bar.inputdeps: phony phony/foo/bar "
-+      "build phony/baz/bar.inputdeps: phony || phony/foo/bar "
-       "phony/foo/data\n"
-       "build bar.bundle/Contents/Resources/Assets.car: compile_xcassets "
--      "../../foo/Foo.xcassets | phony/foo/data || "
--      "phony/baz/bar.inputdeps\n"
-+      "../../foo/Foo.xcassets | phony/foo/data phony/baz/bar.inputdeps\n"
-       "  product_type = com.apple.product-type\n"
-       "  xcasset_compiler_flags = --app-icon foo\n"
-       "build phony/baz/bar: phony "
--      "bar.bundle/Contents/Resources/Assets.car || "
--      "phony/baz/bar.inputdeps\n"
-+      "bar.bundle/Contents/Resources/Assets.car\n"
-       "build bar.bundle: phony phony/baz/bar\n";
-   std::string out_str = out.str();
-   EXPECT_EQ(expected, out_str);
-@@ -276,7 +272,7 @@ TEST(NinjaCreateBundleTargetWriter, PhonyTarget) {
+@@ -276,7 +276,7 @@ TEST(NinjaCreateBundleTargetWriter, PhonyTarget) {
        "build phony/baz/bar: phony || phony/foo/action\n"
        "build bar.bundle: phony phony/baz/bar\n";
    std::string out_str = out.str();
@@ -11156,40 +12069,8 @@ index d79b719b..7aa13136 100644
  }
  
  // Tests complex target with multiple bundle_data sources, including
-@@ -393,22 +389,22 @@ TEST(NinjaCreateBundleTargetWriter, Complex) {
-   writer.Run();
- 
-   const char expected[] =
--      "build phony/baz/bar.inputdeps: phony phony/biz/assets "
-+      "build phony/baz/bar.inputdeps: phony || phony/biz/assets "
-       "phony/foo/assets phony/foo/bar phony/foo/data "
-       "phony/qux/info_plist phony/quz/assets\n"
-       "build bar.bundle/Contents/Info.plist: copy_bundle_data "
--      "../../qux/qux-Info.plist || phony/baz/bar.inputdeps\n"
-+      "../../qux/qux-Info.plist | phony/baz/bar.inputdeps\n"
-       "build bar.bundle/Contents/Resources/input1.txt: copy_bundle_data "
--      "../../foo/input1.txt || phony/baz/bar.inputdeps\n"
-+      "../../foo/input1.txt | phony/baz/bar.inputdeps\n"
-       "build bar.bundle/Contents/Resources/input2.txt: copy_bundle_data "
--      "../../foo/input2.txt || phony/baz/bar.inputdeps\n"
-+      "../../foo/input2.txt | phony/baz/bar.inputdeps\n"
-       "build phony/baz/bar.xcassets.inputdeps: phony "
-       "phony/foo/assets "
-       "phony/quz/assets phony/biz/assets\n"
-       "build bar.bundle/Contents/Resources/Assets.car | "
-       "baz/bar/bar_partial_info.plist: compile_xcassets "
-       "../../foo/Foo.xcassets ../../quz/Quz.xcassets "
--      "../../biz/Biz.xcassets | phony/baz/bar.xcassets.inputdeps || "
-+      "../../biz/Biz.xcassets | phony/baz/bar.xcassets.inputdeps "
-       "phony/baz/bar.inputdeps\n"
-       "  product_type = com.apple.product-type\n"
-       "  partial_info_plist = baz/bar/bar_partial_info.plist\n"
-@@ -417,10 +413,10 @@ TEST(NinjaCreateBundleTargetWriter, Complex) {
-       "bar.bundle/Contents/Resources/input1.txt "
-       "bar.bundle/Contents/Resources/input2.txt "
-       "bar.bundle/Contents/Resources/Assets.car "
--      "baz/bar/bar_partial_info.plist || phony/baz/bar.inputdeps\n"
-+      "baz/bar/bar_partial_info.plist\n"
+@@ -420,7 +420,7 @@ TEST(NinjaCreateBundleTargetWriter, Complex) {
+       "baz/bar/bar_partial_info.plist || phony/baz/bar.inputdeps\n"
        "build bar.bundle: phony phony/baz/bar\n";
    std::string out_str = out.str();
 -  EXPECT_EQ(expected, out_str) << expected << "\n" << out_str;
@@ -11197,38 +12078,8 @@ index d79b719b..7aa13136 100644
  }
  
  // Tests post-processing step.
-@@ -475,7 +471,7 @@ TEST(NinjaCreateBundleTargetWriter, PostProcessing) {
-   writer.Run();
- 
-   const char expected[] =
--      "build phony/baz/bar.inputdeps: phony ./quz phony/foo/bar "
-+      "build phony/baz/bar.inputdeps: phony || ./quz phony/foo/bar "
-       "phony/foo/data\n"
-       "rule __baz_bar___toolchain_default__post_processing_rule\n"
-       "  command =  ../../build/codesign.py -b=quz bar.bundle\n"
-@@ -483,24 +479,24 @@ TEST(NinjaCreateBundleTargetWriter, PostProcessing) {
-       "  restat = 1\n"
-       "\n"
-       "build bar.bundle/Contents/Resources/input1.txt: copy_bundle_data "
--      "../../foo/input1.txt || phony/baz/bar.inputdeps\n"
-+      "../../foo/input1.txt | phony/baz/bar.inputdeps\n"
-       "build bar.bundle/Contents/Resources/input2.txt: copy_bundle_data "
--      "../../foo/input2.txt || phony/baz/bar.inputdeps\n"
-+      "../../foo/input2.txt | phony/baz/bar.inputdeps\n"
-       "build phony/baz/bar.postprocessing.inputdeps: phony "
-       "../../build/codesign.py "
-       "quz "
-       "bar.bundle/Contents/Resources/input1.txt "
--      "bar.bundle/Contents/Resources/input2.txt || "
-+      "bar.bundle/Contents/Resources/input2.txt | "
-       "phony/baz/bar.inputdeps\n"
-       "build bar.bundle/Contents/quz bar.bundle/_CodeSignature/CodeResources: "
-       "__baz_bar___toolchain_default__post_processing_rule "
-       "| phony/baz/bar.postprocessing.inputdeps\n"
-       "build phony/baz/bar: phony "
-       "bar.bundle/Contents/quz "
--      "bar.bundle/_CodeSignature/CodeResources || phony/baz/bar.inputdeps\n"
-+      "bar.bundle/_CodeSignature/CodeResources\n"
+@@ -500,7 +500,7 @@ TEST(NinjaCreateBundleTargetWriter, PostProcessing) {
+       "bar.bundle/_CodeSignature/CodeResources || phony/baz/bar.inputdeps\n"
        "build bar.bundle: phony phony/baz/bar\n";
    std::string out_str = out.str();
 -  EXPECT_EQ(expected, out_str) << out_str << "\n" << expected;
@@ -11236,40 +12087,8 @@ index d79b719b..7aa13136 100644
  }
  
  TEST(NinjaCreateBundleTargetWriter, PostProcessingNoStampFilesCustomToolchain) {
-@@ -558,7 +554,7 @@ TEST(NinjaCreateBundleTargetWriter, PostProcessingNoStampFilesCustomToolchain) {
-   writer.Run();
- 
-   const char expected[] =
--      "build toolchain/phony/baz/bar.inputdeps: phony ./quz "
-+      "build toolchain/phony/baz/bar.inputdeps: phony || ./quz "
-       "toolchain/phony/foo/bar "
-       "toolchain/phony/foo/data\n"
-       "rule __baz_bar___toolchain_default__post_processing_rule\n"
-@@ -568,24 +564,23 @@ TEST(NinjaCreateBundleTargetWriter, PostProcessingNoStampFilesCustomToolchain) {
-       "\n"
-       "build bar.bundle/Contents/Resources/input1.txt: "
-       "toolchain_copy_bundle_data "
--      "../../foo/input1.txt || toolchain/phony/baz/bar.inputdeps\n"
-+      "../../foo/input1.txt | toolchain/phony/baz/bar.inputdeps\n"
-       "build bar.bundle/Contents/Resources/input2.txt: "
-       "toolchain_copy_bundle_data "
--      "../../foo/input2.txt || toolchain/phony/baz/bar.inputdeps\n"
-+      "../../foo/input2.txt | toolchain/phony/baz/bar.inputdeps\n"
-       "build toolchain/phony/baz/bar.postprocessing.inputdeps: phony "
-       "../../build/codesign.py "
-       "quz "
-       "bar.bundle/Contents/Resources/input1.txt "
--      "bar.bundle/Contents/Resources/input2.txt || "
-+      "bar.bundle/Contents/Resources/input2.txt | "
+@@ -587,5 +587,5 @@ TEST(NinjaCreateBundleTargetWriter, PostProcessingNoStampFilesCustomToolchain) {
        "toolchain/phony/baz/bar.inputdeps\n"
-       "build bar.bundle/Contents/quz bar.bundle/_CodeSignature/CodeResources: "
-       "__baz_bar___toolchain_default__post_processing_rule "
-       "| toolchain/phony/baz/bar.postprocessing.inputdeps\n"
-       "build toolchain/phony/baz/bar: phony "
-       "bar.bundle/Contents/quz "
--      "bar.bundle/_CodeSignature/CodeResources || "
--      "toolchain/phony/baz/bar.inputdeps\n"
-+      "bar.bundle/_CodeSignature/CodeResources\n"
        "build bar.bundle: phony toolchain/phony/baz/bar\n";
    std::string out_str = out.str();
 -  EXPECT_EQ(expected, out_str) << expected << "\n" << out_str;
@@ -11488,26 +12307,10 @@ index a5f8a674..154d84b1 100644
 +  EXPECT_EQ(generated, expected);
  }
 diff --git a/src/gn/ninja_rust_binary_target_writer.cc b/src/gn/ninja_rust_binary_target_writer.cc
-index ba6b4169..b77157a7 100644
+index ba6b4169..e9b44e89 100644
 --- a/src/gn/ninja_rust_binary_target_writer.cc
 +++ b/src/gn/ninja_rust_binary_target_writer.cc
-@@ -125,8 +125,9 @@ void NinjaRustBinaryTargetWriter::Run() {
-   // Ninja to make sure the inputs are up to date before compiling this source,
-   // but changes in the inputs deps won't cause the file to be recompiled. See
-   // the comment on NinjaCBinaryTargetWriter::Run for more detailed explanation.
--  std::vector<OutputFile> order_only_deps = WriteInputDepsStampOrPhonyAndGetDep(
-+  NinjaTargetWriter::InputDeps stamp_deps = WriteInputDepsStampOrPhonyAndGetDep(
-       std::vector<const Target*>(), num_output_uses);
-+  std::vector<OutputFile> order_only_deps = stamp_deps.order_only;
-   std::copy(input_deps.begin(), input_deps.end(),
-             std::back_inserter(order_only_deps));
- 
-@@ -135,10 +136,17 @@ void NinjaRustBinaryTargetWriter::Run() {
-   // -Ldependency. Also assemble a list of extra (i.e. implicit) deps
-   // for ninja dependency tracking.
-   UniqueVector<OutputFile> implicit_deps;
-+  implicit_deps.Append(stamp_deps.implicit.begin(), stamp_deps.implicit.end());
-   AppendSourcesAndInputsToImplicitDeps(&implicit_deps);
+@@ -139,6 +139,12 @@ void NinjaRustBinaryTargetWriter::Run() {
    implicit_deps.Append(classified_deps.extra_object_files.begin(),
                         classified_deps.extra_object_files.end());
  
@@ -11520,7 +12323,7 @@ index ba6b4169..b77157a7 100644
    std::vector<OutputFile> rustdeps;
    std::vector<OutputFile> nonrustdeps;
    std::vector<OutputFile> swiftmodules;
-@@ -162,9 +170,13 @@ void NinjaRustBinaryTargetWriter::Run() {
+@@ -162,9 +168,13 @@ void NinjaRustBinaryTargetWriter::Run() {
            non_linkable_dep->output_type() != Target::SOURCE_SET) {
          rustdeps.push_back(non_linkable_dep->dependency_output());
        }
@@ -11535,7 +12338,7 @@ index ba6b4169..b77157a7 100644
    for (const auto* linkable_dep : classified_deps.linkable_deps) {
      // Rust cdylibs are treated as non-Rust dependencies for linking purposes.
      if (linkable_dep->source_types_used().RustSourceUsed() &&
-@@ -213,7 +225,7 @@ void NinjaRustBinaryTargetWriter::Run() {
+@@ -213,7 +223,7 @@ void NinjaRustBinaryTargetWriter::Run() {
    SubstitutionWriter::ApplyListToLinkerAsOutputFile(
        target_, tool_, tool_->outputs(), &tool_outputs);
    WriteCompilerBuildLine({target_->rust_values().crate_root()},
@@ -11986,7 +12789,7 @@ index 11b80712..f38b892c 100644
 +  EXPECT_EQ(expected, out_str);
  }
 diff --git a/src/gn/ninja_target_writer.cc b/src/gn/ninja_target_writer.cc
-index e5248a11..affc7d6f 100644
+index e5248a11..9b456284 100644
 --- a/src/gn/ninja_target_writer.cc
 +++ b/src/gn/ninja_target_writer.cc
 @@ -166,6 +166,26 @@ std::string NinjaTargetWriter::RunAndWriteFile(
@@ -12016,132 +12819,7 @@ index e5248a11..affc7d6f 100644
      writer.Run();
    } else {
      CHECK(0) << "Output type of target not handled.";
-@@ -433,7 +453,8 @@ void NinjaTargetWriter::WriteRustCompilerVars(const SubstitutionBits& bits,
-   }
- }
- 
--std::vector<OutputFile> NinjaTargetWriter::WriteInputDepsStampOrPhonyAndGetDep(
-+NinjaTargetWriter::InputDeps
-+NinjaTargetWriter::WriteInputDepsStampOrPhonyAndGetDep(
-     const std::vector<const Target*>& additional_hard_deps,
-     size_t num_output_uses) const {
-   CHECK(target_->toolchain()) << "Toolchain not set on target "
-@@ -499,55 +520,62 @@ std::vector<OutputFile> NinjaTargetWriter::WriteInputDepsStampOrPhonyAndGetDep(
-   // toolchains often have more than one dependency, we could consider writing
-   // a toolchain-specific phony target and only include the phony here.
-   // Note that these are usually empty/small.
-+  std::vector<const Target*> toolchain_deps_targets;
-   const LabelTargetVector& toolchain_deps = target_->toolchain()->deps();
-   for (const auto& toolchain_dep : toolchain_deps) {
-     // This could theoretically duplicate dependencies already in the list,
-     // but it shouldn't happen in practice, is inconvenient to check for,
-     // and only results in harmless redundant dependencies listed.
--    input_deps_targets.push_back(toolchain_dep.ptr);
-+    toolchain_deps_targets.push_back(toolchain_dep.ptr);
-   }
- 
-   // ---------
-   // Write the outputs.
- 
--  if (input_deps_sources.size() + input_deps_targets.size() == 0)
--    return std::vector<OutputFile>();  // No input dependencies.
--
--  // If we're only generating one input dependency, return it directly instead
--  // of writing a phony target for it.
--  if (input_deps_sources.size() == 1 && input_deps_targets.size() == 0)
--    return std::vector<OutputFile>{
--        OutputFile(settings_->build_settings(), *input_deps_sources[0])};
--  if (input_deps_sources.size() == 0 && input_deps_targets.size() == 1) {
--    const auto& dep = *input_deps_targets[0];
--    if (!dep.has_dependency_output())
--      return std::vector<OutputFile>();
--    return std::vector<OutputFile>{dep.dependency_output()};
--  }
-+  if (input_deps_sources.empty() && input_deps_targets.empty() &&
-+      toolchain_deps_targets.empty())
-+    return InputDeps{};  // No input dependencies.
- 
--  std::vector<OutputFile> outs;
-+  InputDeps deps;
-   // File input deps.
-   for (const SourceFile* source : input_deps_sources)
--    outs.push_back(OutputFile(settings_->build_settings(), *source));
-+    deps.order_only.push_back(OutputFile(settings_->build_settings(), *source));
-   // Target input deps. Sort by label so the output is deterministic (otherwise
-   // some of the targets will have gone through std::sets which will have
-   // sorted them by pointer).
--  std::sort(
--      input_deps_targets.begin(), input_deps_targets.end(),
--      [](const Target* a, const Target* b) { return a->label() < b->label(); });
--  for (auto* dep : input_deps_targets) {
--    if (dep->has_dependency_output())
--      outs.push_back(dep->dependency_output());
--  }
--
--  // If there are multiple inputs, but the phony target would be referenced only
--  // once, don't write it but depend on the inputs directly.
--  if (num_output_uses == 1u)
--    return outs;
--
--  // If outs is empty, we don't need stamp or phony target for this.
--  if (outs.empty()) {
--    return outs;
-+  auto add_target_deps = [](std::vector<OutputFile>& deps,
-+                            std::vector<const Target*>& targets) {
-+    std::sort(targets.begin(), targets.end(),
-+              [](const Target* a, const Target* b) {
-+                return a->label() < b->label();
-+              });
-+    for (auto* dep : targets) {
-+      if (dep->has_dependency_output())
-+        deps.push_back(dep->dependency_output());
-+    }
-+  };
-+  add_target_deps(deps.order_only, input_deps_targets);
-+  add_target_deps(deps.implicit, toolchain_deps_targets);
-+
-+  // If we're only generating one input dependency, or if there are no
-+  // dependencies, return it directly instead of writing a phony target for it.
-+  // Also, if there are multiple inputs, but the phony target would be
-+  // referenced only once, don't write it but depend on the inputs directly.
-+  if (deps.implicit.size() + deps.order_only.size() <= 1 ||
-+      num_output_uses == 1u)
-+    return deps;
-+
-+  // Action targets are special because all of their dependencies are implicit
-+  // dependencies. This is because prior to
-+  // https://gn-review.googlesource.com/c/gn/+/22000 action targets had an
-+  // implicit dependency on inputdeps whereas other target types had an
-+  // order-only dependency on inputdeps (which at the time only had implicit
-+  // dependencies), and scripts may be depending on that.
-+  if (target_->output_type() == Target::ACTION ||
-+      target_->output_type() == Target::ACTION_FOREACH) {
-+    deps.implicit.insert(deps.implicit.end(), deps.order_only.begin(),
-+                         deps.order_only.end());
-+    deps.order_only.clear();
-   }
- 
-   OutputFile input_stamp_or_phony;
-@@ -576,9 +604,16 @@ std::vector<OutputFile> NinjaTargetWriter::WriteInputDepsStampOrPhonyAndGetDep(
-   out_ << "build ";
-   path_output_.WriteFile(out_, input_stamp_or_phony);
-   out_ << ": " << tool;
--  path_output_.WriteFiles(out_, outs);
-+  path_output_.WriteFiles(out_, deps.implicit);
-+  if (!deps.order_only.empty()) {
-+    out_ << " ||";
-+    path_output_.WriteFiles(out_, deps.order_only);
-+  }
-   out_ << "\n";
--  return std::vector<OutputFile>{input_stamp_or_phony};
-+
-+  InputDeps result;
-+  result.implicit.push_back(input_stamp_or_phony);
-+  return result;
- }
- 
- void NinjaTargetWriter::WriteStampOrPhonyForTarget(
-@@ -627,5 +662,26 @@ void NinjaTargetWriter::WriteStampOrPhonyForTarget(
+@@ -627,5 +647,26 @@ void NinjaTargetWriter::WriteStampOrPhonyForTarget(
      out_ << " ||";
      path_output_.WriteFiles(out_, order_only_deps);
    }
@@ -12169,33 +12847,10 @@ index e5248a11..affc7d6f 100644
 +  }
 +}
 diff --git a/src/gn/ninja_target_writer.h b/src/gn/ninja_target_writer.h
-index 68bc0a37..2da7e76b 100644
+index 68bc0a37..0936033e 100644
 --- a/src/gn/ninja_target_writer.h
 +++ b/src/gn/ninja_target_writer.h
-@@ -82,14 +82,19 @@ class NinjaTargetWriter {
-                              bool indent,
-                              bool always_write);
- 
-+  struct InputDeps {
-+    std::vector<OutputFile> implicit;
-+    std::vector<OutputFile> order_only;
-+  };
-+
-   // Writes to the output stream a phony rule for input dependencies, and
-   // returns the file to be appended to source rules that encodes the
--  // order-only dependencies for the current target.
-+  // dependencies for the current target.
-   // If num_output_uses is small, this might return all input dependencies
-   // directly, without writing a phony rule.
-   // If there are no implicit dependencies and no additional target dependencies
--  // are passed in, this returns an empty vector.
--  std::vector<OutputFile> WriteInputDepsStampOrPhonyAndGetDep(
-+  // are passed in, this returns an empty struct.
-+  InputDeps WriteInputDepsStampOrPhonyAndGetDep(
-       const std::vector<const Target*>& additional_hard_deps,
-       size_t num_output_uses) const;
- 
-@@ -99,6 +104,9 @@ class NinjaTargetWriter {
+@@ -99,6 +99,9 @@ class NinjaTargetWriter {
        const std::vector<OutputFile>& deps,
        const std::vector<OutputFile>& order_only_deps);
  
@@ -12206,17 +12861,10 @@ index 68bc0a37..2da7e76b 100644
    const Target* target_;      // Non-owning.
    std::ostream& out_;
 diff --git a/src/gn/ninja_target_writer_unittest.cc b/src/gn/ninja_target_writer_unittest.cc
-index ae691d7f..cd4a5e43 100644
+index ae691d7f..317ce2a9 100644
 --- a/src/gn/ninja_target_writer_unittest.cc
 +++ b/src/gn/ninja_target_writer_unittest.cc
-@@ -22,12 +22,18 @@ class TestingNinjaTargetWriter : public NinjaTargetWriter {
-   void Run() override {}
- 
-   // Make this public so the test can call it.
--  std::vector<OutputFile> WriteInputDepsStampOrPhonyAndGetDep(
-+  NinjaTargetWriter::InputDeps WriteInputDepsStampOrPhonyAndGetDep(
-       const std::vector<const Target*>& additional_hard_deps,
-       size_t num_stamp_uses) {
+@@ -28,6 +28,12 @@ class TestingNinjaTargetWriter : public NinjaTargetWriter {
      return NinjaTargetWriter::WriteInputDepsStampOrPhonyAndGetDep(
          additional_hard_deps, num_stamp_uses);
    }
@@ -12229,170 +12877,10 @@ index ae691d7f..cd4a5e43 100644
  };
  
  }  // namespace
-@@ -113,13 +119,14 @@ TEST(NinjaTargetWriter, WriteInputDepsStampOrPhonyAndGetDep) {
-   {
-     std::ostringstream stream;
-     TestingNinjaTargetWriter writer(&base_target, setup.toolchain(), stream);
--    std::vector<OutputFile> dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-+    auto dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-         std::vector<const Target*>(), 10u);
- 
-     // Since there is only one dependency, it should just be returned and
-     // nothing written to the stream.
--    ASSERT_EQ(1u, dep.size());
--    EXPECT_EQ("../../foo/script.py", dep[0].value());
-+    ASSERT_EQ(0u, dep.implicit.size());
-+    ASSERT_EQ(1u, dep.order_only.size());
-+    EXPECT_EQ("../../foo/script.py", dep.order_only[0].value());
-     EXPECT_EQ("", stream.str());
-   }
- 
-@@ -127,13 +134,14 @@ TEST(NinjaTargetWriter, WriteInputDepsStampOrPhonyAndGetDep) {
-   {
-     std::ostringstream stream;
-     TestingNinjaTargetWriter writer(&target, setup.toolchain(), stream);
--    std::vector<OutputFile> dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-+    auto dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-         std::vector<const Target*>(), 10u);
- 
-     // Since there is only one dependency, a stamp file will be returned
-     // directly without writing any additional rules.
--    ASSERT_EQ(1u, dep.size());
--    EXPECT_EQ("phony/foo/base", dep[0].value());
-+    ASSERT_EQ(0u, dep.implicit.size());
-+    ASSERT_EQ(1u, dep.order_only.size());
-+    EXPECT_EQ("phony/foo/base", dep.order_only[0].value());
-   }
- 
-   {
-@@ -158,11 +166,12 @@ TEST(NinjaTargetWriter, WriteInputDepsStampOrPhonyAndGetDep) {
-   {
-     std::ostringstream stream;
-     TestingNinjaTargetWriter writer(&action, setup.toolchain(), stream);
--    std::vector<OutputFile> dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-+    auto dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-         std::vector<const Target*>(), 10u);
- 
--    ASSERT_EQ(1u, dep.size());
--    EXPECT_EQ("phony/foo/action.inputdeps", dep[0].value());
-+    ASSERT_EQ(1u, dep.implicit.size());
-+    ASSERT_EQ(0u, dep.order_only.size());
-+    EXPECT_EQ("phony/foo/action.inputdeps", dep.implicit[0].value());
-     EXPECT_EQ(
-         "build phony/foo/action.inputdeps: phony ../../foo/script.py "
-         "../../foo/action_source.txt ./target\n",
-@@ -210,13 +219,14 @@ TEST(NinjaTargetWriter, WriteInputDepsStampOrPhonyAndGetDepUseStampFiles) {
-   {
-     std::ostringstream stream;
-     TestingNinjaTargetWriter writer(&base_target, setup.toolchain(), stream);
--    std::vector<OutputFile> dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-+    auto dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-         std::vector<const Target*>(), 10u);
- 
-     // Since there is only one dependency, it should just be returned and
-     // nothing written to the stream.
--    ASSERT_EQ(1u, dep.size());
--    EXPECT_EQ("../../foo/script.py", dep[0].value());
-+    ASSERT_EQ(0u, dep.implicit.size());
-+    ASSERT_EQ(1u, dep.order_only.size());
-+    EXPECT_EQ("../../foo/script.py", dep.order_only[0].value());
-     EXPECT_EQ("", stream.str());
-   }
- 
-@@ -224,13 +234,14 @@ TEST(NinjaTargetWriter, WriteInputDepsStampOrPhonyAndGetDepUseStampFiles) {
-   {
-     std::ostringstream stream;
-     TestingNinjaTargetWriter writer(&target, setup.toolchain(), stream);
--    std::vector<OutputFile> dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-+    auto dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-         std::vector<const Target*>(), 10u);
- 
-     // Since there is only one dependency, a stamp file will be returned
-     // directly without writing any additional rules.
--    ASSERT_EQ(1u, dep.size());
--    EXPECT_EQ("obj/foo/base.stamp", dep[0].value());
-+    ASSERT_EQ(0u, dep.implicit.size());
-+    ASSERT_EQ(1u, dep.order_only.size());
-+    EXPECT_EQ("obj/foo/base.stamp", dep.order_only[0].value());
-   }
- 
-   {
-@@ -255,11 +266,12 @@ TEST(NinjaTargetWriter, WriteInputDepsStampOrPhonyAndGetDepUseStampFiles) {
-   {
-     std::ostringstream stream;
-     TestingNinjaTargetWriter writer(&action, setup.toolchain(), stream);
--    std::vector<OutputFile> dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-+    auto dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-         std::vector<const Target*>(), 10u);
- 
--    ASSERT_EQ(1u, dep.size());
--    EXPECT_EQ("obj/foo/action.inputdeps.stamp", dep[0].value());
-+    ASSERT_EQ(1u, dep.implicit.size());
-+    ASSERT_EQ(0u, dep.order_only.size());
-+    EXPECT_EQ("obj/foo/action.inputdeps.stamp", dep.implicit[0].value());
-     EXPECT_EQ(
-         "build obj/foo/action.inputdeps.stamp: stamp ../../foo/script.py "
-         "../../foo/action_source.txt ./target\n",
-@@ -291,12 +303,140 @@ TEST(NinjaTargetWriter, WriteInputDepsStampOrPhonyAndGetDepWithToolchainDeps) {
- 
-   std::ostringstream stream;
-   TestingNinjaTargetWriter writer(&target, setup.toolchain(), stream);
--  std::vector<OutputFile> dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-+  auto dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-       std::vector<const Target*>(), 10u);
- 
-   // Since there is more than one dependency, a stamp file will be returned
-   // and the rule for the stamp file will be written to the stream.
--  ASSERT_EQ(1u, dep.size());
--  EXPECT_EQ("phony/foo/setup", dep[0].value());
-+  ASSERT_EQ(1u, dep.implicit.size());
-+  ASSERT_EQ(0u, dep.order_only.size());
-+  EXPECT_EQ("phony/foo/setup", dep.implicit[0].value());
+@@ -300,3 +306,87 @@ TEST(NinjaTargetWriter, WriteInputDepsStampOrPhonyAndGetDepWithToolchainDeps) {
+   EXPECT_EQ("phony/foo/setup", dep[0].value());
    EXPECT_EQ("", stream.str());
  }
-+
-+// Tests WriteInputDepsStampOrPhonyAndGetDep when a toolchain dependency and
-+// another dependency are present.
-+TEST(NinjaTargetWriter,
-+     WriteInputDepsStampOrPhonyAndGetDepWithToolchainAndAnotherDep) {
-+  TestWithScope setup;
-+  Err err;
-+
-+  Target toolchain_dep_target(setup.settings(),
-+                              Label(SourceDir("//foo/"), "setup"));
-+  toolchain_dep_target.set_output_type(Target::ACTION);
-+  toolchain_dep_target.SetToolchain(setup.toolchain());
-+  ASSERT_TRUE(toolchain_dep_target.OnResolved(&err));
-+  setup.toolchain()->deps().push_back(LabelTargetPair(&toolchain_dep_target));
-+
-+  Target base_target(setup.settings(), Label(SourceDir("//foo/"), "base"));
-+  base_target.set_output_type(Target::ACTION);
-+  base_target.visibility().SetPublic();
-+  base_target.SetToolchain(setup.toolchain());
-+  base_target.action_values().set_script(SourceFile("//foo/script.py"));
-+  ASSERT_TRUE(base_target.OnResolved(&err));
-+
-+  Target target(setup.settings(), Label(SourceDir("//foo/"), "target"));
-+  target.set_output_type(Target::EXECUTABLE);
-+  target.SetToolchain(setup.toolchain());
-+  target.public_deps().push_back(LabelTargetPair(&base_target));
-+  ASSERT_TRUE(target.OnResolved(&err));
-+
-+  std::ostringstream stream;
-+  TestingNinjaTargetWriter writer(&target, setup.toolchain(), stream);
-+  auto dep = writer.WriteInputDepsStampOrPhonyAndGetDep(
-+      std::vector<const Target*>(), 10u);
-+
-+  // Since there is a toolchain dependency, it should be returned as an implicit
-+  // dependency.
-+  ASSERT_EQ(1u, dep.implicit.size());
-+  EXPECT_EQ("phony/foo/target.inputdeps", dep.implicit[0].value());
-+  ASSERT_EQ(0u, dep.order_only.size());
-+  EXPECT_EQ(
-+      "build phony/foo/target.inputdeps: phony phony/foo/setup || "
-+      "phony/foo/base\n",
-+      stream.str());
-+}
 +
 +// Tests that validation dependencies are written to the generated Ninja file
 +// with the "|@" syntax for a generic target.
@@ -12949,6 +13437,94 @@ index d8d69ff9..e3e79a83 100644
  
   private:
    std::string value_;
+diff --git a/src/gn/parse_tree.cc b/src/gn/parse_tree.cc
+index e4fba38f..8173c902 100644
+--- a/src/gn/parse_tree.cc
++++ b/src/gn/parse_tree.cc
+@@ -378,6 +378,10 @@ std::unique_ptr<AccessorNode> AccessorNode::NewFromJSON(
+   return ret;
+ }
+ 
++void AccessorNode::set_member(std::unique_ptr<IdentifierNode> i) {
++  member_ = std::move(i);
++}
++
+ Value AccessorNode::ExecuteSubscriptAccess(Scope* scope, Err* err) const {
+   const Value* base_value = scope->GetValue(base_.value(), true);
+   if (!base_value) {
+@@ -685,6 +689,10 @@ std::unique_ptr<BlockNode> BlockNode::NewFromJSON(const base::Value& value) {
+   return ret;
+ }
+ 
++void BlockNode::set_end(std::unique_ptr<EndNode> e) {
++  end_ = std::move(e);
++}
++
+ // ConditionNode --------------------------------------------------------------
+ 
+ ConditionNode::ConditionNode() = default;
+@@ -813,6 +821,10 @@ std::unique_ptr<FunctionCallNode> FunctionCallNode::NewFromJSON(
+   return ret;
+ }
+ 
++void FunctionCallNode::set_args(std::unique_ptr<ListNode> a) {
++  args_ = std::move(a);
++}
++
+ void FunctionCallNode::SetNewLocation(int line_number) {
+   Location func_old_loc = function_.location();
+   Location func_new_loc =
+@@ -954,6 +966,10 @@ std::unique_ptr<ListNode> ListNode::NewFromJSON(const base::Value& value) {
+   return ret;
+ }
+ 
++void ListNode::set_end(std::unique_ptr<EndNode> e) {
++  end_ = std::move(e);
++}
++
+ template <typename Comparator>
+ void ListNode::SortList(Comparator comparator) {
+   // Partitions first on BlockCommentNodes and sorts each partition separately.
+diff --git a/src/gn/parse_tree.h b/src/gn/parse_tree.h
+index f3aeb585..471d6cb6 100644
+--- a/src/gn/parse_tree.h
++++ b/src/gn/parse_tree.h
+@@ -183,7 +183,7 @@ class AccessorNode : public ParseNode {
+   // The member is the identifier on the right hand side of the dot. Will be
+   // null if the index is set.
+   const IdentifierNode* member() const { return member_.get(); }
+-  void set_member(std::unique_ptr<IdentifierNode> i) { member_ = std::move(i); }
++  void set_member(std::unique_ptr<IdentifierNode> i);
+ 
+   void SetNewLocation(int line_number);
+ 
+@@ -292,7 +292,7 @@ class BlockNode : public ParseNode {
+   static std::unique_ptr<BlockNode> NewFromJSON(const base::Value& value);
+ 
+   void set_begin_token(const Token& t) { begin_token_ = t; }
+-  void set_end(std::unique_ptr<EndNode> e) { end_ = std::move(e); }
++  void set_end(std::unique_ptr<EndNode> e);
+   const EndNode* End() const { return end_.get(); }
+ 
+   ResultMode result_mode() const { return result_mode_; }
+@@ -391,7 +391,7 @@ class FunctionCallNode : public ParseNode {
+   void set_function(Token t) { function_ = t; }
+ 
+   const ListNode* args() const { return args_.get(); }
+-  void set_args(std::unique_ptr<ListNode> a) { args_ = std::move(a); }
++  void set_args(std::unique_ptr<ListNode> a);
+ 
+   const BlockNode* block() const { return block_.get(); }
+   void set_block(std::unique_ptr<BlockNode> b) { block_ = std::move(b); }
+@@ -458,7 +458,7 @@ class ListNode : public ParseNode {
+ 
+   void set_begin_token(const Token& t) { begin_token_ = t; }
+   const Token& Begin() const { return begin_token_; }
+-  void set_end(std::unique_ptr<EndNode> e) { end_ = std::move(e); }
++  void set_end(std::unique_ptr<EndNode> e);
+   const EndNode* End() const { return end_.get(); }
+ 
+   void append_item(std::unique_ptr<ParseNode> s) {
 diff --git a/src/gn/parse_tree_unittest.cc b/src/gn/parse_tree_unittest.cc
 index c5bfa827..49a3fd1e 100644
 --- a/src/gn/parse_tree_unittest.cc
@@ -13117,7 +13693,7 @@ index e7f4e4d9..4774003c 100644
        {"*\\bfoo\\b*", "/foo/", true},
        {"*\\bfoo\\b*", "foob", false},
 diff --git a/src/gn/resolved_target_data.cc b/src/gn/resolved_target_data.cc
-index efe65ceb..86ab2334 100644
+index efe65ceb..628e6a4b 100644
 --- a/src/gn/resolved_target_data.cc
 +++ b/src/gn/resolved_target_data.cc
 @@ -8,6 +8,15 @@
@@ -13136,11 +13712,50 @@ index efe65ceb..86ab2334 100644
    auto ret = targets_.PushBackWithIndex(target);
    if (ret.first) {
      infos_.push_back(std::make_unique<TargetInfo>(target));
+@@ -168,7 +177,8 @@ void ResolvedTargetData::ComputeInheritedLibsFor(
+       // inherited.
+       const TargetInfo* dep_info = GetTargetInheritedLibs(dep);
+       for (const auto& pair : dep_info->inherited_libs) {
+-        if (pair.target()->IsFinal())
++        if (pair.target()->IsFinal() ||
++            pair.target()->output_type() == Target::RUST_LIBRARY)
+           inherited_libraries->Append(pair.target(),
+                                       is_public && pair.is_public());
+       }
+@@ -301,3 +311,28 @@ void ResolvedTargetData::ComputeSwiftValues(TargetInfo* info) const {
+   }
+   info->has_swift_values = true;
+ }
++
++void ResolvedTargetData::ComputeOrderOnlyDeps(TargetInfo* info) const {
++  UniqueVector<OutputFile> all_order_only_deps;
++  const Target* target = info->target;
++
++  if (target->output_type() == Target::GROUP) {
++    auto add_deps = [&](base::span<const Target*> deps) {
++      for (const Target* dep : deps) {
++        const TargetInfo* dep_info = GetTargetOrderOnlyDeps(dep);
++        all_order_only_deps.Append(dep_info->order_only_deps);
++      }
++    };
++    add_deps(info->deps.public_deps());
++    add_deps(info->deps.private_deps());
++    add_deps(info->deps.data_deps());
++  } else if (target->has_dependency_output()) {
++    OutputFile dep_output = target->dependency_output();
++    if (target->output_type() == Target::SOURCE_SET) {
++      dep_output.value().append(".linkdeps");
++    }
++    all_order_only_deps.push_back(dep_output);
++  }
++
++  info->order_only_deps = all_order_only_deps.release();
++}
 diff --git a/src/gn/resolved_target_data.h b/src/gn/resolved_target_data.h
-index febbf39e..cc04fdb5 100644
+index febbf39e..a184e3d2 100644
 --- a/src/gn/resolved_target_data.h
 +++ b/src/gn/resolved_target_data.h
-@@ -5,7 +5,10 @@
+@@ -5,11 +5,15 @@
  #ifndef TOOLS_GN_RESOLVED_TARGET_DATA_H_
  #define TOOLS_GN_RESOLVED_TARGET_DATA_H_
  
@@ -13151,7 +13766,25 @@ index febbf39e..cc04fdb5 100644
  #include <vector>
  
  #include "base/containers/span.h"
-@@ -155,14 +158,15 @@ class ResolvedTargetData {
+ #include "gn/lib_file.h"
++#include "gn/output_file.h"
+ #include "gn/resolved_target_deps.h"
+ #include "gn/source_dir.h"
+ #include "gn/target.h"
+@@ -142,6 +146,12 @@ class ResolvedTargetData {
+     return info->swift_values->modules;
+   }
+ 
++  // Retrieves an ordered list of all order-only dependency outputs for this
++  // target.
++  const std::vector<OutputFile>& GetOrderOnlyDeps(const Target* target) const {
++    return GetTargetOrderOnlyDeps(target)->order_only_deps;
++  }
++
+  private:
+   // The information associated with a given Target pointer.
+   struct TargetInfo {
+@@ -155,14 +165,16 @@ class ResolvedTargetData {
  
      const Target* target = nullptr;
      ResolvedTargetDeps deps;
@@ -13171,10 +13804,21 @@ index febbf39e..cc04fdb5 100644
 +    std::atomic<bool> has_module_deps_information = false;
 +    std::atomic<bool> has_rust_libs = false;
 +    std::atomic<bool> has_swift_values = false;
++    std::atomic<bool> has_order_only_deps = false;
  
      // Only valid if |has_lib_info| is true.
      std::vector<SourceDir> lib_dirs;
-@@ -209,63 +213,85 @@ class ResolvedTargetData {
+@@ -201,6 +213,9 @@ class ResolvedTargetData {
+             public_modules(std::move(public_modules)) {}
+     };
+     std::unique_ptr<SwiftValues> swift_values;
++
++    // Only valid if |has_order_only_deps| is true.
++    std::vector<OutputFile> order_only_deps;
+   };
+ 
+   // Retrieve TargetInfo value associated with |target|. Create
+@@ -209,63 +224,97 @@ class ResolvedTargetData {
  
    const TargetInfo* GetTargetLibInfo(const Target* target) const {
      TargetInfo* info = GetTargetInfo(target);
@@ -13278,10 +13922,30 @@ index febbf39e..cc04fdb5 100644
 +        ComputeSwiftValues(info);
 +        info->has_swift_values.store(true, std::memory_order_release);
 +      }
++    }
++    return info;
++  }
++
++  const TargetInfo* GetTargetOrderOnlyDeps(const Target* target) const {
++    TargetInfo* info = GetTargetInfo(target);
++    if (!info->has_order_only_deps.load(std::memory_order_acquire)) {
++      std::lock_guard<std::mutex> lock(info->mutex);
++      if (!info->has_order_only_deps.load(std::memory_order_relaxed)) {
++        ComputeOrderOnlyDeps(info);
++        info->has_order_only_deps.store(true, std::memory_order_release);
++      }
      }
      return info;
    }
-@@ -307,6 +333,7 @@ class ResolvedTargetData {
+@@ -280,6 +329,7 @@ class ResolvedTargetData {
+   void ComputeModuleDepsInformation(TargetInfo* info) const;
+   void ComputeRustLibs(TargetInfo* info) const;
+   void ComputeSwiftValues(TargetInfo* info) const;
++  void ComputeOrderOnlyDeps(TargetInfo* info) const;
+ 
+   // Helper function used by ComputeInheritedLibs().
+   void ComputeInheritedLibsFor(
+@@ -307,6 +357,7 @@ class ResolvedTargetData {
    // on demand (hence the mutable qualifier). Implemented with a
    // UniqueVector<> and a parallel vector of unique TargetInfo
    // instances for best performance.

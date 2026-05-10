@@ -230,8 +230,8 @@ f:47fcec43d76c4a285d2c9f926f58a265:geany-plugins/.footprint
 f:9ee065f379e55ca01f9502747072a57f:geany-plugins/.signature
 f:026e4f0c29fb9a901487f616b02e850b:gn/.footprint
 f:be74f20165c508a5d267d0a6541a77ba:gn/.signature
-f:e78daecc46c403ce92f29ca1752e1c33:gn/Pkgfile
-f:c0dc57462f583416e8824c888d18784b:gn/9ece3f5254c273cb46606a6571963f931c3b012d.patch
+f:03ce999bb8bc8664113c90ed7c4dcaad:gn/Pkgfile
+f:740cc5bdf1b72c80ba29e521b1ee50b1:gn/78e67afc82faf52b2f7025265d412fd7418d88c2.patch
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
 f:a0fc5c8137d3e4387501a7f7d1f6ca13:go/.footprint
 f:e0f7cd1f8357ab1248942822e172c8b5:go/.signature

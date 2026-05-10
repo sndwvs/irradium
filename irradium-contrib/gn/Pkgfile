@@ -7,13 +7,13 @@ name=gn
 version=20260409
 release=1
 source=(https://ab-sn.lnl.gay/gn-0eb071f600702e6e235137ba133ee8834aeece83.tar.zst
-        9ece3f5254c273cb46606a6571963f931c3b012d.patch)
+        78e67afc82faf52b2f7025265d412fd7418d88c2.patch)
 
 
 build() {
     cd $name
 
-    patch -p1 -i $SRC/9ece3f5254c273cb46606a6571963f931c3b012d.patch
+    patch -p1 -i $SRC/78e67afc82faf52b2f7025265d412fd7418d88c2.patch
 
     export CC=gcc
     export CXX=g++
