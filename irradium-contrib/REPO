@@ -184,7 +184,7 @@ f:952d2907f3cd468cfe6a9e78ecd3db4d:chromium/patches/chromium-147-rust-1.95-bytem
 f:c170af9510f649e50c571e07ee926f6d:chromium/patches/chromium-148-revert-clang-fsanitize-return-flag-1.patch
 f:633170ab6dc57011297ad53c25b5d8e3:chromium/patches/chromium-148-revert-clang-fsanitize-return-flag-2.patch
 f:a9c40bf9b10d6b2d97e7f660ccf609eb:chromium/patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
-f:cdfd5d5431cbe8c7749007241c8f3e67:chromium/Pkgfile
+f:30fc4a42e1b894b6b1aebf7e768a5b75:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:21b87db70c6f721259e8bdde6a2ae435:deadbeef/.footprint
 f:79f129b0b6f852945dad71322bc8b228:deadbeef/.signature
@@ -442,12 +442,11 @@ f:d030bab5c46f970b1c282ad7582e1b69:ungoogled-chromium/patches/chromium-147-rever
 f:952d2907f3cd468cfe6a9e78ecd3db4d:ungoogled-chromium/patches/chromium-147-rust-1.95-bytemuck.patch
 f:c170af9510f649e50c571e07ee926f6d:ungoogled-chromium/patches/chromium-148-revert-clang-fsanitize-return-flag-1.patch
 f:633170ab6dc57011297ad53c25b5d8e3:ungoogled-chromium/patches/chromium-148-revert-clang-fsanitize-return-flag-2.patch
-f:a9c40bf9b10d6b2d97e7f660ccf609eb:ungoogled-chromium/patches/0001-hotfix-ignore-a-new-warning-in-rust-1.89.patch
 f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:03e5d1e73f43528641499925f34affce:ungoogled-chromium/.footprint
 f:a7d135bb0b1b923589e1362a28a1887e:ungoogled-chromium/.signature
-f:ecfac3c5d554955677c962278ca362ea:ungoogled-chromium/Pkgfile
+f:f0c1c6765ce7327bda4066c5a2868eb1:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
 f:0cb29db19dda2ae4817b0380de127c8b:urxvt-perls/.signature
