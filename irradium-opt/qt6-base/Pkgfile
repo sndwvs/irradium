@@ -5,7 +5,7 @@
 # Optional: brotli cups double-conversion gtk3 icu krb5 libinput libproxy mariadb md4c pipewire postgresql pulseaudio tslib unixodbc vulkan-headers xdg-utils xmlstarlet
 
 name=qt6-base
-version=6.11.0
+version=6.11.1
 release=1
 source=(https://download.qt.io/official_releases/qt/${version%.*}/$version/submodules/qtbase-everywhere-src-$version.tar.xz
   qt6-base-cflags.patch
@@ -45,7 +45,7 @@ build opt/qt6-base again.
     -D CMAKE_INTERPROCEDURAL_OPTIMIZATION=ON \
     -D BUILD_WITH_PCH=OFF \
     -D INSTALL_BINDIR=lib/qt6/bin \
-    -D INSTALL_PUBLICBINDIR=usr/bin \
+    -D INSTALL_PUBLICBINDIR=bin \
     -D INSTALL_LIBEXECDIR=lib/qt6 \
     -D INSTALL_DOCDIR=share/doc/qt6 \
     -D INSTALL_ARCHDATADIR=lib/qt6 \
@@ -73,12 +73,4 @@ build opt/qt6-base again.
   DESTDIR=$PKG cmake --install build
 
   rm -r $PKG/usr/share/doc
-
-  # Install useful symlinks
-  cd $PKG
-  sed 's!../!!' -i $SRC/build/user_facing_tool_links.txt
-  mkdir -p usr/bin
-  while read -r _line; do
-    ln -sv $_line
-  done < $SRC/build/user_facing_tool_links.txt
 }
