@@ -198,8 +198,8 @@ f:9745f7ad6bf9c5deaac125c7f820bf14:elogind/.footprint
 f:218b488f3a0eac485701ddcd482eacda:elogind/.signature
 f:dd4f7f0178fa57a470d4c1134bd22da0:elogind/elogind.nobody.nogroup.99.99.diff
 f:7d42f2922ed703773dfd28c497111b15:elogind/Pkgfile
-f:ce8226895c981265c806fe855308406d:firefox/README
-f:48c4e73fdcf740a9e455e42f61fc75d1:firefox/firefox.desktop
+f:5967a4ed6d1f029d16d70beaa71246d8:firefox/README
+f:c9ccd47ae6a570100ebf31d51a0e7a1f:firefox/firefox.desktop
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
 f:d80a2ac0951044bea3f5687e0ecabf5c:firefox/01-rust-lto-thin.patch
 f:2628cc9a368598781599f40510f4e87f:firefox/02-riscv64-no-lto.patch
@@ -208,7 +208,7 @@ f:5541e0d6e02a74426852511a3f41f572:firefox/.footprint.riscv64
 f:65e862a68ea6249bf98dd4824dc58ae0:firefox/.footprint.aarch64
 f:00e712c2385faa2f30e406fe4f25442d:firefox/.signature.aarch64
 f:5fdbb08bdb4de942955c8092f624153e:firefox/.signature.riscv64
-f:d1d41df1c82928c8fe23e082bc77bac9:firefox/Pkgfile
+f:19125de489d8efa6472ded5659f877d9:firefox/Pkgfile
 f:3219f5d622520efe5321b3b8de56be2d:freerdp/.footprint
 f:a13e25dfe47407735a11f8ece94b905f:freerdp/.signature
 f:67e950c9002e3774414bcaae256c77ac:freerdp/0002-info-Fix-incompatible-pointer-type.patch
