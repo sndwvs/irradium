@@ -396,7 +396,7 @@ f:865b85e804f45f9ccdf28f030f9b32ab:postgresql/postgresql.pam
 f:bd0d149a40c01ae6efb42e9e761e1d2c:postgresql/wget-log
 f:6fadaac5810733738affb12afd575e4c:postgresql/.footprint
 f:1e145dbf0401fd408b9099306d479d73:postgresql/.signature
-f:0d87f29663bf6a77c5be80f789456ba3:postgresql/Pkgfile
+f:2f420ef68149b1558864b8b43eeb97ea:postgresql/Pkgfile
 f:4ee4808e4b6bc64806eb74007263f1e9:postgresql/README
 f:3674b0f356862f27d47aebeb28f7331f:postgresql/post-install
 f:558a4ee95d0ccf9c49d0da42cdef47eb:postgresql/postgresql.service
