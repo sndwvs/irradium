@@ -208,7 +208,7 @@ f:5541e0d6e02a74426852511a3f41f572:firefox/.footprint.riscv64
 f:65e862a68ea6249bf98dd4824dc58ae0:firefox/.footprint.aarch64
 f:6013b7d79ae6cc8ee841f95423633e11:firefox/.signature.aarch64
 f:2d98272be6b23822879612b84a437e16:firefox/.signature.riscv64
-f:19125de489d8efa6472ded5659f877d9:firefox/Pkgfile
+f:036b8c2e252ba1c1771a4f95b1873962:firefox/Pkgfile
 f:3219f5d622520efe5321b3b8de56be2d:freerdp/.footprint
 f:a13e25dfe47407735a11f8ece94b905f:freerdp/.signature
 f:67e950c9002e3774414bcaae256c77ac:freerdp/0002-info-Fix-incompatible-pointer-type.patch
