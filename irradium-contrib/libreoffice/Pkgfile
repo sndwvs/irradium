@@ -5,7 +5,7 @@
 # Optional: avahi coin-or-mp cups dconf gpgme kio lpsolve mariadb openldap postgresql python3-lxml qt6-multimedia sane valgrind
 
 name=libreoffice
-version=26.2.3.2
+version=26.2.4.1
 release=1
 pdfiumversion=7471
 skiaversion=m142-f4ed99d2443962782cf5f8b4dd27179f131e7cbe
@@ -98,8 +98,8 @@ build() {
   prt-get isinst clucene && PKGMK_LIBREOFFICE+=' --with-system-clucene' || PKGMK_LIBREOFFICE+=' --without-system-clucene'
   prt-get isinst coin-or-mp && PKGMK_LIBREOFFICE+=' --with-system-coinmp' || PKGMK_LIBREOFFICE+=' --disable-coinmp'
   prt-get isinst cups && PKGMK_LIBREOFFICE+=' --enable-cups' || PKGMK_LIBREOFFICE+=' --disable-cups'
-  prt-get isinst gpgme && PKGMK_LIBREOFFICE+=' --enable-gpgmepp' || PKGMK_LIBREOFFICE+=' --disable-gpgmepp'
-  prt-get isinst gpgme && export ac_cv_lib_gpgmepp_progress_callback=yes
+  prt-get isinst gpgme gpgmepp && PKGMK_LIBREOFFICE+=' --enable-gpgmepp' || PKGMK_LIBREOFFICE+=' --disable-gpgmepp'
+  prt-get isinst gpgme gpgmepp && export ac_cv_lib_gpgmepp_progress_callback=yes
   prt-get isinst dconf && PKGMK_LIBREOFFICE+=' --enable-dconf' || PKGMK_LIBREOFFICE+=' --disable-dconf'
   #prt-get isinst kio && PKGMK_LIBREOFFICE+=' --enable-kde5 --enable-gtk3-kde5'
   #prt-get isinst libstaroffice && PKGMK_LIBREOFFICE+=' --with-system-libstaroffice' || PKGMK_LIBREOFFICE+=' --without-system-libstaroffice'
