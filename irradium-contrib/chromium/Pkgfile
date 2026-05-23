@@ -4,7 +4,7 @@
 # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
 
 name=chromium
-version=148.0.7778.167
+version=148.0.7778.178
 release=1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz
         chromium.default chromium.sh
@@ -51,17 +51,20 @@ build() {
       #[jsoncpp]=jsoncpp  # needs libstdc++
       #[libaom]=aom
       #[libavif]=libavif  # needs -DAVIF_ENABLE_EXPERIMENTAL_GAIN_MAP=ON
+      #[libdrm]=libdrm
       [libjpeg]=libjpeg-turbo
       #[libpng]=libpng
       #[libvpx]=libvpx
       [libwebp]=libwebp
       [libxml]=libxml2
       [libxslt]=libxslt
+      #[openh264]=openh264
       [opus]=opus
       #[re2]=re2          # needs libstdc++
       #[snappy]=snappy    # needs libstdc++
       #[woff2]=woff2      # needs libstdc++
       [zlib]=minizip
+      [zstd]=zstd
     )
     _unwanted_bundled_libs=(
       $(printf "%s\n" ${!_system_libs[@]} | sed 's/^libjpeg$/&_turbo/')
