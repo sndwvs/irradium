@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7piGxiRoWqoHdYPl4KT5llafzCi1W9oMAu/BF+MHINTwEnWvlkLDXqAAduIJCx5nlQ88qClFoBvFfFD9Zx+tbQ4=
-SHA256 (Pkgfile) = 2241bdd40d1e18f412e32b3f30b7d868764e0498ef801f33cb39a52c45cbaeb5
+RWTmT3d9kqan7v6bqady3Ksrn+/F7u9I1m4OxddM2Q6aUrCVBwgyGaWeOLPx8CrlCcPxGvoHeSP8rAqV9oXKJaBFzjjurXc4LQA=
+SHA256 (Pkgfile) = 9c2cc4845e3f67397760aced7965985a49164256bf9719c44f48956eb8e8ade5
 SHA256 (.footprint) = 44cdcdfc969aaa3cd18fb404093eae8fe7e71ada16c664141c1b8a2bad627ad2
-SHA256 (tdesktop-6.8.1-full.tar.gz) = 1f009a67320b29c9eb2e741a765b52d655bb3e7e7e7909cabf10f4d2dd3d0bd4
+SHA256 (tdesktop-6.8.3-full.tar.gz) = 49e9581973bbe9418b6f1334309dfdd210b9d60d29ee226d44a2e5f9768941b5
 SHA256 (8921c22f0f85b3cb0b56303f9cba81ba8549f4e8.tar.gz) = 3ddfe1124611f47622df2a3128f9f50500b41c7d82e3f0d60f9ed10470689fa0
 SHA256 (tdesktop-fix-minizip-includes.patch) = 3b77d4203ee2fb939de7243b7f3bb6e7e828768cdd4e435205e6adc5aa7f975c
