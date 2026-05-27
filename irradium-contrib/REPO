@@ -662,8 +662,8 @@ f:6f0d61ddbf8cbee5c0b51a99e987ddda:shntool/shntool-3.0.10-large-times.diff
 f:0e63bee97311ff2e4a04f6594285e9db:rssguard/Pkgfile
 f:ae070a58050461ce20b494080814f202:rssguard/.footprint
 f:ec01f009d5a3f6ddeed5d89b52e227ce:rssguard/.signature
-f:63dc65925299640665e0b5a885d53ae6:libabw/.footprint
-f:24b2d10a1ec0bd6c4af145db9a6a00fb:libabw/.signature
+f:462750063c4dd2e6b18d0264fddf2b3d:libabw/.footprint
+f:528009612013e17c9b78a031d53ca43e:libabw/.signature
 f:8458e57d09cc1d2ac03521334cb2962c:libabw/Pkgfile
 f:0dfbfc2af3fe6ef796478c3b2db1701e:libepubgen/.footprint
 f:f39be2913cae2a1199e01985494ad874:libepubgen/.signature

@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/contrib.pub
-RWSagIOpLGJF36I8RN46QC+fyHizv9vXJ2VROW2eZQe9DQoEtf2Tjl4VfjKx4uJe004ROoDwCj4ARPLfQtsVQvLKf0ZB/WhLEA0=
-SHA256 (Pkgfile) = ec05026e9c36fbef9ec9ad5191a4154c7073ccb8569000e55005101fb8a8aaec
-SHA256 (.footprint) = 36a83778fe6bef3c76f7c34dc484104e69c173ba2b8adcbcfd7fa0dd744538a3
-SHA256 (libabw-0.1.3.tar.xz) = e763a9dc21c3d2667402d66e202e3f8ef4db51b34b79ef41f56cacb86dcd6eed
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7uadxjv1jBmbu7SMVpaNk/0E5EVL5T8Kn6nKNQyRqeckScIAYHRS1bepJTCC+2opOhjqWLUUUiSpOPCIBGqc9QI=
+SHA256 (Pkgfile) = 860b1fbe950fe5dce4d208576019bef06ac815b95cbd52643d177d97f0b4019f
+SHA256 (.footprint) = 8f4c3180fe8b5827f0b21f6e329027fc20c46de66b32d79e69b853f85c4a1230
+SHA256 (libabw-0.1.4.tar.xz) = fa2685a3440da6e03a66a778480d93cb95f6064e4541e58e37397680760fd6a0
