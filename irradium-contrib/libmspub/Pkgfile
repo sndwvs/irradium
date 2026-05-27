@@ -4,17 +4,12 @@
 # Depends on: icu libwpd
 
 name=libmspub
-version=0.1.4
-release=3
-source=(https://dev-www.libreoffice.org/src/libmspub/$name-$version.tar.xz
-  missing_include.patch
-  ubsan.patch)
+version=0.1.5
+release=1
+source=(https://dev-www.libreoffice.org/src/libmspub/$name-$version.tar.xz)
 
 build() {
   cd $name-$version
-
-  patch -Np1 -i $SRC/missing_include.patch
-  patch -Np0 -i $SRC/ubsan.patch
 
   ./configure --prefix=/usr \
     --build=$(uname -m)-unknown-linux-gnu
