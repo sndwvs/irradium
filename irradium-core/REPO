@@ -86,8 +86,8 @@ f:8ade3a1b3e11426f6c070daa3906c6f7:glibc/post-install
 f:1ef2167b2a0f449a12259a38878115df:glibc/glibc-2.40-2.patch
 f:394db37ac5d3c05540ba1012b0361832:glibc/.footprint.aarch64
 f:302d049c2e01cfc48e77003653474ddf:glibc/.footprint.riscv64
-f:78f62461eb778cea149a4f9966ea0c91:kbd/.footprint
-f:a3ec2db12bd8d2fbe1e55097c32b0c27:kbd/.signature
+f:597b213bf5c1805f3a8746309b5e4ac9:kbd/.footprint
+f:56a3395c29032a3250222c27517aa8e7:kbd/.signature
 f:168d2e5b198b181a94d76d6a3b6a38f1:kbd/Pkgfile
 f:65632d841dc92bec22aa9354ad76ab5b:libgmp/.footprint
 f:5d6e03c51d708196b0994d3d5c826c65:libgmp/.signature
