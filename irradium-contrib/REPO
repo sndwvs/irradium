@@ -668,9 +668,9 @@ f:8458e57d09cc1d2ac03521334cb2962c:libabw/Pkgfile
 f:0dfbfc2af3fe6ef796478c3b2db1701e:libepubgen/.footprint
 f:f39be2913cae2a1199e01985494ad874:libepubgen/.signature
 f:1960d034cb0e926888d43616fc0f5521:libepubgen/Pkgfile
-f:24b1efc1816abd49a6528b1e902b7902:libmspub/.footprint
+f:3988957f986477f7d6f06c029de7cf30:libmspub/.footprint
 f:2505573cf930279998bc71213ab24459:libmspub/Pkgfile
-f:eb7fb9ca745a2f9ae883bfe841178563:libmspub/.signature
+f:2323e52c5bf5d4a4eabb88b3ff2cce10:libmspub/.signature
 f:62fb922566759397e66d9ff63e3d0a2b:libodfgen/.footprint
 f:121e425f9f84dbb86a95993df1870998:libodfgen/.signature
 f:439ae9ab4b141e586319b983d596738e:libodfgen/Pkgfile

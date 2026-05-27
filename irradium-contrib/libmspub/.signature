@@ -1,7 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7s2tnUbc5dm8Dxq6HK1h38YEkrXIx3EUgGTw5mCXA+JHF7S02x4kexpXGi9gazA7LKZuHIazW+nJQ2dwjjXnRA0=
-SHA256 (Pkgfile) = a19b6797b2818f173a59833aecc9c1db848a4c2eac2c0c189d543e62f348c98b
-SHA256 (.footprint) = c8c4c6a874318cd6b040da6b4a816e690a7aa8b0c2631a40a5643face3b2cbb7
-SHA256 (libmspub-0.1.4.tar.xz) = ef36c1a1aabb2ba3b0bedaaafe717bf4480be2ba8de6f3894be5fd3702b013ba
-SHA256 (missing_include.patch) = 7fcc8f5a2cdfc91b7c8d4fdc2e30c7be5dacc7c450eab2b083d1539970d04e6e
-SHA256 (ubsan.patch) = 3cebc78bd752ad6c5e36e25d8db4e05c95317eacc2fb4e30bee0491ef52d45db
+RWTmT3d9kqan7qncH+txtuV29yvXG25uXLmmh8KQJszfSnYo9EWj8/LZK8xtL70I5nXi/r3yaCL3g/V6oA2BuYBYG2+afiUWmAY=
+SHA256 (Pkgfile) = 8f61b8cd37db6ffed2acbb474bd7655fbf5d57cba476c9d2c83febf9a7e37ca0
+SHA256 (.footprint) = 6504c53f06a9654e2189ed819698b994d92f303587ae0747c40fdc9e3eff00d0
+SHA256 (libmspub-0.1.5.tar.xz) = 3671095f5a10bee8a755052a30576952c5b16d8b0f2ba9f2fb998338c18cb119
