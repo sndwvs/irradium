@@ -71,7 +71,6 @@ d:keepalived
 d:dhcp
 d:acme.sh
 d:sshpass
-d:python3-pyelftools
 d:zabbix-agent2
 d:gspell
 d:mkinitramfs
@@ -487,9 +486,6 @@ f:ed2700e16fa136f5077448b0bca019cc:acme.sh/Pkgfile
 f:7b39087f8e19d9392beeb0b96386cdc2:sshpass/.footprint
 f:511ddf7ee3ccd5eb66cfe72503279319:sshpass/.signature
 f:e878e7386df273a8d1e31f006a07bd77:sshpass/Pkgfile
-f:ba60765494299d5fc275df5fdd2c9888:python3-pyelftools/.footprint
-f:68121d34227bd00a94502e39d53a0159:python3-pyelftools/.signature
-f:9044efa6d0c35c5411dc49600d17b407:python3-pyelftools/Pkgfile
 f:7ad4cf5bd0fb54a12281db3dccdbc1dc:zabbix-agent2/zabbix_agent2.conf.patch
 f:5c53327412e28c3a029e386d47825953:zabbix-agent2/zabbix_agent2.logrotate
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-agent2/pre-install
