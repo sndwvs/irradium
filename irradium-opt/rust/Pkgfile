@@ -5,9 +5,9 @@
 # Optional: clang libgit2 polly sccache
 
 name=rust
-version=1.95.0
-_date=2026-03-05
-_rustc=1.94.0
+version=1.96.0
+_date=2026-04-16
+_rustc=1.95.0
 _cargo=$_rustc
 release=1
 
@@ -88,7 +88,7 @@ build() {
 
 cat <<- EOF > $SRC/bootstrap.toml
 profile = "dist"
-change-id = 148671
+change-id = 154508
 
 [llvm]
 download-ci-llvm = false
@@ -205,7 +205,7 @@ EOF
     { [ ! -e /usr/include/libssh2.h ] ||
         export LIBSSH2_SYS_USE_PKG_CONFIG=1; }
     export RUST_BACKTRACE=full
-    DESTDIR=$PKG /usr/bin/python3 ./x.py --config="${SRC}"/bootstrap.toml install -j $(nproc)
+    DESTDIR=$PKG /usr/bin/python3 ./x.py --config="${SRC}"/bootstrap.toml install -j ${JOBS}
 
     prt-get isinst bash-completion || rm -r $PKG/usr/share/bash-completion
     prt-get isinst zsh || rm -r $PKG/usr/share/zsh
