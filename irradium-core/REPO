@@ -159,9 +159,9 @@ f:49567abb8fcb5b244b0b07738d4a460e:bash/.footprint
 f:be5b8a1e3dd2272113e854ed0f155c47:bash/profile
 f:cf443b43826ea1ffb0abf92b5123297a:bash/profile.patch
 f:18096a490bcd9304e9f367e2eaa6e631:bash/.signature
-f:ed506b3477888846e4fe40111a10c8a8:bash/Pkgfile
-f:1a63f345cd91916c2395bcfc2d54cdb3:bash/bash-5.3.9.patch.gz
+f:719cb3dbd6d17c57672a2e67cae98300:bash/Pkgfile
 f:16bb1bd8843e58cc4ba357b58324cd3b:bash/locale.sh
+f:f3094aa26d701ab06bba98a540eb0505:bash/bash-5.3.12.patch.gz
 f:4e1e8a61db6c9a19f9398eb1073d41e2:dcron/.footprint
 f:3596a4fa9cf63bdf130fd533ca7703d4:dcron/crontab
 f:0049730715f9841a1cd8f2721cb1bb1b:dcron/crontab.patch
