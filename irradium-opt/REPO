@@ -244,7 +244,7 @@ f:7f6ba312e7e27537b3f76e818270f988:compiler-rt/Pkgfile
 f:fd0fa3b88c025d8cd1042eddb9480abf:compiler-rt/.footprint.aarch64
 f:1358368493040d544c3d24144f3e9581:compiler-rt/.signature.aarch64
 f:efe31a023a57c63838368e0d189e83b9:compiler-rt/.footprint.riscv64
-f:1a05b31ebd11976322f1c586ee4b01ab:compiler-rt/.signature.riscv64
+f:28a69f535962031df167c27542e3206e:compiler-rt/.signature.riscv64
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
 f:8f77522bfc49e138dcdd954f0f8e176a:strace/.signature
 f:8caa684e4c1e2808e72cbcce80ff6e21:strace/Pkgfile
