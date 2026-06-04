@@ -723,9 +723,9 @@ f:7434ee965d25e58e609525118321a4f4:zabbix-proxy/rc.zabbix-proxy
 f:04276a7482d2bd18ba3d0473531717c7:zabbix-proxy/zabbix_proxy.logrotate
 f:e70080cf360016d747a6a04ff337f3e0:zabbix-proxy/.footprint
 f:c992bdf389ff94d9df0b346e492550af:zabbix-proxy/.signature
-f:8dfa1cc62e495510c542a6b3b8751c83:audacious/.footprint
+f:87ab57beabcc33e794d56c4e217f4b66:audacious/.footprint
 f:cca42a21584d2e7a49baa60bb486c5d2:audacious/post-install
-f:775313e0f95a537aa05acb5c5e678767:audacious/.signature
+f:22bf51e7f17b9b19f78e15015399df28:audacious/.signature
 f:ad468ed709cd42e0d710351668923dd8:audacious/Pkgfile
 f:fa8bb55250229cfd0732b92cab1997d9:cava/.footprint
 f:9e8788b8a55f08c632f2ebc9b28166a2:cava/.signature
