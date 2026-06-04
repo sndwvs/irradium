@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCUmgXyGyLgy2EsR6NA3Us+TV5HVUJwBnvliBopWFlXQVrvJKXAfDUYetYDqqEOoY1Wk/lAXfgZXYhX+7fHXFMQI=
-SHA256 (Pkgfile) = 2e99f3a489d675b5816257ec23a10e68370518d080b54de3c284d854aeab7849
-SHA256 (.footprint.aarch64) = eae8155bae2d30aca79608adddafafa0828edc1072bb96aef1445b9066364e79
-SHA256 (llvm-project-22.1.6.src.tar.xz) = 6e0b376a1f6d9873e7dfb09ae6e04b9c7024400f01733fa4c29be69d5c138bc2
+RWRxRnTWECCiCWZGm94LI+K/L1AihDWaFltU8wzdoxRZdzp/Bso6niMJI6KDQtoxQyBfqihQ8Ulnwb2vsl8f6mPzHDwtJremAwc=
+SHA256 (Pkgfile) = 56fe8e645910a8bf8b1e50e57562ae0c18964feb9547ee836725ec2af8ceacea
+SHA256 (.footprint.aarch64) = 76495e6fc94ec53e31e3d2c66f4800b513a1811cd87cb5265cc6fe72321f21fe
+SHA256 (llvm-project-22.1.7.src.tar.xz) = 5cc4a3f12bba50b6bdfb4b61bdc852117a0ff2517807c3902fc13267fb93562e
 SHA256 (install-prefix.patch) = 2649b61a459eb6d8a9aca38ab411aec27eeae57fe82e32d135db4ccb353c9dda
