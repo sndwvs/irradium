@@ -1,10 +1,10 @@
 untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGEq6QoMhmGuX0i/fIgyiFspnxwDzU/k4yS3JwbD8qaEFDiNMOwPMG1TNWMF/UzVHbNu7VFxOSCdJj5Rrqc5nCQo=
-SHA256 (Pkgfile) = ac543a49fc74ca6ce1aef0e933249d4a96ce68127abe9558814cbc29752d8a5e
+RWQAwxvZoACtGKL/MlvPpdxSTIUuoYyfnul3Cv0IsdGnjITXJjhz39bjAzA+Pv+3jHG6Ui0sEPUyxDDqKWFnKQT2WT9/fMViOw8=
+SHA256 (Pkgfile) = 4c31e23dcfeca20d6c218487a6155c2d0875a894edf26811646af24ba272b1d7
 SHA256 (.footprint) = c564c93df7b7ec366e56f902e00c637aa39352a6f5de59b5390c35b5de78241f
 SHA256 (bash-5.3.tar.gz) = 0d5cd86965f869a26cf64f4b71be7b96f90a3ba8b3d74e27e8e9d9d5550f31ba
 SHA256 (profile) = 4f11de701adc2ab4e99d8cf28ab337dc1529de178e38337ae0f7f04840fddec6
 SHA256 (profile.patch) = f6a63bb38363fed9fd7961ec2b460b26619b8dbd5c48b26bd2e3021340983c82
 SHA256 (locale.sh) = a17e959832568e6a680511a82128448d7c61670a22984b8fca5f08a9278235b3
-SHA256 (bash-5.3.9.patch.gz) = fba3a9dbc8e9814a011b92f12b29dff8eaae997a2bb14786da8312786a5cc9a9
+SHA256 (bash-5.3.12.patch.gz) = d47158ffe9e94565846fda64b06241d0074f8ac33a700c83cdba87259bf6b978
 SHA256 (profile) = 4f11de701adc2ab4e99d8cf28ab337dc1529de178e38337ae0f7f04840fddec6

@@ -158,7 +158,7 @@ f:d39452dd1bc4f0605584e435c6677723:rc/rc.patch
 f:49567abb8fcb5b244b0b07738d4a460e:bash/.footprint
 f:be5b8a1e3dd2272113e854ed0f155c47:bash/profile
 f:cf443b43826ea1ffb0abf92b5123297a:bash/profile.patch
-f:18096a490bcd9304e9f367e2eaa6e631:bash/.signature
+f:3f1173b5eaaffca6a2136f176331e8a9:bash/.signature
 f:719cb3dbd6d17c57672a2e67cae98300:bash/Pkgfile
 f:16bb1bd8843e58cc4ba357b58324cd3b:bash/locale.sh
 f:f3094aa26d701ab06bba98a540eb0505:bash/bash-5.3.12.patch.gz
