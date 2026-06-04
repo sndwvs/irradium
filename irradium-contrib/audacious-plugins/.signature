@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7liEmUBz0J5eypXrebOsScYi5AjVqGZ3g5yW82MiaKnOQU44cql4XxfOhFKGnv7G1JwubuYzOUkO3rVeKDOVSAU=
-SHA256 (Pkgfile) = b0749a0353e98323d2abcdbeffc215861e5331b4830a3408c5774e74479459c1
-SHA256 (.footprint) = e3bd45b9267e1171c4a6a2a7e82ffdec5020cbfe62c0dac66fd3fafdb1a399e9
-SHA256 (audacious-plugins-4.5.1.tar.bz2) = f4feedc32776acfa9d24701d3b794fc97822f76da6991e91e627e70e561fdd3b
+RWTmT3d9kqan7g5myJPitiOVA4yFTpoWxHrU0VYNTwUfr5exDTdQ/xRG2ofd7xoEmCGivBIW3qAgydjLNbYwbwkuRiE8Og1nRwk=
+SHA256 (Pkgfile) = 89f0570bb040ede0f1eea9312158c42bafa649b6f224021b64741d4c7f687857
+SHA256 (.footprint) = fe15071151a99c6f3e120cf6884fac292d38436a40e69fb9f80c6ccda1e08df5
+SHA256 (audacious-plugins-4.6.tar.bz2) = ce708bca0194d3a1b2b8a89a2892e1c7798f374593563fb21c4c64b24ab8d83a

@@ -20,7 +20,6 @@ drwxr-xr-x	root/root	usr/lib/audacious/Effect/
 -rwxr-xr-x	root/root	usr/lib/audacious/Effect/mixer.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Effect/resample.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Effect/silence-removal.so
--rwxr-xr-x	root/root	usr/lib/audacious/Effect/sox-resampler.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Effect/speed-pitch.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Effect/stereo.so
 -rwxr-xr-x	root/root	usr/lib/audacious/Effect/voice_removal.so
@@ -29,11 +28,13 @@ drwxr-xr-x	root/root	usr/lib/audacious/General/
 -rwxr-xr-x	root/root	usr/lib/audacious/General/aosd.so
 -rwxr-xr-x	root/root	usr/lib/audacious/General/cd-menu-items.so
 -rwxr-xr-x	root/root	usr/lib/audacious/General/delete-files.so
+-rwxr-xr-x	root/root	usr/lib/audacious/General/filebrowser.so
 -rwxr-xr-x	root/root	usr/lib/audacious/General/gtkui.so
 -rwxr-xr-x	root/root	usr/lib/audacious/General/hotkey.so
 -rwxr-xr-x	root/root	usr/lib/audacious/General/lyrics-gtk.so
 -rwxr-xr-x	root/root	usr/lib/audacious/General/mpris2.so
 -rwxr-xr-x	root/root	usr/lib/audacious/General/notify.so
+-rwxr-xr-x	root/root	usr/lib/audacious/General/playback-history.so
 -rwxr-xr-x	root/root	usr/lib/audacious/General/playlist-manager.so
 -rwxr-xr-x	root/root	usr/lib/audacious/General/scrobbler.so
 -rwxr-xr-x	root/root	usr/lib/audacious/General/search-tool.so
