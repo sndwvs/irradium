@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCXes8LoOS1hNuh3ZKOgCw4it7T2sZI08lNxNopyb/inKlTw33jzg3a+JdFynC5bofUgfRHH0/Fusd630x2n/mAY=
-SHA256 (Pkgfile) = 5f806e69310e93ea004533474a412e299cdb4ff609b4e4c55a172e3b39be6c1d
+RWRxRnTWECCiCdvs68XgAlO0IQKIpVY/UAsry9EQIbRJK8PXu9E297psXplfbQj0nT4wqKytcc2jY1Rdh1rQ2UK7686Wtg5eIgU=
+SHA256 (Pkgfile) = 346c88179454b3e97b11e97c28ce0fe8e8ab4aa671fd41a0e7a9d8ebeea07e2c
 SHA256 (.footprint) = 38092bfccda371207b6ccf393bfc5157de94bdebcf1014aacb40e3869015ec0a
-SHA256 (node-v26.2.0.tar.xz) = ea82be7db418f54b3ef153a02d44d4f6748466f4765ae80bc484f34af40df610
+SHA256 (node-v26.3.0.tar.xz) = 319ad5d7d20cc622e55eb75b9f1a2546b77a08bd462b67030d0c89316c2c2349
 SHA256 (unbundle-uv.patch) = e279aedb1e12776df8b0976af884a88e59fa0654d3de4c178451d75241329fe9
-SHA256 (v8-riscv-trap-handler.patch) = 30e165d5f769917e80288055f7b5009367583a8cd90647a9a6c69025ded6abd1
-SHA256 (v8-disable-trap-handler-on-riscv-sv39.patch) = 64533bf69d172e1618ccf2053e73a84b367a3a9a805457f14140f42f82afd125
+SHA256 (v8-riscv-trap-handler.patch) = 877970eff2f3aa479a04243eb32c4f9e341d8008ca1f8bad33a8a44684c4a9ec
+SHA256 (v8-disable-trap-handler-on-riscv-sv39.patch) = 6ac2e709ae956ab8c6ae471a8a890ffa6236297c27924cc65274fbfdc917d294
