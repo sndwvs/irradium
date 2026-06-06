@@ -16,9 +16,9 @@ f:79f8bcbbaac182e0745763b0e43a73c0:mesa/patches/0003-mesa-20.3.0-meson-radeon-ar
 f:398504a224b1fc27938c7640a255af83:mesa/patches/0007-mesa-25.2-aarch64-compile.patch
 f:add55fada3a9b2de27dbc93d19af3f86:mesa/README.md
 f:29239ae56fb010a65dfd4d618550edf4:mesa/.footprint.aarch64
-f:f86c9994bff4c8b2a004af05981b0e25:mesa/.footprint.riscv64
+f:7e3bd678f102afed3efdc8c521de85e9:mesa/.footprint.riscv64
 f:2b5d865e21a21ae39512f762309d4ba4:mesa/.signature.aarch64
-f:749c5a94132a6345d74bddbc246859cf:mesa/.signature.riscv64
+f:7fb5a364bb6d4f0e0b46c72e09c90d39:mesa/.signature.riscv64
 f:f6136b816d35e53759bcfbf189a498ad:mesa/Pkgfile
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:2b55e5edd7f68e865c39720c44dca1c1:xorg-xf86-video-fbdev/.signature
