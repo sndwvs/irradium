@@ -410,7 +410,7 @@ f:5f433fbd0ac6f3524bc585a8f6038cce:tcl/.signature
 f:0628dcc755f986173fb3f7c834f25ceb:tcl/Pkgfile
 f:14b8e2e1cc62b977528ea8bc3b73e1a8:telegram-desktop/.footprint
 f:53d3653eedbf998cf421718f1acecd6f:telegram-desktop/.signature
-f:f7b0266d178040d315c5317e4ab03fc3:telegram-desktop/Pkgfile
+f:8dbbd2ae42ee163b5aead3ca9cd19a73:telegram-desktop/Pkgfile
 f:b3ed977ddcce14d5121704a33d49f39b:telegram-desktop/tdesktop-fix-minizip-includes.patch
 f:1a69adadfeda9cc05e884091ec34143f:python3-etcd/Pkgfile
 f:373cd69053e4bf367be1b67b38788742:python3-etcd/.footprint
