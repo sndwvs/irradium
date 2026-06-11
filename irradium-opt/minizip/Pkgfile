@@ -1,0 +1,29 @@
+# Description: (un)zip based on zlib
+# URL: https://www.zlib.net/
+# Maintainer: Tim Biermann, tbier at posteo dot de
+
+name=minizip
+version=1.3.1
+release=1
+source=(https://github.com/madler/zlib/releases/download/v${version}/zlib-${version}.tar.xz
+        https://github.com/madler/zlib/commit/36ff1be48ef696cc67b0855f7c8537ce0276210d.patch)
+
+build() {
+  cd zlib-$version/contrib/minizip
+
+  cp Makefile Makefile.orig
+  cp ../README.contrib readme.txt
+
+  # Fix missing header
+  patch -p3 -i $SRC/36ff1be48ef696cc67b0855f7c8537ce0276210d.patch
+
+  autoreconf -fiv
+
+  ./configure --prefix=/usr \
+    --enable-static=no
+  make
+  make DESTDIR=$PKG install
+
+  rm $PKG/usr/include/minizip/crypt.h
+  #install -Dm644 ints.h $PKG/usr/include/minizip/ints.h
+}
