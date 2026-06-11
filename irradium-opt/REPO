@@ -32,7 +32,6 @@ d:shared-mime-info
 d:wpa_supplicant
 d:efibootmgr
 d:php-zip
-d:minizip
 d:gobject-introspection
 d:grub2-efi
 d:grub2
@@ -210,10 +209,6 @@ f:a2e9954fdf88c7872c7617f3a524cf26:efibootmgr/Pkgfile
 f:0fac9b02d2ab26cfd0c61670f2758641:php-zip/.footprint
 f:6c89b4d5d5c2192be13d7c8513640954:php-zip/Pkgfile
 f:7107aaaac42e1bc290f1cc0cb995eb3a:php-zip/.signature
-f:063fd3ca2c930e791270c2860e51379b:minizip/.footprint
-f:d2fe861ae69c637659ee2d848139beed:minizip/.signature
-f:bc593e060504892695f9cd165dbc671a:minizip/36ff1be48ef696cc67b0855f7c8537ce0276210d.patch
-f:f26f9711453ecdfd0a6e4a6de0605682:minizip/Pkgfile
 f:6a3b37401d78735d427832419c15824c:gobject-introspection/.footprint.aarch64
 f:573d6fee048e01b3e0a10d18c9854b28:gobject-introspection/.footprint.riscv64
 f:f084746f364f164445784132cd1b98c2:gobject-introspection/.signature.aarch64
