@@ -618,7 +618,7 @@ f:359ce620548cf8b1adf8a5acf8d61485:libimobiledevice-glue/Pkgfile
 f:42328999c33902223b8ca47aa32a5c2c:python3-mergedeep/.footprint
 f:1e76735a5087374936eb7a30c596fdb7:python3-mergedeep/.signature
 f:610fee7c887449a35d41bae6e43ead13:python3-mergedeep/Pkgfile
-f:6770b15939a32a66647000025e9f3b08:zabbix-server/Pkgfile
+f:3c57a6b50fdf7861d2f710fa2ea6e589:zabbix-server/Pkgfile
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-server/pre-install
 f:e68a05689e10e84780fd6516ca6a2da8:zabbix-server/rc.zabbix-server
 f:94c320d0056d7973e21891cbbdde431b:zabbix-server/zabbix_server.logrotate
