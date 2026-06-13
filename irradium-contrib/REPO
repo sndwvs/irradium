@@ -182,7 +182,7 @@ f:6717879acb7df09706501e3ffbaf985a:chromium/patches/enable-widevine-arm64.patch
 f:47444a9ba2ac31fa4b11128373a7bdaf:chromium/patches/glibc-2.42-baud-rate-fix.patch
 f:8f6657577ad6609a22f2f7efe2fa237f:chromium/patches/increase-fortify-level.patch
 f:2acfad339649ffd410df9cfeaa31a79f:chromium/patches/use-oauth2-client-switches-as-default.patch
-f:44774b58efb67cc1514e07cffc94bb59:chromium/Pkgfile
+f:7a6389fadfa8af5258cee502037e3863:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:21b87db70c6f721259e8bdde6a2ae435:deadbeef/.footprint
 f:79f129b0b6f852945dad71322bc8b228:deadbeef/.signature
@@ -446,7 +446,7 @@ f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:03e5d1e73f43528641499925f34affce:ungoogled-chromium/.footprint
 f:a7d135bb0b1b923589e1362a28a1887e:ungoogled-chromium/.signature
-f:bcc0f0844e0930de365a1e34faf768f5:ungoogled-chromium/Pkgfile
+f:4feb092ef3329c20c243990909960011:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
 f:0cb29db19dda2ae4817b0380de127c8b:urxvt-perls/.signature
