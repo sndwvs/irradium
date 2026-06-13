@@ -121,7 +121,7 @@ build() {
     # https://crbug.com/456218403
     patch -Np1 -i $SRC/chromium-145-fix-SYS_SECCOMP.patch
 
-    patch -Np1 -i $SRC/chromium-149-build-with-wasm-rollup.patch
+    #patch -Np1 -i $SRC/chromium-149-build-with-wasm-rollup.patch
 
     patch -Np1 -i $SRC/chromium-147-rust-1.95-bytemuck.patch
 
