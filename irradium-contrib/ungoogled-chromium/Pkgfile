@@ -222,7 +222,6 @@ build() {
       #'rtc_use_pipewire=true'
       'link_pulseaudio=true'
       'use_custom_libcxx=true' # https://github.com/llvm/llvm-project/issues/61705
-      'enable_nacl=false'
       'use_qt5=false'
       'use_qt6=false'
       'use_gold=false'
@@ -230,6 +229,7 @@ build() {
       'use_system_libffi=true'
       'enable_hangout_services_extension=false'
       'enable_widevine=true'
+      'enable_nacl=false'
       'use_vaapi=false'
       'use_v4l2_codec=true'
       'use_av1_hw_decoder=true'
