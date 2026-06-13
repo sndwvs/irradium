@@ -739,7 +739,7 @@ f:5c8161eec17c15d479f61a927fbecbb3:zabbix-agentd/zabbix_agentd.logrotate
 f:fd2a73fcf6ddc5b15a71a10d87408869:zabbix-agentd/.footprint
 f:0a87b8c092de8b03f179c05a11bccebd:zabbix-agentd/.signature
 f:76b1c5523ccd9afa1169ab9e503fb526:zabbix-agentd/rc.zabbix-agentd
-f:d7083e67c3acf7c7954d7f1576abc302:zabbix-agentd/Pkgfile
+f:aa4c1fd2e35c0d06c48e8d657f293e6b:zabbix-agentd/Pkgfile
 f:f54754230ec7a3c8c0987afd82a0c51e:zabbix-agentd/zabbix_agentd.conf.patch
 f:727845b8b33e9d115ffded2fb54c4e53:libutempter/.footprint
 f:25c5b1dad8516f04ff73044f5d76aac5:libutempter/.signature
