@@ -405,6 +405,7 @@ drwxrwxr-x	root/root	usr/share/zabbix/ui/app/partials/
 -rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/configuration.tags.tab.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/configuration.valuemap.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/graph.edit.graph.tab.php
+-rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/host.interface.selector.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/hostmacros.inherited.list.html.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/hostmacros.list.html.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/item.edit.item.tab.php
@@ -413,6 +414,7 @@ drwxrwxr-x	root/root	usr/share/zabbix/ui/app/partials/
 drwxrwxr-x	root/root	usr/share/zabbix/ui/app/partials/js/
 -rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/js/configuration.tags.tab.js.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/js/configuration.valuemap.js.php
+-rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/js/host.interface.selector.js.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/js/scheduledreport.formgrid.js.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/js/scheduledreport.subscription.js.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/app/partials/js/user.edit.media.tab.js.php
