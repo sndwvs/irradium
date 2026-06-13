@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7oRmYVVjWOkgVwm31BYjWFspvVHxFPflZu1pDAttfUyjH0useWMPK0OHVe5G8TwHWqork+XjBF1eaVxvlAKbxgc=
-SHA256 (Pkgfile) = 119a475098b9d3eb8fa2f05263c6b5389ea2f6284b222d4fabf8b8e4f70ea746
+RWTmT3d9kqan7t3+aZ+onZ44Ue3kLBM5rQ1Y6/o8B08DssdF5KFhOi1GiwZvg+CYzsquEYNkniVXPr6pZFE0RqdRQ7Ff3ehuEwM=
+SHA256 (Pkgfile) = 968d853cd9e77b80048215eda69f2b700923688e4ac884ed906ab6c3f2e27d82
 SHA256 (.footprint) = c21ca88a0173f9a583b8dfb753c0b371deb8e54bffed2de54216bc4178fdbaa4
-SHA256 (zabbix-7.4.10.tar.gz) = 8557600b93666f2f89b108e9998977740e08ec35f2a025da30b760822e966bfa
+SHA256 (zabbix-7.4.11.tar.gz) = ba8b85df396b83be92169c64ec4027d7e1ec79d673186ff481c2aaa8e5246bec
 SHA256 (rc.zabbix-proxy) = dafb16452b57d237ac0f17291f2eafe2a9dd4bc6683e04d348f7795fb287caef
 SHA256 (zabbix_proxy.logrotate) = 3fd32a98b7b01cbfb3f0fb89f7fa9552431297c1e0855848e9a9dbb57d887c0a
