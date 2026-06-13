@@ -222,8 +222,8 @@ build() {
       'enable_hangout_services_extension=true'
       'enable_widevine=true'
       'use_vaapi=false'
-      'use_v4l2_codec=true'
-      'use_av1_hw_decoder=true'
+      #'use_v4l2_codec=true'
+      #'use_av1_hw_decoder=true'
       'enable_rust=true'
       "google_api_key=\"$_google_api_key\""
       'use_clang_modules=false'

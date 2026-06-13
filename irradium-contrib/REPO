@@ -182,7 +182,7 @@ f:6717879acb7df09706501e3ffbaf985a:chromium/patches/enable-widevine-arm64.patch
 f:47444a9ba2ac31fa4b11128373a7bdaf:chromium/patches/glibc-2.42-baud-rate-fix.patch
 f:8f6657577ad6609a22f2f7efe2fa237f:chromium/patches/increase-fortify-level.patch
 f:2acfad339649ffd410df9cfeaa31a79f:chromium/patches/use-oauth2-client-switches-as-default.patch
-f:7a6389fadfa8af5258cee502037e3863:chromium/Pkgfile
+f:e4782c3e6979ce8d1f709d77b643b72f:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:21b87db70c6f721259e8bdde6a2ae435:deadbeef/.footprint
 f:79f129b0b6f852945dad71322bc8b228:deadbeef/.signature
