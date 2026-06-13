@@ -4,7 +4,7 @@
 # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
 
 name=ungoogled-chromium
-version=148.0.7778.215
+version=149.0.7827.53
 release=1
 _uc_version=$version-1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/${name#*-}-$version.tar.xz
@@ -19,11 +19,12 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/${nam
         patches/increase-fortify-level.patch
         patches/chromium-138-nodejs-version-check.patch
         patches/chromium-145-fix-SYS_SECCOMP.patch
-        patches/chromium-146-drop-unknown-clang-flag.patch
         patches/chromium-147-revert-clang-no-lifetime-dse-flag.patch
         patches/chromium-147-rust-1.95-bytemuck.patch
-        patches/chromium-148-revert-clang-fsanitize-return-flag-1.patch
-        patches/chromium-148-revert-clang-fsanitize-return-flag-2.patch
+        patches/chromium-149-drop-unknown-clang-flag.patch
+        patches/chromium-149-unbundle-minizip-undo-unicode.patch
+        patches/chromium-149-use-of-undeclared-identifier-ERROR.patch
+        patches/chromium-149-build-with-wasm-rollup.patch
 )
 
 build() {
@@ -112,13 +113,15 @@ build() {
     # calls that require the UBSan runtime, which is not linked in a trap-mode
     # build. Drop the entire sanitize_c_array_bounds cflags block.
     # Can be dropped when arch has LLVM 23.
-    patch -Np1 -i ../chromium-146-drop-unknown-clang-flag.patch
+    patch -Np1 -i $SRC/chromium-149-drop-unknown-clang-flag.patch
 
     # Causes a build failure with our clang version
     patch -Np1 -i $SRC/chromium-147-revert-clang-no-lifetime-dse-flag.patch
 
     # https://crbug.com/456218403
     patch -Np1 -i $SRC/chromium-145-fix-SYS_SECCOMP.patch
+
+    patch -Np1 -i $SRC/chromium-149-build-with-wasm-rollup.patch
 
     patch -Np1 -i $SRC/chromium-147-rust-1.95-bytemuck.patch
 
@@ -128,9 +131,10 @@ build() {
     # https://crbug.com/456677057
     patch -Np1 -i $SRC/glibc-2.42-baud-rate-fix.patch
 
-    # Causes a build failure with our clang version
-    patch -Np1 -i $SRC/chromium-148-revert-clang-fsanitize-return-flag-1.patch
-    patch -Np1 -i $SRC/chromium-148-revert-clang-fsanitize-return-flag-2.patch
+    # Chromium bundles a patched minizip with extra features.
+    patch -Np1 -i $SRC/chromium-149-unbundle-minizip-undo-unicode.patch
+
+    patch -Np1 -i $SRC/chromium-149-use-of-undeclared-identifier-ERROR.patch
 
     if (( !_system_clang )); then
         # Use prebuilt rust as system rust cannot be used due to the error:
@@ -155,12 +159,14 @@ build() {
     # Link to system tools required by the build
     mkdir -p third_party/node/linux/node-linux-x64/bin \
              third_party/rust-toolchain/bin \
-             third_party/jdk/current/bin
+             third_party/jdk/current/bin \
+             third_party/rust-toolchain/bin
 
     ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
     ln -s /usr/bin/rustc third_party/rust-toolchain/bin/
     #ln -s /usr/bin/java third_party/jdk/current/bin/
     ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
+    ln -s /usr/bin/rustc third_party/rust-toolchain/bin/
 
     # remove x86_64 binary and use our own
     rm -rf third_party/gperf/cipd/bin/gperf
@@ -323,7 +329,7 @@ build() {
         info_file=chrome/installer/linux/common/chromium-browser.info
         . $info_file; PACKAGE=chromium
         export $(grep -o '^[A-Z_]*' $info_file)
-        sed -E -e 's/@@([A-Z_]*)@@/\${\1}/g' -e '/<update_contact>/d' $tmpl_file | envsubst
+        sed -E -e 's/@@([A-Z_]*)/\${\1}/g' -e '/<update_contact>/d' $tmpl_file | envsubst
     ) \
     | install -Dvm644 /dev/stdin "$PKG/usr/share/metainfo/chromium.appdata.xml"
 
