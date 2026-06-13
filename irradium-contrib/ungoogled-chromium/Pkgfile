@@ -24,7 +24,6 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/${nam
         patches/chromium-149-drop-unknown-clang-flag.patch
         patches/chromium-149-unbundle-minizip-undo-unicode.patch
         patches/chromium-149-use-of-undeclared-identifier-ERROR.patch
-        patches/chromium-149-build-with-wasm-rollup.patch
 )
 
 build() {
