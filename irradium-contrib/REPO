@@ -228,9 +228,10 @@ f:a0aef08e2b7fb14a9b1db3c12536a94d:geany-plugins/Pkgfile
 f:47fcec43d76c4a285d2c9f926f58a265:geany-plugins/.footprint
 f:9ee065f379e55ca01f9502747072a57f:geany-plugins/.signature
 f:026e4f0c29fb9a901487f616b02e850b:gn/.footprint
-f:c0dc57462f583416e8824c888d18784b:gn/9ece3f5254c273cb46606a6571963f931c3b012d.patch
+f:54c5b3291b8d69a9f38543ce3d40b4e0:gn/0001-Add-function-expand_directory-to-gn.patch
+f:de72f379479718e2682b6f697ede21ec:gn/6e8dcdebbadf4f8aa75e6a4b6e0bdf89dce1513a.patch
 f:9d2dce337f8095ad11525a48d37d140c:gn/.signature
-f:99623542de1762ef87e8b1146e2ae485:gn/Pkgfile
+f:5762b1f95e9f379503088b94f694be82:gn/Pkgfile
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
 f:cabab73d8ac0fedc85d9929f98b79c70:go/Pkgfile
 f:724bce5c5211056e68ecb478e1a036d7:go/.footprint.aarch64

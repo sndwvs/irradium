@@ -4,16 +4,18 @@
 # Depends on: python3 zstd
 
 name=gn
-version=20260421
+version=20260401
 release=1
 source=(https://ab-sn.lnl.gay/gn-0eb071f600702e6e235137ba133ee8834aeece83.tar.zst
-        9ece3f5254c273cb46606a6571963f931c3b012d.patch)
+        6e8dcdebbadf4f8aa75e6a4b6e0bdf89dce1513a.patch
+        0001-Add-function-expand_directory-to-gn.patch)
 
 
 build() {
     cd $name
 
     patch -p1 -i $SRC/9ece3f5254c273cb46606a6571963f931c3b012d.patch
+    patch -p1 -i $SRC/0001-Add-function-expand_directory-to-gn.patch
 
     export CC=gcc
     export CXX=g++
