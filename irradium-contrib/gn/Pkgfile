@@ -14,7 +14,7 @@ source=(https://ab-sn.lnl.gay/gn-0eb071f600702e6e235137ba133ee8834aeece83.tar.zs
 build() {
     cd $name
 
-    patch -p1 -i $SRC/9ece3f5254c273cb46606a6571963f931c3b012d.patch
+    patch -p1 -i $SRC/6e8dcdebbadf4f8aa75e6a4b6e0bdf89dce1513a.patch
     patch -p1 -i $SRC/0001-Add-function-expand_directory-to-gn.patch
 
     export CC=gcc
