@@ -303,6 +303,10 @@ build() {
     fi
 
     gn gen out/Release --args="${_flags[*]}"
+
+    # fix generate __B##x
+    sed 's:__B##x:B##x:g' -i services/device/serial/serial_io_handler_posix.cc
+
     ninja -C out/Release chrome chrome_sandbox chromedriver || exit 1
 
     install -Dv out/Release/chrome "$PKG/usr/lib/chromium/chromium"
