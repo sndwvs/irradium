@@ -435,7 +435,6 @@ f:8f6657577ad6609a22f2f7efe2fa237f:ungoogled-chromium/patches/increase-fortify-l
 f:2acfad339649ffd410df9cfeaa31a79f:ungoogled-chromium/patches/use-oauth2-client-switches-as-default.patch
 f:c171c578fd3b0af7342a36c02972d6ed:ungoogled-chromium/patches/0001-Run-blink-bindings-generation-single-threaded.patch
 f:eaccde81e6ff3045858a7d18af7e091e:ungoogled-chromium/patches/0002-Fix-distcc.patch
-f:47444a9ba2ac31fa4b11128373a7bdaf:ungoogled-chromium/patches/glibc-2.42-baud-rate-fix.patch
 f:6717879acb7df09706501e3ffbaf985a:ungoogled-chromium/patches/enable-widevine-arm64.patch
 f:065415c9d8e19b349682608e88bcb852:ungoogled-chromium/patches/chromium-145-fix-SYS_SECCOMP.patch
 f:d030bab5c46f970b1c282ad7582e1b69:ungoogled-chromium/patches/chromium-147-revert-clang-no-lifetime-dse-flag.patch
@@ -447,7 +446,7 @@ f:92a79d9005b5bef511da9c853a9afb9c:ungoogled-chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:ungoogled-chromium/chromium.sh
 f:7af864d7644d2125f29803f88021c952:ungoogled-chromium/.footprint
 f:585c03dcf0ecbdc9e7e0c09c9b2b0b09:ungoogled-chromium/.signature
-f:47f9d1164ae8ce31c43f79196762a1b3:ungoogled-chromium/Pkgfile
+f:92d085904027b958b3c76718ae56be53:ungoogled-chromium/Pkgfile
 f:5d2f2f489d194e906fa02ac0fdc4cdd1:urxvt-perls/Pkgfile
 f:4c7887b4b73686312a4b40673bc47ce1:urxvt-perls/.footprint
 f:0cb29db19dda2ae4817b0380de127c8b:urxvt-perls/.signature
