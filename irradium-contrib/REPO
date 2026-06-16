@@ -179,10 +179,9 @@ f:a00c3c28ebaec68143a1ce772f26d112:chromium/patches/chromium-149-unbundle-minizi
 f:67ae3e1c82eb6ef138295a4a776d3e4f:chromium/patches/chromium-149-use-of-undeclared-identifier-ERROR.patch
 f:24ea2b2ae799520979daa5a8a80e9514:chromium/patches/compiler-rt-adjust-paths.patch
 f:6717879acb7df09706501e3ffbaf985a:chromium/patches/enable-widevine-arm64.patch
-f:47444a9ba2ac31fa4b11128373a7bdaf:chromium/patches/glibc-2.42-baud-rate-fix.patch
 f:8f6657577ad6609a22f2f7efe2fa237f:chromium/patches/increase-fortify-level.patch
 f:2acfad339649ffd410df9cfeaa31a79f:chromium/patches/use-oauth2-client-switches-as-default.patch
-f:7342aae91c3563e95a583e5f7784a235:chromium/Pkgfile
+f:0a16c1f643bef2db87b0106df87a19d8:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:21b87db70c6f721259e8bdde6a2ae435:deadbeef/.footprint
 f:79f129b0b6f852945dad71322bc8b228:deadbeef/.signature
