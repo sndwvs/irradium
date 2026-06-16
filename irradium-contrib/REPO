@@ -181,7 +181,7 @@ f:24ea2b2ae799520979daa5a8a80e9514:chromium/patches/compiler-rt-adjust-paths.pat
 f:6717879acb7df09706501e3ffbaf985a:chromium/patches/enable-widevine-arm64.patch
 f:8f6657577ad6609a22f2f7efe2fa237f:chromium/patches/increase-fortify-level.patch
 f:2acfad339649ffd410df9cfeaa31a79f:chromium/patches/use-oauth2-client-switches-as-default.patch
-f:0a16c1f643bef2db87b0106df87a19d8:chromium/Pkgfile
+f:8a18cf18df426f2973c164c91770e243:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:21b87db70c6f721259e8bdde6a2ae435:deadbeef/.footprint
 f:79f129b0b6f852945dad71322bc8b228:deadbeef/.signature

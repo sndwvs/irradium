@@ -126,9 +126,6 @@ build() {
     # enable widevine for arm64
     patch -Np1 -i $SRC/enable-widevine-arm64.patch
 
-    # https://crbug.com/456677057
-    patch -Np1 -i $SRC/glibc-2.42-baud-rate-fix.patch
-
     # Chromium bundles a patched minizip with extra features.
     patch -Np1 -i $SRC/chromium-149-unbundle-minizip-undo-unicode.patch
 
