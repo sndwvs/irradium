@@ -310,7 +310,7 @@ build() {
     ninja -C out/Release chrome chrome_sandbox chromedriver || exit 1
 
     install -Dv out/Release/chrome "$PKG/usr/lib/chromium/chromium"
-    install -Dv out/Release/chromedriver.unstripped "$PKG/usr/bin/chromedriver"
+    install -Dv out/Release/chromedriver "$PKG/usr/bin/chromedriver"
     install -Dvm4755 out/Release/chrome_sandbox "$PKG/usr/lib/chromium/chrome-sandbox"
 
     install -Dvm644 chrome/installer/linux/common/desktop.template \
