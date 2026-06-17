@@ -165,8 +165,8 @@ f:455ca37f56915d76c376c0ae18d311eb:chromium/.footprint.riscv64
 f:b71f0f2bebd4decc750655970c022b54:chromium/.signature.riscv64
 f:92a79d9005b5bef511da9c853a9afb9c:chromium/chromium.default
 f:218fe7585674cf5d68a0d7c2e7281274:chromium/chromium.sh
-f:610673e7871bb1d2ff52c3578afc112f:chromium/.footprint.aarch64
-f:a9c83399f4cdf8fc826e80d0e0b774a7:chromium/.signature.aarch64
+f:c7c6fdae8917e428ac6850406cd26944:chromium/.footprint.aarch64
+f:e318ada628f99c18cb2a6537f7ecb031:chromium/.signature.aarch64
 f:c171c578fd3b0af7342a36c02972d6ed:chromium/patches/0001-Run-blink-bindings-generation-single-threaded.patch
 f:eaccde81e6ff3045858a7d18af7e091e:chromium/patches/0002-Fix-distcc.patch
 f:883f63f2765d2eea97565e7ddf5c1834:chromium/patches/chromium-138-nodejs-version-check.patch
