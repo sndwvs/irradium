@@ -6,7 +6,7 @@
 
 name=cmake
 version=3.31.12
-release=1
+release=2
 source=(https://cmake.org/files/v${version%.*}/$name-$version.tar.gz)
 
 build() {
