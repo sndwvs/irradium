@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCQIs/UJiMY8TscWa4UaI0HKJfWoFismBx6V1RFoxKP1JhiNAa9nRIB3FP/COEz+VhoItASALN4AntTLtuVxtJA4=
-SHA256 (Pkgfile) = 4a3badb9f65d647d7a819a1eb20d70989b4c81f8fa7d72d4da8a9b41b6294ab4
-SHA256 (.footprint) = e6e1163735ae9e94f7ae9d8d4592200ca55360341b97a25e842f88de3f5e242d
-SHA256 (ffmpeg-8.1.1.tar.bz2) = b08594a47ca475ddda21c7990d8e9e3ceb5cd74f9709b4b5995b24d11cafa467
+RWRxRnTWECCiCeBEl5GUgCu1G5NryGyME5xnPM5QDsXQ5PegVy08IIKsWCYha12bmRhZa3F06yHkqFVbZpaR+3amg7+dtJoODAA=
+SHA256 (Pkgfile) = 10e334f68d0dd3169250883125782af6dcb7dd7522b0acca62a8b8f3be1253c5
+SHA256 (.footprint) = 7468abbcb2196184e8eded27fe551249e771ef830616ebe426efe7222b72afdc
+SHA256 (ffmpeg-8.1.2.tar.bz2) = b4925bd4411e654ad3884bc8da1860b0d860bd64a95a17220de48cfcd5f0a859
 SHA256 (add-av_stream_get_first_dts-for-chromium.patch) = 57e26caced5a1382cb639235f9555fc50e45e7bf8333f7c9ae3d49b3241d3f77
 SHA256 (add-in-cpu-__NR_riscv_hwprobe.patch) = 085acf99c968184b3500f737462babe100f3ac9b8a5f4aa804a311a3fd728dad
 SHA256 (ffmpeg-x264-10bit.sh) = dde9627c41800235fbcfe0f74d2181be96239a82cd2d0d277715dddb57eb9cb3
