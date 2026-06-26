@@ -4,7 +4,7 @@
 # Depends on: libmpc zstd
 
 name=gcc
-version=14.3.0
+version=14.4.0
 release=1
 source=(https://sourceware.org/pub/gcc/releases/gcc-$version/$name-$version.tar.xz
     $name-nocheck-fixincludes.patch $name-4.7.3-multilib-dirs.patch
@@ -41,7 +41,7 @@ build() {
         --prefix=/usr \
         --libexecdir=/usr/lib \
         --enable-threads=posix \
-        --with-build-config=bootstrap-lto \
+        --with-build-config=bootstrap-lto-lean \
         --with-linker-hash-style=gnu \
         --with-system-zlib \
         --enable-languages=c,c++,lto \
