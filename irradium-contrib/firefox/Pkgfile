@@ -82,7 +82,7 @@ EOF
     echo 'ac_add_options --disable-webrtc' >> .mozconfig
     echo 'ac_add_options --enable-rust-simd' >> .mozconfig
     # error "simulator disabled"
-    echo 'ac_add_options --enable-simulator=none' >> .mozconfig
+    echo 'ac_add_options --enable-simulator=riscv64' >> .mozconfig
     echo 'ac_add_options --disable-jit' >> .mozconfig
   fi
 
