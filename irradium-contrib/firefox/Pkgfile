@@ -82,8 +82,8 @@ EOF
     echo 'ac_add_options --disable-webrtc' >> .mozconfig
     echo 'ac_add_options --enable-rust-simd' >> .mozconfig
     # error "simulator disabled"
-    echo 'ac_add_options --disable-simulator' >> .mozconfig
-    echo 'ac_add_options --enable-jit' >> .mozconfig
+    echo 'ac_add_options --enablle-simulator=none' >> .mozconfig
+    echo 'ac_add_options --disable-jit' >> .mozconfig
   fi
 
   [ -x /usr/bin/uconv ] && echo 'ac_add_options --with-system-icu' >> .mozconfig
