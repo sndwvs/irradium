@@ -11,8 +11,8 @@ source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$versio
   firefox.desktop
   fix-target-detection.patch
   node-stdout-nonblocking-wrapper
-  01-rust-lto-thin.patch
-  02-riscv64-no-lto.patch)
+  fix-target-detection.patch
+  rust-lto-thin.patch)
 
 build() {
   chmod a+x "$SRC"/node-stdout-nonblocking-wrapper
@@ -81,6 +81,9 @@ EOF
     echo 'ac_add_options --disable-sandbox' >> .mozconfig
     echo 'ac_add_options --disable-webrtc' >> .mozconfig
     echo 'ac_add_options --enable-rust-simd' >> .mozconfig
+    # error "simulator disabled"
+    echo 'ac_add_options --disable-simulator' >> .mozconfig
+    echo 'ac_add_options --enable-jit' >> .mozconfig
   fi
 
   [ -x /usr/bin/uconv ] && echo 'ac_add_options --with-system-icu' >> .mozconfig
