@@ -199,10 +199,10 @@ f:5967a4ed6d1f029d16d70beaa71246d8:firefox/README
 f:c9ccd47ae6a570100ebf31d51a0e7a1f:firefox/firefox.desktop
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
-f:5541e0d6e02a74426852511a3f41f572:firefox/.footprint.riscv64
+f:86bb617054672643f444e7ee3b7a9dd1:firefox/.footprint.riscv64
 f:58241c133388fa6b3f2bdd59dcedbb5f:firefox/.footprint.aarch64
 f:478b9cd377bf27b5c4e4bbfe6da31fe7:firefox/.signature.aarch64
-f:ded8d6ef34c597361ee22448b40165fa:firefox/.signature.riscv64
+f:ed751b227cad6aac5223e731ef5bd880:firefox/.signature.riscv64
 f:f05c57df29fac3d03cf0672e65219c9a:firefox/Pkgfile
 f:e63779169c8dda5d6d57c99edcadbacf:firefox/rust-lto-thin.patch
 f:3219f5d622520efe5321b3b8de56be2d:freerdp/.footprint
