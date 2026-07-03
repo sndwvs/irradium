@@ -203,7 +203,7 @@ f:86bb617054672643f444e7ee3b7a9dd1:firefox/.footprint.riscv64
 f:58241c133388fa6b3f2bdd59dcedbb5f:firefox/.footprint.aarch64
 f:478b9cd377bf27b5c4e4bbfe6da31fe7:firefox/.signature.aarch64
 f:ed751b227cad6aac5223e731ef5bd880:firefox/.signature.riscv64
-f:f05c57df29fac3d03cf0672e65219c9a:firefox/Pkgfile
+f:fd56f0a846fc9145d25dc694f562bc68:firefox/Pkgfile
 f:e63779169c8dda5d6d57c99edcadbacf:firefox/rust-lto-thin.patch
 f:3219f5d622520efe5321b3b8de56be2d:freerdp/.footprint
 f:a13e25dfe47407735a11f8ece94b905f:freerdp/.signature
