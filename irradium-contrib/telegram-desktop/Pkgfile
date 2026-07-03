@@ -8,8 +8,7 @@ version=6.9.4
 release=1
 _commitid=8921c22f0f85b3cb0b56303f9cba81ba8549f4e8
 source=(https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tdesktop-$version-full.tar.gz
-        https://github.com/tdlib/td/archive/$_commitid.tar.gz
-        tdesktop-fix-minizip-includes.patch)
+        https://github.com/tdlib/td/archive/$_commitid.tar.gz)
 
 build() {
   cd tdesktop-$version-full
@@ -22,8 +21,6 @@ build() {
     -DTD_E2E_ONLY=ON
   cmake --build $SRC/td-$_commitid/build
   cmake --install $SRC/td-$_commitid/build
-
-  patch -p1 -i $SRC/tdesktop-fix-minizip-includes.patch
 
   export CXXFLAGS+=" -fpermissive"
 
