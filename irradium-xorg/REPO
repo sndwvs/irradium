@@ -17,9 +17,9 @@ f:398504a224b1fc27938c7640a255af83:mesa/patches/0007-mesa-25.2-aarch64-compile.p
 f:add55fada3a9b2de27dbc93d19af3f86:mesa/README.md
 f:f177ed0603b7199c793358d895aa08bf:mesa/.footprint.aarch64
 f:e01db0c3fcd42b7288b1015bf8cffb2d:mesa/.signature.aarch64
-f:1eca22a157945410a5b3f8c792bb184b:mesa/.signature.riscv64
+f:3a42116be623e574f37db7a25c4ce7d3:mesa/.signature.riscv64
 f:7cf4b423da30c02d0ce47ae5b2ed0363:mesa/Pkgfile
-f:5f828270fef5522de9db1f9e8591d240:mesa/.footprint.riscv64
+f:eae7799e0b928c1637d8dc1f51d674b3:mesa/.footprint.riscv64
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:2b55e5edd7f68e865c39720c44dca1c1:xorg-xf86-video-fbdev/.signature
 f:376712c2b0b9d9529ddd3520bb6b03c9:xorg-xf86-video-fbdev/Pkgfile
