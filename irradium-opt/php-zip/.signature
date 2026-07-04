@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCf5PKgi47Aio9mAX4J+nijcTNQSYexxY7VVIvc/fA2Mp0gGobuc4tNYGwGV9TUBS9DSIHVDumSarJvcieMZ8/gw=
-SHA256 (Pkgfile) = f398dea1bf9c6d94406a9e674ddf87ed4dd9fa0b19d3d197d582ca228073be4b
+RWRxRnTWECCiCdP2ZHp3fVQWrv9GBroM/3YXAk27zlCzaotd2y+/CTsbG34qPiecUxlDP6SrnVUDvDVd9n7misAiJDbvbBHUbAQ=
+SHA256 (Pkgfile) = 5db9d4b128b643831c0293799af5a969440e5720e3fd2902c5fba87cee7f4a85
 SHA256 (.footprint) = 0ba08044c2d47be4c86015de875a10f15dfee8367b932c5466a0212da28e4203
-SHA256 (php-8.5.7.tar.xz) = 01ba2ed1c2658dacf91bebc8be6a4885f69b811c7993831fc48e26107ab29985
+SHA256 (php-8.5.8.tar.xz) = 58910198d19e873048fe87cdfe16bc790025417ede3d1651bfa1c4b533d573f2
