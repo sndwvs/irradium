@@ -134,12 +134,12 @@ f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
 f:9ee2cd0cad8df3a461ad4aabb232af0f:rust/Pkgfile
 f:19368ee574587ede69279d0ea4993558:rust/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
 f:b2a0d7fc19bbe72381660cc52d424ec6:rust/.footprint.aarch64
-f:fa25c5796c99115e44c533f381bd29a3:rust/.signature.riscv64
+f:97cafb8c13f8103db7546b50d776273d:rust/.signature.riscv64
 f:ad038a2aa1de454e47d70d0cbac53e1b:rust/0001-bootstrap-Change-libexec-dir.patch
 f:f8d11d8c7f2a63566ed2dffc01c2b952:rust/0002-bootstrap-Change-bash-completion-dir.patch
 f:f9d38b634d10e1353a4c1200e11401f9:rust/0003-bootstrap-Workaround-for-system-stage0.patch
 f:6ee6690b08086d4a6c949d23829d299b:rust/0004-compiler-Change-LLVM-targets.patch
-f:687f02ba2eaec0a04bbbfda1a3239456:rust/.footprint.riscv64
+f:9f855635d94c6044113a2af82e84c6b3:rust/.footprint.riscv64
 f:3e816aaf558a9bbf034a11638499e51f:rust/.signature.aarch64
 f:2874f3457c724a96ff926ceef88fc999:slim/theme/background.png
 f:74bd5175145e88e0dc7fd369ceeaa75a:slim/theme/panel.png
