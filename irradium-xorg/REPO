@@ -15,8 +15,8 @@ f:32466113ec9e638532fbe7d2fc3bd479:mesa/patches/0005-mesa-buildsystem-improvemen
 f:79f8bcbbaac182e0745763b0e43a73c0:mesa/patches/0003-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch
 f:398504a224b1fc27938c7640a255af83:mesa/patches/0007-mesa-25.2-aarch64-compile.patch
 f:add55fada3a9b2de27dbc93d19af3f86:mesa/README.md
-f:5562f4e9e09be15da3064b9e9fe28fe8:mesa/.footprint.aarch64
-f:026c665ce5a1b60a75700282f93fe652:mesa/.signature.aarch64
+f:f177ed0603b7199c793358d895aa08bf:mesa/.footprint.aarch64
+f:e01db0c3fcd42b7288b1015bf8cffb2d:mesa/.signature.aarch64
 f:1eca22a157945410a5b3f8c792bb184b:mesa/.signature.riscv64
 f:7cf4b423da30c02d0ce47ae5b2ed0363:mesa/Pkgfile
 f:5f828270fef5522de9db1f9e8591d240:mesa/.footprint.riscv64
