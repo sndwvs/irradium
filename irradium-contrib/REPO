@@ -587,8 +587,8 @@ f:877c3e2c8f3c7ed586aaae3507cee30a:libmwaw/rpath.patch
 f:77cf7e4fd5b4a4a80309f3f2fae862f0:libpagemaker/.footprint
 f:a4cb3399cc3409ec3da081d8d88befac:libpagemaker/.signature
 f:2d8dcd24462e890847439a243d2a25e2:libpagemaker/Pkgfile
-f:f47b92f267e5b4c84169653e0d53a0f2:libstaroffice/.footprint
-f:828c962163763983d236dbd212dc118b:libstaroffice/.signature
+f:0a3d5cf46c67ca6b97a47d974455ba64:libstaroffice/.footprint
+f:06e089e0cf7b43fdfe3e3cf5d35a6afe:libstaroffice/.signature
 f:4e6d818ab36ed6e4461397a92f420cfb:libstaroffice/Pkgfile
 f:ac378fbcbb37eb1067a366a23c3a8bb2:libstaroffice/libstaroffice-bundled-soname.patch.0
 f:908a6ee3fcf2a19e7c91feb675f22a31:libzmf/.footprint

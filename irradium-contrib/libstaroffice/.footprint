@@ -11,9 +11,9 @@ drwxr-xr-x	root/root	usr/include/libstaroffice-0.0/libstaroffice/
 -rw-r--r--	root/root	usr/include/libstaroffice-0.0/libstaroffice/STOFFDocument.hxx
 -rw-r--r--	root/root	usr/include/libstaroffice-0.0/libstaroffice/libstaroffice.hxx
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libstaroffice-0.0-lo.so.0 -> libstaroffice-0.0-lo.so.0.0.7
--rwxr-xr-x	root/root	usr/lib/libstaroffice-0.0-lo.so.0.0.7
+lrwxrwxrwx	root/root	usr/lib/libstaroffice-0.0-lo.so.0 -> libstaroffice-0.0-lo.so.0.0.8
+-rwxr-xr-x	root/root	usr/lib/libstaroffice-0.0-lo.so.0.0.8
 -rwxr-xr-x	root/root	usr/lib/libstaroffice-0.0.la
-lrwxrwxrwx	root/root	usr/lib/libstaroffice-0.0.so -> libstaroffice-0.0-lo.so.0.0.7
+lrwxrwxrwx	root/root	usr/lib/libstaroffice-0.0.so -> libstaroffice-0.0-lo.so.0.0.8
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libstaroffice-0.0.pc

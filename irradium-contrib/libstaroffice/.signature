@@ -1,6 +1,6 @@
-untrusted comment: verify with /etc/ports/contrib.pub
-RWSagIOpLGJF3089ky/m8yrI+Wdeb3054Jt9ID/yLWK8a/WhuTlHGwmwuJnlSgYvO3Ly6wT9hK/gal+DtoU29tOgbX79GMko9gg=
-SHA256 (Pkgfile) = 78c4e2f38f6cf9a290903b31cafc7724e46ee0aca767300bae9a7ea3fe6e33ae
-SHA256 (.footprint) = dd394d998561b8948a466593c2ac91602fda892217305411eb57d136c14a9df6
-SHA256 (libstaroffice-0.0.7.tar.xz) = f94fb0ad8216f97127bedef163a45886b43c62deac5e5b0f5e628e234220c8db
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7kduAL4xEqK1sDcq43Uwoi95sZdZTtgwJuWF7uVI7CybehS8qw1kOCKD4tObXkRkFpDAnf5vjkeOC15yUNl9/Qs=
+SHA256 (Pkgfile) = 19dc63d4c853f16057441668b849386d81a199a8b4d656115cdaa42685de21b9
+SHA256 (.footprint) = bc7e0a49af4142a6d79ecf4cfce695c529e7bda8796d07aacf0bf52bc13b6aa3
+SHA256 (libstaroffice-0.0.8.tar.xz) = bbca92882e96c55bd1527670866d6bc7529ccb12786da55a2398b60a063378da
 SHA256 (libstaroffice-bundled-soname.patch.0) = 6ccbb13924733c05d4cd44bb1f6668b824baf0fad74de9dd3618053b1a689266
