@@ -589,7 +589,7 @@ f:a4cb3399cc3409ec3da081d8d88befac:libpagemaker/.signature
 f:2d8dcd24462e890847439a243d2a25e2:libpagemaker/Pkgfile
 f:f47b92f267e5b4c84169653e0d53a0f2:libstaroffice/.footprint
 f:828c962163763983d236dbd212dc118b:libstaroffice/.signature
-f:c83a81104d32105066801610fa78fb5b:libstaroffice/Pkgfile
+f:4e6d818ab36ed6e4461397a92f420cfb:libstaroffice/Pkgfile
 f:ac378fbcbb37eb1067a366a23c3a8bb2:libstaroffice/libstaroffice-bundled-soname.patch.0
 f:908a6ee3fcf2a19e7c91feb675f22a31:libzmf/.footprint
 f:adc0d9a61c38c9ad8050b8aa6dd01b2f:libzmf/Pkgfile

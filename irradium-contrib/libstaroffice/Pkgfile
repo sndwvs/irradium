@@ -4,8 +4,8 @@
 # Depends on: librevenge
 
 name=libstaroffice
-version=0.0.7
-release=2
+version=0.0.8
+release=1
 source=(https://github.com/fosnola/$name/releases/download/$version/$name-$version.tar.xz
   libstaroffice-bundled-soname.patch.0)
 
