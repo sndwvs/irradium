@@ -189,7 +189,7 @@ f:e5fff55c15a6ad168b665fe4c6aae583:nodejs/.footprint
 f:6f35bea030879f18394b1de2c469f449:nodejs/unbundle-uv.patch
 f:69769637d6d897ab4fe5a6e06bade96a:nodejs/v8-disable-trap-handler-on-riscv-sv39.patch
 f:9b26f3788c4fcd64378d582f9e161a27:nodejs/v8-riscv-trap-handler.patch
-f:8ae9c456e74288e855bed5fa38a2196a:nodejs/.signature
+f:6ade76dafe7621ce23963bf435ff9eab:nodejs/.signature
 f:efaa7334d3dd607bf6460bb8de5e2d78:nodejs/Pkgfile
 f:f63c7f588bcc7afaf59e500464b7ccdb:wpa_supplicant/.footprint
 f:056dfefc105808ab4c6ad3718d6a1936:wpa_supplicant/.signature
