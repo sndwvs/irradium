@@ -35,7 +35,6 @@ d:minizip
 d:gobject-introspection
 d:grub2-efi
 d:grub2
-d:lame
 d:efivar
 d:compiler-rt
 d:strace
@@ -229,9 +228,6 @@ f:83cea55bcdd94847b7b45b473b0e1d27:grub2/.footprint.aarch64
 f:9eb5f1c1152fa80f6725206afea13e47:grub2/.signature.aarch64
 f:de0fc8b96a2e09725b4dfff0f3921401:grub2/.footprint.riscv64
 f:1fbac7d440c241b0db9b0049334678c9:grub2/.signature.riscv64
-f:1cc2701f7267dad2c907ca304d22cc6c:lame/.footprint
-f:cce38c543bd5d52167e4fb7ec30daebc:lame/.signature
-f:52814a23ddd928be2c0d0632cc8bf84f:lame/Pkgfile
 f:5387ad06a1dc0774320b4482f95580be:efivar/.footprint
 f:910f6052b02380c83db3223f3b7d9364:efivar/.signature
 f:f193e75ca62a9f19acc471f19b047a9f:efivar/Pkgfile
