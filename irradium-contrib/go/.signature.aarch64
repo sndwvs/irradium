@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7uXrsNRSTnse/GyFpCeaCykWidwRAIeQzgW/rAv5dMTF4gaAiYzXpW19+m6QfJV7AVtP46UuvxyB4cnS53GbvQo=
-SHA256 (Pkgfile) = d545d77a7b72053ba6134a1f7b2c35447f989d1165c6076d612a4ff1e8004178
-SHA256 (.footprint.aarch64) = 28390cdca35b3864aac4b6f17fdbc672a7e9fd04d60420ade0a7f28770ba6630
-SHA256 (go1.26.4.src.tar.gz) = 4f668a32fbfc1132e6a881fb968c2f1dada631492a339211735fbb255a42602d
-SHA256 (go1.26.4.linux-arm64.tar.gz) = ef758ae7c6cf9267c9c0ef080b8965f453d89ab2d25d9eb22de4405925238768
+RWTmT3d9kqan7nwZWetXvx8lRU+UL/gSBSEBHqeWvb8DHZF6938UtxlMlSZUEemBEGlguP3HpYWu1dqEyKja8uHg4qQBR3MDDwc=
+SHA256 (Pkgfile) = 43651665ca281b0ee5ff525a522371a617c8417265fe805718eee78eff3ae73c
+SHA256 (.footprint.aarch64) = 7d6dae949deb78cf115c6d4c2657bdb046bbc6a71e4029b33cd46482677ec02c
+SHA256 (go1.26.5.src.tar.gz) = 495be4bc87176ac567392e5b4116abd98466d33d7b49d41e764ccc6976b2dc42
+SHA256 (go1.26.5.linux-arm64.tar.gz) = fe4789e92b1f33358680864bbe8704289e7bb5fc207d80623c308935bd696d49
