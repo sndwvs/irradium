@@ -73,6 +73,7 @@ d:acme.sh
 d:sshpass
 d:zabbix-agent2
 d:gspell
+d:nss-pam-ldapd
 d:mkinitramfs
 d:ntp
 d:glmark2
@@ -494,6 +495,14 @@ f:d32239bcb673463ab874e80d47fae504:COPYING
 f:c8f811ef2dddfcb8c540a79eeb3094aa:gspell/.footprint
 f:e2fa9558884c770209d7e582eb2cb0fc:gspell/.signature
 f:850e7f7c9838c0071953e25b12d623c8:gspell/Pkgfile
+f:b77a04835fc6c0a7e82dc2e5291df62b:nss-pam-ldapd/10-define-netdb-internal.patch
+f:fca07b49935c56c4b6364ad81bf44a49:nss-pam-ldapd/20-gcc15.patch
+f:d18f9eca84abb0d970aaa4020685fbf3:nss-pam-ldapd/Pkgfile
+f:fb0a14670985a06b1c898fa5af27e209:nss-pam-ldapd/nslcd.logrotate
+f:ae96424ae39c6bfaf9b4c90b444f97b2:nss-pam-ldapd/pre-install
+f:eec27fe56bde2e6ddaa8e9e5e0e29f52:nss-pam-ldapd/rc.nslcd
+f:e5bbfc22489156fb41d56eae198bebfe:nss-pam-ldapd/.footprint
+f:2fe709ca6c75351678aeacb57899f02d:nss-pam-ldapd/.signature
 f:4461500806eba45e6f7dd0f5805ea777:mkinitramfs/init.in.patch
 f:1793b8523186ece9d46244e4c3b57fae:mkinitramfs/init.in
 f:6fc9192870e3cd2924aceb60f46c974a:mkinitramfs/.footprint

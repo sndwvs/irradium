@@ -1,0 +1,5 @@
+#!/bin/sh
+
+getent group nslcd || /usr/sbin/groupadd -r nslcd
+getent passwd nslcd || /usr/sbin/useradd -r -d /var/lib/nslcd -s /bin/false -G nslcd -g nslcd nslcd
+/usr/bin/passwd -l nslcd

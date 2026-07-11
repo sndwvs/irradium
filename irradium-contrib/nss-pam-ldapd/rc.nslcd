@@ -1,0 +1,38 @@
+#!/bin/sh
+#
+# /etc/rc.d/nslcd: start/stop haproxy
+#
+
+SSD=/sbin/start-stop-daemon
+PROG=/usr/sbin/nslcd
+PID=/run/nslcd/nslcd.pid
+OPTS=" -f /etc/nslcd.conf "
+
+case $1 in
+    start)
+        [ ! -e /run/nslcd ] && install -d -o nslcd -g nslcd /run/nslcd
+
+        $SSD --start -bm --pidfile $PID --exec $PROG -- $OPTS
+        ;;
+    stop)
+        $SSD --stop --retry 10 --pidfile $PID
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+    status)
+        $SSD --status --pidfile $PID
+        case $? in
+        0) echo "$PROG is running with pid $(cat $PID)" ;;
+        1) echo "$PROG is not running but the pid file $PID exists" ;;
+        3) echo "$PROG is not running" ;;
+        4) echo "Unable to determine the program status" ;;
+        esac
+        ;;
+    *)
+        echo "Usage: $0 [start|stop|restart|status]"
+        ;;
+esac
+
+# End of file

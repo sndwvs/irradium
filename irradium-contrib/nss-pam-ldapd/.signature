@@ -1,0 +1,9 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7pFueWNRXl2VslLfk7k95BjQi/YZlPEzJCm2ZiqJS4ejicnJAMChs/xc1d8kCeDg77T5rAAt24JfCMT3jThW0w8=
+SHA256 (Pkgfile) = 37b61f2c8b06c306d4de17e3061befd8c3ca6d54404235c4216fe0470f814e06
+SHA256 (.footprint) = bdb609b791379bd6a9b24a41cd206f1b88557f5aa45c12c92410434d5ddb4ea2
+SHA256 (nss-pam-ldapd-0.9.13.tar.gz) = e01784e17cb533bb66bd0601e205e785263445c3c2df7a6f90232ab4131c716d
+SHA256 (rc.nslcd) = 40afa2a300339685352725048d374967f3445c3bc3494cf006cbca59730f604d
+SHA256 (nslcd.logrotate) = ab1e52c8e98f986c565ffe971e0096f2503c41b50b441c753b72b62c66cd9a18
+SHA256 (10-define-netdb-internal.patch) = ab754dff8c2eb077407bd0c99cf8e51fe59d6448349b293c0c74b347e4513c05
+SHA256 (20-gcc15.patch) = 624a18bcbc398b170f63635927970d6cedc01c2e975033fb53855ed258cbd4ed

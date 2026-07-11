@@ -1,0 +1,43 @@
+# Description: an nsswitch module which uses directory servers
+# URL: https://arthurdejong.org/nss-pam-ldapd/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: autoconf automake linux-pam openldap
+
+name=nss-pam-ldapd
+version=0.9.13
+release=1
+source=(https://arthurdejong.org/nss-pam-ldapd/$name-$version.tar.gz
+        rc.nslcd
+        nslcd.logrotate
+        10-define-netdb-internal.patch
+        20-gcc15.patch)
+
+build() {
+  cd $name-$version
+
+  patch -p1 -i $SRC/10-define-netdb-internal.patch
+  patch -p1 -i $SRC/20-gcc15.patch
+
+  autoreconf -fiv
+
+  ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --mandir=/usr/share/man \
+        --infodir=/usr/share/info \
+        --localstatedir=/var \
+        --with-pam-seclib-dir=/lib/security
+
+  make
+  make install DESTDIR=$PKG
+
+  rm -rf $PKG/usr/{doc,share/info}
+  mv $PKG/etc/nslcd.conf{,.example}
+  install -d $PKG/run/nslcd
+
+  install -D -m600 $SRC/nslcd.logrotate \
+    $PKG/etc/logrotate.d/nslcd.conf
+
+  install -D -m755 $SRC/rc.nslcd \
+    $PKG/etc/rc.d/nslcd
+}
