@@ -488,7 +488,7 @@ f:7ad4cf5bd0fb54a12281db3dccdbc1dc:zabbix-agent2/zabbix_agent2.conf.patch
 f:5c53327412e28c3a029e386d47825953:zabbix-agent2/zabbix_agent2.logrotate
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-agent2/pre-install
 f:06687e96334e9bbe44c1f908a6338912:zabbix-agent2/.footprint
-f:f7e2425ad346dd9b95ee5331a75db6db:zabbix-agent2/.signature
+f:116e9414ed21ceff0e1f487c3c9ce470:zabbix-agent2/.signature
 f:c2e2042fd9d7e06f19784540782e4d18:zabbix-agent2/Pkgfile
 f:62a1f8b1cedaa77516601a396a95d322:zabbix-agent2/rc.zabbix-agent2
 f:d32239bcb673463ab874e80d47fae504:COPYING
