@@ -4,7 +4,7 @@
 # Depends on: zabbix-server apache php php-fpm php-gd php-pgsql php-ldap php-mbstring php-gettext php-sockets php-bcmath
 
 name=zabbix-frontend
-version=7.4.11
+version=7.4.12
 release=1
 source=(https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-$version.tar.gz
         apache-zabbix.conf
