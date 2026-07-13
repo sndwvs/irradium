@@ -107,7 +107,7 @@ f:4f621b67f804bb79aeee6b1057ff06bf:pkgconf/Pkgfile
 f:fea619c56d0736e29d7bf413c37a7b04:pkgconf/.footprint.aarch64
 f:cddcb11c5b08482b400500194b31faac:pkgconf/.footprint.riscv64
 f:6e13ef78a7f7938c8e866dd545236e07:pkgconf/.signature.riscv64
-f:a63a9de0effb35955b58211e7051c5c2:pkgconf/.signature.aarch64
+f:c5ed912e34b2a424a09ac64d84ce0a4d:pkgconf/.signature.aarch64
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:85773ddb6595cc96b6776168a93a8ed9:pkgutils/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
 f:fbc13afb294f16b010c7fd3f9f7e67f9:pkgutils/.signature
