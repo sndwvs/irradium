@@ -103,11 +103,12 @@ f:f0fdc422afa0d319b229c08a9d73b08f:mlocate/Pkgfile
 f:6fec70b14f238ad94caf5dac367ee427:pkgconf/README
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
-f:23e7c85a14885d75f53f795ecea10708:pkgconf/Pkgfile
+f:92882137d97c33babd24a5fb0e084c55:pkgconf/Pkgfile
 f:fea619c56d0736e29d7bf413c37a7b04:pkgconf/.footprint.aarch64
 f:cddcb11c5b08482b400500194b31faac:pkgconf/.footprint.riscv64
 f:56c9e6bcadf8db495317bf49590556c8:pkgconf/.signature.riscv64
 f:c5e17d385a689ba56c7e449b02a3d023:pkgconf/.signature.aarch64
+f:c6d689e4e8bc7b2b3e13a911bab36e27:pkgconf/x86_64-pc-linux-gnu.personality
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:85773ddb6595cc96b6776168a93a8ed9:pkgutils/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
 f:fbc13afb294f16b010c7fd3f9f7e67f9:pkgutils/.signature
