@@ -1,0 +1,16 @@
+diff --git a/configure.ac b/configure.ac
+--- a/configure.ac
++++ b/configure.ac
+@@ -1,6 +1,10 @@
+     BOX2D_VERSION=`$PKG_CONFIG --modversion box2d 2>/dev/null`
+     BOX2D_MAJOR=`echo $BOX2D_VERSION | cut -d"." -f1`
+     BOX2D_MINOR=`echo $BOX2D_VERSION | cut -d"." -f2`
+-    if test "$BOX2D_MAJOR" -eq "2"; then
++
++    if test "$BOX2D_MAJOR" -eq "3"; then
++        _BOX2D_LIB=box2d
++        AC_DEFINE([BOX2D_HEADER], [<box2d/box2d.h>])
++    elif test "$BOX2D_MAJOR" -eq "2"; then
+         if test "$BOX2D_MINOR" -eq "4"; then
+             _BOX2D_LIB=box2d
+             AC_DEFINE([BOX2D_HEADER], [<box2d/box2d.h>])<
