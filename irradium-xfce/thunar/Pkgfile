@@ -4,7 +4,7 @@
 # Depends on: exo libxfce4ui gnome-icon-theme libgudev libnotify libexif
 
 name=thunar
-version=4.20.8
+version=4.20.9
 release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
