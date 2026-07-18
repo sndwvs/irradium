@@ -325,9 +325,9 @@ f:73e7b99b3c8ae2ce230a665abc9ed5e1:libptytty/Pkgfile
 f:4b86fd4f00194d24dec3fd5be9345ace:libreoffice/.footprint.aarch64
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
 f:b3953ee4921f5d0dff821e946c477b85:libreoffice/makefile.in.patch
-f:ae621ba6aedeab36b36d2a1416ac4750:libreoffice/.footprint.riscv64
+f:0d3d7482cef1317ecd0e24f7174cc47a:libreoffice/.footprint.riscv64
 f:34f33f40ba9fcfc39bffb0cc7cd52f09:libreoffice/.signature.aarch64
-f:eed91939c4f0a45e8ffccfc287c77dd1:libreoffice/.signature.riscv64
+f:e3467b22e5684c7a75c1cac35adf06a0:libreoffice/.signature.riscv64
 f:1b670dbf522f66cea03d51ccbf621392:libreoffice/Pkgfile
 f:7ed12ba8fb62a67871317172bcae0d3c:libreoffice/box2d.patch
 f:7b3ae4fbdd27165b5adb2956822eb63c:librga/.footprint
