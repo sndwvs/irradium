@@ -1,14 +1,5 @@
 --- a/profile	2024-06-15 21:35:03.041661268 +0300
 +++ b/profile	2024-11-10 23:46:00.171642307 +0200
-@@ -2,7 +2,7 @@
- # /etc/profile: system-wide defaults for bash(1) login shells
- #
- 
--export PATH="/sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin"
-+export PATH="/sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin:/usr/local/bin:/usr/local/sbin"
- 
- if [ ! -f ~/.inputrc ]; then
- 	export INPUTRC="/etc/inputrc"
 @@ -14,4 +14,12 @@ export PS2="\[\033[1m\]> \[\033[0m\]"
  
  umask 022

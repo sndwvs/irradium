@@ -160,8 +160,8 @@ f:ac2d17598ebb0839afc6bc628e64745d:rc/Pkgfile
 f:d39452dd1bc4f0605584e435c6677723:rc/rc.patch
 f:59a9290d7808750d475cb0754c6ab19f:bash/.footprint
 f:be5b8a1e3dd2272113e854ed0f155c47:bash/profile
-f:cf443b43826ea1ffb0abf92b5123297a:bash/profile.patch
-f:eb181519e3ca8c74eb45278fff28575c:bash/Pkgfile
+f:26cd896b496ca33a71df913b4a3e09a3:bash/profile.patch
+f:a7713d5f84fde57065ff4aea7f32e46d:bash/Pkgfile
 f:16bb1bd8843e58cc4ba357b58324cd3b:bash/locale.sh
 f:6e6e99b1b2bf8cabb6d1e282efa0ad4f:bash/bash-5.3.15.patch.gz
 f:52bb007ace3c0228b339c2b7e0a8fa4f:bash/.signature
