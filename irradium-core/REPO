@@ -164,7 +164,7 @@ f:26cd896b496ca33a71df913b4a3e09a3:bash/profile.patch
 f:a7713d5f84fde57065ff4aea7f32e46d:bash/Pkgfile
 f:16bb1bd8843e58cc4ba357b58324cd3b:bash/locale.sh
 f:6e6e99b1b2bf8cabb6d1e282efa0ad4f:bash/bash-5.3.15.patch.gz
-f:52bb007ace3c0228b339c2b7e0a8fa4f:bash/.signature
+f:05b1fbf88c50531e6b0b675068e690a6:bash/.signature
 f:3fcc966da59af67909aaa35ff54b8ff4:bash/home-profile.d.sh
 f:4e1e8a61db6c9a19f9398eb1073d41e2:dcron/.footprint
 f:3596a4fa9cf63bdf130fd533ca7703d4:dcron/crontab
