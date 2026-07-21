@@ -4,7 +4,7 @@
 # Depends on: librevenge
 
 name=libmwaw
-version=0.3.22
+version=0.3.23
 release=1
 source=(https://sourceforge.net/projects/$name/files/$name/$name-$version/$name-$version.tar.xz
   libmwaw-bundled-soname.patch.0

@@ -71,6 +71,7 @@ d:keepalived
 d:dhcp
 d:acme.sh
 d:sshpass
+d:libmwaw
 d:zabbix-agent2
 d:gspell
 d:nss-pam-ldapd
@@ -89,7 +90,6 @@ d:btop
 d:lrzsz
 d:crosstool-ng
 d:libfreehand
-d:libmwaw
 d:libpagemaker
 d:libstaroffice
 d:libzmf
@@ -483,6 +483,11 @@ f:ed2700e16fa136f5077448b0bca019cc:acme.sh/Pkgfile
 f:7b39087f8e19d9392beeb0b96386cdc2:sshpass/.footprint
 f:511ddf7ee3ccd5eb66cfe72503279319:sshpass/.signature
 f:e878e7386df273a8d1e31f006a07bd77:sshpass/Pkgfile
+f:79a2494f2ffb06a511119349db62e64d:libmwaw/.footprint
+f:ad8ab14173380290f4750c382cd24be7:libmwaw/.signature
+f:5063b833a3faf995c556f60c1a53d32a:libmwaw/Pkgfile
+f:3ab83c4eb63f1a8743cfa9915015725d:libmwaw/libmwaw-bundled-soname.patch.0
+f:877c3e2c8f3c7ed586aaae3507cee30a:libmwaw/rpath.patch
 f:7ad4cf5bd0fb54a12281db3dccdbc1dc:zabbix-agent2/zabbix_agent2.conf.patch
 f:5c53327412e28c3a029e386d47825953:zabbix-agent2/zabbix_agent2.logrotate
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-agent2/pre-install
@@ -583,11 +588,6 @@ f:2d76d265067e3ef5f341b27c9f102374:crosstool-ng/Pkgfile
 f:ca2d6d5e8ad84f35c20c7557875e1f9d:libfreehand/.footprint
 f:83e567d80b9752442c1c0e2dc0e03045:libfreehand/.signature
 f:fb2dcd7cc0f861d7050d2d0c194fdc1a:libfreehand/Pkgfile
-f:79a2494f2ffb06a511119349db62e64d:libmwaw/.footprint
-f:ad8ab14173380290f4750c382cd24be7:libmwaw/.signature
-f:66f98b4d6c07afb31ce230504b28d91b:libmwaw/Pkgfile
-f:3ab83c4eb63f1a8743cfa9915015725d:libmwaw/libmwaw-bundled-soname.patch.0
-f:877c3e2c8f3c7ed586aaae3507cee30a:libmwaw/rpath.patch
 f:77cf7e4fd5b4a4a80309f3f2fae862f0:libpagemaker/.footprint
 f:a4cb3399cc3409ec3da081d8d88befac:libpagemaker/.signature
 f:2d8dcd24462e890847439a243d2a25e2:libpagemaker/Pkgfile
