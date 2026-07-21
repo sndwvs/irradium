@@ -2,10 +2,10 @@
 # URL: https://www.mozilla.com/firefox/
 # Maintainer: John McQuah, jmcquah at disroot dot org
 # Depends on: alsa-lib aom autoconf-2.13 brotli cbindgen dav1d dbus-glib ffmpeg graphite2 libevent libnotify libvpx libwebp libxkbcommon nodejs nss unzip xorg-libxcomposite xorg-libxcursor xorg-libxinerama xorg-libxt zip
-# Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland
+# Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland xdg-desktop-portal-gtk
 
 name=firefox
-version=152.0.5
+version=152.0.6
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
