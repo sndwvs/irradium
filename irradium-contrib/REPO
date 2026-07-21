@@ -483,8 +483,8 @@ f:ed2700e16fa136f5077448b0bca019cc:acme.sh/Pkgfile
 f:7b39087f8e19d9392beeb0b96386cdc2:sshpass/.footprint
 f:511ddf7ee3ccd5eb66cfe72503279319:sshpass/.signature
 f:e878e7386df273a8d1e31f006a07bd77:sshpass/Pkgfile
-f:79a2494f2ffb06a511119349db62e64d:libmwaw/.footprint
-f:ad8ab14173380290f4750c382cd24be7:libmwaw/.signature
+f:9e70df833d1c2641d7ab19e3cf727454:libmwaw/.footprint
+f:894a0e15b3411774fae1fed36e161919:libmwaw/.signature
 f:5063b833a3faf995c556f60c1a53d32a:libmwaw/Pkgfile
 f:3ab83c4eb63f1a8743cfa9915015725d:libmwaw/libmwaw-bundled-soname.patch.0
 f:877c3e2c8f3c7ed586aaae3507cee30a:libmwaw/rpath.patch

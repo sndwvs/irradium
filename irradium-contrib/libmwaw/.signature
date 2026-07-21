@@ -1,7 +1,7 @@
-untrusted comment: verify with /etc/ports/contrib.pub
-RWSagIOpLGJF39el+Y0jY2yw6fQ/e08PG9EjTWSsD3Jv5vmRnUg6TgFhbo1iZ64J0cRbHV/EqU+aal7RVs++D5sGd118pA0d0wA=
-SHA256 (Pkgfile) = 0044f78532b347a34423a84edde9b3f31d92c73f54c69e2ed13ef7c4c3c1b688
-SHA256 (.footprint) = 5550dcc15253da46b025e0bf134684f3770774960094c97b9afddd84ceb7928c
-SHA256 (libmwaw-0.3.22.tar.xz) = a1a39ffcea3ff2a7a7aae0c23877ddf4918b554bf82b0de5d7ce8e7f61ea8e32
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7vpFWaq+gMW37RbWUv38/Y6C6mRo5t8AqnmsTlyE2Xj7jUHW/2DFwHC148ire52k6mFX0Gjae72l9bbBdQvYmg8=
+SHA256 (Pkgfile) = 00aa133ec6caf02e502dd843d6a061b0304454249b6c650d32c8e94c335d5c73
+SHA256 (.footprint) = 0ddf5387119cc8edf5fc49ea296fc2f8f5913da273ea13c960fec087541341ae
+SHA256 (libmwaw-0.3.23.tar.xz) = ac3590f691a2904eb8c7dc8b757b8a29f125f592449e421459ae8fa928b399eb
 SHA256 (libmwaw-bundled-soname.patch.0) = d7d85506d123eb64acb4e658fb5a61767d5ad78b71994fa0a7850804fa4c2843
 SHA256 (rpath.patch) = b4453ed227905aec35f5502b820a127066b2ae13ed26680eada0f9527117da84
