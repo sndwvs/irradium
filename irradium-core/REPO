@@ -103,7 +103,7 @@ f:f0fdc422afa0d319b229c08a9d73b08f:mlocate/Pkgfile
 f:6fec70b14f238ad94caf5dac367ee427:pkgconf/README
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
-f:92882137d97c33babd24a5fb0e084c55:pkgconf/Pkgfile
+f:d89d986c83d3c2d771d9990dda3bee78:pkgconf/Pkgfile
 f:fea619c56d0736e29d7bf413c37a7b04:pkgconf/.footprint.aarch64
 f:cddcb11c5b08482b400500194b31faac:pkgconf/.footprint.riscv64
 f:332a6efec72a29af5fa4b6b1ecc617f6:pkgconf/.signature.riscv64
