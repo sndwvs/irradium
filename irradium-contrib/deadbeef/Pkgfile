@@ -2,9 +2,10 @@
 # URL: http://deadbeef.sourceforge.net
 # Maintainer: mara, mara at fail dot pp dot ua
 # Depends on: alsa-lib curl desktop-file-utils jansson gtk3 clang libdispatch libmad libtool libsamplerate yasm intltool gettext pkgconf ffmpeg
+# Optional: mac
 
 name=deadbeef
-version=1.10.1
+version=1.10.3
 release=1
 source=()
 
