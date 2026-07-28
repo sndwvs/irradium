@@ -1,0 +1,19 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mac
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/MAC/
+-rw-r--r--	root/root	usr/include/MAC/All.h
+-rw-r--r--	root/root	usr/include/MAC/CharacterHelper.h
+-rw-r--r--	root/root	usr/include/MAC/IAPEIO.h
+-rw-r--r--	root/root	usr/include/MAC/IAPETag.h
+-rw-r--r--	root/root	usr/include/MAC/MACDll.h
+-rw-r--r--	root/root	usr/include/MAC/MACLib.h
+-rw-r--r--	root/root	usr/include/MAC/NoWindows.h
+-rw-r--r--	root/root	usr/include/MAC/SmartPtr.h
+-rw-r--r--	root/root	usr/include/MAC/Version.h
+-rw-r--r--	root/root	usr/include/MAC/Warnings.h
+-rw-r--r--	root/root	usr/include/MAC/WindowsEnvironment.h
+drwxr-xr-x	root/root	usr/lib64/
+lrwxrwxrwx	root/root	usr/lib64/libMAC.so -> libMAC.so.15
+-rwxr-xr-x	root/root	usr/lib64/libMAC.so.15

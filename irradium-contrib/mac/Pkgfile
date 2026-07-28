@@ -1,0 +1,21 @@
+# Description: APE codec and decompressor
+# URL: https://www.monkeysaudio.com/index.html
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: glibc gcc
+
+name=mac
+version=12.95
+release=1
+source=(https://monkeysaudio.com/files/MAC_${version//./}_SDK.zip)
+
+build() {
+
+  cmake -S . -B build \
+    -D CMAKE_INSTALL_PREFIX=/usr \
+    -D CMAKE_BUILD_TYPE=None \
+    -W no-dev
+
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
+
+}

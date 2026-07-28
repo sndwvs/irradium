@@ -89,6 +89,7 @@ d:pkgtools
 d:btop
 d:lrzsz
 d:crosstool-ng
+d:mac
 d:libfreehand
 d:libpagemaker
 d:libstaroffice
@@ -585,6 +586,9 @@ f:36663982cb2dd06e86a2afb7493af5a4:crosstool-ng/0001-sunrpc.diff
 f:3ed9ddb003c32686428f90045a8582ad:crosstool-ng/.footprint
 f:7906135464207f045d449d5b3e4bcd45:crosstool-ng/.signature
 f:2d76d265067e3ef5f341b27c9f102374:crosstool-ng/Pkgfile
+f:49e68e3a2fc0db253e9c98c87428c07b:mac/Pkgfile
+f:42a0d36b4cfc30e01826b68304220534:mac/.footprint
+f:2d927be1f0915564986392ab396b6dfc:mac/.signature
 f:ca2d6d5e8ad84f35c20c7557875e1f9d:libfreehand/.footprint
 f:83e567d80b9752442c1c0e2dc0e03045:libfreehand/.signature
 f:fb2dcd7cc0f861d7050d2d0c194fdc1a:libfreehand/Pkgfile
