@@ -6,7 +6,7 @@
 
 name=deadbeef
 version=1.10.3
-release=1
+release=2
 source=()
 
 build() {
@@ -34,7 +34,6 @@ build() {
     --disable-coreaudio \
     --disable-dumb \
     --disable-alac \
-    --disable-ffap \
     --disable-gme \
     --disable-mms \
     --disable-mono2stereo \
@@ -56,6 +55,7 @@ build() {
     --enable-threads \
     --enable-flac \
     --enable-ffmpeg \
+    --enable-ffap \
     --enable-gtk3 \
     --enable-vfs-curl \
     --enable-shared \
