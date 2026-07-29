@@ -6,7 +6,7 @@
 
 name=ffmpeg
 version=8.1.2
-release=1
+release=2
 source=(https://ffmpeg.org/releases/$name-$version.tar.bz2
   add-av_stream_get_first_dts-for-chromium.patch
   add-in-cpu-__NR_riscv_hwprobe.patch
@@ -99,7 +99,9 @@ build() {
     --disable-debug \
     --disable-doc \
     --disable-libcelt \
-    --disable-stripping
+    --disable-stripping \
+    --enable-decoder=ape \
+    --enable-demuxer=ape
 
   make
   make DESTDIR=$PKG install install-man
