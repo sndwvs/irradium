@@ -719,7 +719,7 @@ f:1d5d00975f6f7dd25845578d2a0871a4:zabbix-proxy/Pkgfile
 f:7434ee965d25e58e609525118321a4f4:zabbix-proxy/rc.zabbix-proxy
 f:04276a7482d2bd18ba3d0473531717c7:zabbix-proxy/zabbix_proxy.logrotate
 f:e70080cf360016d747a6a04ff337f3e0:zabbix-proxy/.footprint
-f:5b218be26f1977a2409c6bff92f4ca97:zabbix-proxy/.signature
+f:c8522a03b370a74cecac4df3ef7e0bbe:zabbix-proxy/.signature
 f:87ab57beabcc33e794d56c4e217f4b66:audacious/.footprint
 f:cca42a21584d2e7a49baa60bb486c5d2:audacious/post-install
 f:22bf51e7f17b9b19f78e15015399df28:audacious/.signature
