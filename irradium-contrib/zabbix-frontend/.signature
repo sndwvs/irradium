@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7i2rsANqub2FzGZrA7YY0Q+0uAFsEgPrRwYqgeIXZp/GGqxnrCuga5dFp31iG56ex50Z7JxYkhwyiBGxzAaaEw0=
-SHA256 (Pkgfile) = fff02251e1e9af8cf98c13a0d77e6397d44ad7bc5ad63c511465ea78aa5b53c8
-SHA256 (.footprint) = 7bfdfa07b609859ccfbe3420b755e656fb1fb68bec925ec4905ce2cd0dd14e88
-SHA256 (zabbix-7.4.12.tar.gz) = 2c60629e5dce61f503026c99d8a92c2f66ade32eefd898ba5d9000fde9eb9dd0
+RWTmT3d9kqan7n2nwon+Z+OLu395vhzmpd47Z9vXNMvmyzcPpNx59dGX2ODkKj2z0uPFyYux2RcNzf9szsruhetmM1HAcTCJ0As=
+SHA256 (Pkgfile) = eefb6401fd58f549a1fbbac3d7481e62a0c5cb7c11abf7811481dc3a8c21acda
+SHA256 (.footprint) = adbbfaed0ea1ec38cc5a1834014cfa27a60220a79337ab4debdd31aa346b5e1e
+SHA256 (zabbix-7.4.13.tar.gz) = ebc4fb054af919b123622feea9d4c399711cf0507ef193e2ded76713a80ee3c6
 SHA256 (apache-zabbix.conf) = f952ad8b48cab9a663bbd03d5c77ac47f1eef16cb8dfe01d88e29a6cbea334fb
 SHA256 (php-fpm-zabbix.conf) = 17e8c80cca3f364da1ac095f9714c6711df66154e48322a38ef4911ae5f2e811

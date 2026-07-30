@@ -1383,6 +1383,7 @@ drwxrwxr-x	root/root	usr/share/zabbix/ui/include/classes/validators/
 -rw-rw-r--	root/root	usr/share/zabbix/ui/include/classes/validators/CHtmlUrlValidator.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/include/classes/validators/CIdValidator.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/include/classes/validators/CItemKeyValidator.php
+-rw-rw-r--	root/root	usr/share/zabbix/ui/include/classes/validators/CJsRpcInputValidator.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/include/classes/validators/CJsonValidator.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/include/classes/validators/CLdapAuthValidator.php
 -rw-rw-r--	root/root	usr/share/zabbix/ui/include/classes/validators/CLimitedSetValidator.php
