@@ -198,7 +198,7 @@ f:e326336f4bc83a319d32de3fb30354a9:efibootmgr/.signature
 f:a2e9954fdf88c7872c7617f3a524cf26:efibootmgr/Pkgfile
 f:0fac9b02d2ab26cfd0c61670f2758641:php-zip/.footprint
 f:9f7ee99314c2556da08de505968d88b4:php-zip/Pkgfile
-f:ce30ece6de4ff022fe2b22b2ea840527:php-zip/.signature
+f:0c5c0459840531d9214d50e73e567d07:php-zip/.signature
 f:6a3b37401d78735d427832419c15824c:gobject-introspection/.footprint.aarch64
 f:573d6fee048e01b3e0a10d18c9854b28:gobject-introspection/.footprint.riscv64
 f:f084746f364f164445784132cd1b98c2:gobject-introspection/.signature.aarch64
