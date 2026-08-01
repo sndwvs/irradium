@@ -4,8 +4,8 @@
 # Depends on: libnotify upower libxfce4ui
 
 name=xfce4-power-manager
-version=4.20.0
-release=2
+version=4.20.1
+release=1
 source=(https://archive.xfce.org/src/xfce/$name/${version%.*}/$name-$version.tar.bz2)
 
 build(){
