@@ -3,7 +3,7 @@
 # Maintainer: Juergen Daubert, jue at crux dot nu
 
 name=php-bcmath
-version=8.5.8
+version=8.5.9
 release=1
 source=(https://www.php.net/distributions/php-$version.tar.xz)
 
