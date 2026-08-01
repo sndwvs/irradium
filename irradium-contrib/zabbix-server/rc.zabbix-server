@@ -35,8 +35,7 @@ case $1 in
             fi
         fi
 
-        $SSD --stop -u zabbix -g zabbix --retry 10 --pidfile $PID
-        $SSD --stop --oknodo --exec $PROG --retry=TERM/10/KILL/5
+        $SSD --stop -u zabbix -g zabbix --oknodo --exec $PROG --retry=TERM/10/KILL/5 --retry 10 --pidfile $PID
         ;;
     restart)
         $0 stop

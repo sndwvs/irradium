@@ -624,7 +624,7 @@ f:1e76735a5087374936eb7a30c596fdb7:python3-mergedeep/.signature
 f:610fee7c887449a35d41bae6e43ead13:python3-mergedeep/Pkgfile
 f:86a46e7e63cdbd36bd5dc610f117a6f9:zabbix-server/Pkgfile
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-server/pre-install
-f:81c9d90462ac66cb8822735fb68f95f0:zabbix-server/rc.zabbix-server
+f:ca3064936a3b3d3b2e8abda35ca53cf6:zabbix-server/rc.zabbix-server
 f:94c320d0056d7973e21891cbbdde431b:zabbix-server/zabbix_server.logrotate
 f:6c4de850edb9046f69ad57d7413da725:zabbix-server/zabbix_server.conf.patch
 f:faa9e4dfb74365d2d59d15065f5a82a1:zabbix-server/.footprint
