@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGIGcViy0hxeYBqLsSkP/JCylq8b/U1l5AjN0GJSuz0wUDOJgQHSqbQk6zzfokxx4M/wMMh6SLg7xNF8+fzMaZwM=
-SHA256 (Pkgfile) = a55cbc8614ce5fec1ad5a418680187d6027920cd754f7158017fb25b5563b58a
+RWQAwxvZoACtGMC02QyUe8vxIuare2Y+wwOEuhnABeD9tAHGiwG6uND7e7rrsNU+oB9kxVs/24EZCvPIHEzBXY7zcQL9WwzPMQI=
+SHA256 (Pkgfile) = 78c5b661f4e97e6d8f786ec2f802a864bcfed6d0b92850fe6334cbbfc1b8e25e
 SHA256 (.footprint.riscv64) = cd354349e6acae64e1cfe0d9be8636938e60c8c21b1eb76d8a6277bb19e14aef
-SHA256 (pkgconf-3.0.4.tar.xz) = 91ce346b47f46b87d680c6928e6c43240b9cdc7a31afbea19f2298de4dbe266d
+SHA256 (pkgconf-3.0.5.tar.xz) = 3acd3a8a3cce65a8d620321855d92fb602e026cbe8e13ee36bdec58483b59ace
 SHA256 (riscv64-unknown-linux-gnu.personality) = bdcb5b5071233817290b2a3857ab4ab0a1be7b6cf9da74dfc2291756f3216d41
 SHA256 (aarch64-unknown-linux-gnu.personality) = 8a24362b483e4aec30f1bbea938906d1dd394db6afae2952ee8518a67e94ef08
 SHA256 (x86_64-pc-linux-gnu.personality) = c8297817ba0b57d003878db247ff34b4c47a7594c9f67dcfe8ff8d6567956cd5
