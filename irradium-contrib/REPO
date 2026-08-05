@@ -56,7 +56,6 @@ d:postgresql
 d:slang
 d:telegram-desktop
 d:python3-etcd
-d:tk
 d:etcd
 d:udisks2
 d:ungoogled-chromium
@@ -408,10 +407,6 @@ f:7bc7c419d8f16bc8f115e78e69b2c29e:telegram-desktop/Pkgfile
 f:1a69adadfeda9cc05e884091ec34143f:python3-etcd/Pkgfile
 f:373cd69053e4bf367be1b67b38788742:python3-etcd/.footprint
 f:c953cd3ec4fd6408571bf54dcf208935:python3-etcd/.signature
-f:5fd9540530092495051bc72484027d38:tk/.footprint
-f:4a0cf636d10c64ff0a5c12fcec684a78:tk/.signature
-f:94c44128030f929514210cd358bcd567:tk/Pkgfile
-f:9da5f9129770d5d316e8da1125752b49:tk/font-sizes.diff
 f:c1436dee8fcb78a65bc1c0c660133f9d:etcd/etcd.yaml
 f:80ecd74d51ef86529f11606ea7c064a9:etcd/Pkgfile
 f:cc67109c45538888f25b32814fac074c:etcd/rc.etcd
