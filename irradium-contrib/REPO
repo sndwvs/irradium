@@ -54,7 +54,6 @@ d:quiterss
 d:range-v3
 d:postgresql
 d:slang
-d:tcl
 d:telegram-desktop
 d:python3-etcd
 d:tk
@@ -403,9 +402,6 @@ f:8c0e56c70522bfc9c89af401215414c4:postgresql/pre-install
 f:6b10d81e43c890e377dfadfe72dbfa3a:slang/.footprint
 f:01b4c8973511a76b596f5d110c488ff3:slang/.signature
 f:5ee1ede2ebe321245a17d2d2d75b5711:slang/Pkgfile
-f:5154211a88534e7dcae26e95f0b7fcb0:tcl/.footprint
-f:5f433fbd0ac6f3524bc585a8f6038cce:tcl/.signature
-f:0628dcc755f986173fb3f7c834f25ceb:tcl/Pkgfile
 f:14b8e2e1cc62b977528ea8bc3b73e1a8:telegram-desktop/.footprint
 f:0bec357c95fd2b26f28584e68aa31914:telegram-desktop/.signature
 f:7bc7c419d8f16bc8f115e78e69b2c29e:telegram-desktop/Pkgfile
