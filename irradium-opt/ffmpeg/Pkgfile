@@ -2,10 +2,10 @@
 # URL: https://ffmpeg.org/
 # Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on: yasm
-# Optional: alsa-lib amf-headers aom chromaprint cuda dav1d fdk-aac fontconfig freetype gnutls gsm jack jack-audio-connection-kit ladspa lame lcms2 lensfun libass libbs2b libcaca libcdio-paranoia libdrm libmodplug libplacebo librsvg libsdl2 libsoxr libssh libtheora libva libvdpau libvorbis libvpx libwebp libxml2 lv2 nv-codec-headers openal opencv openh264 openjpeg2 opus pulseaudio rav1e rtmpdump rubberband shaderc snappy speex svt-av1 v4l-utils x264 x265
+# Optional: alsa-lib amf-headers aom chromaprint cuda dav1d fdk-aac fontconfig freetype gnutls gsm jack jack-audio-connection-kit ladspa lame lcms2 lensfun libass libbs2b libcaca libcdio-paranoia libdrm libmodplug libplacebo librsvg libsdl2 libsoxr libssh libtheora libva libvdpau libvorbis libvpx libwebp libxml2 lv2 nv-codec-headers openal opencv openh264 openjpeg2 opus pulseaudio rav1e rtmpdump rubberband snappy speex svt-av1 v4l-utils x264 x265
 
 name=ffmpeg
-version=8.1.2
+version=9.0
 release=1
 source=(https://ffmpeg.org/releases/$name-$version.tar.bz2
   add-av_stream_get_first_dts-for-chromium.patch
@@ -61,7 +61,6 @@ build() {
   prt-get isinst rtmpdump && PKGMK_FFMPEG+=' --enable-librtmp'
   prt-get isinst rav1e && PKGMK_FFMPEG+=' --enable-librav1e'
   prt-get isinst rubberband && PKGMK_FFMPEG+=' --enable-librubberband'
-  prt-get isinst shaderc && PKGMK_FFMPEG+=' --enable-libshaderc'
   prt-get isinst snappy && PKGMK_FFMPEG+=' --enable-libsnappy'
   prt-get isinst speex && PKGMK_FFMPEG+=' --enable-libspeex'
   prt-get isinst svt-av1 && PKGMK_FFMPEG+=' --enable-libsvtav1'
@@ -98,7 +97,6 @@ build() {
     --enable-swresample \
     --disable-debug \
     --disable-doc \
-    --disable-libcelt \
     --disable-stripping
 
   make
