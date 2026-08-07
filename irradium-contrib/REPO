@@ -57,7 +57,6 @@ d:slang
 d:telegram-desktop
 d:python3-etcd
 d:etcd
-d:udisks2
 d:ungoogled-chromium
 d:ungoogled-chromium/patches
 d:urxvt-perls
@@ -413,9 +412,6 @@ f:cc67109c45538888f25b32814fac074c:etcd/rc.etcd
 f:1df0f85bfc3003e0455a891642bfec4e:etcd/pre-install
 f:5da472016e2cfb4add8b055c533a674b:etcd/.footprint
 f:7895a87ce34fc6ba86e1c528ca9d984c:etcd/.signature
-f:f5ead9c0017a82dbe35247f60be2163b:udisks2/.footprint
-f:011c64dc46c000fce6d791c82e6f1e20:udisks2/.signature
-f:778d77abd5a00269b2193f70313c5478:udisks2/Pkgfile
 f:cca42a21584d2e7a49baa60bb486c5d2:ungoogled-chromium/post-install
 f:883f63f2765d2eea97565e7ddf5c1834:ungoogled-chromium/patches/chromium-138-nodejs-version-check.patch
 f:24ea2b2ae799520979daa5a8a80e9514:ungoogled-chromium/patches/compiler-rt-adjust-paths.patch
