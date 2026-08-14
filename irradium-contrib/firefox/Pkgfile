@@ -5,13 +5,13 @@
 # Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland xdg-desktop-portal-gtk
 
 name=firefox
-version=153.0.1
+version=153.0.4
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   fix-target-detection.patch
   node-stdout-nonblocking-wrapper
-  fix-target-detection.patch
+  Bug-2057577-DOM-Media-Add-FFmpeg-63-support.patch
   rust-lto-thin.patch)
 
 build() {
