@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7tK7qWvQI/Q8ZyTqiNaWgkEFyGXV2Oy7Dla+3gnf8Ys/M8Io2puEs1S8ur0rqhdxAaHz7Gj5PSi++rlibTqHwQE=
-SHA256 (Pkgfile) = cd4c295e4cf23866d5e95b748cc83f0832a83d4c7ba6291e7a3d6a1a1e39e6c3
-SHA256 (.footprint) = 7306b24a6caf7e646e1a6b97f584f31b14692d57b00345f3e333ae387317ff33
-SHA256 (postgresql-18.4.tar.bz2) = 81a81ec695fb0c7901407defaa1d2f7973617154cf27ba74e3a7ab8e64436094
+RWTmT3d9kqan7rDxuddRqPSTFYd1galiD5Pqr3ZhLmPJUfJORtsMowdSWvr5EqKuT+8EoanR6fkmKZDiN1YxYGyaymPhcmyzgQE=
+SHA256 (Pkgfile) = 194d709c99764ccb836e45a0d66c4c44b7af5ed8a73aa92d6c1c84c875646cc6
+SHA256 (.footprint) = cca47875557b439c52c87a7a488a38043fb819361cd18f48f51f60a06e650fcc
+SHA256 (postgresql-18.6.tar.bz2) = 555610c24d53e4316da5b7d3fc25c279d96856d5e0e23ee308c328c5fa881d9f
 SHA256 (postgresql-run-socket.patch) = 02ffb53b0a5049233f665c873b96264db77daab30e5a2194d038202d815a8e6a
 SHA256 (postgresql.service) = 6dc264f600ba68c35c006b8476d9750991744e7c4dc91e7f8470cb09a0925094
 SHA256 (postgresql.pam) = db431b3ceb77e75c0ecfac13a5394f9b575a50512ef2940e8a137c0b4efbb1dc
