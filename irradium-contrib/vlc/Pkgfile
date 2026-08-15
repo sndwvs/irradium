@@ -7,10 +7,15 @@
 name=vlc
 version=3.0.23
 release=1
-source=(https://download.videolan.org/$name/$version/$name-$version.tar.xz)
+source=(https://download.videolan.org/$name/$version/$name-$version.tar.xz
+        gstreamer-header.patch
+        upnp-fix-typedef.patch)
 
 build() {
   cd $name-$version
+
+  patch -p1 -i $SRC/gstreamer-header.patch
+  patch -p1 -i $SRC/upnp-fix-typedef.patch
 
   prt-get isinst liba52 && PKGMK_VLC+=" --enable-a52" || PKGMK_VLC+=" --disable-a52"
   prt-get isinst wayland && PKGMK_VLC+=" --enable-wayland" || PKGMK_VLC+=" --disable-wayland"
@@ -56,3 +61,4 @@ build() {
   make
   make DESTDIR=$PKG install
 }
+gstreamer-header.patch upnp-fix-typedef.patch
