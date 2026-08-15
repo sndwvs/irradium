@@ -199,7 +199,7 @@ f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:86bb617054672643f444e7ee3b7a9dd1:firefox/.footprint.riscv64
 f:58241c133388fa6b3f2bdd59dcedbb5f:firefox/.footprint.aarch64
 f:8f035db097628042502753514512231f:firefox/.signature.aarch64
-f:e8329d4f095a61360d887715dac6db01:firefox/.signature.riscv64
+f:d8c30dd8035ce5afe854d53da7a69456:firefox/.signature.riscv64
 f:5bd26e50181400f06dca8557a0673939:firefox/Pkgfile
 f:e63779169c8dda5d6d57c99edcadbacf:firefox/rust-lto-thin.patch
 f:f306b44b4c86533d39265daf5c608ea7:firefox/Bug-2057577-DOM-Media-Add-FFmpeg-63-support.patch
