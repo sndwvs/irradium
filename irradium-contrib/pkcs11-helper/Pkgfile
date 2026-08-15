@@ -4,7 +4,7 @@
 # Depends on: gnutls nss openssl
 
 name=pkcs11-helper
-version=1.29.0
+version=1.31.0
 release=1
 source=(https://github.com/OpenSC/pkcs11-helper/archive/${name}-${version}.tar.gz)
 
