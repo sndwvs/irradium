@@ -291,8 +291,6 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libscaletempo_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libsimple_channel_mixer_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libsimple_channel_mixer_plugin.so
--rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libsoxr_plugin.la
--rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libsoxr_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libspatializer_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libspatializer_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libstereo_widen_plugin.la
@@ -818,8 +816,6 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/video_filter/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/video_filter/liboldmovie_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/video_filter/libposterize_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/video_filter/libposterize_plugin.so
--rwxr-xr-x	root/root	usr/lib/vlc/plugins/video_filter/libpostproc_plugin.la
--rwxr-xr-x	root/root	usr/lib/vlc/plugins/video_filter/libpostproc_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/video_filter/libpsychedelic_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/video_filter/libpsychedelic_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/video_filter/libpuzzle_plugin.la

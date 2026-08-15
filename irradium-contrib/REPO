@@ -440,8 +440,8 @@ f:8dc3f6c286ee83a7c4d99372a75aa483:viewnior/.footprint
 f:b6e55d20ea5e44f8688f1c161c00e20b:viewnior/.signature
 f:882729d5e9e07bb8baadd54ef498fef6:viewnior/Pkgfile
 f:362e3fa06abefde433f18c586fa2248b:vlc/post-install
-f:0f9dfc99b565a821eb2faa122e0a1e99:vlc/.footprint
-f:b204551ca6a20b5bb7bead4df71f0251:vlc/.signature
+f:429c86da32fc556b0594781840fa33e4:vlc/.footprint
+f:4a236c9a9b94b66b400369c6bb19bd40:vlc/.signature
 f:56ff1b8259a5cc5fe0aa951258c95b68:vlc/Pkgfile
 f:397918daa8fb9824f780def20ca31294:vlc/gstreamer-header.patch
 f:b4c6807c1aca378df55dece0d688e4b6:vlc/upnp-fix-typedef.patch
