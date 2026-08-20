@@ -6,7 +6,7 @@
 name=elogind
 version=257.16
 release=1
-source=(https://github.com/elogind/elogind/archive/refs/tags/V$version.tar.gz
+source=(https://github.com/elogind/elogind/archive/refs/tags/v$version.tar.gz 
 	10-enable-elogind-power.rules
 	11-prefer-deep-suspend.patch
 	12-default-deep-suspend.patch

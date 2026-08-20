@@ -191,7 +191,7 @@ f:7aba887960fb7f2b489c6e5a7c96ede4:elogind/10-enable-elogind-power.rules
 f:9745f7ad6bf9c5deaac125c7f820bf14:elogind/.footprint
 f:218b488f3a0eac485701ddcd482eacda:elogind/.signature
 f:dd4f7f0178fa57a470d4c1134bd22da0:elogind/elogind.nobody.nogroup.99.99.diff
-f:1ac46d1113801a6ae4c2659fae2cb7f4:elogind/Pkgfile
+f:c7365ea06b635036bcbb0f6b0ced521d:elogind/Pkgfile
 f:5967a4ed6d1f029d16d70beaa71246d8:firefox/README
 f:c9ccd47ae6a570100ebf31d51a0e7a1f:firefox/firefox.desktop
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
