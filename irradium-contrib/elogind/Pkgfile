@@ -5,7 +5,7 @@
 
 name=elogind
 version=255.23
-release=1
+release=2
 source=(https://github.com/elogind/elogind/archive/refs/tags/V$version.tar.gz
 	10-enable-elogind-power.rules
 	11-prefer-deep-suspend.patch
@@ -86,6 +86,8 @@ build() {
 	mkdir -p $PKG/bin
 	ln -sf /usr/bin/elogind-inhibit $PKG/bin/elogind-inhibit
 	ln -sf /usr/bin/loginctl $PKG/bin/loginctl
+	ln -sf /usr/bin/userdbctl $PKG/bin/userdbctl
+	ln -sf /usr/bin/varlinkctl $PKG/bin/varlinkctl
 
 	# Remove references to systemd tools:
 	sed -i '/systemd-analyze cat-config/d' $PKG/etc/elogind/*.conf
