@@ -4,8 +4,8 @@
 # Depends on: meson ninja python3-jinja2 intltool libseccomp linux-pam glib acl libcap eudev gettext
 
 name=elogind
-version=255.23
-release=3
+version=257.16
+release=1
 source=(https://github.com/elogind/elogind/archive/refs/tags/V$version.tar.gz
 	10-enable-elogind-power.rules
 	11-prefer-deep-suspend.patch
@@ -92,6 +92,9 @@ build() {
 
 	# Remove references to systemd tools:
 	sed -i '/systemd-analyze cat-config/d' $PKG/etc/elogind/*.conf
+
+	# Create /etc/userdb directory:
+	mkdir -p $PKG/etc/userdb
 
 	# Create supported dirs in /etc/elogind/ (local config)
 	mkdir -p $PKG/etc/elogind/logind.conf.d/ $PKG/etc/elogind/sleep.conf.d/
