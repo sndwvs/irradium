@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCWsN8w1ZpvmsZaTbl8zAYw0oNjMI3K2r48Sfm3m3NsX24B6/PDZVIsP8SO0hsLMf/iqCO0a21/NT71h2my/Z4Qw=
-SHA256 (Pkgfile) = 64f14bdd19c83c5d6f1ace6ea6ab89181b82d0448bd8291a2abbd3bcb9e04b7e
-SHA256 (.footprint) = 904db99af80b9ac653c6df0d69c1f88c816ec794dc305349bc54fd164eb4ecb9
-SHA256 (qtbase-everywhere-src-6.11.1.tar.xz) = d9594a31228aa23ad6b531719a29b45f0f3989fe6c136d45767ea179f233c1ac
+RWRxRnTWECCiCbtBkg0yyYJZBVfRANqb9neZHgHFEzckgkHXJS+D4tkbd4aXpwtQ1fGjHRE6Dlm/q81egn4owsEIeRzJUlhkHwE=
+SHA256 (Pkgfile) = 29c37c651e1f520ae5b5ccd90f7e4a3ddb4f5b8192ebb1a7316e641b6c4b4bb0
+SHA256 (.footprint) = 7bb9dc11381076e9b32b8abce9a42ecfca622a47e1872ce4d8964666cff6780a
+SHA256 (qtbase-everywhere-src-6.11.2.tar.xz) = 5b2e00eccaf5a4d8c14134ffa0ea8dfd0a35ae1ffc7f8d87fa4305a1ed23cf22
 SHA256 (qt6-base-cflags.patch) = cf707cd970650f8b60f8897692b36708ded9ba116723ec8fcd885576783fe85c
 SHA256 (qt6-base-nostrip.patch) = 4b93f6a79039e676a56f9d6990a324a64a36f143916065973ded89adc621e094
