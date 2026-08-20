@@ -5,7 +5,7 @@
 
 name=elogind
 version=255.23
-release=2
+release=3
 source=(https://github.com/elogind/elogind/archive/refs/tags/V$version.tar.gz
 	10-enable-elogind-power.rules
 	11-prefer-deep-suspend.patch
@@ -69,6 +69,7 @@ build() {
 		-D pamconfdir="/etc/pam.d" \
 		-D acl=enabled \
 		-D smack=false \
+		-D userdb=true \
 		-D utmp=true \
 		-D default-hierarchy=legacy \
 		-D cgroup-controller=elogind \
