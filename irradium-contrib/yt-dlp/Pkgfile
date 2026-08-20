@@ -1,7 +1,7 @@
 # Description: youtube-dl fork with additional features and fixes
 # URL: https://github.com/yt-dlp/yt-dlp
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: python3 python3-hatchling
+# Depends on: python3 python3-hatchling python3-tomlkit
 
 name=yt-dlp
 version=2026.08.19
