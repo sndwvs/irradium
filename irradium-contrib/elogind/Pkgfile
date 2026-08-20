@@ -4,7 +4,7 @@
 # Depends on: meson ninja python3-jinja2 intltool libseccomp linux-pam glib acl libcap eudev gettext
 
 name=elogind
-version=257.16
+version=255.27
 release=1
 source=(https://github.com/elogind/elogind/archive/refs/tags/v$version.tar.gz 
 	10-enable-elogind-power.rules
@@ -69,7 +69,6 @@ build() {
 		-D pamconfdir="/etc/pam.d" \
 		-D acl=enabled \
 		-D smack=false \
-		-D userdb=true \
 		-D utmp=true \
 		-D default-hierarchy=legacy \
 		-D cgroup-controller=elogind \
@@ -79,6 +78,8 @@ build() {
 		-D default-kill-user-processes=false \
 		-D mode=release \
 
+#		-D userdb=true \
+
 	ninja -C build
 
 	DESTDIR=$PKG ninja -C build install
@@ -87,8 +88,8 @@ build() {
 	mkdir -p $PKG/bin
 	ln -sf /usr/bin/elogind-inhibit $PKG/bin/elogind-inhibit
 	ln -sf /usr/bin/loginctl $PKG/bin/loginctl
-	ln -sf /usr/bin/userdbctl $PKG/bin/userdbctl
-	ln -sf /usr/bin/varlinkctl $PKG/bin/varlinkctl
+#	ln -sf /usr/bin/userdbctl $PKG/bin/userdbctl
+#	ln -sf /usr/bin/varlinkctl $PKG/bin/varlinkctl
 
 	# Remove references to systemd tools:
 	sed -i '/systemd-analyze cat-config/d' $PKG/etc/elogind/*.conf
