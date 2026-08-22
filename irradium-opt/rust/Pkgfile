@@ -5,9 +5,9 @@
 # Optional: clang libgit2 polly sccache
 
 name=rust
-version=1.97.1
-_date=2026-05-28
-_rustc=1.96.0
+version=1.98.0
+_date=2026-07-16
+_rustc=1.97.1
 _cargo=$_rustc
 release=1
 
@@ -88,7 +88,7 @@ build() {
 
 cat <<- EOF > $SRC/bootstrap.toml
 profile = "dist"
-change-id = 154587
+change-id = 158169
 
 [llvm]
 download-ci-llvm = false
@@ -135,9 +135,10 @@ vendor = true
 locked-deps = true
 python = "/usr/bin/python3"
 optimized-compiler-builtins = true
-#@CARGO@
-#@RUST@
-#@RUSTFMT@
+@CARGO@
+@RUST@
+@RUSTFMT@
+@CCACHE@
 
 [dist]
 compression-formats = ["gz"]
@@ -150,6 +151,7 @@ cc = @TARGETCC@
 cxx = @TARGETCXX@
 ar = @TARGETAR@
 ranlib = @TARGETRANLIB@
+@CLANGDIR64@
 EOF
 
     if [ -e '/usr/bin/rustc' ]; then
@@ -190,10 +192,13 @@ EOF
     export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
 
     ## sccache currently leads to errors
-    #if [ -e '/usr/bin/sccache' ]; then
-    #    export RUSTC_WRAPPER='/usr/bin/sccache'
-    #    export SCCACHE_IDLE_TIMEOUT='1500'
-    #fi
+    if [ -e '/usr/bin/sccache' ]; then
+        sed -e 's|@CCACHE@|ccache = "sccache"|g' \
+          -i $SRC/bootstrap.toml
+      else
+        sed -e 's|@CCACHE@||g' \
+          -i $SRC/bootstrap.toml
+    fi
 
     #error: field is never read: `id`
     #   --> src/bootstrap/lib.rs:280:5
