@@ -11,12 +11,13 @@ drwxr-xr-x	root/root	etc/elogind/sleep.conf.d/
 -rw-r--r--	root/root	etc/elogind/sleep.conf.d/10-elogind.conf
 drwxr-xr-x	root/root	etc/rc.d/
 -rwxr-xr-x	root/root	etc/rc.d/elogind
+drwxr-xr-x	root/root	etc/userdb/
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/elogind/
 -rwxr-xr-x	root/root	lib/elogind/elogind
 -rwxr-xr-x	root/root	lib/elogind/elogind-cgroups-agent
 -rwxr-xr-x	root/root	lib/elogind/elogind-uaccess-command
--rwxr-xr-x	root/root	lib/elogind/libelogind-shared-255.so
+-rwxr-xr-x	root/root	lib/elogind/libelogind-shared-255.27.so
 drwxr-xr-x	root/root	lib/elogind/system-shutdown/
 drwxr-xr-x	root/root	lib/elogind/system-sleep/
 lrwxrwxrwx	root/root	lib/libelogind.so -> libelogind.so.0

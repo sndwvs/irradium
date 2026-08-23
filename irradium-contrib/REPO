@@ -188,8 +188,8 @@ f:0a13ac50fadfb4d9dc20b3e8c81ebce1:elogind/12-default-deep-suspend.patch
 f:5009a303246ecef5ea0aaa49952c52af:elogind/pre-install
 f:a9e7ccb4cc486e1967f58572f8a2060b:elogind/rc.elogind
 f:7aba887960fb7f2b489c6e5a7c96ede4:elogind/10-enable-elogind-power.rules
-f:9745f7ad6bf9c5deaac125c7f820bf14:elogind/.footprint
-f:218b488f3a0eac485701ddcd482eacda:elogind/.signature
+f:89e49982766f5d4226af7431ceeade93:elogind/.footprint
+f:f784b7212cf8b34824adeb0c0521cd2e:elogind/.signature
 f:dd4f7f0178fa57a470d4c1134bd22da0:elogind/elogind.nobody.nogroup.99.99.diff
 f:d7a977958031360b07910fa47480f414:elogind/Pkgfile
 f:5967a4ed6d1f029d16d70beaa71246d8:firefox/README
