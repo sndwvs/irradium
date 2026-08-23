@@ -151,7 +151,6 @@ cc = @TARGETCC@
 cxx = @TARGETCXX@
 ar = @TARGETAR@
 ranlib = @TARGETRANLIB@
-@CLANGDIR64@
 EOF
 
     if [ -e '/usr/bin/rustc' ]; then
