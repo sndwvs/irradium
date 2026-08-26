@@ -100,15 +100,15 @@ f:6ff28f40999ecda935bbbd0f0d3da869:mlocate/.signature
 f:7d67badc004a8ade29648c8449b479e4:mlocate/mlocate
 f:f70c051ad1e30aa76820c6c6e7485eae:mlocate/updatedb.conf
 f:f0fdc422afa0d319b229c08a9d73b08f:mlocate/Pkgfile
-f:6fec70b14f238ad94caf5dac367ee427:pkgconf/README
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
-f:361592957958d8a157147908d6a31780:pkgconf/Pkgfile
+f:273a628749446e1e5d74afb80f9dc37d:pkgconf/Pkgfile
 f:fea619c56d0736e29d7bf413c37a7b04:pkgconf/.footprint.aarch64
 f:cddcb11c5b08482b400500194b31faac:pkgconf/.footprint.riscv64
 f:804904a9ac5d31e43156befa1847848f:pkgconf/.signature.riscv64
 f:a98f2cc9c87003e222490863b002e80d:pkgconf/.signature.aarch64
 f:c6d689e4e8bc7b2b3e13a911bab36e27:pkgconf/x86_64-pc-linux-gnu.personality
+f:6fec70b14f238ad94caf5dac367ee427:pkgconf/README
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:85773ddb6595cc96b6776168a93a8ed9:pkgutils/pkgmk-add-support-with-footprint-riscv64-aarch64.patch
 f:fbc13afb294f16b010c7fd3f9f7e67f9:pkgutils/.signature
