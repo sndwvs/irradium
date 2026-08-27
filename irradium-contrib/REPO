@@ -200,7 +200,7 @@ f:86bb617054672643f444e7ee3b7a9dd1:firefox/.footprint.riscv64
 f:58241c133388fa6b3f2bdd59dcedbb5f:firefox/.footprint.aarch64
 f:8f035db097628042502753514512231f:firefox/.signature.aarch64
 f:d8c30dd8035ce5afe854d53da7a69456:firefox/.signature.riscv64
-f:5bd26e50181400f06dca8557a0673939:firefox/Pkgfile
+f:8d9ed38ecbefa4e2c149fef30dcd03c7:firefox/Pkgfile
 f:e63779169c8dda5d6d57c99edcadbacf:firefox/rust-lto-thin.patch
 f:f306b44b4c86533d39265daf5c608ea7:firefox/Bug-2057577-DOM-Media-Add-FFmpeg-63-support.patch
 f:3219f5d622520efe5321b3b8de56be2d:freerdp/.footprint
