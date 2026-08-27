@@ -125,10 +125,11 @@ f:ab3cc6e6689da36ccfe66de2bae7773b:qt6-base/.signature
 f:8f02fed2e868f77640bddf2a4cda85ee:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
-f:e5fbbb6d3759c1bab08a029f9ea06562:rust/Pkgfile
+f:1e7aa53ab943492ce80adaa5aa79a524:rust/Pkgfile
 f:19368ee574587ede69279d0ea4993558:rust/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
 f:1f4b67edf2808dc7ab3a8979cbd08852:rust/.footprint.aarch64
 f:758f29e3587294f12110a176e86476c9:rust/.signature.riscv64
+f:46cb6c87490675d25b401d47290a6045:rust/llvm23.patch
 f:ad038a2aa1de454e47d70d0cbac53e1b:rust/0001-bootstrap-Change-libexec-dir.patch
 f:f8d11d8c7f2a63566ed2dffc01c2b952:rust/0002-bootstrap-Change-bash-completion-dir.patch
 f:f9d38b634d10e1353a4c1200e11401f9:rust/0003-bootstrap-Workaround-for-system-stage0.patch

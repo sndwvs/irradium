@@ -9,7 +9,7 @@ version=1.98.0
 _date=2026-07-16
 _rustc=1.97.1
 _cargo=$_rustc
-release=1
+release=2
 
 ARCH=$(uname -m)
 BABI="gnu"
@@ -35,6 +35,7 @@ source=(https://static.rust-lang.org/dist/${name}c-$version-src.tar.xz
     0003-bootstrap-Workaround-for-system-stage0.patch
     0004-compiler-Change-LLVM-targets.patch
     0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
+    llvm23.patch
 )
 
 unpack_source() {
@@ -85,6 +86,7 @@ build() {
     patch -p1 -i $SRC/0003-bootstrap-Workaround-for-system-stage0.patch
     patch -p1 -i $SRC/0004-compiler-Change-LLVM-targets.patch
     patch -p1 -i $SRC/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
+    patch -p1 -i $SRC/llvm23.patch
 
 cat <<- EOF > $SRC/bootstrap.toml
 profile = "dist"
