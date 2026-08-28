@@ -1,0 +1,21 @@
+--- mesa-26.2.0-rc2/src/gallium/drivers/radeonsi/tests/si_test_dma_perf.c	2026-07-22 15:37:39.000000000 +0200
++++ mesa-26.2.0-rc2/src/gallium/drivers/radeonsi/tests/si_test_dma_perf.c	2026-07-23 15:41:35.013943813 +0200
+@@ -363,12 +363,18 @@ si_test_mem_perf(struct si_screen *sscre
+                   memcpy(ptr, cpu, buffer_size);
+                   break;
+                case 1:
++#ifdef __aarch64__
++               case 2:
++               default:
++#endif
+                   memcpy(cpu, ptr, buffer_size);
+                   break;
++#ifndef __aarch64__
+                case 2:
+                default:
+                   util_streaming_load_memcpy(cpu, ptr, buffer_size);
+                   break;
++#endif
+                }
+ 
+                after = os_time_get_nano();
