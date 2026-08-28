@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCQaq+ExWE+ITFNiNYUGx6gWCuzXcm5Ncx+DLwnCslnGxR4kq3BY8PzI+A+kMSbcmcQPToiq57Fr7z8z32y4ntQ0=
-SHA256 (Pkgfile) = 1c33e776e9f8f0278bf1a92b69de1156f28bb00043cb9f4ddfe39110d5bf3b59
+RWRxRnTWECCiCR9Bc6VEu6gTMYSvP0ok6lSkBsGVnL+5oQa13De/PLITK0ULJrfEd7NfIS3qkf9SLjmMosLK4F2mck4V5kQf3Ak=
+SHA256 (Pkgfile) = 24e575c1d1f5aa151da1f595d7e541bbaac10667bf721d9f665316e8e030daaf
 SHA256 (.footprint.riscv64) = e8f0a10714416b34df485faf9c6105de1e744516322099a206c19929858f13bd
 SHA256 (rustc-1.98.0-src.tar.xz) = 271fa73d8174f53d713c46a8310da7bf7cfdcfb8b7cfd1c2b74b84a83ae9fb1e
 SHA256 (rust-std-1.97.1-riscv64gc-unknown-linux-gnu.tar.xz) = 5cec88477a70fe83c10a12efd6bdad1b0f8dd4c1ebba1e427f00c69666c5b6f9
@@ -11,3 +11,4 @@ SHA256 (0002-bootstrap-Change-bash-completion-dir.patch) = ffb7cda480b4d48fc82e5
 SHA256 (0003-bootstrap-Workaround-for-system-stage0.patch) = 210da95ea32ba3b499b5c9eef30bf00708af9d764d6173c1204cc42c65df78e7
 SHA256 (0004-compiler-Change-LLVM-targets.patch) = 8222b322c82fc201a25b899929276ec3b5c9d74ccd36bf77bba4a6247761033c
 SHA256 (0006-compiler-Swap-primary-and-secondary-lib-dirs.patch) = 27e67c60fb1c7f2128dcc8d6a5898a9a81dddb0401cf04cfd639b6b2b96cf0a0
+SHA256 (llvm23.patch) = 6b32037d71df721fe605319a3ff317db70a71eeb25648b8a07180befa8799e9c
