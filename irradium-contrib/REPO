@@ -323,7 +323,7 @@ f:4b86fd4f00194d24dec3fd5be9345ace:libreoffice/.footprint.aarch64
 f:71a5aff1ee942ddebe37af5430731cc2:libreoffice/README.md
 f:b3953ee4921f5d0dff821e946c477b85:libreoffice/makefile.in.patch
 f:0d3d7482cef1317ecd0e24f7174cc47a:libreoffice/.footprint.riscv64
-f:a33f78e5966aa35dcc2fd8dc061d76d4:libreoffice/.signature.aarch64
+f:daa553afc6150989907c3437c7d27a0b:libreoffice/.signature.aarch64
 f:78032c9316d877fa8f7fb153c745456a:libreoffice/.signature.riscv64
 f:be578ab3694326e4195e57839250673d:libreoffice/Pkgfile
 f:7ed12ba8fb62a67871317172bcae0d3c:libreoffice/box2d.patch
