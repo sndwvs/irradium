@@ -3149,6 +3149,8 @@ drwxr-xr-x	root/root	usr/include/tg_owt/third_party/libvpx/third_party/libyuv/in
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/third_party/libyuv/include/libyuv/version.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/third_party/libyuv/include/libyuv/video_common.h
 drwxr-xr-x	root/root	usr/include/tg_owt/third_party/libvpx/third_party/libyuv/source/
+drwxr-xr-x	root/root	usr/include/tg_owt/third_party/libvpx/third_party/nalloc/
+-rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/third_party/nalloc/nalloc.h
 drwxr-xr-x	root/root	usr/include/tg_owt/third_party/libvpx/third_party/x86inc/
 drwxr-xr-x	root/root	usr/include/tg_owt/third_party/libvpx/tools/
 drwxr-xr-x	root/root	usr/include/tg_owt/third_party/libvpx/tools/3D-Reconstruction/
@@ -3348,7 +3350,6 @@ drwxr-xr-x	root/root	usr/include/tg_owt/third_party/libvpx/vp9/encoder/ppc/
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vp9/encoder/vp9_treewriter.h
 drwxr-xr-x	root/root	usr/include/tg_owt/third_party/libvpx/vp9/encoder/x86/
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vp9/ratectrl_rtc.h
--rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vp9/simple_encode.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vp9/vp9_cx_iface.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vp9/vp9_dx_iface.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vp9/vp9_iface_common.h
@@ -3375,13 +3376,18 @@ drwxr-xr-x	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/fdct4x4_neon.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/fdct8x8_neon.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/fdct_neon.h
+-rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/highbd_convolve8_neon.h
+-rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/highbd_convolve8_sve.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/highbd_idct_neon.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/idct_neon.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/mem_neon.h
+-rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/subpel_variance_neon.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/sum_neon.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/transpose_neon.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/vpx_convolve8_neon.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/vpx_convolve8_neon_asm.h
+-rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/vpx_neon_sve2_bridge.h
+-rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/arm/vpx_neon_sve_bridge.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/bitreader.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/bitreader_buffer.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_dsp/bitwriter.h
@@ -3461,7 +3467,6 @@ drwxr-xr-x	root/root	usr/include/tg_owt/third_party/libvpx/vpx_ports/
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_ports/mem_ops.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_ports/mem_ops_aligned.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_ports/mips.h
--rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_ports/msvc.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_ports/ppc.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_ports/static_assert.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_ports/system_state.h
@@ -3479,6 +3484,7 @@ drwxr-xr-x	root/root	usr/include/tg_owt/third_party/libvpx/vpx_util/
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_util/loongson_intrinsics.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_util/vpx_atomics.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_util/vpx_debug_util.h
+-rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_util/vpx_pthread.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_util/vpx_thread.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_util/vpx_timestamp.h
 -rw-r--r--	root/root	usr/include/tg_owt/third_party/libvpx/vpx_util/vpx_write_yuv_frame.h
