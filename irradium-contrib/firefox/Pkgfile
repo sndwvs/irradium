@@ -6,12 +6,13 @@
 
 name=firefox
 version=154.0
-release=1
+release=2
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   fix-target-detection.patch
   node-stdout-nonblocking-wrapper
-  rust-lto-thin.patch)
+  rust-lto-thin.patch
+  0002-Bug-2053518-Handle-the-oe-linux-rust-targets-added-i.patch)
 
 build() {
   chmod a+x "$SRC"/node-stdout-nonblocking-wrapper
