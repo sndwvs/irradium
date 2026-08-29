@@ -7,25 +7,30 @@ name=tg_owt
 version=20260828
 release=1
 _commit=19d51d3c19632a63fdbe17c62f10332d978cb940
+_libsrtp_commit=24b3bf8f19b6f5ab4cd2bcceb4f4064efca86fd5
 _libyuv_commit=2fed9193c94d3701f36188351bd5251854762cb6
 _libvpx_commit=82615ff0733cd4063838c352bc2e2ab225f37ade
+_abseil_commit=d7aaad83b488fd62bd51c81ecf16cd938532cc0a
 _crc32c_commit=2bbb3be42e20a0e6c0f7b39dc07dc863d9ffbc07
 source=(https://github.com/desktop-app/tg_owt/archive/${_commit}.tar.gz
         https://chromium.googlesource.com/webm/libvpx/+archive/${_libvpx_commit}.tar.gz
         https://chromium.googlesource.com/libyuv/libyuv/+archive/${_libyuv_commit}.tar.gz
         https://github.com/google/crc32c/archive/${_crc32c_commit}.tar.gz
+        https://github.com/cisco/libsrtp/archive/${_libsrtp_commit}.tar.gz
         0001-Replace-absl-template-nullability-annotations.patch
         gcc-16.patch)
 
 build() {
     cd $name-${_commit}
 
-    rm src/third_party/{abseil-cpp,libsrtp}
+    rm -rf src/third_party/abseil-cpp
 
     mkdir -pv libyuv libvpx
     bsdtar xzf ../../../${_libyuv_commit}.tar.gz -C libyuv
     bsdtar xzf ../../../${_libvpx_commit}.tar.gz -C libvpx
     bsdtar xzf ../../../${_crc32c_commit}.tar.gz --strip-components 1 -C src/third_party/crc32c/src
+    bsdtar xzf ../../../${_abseil_commit}.tar.gz --strip-components 1 -C src/third_party/abseil-cpp
+    bsdtar xzf ../../../${_libsrtp_commit}.tar.gz --strip-components 1 -C src/third_party/libsrtp/
 
     mv libyuv src/third_party/
     mv libvpx src/third_party/
@@ -44,4 +49,3 @@ build() {
     cmake --build build
     DESTDIR=$PKG cmake --install build
 }
-0001-Replace-absl-template-nullability-annotations.patch 0001-Replace-absl-template-nullability-annotations.patch gcc-16.patch gcc-16.patch
