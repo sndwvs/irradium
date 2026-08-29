@@ -61,4 +61,3 @@ build() {
   make
   make DESTDIR=$PKG install
 }
-gstreamer-header.patch upnp-fix-typedef.patch

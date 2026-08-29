@@ -442,7 +442,7 @@ f:882729d5e9e07bb8baadd54ef498fef6:viewnior/Pkgfile
 f:362e3fa06abefde433f18c586fa2248b:vlc/post-install
 f:429c86da32fc556b0594781840fa33e4:vlc/.footprint
 f:4a236c9a9b94b66b400369c6bb19bd40:vlc/.signature
-f:56ff1b8259a5cc5fe0aa951258c95b68:vlc/Pkgfile
+f:90a9da72cdcd660a3db41aa2cf577273:vlc/Pkgfile
 f:397918daa8fb9824f780def20ca31294:vlc/gstreamer-header.patch
 f:b4c6807c1aca378df55dece0d688e4b6:vlc/upnp-fix-typedef.patch
 f:1697f3fadd7c76e45240c1b248a7f8fe:xcursor-justblue/Pkgfile
