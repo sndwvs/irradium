@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Librewolf
+Name[en_US]=Librewolf
+GenericName=Web Browser
+GenericName[en_US]=Web Browser
+Comment=Browse the World Wide Web
+Exec=librewolf %u
+Terminal=false
+Type=Application
+Icon=librewolf
+Categories=GNOME;GTK;Network;WebBrowser;
+MimeType=text/xml;text/mml;text/html;application/xhtml+xml;application/vnd.mozilla.xul+xml;x-scheme-handler/http;x-scheme-handler/https
+StartupNotify=true

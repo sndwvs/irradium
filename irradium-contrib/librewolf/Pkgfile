@@ -1,0 +1,169 @@
+# Description: fork of Firefox, focused on privacy, security and freedom
+# URL: https://librewolf.net/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: alsa-lib aom autoconf-2.13 brotli cbindgen dav1d dbus-glib ffmpeg graphite2 libevent libnotify libvpx libwebp libxkbcommon nodejs nss unzip xorg-libxcomposite xorg-libxcursor xorg-libxinerama xorg-libxt zip
+# Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland xdg-desktop-portal-gtk
+
+name=librewolf
+version=154.0_p2
+release=1
+source=(https://librewolf.dev/librewolf/source/archive/${version/_p/-}.tar.gz
+  librewolf.desktop
+  fix-target-detection.patch
+  node-stdout-nonblocking-wrapper
+  rust-lto-thin.patch)
+
+build() {
+  chmod a+x "$SRC"/node-stdout-nonblocking-wrapper
+
+  cd $name-$version
+
+  for p in "$SRC"/*.patch; do
+    patch -p1 -i $p
+  done
+
+  if [ "$(/usr/bin/python3 -c "import sys; print(sys.stdout.encoding)")" != 'utf-8' ]; then
+    printf "\e[031mError: set an UTF-8 locale to compile this!\033[0m\n"
+    exit 1
+  fi
+
+  [ -x /usr/bin/sccache ] && export RUSTC_WRAPPER='/usr/bin/sccache'
+  mkdir -p "$PKGMK_SOURCE_DIR/rust"
+  export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
+
+  export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none
+  export MOZBUILD_STATE_PATH="$PWD"/mozbuild
+
+  cat > .mozconfig << EOF
+  export NODEJS="$SRC/node-stdout-nonblocking-wrapper"
+  mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/librewolf-shared
+  unset MOZ_TELEMETRY_REPORTING
+  ac_add_options --prefix=/usr
+  ac_add_options --libdir=/usr/lib
+  ac_add_options --enable-strip
+  ac_add_options --enable-release
+  ac_add_options --enable-install-strip
+  ac_add_options --enable-official-branding
+  ac_add_options --enable-application=browser
+  ac_add_options --enable-optimize
+  ac_add_options --with-system-ffi
+  ac_add_options --with-system-jpeg
+  ac_add_options --with-system-libevent
+  ac_add_options --with-system-libvpx
+  ac_add_options --with-system-nspr
+  ac_add_options --with-system-nss
+  ac_add_options --with-system-pixman
+  ac_add_options --without-system-png
+  ac_add_options --with-system-webp
+  ac_add_options --with-system-zlib
+  ac_add_options --without-wasm-sandboxed-libraries
+  ac_add_options --disable-tests
+  ac_add_options --disable-vtune
+  ac_add_options --disable-updater
+  ac_add_options --disable-callgrind
+  ac_add_options --disable-backgroundtasks
+  ac_add_options --disable-default-browser-agent
+  ac_add_options --disable-profiling
+  ac_add_options --disable-necko-wifi
+  ac_add_options --disable-crashreporter
+  ac_add_options --disable-accessibility
+  ac_add_options --disable-webspeech
+  ac_add_options --disable-debug
+  ac_add_options --disable-debug-symbols
+  ac_add_options --disable-parental-controls
+  ac_add_options --disable-system-extension-dirs
+EOF
+
+  if [ $(uname -m) != "riscv64" ]; then
+    echo 'ac_add_options --disable-elf-hack' >> .mozconfig
+  else
+    echo 'ac_add_options --disable-sandbox' >> .mozconfig
+    echo 'ac_add_options --disable-webrtc' >> .mozconfig
+    echo 'ac_add_options --enable-rust-simd' >> .mozconfig
+    # error "simulator disabled"
+    echo 'ac_add_options --enable-simulator=riscv64' >> .mozconfig
+    echo 'ac_add_options --disable-jit' >> .mozconfig
+  fi
+
+  [ -x /usr/bin/uconv ] && echo 'ac_add_options --with-system-icu' >> .mozconfig
+
+  # bugzilla 1988166: workaround for systems without the single_threaded header
+  [ -e /usr/include/sys/single_threaded.h ] || sed "/sys\/single_threaded.h/d" \
+                    -i "$SRC"/$name-$version/config/system-headers.mozbuild
+
+  # workaround if the PR_* constants are hard-coded in more than one location,
+  # not relying on the kernel headers as the Single Point Of Truth
+  if ! grep -q "^.include <linux/prctl.h>" /usr/include/sys/prctl.h; then
+    sed -e "/^.include <linux\/prctl.h>/d" \
+        -i third_party/libwebrtc/rtc_base/platform_thread_types.cc
+  fi
+
+  # disable jemalloc on systems without glibc
+  local LIBC=$(</var/lib/pkg/db awk -v RS="" -v FS="\n" '/\nusr\/lib\/libc.so\n/ { print $1 }')
+  if [ "$LIBC" = glibc ]; then
+     echo "ac_add_options --enable-jemalloc" >> .mozconfig
+  else
+     echo "ac_add_options --disable-jemalloc" >> .mozconfig
+  fi
+
+  # audio
+  PKGMK_FFAUDIO="alsa"
+  [ -e /usr/lib/pkgconfig/libpulse.pc ] && PKGMK_FFAUDIO+=",pulseaudio"
+  [ -e /usr/lib/pkgconfig/sndio.pc ] && PKGMK_FFAUDIO+=",sndio"
+  echo "ac_add_options --enable-audio-backends=${PKGMK_FFAUDIO}" >> .mozconfig
+
+  if prt-get isinst wayland xorg-server >/dev/null ; then
+    echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-x11-wayland' >> .mozconfig
+  elif prt-get isinst wayland >/dev/null ; then
+    echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-wayland-only' >> .mozconfig
+  else
+    echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-x11-only' >> .mozconfig
+  fi
+
+  if [ -e '/usr/bin/ccache' ]; then
+    echo 'ac_add_options --enable-ccache' >> .mozconfig
+    PATH=$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')
+  fi
+
+  # Breaks compilation since https://bugzilla.mozilla.org/show_bug.cgi?id=1896066
+  CFLAGS="${CFLAGS/-fexceptions/}"
+  CXXFLAGS="${CXXFLAGS/-fexceptions/}"
+
+  export CFLAGS="$CFLAGS -w"
+  export CXXFLAGS="$CXXFLAGS -w"
+  export LDFLAGS="$LDFLAGS -Wl,-rpath=/usr/lib/librewolf,--enable-new-dtags"
+
+  if [ -x /usr/bin/clang ] && [ -x /usr/bin/lld ]; then
+      echo 'ac_add_options --enable-linker=lld' >> .mozconfig
+      export LDFLAGS+=",--thinlto-jobs=$((${JOBS-2} / 2))"
+      export CC=clang CXX=clang++
+  else
+      echo 'ac_add_options --enable-linker=bfd' >> .mozconfig
+      export CC=gcc CXX=g++
+  fi
+
+  export AR=llvm-ar NM=llvm-nm RANLIB=llvm-ranlib RUSTFLAGS="-C opt-level=2 $RUSTFLAGS"
+  export MOZ_MAKE_FLAGS="-j ${JOBS-1}"
+
+  # Disable notification when build system has finished
+  export MOZ_NOSPAM=1
+
+  # python/mach/mach/mixin/process.py fails to detect SHELL
+  export SHELL='/bin/bash'
+
+  ./mach build
+  DESTDIR="$PKG" ./mach install
+
+  # Remove crap
+  rm -rf "$PKG"/usr/lib/librewolf/browser/features
+  rm -f "$PKG"/usr/lib/librewolf/removed-files
+
+  install -D -m 0644 "$SRC"/librewolf.desktop "$PKG"/usr/share/applications/librewolf.desktop
+
+  mkdir -p "$PKG"/etc/revdep.d
+  echo "/usr/lib/librewolf" > "$PKG"/etc/revdep.d/librewolf
+
+  mkdir -p "$PKG"/usr/share/pixmaps
+  ln -sf /usr/lib/librewolf/browser/chrome/icons/default/default128.png \
+          "$PKG"/usr/share/pixmaps/librewolf.png
+}

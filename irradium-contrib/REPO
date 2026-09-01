@@ -88,6 +88,7 @@ d:lrzsz
 d:crosstool-ng
 d:mac
 d:libfreehand
+d:librewolf
 d:libpagemaker
 d:libstaroffice
 d:libzmf
@@ -579,6 +580,15 @@ f:2d927be1f0915564986392ab396b6dfc:mac/.signature
 f:ca2d6d5e8ad84f35c20c7557875e1f9d:libfreehand/.footprint
 f:83e567d80b9752442c1c0e2dc0e03045:libfreehand/.signature
 f:fb2dcd7cc0f861d7050d2d0c194fdc1a:libfreehand/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:librewolf/.signature.aarch64
+f:d41d8cd98f00b204e9800998ecf8427e:librewolf/.footprint.aarch64
+f:d41d8cd98f00b204e9800998ecf8427e:librewolf/.signature.riscv64
+f:5c411b73389ca980d69a9e97089ffdba:librewolf/Pkgfile
+f:e63779169c8dda5d6d57c99edcadbacf:librewolf/rust-lto-thin.patch
+f:63298fc667a9ba67c138866359e4b99e:librewolf/fix-target-detection.patch
+f:34bfc3b23f5c0b0fb44224fab1693e9f:librewolf/node-stdout-nonblocking-wrapper
+f:d41d8cd98f00b204e9800998ecf8427e:librewolf/.footprint.riscv64
+f:c3c66221e120b0125f828cfd8055e6b0:librewolf/librewolf.desktop
 f:77cf7e4fd5b4a4a80309f3f2fae862f0:libpagemaker/.footprint
 f:a4cb3399cc3409ec3da081d8d88befac:libpagemaker/.signature
 f:2d8dcd24462e890847439a243d2a25e2:libpagemaker/Pkgfile
