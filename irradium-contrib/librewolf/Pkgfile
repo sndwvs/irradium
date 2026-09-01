@@ -8,6 +8,9 @@ name=librewolf
 version=154.0_p2
 release=1
 source=(https://librewolf.dev/librewolf/source/archive/${version/_p/-}.tar.gz
+
+https://librewolf.dev/api/packages/librewolf/generic/librewolf-source/$_pkgver/librewolf-$_pkgver.source.tar.gz
+
   librewolf.desktop
   fix-target-detection.patch
   node-stdout-nonblocking-wrapper

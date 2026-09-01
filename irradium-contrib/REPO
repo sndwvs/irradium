@@ -198,8 +198,8 @@ f:c9ccd47ae6a570100ebf31d51a0e7a1f:firefox/firefox.desktop
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:86bb617054672643f444e7ee3b7a9dd1:firefox/.footprint.riscv64
-f:58241c133388fa6b3f2bdd59dcedbb5f:firefox/.footprint.aarch64
-f:5039b73738c2d91357ed879f6ca546d2:firefox/.signature.aarch64
+f:c45bb7754e1e93022297e6c8f9bbb3eb:firefox/.footprint.aarch64
+f:d259be7e106fc6657a62d9aaa6778d82:firefox/.signature.aarch64
 f:d8c30dd8035ce5afe854d53da7a69456:firefox/.signature.riscv64
 f:e6379bc9aceb75354fb9c533ba74f82f:firefox/Pkgfile
 f:e63779169c8dda5d6d57c99edcadbacf:firefox/rust-lto-thin.patch
@@ -583,7 +583,7 @@ f:fb2dcd7cc0f861d7050d2d0c194fdc1a:libfreehand/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:librewolf/.signature.aarch64
 f:d41d8cd98f00b204e9800998ecf8427e:librewolf/.footprint.aarch64
 f:d41d8cd98f00b204e9800998ecf8427e:librewolf/.signature.riscv64
-f:5c411b73389ca980d69a9e97089ffdba:librewolf/Pkgfile
+f:a1375529c408761962aa35d8f0ab20f5:librewolf/Pkgfile
 f:e63779169c8dda5d6d57c99edcadbacf:librewolf/rust-lto-thin.patch
 f:63298fc667a9ba67c138866359e4b99e:librewolf/fix-target-detection.patch
 f:34bfc3b23f5c0b0fb44224fab1693e9f:librewolf/node-stdout-nonblocking-wrapper
