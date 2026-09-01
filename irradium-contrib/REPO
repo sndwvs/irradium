@@ -200,7 +200,7 @@ f:86bb617054672643f444e7ee3b7a9dd1:firefox/.footprint.riscv64
 f:58241c133388fa6b3f2bdd59dcedbb5f:firefox/.footprint.aarch64
 f:5039b73738c2d91357ed879f6ca546d2:firefox/.signature.aarch64
 f:d8c30dd8035ce5afe854d53da7a69456:firefox/.signature.riscv64
-f:d11eacddfbe0f2e998c8eaaaf4a982da:firefox/Pkgfile
+f:793e0cb7c9ca2730889fdfd81c482f0a:firefox/Pkgfile
 f:e63779169c8dda5d6d57c99edcadbacf:firefox/rust-lto-thin.patch
 f:d24815269e83d2123f2051a2d8f86869:firefox/0002-Bug-2053518-Handle-the-oe-linux-rust-targets-added-i.patch
 f:3219f5d622520efe5321b3b8de56be2d:freerdp/.footprint
