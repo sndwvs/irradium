@@ -9,7 +9,7 @@ version=1.98.0
 _date=2026-07-16
 _rustc=1.97.1
 _cargo=$_rustc
-release=2
+release=3
 
 ARCH=$(uname -m)
 BABI="gnu"
@@ -36,6 +36,7 @@ source=(https://static.rust-lang.org/dist/${name}c-$version-src.tar.xz
     0004-compiler-Change-LLVM-targets.patch
     0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
     llvm23.patch
+    llvm23_2.patch
 )
 
 unpack_source() {

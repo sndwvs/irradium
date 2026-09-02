@@ -125,7 +125,7 @@ f:ab3cc6e6689da36ccfe66de2bae7773b:qt6-base/.signature
 f:8f02fed2e868f77640bddf2a4cda85ee:qt6-base/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:d8bc8610e2310aef63c0cc3bdd51a667:rust/maintainer_clean_footprint
-f:1e7aa53ab943492ce80adaa5aa79a524:rust/Pkgfile
+f:f900ed516a60eb805183e27a298a7fef:rust/Pkgfile
 f:19368ee574587ede69279d0ea4993558:rust/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
 f:801fd8698192359d8ad60b36b434f1bf:rust/.footprint.aarch64
 f:cbe9f99c8110fe2a6b80f9df7489ddca:rust/.signature.riscv64
@@ -136,6 +136,7 @@ f:f9d38b634d10e1353a4c1200e11401f9:rust/0003-bootstrap-Workaround-for-system-sta
 f:6ee6690b08086d4a6c949d23829d299b:rust/0004-compiler-Change-LLVM-targets.patch
 f:494219662140070332b5506be95ff234:rust/.footprint.riscv64
 f:4eec321b7031d4a4b771795794b7d7b9:rust/.signature.aarch64
+f:2596abe44d9bdabb38ce9f9b8cea679e:rust/llvm23_2.patch
 f:2874f3457c724a96ff926ceef88fc999:slim/theme/background.png
 f:74bd5175145e88e0dc7fd369ceeaa75a:slim/theme/panel.png
 f:96fd21a461c54eec6c6a1e37a7aad719:slim/theme/slim.theme
