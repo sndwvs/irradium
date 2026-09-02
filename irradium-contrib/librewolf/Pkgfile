@@ -5,21 +5,17 @@
 # Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland xdg-desktop-portal-gtk
 
 name=librewolf
-version=154.0_p2
+version=155.0_1
 release=1
-source=(https://librewolf.dev/librewolf/source/archive/${version/_p/-}.tar.gz
-
-https://librewolf.dev/api/packages/librewolf/generic/librewolf-source/$_pkgver/librewolf-$_pkgver.source.tar.gz
-
+source=(https://librewolf.dev/api/packages/librewolf/generic/librewolf-source/${version/_/-}/librewolf-${version/_/-}.source.tar.gz
   librewolf.desktop
-  fix-target-detection.patch
   node-stdout-nonblocking-wrapper
   rust-lto-thin.patch)
 
 build() {
   chmod a+x "$SRC"/node-stdout-nonblocking-wrapper
 
-  cd $name-$version
+  cd $name-${version/_/-}
 
   for p in "$SRC"/*.patch; do
     patch -p1 -i $p
@@ -75,6 +71,12 @@ build() {
   ac_add_options --disable-debug-symbols
   ac_add_options --disable-parental-controls
   ac_add_options --disable-system-extension-dirs
+
+  ac_add_options --with-app-name=$name
+  ac_add_options --with-app-basename=Firefox
+  export MOZ_APP_REMOTINGNAME=$name
+  ac_add_options --with-branding=browser/branding/librewolf
+  ac_add_options --with-l10n-base="$PWD/lw/l10n"
 EOF
 
   if [ $(uname -m) != "riscv64" ]; then
@@ -92,7 +94,7 @@ EOF
 
   # bugzilla 1988166: workaround for systems without the single_threaded header
   [ -e /usr/include/sys/single_threaded.h ] || sed "/sys\/single_threaded.h/d" \
-                    -i "$SRC"/$name-$version/config/system-headers.mozbuild
+                    -i "$SRC"/$name-${version/_/-}/config/system-headers.mozbuild
 
   # workaround if the PR_* constants are hard-coded in more than one location,
   # not relying on the kernel headers as the Single Point Of Truth
@@ -153,6 +155,8 @@ EOF
 
   # python/mach/mach/mixin/process.py fails to detect SHELL
   export SHELL='/bin/bash'
+
+  export MOZCONFIG=.mozconfig
 
   ./mach build
   DESTDIR="$PKG" ./mach install
