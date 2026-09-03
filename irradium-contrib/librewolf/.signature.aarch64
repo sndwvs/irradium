@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7qWFVj380ETvFJnJcrTkdRkha5JFB27svEtaDvD3OpzSE1zjj63vKGN9TO36TG8GzTMnFwlPKVFZ9yXxbLFKCAI=
-SHA256 (Pkgfile) = fe206a8e5379a6709a415c24ac62b8aa3733b21c9d292c4bc8e1b9232f72821d
-SHA256 (.footprint.aarch64) = bcf64446205f7ab4061098752557e96cef06aa6f8a3614b25f0d33ee87796269
+RWTmT3d9kqan7u54G6cesRd1TV4/vT7od9Z48A/6y5uSDzm9PsXKzn2LnddbsJ+H+H2zGI+UW/GT7ZIHjOpp5CYSxtp4zrWsCA4=
+SHA256 (Pkgfile) = a215042a4787f0da522c31e13a2a71e7675aabc2a8c76b520017ca20548af003
+SHA256 (.footprint.aarch64) = bad22a02c4328de22e0605278d1b755d9310c51b88b2e07b70d6129654dd3862
 SHA256 (librewolf-155.0-1.source.tar.gz) = 5d951d8071ef6bcc4eab8bba1492e269af728c83586437ec2a7db11d46be36f6
 SHA256 (librewolf.desktop) = 9627f0218dc9e816fc9ee9eb27b6538c4aa17803bcc9c4218c7ce725b2582b43
 SHA256 (node-stdout-nonblocking-wrapper) = bb8c503015e49ed1b152225bdc56cf502cd831f35962d113dcbb9121967f3523
