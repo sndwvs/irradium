@@ -32,6 +32,7 @@ d:efibootmgr
 d:php-zip
 d:clang
 d:lld
+d:spirv-llvm-translator
 d:gobject-introspection
 d:grub2-efi
 d:grub2
@@ -210,6 +211,9 @@ f:856c6e388c411975a955156776d73bfe:lld/0002-PATCH-lld-Import-compact_unwind_enco
 f:fceafb0ed510f6d1442212011f80d68d:lld/.footprint
 f:fc0a4848f76ee10b192fbc5ecbd41274:lld/.signature
 f:b29dd85e3979354360f8d34034fdcdb6:lld/Pkgfile
+f:8a99a43ef52a6efa2d8c183bcfe8c6b2:spirv-llvm-translator/.footprint
+f:d6eeaee0556cc89adb9da0e15e94a8d1:spirv-llvm-translator/.signature
+f:604253bd970952c69224d00341124949:spirv-llvm-translator/Pkgfile
 f:6a3b37401d78735d427832419c15824c:gobject-introspection/.footprint.aarch64
 f:573d6fee048e01b3e0a10d18c9854b28:gobject-introspection/.footprint.riscv64
 f:f084746f364f164445784132cd1b98c2:gobject-introspection/.signature.aarch64

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/opt.pub
+RWSE3ohX2g5d/QriLZ5b5O2sW/3wyErvv0vP/3hpmw9ON4d6Qh0w5EaO2ILlAoZtzXdCoswc3vZRs0zYUp+yWqtBuqM8jjtNvA8=
+SHA256 (Pkgfile) = 7626191a115f081d8b883776f4874565407dd8f9d18ee4a8363730abb6836bf8
+SHA256 (.footprint) = cd463b26973c4d27d3224f5f0cc026b48489191c2610d91098c10c033d914000
+SHA256 (spirv-llvm-translator-23.1.1.tar.gz) = 9e0bf1beb0ab7edca6cd8c17fd9bbb7ce3dcd520f3e969e0485ff5b00931f929

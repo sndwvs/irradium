@@ -1,0 +1,32 @@
+# Description: A tool and a library for bi-directional translation between SPIR-V and LLVM IR
+# URL: https://github.com/KhronosGroup/SPIRV-LLVM-Translator
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: llvm spirv-tools
+
+name=spirv-llvm-translator
+version=22.1.5
+release=1
+source=(https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v$version/$name-$version.tar.gz)
+
+build() {
+  prt-get isinst ccache && PATH="$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
+
+  cmake -S SPIRV-LLVM-Translator-$version -B build -G Ninja $PKGMK_SLT \
+    -D CMAKE_INSTALL_PREFIX=/usr \
+    -D CMAKE_INSTALL_LIBDIR=lib \
+    -D CMAKE_BUILD_TYPE=Release \
+    -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+    -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+    -D CMAKE_POSITION_INDEPENDENT_CODE=ON \
+    -D CMAKE_SKIP_RPATH=ON \
+    -D LLVM_BUILD_TOOLS=ON \
+    -D CCACHE_ALLOWED=OFF \
+    -D LLVM_DIR=/usr/lib/cmake/llvm \
+    -D LLVM_SPIRV_BUILD_EXTERNAL=YES \
+    -D LLVM_EXTERNAL_SPIRV_HEADERS_SOURCE_DIR=/usr/include/spirv \
+    -D FETCHCONTENT_FULLY_DISCONNECTED=ON \
+    -Wno-dev
+
+  cmake --build build
+  DESTDIR=$PKG cmake --install build
+}
