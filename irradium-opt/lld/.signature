@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/opt.pub
+RWSE3ohX2g5d/QYmvfqL9jUQ7anvvp3jt7p92Pm+IuDwcRPbLOoC4YUeJsXSaSBYrjJAFZIVi1CXXkfqjmtrcEZVov7WoAGLdQk=
+SHA256 (Pkgfile) = d32433e32019877ac5016260ea8006e5bd9f07c3f22bac6040976b2acee08d4a
+SHA256 (.footprint) = b0c5b9d6fd242a13fae5b76e14b2227ff52b350a803ce5ab58d605eec150e650
+SHA256 (llvm-project-23.1.0.src.tar.xz) = ab1f0e3ec52448c33e8782eaf0422504b87c7b016b22514653ee0d8fcee479ff
+SHA256 (0002-PATCH-lld-Import-compact_unwind_encoding.h-from-libu.patch) = 3b18edef05d3a3fc0030b7a7674e455574dfbdecf26f23c6af5bd30e987b0f55

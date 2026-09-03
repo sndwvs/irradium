@@ -31,6 +31,7 @@ d:wpa_supplicant
 d:efibootmgr
 d:php-zip
 d:clang
+d:lld
 d:gobject-introspection
 d:grub2-efi
 d:grub2
@@ -205,6 +206,10 @@ f:0c5c0459840531d9214d50e73e567d07:php-zip/.signature
 f:b6fb3a22595bfee7afd5d0a8e3c46015:clang/.footprint
 f:b4ed127021781391f20745466a4d69a2:clang/.signature
 f:ddc23951e9d3f172d713971684c125f2:clang/Pkgfile
+f:856c6e388c411975a955156776d73bfe:lld/0002-PATCH-lld-Import-compact_unwind_encoding.h-from-libu.patch
+f:fceafb0ed510f6d1442212011f80d68d:lld/.footprint
+f:fc0a4848f76ee10b192fbc5ecbd41274:lld/.signature
+f:b29dd85e3979354360f8d34034fdcdb6:lld/Pkgfile
 f:6a3b37401d78735d427832419c15824c:gobject-introspection/.footprint.aarch64
 f:573d6fee048e01b3e0a10d18c9854b28:gobject-introspection/.footprint.riscv64
 f:f084746f364f164445784132cd1b98c2:gobject-introspection/.signature.aarch64
