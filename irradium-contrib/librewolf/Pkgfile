@@ -6,7 +6,7 @@
 
 name=librewolf
 version=155.0_1
-release=1
+release=2
 source=(https://librewolf.dev/api/packages/librewolf/generic/librewolf-source/${version/_/-}/librewolf-${version/_/-}.source.tar.gz
   librewolf.desktop
   node-stdout-nonblocking-wrapper
@@ -178,6 +178,9 @@ EOF
   # librewolf is missing an svg logo
   install -Dvm644 browser/branding/librewolf/default16.png \
     "$PKG/usr/share/icons/hicolor/symbolic/apps/$name-symbolic.png"
+
+  install -vm644 browser/branding/librewolf/default*.png \
+    -t "$PKG"/usr/lib/librewolf/browser/chrome/icons/default/
 
   install -D -m 0644 "$SRC"/librewolf.desktop "$PKG"/usr/share/applications/librewolf.desktop
 

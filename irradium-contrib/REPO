@@ -583,7 +583,7 @@ f:fb2dcd7cc0f861d7050d2d0c194fdc1a:libfreehand/Pkgfile
 f:d540a7200cc0d3b43a54f82323a345af:librewolf/.signature.aarch64
 f:21b9d20a055ffad9dd22850c62fe5b0c:librewolf/.footprint.aarch64
 f:d41d8cd98f00b204e9800998ecf8427e:librewolf/.signature.riscv64
-f:2e587443b6cf259be87e46b2734899e9:librewolf/Pkgfile
+f:2fb4fa872c5b19f5c084b5f85751dbbe:librewolf/Pkgfile
 f:e63779169c8dda5d6d57c99edcadbacf:librewolf/rust-lto-thin.patch
 f:63298fc667a9ba67c138866359e4b99e:librewolf/fix-target-detection.patch
 f:34bfc3b23f5c0b0fb44224fab1693e9f:librewolf/node-stdout-nonblocking-wrapper
