@@ -6,7 +6,7 @@
 
 name=firefox
 version=155.0
-release=1
+release=2
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   fix-target-detection.patch
