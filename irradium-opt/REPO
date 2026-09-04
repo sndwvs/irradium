@@ -204,8 +204,8 @@ f:a2e9954fdf88c7872c7617f3a524cf26:efibootmgr/Pkgfile
 f:0fac9b02d2ab26cfd0c61670f2758641:php-zip/.footprint
 f:45a4d5eec5aa9212127edbc1aa22fe91:php-zip/Pkgfile
 f:0c5c0459840531d9214d50e73e567d07:php-zip/.signature
-f:b6fb3a22595bfee7afd5d0a8e3c46015:clang/.footprint
-f:b4ed127021781391f20745466a4d69a2:clang/.signature
+f:4be02e1ed7a313c5d98cefa1e253ba82:clang/.footprint
+f:3f22107494940a102f5d1a05c2dfbb3a:clang/.signature
 f:ddc23951e9d3f172d713971684c125f2:clang/Pkgfile
 f:856c6e388c411975a955156776d73bfe:lld/0002-PATCH-lld-Import-compact_unwind_encoding.h-from-libu.patch
 f:fceafb0ed510f6d1442212011f80d68d:lld/.footprint
