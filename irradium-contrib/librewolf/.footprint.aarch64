@@ -13,6 +13,9 @@ drwxr-xr-x	root/root	usr/lib/librewolf/browser/chrome/icons/
 drwxr-xr-x	root/root	usr/lib/librewolf/browser/chrome/icons/default/
 -rw-r--r--	root/root	usr/lib/librewolf/browser/chrome/icons/default/default128.png
 -rw-r--r--	root/root	usr/lib/librewolf/browser/chrome/icons/default/default16.png
+-rw-r--r--	root/root	usr/lib/librewolf/browser/chrome/icons/default/default22.png
+-rw-r--r--	root/root	usr/lib/librewolf/browser/chrome/icons/default/default24.png
+-rw-r--r--	root/root	usr/lib/librewolf/browser/chrome/icons/default/default256.png
 -rw-r--r--	root/root	usr/lib/librewolf/browser/chrome/icons/default/default32.png
 -rw-r--r--	root/root	usr/lib/librewolf/browser/chrome/icons/default/default48.png
 -rw-r--r--	root/root	usr/lib/librewolf/browser/chrome/icons/default/default64.png
