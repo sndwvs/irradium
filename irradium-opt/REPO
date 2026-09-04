@@ -208,8 +208,8 @@ f:4be02e1ed7a313c5d98cefa1e253ba82:clang/.footprint
 f:3f22107494940a102f5d1a05c2dfbb3a:clang/.signature
 f:ddc23951e9d3f172d713971684c125f2:clang/Pkgfile
 f:856c6e388c411975a955156776d73bfe:lld/0002-PATCH-lld-Import-compact_unwind_encoding.h-from-libu.patch
-f:fceafb0ed510f6d1442212011f80d68d:lld/.footprint
-f:fc0a4848f76ee10b192fbc5ecbd41274:lld/.signature
+f:c4fda3a1f8fb40e13337d1bac091b368:lld/.footprint
+f:597348e28674f3bad6adef51373231e7:lld/.signature
 f:b29dd85e3979354360f8d34034fdcdb6:lld/Pkgfile
 f:8a99a43ef52a6efa2d8c183bcfe8c6b2:spirv-llvm-translator/.footprint
 f:d6eeaee0556cc89adb9da0e15e94a8d1:spirv-llvm-translator/.signature

@@ -1,6 +1,6 @@
-untrusted comment: verify with /etc/ports/opt.pub
-RWSE3ohX2g5d/QYmvfqL9jUQ7anvvp3jt7p92Pm+IuDwcRPbLOoC4YUeJsXSaSBYrjJAFZIVi1CXXkfqjmtrcEZVov7WoAGLdQk=
-SHA256 (Pkgfile) = d32433e32019877ac5016260ea8006e5bd9f07c3f22bac6040976b2acee08d4a
-SHA256 (.footprint) = b0c5b9d6fd242a13fae5b76e14b2227ff52b350a803ce5ab58d605eec150e650
-SHA256 (llvm-project-23.1.0.src.tar.xz) = ab1f0e3ec52448c33e8782eaf0422504b87c7b016b22514653ee0d8fcee479ff
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCdmnPZrWJ1PftxMdV1rx1FsHf+swNX7Cc0z41TIeLmgfQEdOh3cxLiFqI4bYqZvxiBuPaiP7/HY1ENY8Hl5YiQg=
+SHA256 (Pkgfile) = 14f0b8bc6eb3f6f6dcf3ecdaf790d42fecce72757c2c5410cb603f24ca3e93dd
+SHA256 (.footprint) = e59d694bb3a863b9886d658718d688ee9a023008ffc857b1d48b4677d0fd6a85
+SHA256 (llvm-project-22.1.8.src.tar.xz) = 922f1817a0df7b1489272d18134ee0087a8b068828f87ac63b9861b1a9965888
 SHA256 (0002-PATCH-lld-Import-compact_unwind_encoding.h-from-libu.patch) = 3b18edef05d3a3fc0030b7a7674e455574dfbdecf26f23c6af5bd30e987b0f55
