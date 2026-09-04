@@ -14,8 +14,8 @@ f:67d369814433922d87e2ffb2ecef5aff:mesa/patches/0008-mesa-26.0-missing-include.p
 f:2dc51bc65b49c5012e662a2dd9c91e6b:mesa/patches/0009-mesa-25.2-aarch64-compile.patch
 f:f814811e810af2407b438e2e9e3a88d9:mesa/patches/0012-mesa-26.2-llvm23-orc-jitlink.patch
 f:add55fada3a9b2de27dbc93d19af3f86:mesa/README.md
-f:c24601f4c0442603472c715867cb0b98:mesa/.footprint.aarch64
-f:1761a04b1854ee1991aab28151131b70:mesa/.signature.aarch64
+f:1c17c92c133fe03bf48dc7e9b45ffffb:mesa/.footprint.aarch64
+f:7eb58d90a1760861701979ee8208f6b8:mesa/.signature.aarch64
 f:1f577062f6a51bd49294c227dafb1723:mesa/.signature.riscv64
 f:6c67ac03ff776fd27f6ce9a72bfeabdf:mesa/Pkgfile
 f:a5371a4f2c6c76cde40ab83c5ab21101:mesa/.footprint.riscv64
