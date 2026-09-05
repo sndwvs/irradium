@@ -1619,6 +1619,7 @@ drwxrwxr-x	root/root	usr/share/zabbix/ui/js/
 drwxrwxr-x	root/root	usr/share/zabbix/ui/js/fields/
 -rw-rw-r--	root/root	usr/share/zabbix/ui/js/fields/class.field.array.js
 -rw-rw-r--	root/root	usr/share/zabbix/ui/js/fields/class.field.checkbox.js
+-rw-rw-r--	root/root	usr/share/zabbix/ui/js/fields/class.field.collection.js
 -rw-rw-r--	root/root	usr/share/zabbix/ui/js/fields/class.field.hidden.js
 -rw-rw-r--	root/root	usr/share/zabbix/ui/js/fields/class.field.js
 -rw-rw-r--	root/root	usr/share/zabbix/ui/js/fields/class.field.multiline.js
