@@ -792,7 +792,7 @@ f:04d4d0c57e7456179bd7b4830f9a9a35:iperf3/Pkgfile
 f:6d0e91bdc8991b5e8272da3b3e977808:libcue/.footprint
 f:d0b60ca189cf86c0bf632aa06f4e3112:libcue/.signature
 f:1e74b0fc686f2c1a344bc81042334367:libcue/Pkgfile
-f:73ed11f59a3006bee19880f20b5f437e:zabbix-utils/Pkgfile
+f:ffa93191411d6f30eb219e590410cbca:zabbix-utils/Pkgfile
 f:56e7d77f8d22bea5751c5d64fc56cfe4:zabbix-utils/.footprint
 f:44d6a9ab8bbabcc719b416b1c5d18bdc:zabbix-utils/.signature
 f:e1a5569bb7e8a9a4c08d6303034a1b2e:logrotate/.footprint
