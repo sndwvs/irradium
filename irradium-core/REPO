@@ -102,7 +102,7 @@ f:f70c051ad1e30aa76820c6c6e7485eae:mlocate/updatedb.conf
 f:f0fdc422afa0d319b229c08a9d73b08f:mlocate/Pkgfile
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
-f:273a628749446e1e5d74afb80f9dc37d:pkgconf/Pkgfile
+f:8d18ad095393bbdb91f01d34c5c355e9:pkgconf/Pkgfile
 f:fea619c56d0736e29d7bf413c37a7b04:pkgconf/.footprint.aarch64
 f:cddcb11c5b08482b400500194b31faac:pkgconf/.footprint.riscv64
 f:ec7c2d027e5dd54e5456b80a46c36e8f:pkgconf/.signature.riscv64
