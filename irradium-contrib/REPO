@@ -197,10 +197,10 @@ f:5967a4ed6d1f029d16d70beaa71246d8:firefox/README
 f:c9ccd47ae6a570100ebf31d51a0e7a1f:firefox/firefox.desktop
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
-f:86bb617054672643f444e7ee3b7a9dd1:firefox/.footprint.riscv64
+f:eb5e46465a88148b6cd781237e350b1d:firefox/.footprint.riscv64
 f:c45bb7754e1e93022297e6c8f9bbb3eb:firefox/.footprint.aarch64
 f:ec409b33fb3a57c0e2ba9dfd4a722d54:firefox/.signature.aarch64
-f:d8c30dd8035ce5afe854d53da7a69456:firefox/.signature.riscv64
+f:dc1ea4d6cb27291b565998e0736edf58:firefox/.signature.riscv64
 f:21b66730fdb1097f1774f1c1ed491be5:firefox/Pkgfile
 f:e63779169c8dda5d6d57c99edcadbacf:firefox/rust-lto-thin.patch
 f:3219f5d622520efe5321b3b8de56be2d:freerdp/.footprint
