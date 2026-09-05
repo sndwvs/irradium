@@ -240,8 +240,8 @@ f:f193e75ca62a9f19acc471f19b047a9f:efivar/Pkgfile
 f:5fffcf04b582295153a69194cb5d4067:compiler-rt/Pkgfile
 f:fd0fa3b88c025d8cd1042eddb9480abf:compiler-rt/.footprint.aarch64
 f:76625283b12dbbfd81f4940d17d7899d:compiler-rt/.signature.aarch64
-f:dc5b8e05df9a72f80b05245cfafc0b7a:compiler-rt/.footprint.riscv64
-f:a1067ae9d53548d0d16b8669b6a709d0:compiler-rt/.signature.riscv64
+f:efe31a023a57c63838368e0d189e83b9:compiler-rt/.footprint.riscv64
+f:24e3a7e9b56606524f984e9c63566ab0:compiler-rt/.signature.riscv64
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
 f:ac60a203a08f7d412b68966d74117d1f:strace/.signature
 f:3bb63cfe70d20b82dac37b2c0d15df3a:strace/Pkgfile
