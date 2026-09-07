@@ -5,8 +5,8 @@
 # Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland xdg-desktop-portal-gtk
 
 name=librewolf
-version=155.0_1
-release=2
+version=155.0.1_1
+release=1
 source=(https://librewolf.dev/api/packages/librewolf/generic/librewolf-source/${version/_/-}/librewolf-${version/_/-}.source.tar.gz
   librewolf.desktop
   node-stdout-nonblocking-wrapper
