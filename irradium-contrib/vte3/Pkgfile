@@ -18,8 +18,6 @@ build() {
         PKGMK_VTE+=' -D _b_symbolic_functions=false'
     fi
 
-    patch -p1 -d vte-$version -i $SRC/simdutf-update-8.2.0.patch
-
     meson setup build vte-$version ${PKGMK_VTE} \
         --prefix=/usr \
         --libexecdir=/usr/lib \
