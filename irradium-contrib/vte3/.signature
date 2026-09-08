@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7vLLSTZGMq/tSjBcxHGezo9R8nn+g65yCTDGN4/yPUbPvfbBujWNOsqKof7XVdoKtFQ2ye8LbjMvrmQUI9YmJg4=
-SHA256 (Pkgfile) = 2c45981c8e5843eabc496bd1c0f0bfd688a9ea50abb97624552e8b91ae93c566
-SHA256 (.footprint) = e864ffc51f8b33e91d64089b3379ef0dbd7951b5c96f78e7a3b6063556f063ef
-SHA256 (vte-0.84.0.tar.xz) = 0414e31583836aeb7878da25f67c515f7e8879917ecc37c92e26b83e8d8fc3e3
-SHA256 (simdutf-update-8.2.0.patch) = b52d1c0dfa8ffc59ef8c6689980fad8c8f36ef2213ae5fa2ea75d7a50f518d3e
+RWTmT3d9kqan7vGTgUir/1erZDAk2FpOR7GPL1dEItB1mCOoXtxUaExZE8QjZk91qMoKwv4DWmVLEzxN78OGJeM0d03qsyhNHwo=
+SHA256 (Pkgfile) = b99b2cfb841e94318e752076d4606e240c2665ac0558dc19e364f41c21b0c360
+SHA256 (.footprint) = 17b8f85de8576c2bc8a979270eba95bfee87b3692f83dab62f793ffd247bd43a
+SHA256 (vte-0.84.1.tar.xz) = aca1caa8478aebcdbb1d67897fb3511eb7601debae6810e16a15b6fa25f31ac8
