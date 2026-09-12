@@ -5,7 +5,7 @@
 
 name=pkgutils
 version=5.40.12
-release=2
+release=3
 source=(https://crux.nu/files/$name-$version.tar.xz
     pkgadd.conf.patch
     pkgmk.conf.patch

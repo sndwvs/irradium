@@ -1,21 +1,32 @@
---- a/pkgmk.in	2023-02-03 18:32:32.000000000 +0200
-+++ b/pkgmk.in	2024-07-12 21:26:46.872713446 +0300
-@@ -324,7 +324,13 @@ check_signature() {
+--- a/pkgmk.in	2026-09-12 07:38:44.065171740 +0000
++++ b/pkgmk.in	2026-09-12 07:41:47.554908286 +0000
+@@ -324,14 +324,22 @@ check_signature() {
  		srcind=$(( srcind+1 ))
  		done
  
 -		for FILE in "$PKGMK_PKGFILE" "$PKGMK_FOOTPRINT" "${source[@]}"; do
 +		if [ ! -z ${MULTI_ARCH} -a -f ${PKGMK_FOOTPRINT}.${MULTI_ARCH} -o -f ${PKGMK_SIGNATURE}.${MULTI_ARCH} ]; then
 +			_PKGMK_FOOTPRINT=${PKGMK_FOOTPRINT}.${MULTI_ARCH}
++			_PKGMK_SIGNATURE=${PKGMK_SIGNATURE}.${MULTI_ARCH}
 +		else
 +			_PKGMK_FOOTPRINT=${PKGMK_FOOTPRINT}
++			_PKGMK_SIGNATURE=${PKGMK_SIGNATURE}
 +		fi
 +
 +		for FILE in "$PKGMK_PKGFILE" "${_PKGMK_FOOTPRINT}" "${source[@]}"; do
  			ln -s $(get_filename -a $FILE) .
  		done
  
-@@ -397,7 +403,13 @@ make_signature() {
+ 		if [ "$PKGMK_PUBLICKEY" ]; then
+-			err=$($PKGMK_SIGNIFY -q -C -p "$PKGMK_PUBLICKEY" -x "$PKGMK_ROOT/$PKGMK_SIGNATURE" 2>&1)
++			err=$($PKGMK_SIGNIFY -q -C -p "$PKGMK_PUBLICKEY" -x "$PKGMK_ROOT/${_PKGMK_SIGNATURE}" 2>&1)
+ 		else
+-			err=$($PKGMK_SIGNIFY -q -C -x "$PKGMK_ROOT/$PKGMK_SIGNATURE" 2>&1)
++			err=$($PKGMK_SIGNIFY -q -C -x "$PKGMK_ROOT/${_PKGMK_SIGNATURE}" 2>&1)
+ 		fi
+ 
+ 		RESULT=$?
+@@ -397,7 +405,13 @@ make_signature() {
  		srcind=$(( srcind+1 ))
  	done
  
@@ -30,7 +41,7 @@
  		LOCAL_FILENAMES="$LOCAL_FILENAMES `get_filename $FILE`"
  	done
  
-@@ -419,7 +431,17 @@ make_signature() {
+@@ -419,7 +433,17 @@ make_signature() {
  		error "Creating signature failed"
  		exit $E_SIGNATURE
  	else
@@ -49,7 +60,7 @@
  	fi
  }
  
-@@ -442,7 +464,17 @@ refresh_signature() {
+@@ -442,7 +466,17 @@ refresh_signature() {
  		error "Refreshing signature failed"
  		exit $E_SIGNATURE
  	else
@@ -68,7 +79,7 @@
  	fi
  }
  
-@@ -502,6 +534,12 @@ check_footprint() {
+@@ -502,6 +536,12 @@ check_footprint() {
  
  	cd $PKGMK_ROOT
  
@@ -81,7 +92,7 @@
  	if [ -f $TARGET ]; then
  		make_footprint > $FILE.footprint
  		if [ -f $PKGMK_FOOTPRINT ]; then
-@@ -688,6 +726,18 @@ update_footprint() {
+@@ -689,6 +729,18 @@ update_footprint() {
  		exit 1
  	fi
  
@@ -100,7 +111,7 @@
  	check_file "$PKGMK_FOOTPRINT"
  	make_footprint > $PKGMK_FOOTPRINT
  	touch $TARGET
-@@ -961,6 +1011,8 @@ trap "interrupted" SIGHUP SIGINT SIGQUIT
+@@ -962,6 +1014,8 @@ trap "interrupted" SIGHUP SIGINT SIGQUIT
  
  export LC_ALL=C.UTF-8
  
