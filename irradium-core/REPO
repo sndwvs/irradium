@@ -161,11 +161,11 @@ f:d39452dd1bc4f0605584e435c6677723:rc/rc.patch
 f:59a9290d7808750d475cb0754c6ab19f:bash/.footprint
 f:be5b8a1e3dd2272113e854ed0f155c47:bash/profile
 f:26cd896b496ca33a71df913b4a3e09a3:bash/profile.patch
-f:a7713d5f84fde57065ff4aea7f32e46d:bash/Pkgfile
+f:5beca8642de4827bb2686d4794804f89:bash/Pkgfile
 f:16bb1bd8843e58cc4ba357b58324cd3b:bash/locale.sh
-f:6e6e99b1b2bf8cabb6d1e282efa0ad4f:bash/bash-5.3.15.patch.gz
 f:05b1fbf88c50531e6b0b675068e690a6:bash/.signature
 f:3fcc966da59af67909aaa35ff54b8ff4:bash/home-profile.d.sh
+f:5876a57e86d105e0806887d1d7b50d33:bash/bash-5.3.20.patch.gz
 f:4e1e8a61db6c9a19f9398eb1073d41e2:dcron/.footprint
 f:3596a4fa9cf63bdf130fd533ca7703d4:dcron/crontab
 f:0049730715f9841a1cd8f2721cb1bb1b:dcron/crontab.patch
