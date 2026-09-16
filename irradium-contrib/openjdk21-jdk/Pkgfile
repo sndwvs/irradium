@@ -1,11 +1,11 @@
 # Description: OpenJDK 21 Java Development Kit
 # URL: https://openjdk.java.net/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: alsa-lib cups giflib harfbuzz lcms2 libxslt nss unzip xorg-libxrandr xorg-libxt xorg-libxtst zip
+# Depends on: alsa-lib cups fontconfig giflib harfbuzz lcms2 libxslt nss unzip xorg-libxrandr xorg-libxt xorg-libxtst zip
 # Optional: publicsuffix-list
 
 name=openjdk21-jdk
-version=21.0.9+5
+version=21.0.13+6
 release=1
 _boot_ver=21.0.5_11
 _cert_ver=20210916
