@@ -181,8 +181,8 @@ f:ff628f32409dd459d183fbc73274a906:hyphen/Pkgfile
 f:c32d199bdb048fcdc8596761f82e6f8d:aspell/.footprint
 f:0b37f73bd14e6283217fca6cc1c90c3b:aspell/.signature
 f:e6164fb7f70ecd89d2732eda4c691582:aspell/Pkgfile
-f:62d19455bfadf19714f09b4cca12714b:liburcu/.footprint
-f:630f44d9447ab071d613885d0e39d937:liburcu/.signature
+f:aaebdebd05d70f2d1058121b3b8810cf:liburcu/.footprint
+f:6d0b36d8f2d4fe0757a445b0e930f5d2:liburcu/.signature
 f:1d3d17891ecf229005ea207971aa9b98:liburcu/Pkgfile
 f:e5fff55c15a6ad168b665fe4c6aae583:nodejs/.footprint
 f:6f35bea030879f18394b1de2c469f449:nodejs/unbundle-uv.patch
