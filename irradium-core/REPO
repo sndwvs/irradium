@@ -163,7 +163,7 @@ f:be5b8a1e3dd2272113e854ed0f155c47:bash/profile
 f:26cd896b496ca33a71df913b4a3e09a3:bash/profile.patch
 f:5beca8642de4827bb2686d4794804f89:bash/Pkgfile
 f:16bb1bd8843e58cc4ba357b58324cd3b:bash/locale.sh
-f:05b1fbf88c50531e6b0b675068e690a6:bash/.signature
+f:a54afaacbc0a55516bb8534dba60fdab:bash/.signature
 f:3fcc966da59af67909aaa35ff54b8ff4:bash/home-profile.d.sh
 f:5876a57e86d105e0806887d1d7b50d33:bash/bash-5.3.20.patch.gz
 f:4e1e8a61db6c9a19f9398eb1073d41e2:dcron/.footprint
