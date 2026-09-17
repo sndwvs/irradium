@@ -14,11 +14,11 @@ f:67d369814433922d87e2ffb2ecef5aff:mesa/patches/0008-mesa-26.0-missing-include.p
 f:2dc51bc65b49c5012e662a2dd9c91e6b:mesa/patches/0009-mesa-25.2-aarch64-compile.patch
 f:f814811e810af2407b438e2e9e3a88d9:mesa/patches/0012-mesa-26.2-llvm23-orc-jitlink.patch
 f:add55fada3a9b2de27dbc93d19af3f86:mesa/README.md
-f:1c17c92c133fe03bf48dc7e9b45ffffb:mesa/.footprint.aarch64
-f:7eb58d90a1760861701979ee8208f6b8:mesa/.signature.aarch64
-f:74af0a45973daf6d517e826eac0c3922:mesa/.signature.riscv64
+f:46e1283834ed426df8e7b6ff5005f98c:mesa/.footprint.aarch64
+f:ed27aa5ca8dc1650475de0024b36d2b8:mesa/.signature.aarch64
+f:68431d7048879c28099862b9fb515f3b:mesa/.signature.riscv64
 f:3b0a3ee5e04f027c8edc4850801de6f4:mesa/Pkgfile
-f:b5209298578b60129982646b544b93e5:mesa/.footprint.riscv64
+f:bd3214f3bfaad8ba3094b5c38a9ec6ce:mesa/.footprint.riscv64
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:2b55e5edd7f68e865c39720c44dca1c1:xorg-xf86-video-fbdev/.signature
 f:376712c2b0b9d9529ddd3520bb6b03c9:xorg-xf86-video-fbdev/Pkgfile
