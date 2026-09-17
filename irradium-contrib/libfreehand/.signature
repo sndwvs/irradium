@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7hK/e5NP+1EEpTWtqQ5gI57FU/HdkR3YDmatZqQ1C5QxzybjAqtOrMfiNouroLgITpXTXGRIIrtxYr3/GLU8dw0=
-SHA256 (Pkgfile) = a261c83e3fe4852de9e40a4f52956c59562909693c06b60ce22dfc9bae130580
-SHA256 (.footprint) = 4a3c10d7346fabe8b17f3ef3f5c5310b8f6da8ff1b620db17219c45b7f186975
-SHA256 (libfreehand-0.1.3.tar.xz) = a431d78767e5aa27ade7c6d1b7a11a9f1848cb4b9260bf0a6a44689553ecccfe
+RWTmT3d9kqan7rgbEV26WxTxxO07oGhAuowRqxIyNQaMd6/1SzqCBkNh2VF/xg/ODOsuUqDYhJncIspkjJPIcH5z4fnVKRAX2AA=
+SHA256 (Pkgfile) = c09aa9ad29f1b32f1e9a53f3234e3708ef6c626f9c8a19938fb26f23e124dab3
+SHA256 (.footprint) = 6b4679ab4cd1cb7da70c0c7f014b27462d20431bf41c0fffd1dfdf08e53d1974
+SHA256 (libfreehand-0.1.4.tar.xz) = 350b10d24a76d7e8c8ae98b74c2d432a2c8ddec08935d09856d20b695a35e600
