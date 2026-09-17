@@ -1,10 +1,10 @@
 # Description: Chromium web browser
 # URL: https://www.chromium.org/Home
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn ninja clang lld gperf nodejs git
+# Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn go ninja clang lld gperf nodejs opus git rust rust-bindgen typescript
 
 name=chromium
-version=149.0.7827.114
+version=153.0.8010.36
 release=1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name-$version.tar.xz
         chromium.default chromium.sh
@@ -19,9 +19,16 @@ source=(https://commondatastorage.googleapis.com/chromium-browser-official/$name
         patches/chromium-147-revert-clang-no-lifetime-dse-flag.patch
         patches/chromium-147-rust-1.95-bytemuck.patch
         patches/chromium-149-drop-unknown-clang-flag.patch
-        patches/chromium-149-unbundle-minizip-undo-unicode.patch
         patches/chromium-149-use-of-undeclared-identifier-ERROR.patch
         patches/chromium-149-build-with-wasm-rollup.patch
+        patches/chromium-150-revert-avx-flag-change.patch
+        patches/chromium-152-fix-gn-no-public_inputs.patch
+        patches/chromium-152-unbundle-minizip-undo-unicode.patch
+        patches/chromium-152-unbundle-opus-devtools.patch
+        patches/chromium-153-hermetic-python.patch
+        patches/chromium-153-iamf-tools-unbundled-opus.patch
+        patches/chromium-153-typescript.patch
+        patches/chromium-153-crubit.patch
 )
 
 build() {
@@ -126,23 +133,49 @@ build() {
     # enable widevine for arm64
     patch -Np1 -i $SRC/enable-widevine-arm64.patch
 
-    # Chromium bundles a patched minizip with extra features.
-    patch -Np1 -i $SRC/chromium-149-unbundle-minizip-undo-unicode.patch
-
     patch -Np1 -i $SRC/chromium-149-use-of-undeclared-identifier-ERROR.patch
+
+    # Fix issue about missing AVX functions
+    # Credit: https://github.com/ungoogled-software/ungoogled-chromium/pull/3837
+    patch -Np1 -i $SRC/chromium-150-revert-avx-flag-change.patch
+
+    # Just the reverted commit 8dab8b761385b7946588232e4e2a8c116f9293c3
+    patch -Np1 -i "$SRC/chromium-152-fix-gn-no-public_inputs.patch" -d third_party/devtools-frontend/src
+
+    patch -Np1 -i $SRC/chromium-152-unbundle-minizip-undo-unicode.patch
+
+    patch -Np1 -i $SRC/chromium-152-unbundle-opus-devtools.patch
+
+    # Use system python3 instead of the hermetic cpython3 interpreter
+    # https://github.com/ungoogled-software/ungoogled-chromium/pull/3946
+    patch -Np1 -i $SRC/chromium-153-hermetic-python.patch
+
+    # third_party/iamf_tools includes vendored Opus via relative "include/opus.h"
+    # paths that only resolve against a real bundled Opus checkout; fix them up
+    # for the unbundled system Opus build
+    patch -Np1 -i $SRC/chromium-153-iamf-tools-unbundled-opus.patch
+
+    # Work around TypeScript becoming a build dependency: disable tsgo for the
+    # WebUI and point devtools at the system tsc binary
+    # https://github.com/ungoogled-software/ungoogled-chromium/pull/3946
+    patch -Np1 -i $SRC/chromium-153-typescript.patch
+
+    patch -Np1 -i $SRC/chromium-153-crubit.patch
 
     # Link to system tools required by the build
     mkdir -p third_party/node/linux/node-linux-x64/bin \
-             third_party/rust-toolchain/bin \
              third_party/jdk/current/bin \
-             third_party/rust-toolchain/bin
+             third_party/rust-toolchain/bin \
+             third_party/dawn/tools/golang/linux-arm64/bin
 
     rm -rf third_party/node/linux/node-linux-x64/bin/*
     ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/
-    rm -rf third_party/rust-toolchain/bin/*
-    ln -s /usr/bin/rustc third_party/rust-toolchain/bin/
     #ln -s /usr/bin/java third_party/jdk/current/bin/
     ln -s $(whereis java | sed 's:\s:\n:g' | grep bin) third_party/jdk/current/bin/
+    if (( !_manual_clone )); then
+        ln -s /usr/bin/rustc third_party/rust-toolchain/bin/
+        ln -s /usr/bin/go third_party/dawn/tools/golang/linux-arm64/bin/
+    fi
 
     # remove x86_64 binary and use our own
     rm -f third_party/gperf/cipd/bin/gperf
@@ -173,9 +206,11 @@ build() {
       --system-libraries "${!_system_libs[@]}"
 
     # Generate missing header
-    python3 build/util/lastchange.py -m DAWN_COMMIT_HASH \
-        -s third_party/dawn --revision gpu/webgpu/DAWN_VERSION \
-        --header gpu/webgpu/dawn_commit_hash.h
+    if (( _manual_clone )); then
+        python3 build/util/lastchange.py -m DAWN_COMMIT_HASH \
+          -s third_party/dawn --revision gpu/webgpu/DAWN_VERSION \
+          --header gpu/webgpu/dawn_commit_hash.h
+    fi
 
     if (( _system_clang )); then
       export CC=clang
