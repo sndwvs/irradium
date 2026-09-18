@@ -428,7 +428,7 @@ f:065415c9d8e19b349682608e88bcb852:ungoogled-chromium/patches/chromium-145-fix-S
 f:d030bab5c46f970b1c282ad7582e1b69:ungoogled-chromium/patches/chromium-147-revert-clang-no-lifetime-dse-flag.patch
 f:952d2907f3cd468cfe6a9e78ecd3db4d:ungoogled-chromium/patches/chromium-147-rust-1.95-bytemuck.patch
 f:e2f2f24f5008e47b1565c53ac6256d2c:ungoogled-chromium/patches/chromium-149-build-with-wasm-rollup.patch
-f:1d99463e12dafa4231f956cb518ff0ff:ungoogled-chromium/patches/chromium-149-drop-unknown-clang-flag.patch
+f:2ab22c3cded8526677a84e26b214db10:ungoogled-chromium/patches/chromium-149-drop-unknown-clang-flag.patch
 f:67ae3e1c82eb6ef138295a4a776d3e4f:ungoogled-chromium/patches/chromium-149-use-of-undeclared-identifier-ERROR.patch
 f:6486e28f2ad3c49c7995345ec5eec437:ungoogled-chromium/patches/chromium-150-revert-avx-flag-change.patch
 f:6b0674c64718d4f946acd686368c3f16:ungoogled-chromium/patches/chromium-152-fix-gn-no-public_inputs.patch
