@@ -186,7 +186,7 @@ f:66ae000693e1155b2add929568f6e6ee:chromium/patches/chromium-153-crubit.patch
 f:1c9d115fad1b163eb9dabf0d5f4deca5:chromium/patches/chromium-153-hermetic-python.patch
 f:b97fed4427571bae7b7a5967fa07b20c:chromium/patches/chromium-153-iamf-tools-unbundled-opus.patch
 f:b87bf2f92f9a9f0b03af216acab3db99:chromium/patches/chromium-153-typescript.patch
-f:90d65cd0f26876ac7e7a8f10ba127e67:chromium/Pkgfile
+f:34a1ff49a91767e666785a7cc7701370:chromium/Pkgfile
 f:11bd688b8299ebc1e42287a5b312d114:deadbeef/post-install
 f:05cf28c1983e02446cd3b16f94e9c135:deadbeef/.footprint
 f:6afa9cc4d4b3dbe424e513a5618a540e:deadbeef/.signature
