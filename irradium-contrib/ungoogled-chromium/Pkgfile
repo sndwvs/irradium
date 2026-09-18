@@ -4,7 +4,7 @@
 # Depends on: gtk3 nss brotli alsa-lib xdg-utils cups libgcrypt ttf-liberation dbus pulseaudio pciutils libva libffi desktop-file-utils hicolor-icon-theme krb5 python3 gn go ninja clang lld gperf nodejs opus git rust rust-bindgen typescript
 
 name=ungoogled-chromium
-version=53.0.8010.36
+version=153.0.8010.36
 release=1
 _uc_version=$version-1
 source=(https://commondatastorage.googleapis.com/chromium-browser-official/${name#*-}-$version.tar.xz
