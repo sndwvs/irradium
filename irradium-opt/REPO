@@ -29,7 +29,6 @@ d:nodejs
 d:wpa_supplicant
 d:efibootmgr
 d:php-zip
-d:lld
 d:spirv-llvm-translator
 d:gobject-introspection
 d:grub2-efi
@@ -196,10 +195,6 @@ f:a2e9954fdf88c7872c7617f3a524cf26:efibootmgr/Pkgfile
 f:0fac9b02d2ab26cfd0c61670f2758641:php-zip/.footprint
 f:45a4d5eec5aa9212127edbc1aa22fe91:php-zip/Pkgfile
 f:0c5c0459840531d9214d50e73e567d07:php-zip/.signature
-f:856c6e388c411975a955156776d73bfe:lld/0002-PATCH-lld-Import-compact_unwind_encoding.h-from-libu.patch
-f:c4fda3a1f8fb40e13337d1bac091b368:lld/.footprint
-f:597348e28674f3bad6adef51373231e7:lld/.signature
-f:b29dd85e3979354360f8d34034fdcdb6:lld/Pkgfile
 f:8a99a43ef52a6efa2d8c183bcfe8c6b2:spirv-llvm-translator/.footprint
 f:e2ede0d31e7179feac8815c09382bd5d:spirv-llvm-translator/.signature
 f:604253bd970952c69224d00341124949:spirv-llvm-translator/Pkgfile

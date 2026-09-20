@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCdmnPZrWJ1PftxMdV1rx1FsHf+swNX7Cc0z41TIeLmgfQEdOh3cxLiFqI4bYqZvxiBuPaiP7/HY1ENY8Hl5YiQg=
-SHA256 (Pkgfile) = 14f0b8bc6eb3f6f6dcf3ecdaf790d42fecce72757c2c5410cb603f24ca3e93dd
-SHA256 (.footprint) = e59d694bb3a863b9886d658718d688ee9a023008ffc857b1d48b4677d0fd6a85
-SHA256 (llvm-project-22.1.8.src.tar.xz) = 922f1817a0df7b1489272d18134ee0087a8b068828f87ac63b9861b1a9965888
-SHA256 (0002-PATCH-lld-Import-compact_unwind_encoding.h-from-libu.patch) = 3b18edef05d3a3fc0030b7a7674e455574dfbdecf26f23c6af5bd30e987b0f55
