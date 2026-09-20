@@ -5,10 +5,11 @@
 # Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland xdg-desktop-portal-gtk
 
 name=librewolf
-version=155.0.1_1
+version=156.0.0_1
 release=1
 source=(https://librewolf.dev/api/packages/librewolf/generic/librewolf-source/${version/_/-}/librewolf-${version/_/-}.source.tar.gz
   librewolf.desktop
+  bugzilla2071536.patch
   node-stdout-nonblocking-wrapper
   rust-lto-thin.patch)
 
@@ -117,9 +118,9 @@ EOF
   [ -e /usr/lib/pkgconfig/sndio.pc ] && PKGMK_FFAUDIO+=",sndio"
   echo "ac_add_options --enable-audio-backends=${PKGMK_FFAUDIO}" >> .mozconfig
 
-  if prt-get isinst wayland xorg-server >/dev/null ; then
+  if [ -e /usr/lib/pkgconfig/xorg-server.pc ] && [ -e /usr/lib/pkgconfig/gtk+-wayland-3.0.pc ]; then
     echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-x11-wayland' >> .mozconfig
-  elif prt-get isinst wayland >/dev/null ; then
+  elif [ -e /usr/lib/pkgconfig/gtk+-wayland-3.0.pc ]; then
     echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-wayland-only' >> .mozconfig
   else
     echo 'ac_add_options --enable-default-toolkit=cairo-gtk3-x11-only' >> .mozconfig
@@ -138,7 +139,9 @@ EOF
   export CXXFLAGS="$CXXFLAGS -w"
   export LDFLAGS="$LDFLAGS -Wl,-rpath=/usr/lib/librewolf,--enable-new-dtags"
 
-  if [ -x /usr/bin/clang ] && [ -x /usr/bin/lld ]; then
+  # Newer versions of clang fail to compile gl.cc
+  if command -v clang && command -v lld && clang --version \
+      | awk '(NR==1) {split($3,v,"."); if (v[1] >= 23) exit 1}'; then
       echo 'ac_add_options --enable-linker=lld' >> .mozconfig
       export LDFLAGS+=",--thinlto-jobs=$((${JOBS-2} / 2))"
       export CC=clang CXX=clang++

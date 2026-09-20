@@ -1,0 +1,9 @@
+f:27616f925f71746083a41d7b850378c1:.signature.aarch64
+f:9e641e37f46e51d4ea40c5b3d06a658a:.footprint.aarch64
+f:d41d8cd98f00b204e9800998ecf8427e:.signature.riscv64
+f:57f33b6305654cd483c06d042492ccdd:Pkgfile
+f:e63779169c8dda5d6d57c99edcadbacf:rust-lto-thin.patch
+f:63298fc667a9ba67c138866359e4b99e:fix-target-detection.patch
+f:34bfc3b23f5c0b0fb44224fab1693e9f:node-stdout-nonblocking-wrapper
+f:d41d8cd98f00b204e9800998ecf8427e:.footprint.riscv64
+f:c3c66221e120b0125f828cfd8055e6b0:librewolf.desktop
