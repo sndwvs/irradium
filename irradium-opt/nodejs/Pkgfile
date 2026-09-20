@@ -5,7 +5,7 @@
 # Optional: brotli c-ares icu libnghttp3 libngtcp2 simdjson simdutf
 
 name=nodejs
-version=26.8.2
+version=26.9.0
 release=1
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
   unbundle-uv.patch
@@ -32,7 +32,7 @@ build() {
 
   CC="clang" \
   CXX="clang++" \
-  CFLAGS="$CFLAGS -g0 -Wl,--no-keep-memory -fuse-ld=gold -Wl,--no-map-whole-files -Wl,--no-keep-files-mapped" \
+  CFLAGS="$CFLAGS -g0 -Wl,--no-keep-memory -fuse-ld=gold -Wl,--no-map-whole-files -Wl,--no-keep-files-mapped -ffat-lto-objects" \
   CXXFLAGS="$CFLAGS" \
   ./configure ${PKGMK_NODEJS} \
     --prefix=/usr \
@@ -41,8 +41,7 @@ build() {
     --shared-libuv \
     --shared-zlib \
     --shared-openssl \
-    --shared-nghttp2 \
-    --experimental-http-parser
+    --shared-nghttp2
 
   make
   make DESTDIR=$PKG install
