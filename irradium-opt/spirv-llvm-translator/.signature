@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCZKeYYTS440ff9hf+X4Kf97ObSY20FABozTcCSgXpziLVi3a+UKt2voDXO19Xj8BZm/0+uWRzH1O+jiYAR0JqQc=
-SHA256 (Pkgfile) = 89b2216283b392aa2f1f0ac95f1aa66c8cc65657daf994fd0f8280bb2b14deb7
-SHA256 (.footprint) = cd463b26973c4d27d3224f5f0cc026b48489191c2610d91098c10c033d914000
-SHA256 (spirv-llvm-translator-22.1.5.tar.gz) = 3c6dffb4b8d67f5c544370e0c869ec7d22c013d4bb798f24655ec903f26cc5d5
