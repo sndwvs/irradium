@@ -1,5 +1,6 @@
-untrusted comment: verify with /etc/ports/core.pub
-RWRJc1FUaeVeqnsNl8zpaYr/9WvY/a6pU91OsMa4jL+rmmfdAPTl6F49Hjwgm5Bb5lRivKJ3EmMn0Ho5LQgLWSntVKVrSsxOHQ8=
-SHA256 (Pkgfile) = 6e7775e13f84128cda9ec6637a21684961a8decd040887c9d4b3108d1e20ee6c
+untrusted comment: verify with /etc/ports/irradium-core.pub
+RWQAwxvZoACtGLguUODRE+hStmnDfzalHnGZMLZQ1Dt4+/nkZ09c+Eanxw8pdx5swp3a5h3YQKPvc4MXEY7vFwVyNYeodw4gmgA=
+SHA256 (Pkgfile) = 453c44e09695c679b57875edf3f21557e5bd8fc1b33e83d59cee4f360113f255
 SHA256 (.footprint) = 485a9624fada51342b9a6245843f22eec921bdf36b3f8bb205236a0d11340124
-SHA256 (gzip-1.14.tar.xz) = 01a7b881bd220bfdf615f97b8718f80bdfd3f6add385b993dcf6efd14e8c0ac6
+SHA256 (gzip-1.15.tar.xz) = 9aa0cc780dec156b8282844833b342ab7cb08c25d2cd9a1869cdd0df31deff48
+SHA256 (gzip-1.15-aarch64-head-macro.patch) = 82ef5b24041eeb86511ce67cb4e60edf8fbfcce01f7a1ab28fd1e024a3050df0
