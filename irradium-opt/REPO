@@ -39,8 +39,8 @@ d:libjpeg-turbo
 f:dae0c10c99399580c929fc100e79faef:ffmpeg/ffmpeg-x264-10bit.sh
 f:8d01f9dc6e07549a5006967efd3622be:ffmpeg/add-av_stream_get_first_dts-for-chromium.patch
 f:fdc0328c4e5c341ed1d623ba1c16480e:ffmpeg/add-in-cpu-__NR_riscv_hwprobe.patch
-f:39c7b5a650217e7c2ade786f48544599:ffmpeg/.footprint
-f:8d5729dc632e4be583eafbca7ff3b216:ffmpeg/.signature
+f:d80625ac1f1995026aa77303635fa245:ffmpeg/.footprint
+f:776012a7848a24795571f2531e1e5f48:ffmpeg/.signature
 f:ee1a712471f11961e6826bbc81c03ac7:ffmpeg/Pkgfile
 f:79340050744a83efe259d5653512a9e4:harfbuzz/.footprint
 f:223a6c16756e46b72b9b5aa8f3f24df7:harfbuzz/.signature
