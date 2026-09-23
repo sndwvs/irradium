@@ -455,8 +455,8 @@ f:8dc3f6c286ee83a7c4d99372a75aa483:viewnior/.footprint
 f:b6e55d20ea5e44f8688f1c161c00e20b:viewnior/.signature
 f:882729d5e9e07bb8baadd54ef498fef6:viewnior/Pkgfile
 f:362e3fa06abefde433f18c586fa2248b:vlc/post-install
-f:429c86da32fc556b0594781840fa33e4:vlc/.footprint
-f:4a236c9a9b94b66b400369c6bb19bd40:vlc/.signature
+f:6202c47365cab0001b0752de3d45201c:vlc/.footprint
+f:70058509bf6047c71b4d67f99ea4ef24:vlc/.signature
 f:42d684055daf513334fc37ebfae836bc:vlc/Pkgfile
 f:b4c6807c1aca378df55dece0d688e4b6:vlc/upnp-fix-typedef.patch
 f:1697f3fadd7c76e45240c1b248a7f8fe:xcursor-justblue/Pkgfile

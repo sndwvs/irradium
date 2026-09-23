@@ -1,7 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7rufZuQtqOlRgzuRnaoTnhpOYrBREa4WloNxvMxmDf2ufrEToRdZ0hW50T6tNSwZetyJ4FXvDwuZpI1kkSHkjA4=
-SHA256 (Pkgfile) = 3b6385fd431116930cf53b144acbe6e415a0380728288a198343f65333762d46
-SHA256 (.footprint) = 0f265afc84d53148523a6a6681f6c375bb62a3a0ae0e281065df7cd300d5e726
-SHA256 (vlc-3.0.23.tar.xz) = e891cae6aa3ccda69bf94173d5105cbc55c7a7d9b1d21b9b21666e69eff3e7e0
-SHA256 (gstreamer-header.patch) = 396e2fe8ba4928bc08d325701ede52f30f15056f4c1060d0d0300c512ba6ddee
+RWTmT3d9kqan7mH0mVZF/iH2m4HUI61FU99Q6lRyUMyX0+alLZCN2mcqsvUu+BgS4TFlp32KHEvTCtp0l2jfeVsAY7AoLsoQFwc=
+SHA256 (Pkgfile) = 2a844727fe2fbaaa925e4941e6045b0da7b770ff9c1e90f44bc1c45aad03efb4
+SHA256 (.footprint) = 5adffbf496c91e1864925328471185d4d6d3980a52743c3b334491a6695dd069
+SHA256 (vlc-3.0.24.tar.xz) = e7cab503d1d7d5849b89d2cf0e1ee60d0ef6d012407791b644b9cfc0cc225fdf
 SHA256 (upnp-fix-typedef.patch) = b16ff9cbf3d156deb60596c43b69329989d6e8cb377b89462163dc2f3ab86ced

@@ -177,7 +177,6 @@ drwxr-xr-x	root/root	usr/lib/vlc/lua/playlist/
 -rw-r--r--	root/root	usr/lib/vlc/lua/playlist/twitch.luac
 -rw-r--r--	root/root	usr/lib/vlc/lua/playlist/vimeo.luac
 -rw-r--r--	root/root	usr/lib/vlc/lua/playlist/vocaroo.luac
--rw-r--r--	root/root	usr/lib/vlc/lua/playlist/youtube.luac
 drwxr-xr-x	root/root	usr/lib/vlc/lua/sd/
 -rw-r--r--	root/root	usr/lib/vlc/lua/sd/icecast.luac
 -rw-r--r--	root/root	usr/lib/vlc/lua/sd/jamendo.luac
@@ -217,8 +216,6 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/access/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/liblinsys_hdsdi_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libpulsesrc_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libpulsesrc_plugin.so
--rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/librist_plugin.la
--rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/librist_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/librtp_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/librtp_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libsatip_plugin.la
@@ -250,8 +247,6 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_file_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_http_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_http_plugin.so
--rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_rist_plugin.la
--rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_rist_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_udp_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_udp_plugin.so
 drwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/
@@ -892,6 +887,10 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/visualization/
 -rwxr-xr-x	root/root	usr/lib/vlc/vlc-cache-gen
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/vlc-openbd.desktop
+-rw-r--r--	root/root	usr/share/applications/vlc-opencda.desktop
+-rw-r--r--	root/root	usr/share/applications/vlc-opendvd.desktop
+-rw-r--r--	root/root	usr/share/applications/vlc-openvcd.desktop
 -rw-r--r--	root/root	usr/share/applications/vlc.desktop
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/vlc/
@@ -932,7 +931,6 @@ drwxr-xr-x	root/root	usr/share/doc/vlc/lua/meta/reader/
 drwxr-xr-x	root/root	usr/share/doc/vlc/lua/playlist/
 -rw-r--r--	root/root	usr/share/doc/vlc/lua/playlist/README.txt
 -rw-r--r--	root/root	usr/share/doc/vlc/lua/playlist/liveleak.lua
--rw-r--r--	root/root	usr/share/doc/vlc/lua/playlist/youtube.lua
 drwxr-xr-x	root/root	usr/share/doc/vlc/lua/sd/
 -rw-r--r--	root/root	usr/share/doc/vlc/lua/sd/README.txt
 -rw-r--r--	root/root	usr/share/doc/vlc/lua/sd/icast.lua
