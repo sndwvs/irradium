@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCdjL/BJgek3q/nUv73ht2qy+zHfTO49bwl7Ak+o3kmU90tB0Pr2yAI5ZX97IUfPV5zhBiBoHTGv4aUvPHRdgKwY=
-SHA256 (Pkgfile) = 4f32327610f1d763e74c05791d0ffadc6cd7527f9b58de02cab5d741232e3a8c
+RWRxRnTWECCiCe5KexziTTzgYmiABhNlw3ccjoMNOWnAmbrXdbFdG5yaeYLjnu0KO2dX8hCiYs0OlfwWEDlBBxkh2nUNbLFJAQE=
+SHA256 (Pkgfile) = b983da6120897495d9779b1603b1e92d1dfe46c84f104cdc26c95e5a0b96b5ad
 SHA256 (.footprint.aarch64) = cf5088af73464f5725b6f558a583a3f9dcee658d02ca9427df525e6a7fcccb05
-SHA256 (llvm-project-23.1.1.src.tar.xz) = ebe9be46fe8756d58c5b198ffad0fa2a766257add81a4dc52179bfacc7888ee6
+SHA256 (llvm-project-23.1.2.src.tar.xz) = c98bbef08a2b4c2613cd50e9aa9ae7b69b1fe6c16b2c40373bc0ab6116fdf78a
