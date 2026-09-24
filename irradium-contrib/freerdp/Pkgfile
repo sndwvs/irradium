@@ -4,38 +4,12 @@
 # Depends on: alsa-lib cmake cups pulsaudio libjpeg-turbo xorg-libxcursor xorg-libxdamage wayland cairo
 
 name=freerdp
-version=2.11.7
+version=3.32.0
 release=1
-source=(https://github.com/FreeRDP/FreeRDP/archive/$version.tar.gz
-    d0c5b1ae.patch
-    1ef7b9e3.patch
-    ffmpeg-8.patch
-    0002-info-Fix-incompatible-pointer-type.patch
-    0003-redirection-Fix-incompatible-pointer-type.patch
-    0004-redirection-Fix-incompatible-pointer-type.patch
-    0005-X11-fix-pointer-integer-type-mismatch.patch
-    0006-client-wayland-fix-const-correctness.patch
-    0007-warnings-fix-Wincompatible-pointer-types.patch
-    0008-server-proxy-deactivate-capture-module.patch
-    0009-switch-to-absolute-rpath.patch)
+source=(https://github.com/FreeRDP/FreeRDP/archive/$version.tar.gz)
 
 build(){
   cd FreeRDP-$version
-
-  patch -p1 -i $SRC/0002-info-Fix-incompatible-pointer-type.patch
-  patch -p1 -i $SRC/0003-redirection-Fix-incompatible-pointer-type.patch
-  patch -p1 -i $SRC/0004-redirection-Fix-incompatible-pointer-type.patch
-  patch -p1 -i $SRC/0005-X11-fix-pointer-integer-type-mismatch.patch
-  patch -p1 -i $SRC/0006-client-wayland-fix-const-correctness.patch
-  patch -p1 -i $SRC/0007-warnings-fix-Wincompatible-pointer-types.patch
-  patch -p1 -i $SRC/0008-server-proxy-deactivate-capture-module.patch
-  patch -p1 -i $SRC/0009-switch-to-absolute-rpath.patch
-
-  # Fix build with ffmpeg 7
-  patch -p1 -i $SRC/d0c5b1ae.patch
-  patch -p1 -i $SRC/1ef7b9e3.patch
-  # Fix build with ffmpeg 8
-  patch -p1 -i $SRC/ffmpeg-8.patch
 
   cmake -B build -G Ninja \
     -DCMAKE_BUILD_TYPE=MinSizeRel \
@@ -44,6 +18,8 @@ build(){
     -DCMAKE_C_FLAGS="$CFLAGS" \
     -DCMAKE_CXX_FLAGS="$CFLAGS" \
     -DWITH_ALSA=ON \
+    -DWITH_CLIENT_SDL3=ON \
+    -DWITH_CLIENT_SDL2=OFF \
     -DWITH_PULSE=ON \
     -DWITH_CHANNELS=ON \
     -DBUILTIN_CHANNELS=ON \
@@ -53,12 +29,14 @@ build(){
     -DWITH_FFMPEG=ON \
     -DWITH_DSP_FFMPEG=ON \
     -DWITH_WAYLAND=ON \
+    -DWITH_X11=ON \
     -DWITH_GSSAPI=OFF \
     -DCHANNEL_URBDRC=ON \
     -DCHANNEL_URBDRC_CLIENT=ON \
     -DWITH_SERVER=ON \
     -DWITH_CAIRO=ON \
-    -DBUILD_TESTING=OFF
+    -DBUILD_TESTING=OFF \
+    -Wno-dev \
 
   cmake --build build
   DESTDIR=$PKG cmake --install build
