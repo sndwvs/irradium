@@ -4,8 +4,8 @@
 # Depends on: zlib lzo openssl
 
 name=tinc
-version=1.0.36
-release=6
+version=1.0.37
+release=1
 source=(https://www.tinc-vpn.org/packages/$name-$version.tar.gz
     rc.tincd
     tincd.logrotate)
