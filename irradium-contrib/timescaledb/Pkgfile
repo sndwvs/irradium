@@ -4,7 +4,7 @@
 # Depends on: glibc openssl postgresql gcc cmake git
 
 name=timescaledb
-version=2.23.1
+version=2.30.1
 release=1
 source=(https://github.com/timescale/timescaledb/archive/refs/tags/$version.tar.gz)
 

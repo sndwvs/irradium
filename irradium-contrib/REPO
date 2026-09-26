@@ -249,7 +249,7 @@ f:54edddad0cce787b3be131e769444928:gvfs/Pkgfile
 f:8d008c7ebc775f1823ba35c211c98e8c:jemalloc/Pkgfile
 f:101cfb4df1438f1dbd769025f2c83a3b:jemalloc/.footprint
 f:4d04130ae8400d629b507cb17223473a:jemalloc/.signature
-f:9211bafeafc955e03188dd153eb3463e:timescaledb/Pkgfile
+f:d1678574f9f74ccc328632eea62f2da7:timescaledb/Pkgfile
 f:ccb4a1def71db7c4eb8dbdd4e4bea167:timescaledb/README
 f:0d92378633ab931f20b878ec96bfb244:timescaledb/.footprint
 f:afa76ce0721fd6a447b3a9426452bc7d:timescaledb/.signature
