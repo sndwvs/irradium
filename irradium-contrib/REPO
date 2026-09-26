@@ -251,8 +251,8 @@ f:101cfb4df1438f1dbd769025f2c83a3b:jemalloc/.footprint
 f:4d04130ae8400d629b507cb17223473a:jemalloc/.signature
 f:d1678574f9f74ccc328632eea62f2da7:timescaledb/Pkgfile
 f:ccb4a1def71db7c4eb8dbdd4e4bea167:timescaledb/README
-f:0d92378633ab931f20b878ec96bfb244:timescaledb/.footprint
-f:afa76ce0721fd6a447b3a9426452bc7d:timescaledb/.signature
+f:f8e2e0478c976a0f36c7c372cb1c73d9:timescaledb/.footprint
+f:a68d3d42f6d9631294309f7df2c511dd:timescaledb/.signature
 f:ada212fbb7e606e4f24c1800ee7c30de:libatasmart/Pkgfile
 f:b21ce0a849a6bf29fbea1787e9d15c24:libatasmart/.footprint
 f:c1c9a8f27fd554255f79eb5f77688908:libatasmart/.signature
