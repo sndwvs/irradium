@@ -6,15 +6,17 @@
 
 name=qt6-base
 version=6.11.2
-release=1
+release=2
 source=(https://download.qt.io/official_releases/qt/${version%.*}/$version/submodules/qtbase-everywhere-src-$version.tar.xz
   qt6-base-cflags.patch
   qt6-base-nostrip.patch
+  11efdbb.diff
 )
 
 build() {
   patch -d qtbase-everywhere-src-$version -p1 -i $SRC/qt6-base-cflags.patch
   patch -d qtbase-everywhere-src-$version -p1 -i $SRC/qt6-base-nostrip.patch
+  patch -d qtbase-everywhere-src-$version -p1 -i $SRC/11efdbb.diff
 
   if prt-get isinst ccache; then
     PKGMK_QT6+=' -D QT_USE_CCACHE=ON'
