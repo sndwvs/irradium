@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7pxzID8V+J+XWCiAgOr4KiU2rXyelvhNaPrGpcqA53MuSNkqO9wkvcaoxhNP06O5/5bdZlJlSAo6N1R0PL3lmQA=
-SHA256 (Pkgfile) = b9c66c15c2afae2cfda11af2e6144c04a830d91a4bf63551a8197298e7da4f82
+RWTmT3d9kqan7rJry8EU3YTNpBPqp9y7jmIezgV/lGGlD3v94uikVdQmRXfkeN4zA6Zd7L/MKtiXuFP5cZXQC7Mwmrroz4KaYAM=
+SHA256 (Pkgfile) = 1649f8876e5eb9d7d707b48ed63b8038460c8dc2852add0679f987a5d3a90e39
 SHA256 (.footprint) = 9b7a5eb381880a16b45abce0abc0f0bda829bb1690cef6a46c807a15e0376e74
-SHA256 (pkgtools-15.1.30.tar.bz2) = 1029f1543bd7638ddcdaf58ac6311d8b233d20d7f8987cd475748fe76d4f00be
+SHA256 (pkgtools-16.0.1.tar.bz2) = 1019d8ccbb17fbacb2c02869e1a9fb4fa16164f1e7add5ea1da766014b2bd63c
