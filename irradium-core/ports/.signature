@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-core.pub
-RWQAwxvZoACtGDqGGDVRMgKjCSxcf3y4bEQE0/sGzLB90TscD4njAZueyfL8rzchHIhUWjqG5uH1DF2J0+tE4JdZOOq4mSf0TQM=
-SHA256 (Pkgfile) = fd02b3aeaf9f6b613ad7acc6cf44ea8a93cf954a7ab121c294d71cf674b48127
+RWQAwxvZoACtGBX+8MVDJmjEE3u/pJqBJlZy4NjlM+gugSAe80BoCIB4uZhrZf0dCQSJwsRLlH02ONyqKdReNIYICcuZ1kiO7Q4=
+SHA256 (Pkgfile) = aea0e62cd8c8568875e104e0407425e6f6a1bfe65fedd6cda17a5310bdf377c5
 SHA256 (.footprint) = 5d3d267ecca982e37bb0b5511b571e1f8cf7c2dbb38859e2fbf1f24a9ca18c4a
-SHA256 (ports-1.6.tar.gz) = 8b2ba48e7440f4a71fa1c9c480a1212ce87c623e1d33121eb660829ba294ca94
+SHA256 (ports-1.7.tar.gz) = 3e35e79a715a4c2b5822561b56f46bcce23cd786a9d34d2a833e7bd626cc71ff
 SHA256 (core.pub) = 5a08b7f21fb1768b9e639da0b768edb536de0590b75e663dab6d185617613791
 SHA256 (opt.pub) = 4711f488546c38cdec792c1f16b3bf7c4db0c7dc0c3cdab0ecdd85e2c7247ae5
 SHA256 (xorg.pub) = 5db27d455f658ea8a6c7ae9aac601d66e74cedff5dd497910fd1ffead08e5237

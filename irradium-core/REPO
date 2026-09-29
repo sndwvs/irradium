@@ -126,7 +126,7 @@ f:c439515bdbd1e17d8a74c2a37d285718:ports/irradium-xfce.pub
 f:1ec983509e56966c5a7945a854c0f7bf:ports/irradium-xorg.pub
 f:0d1f1fde50a9bd743d9cac6b235f038c:ports/opt.pub
 f:69927e5d0ae5dc3455faeaac916c4db2:ports/xorg.pub
-f:71ea9279e879c225c26a87e64a98d2d2:ports/.signature
+f:41edca0c21efab51bb0ac3aeb60302fa:ports/.signature
 f:d176e6051a653765e7bc34a5d2d965da:ports/Pkgfile
 f:ffcfbdbd1979f51825fa796a6296d1ab:ports/contrib.rsync.inactive
 f:9a7ec7bdf5155fbedb02b35e50420cfa:ports/core.rsync
