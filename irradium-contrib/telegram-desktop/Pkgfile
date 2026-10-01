@@ -1,7 +1,7 @@
 # Description: Official Telegram Desktop client
 # URL: https://desktop.telegram.org
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: minizip openal range-v3 tg_owt qt6-declarative qt6-imageformats qt6-svg qt6-wayland qt6-5compat rnnoise protobuf fmt graphviz mm-common boost libsigc++ ada tlottie
+# Depends on: minizip openal range-v3 tg_owt qt6-declarative qt6-imageformats qt6-svg qt6-wayland qt6-5compat rnnoise protobuf fmt graphviz mm-common boost libsigc++ ada opus tlottie
 
 name=telegram-desktop
 version=7.2.10
