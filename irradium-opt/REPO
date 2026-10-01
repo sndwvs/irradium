@@ -113,8 +113,8 @@ f:fe7af17c56fd33a78bf3fc8f81066902:qt5/qtbase-use-wayland-on-gnome.patch
 f:43e9305944754ded3c4c49f2d3eba447:qt5/qtlocation-fix-rapidjson-build.patch
 f:bfc114bfc210c5b5996941f7e186f8b3:qt6-base/qt6-base-cflags.patch
 f:56462f1c05a4d5c4d06cb40258101b0a:qt6-base/qt6-base-nostrip.patch
-f:e46bf6b87890eadfe61a323c87756f8f:qt6-base/.footprint
-f:3720f62ebfbc68faf0ab35b74dd4805f:qt6-base/.signature
+f:91f7192d7208f101485488df127449b1:qt6-base/.footprint
+f:528c54d01950509f4474efb0255e310e:qt6-base/.signature
 f:90fea62402a34b2cebc7e2a24b2c28f2:qt6-base/Pkgfile
 f:d29ac00cdcf023375722c6f39be512a3:qt6-base/11efdbb.diff
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
