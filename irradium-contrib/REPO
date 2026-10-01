@@ -108,6 +108,7 @@ d:libabw
 d:libepubgen
 d:libmspub
 d:libodfgen
+d:tlottie
 d:libvisio
 d:libwpd
 d:rasqal
@@ -677,6 +678,9 @@ f:121e425f9f84dbb86a95993df1870998:libodfgen/.signature
 f:439ae9ab4b141e586319b983d596738e:libodfgen/Pkgfile
 f:7646dfbff6611dd019cc29d01741e5f9:libodfgen/ellipticalarc.patch
 f:102c5aabe65793793e36f1b2a849898e:libodfgen/rpath.patch
+f:c8b42ed5e9af70ed75bc8a39692bcca6:tlottie/Pkgfile
+f:7e26c481b7926c2837dac221b3a91c6f:tlottie/.footprint
+f:0ddcf2380b4f5c16d4e6ddcac5d0d7da:tlottie/.signature
 f:6d4f982ab9de7708c09fd481200e4404:libvisio/.footprint
 f:6b5d75a8c7e1619b89f72302e6b7c967:libvisio/.signature
 f:6cc3892d6123f569a3c334ae5d17cb03:libvisio/Pkgfile

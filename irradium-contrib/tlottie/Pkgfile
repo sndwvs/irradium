@@ -1,0 +1,19 @@
+# Description: rust library for drawing lottie animations
+# URL: https://github.com/dkaraush/tlottie
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: cargo
+
+name=tlottie
+version=1.0.6
+release=1
+source=(https://github.com/dkaraush/tlottie/archive/refs/tags/v$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  cargo fetch --locked --target host-tuple
+  cargo build --frozen --release --features c-api --lib
+
+  install -vDm755 -t "$PKG/usr/lib" target/release/libtlottie.so
+  install -vDm644 -t "$PKG/usr/include" include/tlottie.h
+}
