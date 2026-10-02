@@ -85,7 +85,6 @@ build() {
     patch -p1 -i $SRC/0003-bootstrap-Workaround-for-system-stage0.patch
     patch -p1 -i $SRC/0004-compiler-Change-LLVM-targets.patch
     patch -p1 -i $SRC/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
-    patch -p1 -i $SRC/llvm23.patch
 
 cat <<- EOF > $SRC/bootstrap.toml
 profile = "dist"
