@@ -35,8 +35,6 @@ source=(https://static.rust-lang.org/dist/${name}c-$version-src.tar.xz
     0003-bootstrap-Workaround-for-system-stage0.patch
     0004-compiler-Change-LLVM-targets.patch
     0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
-    llvm23.patch
-    llvm23_2.patch
 )
 
 unpack_source() {
