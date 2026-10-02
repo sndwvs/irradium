@@ -17,7 +17,7 @@ f:add55fada3a9b2de27dbc93d19af3f86:mesa/README.md
 f:46e1283834ed426df8e7b6ff5005f98c:mesa/.footprint.aarch64
 f:ed27aa5ca8dc1650475de0024b36d2b8:mesa/.signature.aarch64
 f:68431d7048879c28099862b9fb515f3b:mesa/.signature.riscv64
-f:3b0a3ee5e04f027c8edc4850801de6f4:mesa/Pkgfile
+f:5895b801c90d61b1a9e2b8e32b9978ab:mesa/Pkgfile
 f:bd3214f3bfaad8ba3094b5c38a9ec6ce:mesa/.footprint.riscv64
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:2b55e5edd7f68e865c39720c44dca1c1:xorg-xf86-video-fbdev/.signature
