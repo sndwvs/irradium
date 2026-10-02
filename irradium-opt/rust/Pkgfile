@@ -5,9 +5,9 @@
 # Optional: clang libgit2 polly sccache
 
 name=rust
-version=1.98.1
-_date=2026-07-16
-_rustc=1.97.1
+version=1.99.0
+_date=2026-08-20
+_rustc=1.98.0
 _cargo=$_rustc
 release=1
 
@@ -91,7 +91,7 @@ build() {
 
 cat <<- EOF > $SRC/bootstrap.toml
 profile = "dist"
-change-id = 158169
+change-id = 160100
 
 [llvm]
 download-ci-llvm = false
