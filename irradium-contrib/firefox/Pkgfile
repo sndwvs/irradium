@@ -5,7 +5,7 @@
 # Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland xdg-desktop-portal-gtk
 
 name=firefox
-version=156.0
+version=157.0
 release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
@@ -107,6 +107,9 @@ EOF
      echo "ac_add_options --disable-jemalloc" >> .mozconfig
   fi
 
+  # vendored third-party project needs another header to define int64_t
+  sed "4a #include <cstdint>" -i third_party/parakeet.cpp/src/backend.hpp
+
   # audio
   PKGMK_FFAUDIO="alsa"
   [ -e /usr/lib/pkgconfig/libpulse.pc ] && PKGMK_FFAUDIO+=",pulseaudio"
@@ -158,7 +161,6 @@ EOF
   DESTDIR="$PKG" ./mach install
 
   # Remove crap
-  rm -rf "$PKG"/usr/lib/firefox/browser/features
   rm -f "$PKG"/usr/lib/firefox/removed-files
 
   install -D -m 0644 "$SRC"/firefox.desktop "$PKG"/usr/share/applications/firefox.desktop
