@@ -5,7 +5,7 @@
 # Optional: apulse pulseaudio pipewire sndio sccache icu lld wayland xdg-desktop-portal-gtk
 
 name=librewolf
-version=156.0_1
+version=157.0_1
 release=1
 source=(https://librewolf.dev/api/packages/librewolf/generic/librewolf-source/${version/_/-}/librewolf-${version/_/-}.source.tar.gz
   librewolf.desktop
@@ -112,6 +112,9 @@ EOF
      echo "ac_add_options --disable-jemalloc" >> .mozconfig
   fi
 
+  # vendored third-party project needs another header to define int64_t
+  sed "4a #include <cstdint>" -i third_party/parakeet.cpp/src/backend.hpp
+
   # audio
   PKGMK_FFAUDIO="alsa"
   [ -e /usr/lib/pkgconfig/libpulse.pc ] && PKGMK_FFAUDIO+=",pulseaudio"
@@ -165,7 +168,6 @@ EOF
   DESTDIR="$PKG" ./mach install
 
   # Remove crap
-  rm -rf "$PKG"/usr/lib/librewolf/browser/features
   rm -f "$PKG"/usr/lib/librewolf/removed-files
 
   # install desktop icons and metadata
