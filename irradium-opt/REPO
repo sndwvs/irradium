@@ -42,8 +42,8 @@ f:fdc0328c4e5c341ed1d623ba1c16480e:ffmpeg/add-in-cpu-__NR_riscv_hwprobe.patch
 f:d80625ac1f1995026aa77303635fa245:ffmpeg/.footprint
 f:776012a7848a24795571f2531e1e5f48:ffmpeg/.signature
 f:ee1a712471f11961e6826bbc81c03ac7:ffmpeg/Pkgfile
-f:79b1ee0de058d1297c03ac075cae9c52:harfbuzz/.footprint
-f:555e2585a5042f34559e0bb3e87a0c9a:harfbuzz/.signature
+f:72fed9e2ba4bc9746f19f56db00ee9af:harfbuzz/.footprint
+f:61e4db063e76f2e6dc4af6203ee0b97d:harfbuzz/.signature
 f:2325b6037372cfcdb0411837c38f6541:harfbuzz/Pkgfile
 f:5db6190db9bd0114880d1295e86e5781:libart_lgpl/Pkgfile
 f:58263621cc2c46c26e4bb2aa56cde0c7:libart_lgpl/.footprint
