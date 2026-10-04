@@ -12,7 +12,8 @@ source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$versio
   fix-target-detection.patch
   bugzilla2071536.patch
   node-stdout-nonblocking-wrapper
-  rust-lto-thin.patch)
+  rust-lto-thin.patch
+  fix-pcontent-pspeechrecogition.patch)
 
 build() {
   chmod a+x "$SRC"/node-stdout-nonblocking-wrapper
