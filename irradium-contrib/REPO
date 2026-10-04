@@ -209,10 +209,9 @@ f:eb5e46465a88148b6cd781237e350b1d:firefox/.footprint.riscv64
 f:c45bb7754e1e93022297e6c8f9bbb3eb:firefox/.footprint.aarch64
 f:3618001848c0f7858733b7eb974a5b93:firefox/.signature.aarch64
 f:cc1de2e5880ee9a00303e5389d736eee:firefox/.signature.riscv64
-f:6b1551fd764c42f57d32f7e62ae04f10:firefox/Pkgfile
+f:781fbb67c9a6540fa805cbb963f572f9:firefox/Pkgfile
 f:e63779169c8dda5d6d57c99edcadbacf:firefox/rust-lto-thin.patch
 f:3d2dae5c5fd2eb542217c01ef4b75283:firefox/bugzilla2071536.patch
-f:030f0eb26c80261df2b224547da3f135:firefox/fix-PContent.patch
 f:54c7e71bc1c1d22ddcd438420fc39798:freerdp/.footprint
 f:d6149b60b440325d45b74f8c886c41e9:freerdp/.signature
 f:03ebcdb779564b9cfb04a80106fe9d00:freerdp/Pkgfile
