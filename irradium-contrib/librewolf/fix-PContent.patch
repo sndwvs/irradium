@@ -5,7 +5,7 @@
  include protocol PVRManager;
  include protocol PRemoteMediaManager;
 -#ifndef ANDROID
-+#ifndef MOZ_WEBSPEECH
++#ifdef MOZ_WEBSPEECH
  include protocol PSpeechRecognition;
  #endif  // !ANDROID
  include protocol PRemoteWorkerDebuggerManager;
