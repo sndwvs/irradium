@@ -9,3 +9,12 @@
  include protocol PSpeechRecognition;
  #endif  // !ANDROID
  include protocol PRemoteWorkerDebuggerManager;
+@@ -1200,7 +1200,7 @@ parent:
+ 
+     async CreateAudioIPCConnection() returns (FileDescOrError fd);
+ 
+-#ifndef ANDROID
++#ifdef MOZ_WEBSPEECH
+     async AcquireHWInferenceProcess();
+     async CreateSpeechRecognition(Endpoint<PSpeechRecognitionParent> endpoint);
+ 
