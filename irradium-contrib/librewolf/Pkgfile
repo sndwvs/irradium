@@ -12,7 +12,7 @@ source=(https://librewolf.dev/api/packages/librewolf/generic/librewolf-source/${
   bugzilla2071536.patch
   node-stdout-nonblocking-wrapper
   rust-lto-thin.patch
-  fix-PContent-PSpeechRecogition.patch)
+  fix-PContent.patch)
 
 build() {
   chmod a+x "$SRC"/node-stdout-nonblocking-wrapper
