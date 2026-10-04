@@ -204,7 +204,7 @@ f:d7a977958031360b07910fa47480f414:elogind/Pkgfile
 f:5967a4ed6d1f029d16d70beaa71246d8:firefox/README
 f:c9ccd47ae6a570100ebf31d51a0e7a1f:firefox/firefox.desktop
 f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
-f:cc1426ca9080b1a2974af18639e0276e:firefox/fix-PContent.patch
+f:7ffc9c73a9200779c160846796be298c:firefox/fix-PContent.patch
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:eb5e46465a88148b6cd781237e350b1d:firefox/.footprint.riscv64
 f:c45bb7754e1e93022297e6c8f9bbb3eb:firefox/.footprint.aarch64
