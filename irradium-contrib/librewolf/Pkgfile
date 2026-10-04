@@ -11,8 +11,7 @@ source=(https://librewolf.dev/api/packages/librewolf/generic/librewolf-source/${
   librewolf.desktop
   bugzilla2071536.patch
   node-stdout-nonblocking-wrapper
-  rust-lto-thin.patch
-  fix-PContent.patch)
+  rust-lto-thin.patch)
 
 build() {
   chmod a+x "$SRC"/node-stdout-nonblocking-wrapper
@@ -68,7 +67,7 @@ build() {
   ac_add_options --disable-necko-wifi
   ac_add_options --disable-crashreporter
   ac_add_options --disable-accessibility
-  ac_add_options --disable-webspeech
+#  ac_add_options --disable-webspeech
   ac_add_options --disable-debug
   ac_add_options --disable-debug-symbols
   ac_add_options --disable-parental-controls
