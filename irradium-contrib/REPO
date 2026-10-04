@@ -595,7 +595,7 @@ f:34bfc3b23f5c0b0fb44224fab1693e9f:librewolf/node-stdout-nonblocking-wrapper
 f:d41d8cd98f00b204e9800998ecf8427e:librewolf/.footprint.riscv64
 f:c3c66221e120b0125f828cfd8055e6b0:librewolf/librewolf.desktop
 f:3d2dae5c5fd2eb542217c01ef4b75283:librewolf/bugzilla2071536.patch
-f:d47039f274b10e118c64fe409bfc3483:librewolf/fix-PContent.patch
+f:030f0eb26c80261df2b224547da3f135:librewolf/fix-PContent.patch
 f:77cf7e4fd5b4a4a80309f3f2fae862f0:libpagemaker/.footprint
 f:a4cb3399cc3409ec3da081d8d88befac:libpagemaker/.signature
 f:2d8dcd24462e890847439a243d2a25e2:libpagemaker/Pkgfile
