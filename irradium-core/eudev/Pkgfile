@@ -4,8 +4,8 @@
 # Depends on: kmod
 
 name=eudev
-version=3.2.14
-release=6
+version=3.2.15
+release=1
 source=(https://github.com/eudev-project/eudev/releases/download/v$version/$name-$version.tar.gz
     81-irradium.rules
     mount_fusectl.sh
@@ -60,7 +60,7 @@ build() {
         $PKG/sbin/udevadm hwdb --update --root=$PKG
 
     # Devices
-    install -d $PKG/lib/{firmware,udev/devices}
+    install -d $PKG/lib/{firmware,udev/devices/{pts,shm}}
     install -d $PKG/{lib,sbin,run}
 
     # add irradium items
