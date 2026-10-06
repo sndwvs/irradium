@@ -4,7 +4,7 @@
 
 name=filesystem
 version=3.8
-release=3
+release=4
 source=(issue motd shells group passwd shadow securetty fstab mime.types)
 
 build() {
@@ -51,10 +51,6 @@ build() {
     install -d -m 1777 $PKG/var/tmp
     install -d -m 1777 $PKG/dev/shm
 
-    # /dev
-    mknod $PKG/dev/console c 5 1
-    chmod 0600 $PKG/dev/console
-
     # /etc
     install -m 0644 issue $PKG/etc
     install -m 0644 motd $PKG/etc
@@ -65,7 +61,7 @@ build() {
     install -m 0644 securetty $PKG/etc
     install -m 0644 fstab $PKG/etc
     install -m 0644 mime.types $PKG/etc
-    ln -s /proc/self/mounts $PKG/etc/mtab
+    ln -s ../proc/self/mounts $PKG/etc/mtab
 
     # /usr/bin/irradium
     cat > $PKG/usr/bin/irradium << EOF
