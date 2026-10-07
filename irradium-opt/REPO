@@ -192,7 +192,7 @@ f:f7cfede7c801951a0ff658d78ae3d053:efibootmgr/.footprint
 f:e326336f4bc83a319d32de3fb30354a9:efibootmgr/.signature
 f:a2e9954fdf88c7872c7617f3a524cf26:efibootmgr/Pkgfile
 f:0fac9b02d2ab26cfd0c61670f2758641:php-zip/.footprint
-f:45a4d5eec5aa9212127edbc1aa22fe91:php-zip/Pkgfile
+f:a7e7d89518c682dbfb030a6a9a881ec4:php-zip/Pkgfile
 f:0c5c0459840531d9214d50e73e567d07:php-zip/.signature
 f:b8fe92c5b8c89e4d174ee6fc0017bba1:cups/.footprint
 f:80a1477c6ad10eeb6c7bcaae7c50cf9b:cups/README
