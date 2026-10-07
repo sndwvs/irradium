@@ -1,7 +1,8 @@
-untrusted comment: verify with /etc/ports/opt.pub
-RWSE3ohX2g5d/eHX/ZsWK7+DtVzsRz2ir4e0p3VU2ZgeY4LbGx0UXk9wSGqvcb3KbDHuODHBWIVFN3wkDO5habNFD+21dFwZqw8=
-SHA256 (Pkgfile) = 364d62a56e8e13d9b187f7f6a87f60b0a1dc8b9a7b242d03be2ebfe434457399
-SHA256 (.footprint) = dd3f14cab90e760795330704596f4eae51f16d72e5fa08dc344c5ffe54cccfb4
+untrusted comment: verify with /etc/ports/irradium-opt.pub
+RWRxRnTWECCiCeNasKdjv1dEDL3cyAZg3+d+pd6Uc7j/h2BAUOcJ6sMamZH/D6z6ngiWXWhsAy4B7u8UV/djEOfhBZ7ryTtKoA0=
+SHA256 (Pkgfile) = 0005914b3739aa40e9e665a3025d24a0e09899437e6578dba775df6b8a5ef543
+SHA256 (.footprint) = 884f5f67c12afae5020c0c7f424c822d67949199f825d5ac4acf7414a011e4d6
 SHA256 (cups-2.4.20-source.tar.gz) = ab4d9cd7f3e58060091d2b24972223d6401675f11c49b65abf4f6ef31dea22ff
 SHA256 (cups.rc) = 050ec2210c1d05bb0a1b659705c9cf2a6967a7eabb9f71100309f15124e49e9f
 SHA256 (cups.pam) = 46b6b6e42e77c82435c0680405a45c66a37ec3d727af6aa6f036dd1d60215479
+SHA256 (fix-getdata-cups.2.4.20.patch) = 5d8952dbd2b0f89f28c095091827a0a64cebac2078fbe7fa39391f5472715493
