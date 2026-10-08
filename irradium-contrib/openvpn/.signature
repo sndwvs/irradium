@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7unlF3t71g4IHw/eHOxdsD0w69pENWH7vs7Y4u34bjB2Sd4GcTAQo0G2uhoPlaESnkQK1ZpZR8Px8xBdvGwZVg0=
-SHA256 (Pkgfile) = 43c0ef643989093a6b802bf453312655dc009b5971d45938ebd778136c6b7be0
+RWTmT3d9kqan7hdLgP7w1DOo9c3Wc9U5ox1WMkUMzmuW6Zrv7s5CsH0AdFOMeMNSwK8O73VcjoUEJUSXRTgU4ZvMbrNQkrt8AA8=
+SHA256 (Pkgfile) = 90f165c97bc62bca31f17a75304de8c9230c8206c5425c1453df02368c24aff5
 SHA256 (.footprint) = 2ead09b519a6559efb8375c56cdd3cd41adc5dd22178f1764c8b04bdec9cb55b
-SHA256 (openvpn-2.7.2.tar.gz) = a65cdcb2c4d911fab73daf13a4cf109dc9664e28c094f77aafcd39c7e9d5023e
+SHA256 (openvpn-2.7.8.tar.gz) = daf18f81040137fc4d3d843088954ae68f6c86c10d3860114078b9c256a3516f
 SHA256 (rc.openvpn) = 0ccd005de74afda4361f74ea7330d2c702f3dff34047a5a51ccc8cdc88d2dbe3
