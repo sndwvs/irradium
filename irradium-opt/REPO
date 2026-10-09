@@ -29,7 +29,6 @@ d:nodejs
 d:wpa_supplicant
 d:efibootmgr
 d:php-zip
-d:cups
 d:gobject-introspection
 d:grub2-efi
 d:grub2
@@ -194,13 +193,6 @@ f:a2e9954fdf88c7872c7617f3a524cf26:efibootmgr/Pkgfile
 f:0fac9b02d2ab26cfd0c61670f2758641:php-zip/.footprint
 f:a7e7d89518c682dbfb030a6a9a881ec4:php-zip/Pkgfile
 f:68378541763a7a24093e7accd1d9bbdb:php-zip/.signature
-f:b8fe92c5b8c89e4d174ee6fc0017bba1:cups/.footprint
-f:80a1477c6ad10eeb6c7bcaae7c50cf9b:cups/README
-f:e831eec7e9ec19da5c8d8466d7b42b7e:cups/cups.pam
-f:818bc906e722eb75da1308b2029e2c09:cups/cups.rc
-f:2a851ad7865307df6fa12b33c3b6bd9e:cups/.signature
-f:ab8df2053c995456c99bdf45b222a16b:cups/Pkgfile
-f:1fa4acbe87401f9a933fffa4882606dd:cups/fix-getdata-cups.2.4.20.patch
 f:6a3b37401d78735d427832419c15824c:gobject-introspection/.footprint.aarch64
 f:573d6fee048e01b3e0a10d18c9854b28:gobject-introspection/.footprint.riscv64
 f:f084746f364f164445784132cd1b98c2:gobject-introspection/.signature.aarch64
