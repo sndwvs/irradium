@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7tqcKhncCIgsDp5sONM6hnWTsar98yZ9iPtXHLqbublEBTUiD1K0qG2LyEP9KpT7QB+ggkE6mWYghlaPMav86Ag=
+SHA256 (Pkgfile) = b56af78da1d63a245ef954dd6f8608210f38b975473527a371f629e1a9ed4bb5
+SHA256 (.footprint) = f7ec78c06db4c6a45444ed74a66a48903a8ddf84e9c11871ccaf1f058ac822a5
+SHA256 (v0.0.7.tar.gz) = 96600a6f393a27a0f84a41ad1d6d69f96014edc29e4d907c05e965666b0a66cf
+SHA256 (0001-Upgrade-Rustix-to-1.1.5.patch) = b25727cbed417222156935b38c133ed0db493b2d327045039e6abfc9e3334f94

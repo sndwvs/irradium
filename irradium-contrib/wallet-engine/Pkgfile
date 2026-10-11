@@ -1,0 +1,31 @@
+# Description: rust library for telegram's wallet
+# URL: https://github.com/i582/wallet-engine
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: cargo
+
+name=wallet-engine
+version=0.0.7
+release=1
+source=(https://github.com/i582/wallet-engine/archive/refs/tags/v$version.tar.gz
+    0001-Upgrade-Rustix-to-1.1.5.patch)
+
+build() {
+  cd $name-$version
+
+  patch -p1 -i $SRC/0001-Upgrade-Rustix-to-1.1.5.patch
+
+  cargo fetch --locked --target host-tuple
+  cargo build --frozen --release --lib
+  cargo run --release --locked \
+            --manifest-path bindgen/cpp/bindgen/Cargo.toml -- \
+            --library target/release/libwallet_engine.so \
+            --out-dir target/bindings
+
+  install -vDm755 -t "$PKG/usr/lib" target/release/libwallet_engine.so
+  install -vDm644 target/bindings/wallet_engine.hpp \
+        $PKG/usr/include/wallet_engine/wallet_engine.hpp
+  install -vDm644 target/bindings/wallet_engine.cpp \
+        $PKG/usr/include/wallet_engine/wallet_engine.cpp
+  install -vDm644 target/bindings/wallet_engine_scaffolding.hpp \
+        $PKG/usr/include/wallet_engine/wallet_engine_scaffolding.hpp
+}

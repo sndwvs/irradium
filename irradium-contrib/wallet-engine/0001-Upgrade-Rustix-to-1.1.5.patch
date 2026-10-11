@@ -1,0 +1,46 @@
+From f5821cb6f1a758c97c2f971fe245b46dfbbf51bb Mon Sep 17 00:00:00 2001
+From: Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+Date: Sun, 11 Oct 2026 15:08:41 +0200
+Subject: [PATCH] Upgrade Rustix to 1.1.5
+
+Fixes build failures on ppc64le.
+---
+ Cargo.lock             | 4 ++--
+ bindgen/cpp/Cargo.lock | 4 ++--
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/Cargo.lock b/Cargo.lock
+index 08be930..f06f49e 100644
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -1625,9 +1625,9 @@ dependencies = [
+ 
+ [[package]]
+ name = "rustix"
+-version = "1.1.4"
++version = "1.1.5"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "b6fe4565b9518b83ef4f91bb47ce29620ca828bd32cb7e408f0062e9930ba190"
++checksum = "891efababe418670775f199f0d233d84843c227a0949a883ce15b37c78d6629d"
+ dependencies = [
+  "bitflags",
+  "errno",
+diff --git a/bindgen/cpp/Cargo.lock b/bindgen/cpp/Cargo.lock
+index 8734201..a24d34e 100644
+--- a/bindgen/cpp/Cargo.lock
++++ b/bindgen/cpp/Cargo.lock
+@@ -462,9 +462,9 @@ checksum = "6b1e7f9a428571be2dc5bc0505c13fb6bf936822b894ec87abf8a08a4e51742d"
+ 
+ [[package]]
+ name = "rustix"
+-version = "1.1.4"
++version = "1.1.5"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "b6fe4565b9518b83ef4f91bb47ce29620ca828bd32cb7e408f0062e9930ba190"
++checksum = "891efababe418670775f199f0d233d84843c227a0949a883ce15b37c78d6629d"
+ dependencies = [
+  "bitflags",
+  "errno",
+-- 
+2.55.0
+

@@ -147,6 +147,7 @@ d:python3-prettytable
 d:python3-py-consul
 d:python3-kazoo
 d:python3-pysyncobj
+d:wallet-engine
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -845,3 +846,7 @@ f:e7c1970be46f7a7fe81db428ff7c7332:python3-kazoo/.signature
 f:a132bbe2659f1512573ed7c32000e4e9:python3-pysyncobj/Pkgfile
 f:6b55f3f81d5bca00d53b51eb1681df35:python3-pysyncobj/.footprint
 f:147b23b4195b3f627ef1d713ba910e35:python3-pysyncobj/.signature
+f:cf1066412fa87dae2ba814a93a7dd89a:wallet-engine/0001-Upgrade-Rustix-to-1.1.5.patch
+f:41c1811f1a6da6366db2ca25f480c91b:wallet-engine/Pkgfile
+f:6accd89b4dc850d52b6a3a9b2da4b9ac:wallet-engine/.footprint
+f:1b63b604233972041a1a2f9ac4c117c4:wallet-engine/.signature
