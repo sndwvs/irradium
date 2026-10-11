@@ -847,6 +847,7 @@ f:a132bbe2659f1512573ed7c32000e4e9:python3-pysyncobj/Pkgfile
 f:6b55f3f81d5bca00d53b51eb1681df35:python3-pysyncobj/.footprint
 f:147b23b4195b3f627ef1d713ba910e35:python3-pysyncobj/.signature
 f:cf1066412fa87dae2ba814a93a7dd89a:wallet-engine/0001-Upgrade-Rustix-to-1.1.5.patch
-f:41c1811f1a6da6366db2ca25f480c91b:wallet-engine/Pkgfile
+f:8bab79fbae0a17b68d651ff61976f6e8:wallet-engine/Pkgfile
 f:6accd89b4dc850d52b6a3a9b2da4b9ac:wallet-engine/.footprint
 f:1b63b604233972041a1a2f9ac4c117c4:wallet-engine/.signature
+f:95541c7770f7a841051a5a91c4b33550:wallet-engine/e59e0d89d7ee90c388bf36e3334c5b276f396697.patch

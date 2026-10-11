@@ -7,11 +7,15 @@ name=wallet-engine
 version=0.0.7
 release=1
 source=(https://github.com/i582/wallet-engine/archive/refs/tags/v$version.tar.gz
-    0001-Upgrade-Rustix-to-1.1.5.patch)
+        https://raw.githubusercontent.com/desktop-app/patches/aec474953ff7ee9b6e4cd9b8658288ea86d124f3/wallet-engine.patch
+        e59e0d89d7ee90c388bf36e3334c5b276f396697.patch
+        0001-Upgrade-Rustix-to-1.1.5.patch)
 
 build() {
   cd $name-$version
 
+  patch -p1 -i $SRC/e59e0d89d7ee90c388bf36e3334c5b276f396697.patch
+  patch -p1 -i $SRC/wallet-engine.patch
   patch -p1 -i $SRC/0001-Upgrade-Rustix-to-1.1.5.patch
 
   cargo fetch --locked --target host-tuple
