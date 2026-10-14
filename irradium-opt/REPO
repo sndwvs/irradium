@@ -211,8 +211,8 @@ f:8459e7425bf9eea9d482e53c5b5c91c9:grub2/grub.cfg.sample
 f:8945d02b41013f91b44652ba5c6caee9:grub2/grub2-tweaks.diff
 f:f047807c146e64536d98d1e37c84d910:grub2/.footprint.aarch64
 f:8a8d0d9977534f1ddf899a4bf49d059a:grub2/.signature.aarch64
-f:de0fc8b96a2e09725b4dfff0f3921401:grub2/.footprint.riscv64
-f:1fbac7d440c241b0db9b0049334678c9:grub2/.signature.riscv64
+f:c10cd50677a418d83d007f3a2abd67f6:grub2/.footprint.riscv64
+f:57bf1771f54740c201f2f8383e8b00b6:grub2/.signature.riscv64
 f:5387ad06a1dc0774320b4482f95580be:efivar/.footprint
 f:910f6052b02380c83db3223f3b7d9364:efivar/.signature
 f:f193e75ca62a9f19acc471f19b047a9f:efivar/Pkgfile
