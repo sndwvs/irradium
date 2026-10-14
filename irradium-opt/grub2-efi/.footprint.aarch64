@@ -58,6 +58,8 @@ drwxr-xr-x	root/root	usr/lib/grub/arm64-efi/
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/config.h
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/configfile.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/configfile.module
+-rw-r--r--	root/root	usr/lib/grub/arm64-efi/connectefi.mod
+-rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/connectefi.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/cpio.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/cpio.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/cpio_be.mod
@@ -95,6 +97,8 @@ drwxr-xr-x	root/root	usr/lib/grub/arm64-efi/
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/echo.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/efi_gop.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/efi_gop.module
+-rw-r--r--	root/root	usr/lib/grub/arm64-efi/efibootnext.mod
+-rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/efibootnext.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/efifwsetup.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/efifwsetup.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/efinet.mod
@@ -165,6 +169,8 @@ drwxr-xr-x	root/root	usr/lib/grub/arm64-efi/
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/gcry_md4.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/gcry_md5.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/gcry_md5.module
+-rw-r--r--	root/root	usr/lib/grub/arm64-efi/gcry_pubkey_dilithium.mod
+-rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/gcry_pubkey_dilithium.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/gcry_rfc2268.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/gcry_rfc2268.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/gcry_rijndael.mod
@@ -263,6 +269,8 @@ drwxr-xr-x	root/root	usr/lib/grub/arm64-efi/
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/lsefimmap.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/lsefisystab.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/lsefisystab.module
+-rw-r--r--	root/root	usr/lib/grub/arm64-efi/lsefivar.mod
+-rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/lsefivar.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/lsmmap.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/lsmmap.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/lssal.mod
@@ -287,8 +295,12 @@ drwxr-xr-x	root/root	usr/lib/grub/arm64-efi/
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/mdraid1x.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/memdisk.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/memdisk.module
+-rw-r--r--	root/root	usr/lib/grub/arm64-efi/memmove_bench.mod
+-rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/memmove_bench.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/memrw.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/memrw.module
+-rw-r--r--	root/root	usr/lib/grub/arm64-efi/mfa.mod
+-rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/mfa.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/minicmd.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/minicmd.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/minix.mod
@@ -303,6 +315,8 @@ drwxr-xr-x	root/root	usr/lib/grub/arm64-efi/
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/minix3_be.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/minix_be.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/minix_be.module
+-rw-r--r--	root/root	usr/lib/grub/arm64-efi/mldsa_test.mod
+-rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/mldsa_test.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/mmap.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/mmap.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/moddep.lst
@@ -357,6 +371,8 @@ drwxr-xr-x	root/root	usr/lib/grub/arm64-efi/
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/parttool.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/password.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/password.module
+-rw-r--r--	root/root	usr/lib/grub/arm64-efi/password_argon2.mod
+-rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/password_argon2.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/password_pbkdf2.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/password_pbkdf2.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/pbkdf2.mod
@@ -395,6 +411,7 @@ drwxr-xr-x	root/root	usr/lib/grub/arm64-efi/
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/romfs.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/rsa_sexp_test.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/rsa_sexp_test.module
+-rw-r--r--	root/root	usr/lib/grub/arm64-efi/sbat.csv
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/scsi.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/scsi.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/search.mod
@@ -454,6 +471,8 @@ drwxr-xr-x	root/root	usr/lib/grub/arm64-efi/
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/tpm.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/tpm2_key_protector.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/tpm2_key_protector.module
+-rw-r--r--	root/root	usr/lib/grub/arm64-efi/tpm_record_pcrs.mod
+-rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/tpm_record_pcrs.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/tr.mod
 -rwxr-xr-x	root/root	usr/lib/grub/arm64-efi/tr.module
 -rw-r--r--	root/root	usr/lib/grub/arm64-efi/trig.mod
