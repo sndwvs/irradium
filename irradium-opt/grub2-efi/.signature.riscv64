@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCeDnEL1u9N2B+z5bmwiWspvgLts9NoY/uHNO3pABeNLyDfGA1qeUKTBArRxoB8RtfPCLoX6AH9FM8IgYiaKhdAY=
-SHA256 (Pkgfile) = b79a7b7ff2e53b37814d7879d02c0fde36bfc8d6266d41d0fa08b7d1b80223fc
-SHA256 (.footprint.riscv64) = e062b9d4aa18c19652fa5cc989de768dfca98c95b16d89977a159a3899b51012
-SHA256 (grub-2.14.tar.xz) = bc8d3c73535b8838d8c8e2654d73edc4e6ae8c8acdb45d5df5dc9a1547446d43
+RWRxRnTWECCiCSGnS8MnG1Ygqwx+GoijzgzwjZnFLcSHh8v0JdsNFk++qLHCK0rDNYigCD4/Bqm2LyrIUeE9/EaMzqElJoJdHQo=
+SHA256 (Pkgfile) = 9e17e2a0275ffdecd564a6c67fa4260267dcc197b6068f6c5ee8db0f57e713b5
+SHA256 (.footprint.riscv64) = 49272e55567ebcd85bb6238585d29cddb3a0964b6414b21465dc38b9d1067342
+SHA256 (grub-2.16.tar.xz) = f0db0104927df0b9a48bc41b735c702936190d17eb2d73d3018fa77474a0cabe
 SHA256 (extra_deps.lst) = 78d83a1c8ed69220853ac90114e0c7ea13fda00fbe6c81b1fedb1296479e62b4
