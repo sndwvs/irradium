@@ -5,7 +5,7 @@
 # Optional: cbindgen directx-headers glslang mesa-libclc libdisplay-info libunwind libva lm_sensors lua python3-ply rust-bindgen spirv-llvm-translator vulkan-loader wayland-protocols
 
 name=mesa
-version=26.2.4
+version=26.2.5
 release=1
 source=(https://archive.mesa3d.org/$name-$version.tar.xz
     patches/0002-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch
@@ -28,7 +28,7 @@ build() {
         prt-get isinst cbindgen rust-bindgen spirv-llvm-translator && PKGMK_MESA_VULKAN_DRIVERS+='nouveau,'
         prt-get isinst directx-headers && PKGMK_MESA_VULKAN_DRIVERS+='microsoft-experimental,'
         prt-get isinst glslang && PKGMK_MESA_VULKAN_DRIVERS+='amd,broadcom,freedreno,panfrost,swrast,imagination,' PKGMK_MESA_VULKAN_LAYERS+='device-select,overlay,'
-        prt-get isinst glslang libclc python3-ply lua && PKGMK_MESA_VULKAN_DRIVERS+='intel,' PKGMK_MESA_VULKAN_LAYERS+='intel-nullhw,'
+        prt-get isinst glslang mesa-libclc python3-ply lua && PKGMK_MESA_VULKAN_DRIVERS+='intel,' PKGMK_MESA_VULKAN_LAYERS+='intel-nullhw,'
         prt-get isinst mesa-libclc && PKGMK_MESA_VULKAN_DRIVERS+='intel_hasvk,'
         VULKAN_DRIVERS=${PKGMK_MESA_VULKAN_DRIVERS#,}virtio
         PKGMK_MESA_GALLIUM+='zink,'
@@ -67,7 +67,8 @@ build() {
         -D video-codecs=all \
         -D glvnd=enabled \
         -D vulkan-drivers=$VULKAN_DRIVERS \
-        -D vulkan-layers=$VULKAN_LAYERS
+        -D vulkan-layers=$VULKAN_LAYERS \
+        -D intel-rt=enabled
 
     meson compile -C build -j ${JOBS:-1}
     DESTDIR=$PKG meson install -C build
