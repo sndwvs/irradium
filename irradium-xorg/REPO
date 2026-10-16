@@ -16,9 +16,9 @@ f:f814811e810af2407b438e2e9e3a88d9:mesa/patches/0012-mesa-26.2-llvm23-orc-jitlin
 f:add55fada3a9b2de27dbc93d19af3f86:mesa/README.md
 f:67ed6719540b8bdcdce605a117dead0b:mesa/.footprint.aarch64
 f:65421b32ea9a33c3424722f2ad0c4537:mesa/.signature.aarch64
-f:91be46f3c38a2e7b0ef0870447d9b4f1:mesa/.signature.riscv64
+f:3fc64f0cb75dda74bc6cfe4ab0a55325:mesa/.signature.riscv64
 f:43cd80fab9a52ae84c9a58c90546fc4d:mesa/Pkgfile
-f:f7f695f894d3a9ac36fb59b935d2f5d8:mesa/.footprint.riscv64
+f:0ba4b732ce48b308a785d271bea0b861:mesa/.footprint.riscv64
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:2b55e5edd7f68e865c39720c44dca1c1:xorg-xf86-video-fbdev/.signature
 f:376712c2b0b9d9529ddd3520bb6b03c9:xorg-xf86-video-fbdev/Pkgfile
