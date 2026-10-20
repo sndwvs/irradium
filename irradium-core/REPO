@@ -106,8 +106,8 @@ f:645d447e0429f1863fee1f01d9079577:pkgconf/riscv64-unknown-linux-gnu.personality
 f:8c4d630fff7ff32276128ab96e4a7638:pkgconf/Pkgfile
 f:fea619c56d0736e29d7bf413c37a7b04:pkgconf/.footprint.aarch64
 f:cddcb11c5b08482b400500194b31faac:pkgconf/.footprint.riscv64
-f:e2e4eccafd081390718dda6f52abb622:pkgconf/.signature.riscv64
-f:bce245458f21b59172b709df807faa4c:pkgconf/.signature.aarch64
+f:5babf68dd9146c7e05b64bd02f400fe1:pkgconf/.signature.riscv64
+f:ac4fa83aabcb6693ffa68226038ac59b:pkgconf/.signature.aarch64
 f:c6d689e4e8bc7b2b3e13a911bab36e27:pkgconf/x86_64-pc-linux-gnu.personality
 f:6fec70b14f238ad94caf5dac367ee427:pkgconf/README
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
