@@ -400,7 +400,7 @@ f:01b4c8973511a76b596f5d110c488ff3:slang/.signature
 f:5ee1ede2ebe321245a17d2d2d75b5711:slang/Pkgfile
 f:14b8e2e1cc62b977528ea8bc3b73e1a8:telegram-desktop/.footprint
 f:d675c7cbb123696de31a3a4af52f87e5:telegram-desktop/.signature
-f:af26b8dd77d9a1d15c2570868451e538:telegram-desktop/Pkgfile
+f:98a787405a8e3814204168c1ece7ecc6:telegram-desktop/Pkgfile
 f:1a69adadfeda9cc05e884091ec34143f:python3-etcd/Pkgfile
 f:373cd69053e4bf367be1b67b38788742:python3-etcd/.footprint
 f:c953cd3ec4fd6408571bf54dcf208935:python3-etcd/.signature
@@ -780,7 +780,7 @@ f:89a7dafa1a99b4943efa87cbbe95789c:vte3/.signature
 f:2ec18fb168846eaf2f859dd32f0cc2ff:vte3/Pkgfile
 f:4bcff8c2fae56f50bf50bb9a3211205e:php-pgsql/.footprint
 f:d2078ff239841f62c9ea045d3eef8e05:php-pgsql/.signature
-f:e9d61f4e0e4f29f9f54006102852c3c6:php-pgsql/Pkgfile
+f:269c3a25b6bb8cbaa16494fa1a8ed03b:php-pgsql/Pkgfile
 f:e5ed4f5b4f387f508fbb4d189209a81e:audacious-plugins/.footprint
 f:c7b2341175136a3b6846bcf28dfdd95b:audacious-plugins/.signature
 f:d331c0be354b62b361163aa311266d4c:audacious-plugins/Pkgfile
