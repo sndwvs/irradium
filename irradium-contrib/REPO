@@ -209,7 +209,7 @@ f:eb5e46465a88148b6cd781237e350b1d:firefox/.footprint.riscv64
 f:c45bb7754e1e93022297e6c8f9bbb3eb:firefox/.footprint.aarch64
 f:add52ff493a1608c23f32419873e9f97:firefox/.signature.aarch64
 f:0d5fe30fac1246de99780343bb22df78:firefox/.signature.riscv64
-f:781fbb67c9a6540fa805cbb963f572f9:firefox/Pkgfile
+f:8e7d9c3b88aaacc5076412ffc03723e6:firefox/Pkgfile
 f:e63779169c8dda5d6d57c99edcadbacf:firefox/rust-lto-thin.patch
 f:3d2dae5c5fd2eb542217c01ef4b75283:firefox/bugzilla2071536.patch
 f:54c7e71bc1c1d22ddcd438420fc39798:freerdp/.footprint
@@ -226,7 +226,7 @@ f:c0dc57462f583416e8824c888d18784b:gn/9ece3f5254c273cb46606a6571963f931c3b012d.p
 f:16029c4d511dc90ac4436eca41a3320b:gn/.signature
 f:b9add0bb579519174102e8acf3fde3e2:gn/Pkgfile
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
-f:2076b1760baa5783e7670fd20dd4ad93:go/Pkgfile
+f:416ddfdd5d0f3035a68a69b4a2799ba6:go/Pkgfile
 f:f1910b591ed3c17a466135fde90b401a:go/.footprint.aarch64
 f:fb9dff5ead4ccdfb16704d2ffcd3c2ef:go/.signature.aarch64
 f:fb5f79a321629218650e7f24b536de72:go/.footprint.riscv64
