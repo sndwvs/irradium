@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7o70wBfpprvokFdv/wT0zcMIGqROX6OTEDfcHmffwyB+h2V2i2AeOLgCOI0kHIpBqhqiaykWN0uLLXH/KlIoQQk=
-SHA256 (Pkgfile) = 69573749ac574a5dcc8a6a0a38e093f7f53234ce7088f5a2ebc6020ee3487fe2
+RWTmT3d9kqan7gPbwuWZVVMLrnwtjRpH8kg0D5lPsGQPKT2hFmkNZ2MUWkr6B3fqz9dGjVqx7gA2zcmDhG0xX/mt7t5j3JEg/wc=
+SHA256 (Pkgfile) = b4a6270ebbfe1940b6b2e96e8c827dfadbf70c751950c63487c21062072e0174
 SHA256 (.footprint.aarch64) = 5680f69e568f441dd77860037dea8f9a21cedb5a90412ecac0385014cbb29299
-SHA256 (go1.27.2.src.tar.gz) = 03495da2ba64894d40f5c4992e49454fa78b50690604ff92b6afff5081b76e62
-SHA256 (go1.27.2.linux-arm64.tar.gz) = 94f3e30b8e374bc285e7dadc11e0865726b9bc6e85b841ccceaabc0214c6b7c8
+SHA256 (go1.27.3.src.tar.gz) = 6e7749035cf360f06b2575d162ea79df9fda8ef671889e5c375f8e50777f26bb
+SHA256 (go1.27.3.linux-arm64.tar.gz) = a06e99309dbcbdca1a8ccd2282c3ee146e55930886e26b4f1193269587165f49
