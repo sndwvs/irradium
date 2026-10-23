@@ -7469,11 +7469,16 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/aptdaemon-a
 lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/aptdaemon-update-cache.svg -> aptdaemon-upgrade.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/aptdaemon-upgrade.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/aptdaemon-working.svg -> aptdaemon-download.svg
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/audio-volume-high-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/audio-volume-high.svg
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/audio-volume-low-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/audio-volume-low.svg
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/audio-volume-medium-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/audio-volume-medium.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/audio-volume-muted-blocking.svg
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/audio-volume-muted-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/audio-volume-muted.svg
+lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/audio-volume-off-symbolic.svg -> audio-volume-muted-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/audio-volume-off.svg -> audio-volume-muted.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/audio-volume-overamplified.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/avatar-default.svg -> ../../categories/48/preferences-desktop-personal.svg
@@ -7530,6 +7535,9 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/krb-valid-t
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/locked.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/mail-unread.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/media-playlist-repeat.svg
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/microphone-sensitivity-high-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/microphone-sensitivity-low-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/microphone-sensitivity-medium-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/microphone-sensitivity-muted-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/network-error.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce-hidpi/status/48/network-idle.svg
@@ -15315,11 +15323,16 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce/status/48/aptdaemon-add.png
 lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce/status/48/aptdaemon-update-cache.png -> aptdaemon-upgrade.png
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/aptdaemon-upgrade.png
 lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce/status/48/aptdaemon-working.png -> aptdaemon-download.png
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/audio-volume-high-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/audio-volume-high.png
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/audio-volume-low-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/audio-volume-low.png
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/audio-volume-medium-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/audio-volume-medium.png
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/audio-volume-muted-blocking.png
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/audio-volume-muted-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/audio-volume-muted.png
+lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce/status/48/audio-volume-off-symbolic.svg -> audio-volume-muted-symbolic.svg
 lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce/status/48/audio-volume-off.png -> audio-volume-muted.png
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/audio-volume-overamplified.png
 lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce/status/48/avatar-default.png -> ../../categories/48/preferences-desktop-personal.png
@@ -15376,6 +15389,9 @@ lrwxrwxrwx	root/root	usr/share/icons/elementary-xfce/status/48/krb-valid-ticket.
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/locked.png
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/mail-unread.png
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/media-playlist-repeat.png
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/microphone-sensitivity-high-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/microphone-sensitivity-low-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/microphone-sensitivity-medium-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/microphone-sensitivity-muted-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/network-error.png
 -rw-r--r--	root/root	usr/share/icons/elementary-xfce/status/48/network-idle.png
