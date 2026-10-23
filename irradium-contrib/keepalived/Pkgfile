@@ -4,7 +4,7 @@
 # Depends on: glibc kmod libmnl libnftnl libnl openssl file iptables
 
 name=keepalived
-version=2.3.4
+version=2.4.3
 release=1
 source=(https://github.com/acassen/keepalived/archive/refs/tags/v$version.tar.gz
         always-use-pid-dir.patch
@@ -16,7 +16,6 @@ build() {
   cd $name-$version
 
   patch -p1 -i $SRC/always-use-pid-dir.patch
-  patch -p1 -i $SRC/fix-vrrp-notify-fifo-reload.patch
 
   ./autogen.sh
   sed 's:\#\!.*\/bin\/sh:\#\!\/bin\/bash:' -i configure
