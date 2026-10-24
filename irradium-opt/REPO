@@ -222,7 +222,7 @@ f:0aeccfb76a7d8912d7bf6db7e48011a2:compiler-rt/.signature.aarch64
 f:dc5b8e05df9a72f80b05245cfafc0b7a:compiler-rt/.footprint.riscv64
 f:0e5e6cd339b6768605949d91301f422c:compiler-rt/.signature.riscv64
 f:43c41a42e7efa748d39fed7285f9232e:strace/.footprint
-f:ac60a203a08f7d412b68966d74117d1f:strace/.signature
+f:d89e3bb323eb51efca329e5e1f115e1f:strace/.signature
 f:83ed979a58cd44b0dd0ec316c3eb7d1f:strace/Pkgfile
 f:04bfe83b567177ceb62c5a8be4ef3de4:libjpeg-turbo/.footprint
 f:d298cf815edec5644257aa6cf481c551:libjpeg-turbo/.signature
