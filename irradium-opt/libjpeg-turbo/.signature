@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCZ5WV36zUYmL0d+eWvrcIjVLI/OHtKni1ngi0oX+w+PkCePUB2ui5BPjsZ7ysoQJBf7smYQExoYdgCb0GXcaSAU=
-SHA256 (Pkgfile) = 53fa2426d88225ed237e6ebf9c885f7bf9a17cd2bf65b57f871ff49c3409f43d
+RWRxRnTWECCiCePlELNtlY7QUFqkMoNvOnFKb2+VaIHPrC1C+OqAYxqAdbpcedAmS37443mE1+qZwmMxomWuYccRQ7gsKqReqA4=
+SHA256 (Pkgfile) = 2c3ac391baf607ddfb4171a0fb8ce6da8f7ab5893389442f57a0597a74464b8b
 SHA256 (.footprint) = 82ad47d8386d1b47d35d03f43dfc9ea24d031b69c22d85c49c496d00c18ff6f5
-SHA256 (libjpeg-turbo-3.2.0.tar.gz) = 6f30092cef9fb839779646608f4ee14ae3cbac989c47fa05e841b0841f09878e
+SHA256 (libjpeg-turbo-3.2.1.tar.gz) = c27ad72a68da151177929aa969ae773a2da5ac2af9ce946079314fdac8cece7f
