@@ -1,17 +1,18 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7nnaeE8TmQvXT+sNlhWvJfuT9CsIQiZc7spEVylHMLI1YfVXRusUK50+50+iI1vU/gA8NIawCTmPFpN212h5HQU=
-SHA256 (Pkgfile) = b871b0c48400f4173c10f15505f7fd566c5c970abfc4a6da43226fa2ecff8fd5
+RWTmT3d9kqan7hGm62U3lTReu7MIB4xZsj5YKpDkwD/bU0wztOq1KFEBIYPtj6pWdeqP1VE3LrYWMuX33p4PbRVMF6Tdc+SsnAo=
+SHA256 (Pkgfile) = d4a288eae18df7ab7716580f1b996ba8a7a41c2213758497201cc84017f26dba
 SHA256 (.footprint.riscv64) = 41e799bb134d971543a3bb5a6fe05d583a25de185b11a7e172169db49c6547dd
-SHA256 (libreoffice-26.8.1.1.tar.xz) = 296ba78e7ab0d381b94c3d6342f4ebb2320ee5097ca58781b9b744cab90b9785
-SHA256 (libreoffice-dictionaries-26.8.1.1.tar.xz) = ce366c50178f5bdf6df1c6df4a0146899cf27a0017734190d00d90f0c5acac61
-SHA256 (libreoffice-translations-26.8.1.1.tar.xz) = 789519befa409d7eec24043cea41ddd318d9f1212f555d8b28d4982e35693bfc
-SHA256 (libreoffice-help-26.8.1.1.tar.xz) = f1de4054194e8718f699ddf2b269165613c8dd07c10c55b32968c977f0c6234f
+SHA256 (libreoffice-26.8.2.2.tar.xz) = f0012302d9cc70955bd55890d3aaccf6c55677c4a6a46e1003f996b1b0dae8e7
+SHA256 (libreoffice-dictionaries-26.8.2.2.tar.xz) = d1b206157ea69249d754cabd8e9213b9dc69fc072fca91f51a681e95228239e0
+SHA256 (libreoffice-translations-26.8.2.2.tar.xz) = 1a3b6077ebfac899f2c31666d283e29e94c2d30704dd162fda7ba06d77212dd2
+SHA256 (libreoffice-help-26.8.2.2.tar.xz) = e7e0270c30b13c4c52acae57e6c7529dc2146d9946123b5da17ae236e3bb4f68
 SHA256 (185d60944ea767075d27247c3162b3bc-unowinreg.dll) = eafde646a7dbe46d20c291685b0beac2382174d78d66ee990e229a1bf6e6cec6
 SHA256 (0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz) = 983941d31ee8d366085cadf28db75eb1f5cb03ba1e5853b98f12f7f51c63b776
 SHA256 (dtoa-20180411.tgz) = 0082d0684f7db6f62361b76c4b7faba19e0c7ce5cb8e36c4b65fea8281e711b4
 SHA256 (afdko-4.0.3.tar.gz) = 5feed7c2468e25b25fce0479c04af07f4ed2680bc9251bb4c4aef9ec2fba5720
 SHA256 (antlr4-cpp-runtime-4.13.2-source.zip) = 0ed13668906e86dbc0dcddf30fdee68c10203dea4e83852b4edb810821bee3c4
-SHA256 (pdfium-7681.tar.bz2) = 8de122fff74461770c9ca93ca3e6ca946b077f9110d562f40815e187e1255774
+SHA256 (pdfium-8073.tar.bz2) = a3624f6f0ac46a7e190969d405aa7a07dbc342baf69f81192487575bf64055a5
 SHA256 (skia-m147-ad8ecedbfdef9f4ae4b1e73347b6dd56e6637d38.tar.xz) = 92f613b60126f9068af02c5eb29abef6931e343888f027d87da100ddf2a003a1
 SHA256 (box2d.patch) = 09451f489259a7887ecf4afae942126c672bdacd3304cd29e3acef8acb3dab7c
+SHA256 (8927e95539463a027c6f28da2ac5ac46746cf1bd.patch) = 66ab77ef6a157529c589b92e685704197a8ba7bf44453f734d5391a0c86c4b97
 SHA256 (makefile.in.patch) = eeb1f3f06f548b1721dd01c58aa8f1d040395eadd0e5c42d85240bbd6402bd49
