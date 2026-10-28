@@ -5,9 +5,9 @@
 # Optional: avahi coin-or-mp cups dconf gpgme kio lpsolve mariadb openldap postgresql python3-lxml qt6-multimedia sane valgrind
 
 name=libreoffice
-version=26.8.1.1
+version=26.8.2.2
 release=1
-pdfiumversion=7681
+pdfiumversion=8073
 skiaversion=m147-ad8ecedbfdef9f4ae4b1e73347b6dd56e6637d38
 afdkoversion=4.0.3
 antlr4version=4.13.2
@@ -23,6 +23,7 @@ source=(https://downloadarchive.documentfoundation.org/libreoffice/old/$version/
   https://dev-www.libreoffice.org/src/pdfium-$pdfiumversion.tar.bz2
   https://dev-www.libreoffice.org/src/skia-$skiaversion.tar.xz
   box2d.patch
+  8927e95539463a027c6f28da2ac5ac46746cf1bd.patch
   makefile.in.patch)
 
 # unpack_source() {{{
@@ -71,6 +72,8 @@ build() {
 
   patch -Np1 -i $SRC/makefile.in.patch
   patch -Np1 -i $SRC/box2d.patch
+  patch -Np1 -i $SRC/8927e95539463a027c6f28da2ac5ac46746cf1bd.patch
+
   sed -i 's:application/pdf;::g' sysui/desktop/menus/draw.desktop
   sed -i 's:text/plain;::g' sysui/desktop/menus/writer.desktop
   sed -i 's:dragonbox-1.0.0:dragonbox:g' configure.ac

@@ -1,0 +1,156 @@
+From 8927e95539463a027c6f28da2ac5ac46746cf1bd Mon Sep 17 00:00:00 2001
+From: Xisco Fauli <xiscofauli@libreoffice.org>
+Date: Mon, 19 Oct 2026 21:51:41 +0200
+Subject: [PATCH] box2d: upgrade to 3.2.0
+
+Downloaded https://github.com/erincatto/box2d/archive/refs/tags/v3.2.0.tar.gz
+
+Change-Id: Icaa610aa48e24a7c33b74101b75450d210e08db3
+Reviewed-on: https://gerrit.libreoffice.org/c/core/+/212645
+Tested-by: Jenkins
+Reviewed-by: Xisco Fauli <xiscofauli@libreoffice.org>
+---
+ configure.ac                           |  2 +-
+ download.lst                           |  4 ++--
+ external/box2d/StaticLibrary_box2d.mk  | 16 +++++++++++++---
+ external/box2d/wasm.patch              | 11 +++++------
+ slideshow/source/engine/box2dtools.cxx | 10 +++++++++-
+ 5 files changed, 30 insertions(+), 13 deletions(-)
+
+diff --git a/configure.ac b/configure.ac
+index febaa5a137e60..06863f9cc582b 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -12283,7 +12283,7 @@ dnl Check for system box2d
+ dnl ===================================================================
+ AC_MSG_CHECKING([which box2d to use])
+ BOX2D_MAJOR=3
+-BOX2D_MINOR=1
++BOX2D_MINOR=2
+ if test "$with_system_box2d" = "yes"; then
+     AC_MSG_RESULT([external])
+     SYSTEM_BOX2D=TRUE
+diff --git a/download.lst b/download.lst
+index 4fb49a033bee1..03936f958fa46 100644
+--- a/download.lst
++++ b/download.lst
+@@ -19,8 +19,8 @@ BOOST_TARBALL := boost_1_92_0.tar.xz
+ # three static lines
+ # so that git cherry-pick
+ # will not run into conflicts
+-BOX2D_SHA256SUM := fb6ef914b50f4312d7d921a600eabc12318bb3c55a0b8c0b90608fa4488ef2e4
+-BOX2D_TARBALL := box2d-3.1.1.tar.gz
++BOX2D_SHA256SUM := ffec747b27a2267016f8d0240d658c82d187fb2271fa0f69fcbe53fbc067180d
++BOX2D_TARBALL := box2d-3.2.0.tar.gz
+ # three static lines
+ # so that git cherry-pick
+ # will not run into conflicts
+diff --git a/external/box2d/StaticLibrary_box2d.mk b/external/box2d/StaticLibrary_box2d.mk
+index 50875b838476e..88643665a8b30 100644
+--- a/external/box2d/StaticLibrary_box2d.mk
++++ b/external/box2d/StaticLibrary_box2d.mk
+@@ -27,6 +27,10 @@ $(eval $(call gb_StaticLibrary_add_cflags,box2d,\
+ ))
+ endif
+ 
++$(eval $(call gb_StaticLibrary_add_defs,box2d,\
++    -DBOX2D_DISABLE_SIMD \
++))
++
+ $(eval $(call gb_StaticLibrary_add_generated_cobjects,box2d,\
+ 	UnpackedTarball/box2d/src/aabb \
+ 	UnpackedTarball/box2d/src/arena_allocator \
+@@ -34,31 +38,37 @@ $(eval $(call gb_StaticLibrary_add_generated_cobjects,box2d,\
+ 	UnpackedTarball/box2d/src/dynamic_tree \
+ 	UnpackedTarball/box2d/src/island \
+ 	UnpackedTarball/box2d/src/motor_joint \
++	UnpackedTarball/box2d/src/mover_joint \
+ 	UnpackedTarball/box2d/src/table \
+ 	UnpackedTarball/box2d/src/wheel_joint \
+ 	UnpackedTarball/box2d/src/broad_phase \
+ 	UnpackedTarball/box2d/src/core \
+ 	UnpackedTarball/box2d/src/geometry \
+ 	UnpackedTarball/box2d/src/joint \
+-	UnpackedTarball/box2d/src/mouse_joint \
+ 	UnpackedTarball/box2d/src/shape \
+ 	UnpackedTarball/box2d/src/timer \
+-	UnpackedTarball/box2d/src/world \
+-	UnpackedTarball/box2d/src/array \
+ 	UnpackedTarball/box2d/src/constraint_graph \
+ 	UnpackedTarball/box2d/src/distance \
+ 	UnpackedTarball/box2d/src/hull \
+ 	UnpackedTarball/box2d/src/manifold \
++	UnpackedTarball/box2d/src/parallel_for \
++	UnpackedTarball/box2d/src/physics_world \
++	UnpackedTarball/box2d/src/pogo_joint \
+ 	UnpackedTarball/box2d/src/prismatic_joint \
+ 	UnpackedTarball/box2d/src/types \
+ 	UnpackedTarball/box2d/src/bitset \
+ 	UnpackedTarball/box2d/src/contact \
+ 	UnpackedTarball/box2d/src/contact_solver \
++	UnpackedTarball/box2d/src/contact_solver_w4 \
+ 	UnpackedTarball/box2d/src/distance_joint \
+ 	UnpackedTarball/box2d/src/id_pool \
+ 	UnpackedTarball/box2d/src/math_functions \
+ 	UnpackedTarball/box2d/src/revolute_joint \
++	UnpackedTarball/box2d/src/recording \
++	UnpackedTarball/box2d/src/snapshot \
++	UnpackedTarball/box2d/src/scheduler \
+ 	UnpackedTarball/box2d/src/sensor \
++	UnpackedTarball/box2d/src/simd \
+ 	UnpackedTarball/box2d/src/solver \
+ 	UnpackedTarball/box2d/src/solver_set \
+ 	UnpackedTarball/box2d/src/weld_joint \
+diff --git a/external/box2d/wasm.patch b/external/box2d/wasm.patch
+index 92eb14a97e94a..21992c04350db 100644
+--- a/external/box2d/wasm.patch
++++ b/external/box2d/wasm.patch
+@@ -1,13 +1,12 @@
+ --- box2d/src/core.h	2026-05-08 15:52:10.437558753 +0200
+ +++ box2d/src/core.h	2026-05-08 15:53:32.176900568 +0200
+-@@ -72,10 +72,6 @@
+- 	#elif defined( B2_CPU_ARM )
+- 		#define B2_SIMD_NEON
+- 		#define B2_SIMD_WIDTH 4
++@@ -65,9 +65,6 @@
++ 			// and unverifiable performance.
++ 			#define B2_SIMD_NONE
++ 		#endif
+ -	#elif defined( B2_CPU_WASM )
+ -		#define B2_CPU_WASM
+ -		#define B2_SIMD_SSE2
+--		#define B2_SIMD_WIDTH 4
+  	#else
+  		#define B2_SIMD_NONE
+- 		#define B2_SIMD_WIDTH 4
++ 	#endif
+diff --git a/slideshow/source/engine/box2dtools.cxx b/slideshow/source/engine/box2dtools.cxx
+index 26be1c7fdd7b1..cfa4953c1872d 100644
+--- a/slideshow/source/engine/box2dtools.cxx
++++ b/slideshow/source/engine/box2dtools.cxx
+@@ -307,7 +307,11 @@ void box2DWorld::createStaticFrameAroundSlide(const ::basegfx::B2DVector& rSlide
+ 
+     b2ChainDef aChainDef = b2DefaultChainDef();
+     aChainDef.points = aEdgePoints;
++#if BOX2D_CHECK_VERSION(3, 2)
++    aChainDef.pointCount = 4;
++#else
+     aChainDef.count = 4;
++#endif
+     aChainDef.isLoop = true;
+     b2CreateChain(aBody, &aChainDef);
+ #else
+@@ -991,8 +995,12 @@ void box2DBody::setDensityAndRestitution(const double fDensity, const double fRe
+ #endif
+         b2Shape_SetRestitution(aShapeId, static_cast<float>(fRestitution));
+     }
+-    // without resetting the massdata of the body, density change won't take effect
++        // without resetting the massdata of the body, density change won't take effect
++#if BOX2D_CHECK_VERSION(3, 2)
++    b2Body_UpdateMassFromShapes(*mpBox2DBody);
++#else
+     b2Body_ApplyMassFromShapes(*mpBox2DBody);
++#endif
+ #else
+     // density and restitution have to be set for each fixture of the body individually
+     for (b2Fixture* pFixture = mpBox2DBody->GetFixtureList(); pFixture;
