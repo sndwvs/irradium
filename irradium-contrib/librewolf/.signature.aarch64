@@ -1,9 +1,7 @@
 untrusted comment: verify with /etc/ports/irradium-contrib.pub
-RWTmT3d9kqan7kgjISVVKu/temt1u5QSax98hUOgpsi/YdIGslefUN/BQFL0TYBXyyEVSXplsWtLCZ+Q3xnDw6FR/VCGB5oyegY=
-SHA256 (Pkgfile) = 244c918f047fae314d3fc9d98ed1f6524058e63d587cc9e3dae14995f4fe50ef
+RWTmT3d9kqan7kD4/6v7iS6TTW25QbYILigS2OMBTSojymzvSbRYw6wkEhaDal+pRJu6BlCcyQtK+IDH19lR4rw2dip+8KzZpg8=
+SHA256 (Pkgfile) = 599a9ced0cdcf1de9c33f053951d84a19202226469590cb2fb0405d3636f3de0
 SHA256 (.footprint.aarch64) = 0310e3a0298ec49de52d7d78b22b24bf161bb851de549276590d30e384408f0c
-SHA256 (librewolf-158.0.1-2.source.tar.gz) = dd1e782faf8e8da53267997c79f6b5c330ca0ca1cf1818c6d6faaeb08642f7db
+SHA256 (librewolf-159.0-1.source.tar.gz) = c2119c24ffbf22dcc998ac399bd95b97e8fdc785f1e57776847b468f3f9928cb
 SHA256 (librewolf.desktop) = 9627f0218dc9e816fc9ee9eb27b6538c4aa17803bcc9c4218c7ce725b2582b43
-SHA256 (bugzilla2071536.patch) = 2b0a7b3298a799164adc8e8cfe23eb952fc13877972b5636a2a00c6bba204182
 SHA256 (node-stdout-nonblocking-wrapper) = bb8c503015e49ed1b152225bdc56cf502cd831f35962d113dcbb9121967f3523
-SHA256 (rust-lto-thin.patch) = 535e326d0c089c52493ea25d8c3af81a4b213856c831dd0d9999c57071428b6b
