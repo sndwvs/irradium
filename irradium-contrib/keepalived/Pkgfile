@@ -8,7 +8,6 @@ version=2.4.3
 release=1
 source=(https://github.com/acassen/keepalived/archive/refs/tags/v$version.tar.gz
         always-use-pid-dir.patch
-        fix-vrrp-notify-fifo-reload.patch
         rc.keepalived
         keepalived.logrotate)
 
