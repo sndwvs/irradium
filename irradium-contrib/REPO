@@ -812,8 +812,8 @@ f:deb2d2e5ff0682ba89096c3688a3c0d6:python3-hatch-nodejs-version/Pkgfile
 f:e824f5082adf33ab1ed45ce8c9da5c22:python3-pymdown-extensions/.footprint
 f:e2274e04dc583008906d51a64e7d9c2a:python3-pymdown-extensions/.signature
 f:5afdfaa1ab55f03ccb50050088023249:python3-pymdown-extensions/Pkgfile
-f:b7a53ccc61870ca6ec03312e746ef375:xmlsec/.footprint
-f:5edec56720cdef437f4bd6833910361e:xmlsec/.signature
+f:fda8484e040c846ef1cb8790f4441f0e:xmlsec/.footprint
+f:71f77b164146448b64c552ec723ed4aa:xmlsec/.signature
 f:be98b5a143f67757916121f6eb4075e9:xmlsec/Pkgfile
 f:f0c88198634cac8fdd4885286d2f062d:zabbix-frontend/Pkgfile
 f:50273d0e597f5c11b592277f0d5193e4:zabbix-frontend/.footprint
