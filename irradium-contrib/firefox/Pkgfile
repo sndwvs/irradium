@@ -10,8 +10,7 @@ release=1
 source=(https://ftp.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz
   firefox.desktop
   fix-target-detection.patch
-  node-stdout-nonblocking-wrapper
-  rust-lto-thin.patch)
+  node-stdout-nonblocking-wrapper)
 
 build() {
   chmod a+x "$SRC"/node-stdout-nonblocking-wrapper
