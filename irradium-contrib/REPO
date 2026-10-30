@@ -461,8 +461,8 @@ f:73dab0925f3c915f269df50095906955:keepalived/Pkgfile
 f:4b2b11c12bd8bd8db2a46f047d9c0300:keepalived/rc.keepalived
 f:544f2af7d883899583a9c65f64282021:keepalived/keepalived.logrotate
 f:400dd28ee32751e43cd750411ed64836:keepalived/always-use-pid-dir.patch
-f:f7554d9ec0bfd1bd410e18dc172b6ea6:keepalived/.footprint
-f:7bcd41da88acf2f71156de9dde231e97:keepalived/.signature
+f:9b10d112759b9afbc3df98878af7a9aa:keepalived/.footprint
+f:342dd1033d23bf64806318dbbd2588f1:keepalived/.signature
 f:93cad7cd88158d1560ce394d33319b52:dhcp/.footprint
 f:1e0ff50ec24f9e272937aea6ee7b9f77:dhcp/.signature
 f:7b0d77b0577f0986e89070e4f44b645b:dhcp/Pkgfile

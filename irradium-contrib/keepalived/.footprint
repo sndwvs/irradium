@@ -37,6 +37,7 @@ drwxr-xr-x	root/root	usr/share/keepalived/samples/
 -rw-r--r--	root/root	usr/share/keepalived/samples/keepalived.conf.vrrp.scripts
 -rw-r--r--	root/root	usr/share/keepalived/samples/keepalived.conf.vrrp.static_ipaddress
 -rw-r--r--	root/root	usr/share/keepalived/samples/keepalived.conf.vrrp.sync
+-rw-r--r--	root/root	usr/share/keepalived/samples/keepalived.service.d.auth_hmac.conf
 -rw-r--r--	root/root	usr/share/keepalived/samples/sample.misccheck.smbcheck.sh
 -rw-r--r--	root/root	usr/share/keepalived/samples/sample_notify_fifo.sh
 drwxr-xr-x	root/root	usr/share/man/
