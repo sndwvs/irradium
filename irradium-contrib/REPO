@@ -208,7 +208,7 @@ f:34bfc3b23f5c0b0fb44224fab1693e9f:firefox/node-stdout-nonblocking-wrapper
 f:63298fc667a9ba67c138866359e4b99e:firefox/fix-target-detection.patch
 f:eb5e46465a88148b6cd781237e350b1d:firefox/.footprint.riscv64
 f:c45bb7754e1e93022297e6c8f9bbb3eb:firefox/.footprint.aarch64
-f:c11038f067f501dd82677c5e2e9162db:firefox/.signature.aarch64
+f:71fadda2925c1a99019fae61b885b910:firefox/.signature.aarch64
 f:e12325b1814ea54d229b9c256f372948:firefox/.signature.riscv64
 f:c10865a4afb52ab1b6a08fd8e70f2a20:firefox/Pkgfile
 f:54c7e71bc1c1d22ddcd438420fc39798:freerdp/.footprint
