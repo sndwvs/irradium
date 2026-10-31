@@ -221,9 +221,10 @@ f:a0aef08e2b7fb14a9b1db3c12536a94d:geany-plugins/Pkgfile
 f:47fcec43d76c4a285d2c9f926f58a265:geany-plugins/.footprint
 f:9ee065f379e55ca01f9502747072a57f:geany-plugins/.signature
 f:026e4f0c29fb9a901487f616b02e850b:gn/.footprint
-f:c0dc57462f583416e8824c888d18784b:gn/9ece3f5254c273cb46606a6571963f931c3b012d.patch
-f:16029c4d511dc90ac4436eca41a3320b:gn/.signature
-f:b9add0bb579519174102e8acf3fde3e2:gn/Pkgfile
+f:b7589d1d7b31b438011e5eec6dd3d0e3:gn/gn-0eb071f600702e6e235137ba133ee8834aeece83.tar.zst
+f:2782a8f83a842163ab0d2da8539889d6:gn/2dfb8cbd3b749242ee4492a7f15eba6889d52c7f.patch
+f:d0b4626865aa2f1830a1b7ec555fbf86:gn/.signature
+f:a27b6392038b8164adf1e924183e4cc3:gn/Pkgfile
 f:a89245058732b01796d0ce1e2279fb00:go/.nostrip
 f:416ddfdd5d0f3035a68a69b4a2799ba6:go/Pkgfile
 f:f1910b591ed3c17a466135fde90b401a:go/.footprint.aarch64

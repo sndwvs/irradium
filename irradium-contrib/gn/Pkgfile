@@ -4,22 +4,23 @@
 # Depends on: python3 zstd
 
 name=gn
-version=20260905
+version=20260924
 release=1
 source=(https://ab-sn.lnl.gay/gn-0eb071f600702e6e235137ba133ee8834aeece83.tar.zst
-        9ece3f5254c273cb46606a6571963f931c3b012d.patch)
+        2dfb8cbd3b749242ee4492a7f15eba6889d52c7f.patch)
 
 build() {
     cd $name
 
-    patch -p1 -i $SRC/9ece3f5254c273cb46606a6571963f931c3b012d.patch
+    patch -p1 -i $SRC/2dfb8cbd3b749242ee4492a7f15eba6889d52c7f.patch
 
-    export CC=gcc
-    export CXX=g++
-    unset CFLAGS # all sources C++ but passes both
-    # Breaks build since upstream passes -Wno-format,
-    # annotated: "Use of %llx, which is supported by _UCRT, false positive"
-    CXXFLAGS="${CXXFLAGS/-Werror=format-security} -flto=auto" \
+    export CLANG_FORMAT=/usr/bin/clang-format
+    # clang-13: error: argument unused during compilation: '-fstack-clash-protection' [-Werror,-Wunused-command-line-argument]
+    CFLAGS=${CFLAGS/-fstack-clash-protection/}
+    CXXFLAGS=${CXXFLAGS/-fstack-clash-protection/}
+    CFLAGS=${CFLAGS/-fno-plt/}
+    CXXFLAGS=${CXXFLAGS/-fno-plt/}
+
     python3 ./build/gen.py \
         --no-last-commit-position \
         --no-static-libstdc++ \
