@@ -211,8 +211,8 @@ f:c45bb7754e1e93022297e6c8f9bbb3eb:firefox/.footprint.aarch64
 f:71fadda2925c1a99019fae61b885b910:firefox/.signature.aarch64
 f:a4520e09eeb6c962072eb6ed3ab2507a:firefox/.signature.riscv64
 f:c10865a4afb52ab1b6a08fd8e70f2a20:firefox/Pkgfile
-f:54c7e71bc1c1d22ddcd438420fc39798:freerdp/.footprint
-f:d6149b60b440325d45b74f8c886c41e9:freerdp/.signature
+f:fc8fcdc759ed7cb0f8ae48624c8bcbaa:freerdp/.footprint
+f:ebd21a82a6480c2ddbe8728bf07bac75:freerdp/.signature
 f:04873cac0df651f4edcc5d7811582556:freerdp/Pkgfile
 f:b12bf9ffeeb516dc7dd0f3c50dd1f3bc:geany/.footprint
 f:52f0c3f34ea09772683334b565b146b8:geany/.signature
