@@ -164,8 +164,8 @@ f:ced1a4cd68fdf77a19fc55668489ead0:dbus/dbus-1.15.8-enable-elogind.patch
 f:51a52d31f257ce19b1a4f8bd71a7de68:dbus/fix-daemon-location.patch
 f:8c5d824b2a09c5706e3d8f8c700e9ff3:dbus/.signature
 f:1ffa747b5a17d9e0f3a19ca41bee81d7:dbus/Pkgfile
-f:f2ab4d84fc125a1134b8d7a86b8b96d6:hyphen/.footprint
-f:4f3eda18c3f13ee82f29a269d319f354:hyphen/.signature
+f:a642cab960866ecd02c26016490fa2b9:hyphen/.footprint
+f:624b8c11a28ff71ee11938a56c24bcbd:hyphen/.signature
 f:37215ffa22617940135d2a78dd33b0e6:hyphen/Pkgfile
 f:c32d199bdb048fcdc8596761f82e6f8d:aspell/.footprint
 f:dd3c34cf858a847aedd408ba9b791ff2:aspell/.signature
