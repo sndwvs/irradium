@@ -221,7 +221,6 @@ f:a0aef08e2b7fb14a9b1db3c12536a94d:geany-plugins/Pkgfile
 f:47fcec43d76c4a285d2c9f926f58a265:geany-plugins/.footprint
 f:9ee065f379e55ca01f9502747072a57f:geany-plugins/.signature
 f:026e4f0c29fb9a901487f616b02e850b:gn/.footprint
-f:b7589d1d7b31b438011e5eec6dd3d0e3:gn/gn-0eb071f600702e6e235137ba133ee8834aeece83.tar.zst
 f:2782a8f83a842163ab0d2da8539889d6:gn/2dfb8cbd3b749242ee4492a7f15eba6889d52c7f.patch
 f:d0b4626865aa2f1830a1b7ec555fbf86:gn/.signature
 f:a27b6392038b8164adf1e924183e4cc3:gn/Pkgfile
@@ -406,11 +405,11 @@ f:1a69adadfeda9cc05e884091ec34143f:python3-etcd/Pkgfile
 f:373cd69053e4bf367be1b67b38788742:python3-etcd/.footprint
 f:c953cd3ec4fd6408571bf54dcf208935:python3-etcd/.signature
 f:c1436dee8fcb78a65bc1c0c660133f9d:etcd/etcd.yaml
-f:7fb20375956387c1286eda8201b53785:etcd/Pkgfile
+f:ab6f93fd37dc2821bc1c01f9f5e247c3:etcd/Pkgfile
 f:cc67109c45538888f25b32814fac074c:etcd/rc.etcd
 f:1df0f85bfc3003e0455a891642bfec4e:etcd/pre-install
 f:5da472016e2cfb4add8b055c533a674b:etcd/.footprint
-f:7895a87ce34fc6ba86e1c528ca9d984c:etcd/.signature
+f:3a5070a21287f2de3c2db5c41b5d0b19:etcd/.signature
 f:cca42a21584d2e7a49baa60bb486c5d2:ungoogled-chromium/post-install
 f:c171c578fd3b0af7342a36c02972d6ed:ungoogled-chromium/patches/0001-Run-blink-bindings-generation-single-threaded.patch
 f:eaccde81e6ff3045858a7d18af7e091e:ungoogled-chromium/patches/0002-Fix-distcc.patch

@@ -11,17 +11,20 @@ source=(https://github.com/etcd-io/etcd/archive/v$version.tar.gz
         etcd.yaml)
 
 build() {
-  export GOCACHE="${GOCACHE:-"$SRC/go-cache"}"
-  export GOTMPDIR="${GOTMPDIR:-"$SRC"}"
-  export GOMODCACHE="${GOMODCACHE:-"$SRC/go"}"
-  export GOFLAGS="$GOFLAGS -mod=mod"
+  export CGO_CPPFLAGS="${CPPFLAGS}"
+  export CGO_CFLAGS="${CFLAGS}"
+  export CGO_CXXFLAGS="${CXXFLAGS}"
+  export CGO_LDFLAGS="${LDFLAGS}"
+  export GOPATH="${SRC}"
+  export GOFLAGS="-buildmode=pie -mod=readonly -modcacherw"
+  # Additional variables interpreted by the etcd build scripts
   export CGO_ENABLED=1
+  export FORCE_HOST_GO=1
+  export GO_LDFLAGS="-compressdwarf=false -linkmode=external"
 
   cd $name-$version
 
-  GIT_SHA="$(git ls-remote https://github.com/coreos/etcd.git refs/tags/v$version | awk '{print $1}')"
-  sed "s:GitNotFound:$GIT_SHA:g" -i scripts/build_lib.sh
-  make
+  ./scripts/build.sh
 
   install -D -d -m750 -o etcd -g etcd $PKG/var/lib/etcd
   install -D -d -m750 -o root -g etcd $PKG/etc/etcd
