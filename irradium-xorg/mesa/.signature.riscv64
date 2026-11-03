@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-xorg.pub
-RWT3zJzzKRcegp5FKQ/atkBCEpIJ2gLUyZkDqqxJecfhNO3DeewRoipBq8vu7sLKDwuhoY+ZBqLcH1g5tWbF+MX1tgwURQcdKw4=
-SHA256 (Pkgfile) = fce085b0d847ca62be058b1c0512c37970b4a5861c06d942539afeeb285a091a
-SHA256 (.footprint.riscv64) = 6746d8b5811d70d7bbb1b32e1aeb9265356928c4292d5dca635d3cf31ed06757
-SHA256 (mesa-26.2.5.tar.xz) = 794b3d1729075dae7ebd47c7283b7ca0cdb5dec668f7f11cc0a5d82f6138a0a5
+RWT3zJzzKRceguQv3sqbDZ7tPBET4qphRtDsR83eva4daLrYR2lqVETJi4/r+Gr8bVLN7QNAYOGATVluB9lTRbgvB78WryDdQwc=
+SHA256 (Pkgfile) = 6ea58909226eb38762a01545b626ee24339ed752026bd607c8a41fa164e44544
+SHA256 (.footprint.riscv64) = 17341231237b90f5f6b972d1f4489eba0c3e65653a98edd4c388af9cf63cbede
+SHA256 (mesa-26.2.6.tar.xz) = b9436b3e1a8be76fbd4823dc884f90596ab7c6ac5e1867a305e66ffccfb31a92
 SHA256 (0002-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch) = dfbad2f4fd8445dd2b609ae29f5645536648b1faaa44ecc2ef200d3908b574d1
 SHA256 (0003-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch) = 8fcb646bb7901d333dbeb48ab2d06a291ab63fa8ee9673df296a20b8d293afa4
 SHA256 (0005-mesa-buildsystem-improvements.patch) = 5b7b3fa42ae4d7070b33084b4921f6086c46dc516eb92cc21f0c751c2e6cd6d5
