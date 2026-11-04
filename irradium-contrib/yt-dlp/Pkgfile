@@ -4,7 +4,7 @@
 # Depends on: python3 python3-hatchling python3-tomlkit
 
 name=yt-dlp
-version=2026.08.19
+version=2026.10.26
 release=1
 source=(https://github.com/yt-dlp/yt-dlp/archive/$version/$name-$version.tar.gz
         allow-nodejs-by-default.patch)
