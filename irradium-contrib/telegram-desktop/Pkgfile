@@ -6,7 +6,7 @@
 name=telegram-desktop
 version=7.4.1
 release=1
-_commitid=bc9c263e2bfee06aaab41e82db51a103376030bc
+_commitid=c15d3f5a5de6e3ba5839822c451152e5e18bb700
 source=(https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tdesktop-$version-full.tar.gz
         https://github.com/tdlib/td/archive/$_commitid.tar.gz)
 
