@@ -816,8 +816,8 @@ f:fda8484e040c846ef1cb8790f4441f0e:xmlsec/.footprint
 f:71f77b164146448b64c552ec723ed4aa:xmlsec/.signature
 f:be98b5a143f67757916121f6eb4075e9:xmlsec/Pkgfile
 f:05c76dbeed222db2469236fa5d68cf6c:zabbix-frontend/Pkgfile
-f:50273d0e597f5c11b592277f0d5193e4:zabbix-frontend/.footprint
-f:3e35801786f9d09f4d91cf33a520ef33:zabbix-frontend/.signature
+f:1e83b334c6d494f81a7cf87bb2728f57:zabbix-frontend/.footprint
+f:590818b817b117d23c102b67da4968bd:zabbix-frontend/.signature
 f:b667a28d3d7195dc388f81fe36328854:zabbix-frontend/apache-zabbix.conf
 f:7aee820a83dbbef40c072851c4432190:zabbix-frontend/php-fpm-zabbix.conf
 f:000f16fee0fb4077dd2c110d28c646b8:zabbix-web-service/pre-install
