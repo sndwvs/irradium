@@ -671,7 +671,7 @@ f:2505573cf930279998bc71213ab24459:libmspub/Pkgfile
 f:2323e52c5bf5d4a4eabb88b3ff2cce10:libmspub/.signature
 f:62fb922566759397e66d9ff63e3d0a2b:libodfgen/.footprint
 f:121e425f9f84dbb86a95993df1870998:libodfgen/.signature
-f:439ae9ab4b141e586319b983d596738e:libodfgen/Pkgfile
+f:07968726b0acdc937542ff27c1559dde:libodfgen/Pkgfile
 f:7646dfbff6611dd019cc29d01741e5f9:libodfgen/ellipticalarc.patch
 f:102c5aabe65793793e36f1b2a849898e:libodfgen/rpath.patch
 f:c8b42ed5e9af70ed75bc8a39692bcca6:tlottie/Pkgfile

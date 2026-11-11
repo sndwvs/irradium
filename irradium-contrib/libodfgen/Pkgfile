@@ -4,8 +4,8 @@
 # Depends on: librevenge libxml2
 
 name=libodfgen
-version=0.1.8
-release=3
+version=0.1.9
+release=1
 source=(https://sourceforge.net/projects/libwpd/files/libodfgen/$name-$version/$name-$version.tar.xz
   ellipticalarc.patch
   rpath.patch)
