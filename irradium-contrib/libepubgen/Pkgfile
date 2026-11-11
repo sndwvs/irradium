@@ -4,8 +4,8 @@
 # Depends on: librevenge libxml2
 
 name=libepubgen
-version=0.1.1
-release=2
+version=0.1.2
+release=1
 source=(https://sourceforge.net/projects/$name/files/$name-$version/$name-$version.tar.xz)
 
 build() {
