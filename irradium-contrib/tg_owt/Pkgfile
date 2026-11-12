@@ -15,6 +15,7 @@ _crc32c_commit=2bbb3be42e20a0e6c0f7b39dc07dc863d9ffbc07
 source=(https://github.com/desktop-app/tg_owt/archive/${_commit}.tar.gz
         https://chromium.googlesource.com/webm/libvpx/+archive/${_libvpx_commit}.tar.gz
         https://chromium.googlesource.com/libyuv/libyuv/+archive/${_libyuv_commit}.tar.gz
+        https://github.com/abseil/abseil-cpp/archive/${_abseil_commit}.tar.gz
         https://github.com/google/crc32c/archive/${_crc32c_commit}.tar.gz
         https://github.com/cisco/libsrtp/archive/${_libsrtp_commit}.tar.gz
         0001-Replace-absl-template-nullability-annotations.patch
