@@ -158,12 +158,12 @@ f:577b3a07da22632d7b9711feb8a48802:pkg-get/Pkgfile
 f:23bc5ff22fe4f9a208d65fbbfd489ad9:dbus/30-dbus.launch
 f:95412978f8aa3c9fc667543107086479:dbus/post-install
 f:c51f2067699af541512233bbdd48dec4:dbus/rc.dbus
-f:32c26cdf1e3062bebc1e015a6bbfce12:dbus/dbus-1.12.x-allow_root_globally.diff
-f:326bdc6965e46ecae7b99bffc6696864:dbus/.footprint
-f:ced1a4cd68fdf77a19fc55668489ead0:dbus/dbus-1.15.8-enable-elogind.patch
+f:f0aa4972124e2ffb57c410df82912687:dbus/.footprint
 f:51a52d31f257ce19b1a4f8bd71a7de68:dbus/fix-daemon-location.patch
-f:8c5d824b2a09c5706e3d8f8c700e9ff3:dbus/.signature
-f:1ffa747b5a17d9e0f3a19ca41bee81d7:dbus/Pkgfile
+f:fc71bf2781d12af10fa813848009ce23:dbus/.signature
+f:f2d7ecc155a5f4e013303539b066d4e9:dbus/Pkgfile
+f:32c26cdf1e3062bebc1e015a6bbfce12:dbus/dbus-1.12.x-allow_root_globally.diff
+f:ced1a4cd68fdf77a19fc55668489ead0:dbus/dbus-1.15.8-enable-elogind.patch
 f:a642cab960866ecd02c26016490fa2b9:hyphen/.footprint
 f:624b8c11a28ff71ee11938a56c24bcbd:hyphen/.signature
 f:37215ffa22617940135d2a78dd33b0e6:hyphen/Pkgfile
