@@ -9,15 +9,14 @@ f:d32239bcb673463ab874e80d47fae504:COPYING
 f:651cd423cc5bdd691d10935e0f2cc4f8:mesa/patches/0002-mesa-23.3.0-rc4-panfrost-enable-gl3-by-default.patch
 f:32466113ec9e638532fbe7d2fc3bd479:mesa/patches/0005-mesa-buildsystem-improvements.patch
 f:79f8bcbbaac182e0745763b0e43a73c0:mesa/patches/0003-mesa-20.3.0-meson-radeon-arm-riscv-ppc.patch
-f:ffb67e8fe81931cb86d1054ef3bdc96f:mesa/patches/0007-enable-vulkan-video-decode.patch
+f:847b650deaf22549bb603defd82308ee:mesa/patches/0007-enable-vulkan-video-decode.patch
 f:67d369814433922d87e2ffb2ecef5aff:mesa/patches/0008-mesa-26.0-missing-include.patch
 f:2dc51bc65b49c5012e662a2dd9c91e6b:mesa/patches/0009-mesa-25.2-aarch64-compile.patch
-f:f814811e810af2407b438e2e9e3a88d9:mesa/patches/0012-mesa-26.2-llvm23-orc-jitlink.patch
 f:add55fada3a9b2de27dbc93d19af3f86:mesa/README.md
 f:4ed18847f59407f399547c2657dce8a8:mesa/.footprint.aarch64
 f:7fb95f9f66f5788d91a5355aff6765c3:mesa/.signature.aarch64
 f:27615677314cc27e3b55f912e660fbc1:mesa/.signature.riscv64
-f:6bbafa33641a6bc40b42061e1c4f68b6:mesa/Pkgfile
+f:bf24a741f260ee430f80d673121eb379:mesa/Pkgfile
 f:e3ea6fc45297875c1a4387057666e8ce:mesa/.footprint.riscv64
 f:04c140ab415bea77eacd8c62fc39960e:xorg-xf86-video-fbdev/.footprint
 f:2b55e5edd7f68e865c39720c44dca1c1:xorg-xf86-video-fbdev/.signature

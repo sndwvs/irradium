@@ -1,6 +1,6 @@
---- mesa-26.2.1/src/intel/vulkan/anv_instance.c
-+++ mesa-26.2.1/src/intel/vulkan/anv_instance.c
-@@ -16,6 +16,7 @@ static const struct debug_control debug_
+--- a/src/intel/vulkan/anv_instance.c
++++ b/src/intel/vulkan/anv_instance.c
+@@ -14,6 +14,7 @@
     { "no-sparse",                 ANV_DEBUG_NO_SPARSE},
     { "sparse-trtt",               ANV_DEBUG_SPARSE_TRTT},
     { "video-decode",              ANV_DEBUG_VIDEO_DECODE},
@@ -8,7 +8,7 @@
     { "video-encode",              ANV_DEBUG_VIDEO_ENCODE},
     { "shader-dump",               ANV_DEBUG_SHADER_DUMP},
     { "shader-hash",               ANV_DEBUG_SHADER_HASH},
-@@ -30,6 +31,9 @@ static void
+@@ -28,6 +29,9 @@
  process_anv_debug_variable_once(void)
  {
     anv_debug = parse_debug_string(os_get_option("ANV_DEBUG"), debug_control);
@@ -18,13 +18,13 @@
  }
  
  VkResult anv_EnumerateInstanceVersion(
---- mesa-26.2.1/src/intel/vulkan/anv_private.h
-+++ mesa-26.2.1/src/intel/vulkan/anv_private.h
-@@ -1833,6 +1833,7 @@ enum anv_debug {
+--- a/src/intel/vulkan/anv_private.h
++++ b/src/intel/vulkan/anv_private.h
+@@ -1868,6 +1868,7 @@
+    ANV_DEBUG_EXPERIMENTAL               = BITFIELD_BIT(11),
     ANV_DEBUG_DGC_DUMP                   = BITFIELD_BIT(12),
-    ANV_DEBUG_NO_ALLOC_OVER_SUBSCRIPTION = BITFIELD_BIT(13),
-    ANV_DEBUG_SKIP_DISK_CACHE            = BITFIELD_BIT(14),
-+   ANV_DEBUG_NO_VIDEO_DECODE            = BITFIELD_BIT(15),
+    ANV_DEBUG_SKIP_DISK_CACHE            = BITFIELD_BIT(13),
++   ANV_DEBUG_NO_VIDEO_DECODE            = BITFIELD_BIT(14),
  };
  
  extern enum anv_debug anv_debug;
