@@ -2,7 +2,6 @@ d:binutils
 d:cmake
 d:db
 d:filesystem
-d:flex
 d:gcc
 d:gdbm
 d:glibc
@@ -54,9 +53,6 @@ f:a79aae150aa240b06d52cc22d41bd3b6:filesystem/shadow
 f:dc4ff0c96d8dcd2141febc8b766e9a6b:filesystem/shells
 f:8c34e6c4b3ede17c3b6e9178a6c53d64:filesystem/.signature
 f:992dbbceef9116f5b8e71ee87de0adc7:filesystem/Pkgfile
-f:9165347c2c736b0c48b1846004e650e9:flex/.footprint
-f:2169b4b22e7139587cfb1172033fd1e9:flex/.signature
-f:9642c903509ab5a3cd28d897f14f887d:flex/Pkgfile
 f:61a057afa31006764b957a483ba90b9d:gcc/gcc-4.7.3-multilib-dirs.patch
 f:032ba6ae0bd4d6e405d012084816e334:gcc/gcc-aarch64-disable-multilib-support.patch
 f:a58ff03983cf89e5e690c71f7eab6fff:gcc/gcc-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch
