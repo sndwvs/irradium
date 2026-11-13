@@ -11,8 +11,8 @@ drwxr-xr-x	root/root	usr/include/libepubgen-0.1/libepubgen/
 -rw-r--r--	root/root	usr/include/libepubgen-0.1/libepubgen/libepubgen.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libepubgen-0.1.la
-lrwxrwxrwx	root/root	usr/lib/libepubgen-0.1.so -> libepubgen-0.1.so.1.0.1
-lrwxrwxrwx	root/root	usr/lib/libepubgen-0.1.so.1 -> libepubgen-0.1.so.1.0.1
--rwxr-xr-x	root/root	usr/lib/libepubgen-0.1.so.1.0.1
+lrwxrwxrwx	root/root	usr/lib/libepubgen-0.1.so -> libepubgen-0.1.so.1.0.2
+lrwxrwxrwx	root/root	usr/lib/libepubgen-0.1.so.1 -> libepubgen-0.1.so.1.0.2
+-rwxr-xr-x	root/root	usr/lib/libepubgen-0.1.so.1.0.2
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libepubgen-0.1.pc

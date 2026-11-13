@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/contrib.pub
-RWSagIOpLGJF31UH21ski2LHHMcJQVmIewNvs9qXvSTYP8nWKi4ySuv0sdoBtFiWPmjjurIG9fUmmNuNhrszunl51WMK0BjmsQU=
-SHA256 (Pkgfile) = 065215f4998fac809104c18e98786ebaebcd3902ace9263c3b68e428cc7aa3bf
-SHA256 (.footprint) = 9da70127537b99095fadd9288bf76791e93a56ee920c0621eb8af2d494981285
-SHA256 (libepubgen-0.1.1.tar.xz) = 03e084b994cbeffc8c3dd13303b2cb805f44d8f2c3b79f7690d7e3fc7f6215ad
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7uHo00RkgNYNtoyCjn5mJe3h4KuA68j7m+w+dmhnW5HA76+LCixyKtUD/MiwdcthZ///WX/MAZ7SEsSHiXnd3AE=
+SHA256 (Pkgfile) = 1e901afdb4d7574411152d08c8c3bfea5d554d318ba2fedaf3660c8976bdea1e
+SHA256 (.footprint) = 70e1f702beeed7b5af44f5652cfd838cd0ad96f1fe6aeb1baea17550b7a124ce
+SHA256 (libepubgen-0.1.2.tar.xz) = 196c4bf9380463a3b40eb82c7dbf8a8b6a954987b4abbefe55467c215996eb7e
