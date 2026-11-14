@@ -4,7 +4,7 @@
 # Depends on: popt
 
 name=efivar
-version=40
+version=39
 release=1
 source=(https://github.com/rhboot/efivar/archive/refs/tags/$version.tar.gz)
 renames=($name-$version.tar.gz)
