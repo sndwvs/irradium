@@ -5,10 +5,10 @@
 # Optional: publicsuffix-list
 
 name=openjdk21-jdk
-version=21.0.13+7
+version=21.0.14+2
 release=1
-_boot_ver=21.0.5_11
-_cert_ver=20210916
+_boot_ver=21.0.9_10
+_cert_ver=20260919
 source=(https://github.com/openjdk/jdk${version::2}u/archive/refs/tags/jdk-$version.tar.gz
         https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jdk_$(uname -m)_linux_hotspot_${_boot_ver}.tar.gz
         https://git.crux.nu/tb/java-distfiles/media/branch/master/distfiles/java_cacerts-${_cert_ver}
@@ -35,6 +35,7 @@ build() {
   unset CXXFLAGS
   unset LDFLAGS
   unset MAKEFLAGS
+  unset JDK_JAVA_OPTIONS
 
   [ -z $JOBS ] && JOBS=$(nproc)
 
