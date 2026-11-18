@@ -678,8 +678,8 @@ f:102c5aabe65793793e36f1b2a849898e:libodfgen/rpath.patch
 f:c8b42ed5e9af70ed75bc8a39692bcca6:tlottie/Pkgfile
 f:7e26c481b7926c2837dac221b3a91c6f:tlottie/.footprint
 f:0ddcf2380b4f5c16d4e6ddcac5d0d7da:tlottie/.signature
-f:6d4f982ab9de7708c09fd481200e4404:libvisio/.footprint
-f:6b5d75a8c7e1619b89f72302e6b7c967:libvisio/.signature
+f:dda8cfd401bed9e439c7ed776a0c92e8:libvisio/.footprint
+f:ff4373ea8f7f7caba304fe774236f9cb:libvisio/.signature
 f:fc21aff6b0a2ec8b213b088ca4f57fcb:libvisio/Pkgfile
 f:4db8b7c90cd5f8d488018b4c3493765f:libwpd/.footprint
 f:bac76af653fcaaf39f36c99832cc5649:libwpd/.signature
