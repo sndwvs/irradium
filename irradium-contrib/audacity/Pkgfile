@@ -1,8 +1,8 @@
 # Description: Multitrack audio editor
 # URL: https://www.audacityteam.org/
 # Maintainer: mara, mara at fail dot pp dot ua
-# Depends on: wxgtk3 portmidi rapidjson portaudio libsbsms portsmf ffmpeg flac lame libogg libvorbis libmad libid3tag zlib expat sqlite3 soundtouch
-# Optional: libsndfile mpg123 wavpack opusfile opus vamp-plugin-sdk vst3sdk suil lilv twolame sratom lv2 libsoxr
+# Depends on: wxgtk3 portmidi rapidjson portaudio libsbsms portsmf ffmpeg flac lame libogg libvorbis libmad libid3tag zlib expat sqlite3 soundtouch libsoxr
+# Optional: libsndfile mpg123 wavpack opusfile opus vamp-plugin-sdk vst3sdk suil lilv twolame sratom lv2
 
 name=audacity
 version=3.7.8
@@ -21,7 +21,6 @@ build() {
   prt-get isinst vst3sdk && PKGMK_AUDACITY+=" -D audacity_has_vst3=system" || PKGMK_AUDACITY+=" -D audacity_has_vst3=off"
   prt-get isinst wavpack && PKGMK_AUDACITY+=" -D audacity_use_wavpack=system" || PKGMK_AUDACITY+=" -D audacity_use_wavpack=off"
   prt-get isinst opusfile && PKGMK_AUDACITY+=" -D audacity_use_opusfile=system" || PKGMK_AUDACITY+=" -D audacity_use_opusfile=off"
-  prt-get isinst libsoxr && PKGMK_AUDACITY+=" -D audacity_use_sox=system" || PKGMK_AUDACITY+=" -D audacity_use_sox=off"
 
   cmake -S $name-Audacity-$version -B build -G Ninja \
     $PKGMK_AUDACITY \
