@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/contrib.pub
-RWSagIOpLGJF377t+441ZeU4mO+dogp1fmX/Viy+WVXRDf42J5RC5opKxP5npMp3KZaiwiwhvHZcz7fhyNLF8SWwG5aJCoDA6Q8=
-SHA256 (Pkgfile) = c673fb7ae6ea9654ead3d3bde6e1ff70db95afa6fe8db71426554970259c75c8
+untrusted comment: verify with /etc/ports/irradium-contrib.pub
+RWTmT3d9kqan7tO/0cu1kxeMnhCAQaJF+oXN79qpKfywhKkpuF6lXZcxzfiL6FZq9ITKp5UEBVwdZ7gP8EMs+0OIkDzBO/N5zQA=
+SHA256 (Pkgfile) = 2f1ed02d299201aecef2b74a386974b68ab2e1ba8aefa3ebf60ab0e227bf3079
 SHA256 (.footprint) = 108ce942e2b00da2271bd8df3c352c4d2ede9e46a0b2c8392702b99d8a8953bb
 SHA256 (soxr-0.1.3-Source.tar.xz) = b111c15fdc8c029989330ff559184198c161100a59312f5dc19ddeb9b5a15889
