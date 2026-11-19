@@ -13,8 +13,8 @@ f:847b650deaf22549bb603defd82308ee:mesa/patches/0007-enable-vulkan-video-decode.
 f:67d369814433922d87e2ffb2ecef5aff:mesa/patches/0008-mesa-26.0-missing-include.patch
 f:2dc51bc65b49c5012e662a2dd9c91e6b:mesa/patches/0009-mesa-25.2-aarch64-compile.patch
 f:add55fada3a9b2de27dbc93d19af3f86:mesa/README.md
-f:65b85bd7936a2f9aaa257c417d8b340f:mesa/.footprint.aarch64
-f:ac3a9ba0fc3bbcb58f5546b547b180e5:mesa/.signature.aarch64
+f:c682128fe9a66699632591dc7ef83893:mesa/.footprint.aarch64
+f:2c4476946d1f5fcf72341701ff0d2425:mesa/.signature.aarch64
 f:c85c37bf9cc7d7df2e62999c0ae3454a:mesa/.signature.riscv64
 f:35691b9ca2e79d1548d9ddbb7b9ce0f4:mesa/Pkgfile
 f:c6bcc32981a3a7a288e33003a582fdd2:mesa/.footprint.riscv64
