@@ -11,7 +11,7 @@ source=(https://github.com/nmeum/$name/releases/download/${version/_/}/$name-${v
 build() {
     export LDFLAGS="$LDFLAGS -Wl,--copy-dt-needed-entries"
 
-    cmake -S $name-$version -B build -G Ninja \
+    cmake -S $name-${version/_/} -B build -G Ninja \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBDIR=lib \
         -DANDROID_TOOLS_USE_BUNDLED_LIBUSB=ON \

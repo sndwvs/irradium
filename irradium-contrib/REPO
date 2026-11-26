@@ -155,7 +155,7 @@ f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
 f:c35f78590d60146abc6f593e113ef6ba:android-tools/.footprint
 f:6eccbd81b976ee8e5b7f70466617ecae:android-tools/.signature
-f:f7806403990ed7e5b79e09b07a8e7d8d:android-tools/Pkgfile
+f:cdbc161e2778c6e96f271f70d35fbf3c:android-tools/Pkgfile
 f:fa351dca0dc5a7bf5a2be4a8df88ef61:audacity/.footprint
 f:b3fd666bf0db28cca8b6b9c8a45dd174:audacity/.signature
 f:649c435cef9d967e4fdb99e0481dddd9:audacity/add-cstdint.patch
