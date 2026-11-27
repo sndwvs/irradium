@@ -42,5 +42,5 @@ build() {
   mkdir -p "$PKG"/usr/bin/
   # Not as "tsc" to not conflict with typescript
   ln -s ../lib/"$name"/platform/lib/tsc "$PKG"/usr/bin/tsgo
-  ln -s ../lib/"$name"/platform/lib/tsc "$PKG"/usr/bin/tsg
+  ln -s ../lib/"$name"/platform/lib/tsc "$PKG"/usr/bin/tsc
 }
