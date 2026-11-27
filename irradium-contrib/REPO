@@ -858,7 +858,7 @@ f:f1e2b491ad4744c6a7cc9c26ddd39502:esbuild/Pkgfile
 f:819814f057f78ee7d574dc75ab0f0788:esbuild/.footprint.aarch64
 f:a5a3107afaa2e2e721e6735d84cfd61b:esbuild/.signature.aarch64
 f:adcb3839228623244c11818da1744c0d:esbuild/.footprint.riscv64
-f:f79341777fd73c65924220161546f659:esbuild/.signature.riscv64
+f:287778ba441f152d244bd8e0bb0bdd27:esbuild/.signature.riscv64
 f:46c87acfdf0da771b1cd88b89e4db6dd:typescript-go/Pkgfile
 f:29e99bd4f21266588db2285175bfec96:typescript-go/.footprint.aarch64
 f:a716802e7233123b6a5be57e8cecc7a3:typescript-go/.signature.aarch64
