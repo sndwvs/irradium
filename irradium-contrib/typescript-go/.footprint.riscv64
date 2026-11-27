@@ -6,7 +6,7 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/typescript-go/
 drwxr-xr-x	root/root	usr/lib/typescript-go/node_modules/
 drwxr-xr-x	root/root	usr/lib/typescript-go/node_modules/@typescript/
-lrwxrwxrwx	root/root	usr/lib/typescript-go/node_modules/@typescript/typescript-linux-arm64 -> ../../platform
+lrwxrwxrwx	root/root	usr/lib/typescript-go/node_modules/@typescript/typescript-linux-riscv64 -> ../../platform
 drwxr-xr-x	root/root	usr/lib/typescript-go/platform/
 drwxr-xr-x	root/root	usr/lib/typescript-go/platform/lib/
 -rw-r--r--	root/root	usr/lib/typescript-go/platform/lib/lib.d.ts
