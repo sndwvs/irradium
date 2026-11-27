@@ -151,6 +151,7 @@ d:python3-pysyncobj
 d:wallet-engine
 d:libsoxr
 d:esbuild
+d:typescript-go
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -858,3 +859,8 @@ f:819814f057f78ee7d574dc75ab0f0788:esbuild/.footprint.aarch64
 f:a5a3107afaa2e2e721e6735d84cfd61b:esbuild/.signature.aarch64
 f:adcb3839228623244c11818da1744c0d:esbuild/.footprint.riscv64
 f:f79341777fd73c65924220161546f659:esbuild/.signature.riscv64
+f:b8d1b24ad7cc8fd843c9d9e518b75457:typescript-go/Pkgfile
+f:29e99bd4f21266588db2285175bfec96:typescript-go/.footprint.aarch64
+f:a716802e7233123b6a5be57e8cecc7a3:typescript-go/.signature.aarch64
+f:29e99bd4f21266588db2285175bfec96:typescript-go/.footprint.riscv64
+f:e21a876db6794f8f38b1c935674d018c:typescript-go/.signature.riscv64

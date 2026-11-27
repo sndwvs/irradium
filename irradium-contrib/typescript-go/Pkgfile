@@ -1,0 +1,46 @@
+# Description: JavaScript with syntax for types
+# URL: https://www.typescriptlang.org/
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: go
+
+name=typescript-go
+version=7.0.2
+release=1
+source=(https://github.com/microsoft/TypeScript/archive/refs/tags/v$version.tar.gz)
+
+build() {
+  export GOCACHE="${GOCACHE:-"$SRC/go-cache"}"
+  export GOTMPDIR="${GOTMPDIR:-"$SRC"}"
+  export GOMODCACHE="${GOMODCACHE:-"$SRC/go"}"
+
+  cd TypeScript-$version/tsc
+
+  # node -p 'process.arch'
+  case "$(uname -m)" in
+    aarch64) _node_platform="arm64" ;;
+    armhf|armv7) _node_platform="arm" ;;
+    riscv64) _node_platform="riscv64" ;;
+    x86_64) _node_platform="x64" ;;
+  esac
+
+  go mod download
+  go build -ldflags="-s -w -X github.com/microsoft/TypeScript/tsc/internal/core.version=$version" -tags=noembed -o built/local/tsc ./cmd/tsgo
+
+  # On npm, the "typescript" package contains JS API, and registers a binary "tsc",
+  # which re-exposes a platform-specific package with a binary and std library definitions,
+  # named something like "@typescript/typescript-linux-loong64".
+  #
+  # No, the library definitions are not platform-dependent. ¯\_(ツ)_/¯
+
+  # Yes, it is in lib. Not my idea.
+  install -Dm755 built/local/tsc -t "$PKG"/usr/lib/"$name"/platform/lib/
+  ln -s ./tsc "$PKG"/usr/lib/"$name"/platform/lib/tsgo
+  cp -r internal/bundled/libs/* "$PKG"/usr/lib/"$name"/platform/lib/
+  mkdir -p "$PKG"/usr/lib/"$name"/node_modules/@typescript/
+  ln -s ../../platform "$PKG"/usr/lib/"$name"/node_modules/@typescript/typescript-linux-"$_node_platform"
+
+  mkdir -p "$PKG"/usr/bin/
+  # Not as "tsc" to not conflict with typescript
+  ln -s ../lib/"$name"/platform/lib/tsc "$PKG"/usr/bin/tsgo
+  ln -s ../lib/"$name"/platform/lib/tsc "$PKG"/usr/bin/tsg
+}
