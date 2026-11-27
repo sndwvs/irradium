@@ -1,0 +1,49 @@
+# Description: an extremely fast JavaScript and CSS bundler and minifier.
+# URL: https://esbuild.github.io/"
+# Maintainer: mara, mara at fail dot pp dot ua
+# Depends on: go nodejs
+
+name=esbuild
+version=0.28.2
+release=1
+source=(https://github.com/evanw/${name}/archive/v${version}.tar.gz)
+
+build() {
+  export GOCACHE="${GOCACHE:-"$SRC/go-cache"}"
+  export GOTMPDIR="${GOTMPDIR:-"$SRC"}"
+  export GOMODCACHE="${GOMODCACHE:-"$SRC/go"}"
+
+  export CGO_CPPFLAGS="${CPPFLAGS}"
+  export CGO_CFLAGS="${CFLAGS}"
+  export CGO_CXXFLAGS="${CXXFLAGS}"
+  export CGO_LDFLAGS="${LDFLAGS}"
+  export GOFLAGS="-buildmode=pie -trimpath -ldflags=-linkmode=external -mod=readonly -modcacherw"
+
+  cd $name-$version
+
+  go build \
+    -trimpath \
+    -buildmode=pie \
+    -mod=readonly \
+    -modcacherw \
+    -ldflags "-linkmode external -extldflags \"${LDFLAGS}\"" \
+    ./cmd/esbuild
+
+  # Generate npm/esbuild/*
+  node scripts/esbuild.js ./esbuild --neutral
+
+  install -Dm755 "$name" "$PKG/usr/bin/$name"
+
+  # Detect node platform name (e.g., "linux-x64")
+  node_platform=$(node -p 'process.platform + "-" + process.arch')
+  node_dir="$PKG/usr/lib/node_modules"
+  npm_dir="${node_dir}/$name"
+  install -Dm755 -d ${npm_dir}/lib
+  install -Dm644 -t ${npm_dir}/lib npm/esbuild/lib/main.d.ts
+  install -Dm644 -t ${npm_dir}/lib npm/esbuild/lib/main.js
+  install -Dm644 -t ${npm_dir} npm/esbuild/package.json
+
+  # Install the @esbuild/platform module
+  install -m755 -d ${node_dir}/@esbuild/${node_platform}/bin
+  ln -s /usr/bin/esbuild ${node_dir}/@esbuild/${node_platform}/bin/esbuild
+}

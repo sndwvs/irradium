@@ -150,6 +150,7 @@ d:python3-kazoo
 d:python3-pysyncobj
 d:wallet-engine
 d:libsoxr
+d:esbuild
 f:6a5253cf3d06fb17d0ae2d2084edc1bf:accountsservice/.footprint
 f:495a2e8b5194205798107402335c6f34:accountsservice/.signature
 f:2807d652690f9351208598b5d2673d76:accountsservice/Pkgfile
@@ -852,3 +853,8 @@ f:95541c7770f7a841051a5a91c4b33550:wallet-engine/e59e0d89d7ee90c388bf36e3334c5b2
 f:d6d237b3e2e0ccf20a4cd7e9e2bdbf1b:libsoxr/.footprint
 f:eb5b103ae05745ec1904dd26ba501ec1:libsoxr/.signature
 f:2e9312aa27dbf5fd5b0f74964b38350d:libsoxr/Pkgfile
+f:f1e2b491ad4744c6a7cc9c26ddd39502:esbuild/Pkgfile
+f:819814f057f78ee7d574dc75ab0f0788:esbuild/.footprint.aarch64
+f:a5a3107afaa2e2e721e6735d84cfd61b:esbuild/.signature.aarch64
+f:adcb3839228623244c11818da1744c0d:esbuild/.footprint.riscv64
+f:f79341777fd73c65924220161546f659:esbuild/.signature.riscv64
