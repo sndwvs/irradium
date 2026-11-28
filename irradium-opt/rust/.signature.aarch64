@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/irradium-opt.pub
-RWRxRnTWECCiCXUaZgDc96n3GZNqCV15jx+vtqGU77EHRVCcoTz8LDG35Vy5ejQ/TI2eQCfea0u3xcWeQcRXUGcDCVUVDOOGOQE=
-SHA256 (Pkgfile) = 4b78f7970801f3c4c1218a2434e7a756d2cdc6ee3a9db0ef7eff04e0a09ffe52
-SHA256 (.footprint.aarch64) = d4da2d0668d96eaf996683e9df2acc9b1c3e247c4f4acc6d87fab32da6e164d6
-SHA256 (rustc-1.100.0-src.tar.xz) = 90dab90b8084eb57c35ae2b1d0b70c8e5138ace6023b22c60a5a400f586f63b2
+RWRxRnTWECCiCROkXAcOeKXCTxOTq52Jpn4cVZdD3hbwvH8gYvaACuTz8mpsb7GvQLkoBbcc7QW5YXFweeAYtsS3UTWR33fZaQY=
+SHA256 (Pkgfile) = bc2bd640342ba565fc6aeba07474193b531e3c79983c707c5c4415645bf6258d
+SHA256 (.footprint.aarch64) = 59f5173a8214616059880b7a51a4c4ee4d20f2d762ea89fd140fdc6aab36dba6
+SHA256 (rustc-1.100.1-src.tar.xz) = 0478d9d8c0e462dfc51bc277c77dab80de8f93d83a39ad8f258bf92e6678a5ad
 SHA256 (rust-std-1.99.0-aarch64-unknown-linux-gnu.tar.xz) = 1cf7e2ef58ed1cfa6f1adea18e155cbf254c1951f39e5f5e3376879f55fd64a4
 SHA256 (rustc-1.99.0-aarch64-unknown-linux-gnu.tar.xz) = 89c0f1a3a44df63c95e5d5f2ba093d0a12c5f5f57f8635f8a7a0ce50cf86600e
 SHA256 (cargo-1.99.0-aarch64-unknown-linux-gnu.tar.xz) = 113229fcc16cc1ba004923a4cc275fbf3281dafaaf8b97269f9c00189d497fd4
