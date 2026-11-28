@@ -191,8 +191,8 @@ f:7eb31e9662205eae21ad452120f384b5:qt5/include.patch
 f:92d1a73d95466ca522708af21d4c24e1:qt5/Pkgfile
 f:d11b4ede6e313538177e3738e24c93ae:qt5/qt-everywhere-opensource-src-5.15.19-kf5-1.patch
 f:41931d9252970e63ee5e0cd20d871a57:qt5/qtbase-5.15.19-fix-missing-qtsan-include.patch
-f:171011d4fd47df9296f730a859b3c73b:qt5/.footprint.aarch64
-f:e06897f69883bb586aa84d03468e3536:qt5/.signature.aarch64
+f:608f84e8cce89e85eae96d92c6281488:qt5/.footprint.aarch64
+f:d94318577cd48f19d6b7e4355fb3da0f:qt5/.signature.aarch64
 f:171011d4fd47df9296f730a859b3c73b:qt5/.footprint.riscv64
 f:e06897f69883bb586aa84d03468e3536:qt5/.signature.riscv64
 f:6a3b37401d78735d427832419c15824c:gobject-introspection/.footprint.aarch64
