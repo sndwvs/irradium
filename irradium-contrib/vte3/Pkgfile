@@ -1,13 +1,13 @@
 # Description: Virtual Terminal Emulator widget for GTK3/4
 # URL: https://wiki.gnome.org/action/show/Apps/Terminal/VTE
 # Maintainer: Matt Housh, jaeger at crux dot ninja
-# Depends on: gnutls gtk3 lz4 fast_float
+# Depends on: gnutls gtk3 lz4 fast_float simdutf fmt
 # Optional: gtk4 icu vala
 
 name=vte3
-version=0.84.1
+version=0.84.2
 release=1
-source=(https://download.gnome.org/sources/vte/${version:0:4}/vte-${version}.tar.xz)
+source=(https://gitlab.gnome.org/GNOME/vte/-/archive/$version/vte-$version.tar.bz2)
 
 build() {
     prt-get isinst gtk4 && PKGMK_VTE+=' -D gtk4=true' || PKGMK_VTE+=' -D gtk4=false'
