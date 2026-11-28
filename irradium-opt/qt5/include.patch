@@ -1,0 +1,12 @@
+diff -Naur qt-everywhere-src-5.15.18.orig/qtscript/src/script/script.pro qt-everywhere-src-5.15.18/qtscript/src/script/script.pro
+--- qt-everywhere-src-5.15.18.orig/qtscript/src/script/script.pro	2026-04-27 13:09:28.046766731 +0200
++++ qt-everywhere-src-5.15.18/qtscript/src/script/script.pro	2026-04-29 10:34:16.628853685 +0200
+@@ -49,7 +49,7 @@
+ # Avoid JSC C API functions being exported.
+ DEFINES += JS_NO_EXPORT
+ 
+-INCLUDEPATH += $$PWD
++INCLUDEPATH += $$OUT_PWD/../../include/QtScript/$$QT_VERSION/QtScript
+ 
+ include(script.pri)
+ 
