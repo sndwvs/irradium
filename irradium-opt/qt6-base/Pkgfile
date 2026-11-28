@@ -5,8 +5,8 @@
 # Optional: brotli cups double-conversion gtk3 icu krb5 libinput libproxy mariadb md4c pipewire postgresql pulseaudio tslib unixodbc vulkan-headers xdg-utils xmlstarlet
 
 name=qt6-base
-version=6.12.0
-release=2
+version=6.12.1
+release=1
 source=(https://download.qt.io/official_releases/qt/${version%.*}/$version/submodules/qtbase-everywhere-src-$version.tar.xz
   qt6-base-cflags.patch
   qt6-base-nostrip.patch
@@ -16,7 +16,6 @@ source=(https://download.qt.io/official_releases/qt/${version%.*}/$version/submo
 build() {
   patch -d qtbase-everywhere-src-$version -p1 -i $SRC/qt6-base-cflags.patch
   patch -d qtbase-everywhere-src-$version -p1 -i $SRC/qt6-base-nostrip.patch
-  patch -d qtbase-everywhere-src-$version -p1 -i $SRC/11efdbb.diff
 
   if prt-get isinst ccache; then
     PKGMK_QT6+=' -D QT_USE_CCACHE=ON'
